@@ -1,4 +1,4 @@
-# MMAGMAMMA
+# MMAGMA
 
 > MMA par Gilles Maire
 
