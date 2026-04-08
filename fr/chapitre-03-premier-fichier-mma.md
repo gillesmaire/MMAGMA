@@ -34,7 +34,7 @@ Groove Metronome2-4
 - La commande Groove charge un style prédéfini qui est Métronome2-4, nous verrons que nous pourrons mettre ici quelques centaines de styles différents.
 - Les lignes suivantes décrivent les accords sur 4 mesures, sachant que chaque mesure ne comprendra qu'une ronde.
 
-Nous aurions pu aussi chosir des accords sur une noire :
+Nous aurions pu aussi choisir des accords sur une noire :
 
 ~~~mma
 Tempo 120
@@ -69,7 +69,7 @@ Sous Windows ou MacOs, un double-clic sur le fichier .mid ouvre généralement l
 
 ### Sous linux
 
-Sous Linux il existe plueieurs méthodes, nous allons utiliser la commande aplay du serveur ALSA qui avec l'option -a donne la liste des cartes son susceptibles d'interpréter des fichiers MIDI
+Nous allons utiliser la commande aplay du serveur ALSA qui avec l'option -a donne la liste des cartes son susceptibles d'interpréter des fichiers MIDI
 
 
 ~~~bash

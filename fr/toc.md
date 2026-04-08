@@ -1,6 +1,6 @@
 # Table des matières
 
-1. Introduction à MMA
+1. [Introduction à MMA](#Introduction)
    - Qu'est‑ce que MMA ?
    - Historique du projet
    - Pourquoi utiliser MMA aujourd'hui ?
