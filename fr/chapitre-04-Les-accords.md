@@ -10,15 +10,14 @@ C’est l’élément de base pour construire l’harmonie d’un morceau. Chaqu
 Pour la majorité des morceaux, vous utiliserez les **accords prédéfinis** fournis par MMA, comme `C:maj`, `A:min`, `G7`, ou `F:maj7`.  
 Ces accords peuvent être joués sur n’importe quelle piste ou instrument.
 
-Si on ne précise pas le qualificateur maj min ou 7 eme l'accord est majeur.  Nous verrons que dans certain cas il faudrai préciser le qualificateur :maj pour
-je pas faire jouer une note mais bien un accord. Nous reviendrons sur ce point.
+Si on ne précise pas le qualificateur maj min ou 7 eme l'accord est majeur.  Nous verrons que dans certain cas il faudrai préciser le qualificateur :maj pour ne pas faire jouer une note mais bien un accord. Nous reviendrons sur ce point.
 
 
 
 
 ## Écrire les accords dans un fichier MMA
 
-Les accords sont inscrits dans le fichier MMA  ligne et par piste.  Chaque ligne correspond à une position rythmique dans la mesure, mais pas directement à la durée d’un accord comme dans une partition classique.
+Les accords sont inscrits dans le fichier MMA par ligne et par piste.  Chaque ligne correspond à une position rythmique dans la mesure, mais pas directement directement à la durée d’un accord comme dans une partition classique.
 
 
 ~~~mma
@@ -27,18 +26,18 @@ Les accords sont inscrits dans le fichier MMA  ligne et par piste.  Chaque ligne
 3 G7
 ~~~
 
-- La première colonne (1,2,3) correspond au numéro de ligne dans la piste ou séquence.
-- Les colonnes suivantes correspondent aux accords à jouer à cette ligne.
+- La première colonne (1,2,3) correspond au numéro de mesure dans la piste ou séquence.
+- Les colonnes suivantes correspondent aux accords à jouer dans cette mesure.
 - Si plusieurs accords apparaissent sur la même ligne (2 D C), ils sont placés sur la même pulsation, mais leur durée réelle dans la mesure dépend du pattern et du groove associé dans MMA.
 - Pour préciser des durées rythmiques exactes (comme une blanche ou deux noires), il faut définir un pattern qui indique le  point de départ et la durée de chaque accord dans la mesure.
 
 
-Ainsi, 1 C joue l’accord C au début de la mesure, et 2 D C place D et C à la pulsation 2, mais la durée exacte de chaque accord est déterminée par le pattern.
+Ainsi, 1 C joue l’accord C au début de la mesure, et 2 D C place D et C au deuxième temps, mais la durée exacte de chaque accord est déterminée par le pattern.
 
 
 ##  Utiliser les accords sur plusieurs pistes
 
-Chaque piste ou instrument peut utiliser les mêmes accords. 
+Chaque piste ou instrument peut utiliser des accords différents
 
 Exemple :
 
@@ -67,11 +66,11 @@ Dans MMA :
 
 - TIME définit la subdivision de la mesure (combien de temps musical par barre).\ 
     - Par exemple TIME 4 signifie 4 temps (classique 4/4).
-- Un pattern décrit pour une mesure :
+- Une sequence décrit pour une mesure :
     - le start point (position de début),
     - la durée en valeurs fractionnaires (noires, croches…),
     - et éventuellement des accents/voicings.
-
+- Ces définitions de séquence se font dans les fichiers de groove
 - La ligne d’accord (1, 2, etc.) n’a pas de durée — elle fixe simplement quelle harmonie doit être utilisée au moment donné, mais c’est le pattern qui décide de la durée rythmique effective.
 
 
@@ -82,7 +81,7 @@ Pour jouer un accord sur une blanche (2 temps sur une mesure 4/4), on peut utili
 Supposons que la mesure est TIME 4 (4 noires).
 
 ~~~mma
-PATTERN simpleHalf
+ simpleHalf Sequence
 0     2     120
 ~~~
 
@@ -110,7 +109,7 @@ MMA utilisera le pattern simpleHalf pour que l’accord C soit joué pendant 2 t
 Pour jouer deux accords de deux noires chacun dans une mesure 4/4 :
 
 ~~~mma
-PATTERN twoQuarters
+twoQuarters Sequence
 0     1     100
 1     1     100
 ~~~
@@ -127,9 +126,9 @@ track Piano
 
 Dans ce cas MMA joue :
 
-    À pulsation 1 (ligne 1), l’accord C pendant une noire (1 temps)
+- À pulsation 1 (ligne 1), l’accord C pendant une noire (1 temps)
 
-    À pulsation 2 (ligne 2), l’accord G pendant une noire (1 temps)
+- À pulsation 2 (ligne 2), l’accord G pendant une noire (1 temps)
 
 Et comme la mesure est en 4/4, on peut compléter la mesure par d’autres accords ou silence.
 
@@ -138,13 +137,14 @@ Et comme la mesure est en 4/4, on peut compléter la mesure par d’autres accor
 
 Supposons que dans une même mesure on veut :
 
-    un accord sur la blanche (2 temps),
+- un accord sur la blanche (2 temps),
 
-    puis deux accords de noire chacun (1 temps chacun)
+- puis deux accords de noire chacun (1 temps chacun)
     
 Pattern MMA
 
 ~~~mma
+halfThenTwoQuarters Sequence
 0     2     120
 2     1     100
 3     1     100
@@ -187,13 +187,10 @@ Ce pattern (et cette notation) donne dans une mesure 4/4 :
 
 Dans MMA :
 
-    Les lignes (1, 2, 3, etc.) ne sont pas des durées mais des points de repère dans la mesure.
-
-    C’est le pattern qui détermine réellement quand et pendant combien de temps un accord sera joué.
-
-    Le même pattern peut être réutilisé sur plusieurs mesures.
-
-    Un pattern peut comporter plusieurs segments pour gérer des rythmes complexes.
+- Les lignes (1, 2, 3, etc.) ne sont pas des durées mais des points de repère dans la mesure.
+- C’est le pattern qui détermine réellement quand et pendant combien de temps un accord sera joué.
+- Le même pattern peut être réutilisé sur plusieurs mesures.
+- Un pattern peut comporter plusieurs segments pour gérer des rythmes complexes.
 
 Synthèse
 
