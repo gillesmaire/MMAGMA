@@ -1,12 +1,12 @@
 # Chapitre 6 – Les pistes
 
 Dans MMA, une piste représente une partie musicale sous une des formes suivantes : 
-    - accords (Chord) : les accords sont joués
-    - basse (Bass) : les notes d'un instrument de basse (contrebasse, basse, hélicon)
-    - batterie (Drum) : batterie ou percussions
-    - mélodie (Melody) : notes de la mélodie)
-    - arpèges (Arpeggio) : accords sous la forme d'arpèges
-    - solo (Solo) : ornements solo
+- accords (Chord) : les accords sont joués
+- basse (Bass) : les notes d'un instrument de basse (contrebasse, basse, hélicon)
+- batterie (Drum) : batterie ou percussions
+- mélodie (Melody) : notes de la mélodie)
+- arpèges (Arpeggio) : accords sous la forme d'arpèges
+- solo (Solo) : ornements solo
     
 Cette forme musicale représente donc une composante d'un orchestre et peut être multiple. De plus nous devrons associer aux comosants voulus un instrument
 et chaque piste possède son propre instrument, son propre rythme et sa propre manière d'utiliser les accords du morceau.
