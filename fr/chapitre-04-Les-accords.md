@@ -170,17 +170,16 @@ track Piano
 
 Signification :
 
-    à la ligne 1 → accord C, joué pendant 2 temps
-
-    à la ligne 2 → accord F, joué 1 temps
-
-    à la ligne 3 → accord G, joué 1 temps
+- à la ligne 1 → accord C, joué pendant 2 temps
+- à la ligne 2 → accord F, joué 1 temps
+- à la ligne 3 → accord G, joué 1 temps
 
 Ce pattern (et cette notation) donne dans une mesure 4/4 :
-temps musical	son joué
-temps 0–2	C (blanche)
-temps 2–3	F (noire)
-temps 3–4	G (noire)
+
+- temps musical	son joué
+- temps 0–2	C (blanche)
+- temps 2–3	F (noire)
+- temps 3–4	G (noire)
 
 
 ## Rappel sur les lignes et les patterns
