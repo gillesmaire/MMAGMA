@@ -52,16 +52,55 @@ Chord Sequence {
 
 Cela signifie :
 
-    jouer quelque chose au temps 1
-
-    puis au temps 2
-
-    puis au temps 3
-
-    puis au temps 4
+- jouer quelque chose au temps 1
+- puis au temps 2
+- puis au temps 3
+- puis au temps 4
 
 Chaque événement dure ici 1 temps.
 
 
 ## Durée des notes et des accords
 
+Dans une Sequence, le deuxième nombre est la durée.
+
+Par exemple1 1,2,120 signifie :
+- on commence au temps 1 
+- la durée de la note est de 2 temps
+- la vélocité est de 120
+
+Dans une mesure à 4 temps, cela correspond à deux temps.
+
+
+## Blanche pui deux noires
+
+Voici un rythme fréquent dans une mesure 4/4 :
+- un accord pendant 2 temps
+- puis deux accords d'un temps chacun
+
+
+~~~mma
+Define HalfThenTwoQuartersSequence {
+    1 2 120;
+    3 1 100;
+    4 1 100;
+}
+
+
+Chord Sequence HalfThenTwoQuartersSequence
+~~~
+
+Avec les accords :
+
+1 C
+2 F
+3 G
+
+on obtient :
+
+
+| Temps	| Accord |
+|:-----:|:------:|
+|1-3	|C|
+|3-4|	F|
+|4-5|	G|
