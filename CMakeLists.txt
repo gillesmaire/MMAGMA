@@ -35,11 +35,16 @@ foreach(LANG ${LANGUAGES})
             get_filename_component(HTML_DIR "${HTML_FILE}" DIRECTORY)
 
             add_custom_command(
-                OUTPUT "${HTML_FILE}"
-                COMMAND ${CMAKE_COMMAND} -E make_directory "${HTML_DIR}"
-                COMMAND ${PANDOC_EXECUTABLE} "${MD}" -o "${HTML_FILE}" -V lang=${LANG}
-                DEPENDS "${MD}"
-                VERBATIM
+            OUTPUT "${HTML_FILE}"
+            COMMAND ${CMAKE_COMMAND} -E make_directory "${HTML_DIR}"
+            COMMAND ${PANDOC_EXECUTABLE} "${MD}"
+                    -o "${HTML_FILE}"
+                    -V lang=${LANG}
+                    -c "${CMAKE_SOURCE_DIR}/css/style.css"
+                    --self-contained
+                    --number-sections
+            DEPENDS "${MD}"
+            VERBATIM
             )
 
             list(APPEND ALL_HTML "${HTML_FILE}")
@@ -58,6 +63,7 @@ foreach(LANG ${LANGUAGES})
                         -o "${PDF_FILE}"
                         --pdf-engine=${PDF_ENGINE}
                         -V lang=${LANG}
+                        --number-sections
                 DEPENDS ${MD_FILES}
                 VERBATIM
             )
@@ -67,7 +73,20 @@ foreach(LANG ${LANGUAGES})
 
     endif()
 endforeach()
+# --- après avoir défini toutes les commandes HTML et PDF ---
+
+
+
 
 add_custom_target(makehtml DEPENDS ${ALL_HTML})
 add_custom_target(makepdf DEPENDS ${ALL_PDF})
 add_custom_target(makedoc DEPENDS ${ALL_HTML} ${ALL_PDF})
+add_custom_target(cleanall
+    COMMAND ${CMAKE_COMMAND} -E remove_directory "${CMAKE_SOURCE_DIR}/fr/html"
+    COMMAND ${CMAKE_COMMAND} -E remove_directory "${CMAKE_SOURCE_DIR}/fr/pdf"
+    COMMAND ${CMAKE_COMMAND} -E remove_directory "${CMAKE_SOURCE_DIR}/en/html"
+    COMMAND ${CMAKE_COMMAND} -E remove_directory "${CMAKE_SOURCE_DIR}/en/pdf"
+    COMMENT "Cleaning all generated HTML and PDF files"
+)
+
+

@@ -1,0 +1,65 @@
+/* Réinitialisation globale des compteurs */
+body {
+    counter-reset: h1counter;
+}
+
+/* H1 : titres principaux */
+h1 {
+    counter-reset: h2counter;
+    color: #2c3e50;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Numéro dans un carré rouge */
+h1::before {
+    counter-increment: h1counter;
+    content: counter(h1counter);
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    background-color: #c0392b;
+    color: white;
+    font-weight: bold;
+    margin-right: 0.5em;
+    border-radius: 0.3em;
+}
+
+/* H2 : sous-titres */
+h2 {
+    counter-reset: h3counter;
+    color: #34495e;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+}
+
+h2::before {
+    counter-increment: h2counter;
+    content: counter(h1counter) "." counter(h2counter);
+    display: inline-block;
+    min-width: 2.5em;
+    text-align: right;
+    background-color: #e74c3c;
+    color: white;
+    font-weight: bold;
+    margin-right: 0.5em;
+    border-radius: 0.2em;
+}
+
+/* H3 : titres de niveau 3 */
+h3::before {
+    counter-increment: h3counter;
+    content: counter(h1counter) "." counter(h2counter) "." counter(h3counter);
+    margin-right: 0.5em;
+    color: #e67e22;
+}
+
+/* Code blocks */
+pre, code {
+    background-color: #f0f4f8;
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+    font-family: monospace;
+}
