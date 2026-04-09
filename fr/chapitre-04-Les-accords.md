@@ -197,9 +197,9 @@ Dans MMA :
 
 Synthèse
 
-|-But musical-|- MMA notation possible -|
-|Une blanche	|pattern avec durée 2
-|Deux noires	|pattern avec deux segments de 1
+|-But musical -|- MMA notation possible -|
+|Une blanche	|pattern avec durée 2|
+|Deux noires	|pattern avec deux segments de 1|
 |Une blanche + deux noires	|pattern structuré (0–2, 2–3, 3–4) |
 
     
