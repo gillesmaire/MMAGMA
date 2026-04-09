@@ -71,7 +71,7 @@ Dans MMA :
     - la durée en valeurs fractionnaires (noires, croches…),
     - et éventuellement des accents/voicings.
 - Ces définitions de séquence se font dans les fichiers de groove
-- La ligne d’accord (1, 2, etc.) n’a pas de durée — elle fixe simplement quelle harmonie doit être utilisée au moment donné, mais c’est le pattern qui décide de la durée rythmique effective.
+- La ligne d’accord (1, 2, etc.) n’a pas de durée, elle fixe simplement quelle harmonie doit être utilisée au moment donné, mais c’est le pattern qui décide de la durée rythmique effective.
 
 
 ### Exemple 1 : une blanche
