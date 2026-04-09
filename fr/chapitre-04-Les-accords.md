@@ -61,7 +61,7 @@ Chaque piste lit la même notation, mais le son produit dépend de l’instrumen
 ##  Exemples rythmiques concrets
 
 
-### Principe de base
+### Principe de base
 
 Dans MMA :
 
