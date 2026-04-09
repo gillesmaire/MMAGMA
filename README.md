@@ -1,2 +1,13 @@
 # MMAGMA
+
 Musical MIDI Accompaniment book by Gilles Maire (MMA by GMA)
+
+The documentation is in Markdown format in french language
+
+
+To generate all the  documentations : 
+
+~~~bash
+cmake -S . -B build
+cmake --build build --target makedoc
+~~~

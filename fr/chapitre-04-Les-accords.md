@@ -4,7 +4,7 @@
 
 Dans MMA, les accords se notent **ligne par ligne**, avec le **numéro de mesure suivi des notes simultanées**.
 
-C'est ce que nous avions vu dans le [chapitre 03|Chapitre-03-premier-fichier-mma.md#Creation du fichier] 
+C'est ce que nous avions vu dans le (chapitre 03|Chapitre-03-premier-fichier-mma.md#Creation du fichier)
 
 Chaque ligne correspond à une mesure et nous pouvons avec sur chaque ligne : 
 - une seule note si elle dure toute la mesure

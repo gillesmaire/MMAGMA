@@ -31,8 +31,9 @@ Groove Metronome2-4
 
 
 - La commande Tempo 120 indique que le tempo est de 120 qui est la valeur par défaut. Cette ligne aurait pu être ommise mais nous pouvons également la laisser.
-- La commande Groove charge un style prédéfini qui est Métronome2-4, nous verrons que nous pourrons mettre ici quelques centaines de styles différents.
+- La commande Groove charge un style prédéfini qui est Métronome2-4, nous verrons que nous pourrons mettre ici quelques centaines de styles différents. Nous verrons aussi comment créer des fichiers Groove.
 - Les lignes suivantes décrivent les accords sur 4 mesures, sachant que chaque mesure ne comprendra qu'une ronde.
+- Chaque ligne doit démarrer par un index, c'est à dire le numéro de la mesure. 
 
 Nous aurions pu aussi choisir des accords sur une noire :
 
