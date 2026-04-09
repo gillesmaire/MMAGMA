@@ -202,8 +202,8 @@ Une séquence définie avec Define peut être réutilisée plusieurs fois.
 
 ~~~mma
 Define WaltzSequence {
-    1 1 120;
-    2 1 80;
+    1 1 120
+    2 1 80
     3 1 80
 }
 
@@ -226,3 +226,4 @@ La même structure rythmique est utilisée pour les accords et la basse.
 - Une ligne comme 2 D C utilise successivement deux accords à partir du temps 2.
 - Les séquences peuvent être nommées avec Define puis réutilisées.
 
+    
