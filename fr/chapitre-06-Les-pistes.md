@@ -4,16 +4,16 @@ Dans MMA, une piste représente une partie musicale sous une des formes suivante
 - accords (Chord) : les accords sont joués
 - basse (Bass) : les notes d'un instrument de basse (contrebasse, basse, hélicon)
 - batterie (Drum) : batterie ou percussions
-- mélodie (Melody) : notes de la mélodie)
+- mélodie (Melody) : notes de la mélodie
 - arpèges (Arpeggio) : accords sous la forme d'arpèges
 - solo (Solo) : ornements solo
     
-Cette forme musicale représente donc une composante d'un orchestre et peut être multiple. De plus nous devrons associer aux comosants voulus un instrument
+Cette forme musicale représente donc une composante d'un orchestre et peut être multiple. De plus nous devrons associer aux composants voulus un instrument
 et chaque piste possède son propre instrument, son propre rythme et sa propre manière d'utiliser les accords du morceau.
 
 Les noms des instruments correspondent aux instuments MIDI disponibles sur vote banque MIDI.
 
-# 6.1 Déclaration d'une piste
+# Déclaration d'une piste
 
 Une piste se définit par son type suivi éventuellement de réglages.
 
@@ -31,7 +31,27 @@ Ici :
 * la piste `Bass` utilise une basse électrique
 * la piste `Drum` utilise une batterie standard
 
-# 6.2 La piste Chord
+# Deux façons de configurer une piste 
+
+Une piste a plusieurs paramètres et chaque paramètre peut avoir plusieurs qualificateurs. 
+Par exemple le paramètre Arpeggio que vous verrons plus loin et qui consiste à jouer les accords en arpège peut avoir des paramètres comme Up ou Down pour jouer
+l'arpège de bas ou haut ou de haut en bas en plus d'autres paramètre comme **Voice** qui peut être **piano**, **guitar** ou autre
+
+On peut déclarer ces paramètres de façon globale ou sous forme répétitive 
+
+## Méthode globale 
+
+Begin Arpeggio
+    Voice Guitar1
+    Type Up
+End
+
+## Méthode répétitive 
+
+Arpeggio Voice Guitar1
+Arpeggio Type Up
+
+# La piste Chord
 
 La piste `Chord` joue les accords du morceau.
 
@@ -65,9 +85,24 @@ la piste jouera :
 
 La piste `Chord` est généralement utilisée pour le piano, la guitare ou les nappes.
 
-# 6.3 La piste Bass
 
-La piste `Bass` utilise automatiquement les accords pour produire une ligne de basse.
+Un certain nombre de paramètres peuvent agir sur la piste 
+
+- **Octave :** place les accords sur l'octave demandé. 3 assez grave, 4 médium, 5 aigu, 6 très aigu
+- **Volume :** change le niveau général de la piste. Il est exprimé en pourcentage 100 pour 100% 200 pour 200% etc...
+- **Strum :** décale légèrement les notes de l’accord pour simuler un balayage de guitare. 0 pas de décalage, 10 décalages de 10 tikcs, 5 15 : décalage aléatoire entre 5 et 15, -30 inverse le sens de balayage
+- **Direction :** sens du balayage quand Strum est utilisé, les valeurs peuvent être **Up** **Down** **Both** **Random**
+- **Invert :** change le renversement de l’accord.Pour un accord de trois notes comme C = C E G ,  Invert 0 : C E G (position normale),  Invert 1 : E G C (premier renversement),  Invert 2 : G C E (deuxième renversement).On peut aussi utiliser des valeurs négatives :  Invert -1 : G C E  Invert -2 : E G C. Les valeurs possibles dépendent du nombre de notes dans l’accord. Pour un accord à 4 notes comme C7 (C E G Bb), on peut utiliser jusqu’à Invert 3.
+- **Compress :** force toutes les notes de l’accord à rester dans une seule octave si Compress=1. Si la valeur est 1.2 l'accord est plus serré. Si la valeur est 1.5 il est plus élargi. Les valeurs sont généralement comprises entre 0.5 et 1.5
+- **Limit :** limite le nombre de notes jouées dans un accord.Limit 0 : pas de limite (comportement normal) Limit 1 : transforme en monophonie (une seule note à la fois) Limit 2 : maximum deux notes simultanées Limit 3, 4, etc. : limite le “voicing” des accords
+- **Voicing :** choisit automatiquement une disposition plus musicale des notes dans les accords. Peut prendre les valeur **close** pour des accords serrés, **open** pour ouvert, **Drop2** pour descendre la deuxième notre la plus hautre ou **Drop3** pour descendre la troisième note la plus haute ou **Random** pour une répartition aléatoires des notes  dans l'accord, **Fixed** basé sur la construction de base de l'accord,
+- **DupRoot :** ajoute une ou plusieurs copies de la fondamentale à d’autres octaves. Valeur 0 pas de duplication fondamentale,1 la fondamentale est doublée une fois, 
+2 la fondamentale est doublée 2 fois etc...
+**NoteSpan** : limite la plage des notes jouées. 1 durée normale, >1 notes plus longues, <1 notes plus courtes. O.4 est Stacato, 1.2 et Légato. Si Strum décale le départ de la note, NoteSpan délale sa durée. Ces deux paramètres utilisés ensemble donnent un effet très réaliste.
+
+# La piste Bass
+
+La piste `Bass` utilise **automatiquement** les accords pour produire une ligne de basse.
 
 ```mma
 Bass Voice FingeredBass
@@ -92,8 +127,13 @@ la basse jouera automatiquement :
 * la fondamentale de G au temps 3
 
 Selon le groove, MMA peut aussi utiliser la quinte ou d'autres notes de l'accord.
+Les paramètres de Bass sont : 
+* Ceux déjà explicités : Octave, Volume, Direction, Strum, Limit,NoteSpan, 
+* **Articulation :** qui peut être Staccato ou Legato
+* **OctaveShift :** délacage supplémentaire d'octave par exemple -1 ou 1 
+* **Sequence :** est une liste de bloc { note durée vélocité note durée vélocité ... } c'est à dire degré de l'accord, durée (1 pour noire), vélocité ou force (100)
 
-# 6.4 La piste Drum
+# La piste Drum
 
 La piste `Drum` ne dépend pas des accords. Elle joue uniquement un rythme.
 
@@ -134,7 +174,7 @@ Begin Drum-HiHat
 End
 ```
 
-# 6.5 La piste Arpeggio
+# La piste Arpeggio
 
 La piste `Arpeggio` joue les notes d'un accord les unes après les autres.
 
@@ -154,9 +194,20 @@ Avec l'accord `C`, la piste peut jouer successivement :
 * sol
 * do
 
-L'ordre dépend du réglage de la piste.
+L'ordre dépend du réglage de la piste par le paramètre Type qui peut prendre les valeur 
 
-# 6.6 La piste Melody
+- **up :** les notes sont jouées de la plus grave à la plus aiguë
+- **down :** les notes sont jouées de la plus aiguë à la plus grave
+- **updown :** va de la grave à l’aiguë puis revient à la grave
+- **random :** l’ordre est aléatoire
+
+
+Le paramètre **Octave** permet de répéter l'arpège sur plusiers octaves
+Le paramètre **Repeat** indique combien de fois répéter l'arpège.
+Le paramètre **Velocity** peut aller de 0 pour silence à 127 pour volume maximum
+
+
+# La piste Melody
 
 La piste `Melody` ne suit pas automatiquement les accords. Les notes doivent être écrites explicitement.
 
@@ -186,7 +237,7 @@ Melody
 
 L'accord reste C pendant toute la mesure tandis que la mélodie change.
 
-# 6.7 La piste Solo
+# La piste Solo
 
 La piste `Solo` ressemble à `Melody`, mais elle est destinée à une improvisation ou à une ligne ponctuelle.
 
@@ -202,7 +253,7 @@ Solo
 
 Elle peut être utilisée seulement dans certaines parties du morceau.
 
-# 6.8 Plusieurs pistes en même temps
+# Plusieurs pistes en même temps
 
 Toutes les pistes peuvent fonctionner simultanément.
 
@@ -224,7 +275,7 @@ Résultat :
 * la basse joue au temps 1 puis au temps 3
 * la batterie joue la grosse caisse au temps 1 puis au temps 3
 
-# 6.9 Nommer des pistes
+# Nommer des pistes
 
 On peut créer plusieurs pistes d'un même type en leur donnant un nom.
 
@@ -242,7 +293,7 @@ End
 
 Chaque piste peut ensuite être activée séparément.
 
-# 6.10 Résumé
+# Résumé
 
 * `Chord` joue les accords.
 * `Bass` crée une ligne de basse à partir des accords.
