@@ -41,15 +41,19 @@ On peut déclarer ces paramètres de façon globale ou sous forme répétitive
 
 ## Méthode globale 
 
+~~~mma
 Begin Arpeggio
     Voice Guitar1
     Type Up
 End
+~~~
 
 ## Méthode répétitive 
 
+~~~mma
 Arpeggio Voice Guitar1
 Arpeggio Type Up
+~~~
 
 # La piste Chord
 
