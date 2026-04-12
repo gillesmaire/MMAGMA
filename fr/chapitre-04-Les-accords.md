@@ -1,4 +1,4 @@
-# Les accords
+# Chapitre 4 - Les accords
 
 ## Notation des accords dans MMA
 

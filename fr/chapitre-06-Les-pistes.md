@@ -1,5 +1,7 @@
 # Chapitre 6 – Les pistes
 
+## Présentation 
+
 Dans MMA, une piste représente une partie musicale sous une des formes suivantes : 
 - accords (Chord) : les accords sont joués
 - basse (Bass) : les notes d'un instrument de basse (contrebasse, basse, hélicon)
@@ -13,7 +15,7 @@ et chaque piste possède son propre instrument, son propre rythme et sa propre m
 
 Les noms des instruments correspondent aux instuments MIDI disponibles sur vote banque MIDI.
 
-# Déclaration d'une piste
+## Déclaration d'une piste
 
 Une piste se définit par son type suivi éventuellement de réglages.
 
@@ -31,7 +33,7 @@ Ici :
 * la piste `Bass` utilise une basse électrique
 * la piste `Drum` utilise une batterie standard
 
-# Deux façons de configurer une piste 
+## Deux façons de configurer une piste 
 
 Une piste a plusieurs paramètres et chaque paramètre peut avoir plusieurs qualificateurs. 
 Par exemple le paramètre Arpeggio que vous verrons plus loin et qui consiste à jouer les accords en arpège peut avoir des paramètres comme Up ou Down pour jouer
@@ -39,7 +41,7 @@ l'arpège de bas ou haut ou de haut en bas en plus d'autres paramètre comme **V
 
 On peut déclarer ces paramètres de façon globale ou sous forme répétitive 
 
-## Méthode globale 
+### Méthode globale 
 
 ~~~mma
 Begin Arpeggio
@@ -48,14 +50,14 @@ Begin Arpeggio
 End
 ~~~
 
-## Méthode répétitive 
+### Méthode répétitive 
 
 ~~~mma
 Arpeggio Voice Guitar1
 Arpeggio Type Up
 ~~~
 
-# La piste Chord
+## La piste Chord
 
 La piste `Chord` joue les accords du morceau.
 
@@ -104,7 +106,7 @@ Un certain nombre de paramètres peuvent agir sur la piste
 2 la fondamentale est doublée 2 fois etc...
 **NoteSpan** : limite la plage des notes jouées. 1 durée normale, >1 notes plus longues, <1 notes plus courtes. O.4 est Stacato, 1.2 et Légato. Si Strum décale le départ de la note, NoteSpan délale sa durée. Ces deux paramètres utilisés ensemble donnent un effet très réaliste.
 
-# La piste Bass
+## La piste Bass
 
 La piste `Bass` utilise **automatiquement** les accords pour produire une ligne de basse.
 
@@ -137,7 +139,9 @@ Les paramètres de Bass sont :
 * **OctaveShift :** délacage supplémentaire d'octave par exemple -1 ou 1 
 * **Sequence :** est une liste de bloc { note durée vélocité note durée vélocité ... } c'est à dire degré de l'accord, durée (1 pour noire), vélocité ou force (100)
 
-# La piste Drum
+## La piste Drum
+
+### Les notations théoriques
 
 La piste `Drum` ne dépend pas des accords. Elle joue uniquement un rythme.
 
@@ -178,7 +182,136 @@ Begin Drum-HiHat
 End
 ```
 
-# La piste Arpeggio
+- **Tone** peut prendre les valeurs  suivantes : 
+    - pour les caisses claires : AcousticBassDrum (35), BassDrum1  (36), SideStick (37), AcousticSnare  (38), HandClap  (39) ElectricSnare  (40)
+    - pour les toms : LowFloorTom (41) ClosedHiHat (42) HighFloorTom  (43) PedalHiHat  (44) LowTom (45) OpenHiHat (46) LowMidTom (47)
+    - pour les toms + cymbales : HiMidTom (48) CrashCymbal1 (49) HighTom (50) RideCymbal1 (51) ChineseCymbal (52) RideBell (53) Tambourine  (54)
+    - pour les cymbales et percusions : SplashCymbal (55) Cowbell  (56) CrashCymbal2  (57) Vibraslap  (58) RideCymbal2  (59) hiBongo (60) LowBongo (61)
+    - pour les Congas et timbales : MuteHiConga (62) OpenHiConga  (63) LowConga  (64) HighTimbale  (65) LowTimbale (66) HighAgogo  (67) LowAgogo  (68)
+    - pour les percussions diverses : Cabasa  (69) Maracas (70) ShortWhistle (71) LongWhistle  (72) ShortGuiro (73) LongGuiro  (74) Claves (75)
+    - pour les bois et les cloches : HiWoodBlock  (76) LowWoodBlock  (77) MuteCuica  (78) OpenCuica  (79) MuteTriangle  (80) OpenTriangle (81)
+    
+- MMA acceptes les variantes de noms suivantes :  
+    - KickDrum1 = BassDrum1 
+    - SnareDrum1 = AcousticSnare
+    - Snare =  38
+    - Kick = 36
+    - HHClosed = ClosedHiHat
+
+- On peut bien sûr utiliser la note par son numéro et par un numéro non répertorié ici mais présent dans la banque MIDI utilisée
+- On peut mélanger les couches comme : 
+    - Tone AcousticSnare ElectricSnare
+    - Tone ClosedHiHat OpenHiHat
+    
+### Les adaptations pratiques 
+
+#### Drumkit MMA réaliste (funk / rock groovy)
+
+- Kick : groove syncopé
+    - Snare :
+        - 2 & 4 = accents
+        - ghost notes entre les temps
+    - Hi-hat : croches + variations
+
+- Codage : 
+
+~~~mma 
+Begin Drum-Kick
+    Tone BassDrum1
+    Sequence { 110 0 0 80  0 0 100 0 }
+    RTiming 5
+End
+
+Begin Drum-Snare
+    Tone AcousticSnare
+
+    # 2 et 4 = accents forts
+    # ghost notes = vélocité très faible
+    Sequence {
+        0 20 0 0   110 15 0 10
+    }
+
+    RVolume 10
+    RTiming 8
+    Articulate 70
+End
+
+Begin Drum-HiHat
+    Tone ClosedHiHat OpenHiHat
+
+    # Hi-hat constant + ouverture légère fin de mesure
+    Sequence {
+        70 60 75 65   70 60 90 40
+    }
+
+    RVolume 15
+    RTiming 5
+End
+~~~
+
+
+### Explications : 
+
+
+#### Snare réaliste
+
+~~~mma
+ Sequence {
+        0 20 0 0   110 15 0 10
+    }
+
+~~~
+
+|    Position    |        Type      |
+|:--------------:|:----------------:|
+|2e double croche| ghost note (~20) |
+|  temps 2       |   ACCENT (110)   |
+|  après 2       |   ghost (~15)    |
+|    fin         |     ghost (~10)  |
+
+#### Kick humain
+
+~~~mma
+Sequence { 110 0 0 80  0 0 100 0 }
+~~~
+
+- pas parfaitement symétrique
+- variation de vélocité
+- groove légèrement funk
+
+
+#### Hi-hat (vie humaine)
+
+~~~mma
+Sequence { 70 60 75 65   70 60 90 40 }
+~~~
+
+
+ - jamais même vélocité
+ - accent léger
+ - ouverture (90 à 40)
+
+#### Paramètres eseentiels 
+
+~~~mma
+RTiming 5–10
+RVolume 10–15
+~~~
+
+- évite l'effet machine 5-10
+- stimule l'imprécision humaine
+
+### Synamique réaliste 
+
+|Type de notes| Vélocité typique|
+|:-----------:|:---------------:|
+| Accent snare|	100–120         |
+| Ghost note  | 10-30           |
+| Hi-hat      | 50-90           |
+
+
+ 
+## La piste Arpeggio
 
 La piste `Arpeggio` joue les notes d'un accord les unes après les autres.
 
@@ -200,18 +333,31 @@ Avec l'accord `C`, la piste peut jouer successivement :
 
 L'ordre dépend du réglage de la piste par le paramètre Type qui peut prendre les valeur 
 
-- **up :** les notes sont jouées de la plus grave à la plus aiguë
-- **down :** les notes sont jouées de la plus aiguë à la plus grave
-- **updown :** va de la grave à l’aiguë puis revient à la grave
+- **Up :** les notes sont jouées de la plus grave à la plus aiguë
+- **Down :** les notes sont jouées de la plus aiguë à la plus grave
+- **UpDown :** va de la grave à l’aigüe puis revient à la grave
+- **DownUp :**va de l'aigüe à la grave puis revient à l'aigüe
 - **random :** l’ordre est aléatoire
+- **chord:** tout est joué en même temps
 
 
-Le paramètre **Octave** permet de répéter l'arpège sur plusiers octaves
-Le paramètre **Repeat** indique combien de fois répéter l'arpège.
-Le paramètre **Velocity** peut aller de 0 pour silence à 127 pour volume maximum
+Les paramètres suivant sont utilisés :
+- **Octave :** permet de répéter l'arpège sur plusiers octaves
+- **Repeat :** indique combien de fois répéter l'arpège.
+- **Velocity :** peut aller de 0 pour silence à 127 pour volume maximum
+- **Duration :** exprime la durée par exemple 120 
+- **Articulate :** exprime l'articulation par exemple 80
+- **Delay :** pour le délai par exemple 10
+- **RTiming :** par exemple 5
+- **Accent :** par exemple 1 3 
+- **Rvolume :** par exemple 10
+- **RPitch :**  par exemple 5
+- **Rduration :**  par exemple 10
+- **Range :** par exemple pour deux octave 2
+- **Invert :** pour le renversement d'accord par exemple 1 
 
 
-# La piste Melody
+## La piste Melody
 
 La piste `Melody` ne suit pas automatiquement les accords. Les notes doivent être écrites explicitement.
 
@@ -241,9 +387,24 @@ Melody
 
 L'accord reste C pendant toute la mesure tandis que la mélodie change.
 
-# La piste Solo
+- **Cresc :** pour le crescendo par exemple 60 100
+- **Delay :** pour un délais par exemple 10
+- **Swing :** avec une valeur par exemple 60
 
-La piste `Solo` ressemble à `Melody`, mais elle est destinée à une improvisation ou à une ligne ponctuelle.
+## La piste Solo
+
+- La piste `Solo` ressemble à `Melody`, mais elle est destinée à une improvisation ou à une ligne ponctuelle.
+- Le signe + éléve d'un octave
+- Le signe - descend d'un octave
+- Les signes b et # sont les alitérations dièse et bémol
+- le signe ~ effectue une liaison
+- La durée est exprimée par 
+    - 1 pour la ronde
+    - 2 pour la blanche
+    - 4 pour la noire
+    - 8 pour la croche 
+- Les accords s'exécutent entre { } : {c e g}
+
 
 ```mma
 Solo Voice AltoSax
@@ -257,7 +418,7 @@ Solo
 
 Elle peut être utilisée seulement dans certaines parties du morceau.
 
-# Plusieurs pistes en même temps
+## Plusieurs pistes en même temps
 
 Toutes les pistes peuvent fonctionner simultanément.
 
@@ -279,7 +440,7 @@ Résultat :
 * la basse joue au temps 1 puis au temps 3
 * la batterie joue la grosse caisse au temps 1 puis au temps 3
 
-# Nommer des pistes
+## Nommer des pistes
 
 On peut créer plusieurs pistes d'un même type en leur donnant un nom.
 
@@ -297,7 +458,7 @@ End
 
 Chaque piste peut ensuite être activée séparément.
 
-# Résumé
+## Résumé
 
 * `Chord` joue les accords.
 * `Bass` crée une ligne de basse à partir des accords.

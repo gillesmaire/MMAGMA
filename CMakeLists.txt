@@ -1,92 +1,21 @@
-cmake_minimum_required(VERSION 3.16)
-project(makedoc NONE)
+cmake_minimum_required(VERSION 3.10)
+project(MMA_BOOK)
 
-find_program(PANDOC_EXECUTABLE pandoc REQUIRED)
-find_program(PDF_ENGINE tectonic)
-if(NOT PDF_ENGINE)
-    find_program(PDF_ENGINE xelatex)
-endif()
-
-set(LANGUAGES fr en)
-
-set(ALL_HTML)
-set(ALL_PDF)
-
-foreach(LANG ${LANGUAGES})
-
-    set(SRC_ROOT  "${CMAKE_SOURCE_DIR}/${LANG}")
-    set(HTML_ROOT "${SRC_ROOT}/html")
-    set(PDF_ROOT  "${SRC_ROOT}/pdf")
-
-    if(EXISTS "${SRC_ROOT}")
-
-        file(GLOB_RECURSE MD_FILES CONFIGURE_DEPENDS "${SRC_ROOT}/*.md")
-
-        # Filtrer pour ne pas inclure les fichiers déjà générés
-        list(FILTER MD_FILES EXCLUDE REGEX "/html/")
-        list(FILTER MD_FILES EXCLUDE REGEX "/pdf/")
-
-        # -------- HTML : un fichier par MD ----------
-        foreach(MD ${MD_FILES})
-            file(RELATIVE_PATH REL_PATH "${SRC_ROOT}" "${MD}")
-
-            set(HTML_FILE "${HTML_ROOT}/${REL_PATH}")
-            string(REGEX REPLACE "\\.md$" ".html" HTML_FILE "${HTML_FILE}")
-            get_filename_component(HTML_DIR "${HTML_FILE}" DIRECTORY)
-
-            add_custom_command(
-            OUTPUT "${HTML_FILE}"
-            COMMAND ${CMAKE_COMMAND} -E make_directory "${HTML_DIR}"
-            COMMAND ${PANDOC_EXECUTABLE} "${MD}"
-                    -o "${HTML_FILE}"
-                    -V lang=${LANG}
-                    -c "${CMAKE_SOURCE_DIR}/css/style.css"
-                    --self-contained
-                    --number-sections
-            DEPENDS "${MD}"
-            VERBATIM
-            )
-
-            list(APPEND ALL_HTML "${HTML_FILE}")
-        endforeach()
-
-        # -------- PDF : un PDF unique par langue ----------
-        if(PDF_ENGINE AND MD_FILES)
-            set(PDF_FILE "${PDF_ROOT}/${LANG}.pdf")
-            get_filename_component(PDF_DIR "${PDF_FILE}" DIRECTORY)
-
-            add_custom_command(
-                OUTPUT "${PDF_FILE}"
-                COMMAND ${CMAKE_COMMAND} -E make_directory "${PDF_DIR}"
-                COMMAND ${PANDOC_EXECUTABLE}
-                        ${MD_FILES}
-                        -o "${PDF_FILE}"
-                        --pdf-engine=${PDF_ENGINE}
-                        -V lang=${LANG}
-                        --number-sections
-                DEPENDS ${MD_FILES}
-                VERBATIM
-            )
-
-            list(APPEND ALL_PDF "${PDF_FILE}")
-        endif()
-
-    endif()
-endforeach()
-# --- après avoir défini toutes les commandes HTML et PDF ---
-
-
-
-
-add_custom_target(makehtml DEPENDS ${ALL_HTML})
-add_custom_target(makepdf DEPENDS ${ALL_PDF})
-add_custom_target(makedoc DEPENDS ${ALL_HTML} ${ALL_PDF})
-add_custom_target(cleanall
-    COMMAND ${CMAKE_COMMAND} -E remove_directory "${CMAKE_SOURCE_DIR}/fr/html"
-    COMMAND ${CMAKE_COMMAND} -E remove_directory "${CMAKE_SOURCE_DIR}/fr/pdf"
-    COMMAND ${CMAKE_COMMAND} -E remove_directory "${CMAKE_SOURCE_DIR}/en/html"
-    COMMAND ${CMAKE_COMMAND} -E remove_directory "${CMAKE_SOURCE_DIR}/en/pdf"
-    COMMENT "Cleaning all generated HTML and PDF files"
+set(SOURCES
+    fr/chapitre-01-introduction.md
+    fr/table-des-matieres.md
+    fr/chapitre-02-installation.md
+    fr/chapitre-03-premier-fichier-mma.md
+    fr/chapitre-04-Les-accords.md
+    fr/chapitre-05-Le-rythme.md
+    fr/chapitre-06-Les-pistes.md
 )
 
-
+add_custom_target(makedoc ALL
+    COMMAND pandoc
+        ${SOURCES}
+        -o fr.pdf
+        --pdf-engine=xelatex
+        --toc
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+)

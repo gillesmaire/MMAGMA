@@ -1,7 +1,3 @@
-# MMAGMA
-
-> MMA par Gilles Maire
-
 ## Table des matières
 
 1. [Introduction à MMA](chapitre-01-introduction.md)
