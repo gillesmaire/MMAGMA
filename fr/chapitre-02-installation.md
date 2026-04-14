@@ -43,3 +43,10 @@ Vous devriez voir la version installée, par exemple 21.09.
     Warning: PLUGIN '/usr/share/mma/plugins' does not exist.
 ~~~
 - Si MMA ne se lance pas, vérifiez que le chemin est correctement configuré et que la version correspond à votre système d'exploitation.
+
+## Les fichiers utiles de MMA
+
+# Sous Linux via les sources 
+
+- Le répertoire /usr/local/share/mma contient les fichiers utiles à MMA
+    - docs : une documentation 

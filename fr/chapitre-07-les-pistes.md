@@ -3,6 +3,7 @@
 ## Présentation 
 
 Dans MMA, une piste représente une partie musicale sous une des formes suivantes : 
+
 - accords (Chord) : les accords sont joués
 - basse (Bass) : les notes d'un instrument de basse (contrebasse, basse, hélicon)
 - batterie (Drum) : batterie ou percussions
