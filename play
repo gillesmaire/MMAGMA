@@ -1,0 +1,5 @@
+# !/bin/sh
+
+mma $1.mma
+
+echo fluidsynth -a alsa -o audio.alsa.device=plugw:2 -ni /usr/share/sounds/sf2/FluidR3_GM.sf2 $1.mid
