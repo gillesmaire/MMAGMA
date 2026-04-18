@@ -1,4 +1,5 @@
 #!/bin/sh
+rm  -f fr/MMAGMA-fr.pdf fr/MMAGMA-fr.epub fr/html/*
 
 rm -rf build
 cmake -S . -B build

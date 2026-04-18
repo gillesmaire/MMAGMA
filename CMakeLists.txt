@@ -12,14 +12,20 @@ file(MAKE_DIRECTORY ${HTML_DIR})
 # =========================================================
 # Chapitres Markdown
 # =========================================================
-file(GLOB CHAPTERS ${SRC_DIR}/chapitre-*.md)
-list(SORT CHAPTERS)
+set (CHAPTERS ${SRC_DIR}/introduction.md
+              ${SRC_DIR}/installation.md
+              ${SRC_DIR}/premier-fichier-mma.md
+              ${SRC_DIR}/les-options-de-mma.md
+              ${SRC_DIR}/les-pistes-et-les-canaux.md
+              ${SRC_DIR}/les-accords.md
+              ${SRC_DIR}/le-rythme.md
+              ${SRC_DIR}/les-grooves.md
+              ${SRC_DIR}/les-pistes.md )
 
 # =========================================================
 # 1. HTML par chapitre
 # =========================================================
 set(HTML_FILES)
-
 foreach(CHAP ${CHAPTERS})
     get_filename_component(NAME ${CHAP} NAME_WE)
     set(OUT_FILE ${HTML_DIR}/${NAME}.html)
@@ -81,6 +87,14 @@ add_custom_command(
     COMMAND pandoc
         ${CHAPTERS}
         --pdf-engine=xelatex
+        --number-sections
+        --toc
+	-M title="MMAGMA"
+        -M author="Gilles Maire"
+        -M date="2026"
+   	    -V documentclass=book
+   	    -V lang=fr
+        -V classoption=openright
         -o ${PDF_FILE}
     DEPENDS ${CHAPTERS}
     VERBATIM

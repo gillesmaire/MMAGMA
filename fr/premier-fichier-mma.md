@@ -1,4 +1,4 @@
-# Chapitre 3 – Premier fichier MMA
+# Premier fichier MMA
 
 ## Objectif
 
@@ -13,6 +13,17 @@ Par exemple :
 - sous macOS : TextEdit en mode texte.
 
 Le fichier devra porter l'extension `.mma`.
+
+Remarques : 
+
+- Le fichier peut contenir des tabulations ou plusieurs caractères blancs consécutifs qui seront compris comme un seul espace.
+- Les lignes vides sont ignorées
+- On peut utiliser des commentaires :
+    - Soit sur plusieurs lignes en encadrant par des commentaires de début /* et de fin */
+    - Soit sur une seule ligne en par les caractères //
+- Les mots clés peuvent être entrés en majuscules ou en minuscules ou même dans un mélange de minuscules et de majuscules
+- True est équivalent 1 ou ON
+- False est équivalent à 0 ou  OFF
 
 ## Création du fichier
 
@@ -31,9 +42,9 @@ Groove Metronome2-4
 
 
 - La commande Tempo 120 indique que le tempo est de 120 qui est la valeur par défaut. Cette ligne aurait pu être ommise mais nous pouvons également la laisser.
-- La commande Groove charge un style prédéfini qui est Métronome2-4, nous verrons que nous pourrons mettre ici quelques centaines de styles différents. Nous verrons aussi comment créer des fichiers Groove.
+- La commande Groove charge un style prédéfini qui est Métronome2-4, nous verrons que nous pourrons mettre ici beaucoup de styles différents. 
 - Les lignes suivantes décrivent les accords sur 4 mesures, sachant que chaque mesure ne comprendra qu'une ronde.
-- Chaque ligne doit démarrer par un index, c'est à dire le numéro de la mesure. 
+- Chaque ligne peut démarrer par un index, c'est à dire le numéro de la mesure, mais ce numéro d'index peut être omis. Il est utile que pour ne pas avoir à compter les mesures dans le fichier d'édition.
 
 Nous aurions pu aussi choisir des accords sur une noire :
 

@@ -1,4 +1,4 @@
-# Chapitre 5 - Le rythme 
+# Le rythme 
 
 
 ## Présentation 

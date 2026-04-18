@@ -1,4 +1,4 @@
-# Chapitre 6 - Les grooves
+# Les grooves
 
 ## Définition d'un groove 
 
@@ -68,9 +68,28 @@ hiphop teamtechno
 
 ## Yamaha
 
-jazzbasie jazzbossa jazzbouncy jazzcountry jazzGrtrio jazzswing jazztrio jazzwaltz mambo quando-g.s280 salsa1 salsa2 western w-rock
+jazzbasie jazzbossa jazzbouncy jazzcountry vi  jazzswing jazztrio jazzwaltz mambo quando-g.s280 salsa1 salsa2 western w-rock
 
 ## Zoom 
 
 afro ambient bald34 bald beat16 beat8 blues34 blues68 blues bossa cntry count country dance dnb ending funk fus16 fusion hiphop house hrk intro jazz04 jazz latin mide mtl pop punk reggae rnb rock34 rock samba shuffle ska techno thr trip
+
+## Comment tester les grooves 
+
+La commande play à la racine de MMAGMA fonctionne sous Linux uniquement, elle permet  :
+
+- D'écouter le fichier.mma par la syntaxe 
+
+~~~bash
+./play fichier
+~~~~
+
+- On note qu'il ne faut pas adjoindre l'extension mma au fichier
+- Le Groove sera le dernier utilisé si aucun paramètre de groove n'est donné
+- Si on ajoute un paramètre de groove ce paramètre viendra remplacer le paramètre de groove par défaut : 
+
+~~~bash
+/§play fichier mambo
+
+
 

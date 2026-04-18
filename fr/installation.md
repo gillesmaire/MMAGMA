@@ -1,4 +1,4 @@
-# Chapitre 2 – Installation de MMA
+# Installation de MMA
 
 ## Installation sur Linux
 
@@ -10,15 +10,13 @@ sudo apt install mma
 
 ## Installation sur Windows
 
-    Téléchargez l'installateur depuis le site officiel de MMA.
-
-    Lancez le programme d'installation et suivez les instructions.
-
-    Assurez-vous que le chemin d'installation est ajouté à la variable d'environnement PATH pour pouvoir lancer MMA depuis la ligne de commande.
+- Téléchargez l'installateur depuis le site officiel de MMA.
+- Lancez le programme d'installation et suivez les instructions.
+- Assurez-vous que le chemin d'installation est ajouté à la variable d'environnement PATH pour pouvoir lancer MMA depuis la ligne de commande.
 
 ## Installation sur macOS
 
-    Téléchargez le fichier DMG ou utilisez Homebrew si disponible :
+Téléchargez le fichier DMG ou utilisez Homebrew si disponible :
 
 ~~~bash
 brew install mma
@@ -46,7 +44,7 @@ Vous devriez voir la version installée, par exemple 21.09.
 
 ## Les fichiers utiles de MMA
 
-# Sous Linux via les sources 
+### Sous Linux via les sources 
 
 - Le répertoire /usr/local/share/mma contient les fichiers utiles à MMA
     - docs : une documentation 

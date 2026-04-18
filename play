@@ -1,5 +1,11 @@
 # !/bin/sh
 
-mma $1.mma
 
-echo fluidsynth -a alsa -o audio.alsa.device=plugw:2 -ni /usr/share/sounds/sf2/FluidR3_GM.sf2 $1.mid
+if [ "x$2" != "x" ] ; then
+    groove=`grep Groove  $1.mma | cut -f2 -d' '`
+    sed -i "s/Groove $groove/Groove $2/" $1.mma
+fi
+
+
+mma $1.mma
+fluidsynth -a alsa -o audio.alsa.device=plughw:2 -ni /usr/share/sounds/sf2/FluidR3_GM.sf2 $1.mid

@@ -1,22 +1,41 @@
-# Chapitre 6 – Les pistes
+# Les pistes
 
 ## Présentation 
 
 Dans MMA, une piste représente une partie musicale sous une des formes suivantes : 
 
-- accords (Chord) : les accords sont joués
-- basse (Bass) : les notes d'un instrument de basse (contrebasse, basse, hélicon)
-- batterie (Drum) : batterie ou percussions
-- mélodie (Melody) : notes de la mélodie
-- arpèges (Arpeggio) : accords sous la forme d'arpèges
-- solo (Solo) : ornements solo
-    
-Cette forme musicale représente donc une composante d'un orchestre et peut être multiple. De plus nous devrons associer aux composants voulus un instrument
+- batterie (Drum) : batterie ou percussions qui en général en MIDI sont allouées au canal MIDI 10
+- basse (Bass) : les notes d'un instrument de basse (contrebasse, basse, hélicon) souvent la fondamentale.
+- basse walk (walk)  : les notes de la basse avancent note par note généralement sur chaque temps en reliant les accords entre eux
+- accords (Chord) : les accords sont joués par une justaposition de notes
+- arpèges (Arpeggio) : accords sous joués en arpèges
+- échelle (Scale) :  motifs mélodiques construits à partir de la gamme associée à l’accord, généralement de façon répétitive et rythmique.
+- médiator (Plectrum) : motif de l'accord joué notre par note comme un coup de médiator
+- mélodie (Melody) : notes de la mélodie que l'on fournit note par note
+- mélodie (Automatic Melody) : les notes sont trouvées par MMA de façon automatique.
+- solo (Solo) : ornements solo 
+
+
+Cette forme musicale représente donc une composante d'un orchestre et peut être multiple. De plus nous devrons associer aux composant
+voulus un instrument
 et chaque piste possède son propre instrument, son propre rythme et sa propre manière d'utiliser les accords du morceau.
 
 Les noms des instruments correspondent aux instuments MIDI disponibles sur vote banque MIDI.
 
-## Déclaration d'une piste
+
+## Les silences
+
+On peut génére un silence sur une piste de plusieurs façons :
+- **OFF :** supprime la sortie sur toute la piste. Par exemple Bass Off
+- **Seqence :** indique ce que joue la piste à chaque mesure. Par exemple Bass Sequence A B C D ( Mesure 1 A, Mesure 2 B etc ). On peut 
+ainsi programmer un silence par la lettre z sur une mesure  par exemple sur la troisième par : Bass Seq A B z D
+- On peut supprimer une séquence par SEQCLEAR : Drum SEQCLEAR
+- Désactiver un canal MIDI en ajoutant le Canal 0: Arpeggio-1 Channel 0
+- On peut supprimer le son sur une piste entière en lançant mma avec l'ption -T qui spécifie les pistes sur lesquelles il faut jouer
+
+
+
+## Défintion des pistes 
 
 Une piste se définit par son type suivi éventuellement de réglages.
 
