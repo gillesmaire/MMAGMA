@@ -4,7 +4,7 @@
 
 ## Présentation 
 
-Nous avons utilisé la comande **mma** avec la syntaxe :
+Nous avons utilisé la comande **mma ** avec la syntaxe :
 
 ~~~bash
 mma fichier.md
