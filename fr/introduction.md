@@ -76,7 +76,8 @@ play Court
 play Court mambo
 ~~~
 
-### Le git de la  présente documentation
+### Où trouver la présente documentation
+
 
 Vous pouvez retrouver la dernière version de ce document sur gitHub à l'adresse https://github.com/gillesmaire/MMAGMA
 

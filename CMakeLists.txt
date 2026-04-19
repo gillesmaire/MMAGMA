@@ -89,9 +89,9 @@ add_custom_command(
         --pdf-engine=xelatex
         --number-sections
         --toc
-	-M title="MMAGMA"
-        -M author="Gilles Maire"
-        -M date="2026"
+	-M title=MMAGMA 
+        -M author=Gilles\ Maire
+        -M date=2026
    	    -V documentclass=book
    	    -V lang=fr
         -V classoption=openright
