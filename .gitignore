@@ -1,5 +1,5 @@
 CMakeCache.txt
-*.swp
+*-swp
 *.pdf
 *.tex
 *.epub

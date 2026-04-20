@@ -111,7 +111,8 @@ Ici nous voyons que nous avons 3 cartes son :
 Nous pouvons lancer fluidsynth en mode alsa par la commande 
 
 ~~~bash
-fluidsynth -a alsa -o audio.alsa.device=plughw:2 -ni /usr/share/sounds/sf2/FluidR3_GM.sf2 example0.mid
+fluidsynth -a alsa -o audio.alsa.device=plughw:2 -ni /usr/share/sounds/sf2/FluidR3_GM.sf2 
+           example0.mid
 ~~~
 
 Les arguments sont les suivants : 

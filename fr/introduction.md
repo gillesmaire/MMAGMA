@@ -41,8 +41,10 @@ J'ai entendu parler de MMM, un  logiciel très puissant, qui a bénéficie d'une
 
 ## Les ressources MMA
 
-- La ressources en langue anglaise est disponible à l'adresse https://www.mellowood.ca/mma/online-docs/html/mma.html
-- La documentation de référence en langue anglaise  est disponible à l'adresse  https://www.mellowood.ca/mma/online-docs/html/ref/mma.html
+- La ressources en langue anglaise est disponible à l'adresse :
+    - https://www.mellowood.ca/mma/online-docs/html/mma.html
+- La documentation de référence en langue anglaise  est disponible à l'adresse :
+    - https://www.mellowood.ca/mma/online-docs/html/ref/mma.html
 
 
 ## La documentation MMAGMA
