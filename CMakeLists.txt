@@ -17,10 +17,12 @@ set (CHAPTERS ${SRC_DIR}/introduction.md
               ${SRC_DIR}/vocabulaire.md
               ${SRC_DIR}/premier-fichier-mma.md
               ${SRC_DIR}/les-sequences.md
+              ${SRC_DIR}/utilisation-des-grooves.md
+              ${SRC_DIR}/les-riffs.md
+              ${SRC_DIR}/les-boucles.md
               ${SRC_DIR}/les-pistes.md
               ${SRC_DIR}/les-accords.md
               ${SRC_DIR}/le-rythme.md
-              ${SRC_DIR}/les-grooves.md
               ${SRC_DIR}/les-options-de-mma.md
               )
 

@@ -3,7 +3,7 @@
 ## Présentation 
 
 Les pattern alignés les uns à coté des autres est une solution assez lourde qui peut être 
-optimisés par l'emploi de Sequence. Une séquence est une suite de motifs décrivant une séquence musicale sur plusieurs mesures.
+optimisée par l'emploi de Sequence. Une séquence est une suite de motifs décrivant une séquence musicale sur plusieurs mesures.
 
 On note la séquence par une syntaxe du style :
 
@@ -27,7 +27,7 @@ Arpeggio Sequence { 1 1 100 * 8 } { 1 1 100 * 8 }
 ~~~
 
 
-## Répétition 
+## Répétitions 
 
 La notation 
 
@@ -42,7 +42,23 @@ le symbole / ce qui donne
 Bass Sequence  Bass1 / Bass2 Bass1
 ~~~ 
 
+La deuxième notation est basée sur un modèle appelé en ligne avec des accolades
+
+~~~mma
+Arpeggio Sequence { 1 1 100 * 8 } { 1 1 100 * 8 }
+~~~
+
+Cette commande définit une séquence de deux mesures pour la piste Arpeggio.
+
+- Chaque bloc entre { } contient : 
+    - 1 Le premier temps
+    - 1 La note 1 de l'accord
+    - volume 100
+- Les blocs sont répétés 8 fois
+- Cette deuxième notation peut varier en fonction des instruments et est explicité au cas par cas dans le chapitre [Les pistes](les-pistes.md)
+
 ## Les silences
+
 
 On peut insérer dans la séquence un silence en remplaçant  le pattern par la lettre z ou par - et ce silence durera une mesure
 

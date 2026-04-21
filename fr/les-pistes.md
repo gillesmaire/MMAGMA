@@ -35,7 +35,7 @@ ainsi programmer un silence par la lettre z sur une mesure  par exemple sur la t
 
 
 
-## Défintion des pistes 
+## Définition des pistes 
 
 Une piste se définit par son type suivi éventuellement de réglages.
 

@@ -1,15 +1,17 @@
-# Les grooves
+# Utilisations des grooves
 
-## Définition d'un groove 
+## Qu'est ce qu'un groove 
 
 Dans MMA, un groove est un modèle d’accompagnement musical automatique.
 
-Ce groove définit : 
+Ce groove définit pour une mesure : 
 
 - la batterie (drums)
 - la basse
 - le comping (piano/guitare)
 - le style rythmique
+
+## L'appel d'un Groove 
 
 L'appel d'un groove se fait par :
 
@@ -18,11 +20,77 @@ Groove NomDuGroove
 ~~~
 
 MMA remplace alors : 
+
 - les patterns de la batterie
-- les patternes de la basse 
+- les patterns de la basse 
 - les patterns harmonique
 
 Mais il ne change pas les accords
+
+## L'appel de plusieurs Groove
+
+L'appel de plusieurs grooves se fait par exemple comme ceci :
+
+~~~
+ Groove Tango LightTango LightTangoSus 
+~~~
+
+Cela veut dire que la première mesure sera jouée Tango, 
+la seconde LightTango, la troisième LightTangoSus puis à nouveau Tango
+
+Cette utilisation permet de créer des balancements rythmiques et simuler des battements moins mécaniques
+
+On peut même faire des répétitions d'un même groove : 
+
+~~~
+Groove G1 G1 G1 G2 G2 G3
+~~~
+
+Nous verrons par la suite que la succession de mesures peut se faire en utilisant le symbole / 
+de répétition :
+
+~~~
+Groove G1 //  G2 / G3
+~~~
+
+La notation suivante permet de définir l'index du groove à choisir dans une liste
+
+
+~~~
+Groove 3 G1 G2 G3
+~~~
+
+est identique à 
+
+~~~
+Groove G3
+~~~
+
+
+Cette dernière notation parait quelque peu inutile mais nous verrons plus tard que
+la Commande Repeat qui permet de faire des boucles peut permettre de faire une  boucle sur l'inclusion
+de Groove suivant un indice et pour chaque indice d'effectuer des adaptations.
+
+## Appel de groove avec notation étendue
+
+~~~
+Groove Verse*3 Chorus*4 Fill*1
+~~~
+
+Est identique à 
+
+~~~
+Groove Verse// Chorus/// Fill
+~~~
+
+## Appel de groove par nom de fichier 
+
+~~~
+Groove stdlib/rhumba:rhumaend
+~~~
+
+Ceci va charger le fichier rhumba situé dans le répertoire stdlib et ne prendre que le groove nommé
+rhumaend sachant que tout ce qui est à gauche des deux points (:) fait partie du système de fichiers.
 
 ## Emplacement des fichiers groove
 
@@ -35,6 +103,7 @@ Sous Linux les fichiers Groove se trouvent dans le répertoire
 ~~~
 
 Ils sont classés par familles : 
+
 - alexis
 - casio
 - kara 
@@ -89,7 +158,6 @@ La commande play à la racine de MMAGMA fonctionne sous Linux uniquement, elle p
 - Si on ajoute un paramètre de groove ce paramètre viendra remplacer le paramètre de groove par défaut : 
 
 ~~~bash
-/§play fichier mambo
-
-
+/play fichier mambo
+~~~
 
