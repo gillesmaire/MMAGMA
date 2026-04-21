@@ -19,6 +19,7 @@ set (CHAPTERS ${SRC_DIR}/introduction.md
               ${SRC_DIR}/les-sequences.md
               ${SRC_DIR}/utilisation-des-grooves.md
               ${SRC_DIR}/les-riffs.md
+              ${SRC_DIR}/format-MMA.md
               ${SRC_DIR}/les-boucles.md
               ${SRC_DIR}/les-pistes.md
               ${SRC_DIR}/les-accords.md
