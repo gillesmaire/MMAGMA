@@ -94,12 +94,13 @@ add_custom_command(
         --pdf-engine=xelatex
         --number-sections
         --toc
-	-M title=MMAGMA 
+        -M title=MMAGMA
         -M author=Gilles\ Maire
         -M date=2026
    	    -V documentclass=book
    	    -V lang=fr
         -V classoption=openright
+        -H ${CMAKE_SOURCE_DIR}/cover.tex
         -o ${PDF_FILE}
     DEPENDS ${CHAPTERS}
     VERBATIM
