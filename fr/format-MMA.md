@@ -88,10 +88,10 @@ Cm /  /
 ~~~
  
 Si on commence une ligne par /, le dernier accord de la ligne précédente sera utilisé.
-Par contre si le premier accoRd est précé d'un / vous obtiendrez une erreur.
+Par contre, si le premier accord est précédé d'un / vous obtiendrez une erreur.
 
 
-Voici la liste des accords supportés :
+Voici la liste des symboles suivant le noms de l'accord supportés :
 
 #5 add#9 add9 addb9 b5 + +7 +7#9 +7b9 +7b9#11
 +9 +9M7 +M7 11 11#5 11+ 11b9 13 13#11 13#9 13b5
@@ -112,4 +112,73 @@ m7b5b9 m7b9 m7# m7omit5 m7sus m7sus4 m9 m9#11
 m9b5 mM7 mM7(add9) maj13 maj7 maj9 mb5 mb9 
 min#7 min(maj7) msus msus4 omit3(add9) 
 omit3add9 sus sus(add#9) sus(add9) sus(addb9) 
-sus2 sus4 sus9 o o(addM7) o3 ø 
+sus2 sus4 sus9 o o(addM7) o3
+
+Sachant que la première lettre est forcément comprise entre A et E
+Cela donne par exemple des noms d'accord valides
+
+~~~mma
+A#5 B Cmag7 C13#11 Dadd#9 Edim7(addM7) F7#9#11 G7b5(add13)
+~~~
+
+## Les silences
+
+
+
+Lorsqu'une piste est créée, elle peut contenir des périodes de silence. Par exemple,
+dans une piste de contrebasse, nous ne voulons probablement pas le son perdure sur 
+une barre entière: nous pouvons faire sonner les notes sur le premier et deuxième temps
+et mettre en sourdine les deuxième et quatrième temps.
+
+Ou bien que se passe-t-il si nous utilisons une piste et que nous voulons pas d'un de
+la note du troisième temps ? 
+
+Pour mettre en sourdine  une note ou une série de notes, sur une piste (ou toutes les pistes) 
+on peut utiliser un nom d'accord spécial nommé z. 
+
+Lorsqu'on utilise z collé derrière  un nom d'accord, il mettra en sourdine toutes les pistes à
+l'exception des pistes DRUM. 
+Vous pourrez cependant désactiver les pistes  Chord, Arpeggio, Échelle, Walk, Aria ou Basse
+en ajoutant un spécificateur de piste à  z. 
+
+Les spécificateurs de piste sont : 
+
+- *D* les pistes de batterie (Drum)
+- *W* les pistes de basses en walking 
+- *B* les traces de basse,
+- *C* les pistes d'accord (Chord),
+- *A* les pistes d'arpège,
+- *S* les pistes de gamme (Scale),
+- *R* les pistes d'aria,
+- *P* les pistes de plectre.
+- *!* les silences. 
+
+Si vous ne spécifiez pas un nom d'accord juste avant ces spécificateurs, l'accord précédent sera utilisé. 
+
+On ne peut pas utiliser un accord Nom avec le spécifiateur !.
+
+Prenons la séquence d'accord suivante :
+
+~~~mma
+Fm z G7zC CmzD zW Em / z! 
+~~~
+
+- **Fm :** accord de Fa mineur avec basse et batterie
+- **s :** aucun accord
+- **G7zC :** accord de Sol7 sans l'accord mais avec basse et batterie
+- **CmzD :** accord de Do mineur sans batterie
+- **zw :** pas de basse walk mais accord et batterie sur l'accord précédent qui était Do mineur
+- **Em !** accord de Mi mineur avec basse et batterie
+- **/ :** accord précédent c'est à dire M mineur avec basse et batterie
+- **z! :** pas d'accord mais un silence  renforcé par un ! qui produit un silence plus brutal.
+
+On peut également mettre en sourdine toutes les pistes à une ou plusieurs exceptions près en utilisant non pas
+le point d'exclamation mais le signe + suivi des pistes que l'on veut mettre en sourdine
+
+~~~mma
+Fm / Emz+C
+Fm / Emz+AD
+~~~
+
+- Dans la première ligne on met tout en sourdine sauf l'accord
+- Dans la deuxième ligne on met tout en sourdine sauf l'arpège et et la batterie
