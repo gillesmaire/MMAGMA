@@ -32,13 +32,13 @@ fondamentale de l'accord.
 ### Notation en degrés d'accord 
 
 ~~~mma
-Bass Riff 1 5 8 5  1 5 6 5  1 4 3 2  1 5 1 5
+Bass Riff 1 5 8 5 ; 1 5 6 5 ; 1 4 3 2 ; 1 5 1 5
 ~~~
 
 Ceci veut dire qu'à partir d'un accord quelconque le riff jouera 
 
 - 1 : la note fondamentale de l'accord
-- 5 : la quinete 
+- 5 : la quinte 
 - 8 : l'octave 
 
 ### Notation en position durée vélocité
@@ -138,13 +138,13 @@ produit une ligne de basse typique (tonique, quinte, sixte…)
 Un riff peut contenir plusieurs mesures implicites :
 
 ```
-Bass Riff 1 5 1 5  6 5 4 5
+Bass Riff 1 5 1 5 ; 6 5 4 5
 ```
 
 ici :
 
-* 1ère mesure → 1 5 1 5
-* 2ème mesure → 6 5 4 5
+* 1ère mesure  1 5 1 5
+* 2ème mesure  6 5 4 5
 
 
 
@@ -164,9 +164,9 @@ G
 
 donnera :
 
-* sur C → C G C G
-* sur F → F C F C
-* sur G → G D G D
+* sur C  C G C G
+* sur F  F C F C
+* sur G  G D G D
 
 
 ## Riff et silence
@@ -258,6 +258,63 @@ Les riffs sont utiles pour :
 * Les combiner avec les grooves pour garder un aspect vivant
 * Les utiliser pour les intros, breaks ou transitions
 
+## DupRiff
+
+### Présenation 
+
+La directive DupRiff permet de répéter (dupliquer) un riff deja defini, sans avoir à le réécrire.
+
+C'est particulierement utile pour :
+- alleger l'écriture
+- Éviter les erreurs de recopie
+- construire des variations à partir d'un motif existant
+
+### Syntaxe
+
+DupRiff <nom_du_riff>
+
+### Principe
+
+DupRiff copie le contenu d'un riff existant et l'insère à l'endroit où la commande est utilisee.
+
+Le riff original doit avoir été défini auparavant.
+
+### Exemple simple
+
+~~~mma
+Riff A  c d e f
+DupRiff A
+~~~
+
+Resultat equivalent a :
+
+~~~mma
+c d e f
+c d e f
+~~~
+
+Avec enchaînement
+
+Riff A  c d e f
+Riff B  g a b c
+
+DupRiff A
+DupRiff B
+DupRiff A
+
+Permet de construire rapidement une structure musicale sans duplication manuelle.
+
+Intérêt pratique
+
+- écriture plus lisible
+- réutilisation de motifs
+- facilite les modifications (un seul point a changer)
+
+### Attention
+
+- le riff doit être défini avant son utilisation
+- DupRiff ne modifie pas le riff original, il fait une copie
+
 
 
 ## Résumé
@@ -268,6 +325,6 @@ Les riffs sont utiles pour :
 * Il permet un contrôle fin et précis
 
 
-
 Les riffs sont l’outil idéal quand on veut prendre la main sur MMA et écrire soi-même une partie musicale.
+
 
