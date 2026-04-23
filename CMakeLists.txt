@@ -12,7 +12,8 @@ file(MAKE_DIRECTORY ${HTML_DIR})
 # =========================================================
 # Chapitres Markdown
 # =========================================================
-set (CHAPTERS ${SRC_DIR}/introduction.md
+set (CHAPTERS
+              ${SRC_DIR}/introduction.md
               ${SRC_DIR}/installation.md
               ${SRC_DIR}/vocabulaire.md
               ${SRC_DIR}/premier-fichier-mma.md
