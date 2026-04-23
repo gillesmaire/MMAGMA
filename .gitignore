@@ -1,7 +1,6 @@
 CMakeCache.txt
 *-swp
 *.pdf
-*.tex
 *.epub
 Makefile
 CMakeFiles/
