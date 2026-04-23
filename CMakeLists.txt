@@ -101,7 +101,6 @@ add_custom_command(
    	    -V documentclass=book
    	    -V lang=fr
         -V classoption=openright
-        -H ${CMAKE_SOURCE_DIR}/cover.tex
         -o ${PDF_FILE}
     DEPENDS ${CHAPTERS}
     VERBATIM
