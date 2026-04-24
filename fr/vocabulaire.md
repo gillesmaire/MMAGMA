@@ -16,7 +16,7 @@ On peut dénombrer les concepts suivants :
 ## Pattern 
 
 - **Définition :** Un Pattern est une unité musicale élémentaire qui a une durée d'une mesure 
-ou même parfois moins. Ce Pattern concerne un instrument c'est à dire une piste.
+ou même parfois moins. Ce Pattern concerne un instrument et donc une seule piste.
 - **Portée :** Une piste
 - **Durée :** une mesure (ou moins)
 - **Rôle :** définir ce qui est joué 
