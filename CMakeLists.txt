@@ -6,6 +6,10 @@ project(MMAGMA)
 # =========================================================
 set(SRC_DIR ${CMAKE_SOURCE_DIR}/fr)
 set(HTML_DIR ${SRC_DIR}/html)
+set(PDF_FILE ${SRC_DIR}/MMAGMA-fr.pdf)
+set(TEMPLATE    ${SRC_DIR}/template-custom.tex)
+set(HEADER_TEX ${SRC_DIR}/header.tex)
+set(TITLEPAGE_TEX ${SRC_DIR}/titlepage.tex)
 
 file(MAKE_DIRECTORY ${HTML_DIR})
 
@@ -87,26 +91,39 @@ add_custom_target(html ALL DEPENDS ${HTML_FILES})
 # 4. PDF global
 # =========================================================
 set(PDF_FILE ${SRC_DIR}/MMAGMA-fr.pdf)
+set(TEMPLATE    ${SRC_DIR}/template-custom.tex)
+set(HEADER_TEX ${SRC_DIR}/header.tex)
+set(TITLEPAGE_TEX ${SRC_DIR}/titlepage.tex)
 
 add_custom_command(
-    OUTPUT ${PDF_FILE}
-    COMMAND pandoc
-        ${CHAPTERS}
-        --pdf-engine=xelatex
-        --number-sections
-        --toc
-        -M title=MMAGMA
-        -M author=Gilles\ Maire
-        -M date=2026
-   	    -V documentclass=book
-   	    -V lang=fr
-        -V classoption=openright
-        -o ${PDF_FILE}
-    DEPENDS ${CHAPTERS}
+    OUTPUT ${TEMPLATE}
+    COMMAND pandoc -D latex > ${TEMPLATE}
+    COMMAND sed -i "s/\\\\usepackage{lmodern}/%% lmodern removed/" ${TEMPLATE}
     VERBATIM
 )
 
-add_custom_target(pdf ALL DEPENDS ${PDF_FILE})
+add_custom_target(template DEPENDS ${TEMPLATE})
+
+add_custom_command(
+   OUTPUT ${PDF_FILE}
+    COMMAND pandoc
+        ${CHAPTERS}
+        --pdf-engine=xelatex
+        --template=${TEMPLATE}
+        --number-sections
+        --toc
+        -V documentclass=book
+        -V lang=fr
+        -V classoption=openright
+        -H ${HEADER_TEX}
+        --include-before-body=${TITLEPAGE_TEX}
+        -o ${PDF_FILE}
+    DEPENDS ${CHAPTERS} ${TEMPLATE} ${TITLEPAGE}
+    VERBATIM
+)
+
+add_custom_target(pdf DEPENDS ${PDF_FILE})
+
 
 # =========================================================
 # 5. EPUB global
