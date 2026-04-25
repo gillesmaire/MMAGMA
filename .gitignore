@@ -1,11 +1,12 @@
 CMakeCache.txt
 *-swp
 *.epub
+*.mid
 Makefile
 CMakeFiles/
 cmake_install.cmake
 build/
 html/
-pdf/
+tex/
 trash
 

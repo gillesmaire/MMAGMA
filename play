@@ -8,4 +8,4 @@ fi
 
 
 mma $1.mma
-fluidsynth -a alsa -o audio.alsa.device=plughw:2 -ni /usr/share/sounds/sf2/FluidR3_GM.sf2 $1.mid
+fluidsynth -a pipewire  /usr/share/sounds/sf2/FluidR3_GM.sf2 $1.mid

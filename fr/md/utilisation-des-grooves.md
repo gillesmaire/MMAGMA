@@ -112,6 +112,16 @@ Ils sont classés par familles :
 - yamaha
 - zoom
 
+
+La commande suivante affiche le nombre de grooves disponibles sous Linux. Le résultat au moment de
+la rédaction de ce doument est de 289  grooves différents disponibles.
+
+~~~bash
+ls /usr/share/mma/lib/* | grep -v :$ | grep -v ^$ | wc -l
+~~~
+
+
+
 ## Les Grooves par famille
 
 ### Alexis 
