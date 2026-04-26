@@ -234,3 +234,42 @@ La commande play à la racine de MMAGMA fonctionne sous Linux uniquement, elle p
 ~~~
 
 - C'est une commande ajoutée par les auteurs de ce manuel.
+
+
+## Travaux pratiques Groove contre mélange des Groove
+
+
+Comparer l'écoute des deux fichiers suivants 
+
+- Fichier monoGroove
+
+~~~MMA
+Tempo 120
+Groove Swing
+
+1 Abm   Dbm
+2 Eb7   Abm
+3 Dbm   Gb
+4 B7    Ab7
+5 Dbm   Gb
+6 B7    Ab
+7 Db7   Gb
+8 Gb    B7
+~~~
+
+- Fichier multiGroove
+
+~~~MMA
+Tempo 120
+Groove Swing CountrySwing Swing CountrySwing / Swing /
+
+1 Abm   Dbm
+2 Eb7   Abm
+3 Dbm   Gb
+4 B7    Ab7
+5 Dbm   Gb
+6 B7    Ab
+7 Db7   Gb
+8 Gb    B7
+~~~
+

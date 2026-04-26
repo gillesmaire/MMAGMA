@@ -2,7 +2,7 @@
 
 ## Présentation
 
-Comparé aux motifs, séquences, rainures et les différentes directives utilisé dans MMA, les notations d'accords barre par barre sont étonnamment simple.
+Comparé aux motifs, séquences, Grooves et les différentes directives utilisé dans MMA, les notations d'accords barre par barre sont étonnamment simple.
 
 Toute ligne dans votre fichier de saisie qui n'est pas une directive ou un commentaire est supposée être une barre de données d'accords.
 
@@ -130,7 +130,7 @@ dans une piste de contrebasse, nous ne voulons probablement pas le son perdure s
 une barre entière: nous pouvons faire sonner les notes sur le premier et deuxième temps
 et mettre en sourdine les deuxième et quatrième temps.
 
-Ou bien que se passe-t-il si nous utilisons une piste et que nous voulons pas d'un de
+Ou bien que se passe-t-il si nous utilisons une piste et que nous voulons pas de
 la note du troisième temps ? 
 
 Pour mettre en sourdine  une note ou une série de notes, sur une piste (ou toutes les pistes) 
@@ -164,7 +164,7 @@ Fm z G7zC CmzD zW Em / z!
 ~~~
 
 - **Fm :** accord de Fa mineur avec basse et batterie
-- **s :** aucun accord
+- **z :** aucun accord
 - **G7zC :** accord de Sol7 sans l'accord mais avec basse et batterie
 - **CmzD :** accord de Do mineur sans batterie
 - **zw :** pas de basse walk mais accord et batterie sur l'accord précédent qui était Do mineur
