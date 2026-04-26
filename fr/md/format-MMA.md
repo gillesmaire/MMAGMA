@@ -32,7 +32,7 @@ Le numéro de barre d'attaque optionnel est silencieusement écarté par MMA. C'
 
 Prenez l'habitude d'utiliser des numéros de barre. Vous vous remercierez quand une barre manquera à une chanson ou au contraire quand il y en aura une de trop, ainsi que si vous êtes amené à vouloir travailler sur quelques lignes d'accords et à extraire ces quelques lignes par la commande `mma -b`.
 
-Notez qu'il est parfaitement acceptable de n'avoir qu'une barre numéro sur une ligne. Ceci est courant lorsque vous utilisez la barre répéter   du genre de de la séquence : 
+Notez qu'il est parfaitement acceptable de n'avoir qu'une barre numéro sur une ligne. Ceci est courant lorsque vous utilisez une répétition du genre : 
 
 ~~~mma
 1 Cm * 4
@@ -54,12 +54,28 @@ Cm Cm Dm Dm * 4
 
 produit 4 mesures de sortie.
 
+Cela évite d'écrire 
+
+~~~mma
+Cm Cm Dm Dm
+Cm Cm Dm Dm
+Cm Cm Dm Dm
+Cm Cm Dm Dm
+~~~~
+
 Nous verrons que l'on aurait pu écrire :
 
 
 ~~~mma
 Cm / Dm / * 4
 ~~~
+
+ou même
+
+~~~mma
+Cm - Dm - * 4
+~~~
+
 
 ## Les accords
 
@@ -138,7 +154,7 @@ on peut utiliser un nom d'accord spécial nommé z.
 
 Lorsqu'on utilise z collé derrière  un nom d'accord, il mettra en sourdine toutes les pistes à
 l'exception des pistes DRUM. 
-Vous pourrez cependant désactiver les pistes  Chord, Arpeggio, Échelle, Walk, Aria ou Basse
+Vous pourrez cependant désactiver les pistes  Accords, Arpège, Gamme, Basse, Basse en Walking, Vocal ou Basse
 en ajoutant un spécificateur de piste à  z. 
 
 Les spécificateurs de piste sont : 
@@ -149,7 +165,7 @@ Les spécificateurs de piste sont :
 - *C* les pistes d'accord (Chord),
 - *A* les pistes d'arpège,
 - *S* les pistes de gamme (Scale),
-- *R* les pistes d'aria,
+- *R* les pistes en vocal (Aria),
 - *P* les pistes de plectre.
 - *!* les silences. 
 
@@ -168,7 +184,7 @@ Fm z G7zC CmzD zW Em / z!
 - **G7zC :** accord de Sol7 sans l'accord mais avec basse et batterie
 - **CmzD :** accord de Do mineur sans batterie
 - **zw :** pas de basse walk mais accord et batterie sur l'accord précédent qui était Do mineur
-- **Em !** accord de Mi mineur avec basse et batterie
+- **Em :** accord de Mi mineur avec basse et batterie
 - **/ :** accord précédent c'est à dire M mineur avec basse et batterie
 - **z! :** pas d'accord mais un silence  renforcé par un ! qui produit un silence plus brutal.
 
@@ -181,4 +197,56 @@ Fm / Emz+AD
 ~~~
 
 - Dans la première ligne on met tout en sourdine sauf l'accord
-- Dans la deuxième ligne on met tout en sourdine sauf l'arpège et et la batterie
+- Dans la deuxième ligne on met tout en sourdine sauf l'arpège et la batterie
+
+
+## Position 
+
+
+La notation suivante représente Dom Dom Rém Rém. Le deuxième Dom vient de la barre / et le deuxième
+Dm vient du fait que si la mesure n'est pas remplie on la remplit avec le dernier élément.
+
+
+~~~mma
+Cm / Dm
+~~~
+
+
+Le sybbole @ sert quant à lui à dire :
+
+- on veut cet accord à ce moment exact dans la mesure
+- Par exemple Dm@3 : Le rém commence au temps 3
+
+Ainsi 
+~~~mma
+C D@3 F
+~~~
+
+
+En 4/4 :
+
+- C : le temps 1 dure jusqu’à 3
+- D : commence à 3  pour un temps
+- F : commence à 4
+
+
+~~~mma
+C D@3.5 F
+~~~
+
+- C : le temps 1 dure jusqu’à 3,5
+- D : commence à 3,5 et fait un demi temps
+- F : commence à 4
+
+
+On trouvera les rythmes Jazz sous la forme : 
+
+~~~mma
+Cmaj7 E7@2.5 Am7 D7
+~~~
+
+On trouvera les rythmes Bossa Nova sous la forme
+
+~~~mma
+Cmaj7 G7@2.5 Fmaj7 G7@3.5
+~~~
