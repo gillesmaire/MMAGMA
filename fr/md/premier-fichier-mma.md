@@ -161,7 +161,12 @@ On peut choisir la carte RME Hammerfall DSP MADI Pro par la commande
 pactl set-default-sink alsa_output.pci-0000_3c_00.0.pro-output-0
 ~~~~
 
+Pour voir la carte par défaut : 
 
+~~~bash
+pactl info | grep "Default Sink"
+
+~~~
 
 
 

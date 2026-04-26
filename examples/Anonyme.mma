@@ -1,0 +1,19 @@
+Tempo 120
+Groove Swing
+
+Begin Chord
+    Sequence C G7 C
+End
+
+Begin Bass
+    Sequence C C G G
+End
+
+Begin Arpeggio
+    Sequence C G7 C
+End
+
+Begin Drum
+    Sequence Ride Cymbal
+End
+
