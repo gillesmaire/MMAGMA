@@ -26,6 +26,11 @@ Ainsi on peut voir ces différentes lignes :
 - Cm Dm
 - 10 Cm Dm
 
+
+Notons que si les mots du langage peuvent être en majuscule ou en minuscule les noms des accords doivent obligatoirement être en
+majuscules.
+
+
 ## Numéros de barre
 
 Le numéro de barre d'attaque optionnel est silencieusement écarté par MMA. C'est juste un commentaire spécialisé qui vous aide à déboguer votre musique. Notez que seul un élément numérique est autorisé ici.
@@ -150,7 +155,8 @@ Ou bien que se passe-t-il si nous utilisons une piste et que nous voulons pas de
 la note du troisième temps ? 
 
 Pour mettre en sourdine  une note ou une série de notes, sur une piste (ou toutes les pistes) 
-on peut utiliser un nom d'accord spécial nommé z. 
+on peut utiliser un nom d'accord spécial nommé z. Ce z ne peut pas êre mis en majuscule contrairement aux autres
+mots clés du language. 
 
 Lorsqu'on utilise z collé derrière  un nom d'accord, il mettra en sourdine toutes les pistes à
 l'exception des pistes DRUM. 
@@ -251,3 +257,53 @@ On trouvera les rythmes Bossa Nova sous la forme
 ~~~mma
 Cmaj7 G7@2.5 Fmaj7 G7@3.5
 ~~~
+
+
+## Pistes Chord
+
+
+On peut vouloir qu'on instrument je suivent pas une ligne d'accord mais qui suive 
+un motif fxe comme en rap.
+
+On applique dans ce cas là la notation du style
+
+~~~mma
+Bass Chords C / G 
+~~~
+
+Cela veut dire que la basse joue tout le temps et peu importoe les accords du morceau : 
+- C sur les temps 1-2 
+- G sur les temps 3-4
+
+Si le morceau suit les accords ci-dessous, la basse elle reste cantonnée aux deux accords C et G
+et ce pendant tout le morceau
+
+~~~mma
+1 C
+2 G 
+3 C
+~~~
+
+On peut stopper cette répétiton par la syntaxe
+
+~~~mma
+
+Bass Chords
+~~~
+ou 
+
+~~~mma
+Bass Chords { }
+~~~
+
+
+
+On peut étendre cette boucle  sur plusieurs mesures 
+
+
+~~~mma
+Bass Chords {C} {G / B7} {Dm} {C G A B}
+~~~
+
+Cet exemple avec la Bass peut s'appliquer à n'importe quelle piste Bass, Chord, Arpeggio, Solo, Scale mais
+mais aussi à la piste nommée Piano.
