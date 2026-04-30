@@ -1,12 +1,11 @@
 # Les paroles
 
-## Une possibilité limitée
+## Une possibilité intéressante
 
 Il est possible d'inclure les paroles dans un fichier MIDI pour permettreà certains séquenceurs 
 ou logiciels MIDI de les afficher en synchronisation avec la musique.
 
-Dans le cas de l'utilisation de Chord V par exemple, nous disposons des paroles mais les fichiers textes ne
-respectent pas les syntaxes que nous allons énoncer dans ce chapitre.
+Dans le cas de l'utilisation de Chord V par exemple, nous disposons des paroles mais les fichiers textes ne respectent pas les syntaxes que nous allons énoncer dans ce chapitre.
 
 ## Les options Lyrics
 
