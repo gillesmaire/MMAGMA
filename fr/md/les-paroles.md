@@ -42,9 +42,58 @@ On peut aussi utiliser la méthode alternative basée sur la  directive lyrics q
 Le signe = n'est pas permis dans les paroles.
 
 ~~~mma
-A/Am/ Lyrics set Bonjour mes amis
+Lyrics set Bonjour mes amis
 ~~~
 
-Les caractères \\r et \\n sont autorisés 
+Par contre, les caractères \\r et \\n sont autorisés à l'intérieur de la séquence 
 
 
+## Les couplets
+
+On peut déclarer plusieurs couplets :
+
+~~~mma
+A  [Premier couplet] [Deuxième couplet]
+~~~
+
+Le compteur de couplets **Lyric Verse** peut être affecté :
+
+~~~mma
+Lyric Verse=3
+~~~
+
+S'il n'est pas affecté sa valeur est 1.
+
+Il peut être augmenté ou décrémenté : 
+
+~~~mma
+Lyric Verse=Inc
+Lyric Verse=Dec
+~~~
+
+Sa valeur minimale est 1 si sa valeur est supérieure au nombre de couplets il reste à sa valeur maxiamale.
+
+On peut répeter les couplets avec l'ordre Repeat avec l'affectation de couplets comme ceci :
+
+~~~mma
+Tempo 220
+Groove CountryJazz
+Repeat 
+  1 G [Bonjour c'est moi][ Pourtant c'est toi] [C'était nous deux]
+  2 D [C'est encore moi] [La dernière fois] [Tellement heureux]
+  3 G [Me revoilà ] [ Qui était là] [ D'être amoureux]
+  4 D [J'étais parti ] [Qui revenais][De chanter sans fin]
+  5 D [Loin de Paris] [ Et qui m'aimais ] [ Ce même refrain]
+  Lyric Verse = Inc
+Repeat End
+~~~
+
+Ceci produira trois couplets donc le premier est
+
+~~~
+Bonjour c'est moi
+C'est encore moi
+Me revoilà
+J'étais parti
+Loin de Paris
+~~~
