@@ -182,3 +182,47 @@ Fm / Emz+AD
 
 - Dans la première ligne on met tout en sourdine sauf l'accord
 - Dans la deuxième ligne on met tout en sourdine sauf l'arpège et et la batterie
+
+
+## Positionnement 
+
+Dans MMA, le positionnement permet de contrôler à quel moment précis dans la mesure un accord est joué.
+Par défaut, les accords sont répartis uniformément dans la mesure, mais il est possible de les placer
+explicitement sur des temps spécifiques.
+
+Le positionnement se fait en précédant un accord par un numéro indiquant le temps dans la mesure.
+
+
+
+Exemple :
+
+~~~mma
+1 C 3 G
+~~~
+
+Dans une mesure en 4/4 :
+
+    l’accord C est joué sur le temps 1
+
+    l’accord G est joué sur le temps 3
+
+Les temps sont numérotés à partir de 1 jusqu’au nombre de temps de la mesure (défini par la signature rythmique).
+
+Il est également possible d’utiliser plusieurs positions dans une même mesure pour créer des rythmes plus complexes.
+
+Exemple :
+
+1 C 2 Dm 3 G 4 C
+
+Ici, chaque temps de la mesure contient un accord différent.
+
+Si aucun numéro de position n’est spécifié, MMA répartit automatiquement les accords de manière régulière sur la mesure.
+
+Le positionnement permet donc :
+
+- de contrôler précisément le rythme harmonique
+- de créer des syncopes ou des effets rythmiques
+- d’aligner les changements d’accords avec des accents musicaux
+
+Dans certains cas, des subdivisions peuvent être utilisées (selon le style ou les paramètres), permettant un placement 
+encore plus fin que les temps principaux.
