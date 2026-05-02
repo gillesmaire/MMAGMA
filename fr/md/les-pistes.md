@@ -314,7 +314,7 @@ Sequence { 70 60 75 65   70 60 90 40 }
  - accent léger
  - ouverture (90 à 40)
 
-#### Paramètres eseentiels 
+#### Paramètres essentiels 
 
 ~~~mma
 RTiming 5–10
@@ -365,6 +365,7 @@ L'ordre dépend du réglage de la piste par le paramètre Type qui peut prendre 
 
 
 Les paramètres suivant sont utilisés :
+
 - **Octave :** permet de répéter l'arpège sur plusiers octaves
 - **Repeat :** indique combien de fois répéter l'arpège.
 - **Velocity :** peut aller de 0 pour silence à 127 pour volume maximum

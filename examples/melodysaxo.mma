@@ -1,0 +1,16 @@
+Tempo 120
+Groove Swing
+
+
+Begin Melody
+   Voice AltoSax
+   Octave 5
+   melody c d e f g 
+   volume 50
+End
+
+
+Begin solo
+   voice DistortionGuitar
+   octave 4
+End

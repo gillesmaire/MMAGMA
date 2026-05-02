@@ -1,11 +1,15 @@
 # !/bin/sh
-
-
+file=`echo $1 | sed  "s/.mma$//"`
 if [ "x$2" != "x" ] ; then
-    groove=`grep Groove  $1.mma | cut -f2 -d' '`
-    sed -i "s/Groove $groove/Groove $2/" $1.mma
+    groove=`grep Groove  $file.mma | cut -f2 -d' '`
+    sed -i "s/Groove $groove/Groove $2/" $file.mma
 fi
-
-
-mma $1.mma
-fluidsynth -a pipewire  /usr/share/sounds/sf2/FluidR3_GM.sf2 $1.mid
+if [ "x${groove}" == "x" ] ; then
+    groove="swing"
+fi
+echo "Groove : ${groove}"
+echo "File :" $file.mma
+mma $file.mma
+echo "fluidsynth $file.mid"
+#fluidsynth -a pipewire  /usr/share/sounds/sf2/FluidR3_GM.sf2 $file.mid
+fluidsynth $file.mid
