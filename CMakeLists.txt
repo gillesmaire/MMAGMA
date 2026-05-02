@@ -4,33 +4,40 @@ project(MMAGMA)
 # =========================================================
 # Répertoires
 # =========================================================
-set(SRC_DIR ${CMAKE_SOURCE_DIR}/fr)
-set(HTML_DIR ${SRC_DIR}/html)
-
-file(MAKE_DIRECTORY ${HTML_DIR})
-
+set (SRC_DIR ${CMAKE_SOURCE_DIR}/fr)
+set(MD_DIR ${SRC_DIR}/md)
+set(INDEX_MD ${CMAKE_BINARY_DIR}/mmagma_index.md)
 # =========================================================
 # Chapitres Markdown
 # =========================================================
 set (CHAPTERS
-              ${SRC_DIR}/introduction.md
-              ${SRC_DIR}/installation.md
-              ${SRC_DIR}/vocabulaire.md
-              ${SRC_DIR}/premier-fichier-mma.md
-              ${SRC_DIR}/les-sequences.md
-              ${SRC_DIR}/utilisation-des-grooves.md
-              ${SRC_DIR}/les-riffs.md
-              ${SRC_DIR}/format-MMA.md
-              ${SRC_DIR}/les-boucles.md
-              ${SRC_DIR}/les-pistes.md
-              ${SRC_DIR}/les-accords.md
-              ${SRC_DIR}/le-rythme.md
-              ${SRC_DIR}/les-options-de-mma.md
+              ${MD_DIR}/introduction.md
+              ${MD_DIR}/installation.md
+              ${MD_DIR}/vocabulaire.md
+              ${MD_DIR}/premier-fichier-mma.md
+              ${MD_DIR}/utilisation-des-grooves.md
+              ${MD_DIR}/format-MMA.md
+              ${MD_DIR}/les-sequences.md
+              ${MD_DIR}/les-riffs.md
+              ${MD_DIR}/les-boucles.md
+              ${MD_DIR}/les-pistes.md
+              ${MD_DIR}/les-accords.md
+              ${MD_DIR}/le-rythme.md
+              ${MD_DIR}/les-paroles.md
+              ${MD_DIR}/pistes-solo-et-melodie.md
+              ${MD_DIR}/les-options-de-mma.md
+
               )
 
 # =========================================================
 # 1. HTML par chapitre
 # =========================================================
+
+set(HTML_DIR ${SRC_DIR}/html)
+set(INDEX_MD ${CMAKE_BINARY_DIR}/mmagma_index.md)
+set(INDEX_HTML ${HTML_DIR}/index.html)
+file(MAKE_DIRECTORY ${HTML_DIR})
+set(INDEX_HTML ${HTML_DIR}/index.html)
 set(HTML_FILES)
 foreach(CHAP ${CHAPTERS})
     get_filename_component(NAME ${CHAP} NAME_WE)
@@ -52,19 +59,56 @@ endforeach()
 
 # =========================================================
 # 2. INDEX (TOC propre SANS contenu)
-# => version robuste (Python, pas bash)
 # =========================================================
+#[[
 
-set(INDEX_MD ${CMAKE_BINARY_DIR}/mmagma_index.md)
-set(INDEX_HTML ${HTML_DIR}/index.html)
 
 add_custom_command(
     OUTPUT ${INDEX_MD}
     COMMAND python3 ${CMAKE_SOURCE_DIR}/tools/make_index.py ${SRC_DIR} ${INDEX_MD}
     DEPENDS ${CHAPTERS}
     VERBATIM
+ )
+
+add_custom_command(
+    OUTPUT ${INDEX_HTML}
+    COMMAND pandoc
+        ${INDEX_MD}
+        -s
+        --toc
+        -o ${INDEX_HTML}
+    DEPENDS ${INDEX_MD}
+    VERBATIM
 )
 
+list(APPEND HTML_FILES ${INDEX_HTML})]]
+
+add_custom_command(
+    OUTPUT ${INDEX_MD}
+    COMMAND ${CMAKE_COMMAND} -E echo "# MMAGMA" > ${INDEX_MD}
+    COMMAND ${CMAKE_COMMAND} -E echo "" >> ${INDEX_MD}
+    COMMAND ${CMAKE_COMMAND} -E echo "## Table des matières" >> ${INDEX_MD}
+    COMMAND ${CMAKE_COMMAND} -E echo "" >> ${INDEX_MD}
+
+    # Ajout des chapitres
+    ${CMAKE_COMMAND} -E echo_append ""  # hack pour éviter erreur syntaxe
+
+    VERBATIM
+)
+foreach(CHAP ${CHAPTERS})
+    get_filename_component(NAME ${CHAP} NAME_WE)
+
+    # Capitalisation simple (optionnelle)
+    string(REPLACE "-" " " TITLE ${NAME})
+
+    add_custom_command(
+        OUTPUT ${INDEX_MD}
+        APPEND
+        COMMAND ${CMAKE_COMMAND} -E echo "- [${TITLE}](${NAME}.html)" >> ${INDEX_MD}
+    )
+endforeach()
+
+# Conversion en HTML
 add_custom_command(
     OUTPUT ${INDEX_HTML}
     COMMAND pandoc
@@ -86,34 +130,50 @@ add_custom_target(html ALL DEPENDS ${HTML_FILES})
 # =========================================================
 # 4. PDF global
 # =========================================================
-set(PDF_FILE ${SRC_DIR}/MMAGMA-fr.pdf)
+
+
+set(PDF_FILE ${SRC_DIR}/pdf/MMAGMA-fr.pdf)
+set(TEX_DIR  ${SRC_DIR}/tex)
+set(TEXTEMPLATESDIR ${TEX_DIR}/templates/)
+set(HEADER_TEX ${TEXTEMPLATESDIR}/header.tex)
+set(TITLEPAGE_TEX ${TEXTEMPLATESDIR}/titlepage.tex)
+set(COVER_TEX ${TEXTEMPLATESDIR}/cover.tex)
+set(PREAMBLE_TEX ${TEXTEMPLATESDIR}/preamble.tex)
 
 add_custom_command(
-    OUTPUT ${PDF_FILE}
-    COMMAND pandoc
-        ${CHAPTERS}
-        --pdf-engine=xelatex
-        --number-sections
-        --toc
-        -M title=MMAGMA
-        -M author=Gilles\ Maire
-        -M date=2026
-   	    -V documentclass=book
-   	    -V lang=fr
-        -V classoption=openright
-        -H ${CMAKE_SOURCE_DIR}/cover.tex
-        -o ${PDF_FILE}
-    DEPENDS ${CHAPTERS}
+    OUTPUT ${TEXTEMPLATESDIR}
+    COMMAND pandoc -D latex > ${TEMPLATESDIR}
+    COMMAND sed -i "s/\\\\usepackage{lmodern}/%% lmodern removed/" ${TEMPLATESDIR}
     VERBATIM
 )
 
-add_custom_target(pdf ALL DEPENDS ${PDF_FILE})
+#add_custom_target(template DEPENDS ${TEMPLATESDIR})
+
+add_custom_command(
+   OUTPUT ${PDF_FILE}
+    COMMAND pandoc
+        ${CHAPTERS}
+        --pdf-engine=xelatex
+        --template=${TEXTTEMPLATESDIR}/default.latex
+        --number-sections
+        --toc
+        -V documentclass=book
+        -V lang=fr
+        -V classoption=openright
+        -H ${HEADER_TEX}
+        --include-before-body=${TITLEPAGE_TEX}
+        -o ${PDF_FILE}
+    DEPENDS ${CHAPTERS} ${TEMPLATE} ${TITLEPAGE}
+    VERBATIM
+)
+
+add_custom_target(pdf DEPENDS ${PDF_FILE})
+
 
 # =========================================================
 # 5. EPUB global
 # =========================================================
-set(EPUB_FILE ${SRC_DIR}/MMAGMA-fr.epub)
-
+set(EPUB_FILE ${SRC_DIR}/epub/MMAGMA-fr.epub)
 add_custom_command(
     OUTPUT ${EPUB_FILE}
     COMMAND pandoc

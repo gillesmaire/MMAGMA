@@ -43,10 +43,9 @@ un solo ou chorus
 
 ## Groove 
 
-- **Définition :** définit le style complet c'est à dire Tango ou Rock. Nous verrons que nous disposons d'un nombre impressionant de styles.
+- **Définition :** définit le style complet
 - **Rôle :** couche de contrôle global qui orchestre les pistes (patterns et sequences). 
 Il ne contient aucune donnée musicale directe, mais définit des paramètres d’exécution comme le tempo et le niveau général de mixage.
 - **Notation :** Groove Metronome2-4
-
 
 

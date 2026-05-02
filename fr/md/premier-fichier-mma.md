@@ -81,6 +81,9 @@ Sous Windows ou MacOs, un double-clic sur le fichier .mid ouvre généralement l
 
 ### Sous linux
 
+
+#### Premier exemple 
+
 Nous allons utiliser la commande aplay du serveur ALSA qui avec l'option -a donne la liste des cartes son susceptibles d'interpréter des fichiers MIDI
 
 
@@ -128,8 +131,42 @@ On aurait pu choisir de lancer en mode pipewire  par la commande
 fluidsynth -a pipewire -ni /usr/share/sounds/sf2/FluidR3_GM.sf2 example0.mid
 ~~~~
 
+#### Deuxème exampe avec pipewire et plusieurs cartes son
 
 
+- Pour choisir une carte par défaut entre plusieurs cartes : 
+
+~~~bash
+pactl list sinks | grep -E "Name|Description"
+~~~
+
+Affiche 
+
+~~~
+Name: alsa_output.pci-0000_3c_00.0.pro-output-0
+        Description: RME Hammerfall DSP MADI Pro
+        Name: alsa_output.pci-0000_00_1f.3.pro-output-0
+        Description: Audio interne Pro
+        Name: alsa_output.pci-0000_00_1f.3.pro-output-3
+        Description: Audio interne Pro 3
+        Name: alsa_output.pci-0000_00_1f.3.pro-output-7
+        Description: Audio interne Pro 7
+        Name: alsa_output.pci-0000_00_1f.3.pro-output-8
+        Description: Audio interne Pro 8
+~~~
+
+On peut choisir la carte RME Hammerfall DSP MADI Pro par la commande 
+
+~~~bash
+pactl set-default-sink alsa_output.pci-0000_3c_00.0.pro-output-0
+~~~~
+
+Pour voir la carte par défaut : 
+
+~~~bash
+pactl info | grep "Default Sink"
+
+~~~
 
 
 

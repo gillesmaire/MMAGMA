@@ -26,9 +26,12 @@ Les noms des instruments correspondent aux instuments MIDI disponibles sur vote 
 ## Les silences
 
 On peut génére un silence sur une piste de plusieurs façons :
+
 - **OFF :** supprime la sortie sur toute la piste. Par exemple Bass Off
-- **Seqence :** indique ce que joue la piste à chaque mesure. Par exemple Bass Sequence A B C D ( Mesure 1 A, Mesure 2 B etc ). On peut 
-ainsi programmer un silence par la lettre z sur une mesure  par exemple sur la troisième par : Bass Seq A B z D
+- **Seqence :** indique ce que joue la piste à chaque mesure. Par exemple Bass Sequence A B C D ( Mesure 1 A, Mesure 2 B etc ). 
+
+On peut ainsi programmer un silence par la lettre z sur une mesure  par exemple sur la troisième par : Bass Seq A B z D
+
 - On peut supprimer une séquence par SEQCLEAR : Drum SEQCLEAR
 - Désactiver un canal MIDI en ajoutant le Canal 0: Arpeggio-1 Channel 0
 - On peut supprimer le son sur une piste entière en lançant mma avec l'ption -T qui spécifie les pistes sur lesquelles il faut jouer
@@ -311,7 +314,7 @@ Sequence { 70 60 75 65   70 60 90 40 }
  - accent léger
  - ouverture (90 à 40)
 
-#### Paramètres eseentiels 
+#### Paramètres essentiels 
 
 ~~~mma
 RTiming 5–10
@@ -362,6 +365,7 @@ L'ordre dépend du réglage de la piste par le paramètre Type qui peut prendre 
 
 
 Les paramètres suivant sont utilisés :
+
 - **Octave :** permet de répéter l'arpège sur plusiers octaves
 - **Repeat :** indique combien de fois répéter l'arpège.
 - **Velocity :** peut aller de 0 pour silence à 127 pour volume maximum

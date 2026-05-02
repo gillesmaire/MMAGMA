@@ -2,7 +2,7 @@
 
 ## Présentation
 
-Comparé aux motifs, séquences, rainures et les différentes directives utilisé dans MMA, les notations d'accords barre par barre sont étonnamment simple.
+Comparé aux motifs, séquences, Grooves et les différentes directives utilisé dans MMA, les notations d'accords barre par barre sont étonnamment simple.
 
 Toute ligne dans votre fichier de saisie qui n'est pas une directive ou un commentaire est supposée être une barre de données d'accords.
 
@@ -26,13 +26,18 @@ Ainsi on peut voir ces différentes lignes :
 - Cm Dm
 - 10 Cm Dm
 
+
+Notons que si les mots du langage peuvent être en majuscule ou en minuscule les noms des accords doivent obligatoirement être en
+majuscules.
+
+
 ## Numéros de barre
 
 Le numéro de barre d'attaque optionnel est silencieusement écarté par MMA. C'est juste un commentaire spécialisé qui vous aide à déboguer votre musique. Notez que seul un élément numérique est autorisé ici.
 
 Prenez l'habitude d'utiliser des numéros de barre. Vous vous remercierez quand une barre manquera à une chanson ou au contraire quand il y en aura une de trop, ainsi que si vous êtes amené à vouloir travailler sur quelques lignes d'accords et à extraire ces quelques lignes par la commande `mma -b`.
 
-Notez qu'il est parfaitement acceptable de n'avoir qu'une barre numéro sur une ligne. Ceci est courant lorsque vous utilisez la barre répéter   du genre de de la séquence : 
+Notez qu'il est parfaitement acceptable de n'avoir qu'une barre numéro sur une ligne. Ceci est courant lorsque vous utilisez une répétition du genre : 
 
 ~~~mma
 1 Cm * 4
@@ -54,12 +59,28 @@ Cm Cm Dm Dm * 4
 
 produit 4 mesures de sortie.
 
+Cela évite d'écrire 
+
+~~~mma
+Cm Cm Dm Dm
+Cm Cm Dm Dm
+Cm Cm Dm Dm
+Cm Cm Dm Dm
+~~~~
+
 Nous verrons que l'on aurait pu écrire :
 
 
 ~~~mma
 Cm / Dm / * 4
 ~~~
+
+ou même
+
+~~~mma
+Cm - Dm - * 4
+~~~
+
 
 ## Les accords
 
@@ -130,15 +151,16 @@ dans une piste de contrebasse, nous ne voulons probablement pas le son perdure s
 une barre entière: nous pouvons faire sonner les notes sur le premier et deuxième temps
 et mettre en sourdine les deuxième et quatrième temps.
 
-Ou bien que se passe-t-il si nous utilisons une piste et que nous voulons pas d'un de
+Ou bien que se passe-t-il si nous utilisons une piste et que nous voulons pas de
 la note du troisième temps ? 
 
 Pour mettre en sourdine  une note ou une série de notes, sur une piste (ou toutes les pistes) 
-on peut utiliser un nom d'accord spécial nommé z. 
+on peut utiliser un nom d'accord spécial nommé z. Ce z ne peut pas êre mis en majuscule contrairement aux autres
+mots clés du language. 
 
 Lorsqu'on utilise z collé derrière  un nom d'accord, il mettra en sourdine toutes les pistes à
 l'exception des pistes DRUM. 
-Vous pourrez cependant désactiver les pistes  Chord, Arpeggio, Échelle, Walk, Aria ou Basse
+Vous pourrez cependant désactiver les pistes  Accords, Arpège, Gamme, Basse, Basse en Walking, Vocal ou Basse
 en ajoutant un spécificateur de piste à  z. 
 
 Les spécificateurs de piste sont : 
@@ -149,7 +171,7 @@ Les spécificateurs de piste sont :
 - *C* les pistes d'accord (Chord),
 - *A* les pistes d'arpège,
 - *S* les pistes de gamme (Scale),
-- *R* les pistes d'aria,
+- *R* les pistes en vocal (Aria),
 - *P* les pistes de plectre.
 - *!* les silences. 
 
@@ -164,11 +186,11 @@ Fm z G7zC CmzD zW Em / z!
 ~~~
 
 - **Fm :** accord de Fa mineur avec basse et batterie
-- **s :** aucun accord
+- **z :** aucun accord
 - **G7zC :** accord de Sol7 sans l'accord mais avec basse et batterie
 - **CmzD :** accord de Do mineur sans batterie
 - **zw :** pas de basse walk mais accord et batterie sur l'accord précédent qui était Do mineur
-- **Em !** accord de Mi mineur avec basse et batterie
+- **Em :** accord de Mi mineur avec basse et batterie
 - **/ :** accord précédent c'est à dire M mineur avec basse et batterie
 - **z! :** pas d'accord mais un silence  renforcé par un ! qui produit un silence plus brutal.
 
@@ -181,48 +203,108 @@ Fm / Emz+AD
 ~~~
 
 - Dans la première ligne on met tout en sourdine sauf l'accord
-- Dans la deuxième ligne on met tout en sourdine sauf l'arpège et et la batterie
+- Dans la deuxième ligne on met tout en sourdine sauf l'arpège et la batterie
 
 
-## Positionnement 
-
-Dans MMA, le positionnement permet de contrôler à quel moment précis dans la mesure un accord est joué.
-Par défaut, les accords sont répartis uniformément dans la mesure, mais il est possible de les placer
-explicitement sur des temps spécifiques.
-
-Le positionnement se fait en précédant un accord par un numéro indiquant le temps dans la mesure.
+## Position 
 
 
+La notation suivante représente Dom Dom Rém Rém. Le deuxième Dom vient de la barre / et le deuxième
+Dm vient du fait que si la mesure n'est pas remplie on la remplit avec le dernier élément.
 
-Exemple :
 
 ~~~mma
-1 C 3 G
+Cm / Dm
 ~~~
 
-Dans une mesure en 4/4 :
 
-    l’accord C est joué sur le temps 1
+Le sybbole @ sert quant à lui à dire :
 
-    l’accord G est joué sur le temps 3
+- on veut cet accord à ce moment exact dans la mesure
+- Par exemple Dm@3 : Le rém commence au temps 3
 
-Les temps sont numérotés à partir de 1 jusqu’au nombre de temps de la mesure (défini par la signature rythmique).
+Ainsi 
 
-Il est également possible d’utiliser plusieurs positions dans une même mesure pour créer des rythmes plus complexes.
+~~~mma
+C D@3 F
+~~~
 
-Exemple :
 
-1 C 2 Dm 3 G 4 C
+En 4/4 :
 
-Ici, chaque temps de la mesure contient un accord différent.
+- C : le temps 1 dure jusqu’à 3
+- D : commence à 3  pour un temps
+- F : commence à 4
 
-Si aucun numéro de position n’est spécifié, MMA répartit automatiquement les accords de manière régulière sur la mesure.
 
-Le positionnement permet donc :
+~~~mma
+C D@3.5 F
+~~~
 
-- de contrôler précisément le rythme harmonique
-- de créer des syncopes ou des effets rythmiques
-- d’aligner les changements d’accords avec des accents musicaux
+- C : le temps 1 dure jusqu’à 3,5
+- D : commence à 3,5 et fait un demi temps
+- F : commence à 4
 
-Dans certains cas, des subdivisions peuvent être utilisées (selon le style ou les paramètres), permettant un placement 
-encore plus fin que les temps principaux.
+
+On trouvera les rythmes Jazz sous la forme : 
+
+~~~mma
+Cmaj7 E7@2.5 Am7 D7
+~~~
+
+On trouvera les rythmes Bossa Nova sous la forme
+
+~~~mma
+Cmaj7 G7@2.5 Fmaj7 G7@3.5
+~~~
+
+
+## Pistes Chord
+
+
+On peut vouloir qu'on instrument je suivent pas une ligne d'accord mais qui suive 
+un motif fxe comme en rap.
+
+On applique dans ce cas là la notation du style
+
+~~~mma
+Bass Chords C / G 
+~~~
+
+Cela veut dire que la basse joue tout le temps et peu importoe les accords du morceau : 
+- C sur les temps 1-2 
+- G sur les temps 3-4
+
+Si le morceau suit les accords ci-dessous, la basse elle reste cantonnée aux deux accords C et G
+et ce pendant tout le morceau
+
+~~~mma
+1 C
+2 G 
+3 C
+~~~
+
+On peut stopper cette répétiton par la syntaxe
+
+~~~mma
+
+Bass Chords
+~~~
+ou 
+
+~~~mma
+Bass Chords { }
+~~~
+
+
+
+On peut étendre cette boucle  sur plusieurs mesures 
+
+
+~~~mma
+Bass Chords {C} {G / B7} {Dm} {C G A B}
+~~~
+
+Cet exemple avec la Bass peut s'appliquer à n'importe quelle piste Bass, Chord, Arpeggio, Solo, Scale mais
+mais aussi à la piste nommée Piano.
+

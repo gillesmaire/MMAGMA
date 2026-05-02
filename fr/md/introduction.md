@@ -35,7 +35,7 @@ Mais le but principal de ChordV est de fabriquer des livrets de différents type
 - un livret avec les paroles et les grilles d'accords à la guitare dans le texte ;  
 - un livret avec juste les grilles d'accords pour les musiciens.  
 
-Dans les dernières versions de ChordV, j'ai ajouté une sortie des chansons au format **JJazzLab**, permettant d'écouter la rythmique, la basse ainsi que les accords. Cependant, ceci est à moitié satisfaisant : l'utilisateur ne bénéficie que d'un couplet et d'un refrain, et il doit apprendre à se servir de JjazzLab pour chaque chanson afin d'obtenir un résultat complet.
+Dans les dernières versions de ChordV, j'ai ajouté une sortie des chansons au format **JJazzLab**, permettant d'écouter la rythmique, la basse ainsi que les accords. Cependant, ceci est à moitié satisfaisant: l'utilisateur ne bénéficie que d'un couplet et d'un refrain, et il doit apprendre à se servir de JjazzLab pour chaque chanson afin d'obtenir un résultat complet en faisant des copiers coller à la souris et en ajoutant de petites variations à la souris pour rendre le morveau plus vivant.
 
 J'ai entendu parler de MMM, un  logiciel très puissant, qui a bénéficie d'une documentation de référence très précises et de quelques pages de mise en route plus légères, le tout en langue anglaise . J'ai donc décidé d'écrire ce livre sous forme d'une documentation intermédiaire mais en langue fançaise, d'abord pour apprendre à me servir de MMA et ensuite pouvoir implémenter une sortie MMA dans ChordV.
 
@@ -59,7 +59,7 @@ J'ai entendu parler de MMM, un  logiciel très puissant, qui a bénéficie d'une
 - Deux fichiers exécutables peuvent être  utiles : 
     - **compile :**  qui supprime les fichiers précédemment générés et lance la fabrication de la documentation par le biais d'un fichiers MMakeLists.txt. Il faut donc 
     installer CMake si vous voulez générer la documentation
-    - **play :** qui  convertit le fichier mma en fichier midi et qui lance sous Linux la commande d'écoute vi la sounfont /usr/share/sounds/sf2/FluidR3_GM.sf2
+    - **play :** qui  convertit le fichier mma en fichier midi et qui lance sous Linux la commande d'écoute vi la sounfont /usr/share/sounds/sf2/FluidR3_GM.sf2. Vous aurez à changer la commande play car dans l'exemple qui est donné j'ai choisi la troisième carte son. Un réglage plus paramétrable sera probablement fourni dans une version prochaine.
 - Quelques chansons sont fournies à titre d'exemple  dans le répertoire examples. 
 
 ### Remarques sur la commande play

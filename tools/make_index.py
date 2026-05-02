@@ -7,7 +7,7 @@ output_file = sys.argv[2]
 
 chapters = sorted([
     f for f in os.listdir(src_dir)
-    if f.startswith("chapitre-") and f.endswith(".md")
+    if f.endswith(".md")
 ])
 
 def title_from_file(path):
