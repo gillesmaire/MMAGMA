@@ -307,3 +307,4 @@ Bass Chords {C} {G / B7} {Dm} {C G A B}
 
 Cet exemple avec la Bass peut s'appliquer à n'importe quelle piste Bass, Chord, Arpeggio, Solo, Scale mais
 mais aussi à la piste nommée Piano.
+
