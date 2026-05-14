@@ -71,7 +71,8 @@ Options:
 - **-P :**          Génère le fichier MIDI et le joue mais supprime le ficier MIDI une fois qu'il a été joué
 - **-T <tracks> :** Limite la génération à certaines pistes. La liste de ces pistes étant séparées par des virgules. Par exemple : -T drum-hh,chord
 - **-M <x> :**      Type de fichier MIDI (0 = une piste, 1 = multi-pistes) 
-- **-m <x> :**      Nombre maximal de mesures (défaut 500)
+- **-m <x> :**      Nombre maximal de mesures (défaut 500). Ce paramètre avec sa valeur par défaut sert à éviter les boucles infinies
+qui peuvent survenir avec l'emploi de la directive GOTO.
 
 
 ## Tests et validation 
@@ -83,9 +84,10 @@ Options:
 
 - **-d :**   Active le mode debug (très verbeux et réservé au développeur)
 - **-e :**   Affiche les lignes après expansion 
-- **-r :**   Affiche la progression
-- **-s :**   Affiche les informations de séquence
-- **-L :**   Affiche l’ordre de traitement des mesures
+- **-r :**   Affiche la progression lors de l'exécution du morceau. Si des lignes sont incluses dans des boucles elles seront affichées
+autant de fois que nécessaire avec incrémentation du numéro de mesure.
+- **-s :**   Affiche les informations de séquence pendant l'exécution et montre les listes développées et réellement utilisées.
+- **-L :**   Affiche l’ordre de traitement des mesures à la fin du processus de compilation. 
 - **-o :**   Affiche les noms complets des fichiers ouverts
 
 ## Inspection du langage MMA
@@ -106,3 +108,5 @@ de document sont encadrés par les mots clés Doc et EndDox, mots clés qui peuv
 - **-Djs**:   Extrait les grooves en JSON
 - **-Dbo**:   Extrait du texte pour application web
 - **-Ds**:    Extrait les séquences
+
+

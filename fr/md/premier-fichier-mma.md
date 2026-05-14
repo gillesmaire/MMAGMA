@@ -8,9 +8,9 @@ Un fichier MMA est simplement un fichier texte contenant des commandes en mode t
 
 Par exemple :
 
-- sous Linux : Gedit, Kate, kwrite, Mousepad ou Vim ;
-- sous Windows : Notepad ou Notepad++ ;
-- sous macOS : TextEdit en mode texte.
+- sous Linux : gedit, kate, kwrite, mousepad ou vi ;
+- sous Windows : notepad ou notepad++ ;
+- sous macOS : textedit en mode texte.
 
 Le fichier devra porter l'extension `.mma`.
 

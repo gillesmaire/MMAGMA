@@ -41,7 +41,7 @@ Dans le deuxième exemple l'instrument ne sera pas TenorSax mais celui défini p
 
 ## Armure 
 
-Pour chacune des piste on devra une définir l'armure c'est à dire les dièses et les bémols  de début de portées qui s'appliquent sur la partition. Ceci se définit par le mot clé KeySig
+Pour chacune des pistes Solo ou Mélodie, on devra  définir l'armure c'est à dire les dièses et les bémols  de début de portées qui s'appliquent sur la partition. Ceci se définit par le mot clé KeySig
 
 
 
@@ -64,24 +64,24 @@ Enfin les mots clé Major Minor ou leur raccourci Maj Min peuvent être ajoutés
 
 Les notes jounées dans un Solo ou un Mélody doivent être définies accompagnées de leur durée :
 
-| Notation | Description        |  Durée |
-|:--------:|:------------------:|:------:|
-|    1     |  Ronde             | mesure |
-|    2     |  Blanche           | moitié |
-|    4     |  Noire             | quart  |
-|    8     |  Croche            | 8ème   | 
-|   16     |  Double croche     | 16ème  |
-|   32     |  Triple croche     | 32ème  |
-|   64     |  Quadruple croche  | 16ème  |
-|   81     |  1ère croche plus longue  | 8ème  |
-|   82     |  3ème croche plus courte  | 8ème  |
-|   3      |  Triolet de croches       | 3/8 |
-|   43     |  Triolet de noires        | 3/4|
-|   23     |  Triolet de blanches        |3/2 |
-|   6      |  Triolet de double croches  |3/16|
-|   5      |  quintolet de croches    ||
-|   0      |  tick MIDI               ||
-| ddT      |  dd nombre de ticks midi      ||
+| Notation | Description                |  Durée |
+|:--------:|:--------------------------:|:------:|
+|    1     |  Ronde                     | mesure |
+|    2     |  Blanche                   | moitié |
+|    4     |  Noire                     | quart  |
+|    8     |  Croche                    | 8ème   | 
+|   16     |  Double croche             | 16ème  |
+|   32     |  Triple croche             | 32ème  |
+|   64     |  Quadruple croche          | 16ème  |
+|   81     |  1ère croche plus longue   | 8ème   |
+|   82     |  3ème croche plus courte   | 8ème   |
+|   3      |  Triolet de croches        | 3/8    |
+|   43     |  Triolet de noires         | 3/4    |
+|   23     |  Triolet de blanches       | 3/2    |
+|   6      |  Triolet de double croches | 3/16   |
+|   5      |  quintolet de croches      |        |
+|   0      |  tick MIDI                 |        |
+| ddT      |  dd nombre de ticks midi   |        |
 
 
 
