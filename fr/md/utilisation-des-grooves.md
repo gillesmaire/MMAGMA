@@ -489,22 +489,22 @@ mma -d Court.mma   | sort
 | Leads synthé | 86 | Lead6(Voice) | Lead voix |
 | Leads synthé | 87 | Lead7(Fifths) | Lead quintes |
 | Leads synthé | 88 | Lead8(Bass+Lead) | Lead basse+solo |
-| Pads | 89 | Pad1 New Age | Pad new age |
-| Pads | 90 | Pad2 Warm | Pad warm |
-| Pads | 91 | Pad3 Polysynth | Pad polysynth |
-| Pads | 92 | Pad4 Choir | Pad chœur |
-| Pads | 93 | Pad5 Bowed | Pad frotté |
-| Pads | 94 | Pad6 Metallic | Pad métallique |
-| Pads | 95 | Pad7 Halo | Pad halo |
-| Pads | 96 | Pad8 Sweep | Pad sweep |
-| FX | 97 | FX 1 Rain | Effet pluie |
-| FX | 98 | FX 2 Soundtrack | Bande son |
-| FX | 99 | FX 3 Crystal | Cristal |
-| FX | 100 | FX 4 Atmosphere | Atmosphère |
-| FX | 101 | FX 5 Brightness | Brillance |
-| FX | 102 | FX 6 Goblins | Goblins |
-| FX | 103 | FX 7 Echoes | Échos |
-| FX | 104 | FX 8 Sci-fi | Science-fiction |
+| Pads | 89 | Pad1(neage) | Pad new age |
+| Pads | 90 | Pad2(warm) | Pad warm |
+| Pads | 91 | Pad3(polysynth) | Pad polysynth |
+| Pads | 92 | Pad4(choir) | Pad chœur |
+| Pads | 93 | Pad5(bowed) | Pad frotté |
+| Pads | 94 | Pad6(metallic) | Pad métallique |
+| Pads | 95 | Pad7(halo) | Pad halo |
+| Pads | 96 | Pad8(sweep) | Pad sweep |
+| FX | 97 | FX1(rain) | Effet pluie |
+| FX | 98 | FX2(soundtrack) | Bande son |
+| FX | 99 | FX3(crystal) | Cristal |
+| FX | 100 | FX4(atmosphere) | Atmosphère |
+| FX | 101 | FX5(brightness) | Brillance |
+| FX | 102 | FX6(goblins) | Goblins |
+| FX | 103 | FX7(echoes) | Échos |
+| FX | 104 | FX8(sci-fi) | Science-fiction |
 | Ethniques | 105 | Sitar | Sitar |
 | Ethniques | 106 | Banjo | Banjo |
 | Ethniques | 107 | Shamisen | Shamisen |
@@ -515,17 +515,17 @@ mma -d Court.mma   | sort
 | Ethniques | 112 | Shanai | Shanaï |
 | Percussions / FX | 113 | Tinkle Bell | Clochette |
 | Percussions / FX | 114 | Agogo | Agogo |
-| Percussions / FX | 115 | Steel Drums | Steel drums |
+| Percussions / FX | 115 | SteelDrums | Steel drums |
 | Percussions / FX | 116 | Woodblock | Woodblock |
-| Percussions / FX | 117 | Taiko Drum | Tambour taiko |
-| Percussions / FX | 118 | Melodic Tom | Tom mélodique |
-| Percussions / FX | 119 | Synth Drum | Batterie synthé |
-| Percussions / FX | 120 | Reverse Cymbal | Cymbale inv |
-| Bruitages | 121 | Guitar Fret Noise | Bruit de frettes |
-| Bruitages | 122 | Breath Noise | Souffle |
+| Percussions / FX | 117 | TaikoDrum | Tambour taiko |
+| Percussions / FX | 118 | MelodicTom | Tom mélodique |
+| Percussions / FX | 119 | SynthDrum | Batterie synthé |
+| Percussions / FX | 120 | ReverseCymbal | Cymbale inv |
+| Bruitages | 121 | GuitarFretNoise | Bruit de frettes |
+| Bruitages | 122 | BreathNoise | Souffle |
 | Bruitages | 123 | Seashore | Vagues |
-| Bruitages | 124 | Bird Tweet | Chant d’oiseau |
-| Bruitages | 125 | Telephone Ring | Sonnerie téléphone |
+| Bruitages | 124 | BirdTweet | Chant d’oiseau |
+| Bruitages | 125 | TelephoneRing | Sonnerie téléphone |
 | Bruitages | 126 | Helicopter | Hélicoptère |
 | Bruitages | 127 | Applause | Applaudissements |
 | Bruitages | 128 | Gunshot | Coup de feu |
