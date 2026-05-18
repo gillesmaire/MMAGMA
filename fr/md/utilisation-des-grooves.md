@@ -397,9 +397,9 @@ mma -d Court.mma   | sort
 ## Les instruments MIDI 
 
 
-- Les instruments peuvent être sélectionné par leur nom donné dans la colonne 4 ou par leur numéro donné dans la colone 1
+- Les instruments peuvent être sélectionné par leur nom donné dans la colonne Nom Anglais ou par leur numéro donné dans la colone Numéro
 
-| Catégorie | Instrument | Nom anglais  |   Nom français |
+| Catégorie | Numéro | Nom anglais  |   Nom français |
 |:---------|:----------|:------------|:--------------|
 | Pianos	| 1	         | AcousticGrandPiano	| Piano|
 | Pianos	| 2	| BrightAcousticPiano	|Piano brillant |
