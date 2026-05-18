@@ -303,4 +303,229 @@ Groove Swing CountrySwing Swing CountrySwing / Swing /
 ~~~
 
 
-## Cas pr
+## Afficher les instruments d'un groove
+
+
+- La commande  suivante affiche toutes les informations utiles : 
+
+~~~mma
+mma -k fichier.mma
+~~~
+
+- Nous allons utiliser la commande grep linux pour filter les différentes pistes créées : 
+- La commande suivante affiche les différentes pistes créées
+
+~~~
+mma -d Court.mma  | grep Creating
+
+Creating new track DRUM
+Creating new track SCALE
+Creating new track BASS
+Creating new track ARPEGGIO
+Creating new track CHORD
+Creating new track WALK
+Creating new track DRUM-PHH
+Creating new track DRUM-OHH
+Creating new track DRUM-KICK
+Creating new track DRUM-SIDE
+Creating new track DRUM-LOWCONGA
+Creating new track DRUM-HICONGA
+Creating new track CHORD-GUITAR
+Creating new track CHORD-SUS
+Creating new track DRUM-RIDEC
+Creating new track CHORD-SAX
+Creating new track DRUM-SNARE
+~~~
+
+- La commande suivante montre les canaux MIDI assignés 
+    - le canal dix est assigné à toutes les percussion s KICK, SODE, LOWCONGA etc ..
+    - le canal 16 à la basse
+    - le canal 15 aux accords 
+    - le canal 16 aux accords guitare
+
+~~~mma
+mma -d Court.mma  | grep assigned
+
+MIDI Channel 10 assigned to DRUM
+MIDI Channel 10 assigned to DRUM-PHH
+MIDI Channel 10 assigned to DRUM-OHH
+MIDI Channel 10 assigned to DRUM-KICK
+MIDI Channel 10 assigned to DRUM-SIDE
+MIDI Channel 10 assigned to DRUM-LOWCONGA
+MIDI Channel 10 assigned to DRUM-HICONGA
+MIDI Channel 10 assigned to DRUM-RIDEC
+MIDI Channel 10 assigned to DRUM-SNARE
+MIDI Channel 16 assigned to BASS
+MIDI Channel 15 assigned to CHORD
+MIDI Channel 14 assigned to CHORD-GUITAR
+~~~
+
+- La commande suivante affiche les différents volumes volume : 40 40 40 40 chaque pattern
+
+~~~
+mma -d Court.mma  | grep " Volume"
+
+mma -d Court.mma  | grep " Volume"
+Set DRUM-PHH Volume to: 40 40 40 40
+Set DRUM-OHH Volume to: 40 40 40 40
+Set DRUM-KICK Volume to: 70 70 70 70
+Set DRUM-SIDE Volume to: 70 70 70 70
+Set DRUM-LOWCONGA Volume to: 130 130 130 130
+Set DRUM-HICONGA Volume to: 130 130 130 130
+Set CHORD Volume to: 70 70 70 70
+Set CHORD-GUITAR Volume to: 70 70 70 70
+Set BASS Volume to: 110 110 110 110
+Set WALK Volume to: 110 110 110 110
+Set ARPEGGIO Volume to: 40 40 40 40
+Set CHORD-SUS Volume to: 40 40 40 40
+Set WALK Volume to: 110 110 110 110
+Set CHORD Volume to: 40 40 40 40
+Set CHORD-SAX Volume to: 10 10 10 10
+Set WALK Volume to: 110 110 110 110
+Set BASS Volume to: 110 110 110 110
+Set CHORD Volume to: 110
+Set SCALE Volume to: 70 70 70 70
+~~~
+
+- La commande suivante affiche la liste de tous les réglages par catégorie 
+
+~~~
+mma -d Court.mma   | sort
+~~~
+
+
+## Les instruments MIDI 
+
+
+- Les instruments peuvent être sélectionné par leur nom donné dans la colonne 4 ou par leur numéro donné dans la colone 1
+
+| Catégorie | Instrument | Nom anglais  |   Nom français |
+|:---------|:----------|:------------|:--------------|
+| Pianos	| 1	         | AcousticGrandPiano	| Piano|
+| Pianos	| 2	| BrightAcousticPiano	|Piano brillant |
+| Pianos    |	3	|Electric Grand Piano	|Piano |
+| Pianos    |	4	|Honky-tonkPiano	|Piano honky-tonk|
+| Pianos    |	5	|ElectricPiano1	|Piano électrique 1|
+| Pianos    |6	|ElectricPiano2	|Piano électrique 2|
+| Pianos    |	7|	Harpsichord	|Clavecin|
+| Pianos|	8|	Clavinet	|Clavinet|
+| Percussions | 9 | Celesta | Célesta |
+| Percussions| 10 | Glockenspiel | Glockenspiel |
+| Percussions | 11 | MusicBox | Boîte à musique |
+| Percussions | 12 | Vibraphone | Vibraphone |
+| Percussions | 13 | Marimba | Marimba |
+| Percussions| 14 | Xylophone | Xylophone |
+| Percussions | 15 | TubularBells | Cloches tubulaires |
+| Percussions| 16 | Dulcimer | Cymbalum / Dulcimer |
+| Orgues | 17 | DrawbarOrgan | Orgue Hammond |
+| Orgues | 18 | PercussiveOrgan | Orgue percussif |
+| Orgues | 19 | RockOrgan | Orgue rock |
+| Orgues | 20 | ChurchOrgan | Orgue d’église |
+| Orgues | 21 | ReedOrgan | Harmonium |
+| Orgues | 22 | Accordion | Accordéon |
+| Orgues | 23 | Harmonica | Harmonica |
+| Orgues | 24 | TangoAccordion | Accordéon tango |
+| Guitares | 25 | AcousticGuitar(nylon) | Guitare nylon |
+| Guitares | 26 | AcousticGuitar(steel) | Guitare folk  |
+| Guitares | 27 | ElectricGuitar(jazz) | Guitare jazz |
+| Guitares | 28 | ElectricGuitar(clean | Guitare électrique |
+| Guitares | 29 | ElectricGuitar(muted) | Guitare mutée |
+| Guitares | 30 | OverdrivenGuitar | Guitare overdrive |
+| Guitares | 31 | DistortionGuitar | Guitare saturée |
+| Guitares | 32 | GuitarHarmonics | Harmoniques guitare |
+| Basses | 33 | AcousticBass | Contrebasse |
+| Basses | 34 | ElectricBass(finger) | Basse élec. doigt |
+| Basses | 35 | ElectricBass(pick) | Basse élec. médiator |
+| Basses | 36 | Fretless(Bass) | Basse fretless |
+| Basses | 37 | SlapBbass1 | Slap bass 1 |
+| Basses | 38 | SlapBass2 | Slap bass 2 |
+| Basses | 39 | SynthBass1 | Basse synthé 1 |
+| Basses | 40 | SynthBass2 | Basse synthé 2 |
+| Cordes | 41 | Violin | Violon |
+| Cordes | 42 | Viola | Alto |
+| Cordes | 43 | Cello | Violoncelle |
+| Cordes | 44 | Contrabass | Contrebasse section |
+| Cordes | 45 | TremoloStrings | Cordes trémolo |
+| Cordes | 46 | PizzicatoStrings | Cordes pizzicato |
+| Cordes | 47 | Orchestral Harp | Harpe |
+| Cordes | 48 | Timpani | Timbales |
+| Ensembles | 49 | StringEnsemble1 | Ensemble cordes 1 |
+| Ensembles | 50 | StringEnsemble2 | Ensemble cordes 2 |
+| Ensembles | 51 | SynthStrings1 | Cordes synthé 1 |
+| Ensembles | 52 | SynthStrings2 | Cordes synthé 2 |
+| Ensembles | 53 | ChoirAahs | Chœur Aahs |
+| Ensembles | 54 | VoiceOohs | Chœur Oohs |
+| Ensembles | 55 | SynthVoice | Voix synthé |
+| Ensembles | 56 | OrchestraHit | Coup d’orchestre |
+| Cuivres | 57 | Trumpet | Trompette |
+| Cuivres | 58 | Trombone | Trombone |
+| Cuivres | 59 | Tuba | Tuba |
+| Cuivres | 60 | MutedTrumpet | Trompette bouchée |
+| Cuivres | 61 | FrenchHorn | Cor français |
+| Cuivres | 62 | BrassSection | Section cuivres |
+| Cuivres | 63 | SynthBrass 1 | Cuivres synthé 1 |
+| Cuivres | 64 | SynthBrass 2 | Cuivres synthé 2 |
+| Bois / anches | 65 | SopranoSax | Sax soprano |
+| Bois / anches | 66 | AltoSax | Sax alto |
+| Bois / anches | 67 | TenorSax | Sax ténor |
+| Bois / anches | 68 | BaritoneSax | Sax baryton |
+| Bois / anches | 69 | Oboe | Hautbois |
+| Bois / anches | 70 | EnglishHorn | Cor anglais |
+| Bois / anches | 71 | Bassoon | Basson |
+| Bois / anches | 72 | Clarinet | Clarinette |
+| Flûtes | 73 | Piccolo | Piccolo |
+| Flûtes | 74 | Flute | Flûte |
+| Flûtes | 75 | Recorder | Flûte à bec |
+| Flûtes | 76 | PanFlute | Flûte de pan |
+| Flûtes | 77 | BlownBottle | Bouteille soufflée |
+| Flûtes | 78 | Shakuhachi | Shakuhachi |
+| Flûtes | 79 | Whistle | Sifflet |
+| Flûtes | 80 | Ocarina | Ocarina |
+| Leads synthé | 81 | Lead1(Square) | Lead carré |
+| Leads synthé | 82 | Lead2(Sawtooth | Lead dent de scie |
+| Leads synthé | 83 | Lead3(Calliope) | Lead calliope |
+| Leads synthé | 84 | Lead4(Chiff) | Lead chiff |
+| Leads synthé | 85 | Lead5(Charang) | Lead charang |
+| Leads synthé | 86 | Lead6(Voice) | Lead voix |
+| Leads synthé | 87 | Lead7(Fifths) | Lead quintes |
+| Leads synthé | 88 | Lead8(Bass+Lead) | Lead basse+solo |
+| Pads | 89 | Pad1 New Age | Pad new age |
+| Pads | 90 | Pad2 Warm | Pad warm |
+| Pads | 91 | Pad3 Polysynth | Pad polysynth |
+| Pads | 92 | Pad4 Choir | Pad chœur |
+| Pads | 93 | Pad5 Bowed | Pad frotté |
+| Pads | 94 | Pad6 Metallic | Pad métallique |
+| Pads | 95 | Pad7 Halo | Pad halo |
+| Pads | 96 | Pad8 Sweep | Pad sweep |
+| FX | 97 | FX 1 Rain | Effet pluie |
+| FX | 98 | FX 2 Soundtrack | Bande son |
+| FX | 99 | FX 3 Crystal | Cristal |
+| FX | 100 | FX 4 Atmosphere | Atmosphère |
+| FX | 101 | FX 5 Brightness | Brillance |
+| FX | 102 | FX 6 Goblins | Goblins |
+| FX | 103 | FX 7 Echoes | Échos |
+| FX | 104 | FX 8 Sci-fi | Science-fiction |
+| Ethniques | 105 | Sitar | Sitar |
+| Ethniques | 106 | Banjo | Banjo |
+| Ethniques | 107 | Shamisen | Shamisen |
+| Ethniques | 108 | Koto | Koto |
+| Ethniques | 109 | Kalimba | Kalimba |
+| Ethniques | 110 | Bagpipe | Cornemuse |
+| Ethniques | 111 | Fiddle | Violon folk |
+| Ethniques | 112 | Shanai | Shanaï |
+| Percussions / FX | 113 | Tinkle Bell | Clochette |
+| Percussions / FX | 114 | Agogo | Agogo |
+| Percussions / FX | 115 | Steel Drums | Steel drums |
+| Percussions / FX | 116 | Woodblock | Woodblock |
+| Percussions / FX | 117 | Taiko Drum | Tambour taiko |
+| Percussions / FX | 118 | Melodic Tom | Tom mélodique |
+| Percussions / FX | 119 | Synth Drum | Batterie synthé |
+| Percussions / FX | 120 | Reverse Cymbal | Cymbale inv |
+| Bruitages | 121 | Guitar Fret Noise | Bruit de frettes |
+| Bruitages | 122 | Breath Noise | Souffle |
+| Bruitages | 123 | Seashore | Vagues |
+| Bruitages | 124 | Bird Tweet | Chant d’oiseau |
+| Bruitages | 125 | Telephone Ring | Sonnerie téléphone |
+| Bruitages | 126 | Helicopter | Hélicoptère |
+| Bruitages | 127 | Applause | Applaudissements |
+| Bruitages | 128 | Gunshot | Coup de feu |

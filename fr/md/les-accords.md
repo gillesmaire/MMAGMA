@@ -10,14 +10,14 @@ C’est l’élément de base pour construire l’harmonie d’un morceau. Chaqu
 Pour la majorité des morceaux, vous utiliserez les **accords prédéfinis** fournis par MMA, comme `C:maj`, `A:min`, `G7`, ou `F:maj7`.  
 Ces accords peuvent être joués sur n’importe quelle piste ou instrument.
 
-Si on ne précise pas le qualificateur maj min ou 7 eme l'accord est majeur.  Nous verrons que dans certain cas il faudrai préciser le qualificateur :maj pour ne pas faire jouer une note mais bien un accord. Nous reviendrons sur ce point.
+Si on ne précise pas le qualificateur maj min ou 7 eme l'accord est majeur.  Nous verrons que dans certain cas il faudra préciser le qualificateur :maj pour ne pas faire jouer une note mais bien un accord. Nous reviendrons sur ce point.
 
 
 
 
 ## Écrire les accords dans un fichier MMA
 
-Les accords sont inscrits dans le fichier MMA par ligne et par piste.  Chaque ligne correspond à une position rythmique dans la mesure, mais pas directement directement à la durée d’un accord comme dans une partition classique.
+Les accords sont inscrits dans le fichier MMA par ligne et par piste. Chaque ligne correspond à une position rythmique dans la mesure, mais pas directement directement à la durée d’un accord comme dans une partition classique.
 
 
 ~~~mma

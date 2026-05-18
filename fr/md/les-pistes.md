@@ -2,7 +2,7 @@
 
 ## Présentation 
 
-Dans  un fichier MMA, une piste représente une partie musicale sous une des dix formesde  suivantes : 
+Dans  un fichier MMA, une piste représente une partie musicale sous une des dix formes suivantes : 
 
 - **Drum :** batterie ou percussions qui en général en MIDI sont allouées au canal MIDI 10
 - **Bass :** les notes d'un instrument de basse (contrebasse, basse, hélicon) souvent la fondamentale.
