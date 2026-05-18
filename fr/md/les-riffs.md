@@ -11,6 +11,7 @@ Autrement dit :
 
 
 Les riffs peuvent être définis 
+
 - en degrés d'accord 
 - en notation ryhtmique
 

@@ -64,7 +64,14 @@ Se fait par la commande compile à la racine
 ~~~
 
 
-# Récupérer juse le fichier PDF de la dernière version de la documentation 
+# Récupérer juste le fichier PDF de la dernière version de la documentation 
 
 https://github.com/gillesmaire/MMAGMA/tree/main/fr/pdf/MMAGMA-fr.pdf
+
+# Autre format 
+
+
+La documentation est disponible en HTML ou en fichiers DPF en éxécutant la commande cmake
+
+
 

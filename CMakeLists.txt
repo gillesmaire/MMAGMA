@@ -15,13 +15,14 @@ set (CHAPTERS
               ${MD_DIR}/installation.md
               ${MD_DIR}/vocabulaire.md
               ${MD_DIR}/premier-fichier-mma.md
+              ${MD_DIR}/Ameliorations-MIDI-Linux.md
               ${MD_DIR}/utilisation-des-grooves.md
               ${MD_DIR}/format-MMA.md
-              ${MD_DIR}/les-sequences.md
-              ${MD_DIR}/les-riffs.md
+              ${MD_DIR}/les-accords.md
               ${MD_DIR}/les-boucles.md
               ${MD_DIR}/les-pistes.md
-              ${MD_DIR}/les-accords.md
+              ${MD_DIR}/les-sequences.md
+              ${MD_DIR}/les-riffs.md
               ${MD_DIR}/le-rythme.md
               ${MD_DIR}/les-paroles.md
               ${MD_DIR}/pistes-solo-et-melodie.md

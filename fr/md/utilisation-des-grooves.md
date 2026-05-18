@@ -1,17 +1,22 @@
 # Utilisations des grooves
 
-## Qu'est ce qu'un groove 
+## Présentation des groove
 
-Dans MMA, un groove est un modèle d’accompagnement musical automatique.
+### Qu'est ce qu'un groove 
 
-Ce groove définit pour une mesure : 
-
-- la batterie (drums)
-- la basse
-- le comping (piano/guitare)
-- le style rythmique
+Dans MMA, un groove est un modèle d’accompagnement musical automatique, c'est à dire qu'il permet d'utiliser des motifs et des séquences.
 
 
+Ce groove définit pour une mesure les jeux : 
+
+- de la batterie (drums)
+- de la basse
+- des accords (piano/guitare)
+- du style rythmique
+
+
+Le Groove ne définit pas le style de guitare utilisée ou les types de percussion, 
+C'est dans le morceau que le type d'instrument sera utilisé.
 Sous Linux les fichiers Groove se trouvent dans le répertoire 
 
 ~~~bash
@@ -57,7 +62,7 @@ jazzswing.mma
 ~~~
 
 
-## L'appel d'un Groove 
+### L'appel d'un Groove 
 
 L'appel d'un groove se fait par :
 
@@ -75,7 +80,7 @@ Mais il ne change pas les accords
 
 Ceci va jouer tout le long du morceau avec le Groove sélectionné.
 
-## L'appel de plusieurs Groove
+### L'appel de plusieurs Groove
 
 L'appel de plusieurs grooves se fait par exemple comme ceci :
 
@@ -91,21 +96,21 @@ des boucles sur les couplets, nous verrons que nous disposons un autre outil.
 
 Cette utilisation permet juste de créer des balancements rythmiques et simuler des battements moins mécaniques
 
-On peut même faire des répétitions d'un même groove : 
+On peut même faire des répétitions d'un même groove: 
 
 ~~~
 Groove G1 G1 G1 G2 G2 G3
 ~~~
 
 Nous verrons par la suite que la succession de mesures peut se faire en utilisant le symbole / 
-de répétition :
+de répétition:
 
 ~~~
 Groove G1 //  G2 / G3
 ~~~
 
 
-On aurait pu donc pour revenir à notre exemple  choisir les répétions de Groove :  
+On aurait pu donc pour revenir à notre exemple  choisir les répétions de Groove: 
 
 ~~~
 Groove Swing // CountrySwing // WesterSwing /
@@ -130,7 +135,7 @@ la Commande Repeat qui permet de faire des boucles peut permettre de faire une  
 de Groove suivant un indice et pour chaque indice d'effectuer des adaptations.
 
 
-## Appel de groove par nom de fichier 
+### Appel de groove par nom de fichier 
 
 ~~~mma
 Groove stdlib/rhumba:rhumaend
@@ -139,7 +144,7 @@ Groove stdlib/rhumba:rhumaend
 Ceci va charger le fichier rhumba situé dans le répertoire stdlib et ne prendre que le groove nommé
 rhumaend sachant que tout ce qui est à gauche des deux points (:) fait partie du système de fichiers.
 
-## Les alias de Groove
+### Les alias de Groove
 
 - La syntaxe suivante permet de lancer le groove swing via le nomm MoGroove
 
@@ -149,7 +154,7 @@ DefAlias Swing MonGroove
 
 Ce nouveau nom de groove ne doit pas être déjà utilisé ni dans un Groove existant ni dans un Alias
 
-## AllGrooves 
+### AllGrooves 
 
 La directive AllGrooves permet d'appliquer des modification à tous les Groove utilisés. 
 
@@ -177,11 +182,35 @@ On peut ajouter d'autres modifieur dans la directive AllGrooves :
 - Skip=A ou Skip=A,B pour ne pas appliquer les modicitaton à une liste de Groove 
 
 
-## Supprimer les grooves
+### Supprimer les grooves
 
-GrooveClear permet de ne plus utiliser les Groove qui ont été chargés
+GrooveClear permet de ne plus utiliser les Groove qui ont été chargés en mémoire. Cette instruction peut être utile
+quand on désire changer de Groove après une introduction. L'utilisation de GROOVECLEAR efface les données existantes ainsi que les
+alias de Groove et force une relecture du fichier de la bibliothèque.
+Veuillez noter que les paramètres de bas niveau tels que les affectations de pistes MIDI ne sont pas modifiés par cette commande.
+Les alias Groove sont également supprimés avec cette commande.
+Les paramètres de bas niveau tels que les affectation de pistes MIDI ne sont pas modifiés par cette commande. 
 
-## Les fichiers groove
+
+### Les sticky Grooves
+
+On peut vouloir qu'une piste soit invisible aux mécanismes de Groove par exemmple pour une piste de clic.
+La piste ClicTest sera définiee comme : 
+
+~~~mma
+Drum-Test Sticky True
+~~~
+- La piste Sticky peut également prendre les valeurs **False**, **On**,  **1**, **Off** ou **0** 
+
+### Noms de Groove identiques 
+
+Si deux Grooves identiques sont définis dans deux Fichiers mma,  on doit faire précéder juste avant l'appel du groove la directive
+
+~~~mma
+use  fichier-voulu
+~~~
+
+La directive **use**  va lire le fichier spécifié et écraser l'ancienne définition de "Rhumba2" et le remplacer
 
 
 ## Les Grooves par famille
@@ -273,3 +302,5 @@ Groove Swing CountrySwing Swing CountrySwing / Swing /
 8 Gb    B7
 ~~~
 
+
+## Cas pr

@@ -2,16 +2,17 @@
 
 ## Les enjeux
 
-Le chapitre sur les séquences explicite comment produire des répétitions de mesure à l'intérieur d'une piste. Ici nous allons utiliser un mécanisme qui permet de produire des répétitions
+Le chapitre sur les séquences explicite comment produire des répétitions de mesure à l'intérieur d'une piste. Nous allons maintenant utiliser un mécanisme qui permet de produire des répétitions
 de plusieurs pistes à la fois.
 
 En outre, si nous pourrions envisager de faire des copier coller des couplets et refrains, une modification d'une piste obligerait de faire des modifications dans toutes les séquences copiées.
 
-Enfin cette présente documentation annnonçait un couplage possible avec le logiciel ChordV. 
+Cette documentation met en exergue un couplage possible avec le logiciel ChordV. 
+
 Actuellement ChordV permet un export d'un couplet et refrain vers JJazzLab qui demande une
 intervention humaine pour duppliquer les couplets refrains. 
 
-Avec les boucles de MMA nous pouvons envisager un export sans retouche vers les fichiers MIDI
+Avec les boucles de MMA nous pouvons produire un export sans retouche vers les fichiers MIDI. Cet export pourra bien sûr être complété par des améliorations manuelles.
 
 ## Mise en place des répétition dans MMA
 
@@ -28,8 +29,8 @@ Cette séquence produira 10 lignes alternant les Am et les Cm
 
 ## Conventions 
 
-- Si on ommet le nombre de copies, deux copies seront effectuées
-- Avec un nombre de copies à 1 nous aurons une itération à savoir Am Cm
+- Si le nombre de copiesest omis, deux copies seront effectuées
+- Avec un nombre de copies à 1,  une seule itération sera exécutée et le résultat sera Am Cm
 - Avec le nombre 0 nous aurons aucune sortie.
 
 
@@ -60,7 +61,7 @@ Am
 C
 ~~~
 
-On peut imbriquer plusieurs Repeat et plusieurs RepeatEnd 
+Plusieurs Repeat et plusieurs RepeatEnd peuvent être imbriqués.
 
 ## Option NoWarn
 
@@ -115,7 +116,7 @@ play Barbiche.mma mambo
 play Barbiche merengue
 ~~~
 
-
+La commande play est celle présente dans la racine du projet MMA.
 
 
 

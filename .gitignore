@@ -1,5 +1,6 @@
 CMakeCache.txt
 *-swp
+*.swp
 *.epub
 *.mid
 Makefile

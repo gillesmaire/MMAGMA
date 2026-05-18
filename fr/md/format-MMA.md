@@ -258,8 +258,7 @@ On trouvera les rythmes Bossa Nova sous la forme
 Cmaj7 G7@2.5 Fmaj7 G7@3.5
 ~~~
 
-
-## Pistes Chord
+## Pistes Chord
 
 
 On peut vouloir qu'on instrument je suivent pas une ligne d'accord mais qui suive 
