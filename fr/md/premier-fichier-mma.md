@@ -75,7 +75,7 @@ Overwriting existing midi file (4 bars, 0.13 min / 0:08 m:s): 'example0.mid'
 
 ## Lecture du fichier MIDI
 
-### Sous Winwdows ou sous MacOS
+### Sous Windows ou sous MacOS
 
 Sous Windows ou MacOs, un double-clic sur le fichier .mid ouvre généralement le lecteur multimédia par défaut.
 

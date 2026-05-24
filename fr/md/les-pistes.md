@@ -56,7 +56,7 @@ définies par le ou les Groove choisis par Court.mma. On remarque que le canal 1
 
 On voit les canaux associés à chaque pistes.
 
-De plus nous devrons associer aux composant voulus un instrument et chaque piste possède
+De plus, nous devrons associer aux composant voulus un instrument et chaque piste possède
 son propre instrument, son propre rythme et sa propre manière d'utiliser les accords du morceau.
 
 Les Grooves définissent le rythme au moyen des mots Drum,Bass, Walk, Chord, Arpeggio, Scale, Plectrum, Automatic Melody. Si aucun instrument n'est associé ces mots clés, un instrument par défaut sera choisi par MMA.

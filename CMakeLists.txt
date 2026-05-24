@@ -11,11 +11,11 @@ set(INDEX_MD ${CMAKE_BINARY_DIR}/mmagma_index.md)
 # Chapitres Markdown
 # =========================================================
 set (CHAPTERS
-              ${MD_DIR}/PartieIPrésentation.md
+              ${MD_DIR}/Partie-I-Présentation.md
               ${MD_DIR}/introduction.md
               ${MD_DIR}/installation.md
               ${MD_DIR}/vocabulaire.md
-              ${MD_DIR}/PartieIIInitiation.md
+              ${MD_DIR}/Partie-II-Initiation.md
               ${MD_DIR}/premier-fichier-mma.md
               ${MD_DIR}/Ameliorations-MIDI-Linux.md
               ${MD_DIR}/utilisation-des-grooves.md
@@ -23,6 +23,7 @@ set (CHAPTERS
               ${MD_DIR}/les-accords.md
               ${MD_DIR}/les-boucles.md
               ${MD_DIR}/les-pistes.md
+              ${MD_DIR}/Partie-III-PlusLoinDansLesReglages.md
               ${MD_DIR}/les-sequences.md
               ${MD_DIR}/les-riffs.md
               ${MD_DIR}/le-rythme.md
