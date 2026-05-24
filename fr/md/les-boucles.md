@@ -2,17 +2,10 @@
 
 ## Les enjeux
 
-Le chapitre sur les séquences explicite comment produire des répétitions de mesure à l'intérieur d'une piste. Nous allons maintenant utiliser un mécanisme qui permet de produire des répétitions
-de plusieurs pistes à la fois.
+Nous allons maintenant utiliser un mécanisme qui permet de produire des répétitions de couplets refrains ou de toute autre partie d'une musique.
 
-En outre, si nous pourrions envisager de faire des copier coller des couplets et refrains, une modification d'une piste obligerait de faire des modifications dans toutes les séquences copiées.
-
-Cette documentation met en exergue un couplage possible avec le logiciel ChordV. 
-
-Actuellement ChordV permet un export d'un couplet et refrain vers JJazzLab qui demande une
-intervention humaine pour duppliquer les couplets refrains. 
-
-Avec les boucles de MMA nous pouvons produire un export sans retouche vers les fichiers MIDI. Cet export pourra bien sûr être complété par des améliorations manuelles.
+Avec ce mécanisme de boucles, nous pouvons produire un export des accords sans fournir des fichiers répétitifs ou la moindre modification de style
+oblierait à répercuter ces modification sur chaque couplet par exemple. Cet export pourra bien sûr être complété par des améliorations manuelles.
 
 ## Mise en place des répétition dans MMA
 
@@ -31,7 +24,8 @@ Cette séquence produira 10 lignes alternant les Am et les Cm
 
 - Si le nombre de copies est omis, deux copies seront effectuées
 - Avec un nombre de copies à 1,  une seule itération sera exécutée et le résultat sera Am Cm
-- Avec le nombre 0 nous aurions aucune sortie.
+- Avec le nombre 0 nous aurions aucune sortie ce qui peut être utile pour laisser différentes introductions et n'en activer qu'une en préservant 
+les autres pour un usage futur.
 
 
 ## Options RepatEnding 
@@ -111,8 +105,8 @@ On peut écouter cette chanson en format MIDI par la commande **play** disponibl
 un autre Groove comme par exemple :
 
 ~~~bash
-play Barbiche.mma jazzguitar
-play Barbiche.mma mambo
+play Barbiche jazzguitar
+play Barbiche mambo
 play Barbiche merengue
 ~~~
 
