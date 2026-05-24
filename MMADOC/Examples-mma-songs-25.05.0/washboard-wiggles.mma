@@ -1,0 +1,61 @@
+// Washboard Wiggles (1929)
+
+Tempo $(110 * 2)
+Transpose Down Min 6
+
+Groove Metronome2-4
+  z * 2
+  
+Repeat 
+Repeat
+Groove Jive
+1        Fm
+2        C7
+3        Fm
+4        C7
+
+Groove JiveClap
+
+5        Fm
+6        C7
+7        Fm
+8         /
+
+RepeatEnd
+
+Groove JiveSus
+
+9        F7
+10        /
+11      Bbm      /     F7
+12      Bbm
+
+Groove JiveClapSus
+
+13      Eb7
+14        /
+15       Ab
+16       C7
+
+Groove JiveSusPlus
+
+17       Fm
+18       C7
+19       Fm
+20       C7
+
+Groove JivePlus
+
+21       Fm
+22       C7
+
+Repeatending 2
+Groove JiveClap
+23       Fm
+24        /
+
+Repeatend 
+Groove JiveEnd
+
+25       Fm
+26        /  / z!

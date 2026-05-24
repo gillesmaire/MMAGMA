@@ -1,0 +1,54 @@
+// Farewell Blues
+
+Tempo 180
+Keysig G
+
+Groove Metronome2-4
+ z * 2
+ 
+Groove QuickstepIntro
+
+1         Am
+2         Bm
+3         C
+4         Eb7
+
+
+Repeat
+Groove Quickstep
+
+5         G
+6        D7
+7         G
+8         /
+
+Groove QuickstepDuh
+
+9         /
+10       D7
+11        G
+12       G6
+
+Groove QuickStepDuhSus
+
+13       E7
+14        /
+15       Am
+16      Eb7
+
+Groove QuickStep
+
+17        G
+18       D7
+
+
+Repeatending 3
+Groove QuickStepHit
+19        G
+20        /
+
+RepeatEnd
+Groove QuickStepEnd
+21       G
+22       /
+

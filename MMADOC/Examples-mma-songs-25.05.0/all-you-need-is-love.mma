@@ -1,0 +1,114 @@
+// All You Need Is Love (Lennon/McCartney)
+ 
+
+Tempo 97
+Keysig G
+Include stdpats  /// this is to get the drum patterns
+SeqSize 4
+
+// this is the La Marseillaise into
+Begin Solo
+    Voice Trumpet
+    Volume ff
+    Articulate 80
+    Octave 5
+    Begin Riff
+         8.d;16e;  /// we are truncating pickup bar, so this is at the end
+         4b-dg;;dfa;;
+         4.gbd+;8gb;b-dg;16r;b-dg;8.dgb;16b-dg;
+         4g-ce;2dfac+;2dfa ~;
+    End
+End
+
+Set Roll 32 SnareDrum1;;;;;;;;
+Begin Solo-Snare
+   Drumtype
+   Tone Snaredrum1
+   Decresc F ppp 5
+   Begin Riff
+      8;     /// we are truncating pickup bar, so this is at the end
+      4r; $Roll $Roll $Roll
+      $Roll $Roll $Roll $Roll
+      $Roll $Roll $Roll $Roll
+      $Roll $Roll $Roll 
+   End
+End
+
+Truncate 1 side=right
+0         G
+1         G      /      D
+2         G
+3         C      D
+
+Groove JazzRock
+Begin Solo
+   Voice Strings
+   Articulate 110
+   Octave 5
+   Volume m
+   Harmony 3Below
+End
+
+// Lyric "Love Love" starts
+4         G      /      D          { 2b;a;}
+
+Truncate 3 side=right
+5         Em                    {2g;}
+
+6         C      /      G      { 2b;a;}
+
+Truncate 3 side=right
+7        Em                   {2.g;}
+
+8         G      /      D     { 2b;a;}
+
+Truncate 3 side=right
+9        Em                   {2.g;}
+
+10       D7      /      G     { 2c+;b;}
+11       D7                   {2f+a;e+a;}
+12        /                   {2d+a;c+a;}
+
+Truncate 3  side=right
+13        /                   { 8.b;16c+;4d+;8.d+;16e+;}
+
+// Lyric "there's nothing..."
+Repeat 
+Groove JazzRockSus
+
+14        G      /      D     {<Volume=mp>1d+;}
+
+Truncate 3 side=right
+15       Em
+
+Groove JazzRock
+16        G      /      D
+17       Em
+Groove JazzRockSus
+18       D7      /      G
+19       D7
+Groove JazzRock
+20        /
+
+Truncate 3 side=right
+21        /      { <volume=m>8.b;16c+;4d+;8.d+;16e+;}
+
+RepeatEnd   3
+
+// 2nd part "All you need is love"
+Repeat
+
+22        G      /     Am
+23       D7
+24        G      /    Am7
+
+25       D7
+26        G      /     B7
+27       Em      /      G
+28        C      /     D7
+
+29        /
+
+RepeatEnd 
+
+

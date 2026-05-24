@@ -1,0 +1,59 @@
+// Black Magic Woman (Santana)
+
+Tempo 110
+Keysig D minor
+
+Groove Metronome2-4
+  z * 2
+  
+Groove JazzRockIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Articulate 110
+    Octave 4
+    Harmony 8Above
+End
+
+Solo Cresc mp ff 4
+Cresc mp m 4
+
+1         Dm {8c+;d+;a;c+;d+;a;bn;d+;}
+2         /  {8c+;d+;a;c+;2d+;}
+3         /  {8c+;d+;a;c+;d+;a;bn;d+;}
+4         /  {4c+;;;;}
+
+Repeat
+Groove JazzRock
+
+5        Dm
+6         /
+7        Am
+8         /
+
+Groove JazzRockPlus
+
+9        Dm
+10        /
+11       Gm
+12        /
+
+Groove JazzRockSus
+
+13       Dm
+14       Am
+
+Repeatending 2
+
+Groove JazzRockSusPlus
+
+15       Dm
+16       z
+
+RepeatEnd
+
+Groove JazzRockEnd
+
+17      Dm
+18      / z!
+

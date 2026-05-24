@@ -1,0 +1,136 @@
+// Chiquitita (ABBA)
+
+Tempo 84
+Keysig A
+
+// ABBA sang this in A ... but for TSax that's awful :)
+Transpose Down Maj 2
+
+Groove Metronome2-4
+  z * 2
+
+Set RepCount 1   /// RepCount for skipping the 1st repeat on the DS
+
+Begin Solo-Timp
+  Voice Timpani
+  Volume f
+  Articulate 60
+  Octave 3
+  Rvolume 20
+End
+
+Groove 8BeatFill
+
+ z A      /// The pickup ... sing!
+
+Label Sign
+Repeat
+Groove 8Beat
+
+1          A      /    D/A
+2          A
+3          /      /      E
+4          /
+
+Groove 8BeatPlus
+
+5          /      /      D
+6          E      /    E11
+7          A
+8          /
+
+Groove 8Beat
+
+9          /      /    D/A
+
+Solo-Timp Riff 16a;2.;
+
+10         A
+11    C#m(add9)
+
+Solo-Timp Riff 2c+;
+12         /
+
+Groove 8BeatPlus
+
+13         E      /      D
+14         E      /    E11
+15         A      /      /    D/A
+
+RepeatEnding $RepCount NoWarn
+
+Groove 8BeatFill
+
+16         A
+
+RepeatEnd
+
+Groove 8BeatFill
+
+17         A
+
+Groove 8BeatSus
+
+18         D
+Truncate 1
+19         /
+Seq
+19         /
+
+20         A
+
+Groove 8BeatSusPlus
+
+21         /
+22         E      /      D
+23         E      /    E11
+24         A
+
+Groove 8BeatSus
+
+25         /
+26         D
+Truncate 1
+27         /
+Seq
+27         /
+28         A
+
+Groove 8BeatSusPlus
+
+29         /
+30         E      /      D
+31         E      /    E11
+
+Groove 8BeatSus
+
+32         A
+
+Label CODA
+Seq
+
+33         /
+34         E      /      D
+If Def FINE
+  Groove 8BeatEnd
+Endif
+
+35         E      /    E11
+36         A      /      /    D/A
+
+If Def FINE
+ eof
+EndIf
+
+If Def CODA
+  SET FINE
+  Decresc ppp 4
+  Tempo -10 4
+  GOTO CODA
+EndIf
+
+38         A
+
+Set CODA
+Set RepCount 0
+Goto SIGN

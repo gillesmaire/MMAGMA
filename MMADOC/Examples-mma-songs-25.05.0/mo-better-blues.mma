@@ -1,0 +1,90 @@
+// Mo Better Blues (Branford Marsalis, 1990)
+
+Tempo 100
+Keysig C
+Transpose Up Per 4  //// Key == F
+
+Groove Metronome2-4
+  z * 2
+
+Groove BluesIntro
+Volume ff
+0       z  
+
+Repeat
+Groove Blues
+Volume m
+
+1         C      /      F
+2         C
+3         F      /    Em7
+4       Dm7
+
+Groove Blues1
+Cresc f 3
+
+5         /      /     D7
+6        G7
+7         C      /      F
+8         C
+
+Groove Blues
+Volume mf
+
+9         /      /      F
+10        C
+11        F      /    Em7
+12      Dm7
+
+Groove Blues1
+Volume m
+
+13        /      /     D7
+14       G7
+15        C      /      F
+16        C      /    F/C
+
+Groove BluesSus
+Cresc mp mf 8
+
+17        C      /      F
+18        C
+19        F      /    Em7
+20      Dm7
+
+Groove Blues1Sus
+
+21        /      /     D7
+22       G7
+23        C      /      F
+24        C
+
+Groove BluesSus
+Volume m
+
+25        C      /      F
+26        C
+27        F      /    Em7
+28      Dm7
+
+Groove Blues
+Decresc mp 2
+
+29        /      /     D7
+30       G7
+
+Repeatending
+
+Groove BluesSus
+31        C      /      F
+Groove BluesTripleLSus
+32        C      
+
+RepeatEnd
+
+Groove BluesEnd
+Seq 2
+Decresc pp 2
+33       C      /       F
+34       C      z!
+

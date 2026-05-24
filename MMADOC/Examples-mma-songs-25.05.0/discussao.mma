@@ -1,0 +1,73 @@
+// Discussao (Jobim)
+
+Tempo 124
+Keysig A
+
+Transpose Up Min 3
+
+Groove Metronome2-4
+  z * 2
+
+Groove BossaNovaIntro
+
+Begin AllGrooves 
+  Begin Arpeggio
+    Octave 5
+  End
+End
+
+1         A
+2        F#m
+3        Bm
+4        E7
+
+Repeat
+Groove BossaNova
+
+5       AM7
+6     Cdim7
+7       Bm7
+8     Cdim7
+
+Groove BossaNovaSus
+
+9      C#m7
+10    C#7#5
+11      DM7
+12      Dm6
+
+Groove BossaNovaPlus
+
+13     C#m7
+14    Cdim7
+15      Em7
+16    F#7#5
+
+RepeatEnding 3
+
+Groove BossaNova
+
+17   B7(add13)
+18        /
+
+Groove BossaNovaFill
+
+19      Bm7
+20   Esus(addb9)
+
+RepeatEnd
+
+Groove BossaNovaEnd
+Decresc pppp 3
+scale volume ff
+
+Scale Riff 1 4 90; 2 8 90; 2.5 4. 90; 3.5 4 90; 4.5 2 90
+21       B9
+
+Scale Riff 2.5 8 90; 3.5 8 90; 4 8 90; 4.5 8 90;
+22   Esus(addb9)
+
+23   A6(add9)
+24   E9sus4  / / z!
+
+

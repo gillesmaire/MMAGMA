@@ -1,0 +1,104 @@
+// Summer Night (Dubin/Warren, 1938)
+
+Tempo 130
+Keysig Eb
+
+Groove Metronome2-4
+  z * 2
+  
+Groove FoxTrotIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Octave 4
+    Articulate 95
+    Volume mf
+    Harmony OpenBelow+8Above
+    Rtime 10
+    Rvolume 10
+    Begin Riff
+        8f;g;a;b; c+;d+;e+;d+;
+        4g;2;4;
+        4g;f#;;d+;
+        2d+;
+    End
+End
+
+Swell mp mf 4
+
+1       Fm7      /    Ab9
+2       Cm9
+3     Am7b5
+4      G7b9      /   Ddim
+
+
+Repeat
+Groove FoxTrot
+Volume m
+
+5        Cm
+6       Dm7      /   Ddim
+7        Cm
+8        Dm      /   Ddim
+
+Groove FoxTrotPlus
+
+9       Cm6      /   D7b5
+10     Bbm6      /    Fm7    Bb7
+11       Eb      /   EbM7
+12      Eb7
+
+Groove FoxTrot
+
+13       Ab
+14   Eb7sus4      /    Eb7
+15      Ab6
+16     Abm6      /    Eb+     G7
+
+Groove FoxTrotPlus
+
+17       Cm      /    Cm7
+18      Cm6      /     F7
+19      Fm7
+20      Bb7      /   Ddim
+
+Groove FoxTrotSus
+
+21       Cm
+22      Dm7      /   Ddim
+23       Cm
+24      Dm7      /   Ddim
+
+Groove FoxTrotSusPlus
+
+25      Cm6      /   D7b5
+26     Bbm6      /    Fm7    Bb7
+27       Eb      /   EbM7
+28      Eb7
+
+Groove FoxTrotSus
+
+29      Ab6      /    Eb+
+30      Ab6      /    Eb+     G7
+31       Cm      /    Cm7
+32       F7      /  Ebdim
+
+Groove FoxTrot
+
+33       Eb      /   Edim
+34       Fm    Fm7    Bb7   Ddim
+
+RepeatEnding
+
+Groove FoxTrotFill
+
+35      Eb6      /     B7
+36      Eb6      Ddim
+
+RepeatEnd
+
+Groove FoxTrotEnd
+
+37      Eb6
+38      /     z!
+

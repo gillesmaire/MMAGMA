@@ -1,0 +1,147 @@
+// Spiderman (1967 cartoon)
+
+Tempo 170
+Keysig D Minor
+
+Groove Metronome2-4
+  z * 2
+
+Groove JiveIntro
+Begin Solo
+    Voice BaritoneSax
+    Octave 2
+    Articulate 40
+    Volume fff
+    Begin Riff
+        8a+;;4;8g+;;f+;;
+	2.g+;4r;
+	8a+;;4;8g+;;4r;
+	2f+;
+    End
+End
+
+Volume mf
+
+1         Dm
+2          /
+Volume mf
+3          /
+4          /
+
+Repeat
+Volume m
+Groove Jive
+5         Dm
+6          /
+7          /
+8          /
+
+Groove JivePlus
+Volume mf
+
+9         Gm
+10         /
+11        Dm
+12         /
+
+
+Groove JiveClap
+Volume f
+
+13         A
+
+Groove Jive
+Decresc m 2
+14         /
+15        Dm
+
+Groove JiveClap
+Volume f
+16         /
+
+Groove Jive1
+Volume mf
+17         /
+18         /
+19         /
+20         /
+
+Groove Jive1Plus
+Volume f
+
+21        Gm
+22         /
+23        Dm
+24         /
+
+Groove Jive1
+
+25        A+
+26         /
+
+
+Groove JiveClap
+Volume f
+27        Dm      /     A7
+
+
+Groove JiveSus
+Volume mf
+
+28         /
+29        C7
+30         F
+31       A7+      /     A7
+
+32        Dm
+
+Groove JiveSusPlus
+Volume +20%
+33        C7
+34         F
+35        A7
+
+
+Groove JiveClapSus
+Volume ff
+36        A+
+
+
+Groove Jive
+Volume m
+
+37        Dm
+38         /
+39         /
+40         /
+
+Groove Jive1
+Volume mf
+
+41        Gm
+42         /
+43        Dm
+44         /
+
+Decresc ff mf 2
+
+45        A+
+46         /
+
+RepeatEnding
+
+Groove JiveClap
+Volume f
+
+47        Dm
+48         /
+
+RepeatEnd
+
+Groove JiveEnd
+Decresc pp 2
+
+47        Dm
+48         /
+
+

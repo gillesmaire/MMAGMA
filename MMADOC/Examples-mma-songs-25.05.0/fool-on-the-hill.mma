@@ -1,0 +1,75 @@
+// Fool On The Hill (Beatles, 1967)
+
+Tempo 80
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+
+Groove SonIntro
+Chord-sus Groove SonSus
+
+Begin Solo
+   Voice Piano1
+   Swell m f 4
+   Articulate 110
+   Octave 5
+   Rtime 5
+   Rvolume 10
+   Begin Riff
+      8c+;g;c+;g;c+;g;c+;g;
+      8c+;a;c+;a;c+;a;c+;a;
+      8d+;a;d+;a;d+;a;d+;a;
+      1e+;
+   End
+End
+
+Decresc f mp 4
+
+1         C
+2        Am
+3        Dm
+Seq 1
+4        G7
+
+
+Repeat
+Groove SonSus
+Volume m
+5        C6
+6        F6
+7        C6
+8        F6
+
+Groove SonSusPlus
+Volume mf
+
+9        Dm      /     G7
+10        C      /     Am
+11      Dm7      /     G7
+12       Cm     Ab     Cm
+
+Groove SonSus
+Decresc mp 4
+
+13       Ab
+14       Bb
+15       Cm     Ab    Cm6
+
+RepeatEnding 3
+
+16        C
+
+RepeatEnd
+
+17        C
+
+Decresc ppp 3
+18       Am
+
+Groove SonEnd
+
+19        C
+20        /
+
+

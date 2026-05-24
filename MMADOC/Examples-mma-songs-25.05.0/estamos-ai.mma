@@ -1,0 +1,89 @@
+// Estamos Ai (bossa style)
+
+Tempo 140
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+
+Repeat  /// do song 2x
+Groove BossaNova
+Cresc m f 4
+
+1       CM7      /     C6
+2       Dm7      /     G9
+3       CM7      /     C6
+4        Em      /     C6
+
+Groove BossaNovaPlus
+Volume m
+
+5      DbM7
+6       Db6
+7       CM7      /     C6
+8    F#m7b5      /   B7#5
+
+Groove BossaNova
+Cresc mf 4
+
+9       Em7
+10   F#m7b5      /   B7#5
+11      Em7
+12      Am9      /    D13
+
+Groove BossaNova1Sus
+Volume mp
+
+13      GM7      / G#dim7
+14      Am7      /    D13
+15      Dm7
+16       G9
+
+Groove BossaNovaSus
+Cresc mf 4
+
+17      CM7      /     C6
+18      Dm7      /     G9
+19      Gm9
+20      C13
+
+Repeat
+
+Groove BossaNova2Sus
+Volume m
+
+21   F#m7b5
+22      Fm6
+23    Em7b5
+24     Eb13
+
+Groove BossaNovaSus
+Volume mp
+
+25      Ab9
+26   G9sus4      /   G7b9
+
+RepeatEnding
+
+27      Gm9
+
+Groove BossaNovaFill
+
+28      C13
+
+RepeatEnd
+If ndef LastTime
+   Groove BossaNova2End
+endif
+
+29       C6
+
+if ndef LastTime
+   Groove BossaNovaFill
+   30        /  
+else
+    30          /  / z!
+endif
+
+Set LastTime
+Repeatend

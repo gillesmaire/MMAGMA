@@ -1,0 +1,110 @@
+// (The) More I See You (1945)
+
+Tempo 120
+Keysig Eb
+
+Groove Metronome2-4
+ z * 2
+ 
+Groove EasySwingIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Octave 5
+    Decresc f mp 3
+    Articulate 90
+    Harmony 3Below+8Below
+    Rtime 10
+    Rvolume 10
+    Begin Riff
+        4e;b;e;b;
+        2b;e;
+        2g;b;
+        1e+;
+    End
+End
+
+Decresc mf mp 4
+
+1        Eb
+2    Bb9sus
+3       Eb6
+4       Fm7      / Bb9sus
+
+
+Repeat
+Groove EasySwing
+Volume m
+
+5        Eb      /    Fm7
+6       Gm7      /   C7b9
+7       Fm7
+8       Bb7
+
+Groove EasySwingWalk
+
+9        Eb      /    Fm7
+10      Gm7      /   C7b9
+11      Fm7
+12      Bb7
+
+Groove EasySwing
+Volume +30%
+
+13      Ebm      /  Bb7/D
+14     Db9      /    Gb9
+15      BM7
+16      Ab7      /   Bb7+
+
+Groove EasySwingSus
+Cresc +20% 4
+
+17     Ebm7      / Eb7/Db
+18      Cm7      /     F7
+19      Fm7
+20   Bb7sus4
+
+Groove EasySwingWalkSus
+Volume m
+
+21       Eb      /    Fm7
+22      Gm7      /   C7b9
+23      Fm7
+24      Bb7
+
+Groove EasySwingWalk
+Cresc +20% 4
+25       Eb      /    Fm7
+26       Gm      /    Bb7
+27     Bbm7
+28      Eb9
+
+Groove EasySwing
+Volume +30%
+
+29     AbM7
+30     Abm6
+31     EbM7      /    Fm7
+32      Gm7      /   AbM7   F7/A
+
+Groove EasySwingSus
+Decresc -40% 3
+
+33    Eb/Bb      /   C7b9
+34      Fm7      /    Bb7
+35       Eb
+
+RepeatEnding
+
+Groove EasySwingFill
+
+36       Fm7      / Bb9sus
+
+RepeatEnd
+
+Groove EasySwingEnd
+Decresc -50% 1
+
+37        / z!
+
+

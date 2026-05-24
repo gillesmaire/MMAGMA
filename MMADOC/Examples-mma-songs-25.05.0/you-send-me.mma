@@ -1,0 +1,75 @@
+// You Send Me (Sam Cooke, 1957)
+
+Tempo 96
+KeySig G
+
+Groove Metronome2-4
+       z * 2
+
+Groove Rock128Sus
+
+Swell mp mf 4
+
+1          G
+2         Em
+3         Am
+4         D7
+
+Label DS
+Repeat
+Groove Rock128
+
+Volume m
+
+5          G      /    Em7
+6        Am7      /     D7
+7          G      /    Em7
+8        Am7      /     D7
+
+Groove Rock128Plain
+Decresc mp 2
+
+9          G      /    Em7
+10       Am7      /     D7
+
+RepeatEnding
+
+11         G      /    Em7
+12       Am7      /   D7b9
+
+RepeatEnd
+
+If Def CODA
+  Goto Coda
+Endif
+
+13        G6
+14         C      /      G
+
+Groove Rock128Sus
+Volume m
+
+15       Am7      /     D7
+16       GM7      /     G6
+17       Am7      /   D7b9
+18       GM7      /     G6
+
+Groove Rock128PlainSus
+Cresc f 4
+
+19       Am7      /   D7b9
+20       GM7     F7     E7
+21        A7      /      z
+22        A7      /     D7
+
+Set CODA
+GOTO DS
+
+Label Coda
+
+Groove Rock128End
+Decresc ppp 2
+Tempo *.8 2
+23        G6
+24         /
+

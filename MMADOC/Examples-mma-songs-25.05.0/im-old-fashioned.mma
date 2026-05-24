@@ -1,0 +1,117 @@
+// Im Old Fashioned (Mercer/Kern 1942)
+
+Tempo 110
+Keysig F
+
+Groove Metronome2-4
+ z * 2
+ 
+Groove MellowJazzIntro
+
+Begin Solo
+      Voice JazzGuitar
+      Octave 5
+      Volume FF
+      Harmony OpenBelow
+      Articulate 110
+      Rtime 10
+      Rvolume 10
+      Begin Riff
+          2.f;4g;
+          4a;2.a;
+          2.a;4;
+          1c+;
+      End
+End
+
+Swell m mf 4
+
+1         F/C  / Dm7
+2         Gm7/D  / C7/E
+3         FM7/E  / Dm7/F
+4         Gm7/F  /  C7
+
+Repeat
+Groove MellowJazz
+Volume m
+
+5        F6      /    Dm7
+6       Gm7      /     C7
+7       FM7      /    Dm7
+8       Gm7      /     C7
+
+Groove MellowJazzPlus
+Cresc mf 4
+
+9     Bb6/F
+10      FM7
+11    Em7b5
+12       A7
+
+Groove MellowJazz
+Volume f
+
+13      Dm7
+14      G13
+15      Dm7
+16      G13
+
+Groove MellowJazzPlus
+Decresc m 4
+
+17      Gm7
+18        /      / Abdim7
+19      Gm7
+20       C7
+
+Groove MellowJazzSus
+Cresc mp m 4
+
+21       F6      /    Dm7
+22      Gm7      /     C7
+23      FM7      /    Dm7
+24      Bm7      /     E7
+
+Groove MellowJazzSusPlus
+Volume mf
+
+25      AM7      /    Bm7
+26     C#m7      /     D7
+27       E7      / F#dim7
+28      Gm7      /     C7
+
+Groove MellowJazzSus
+Volume m
+
+29       F6      /    Dm7
+30      Gm7      /     C7
+31      FM7      /    Dm7
+32      Gm7      /     C7
+
+Groove MellowJazzPlus
+Volume mp
+
+33      Cm7      /     F7
+34     BbM7      / Eb9#11
+35      Am7      /    Dm7
+36    Bm7b5      /   Bbm6
+
+Groove MellowJazz
+Decresc pp 4
+
+37      Am7      /    Dm7
+38      Gm7      /     C7
+
+Repeatending
+Volume mp
+
+39       F6      /    Dm7
+40      Gm7      /     C7
+
+RepeatEnd
+Groove MellowJazzEnd
+
+41     F6
+42     /    z!
+
+

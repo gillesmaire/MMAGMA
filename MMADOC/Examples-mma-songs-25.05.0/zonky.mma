@@ -1,0 +1,104 @@
+// Zonky (Fats Waller, 1929)
+
+Tempo 160
+Keysig Ab
+
+Groove Metronome2-4
+   z * 2
+   
+Groove SwingIntro
+
+Begin Solo
+    Voice Piano1
+    Harmony 3Below
+    Articulate 90
+    Octave 6
+    Volume f
+    Begin Riff
+        4a;r;a;r;
+        8r;4a;8;4;;
+        4a;r;a;r;
+        2.b;
+    End
+End
+
+Volume m
+
+1        Ab
+2        Fm
+3        Ab
+4        C7
+
+Repeat  /// outer repeat to do entire song 2x
+Repeat
+Groove Swing
+Volume m
+
+5        Fm      /    Ab7
+6       Db7      /     C7
+7        Fm      /    Ab7
+8       Db7      /     C7
+
+Groove SwingPlus
+Cresc f 4
+
+9        Fm      /    Ab7
+10      Db7      /    Eb7
+11       Ab
+
+RepeatEnding
+Groove SwingFill
+
+12       C7
+
+RepeatEnd
+Groove SwingWalk
+13       Ab
+
+Volume mf
+Groove SwingSus
+
+14       Db      /   Ebm7
+15       Db      /   Ebm7
+16       Db      /    Ab7
+17       Db
+
+Groove SwingPlusSus
+Volume f
+
+18       Ab      /     C7
+19      Gb7      /     F7
+20      Bb7
+21      Eb7      /     C7
+
+Groove SwingWalkPlusSus
+Volume mf
+
+22       Fm      /    Ab7
+23      Db7      /     C7
+24       Fm      /    Ab7
+25      Db7      /     C7
+
+Groove Swing
+Volume m
+
+26       Fm      /    Ab7
+27      Db7      /    Eb7
+
+Decresc mp 2
+
+Repeatending
+Groove SwingWalk
+
+28       Ab
+29       /  
+
+Repeatend
+
+Groove SwingEnd
+
+28       Ab
+29       /    /   z!
+
+
+

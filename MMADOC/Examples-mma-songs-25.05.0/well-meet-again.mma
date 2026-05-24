@@ -1,0 +1,103 @@
+// Well Meet Again (Vera Lynn, 1939)
+
+Tempo 120
+Keysig G
+Transpose up min 3   // My singer likes Bb better :)
+
+Groove Metronome2-4
+  z * 2
+  
+Groove FoxtrotIntro
+Begin Solo
+   Voice Strings
+   Octave 5
+   Harmony 3Below
+   Articulate 100
+   Begin Riff
+      4r;d;c#;d;
+      4b;a;;g;
+      4a;g;f;g;
+      1a;
+   End
+End
+
+Swell m mf 4
+1         z! G
+2         Em
+3         Am
+4         D7
+
+Repeat
+Groove FoxTrot
+
+Volume m
+5         G
+6        B7
+7        E7
+8       E7+
+
+Groove FoxTrotPlus
+Volume mp
+
+9        A7
+10        /
+11       Cm
+12       D7
+
+Groove FoxTrot
+Cresc mf 4
+
+13        G
+14       B7
+15       E7
+16      E7+
+
+Groove FoxTrotPlus
+
+17       A7
+18      Am7      /     D7
+19        G
+20        /
+
+Groove FoxTrotSus
+Volume mp
+
+21       G7
+22      G7+
+23        C
+24        /
+
+Groove FoxTrotSusPlus
+Volume m
+
+25       A7
+26        /
+27       D7
+28        /
+
+Groove FoxTrotPlus
+
+29        G
+30       B7
+31       E7
+32      E7+
+
+Groove FoxTrot
+Decresc mp 2
+
+33       A7
+34      Am7      /     D7
+
+Repeatending
+
+35        G
+36        /
+
+Repeatend
+Groove FoxtrotEnd
+Decresc ppp 2
+
+35        G
+36        /  /  z!
+
+

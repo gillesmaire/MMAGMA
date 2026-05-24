@@ -1,0 +1,109 @@
+// Flower Is A Lovesome Thing
+
+Tempo 62
+Keysig Db
+
+Groove Metronome2-4
+   z * 2
+   
+Groove NiteJazzIntro
+
+Begin AllGrooves
+  Bass Articulate 60
+  Bass-Accent Articulate 50
+End
+
+Chord Sequence {1 4 90; 1 4. 60}  / / L1
+Begin Solo-Low
+    Voice $_Bass_Voice
+    Volume f
+    Articulate 90
+    Octave 4
+    Begin Riff
+        4.r;16f;en;4.e&;
+        4.r;16en;e&;4.d;
+        4.r;16f;en;4.e&;
+        2d;
+    End
+End
+Begin Solo-High
+    Voice $_Chord_Voice
+    Volume f
+    Harmony 3Below
+    Articulate 130
+    Octave 5
+    Begin Riff
+        2+4+8r;8f;
+        8a;2.;
+        4a;gn;f;g;
+        1a;
+    End
+End
+
+Swell mp mf 4
+
+1      B7b5
+2         /
+3         /
+4         /
+
+
+Repeat
+Groove NiteJazz
+Volume m
+Bass Articulate 60
+Bass-Accent Articulate 60
+5      B7b5
+6         /
+7         /
+8         /
+
+Groove NiteJazzPlus
+Cresc mf 4
+
+9       Bb7
+10      Ab7      /    Db7
+11      F#m      /    Eb7      D@3.5     Db@4.5
+
+RepeatEnding
+
+12        /
+
+RepeatEnd
+
+13       Db
+
+Groove NiteJazzSus
+Cresc mp mf 4
+
+14      Ebm      /    Ab7
+15       Db
+16       Em      /   A7+9
+17        D
+
+Groove NiteJazzSusPlus
+
+18        D      /     Db
+19        D      /     Bm
+20     Bb7+      /     Eb
+21       Gb      /   A7b9
+
+Groove NiteJazzPlus
+Decresc m 4
+
+22     B7b5
+23        /
+24     B7b5
+25        /
+
+Groove NiteJazz
+
+26      Bb7      /    Eb7
+27      Ab7      /    Db7
+
+Groove NiteJazzEnd
+Decresc pppp 2
+
+28        A      /    Eb7      D
+29       Db      z!
+Fermata -4 1 200

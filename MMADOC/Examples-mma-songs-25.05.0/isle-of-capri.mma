@@ -1,0 +1,103 @@
+// Isle Of Capri (1934)
+
+Tempo 140
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+  
+Groove BigBandIntro
+Begin Solo
+    Voice Trumpet
+    Octave 5
+    Volume f
+    Harmony 3Below+8Above
+    Articulate 65
+    Rtime 10
+    Rvolume 10
+    Begin Riff
+        4c+;8;d+;2c+;
+        4b;8;c+;2b;
+        4a;8;b;4g;8;a;
+        2.f;
+    End
+End
+Swingmode On
+Swell mp m 4
+
+1       F/C
+2        Gm
+3        Am
+4        C7
+
+
+Repeat
+Groove BigBand
+Volume m
+5         F
+6         /
+7         /
+8       Gm7      /     C7
+
+Groove BigBandPlus
+Swell f 4
+
+9        Gm      /    Gm+
+10      Gm6      /     C7
+11      F/C      /     C9
+
+Groove BigBandFill
+RepeatEnding
+
+12        F
+
+RepeatEnd
+
+13        F
+
+Repeat
+
+Groove BigBandSus
+Cresc m mf 4
+
+14      Bb6      /  Bbdim
+15      F/C      /   Am11  G#m11
+16     Gm11      /    C11
+17      FM7
+
+Groove BigBandSusPlus
+
+18    Bm7b5    Bb7     A7    Ab7
+19      Gm7    Gb7    FM7    Eb7
+20      Dm7      /    G13
+21      C11
+
+Groove BigBandSus
+Decresc m 4
+
+22      FM9
+23        /
+24        /
+25      C11
+
+Groove BigBand
+
+26        /
+27        /
+
+Repeatending
+
+28      F/C      /     C9
+
+Groove BigBandFill
+
+29        F      /     C7
+
+RepeatEnd
+Groove BigBandEnd
+Decresc ppp 2
+
+30      F/C     /      C
+31      F       
+
+

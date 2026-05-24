@@ -1,0 +1,99 @@
+// Varsity Drag
+
+Tempo $(100 * 2)
+
+Groove Metronome2
+    z * 2
+
+Groove CharlestonIntro
+
+Volume m
+
+1          C
+2       Edim
+3          F
+4          C
+
+Repeat
+
+Groove Charleston
+Cresc mp mf 4
+
+5          C      /      /    CM7
+6         C7
+7          F
+8         Fm
+
+Groove CharlestonPlus
+Volume m
+
+9          C
+10      Cdim
+11        G7
+12         /
+
+Groove Charleston
+Cresc mp mf 4
+
+13         C      /      /    CM7
+14        C7
+15         F
+16        Fm
+
+Groove CharlestonPlus
+Volume m
+
+17         C
+18      Cdim      /     Dm     G9
+19         C
+20        B7
+
+Groove CharlestonSus
+Volume mp
+
+21         E
+22        Am      /      E
+23        Am      /      E
+24         /      /     G7
+
+Groove CharlestonSusPlus
+Cresc f 4
+
+25         C
+26        Fm      /      C
+27         F      /      C
+28        G7
+
+Groove Charleston
+Volume mf
+
+29         C      /      /    CM7
+30        C7
+31         F
+32        Fm
+
+Groove CharlestonPlus
+Volume m
+
+33         C
+34      Cdim      /     G7     G+
+
+RepeatEnding 2
+Cresc f 2
+Groove CharlestonWalk
+Seq 3
+Walk Volume  150%
+
+35         C      /     Fm
+36         C
+
+RepeatEnd
+
+Groove CharlestonEnd
+Decresc ppp 2
+37     C    /   Fm
+38     C    /   z!
+
+
+
+

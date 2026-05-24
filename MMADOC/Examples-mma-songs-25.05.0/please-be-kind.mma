@@ -1,0 +1,109 @@
+// Please Be Kind (Benny Goodman, 1938)
+
+Tempo 105
+
+Groove Metronome2-4
+   z * 2
+   
+Groove BigBandIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Octave 5
+    Volume ff
+    Harmony 3Below+8Below
+    Articulate 90
+    Rtime 10
+    Rvolume 10
+    Begin Riff
+        43c;d;e;4g;a;
+        2.b;
+        43c+;b;a; c+;b;a;
+        2.d+;
+    End
+End
+
+Swell mp f 4
+
+1         C
+2         C
+3         F6
+4         G7
+
+Repeat
+Groove BigBand
+Volume m
+
+5         C
+6         /      /   Cdim
+7       Dm7
+8       Fm6      /     G7
+
+Groove BigBandPlus
+Volume f
+
+9         C
+10        /      /   Cdim
+11      Dm7
+12      Fm6      /     G7
+
+Groove BigBand
+Decresc m 4
+
+13       C7
+14        /
+15        F
+16        /      /      /    Eb7
+
+Groove BigBandSus
+Cresc mf 2
+
+17       D7
+18        /
+19      Dm7      /    Fm6
+20       G7
+
+Groove BigBandSusPlus
+Volume f
+
+21        C
+22        /      /   Cdim
+23      Dm7
+24      Fm6      /     G7
+
+Groove BigBand
+Decresc m 4
+
+25       C7
+26        /
+27        F
+28        /
+
+Groove BigBandPlus
+Volume mp
+
+29       Fm
+30        /
+31        C      /      /    Gm6
+32       A7      /    Ab7     A7
+
+Groove BigBand
+Volume m
+
+33       D7
+34      Fm6      /     G7    Fm6
+
+RepeatEnding
+Groove BigBandFill
+Cresc mp f 2
+
+35        C
+36        G7
+
+RepeatEnd
+Groove BigBandFill
+Cresc mp f 2
+
+37        C
+38        / z!
+

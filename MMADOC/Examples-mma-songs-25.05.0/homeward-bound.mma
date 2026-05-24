@@ -1,0 +1,127 @@
+// Homeward Bound (Paul Simon, 1966)
+
+Keysig C
+Tempo 120
+
+Groove Metronome2-4
+  z * 2
+  
+Begin Solo
+   Voice JazzGuitar
+   Volume FF
+   Articulate 110
+   Octave 5
+   Harmony OpenAbove+8Below
+   Begin Riff
+      2+8e;6e;f;e;4d;
+      4c;2a-;4c;
+      1+2c~;
+   End
+End
+
+Groove FolkyJazzGuitarIntro
+Decresc mf mp 4
+
+1          C
+2          F
+3          C
+4          /
+
+Repeat
+Groove FolkyJazzGuitar
+Volume m
+
+5          C
+6          /
+7         Em
+8          /
+
+Groove FolkyJazzGuitarSus
+Cresc f 4
+9        Gm6
+10         /
+11        A7
+12         /
+
+Groove FolkyJazzGuitar
+Volume mf
+
+13        Dm
+14         /
+15        Bb
+16         /
+
+Groove FolkyJazzGuitarPlus
+Volume m
+
+17         C
+18         /
+19         /
+20         /      /     G7
+
+// Chorus
+
+Groove FolkyJazzGuitarSusPlus
+Volume f
+
+21         C
+22         C
+23         F
+24         /
+
+Groove FolkyJazzGuitarSus
+Decresc m 8
+
+25         C
+26         /
+27         F
+28         /
+
+Groove FolkyJazzGuitarPlus
+
+29         C
+30        Dm      C     Bb      F
+31         C
+32        Dm      C     Bb      F
+
+Groove FolkyJazzGuitarSusPlus
+Cresc mf 2
+
+33         C
+34        Dm      C     Bb      F
+35        G7
+36         C
+
+Groove FolkyJazzGuitarSus
+Volume mp
+
+RepeatEnding 2
+
+37         C
+
+RepeatEnd
+
+38         C
+
+
+Groove FolkyJazzGuitarSusPlus
+Cresc mf 4
+
+39       CM7
+40         /
+41        C7
+42         /
+
+Groove FolkyJazzGuitarSus
+Volume m
+
+43         C
+44         F
+
+Groove FolkyJazzGuitarEnd
+Tempo *.8 2
+Decresc pppp 2
+
+45         C
+46         /
+

@@ -1,0 +1,164 @@
+// After All
+
+Tempo 70
+Keysig Ab
+
+Groove Metronome2-4
+  z * 2
+  
+Groove BalladIntro2
+
+AllGrooves Arpeggio-Plus Voice JazzGuitar
+
+Begin Solo
+   Voice JazzGuitar
+   Octave 6
+   Volume ff
+   Articulate 110
+   Harmony OpenBelow+8Below
+   Rvolume 20
+   Rtime 20
+   Begin Riff
+      2+8a;4f;8+2c~;
+      ~ 4f;8g;a;
+      2+8g;4e;8+2b-~;
+      ~ 4r;8f;g;
+      4a;8g;8+4a;8g;8+2a~;
+      ~ 43b;a;g;
+      2.g&;4f;
+      1+1e~;
+      ~ <>;
+   End 
+End
+Swell m ff 9
+1      DbM7
+2         /
+3       Cm7
+Seq
+4         /
+5         Fm
+
+Seq
+6         /
+7      CbM7
+8    Ab7sus
+9       Ab7
+
+/// Start of song
+
+/// We use a few solo bars later, set them up now
+Begin Solo
+  Octave 5  
+  Harmony Open8Below+OpenBelow
+End
+
+Repeat
+Groove Ballad1
+Volume m
+
+10   Db(add9)
+11       Db
+12      Cm7
+13        /
+
+Groove Ballad1Plus
+Cresc mf 4
+
+14   Fm(add9)      /     Fm
+15     FmM7      /    Fm7
+16      Cb9
+17   Ab7sus      /    Ab7
+
+Groove Ballad1
+Decresc mp 4
+
+18     DbM7
+19        /      /   Bbm7
+20      Cm7
+21        /
+
+Groove Ballad1Sus
+Cresc m 4
+
+22       Fm      /   FmM7
+23      Fm7
+24    F#m/A
+25   Ab7sus      /    Ab7
+
+Groove Ballad1
+
+26     Abm7      /  AbmM7
+27     Db11
+28     GbM7      /    Fm7
+29     Ebm7
+
+Groove Ballad1Plus
+Volume mf
+
+30      Abm
+31     Abm7
+32       D9
+33    B7sus
+
+Groove Ballad1Sus
+Volume m
+
+34       B7
+35      Fm7
+36     Bbm7
+37        /       {4d+;8c+;8+8a;4.f;}
+
+Groove Ballad1SusPlus
+Volume mp
+
+38     Ebm9
+39     Ab11      /  Ab7b9
+40   Db(add9)
+41        /
+
+Groove Ballad1Sus
+Volume m
+
+42     Abm7      /   G7b5
+43     GbM7
+44        /
+45     Ebm7
+
+Groove Ballad1SusPlus
+
+46     Ab11
+47     Adim
+48     Bbm7      / Bbm/Ab
+49       Gb
+
+Groove Ballad1Sus
+Volume mp
+
+50        /      /    Fm7
+
+RepeatEnding
+
+51     Ebm7                {2+8r;8a;d+;f+;}
+52     CbM7      /   Ab11  {43g&+;f+;e+;4d+;8c+;1+1+8a+~;}
+53   Db(add9)
+
+Groove BalladFill
+
+54        /
+
+RepeatEnd
+
+Decresc off 6
+Solo Decresc m mp 6
+55     Ebm7      /     Db   {8r;f;g&;8+2d+;}
+
+Groove Ballad1Plus
+
+56     CbM7      /   Bbm7   {8r;a;b;8+2d+;}
+57     Ab11                 {8r;4.+8f+;16e+;d+;8c+;d+;}
+
+Groove Ballad1End
+Seq 3
+58        /                 {8c+;;b;;a;b;d+;e+;}
+59        /     z!         {2a+;}
+

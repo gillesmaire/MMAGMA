@@ -52,7 +52,7 @@ Channel assignments:
 ~~~
 
 On voit dans cet exemple que la musique du fichier Court.mma utilise des pistes de base (BASS,CHORD,...) suivie de pistes
-définies par le ou les Groove choisi par Court.mma. On remarque que le canal 10 est toujours assigné aux batteries.
+définies par le ou les Groove choisis par Court.mma. On remarque que le canal 10 est toujours assigné aux batteries.
 
 On voit les canaux associés à chaque pistes.
 

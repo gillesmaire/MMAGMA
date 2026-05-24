@@ -1,0 +1,152 @@
+// Lover, Come Back To Me  Hammerstein/Romberg, 1928
+
+Tempo 180
+Keysig Ab
+
+Groove Metronome2-4
+  z * 2
+  
+Groove JazzRhumbaIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Articulate 90
+    Octave 5
+    Harmony Top+TopBelow
+    Volume F
+    RTime 10
+    RVolume 10
+    Begin Riff
+        4a;8;b;2c+;
+        4g;8;a;2b;
+        4e;f;4g;f;
+        1e;
+    End
+End
+Swell mp mf 4
+1        Ab 
+2       Eb7 
+3        Eb
+
+Bass Sequence B1to4
+4       Eb7
+
+Repeat
+Volume m
+Label SIGN
+Groove JazzRhumba
+
+5       Ab6
+6         /
+7     Gm7b5
+8      C7b9
+
+Groove JazzRhumbaPlus
+Cresc mf 2
+
+9       Fm7
+10        /
+
+If Def TOCODA
+  Goto Coda
+Endif
+
+11      Bb9
+12    Bdim7
+
+Groove JazzRhumba
+Decresc mp 4
+
+13     Ab/C      /    Cm7
+14      Fm7
+15      Bb9
+16     Bbm7      /    Eb9
+
+Groove JazzRhumbaPlus
+Volume m
+
+17      Ab6      /    Ab7
+18      Db6      /   Dbm6
+
+RepeatEnding
+
+19      Ab6      /  Bdim7
+
+Groove JazzRhumbaFill
+Volume mp
+
+20     Bbm7      /    Eb7
+
+RepeatEnd
+
+
+Groove JazzRhumbaFill
+
+21      Ab6
+
+Groove JazzRhumbaSus
+Volume m
+
+22   Db7#11      /   C7b9
+
+23       Fm
+24        /
+25     Bbm6
+26      Fm6
+
+Groove JazzRhumbaSusPlus
+Cresc mf 4
+
+27      Gm7
+28       C7
+29     Abm7      /    Db7
+30      Gm7      /     C7
+
+Groove JazzRhumbaSus
+Volume m
+
+31       Fm
+32        /
+33     Bbm6
+34      Fm7
+35      Bb9
+
+Groove JazzRhumba
+
+36        /
+37     Bbm7
+
+Groove JazzRhumbaFill
+
+38      Eb7
+
+Set TOCODA
+Goto SIGN
+Label CODA
+
+Groove JazzRhumbaPlus  // same as it was at the "to coda" jump 
+Volume m
+
+39     F7b9
+40        /
+
+Groove JazzRhumba
+Decresc mp 4
+
+41     Bbm7
+42        /
+43      Cm7      /    Fm7
+44     Bbm7      /   A7#9
+
+Groove JazzRhumbaPlus
+Decresc ppp 4
+45      Ab6      /    Ab7
+46      Db6      / Eb7sus4
+
+
+Groove JazzRhumbaEnd
+
+47      Ab6
+48        /   / z!
+
+

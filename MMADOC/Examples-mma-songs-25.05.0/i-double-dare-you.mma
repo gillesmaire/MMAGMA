@@ -1,0 +1,107 @@
+// I Double Dare You (1937)
+
+Tempo 140
+Keysig Ab
+
+Groove Metronome2-4
+  z * 2
+  
+Begin Solo
+    Voice Clarinet
+    Octave 6
+    Volume MF
+    Harmony OpenBelow
+    Rtime 10
+    Rvolume 10
+    Begin Riff
+        8c+;a;c+;4a;4b;8c+;
+        8b; g;b; 4g;4a;8b;
+        4b;8a;g; 4f;8g;a;
+        1b;
+    End
+End
+
+Groove FoxtrotIntro
+
+Swingmode On
+1        Ab
+2        Gm
+3        Bb7
+4        Eb7
+
+
+Repeat
+Repeat
+Volume m
+Groove FoxTrot
+5        Ab
+6         /
+7         /
+8         /
+
+Groove FoxTrotPlus
+Cresc f 4
+
+9       Bb7
+10        /
+11        /
+12        /
+
+RepeatEnding
+
+Groove FoxTrotPlus
+Decresc f m 4
+
+13      Eb7
+14        /
+15    Gm7b5      /     C7
+16       Fm
+
+Groove FoxTrot
+Cresc mf 2
+
+17      Bb7
+18        /
+19      Eb7
+20     Bbm7      /   Eb+7
+
+
+RepeatEnd
+
+Groove FoxTrotSus
+Volume f
+
+21       C7
+22        /
+23       F7
+24        /
+
+Groove FoxTrotSusPlus
+Volume mf
+
+25      Bb7
+26      Eb7
+27      Ab7      /     G7
+28      Gb7      /     F7
+
+Groove FoxTrot
+Volume m
+
+29      Bb7
+30      Eb7
+
+RepeatEnding
+
+Groove FoxTrotFill
+Cresc mf 2
+
+31       Ab
+32        /
+
+RepeatEnd
+
+Groove FoxTrotEnd
+Decresc p 2
+
+31       Ab
+32        / z!

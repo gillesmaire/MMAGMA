@@ -1,0 +1,127 @@
+// When (Kalin Twins, 1958)
+
+Tempo 180
+Keysig F
+
+Groove Metronome2-4
+    z * 2
+    
+Groove 50sRockIntro1
+
+Begin Solo
+    Voice TremoloStrings
+    Octave 5
+    Volume ff
+    Harmony 3Below+8Below
+    Articulate 100
+    Begin Riff
+        1f;
+        4d;e;f;g;
+        1b;
+        8c+;r;c+;r;c+;r;
+    End
+End
+
+Swell mp mf 4
+1          F
+2         Dm
+3         Bb
+4          C      /     C7     z!
+
+Begin Solo
+   Voice VoiceOohs
+   Harmony OpenBelow+8Below
+   Octave 5
+   Articulate 80
+   Rvolume 10
+   Rtime 10
+End
+
+Set Counter 1
+Repeat
+Groove 50sRock
+Volume m
+
+5          F
+6          /
+7         Dm
+8          /
+
+Groove 50sRockPlus
+Volume mf
+
+9         Bb
+10         /
+11         C
+12         /      /     C7
+
+Groove 50sRock
+Volume m
+
+13         F
+14         /
+15        Dm
+16         /
+
+Groove 50sRockPlus
+
+17        Bb
+18         /
+19         C
+20         /      /     C7
+
+Repeat
+
+Groove 50sRockSus
+Cresc mp mf 8
+
+21        Bb
+22         /  {8b+;;r;16b+;4.;}
+23         F
+24         /
+
+Groove 50sRockSusPlus
+
+25        Bb
+26         /    {8b+;;r;16b+;4.;}
+27         C
+28         /      /     C7
+
+Groove 50sRock
+Volume m
+
+29         F
+30         /
+31        Dm
+32         /
+
+Groove 50sRockPlus
+
+33        Bb
+34         /
+35         C
+36        C7
+
+Groove 50sRockSus
+Cresc mf 4
+37         F
+38        Bb
+
+If eq $COUNTER 4
+   Groove 50sRockEnd
+   Decresc pp 2
+   44   F
+   45   /  z!
+   eof
+Endif
+
+Inc Counter
+39         F
+40         /  
+
+Repeatend
+
+Repeatend
+
+
+

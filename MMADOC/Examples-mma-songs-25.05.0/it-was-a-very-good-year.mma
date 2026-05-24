@@ -1,0 +1,80 @@
+// It Was A Very Good Year (1961)
+
+Tempo 80
+Keysig D minor
+
+Groove Metronome2-4
+   z * 2
+   
+Set Push0 .75  /// make it more square
+
+Groove NiteJazzIntro
+Begin Solo
+    Voice Piano1
+    Volume f
+    Articulate 110
+    Octave 5
+    Harmony OpenBelow
+    Rtime 5
+    Begin Riff
+        4e+;8d+;e+;2a;
+        4e+;8d+;e+;f+;e+;4d+;
+        4e+;8d+;e+;4c+;;
+        2.c#+;
+    End
+End
+
+Swell mp mf 4
+
+1        Dm
+2         /
+3        Am      /      F
+4         A      /      /     A7
+
+Repeat
+Groove NiteJazz
+Volume m
+
+5        Dm
+6         /
+Decresc mp 4
+7        Eb
+8         /
+
+Groove NiteJazzPlus
+
+9        Dm
+10        F
+11       Eb
+12        /
+
+Groove NiteJazz
+Volume m
+
+13        D
+14        /
+Decresc mp 2
+15        C
+16        /
+
+Groove NiteJazzSus
+
+17        D
+18        /
+19       Dm
+
+Groove NiteJazzSusPlus
+
+20        /
+
+RepeatEnding 3
+
+21       Am      /      F
+22        A      /      /     A7
+
+RepeatEnd
+Groove NiteJazzEnd
+Decresc ppp 2
+21       Am      /      F
+23        A     z!
+Fermata -4 1 200

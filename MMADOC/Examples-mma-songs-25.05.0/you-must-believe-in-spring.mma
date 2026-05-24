@@ -1,0 +1,88 @@
+// You Must Believe In Spring
+
+Tempo 60
+KeySig B Minor
+
+Groove Metronome2-4
+   z * 2
+   
+Groove EvansIshIntro
+Begin Solo
+    Voice Strings
+    Harmony 3Below
+    Octave 5
+    Articulate 100
+    Begin Riff
+        2b;a#;
+        2g;f;
+        2d+;c+;
+        2b&;a;
+    End
+End
+
+Swell mp mf 4
+1    C#m7b5      /  F#7b9
+2    F#7b9/B      /     Bm
+3       Em7      /     A7
+4      A7b9      /    DM7
+
+Groove EvansIsh
+Volume m
+
+5    C#m7b5      /      /  F#7b9
+6    F#7b9/B      /     Bm    Bm7
+7       Em7      /      /     A7
+8    A7b9/D      /    DM7
+
+Groove EvansIshPlus
+Cresc f 4
+
+9    G#m7b5      /      /  C#7b9
+10   F#m7b5      /      /   B7b9
+11      Em7      /      /     A7
+12      DM7      / C#m7b5    F#7
+
+Groove EvansIsh
+Volume m
+
+13   C#m7b5      /      / F#7b9/B
+14        /      /     Bm    Bm7
+15      Em7      /      /     A7
+16   A7b9/D      /    DM7
+
+Groove EvansIshFill
+Volume mf
+
+17   G#m7b5      /      /  C#7b9
+
+Keysig C Minor
+
+Groove EvansIshSus
+Cresc m f 4
+
+18    Gm7b5      /      /   C7b9
+19      Fm7      /      /    Bb7
+20     EbM7      /  Dm7b5     G7
+
+Groove EvansIshSusPlus
+Decresc mf 4
+
+21    Dm7b5      /      /   G7b9
+22   G7b9/C      /     Cm    Cm7
+23      Fm7      /      /    Bb7
+24   Bb7b9/Eb      /   EbM7
+
+Groove EvansIsh
+Decresc mp 4
+
+25    Am7b5      /      /   D7b9
+26    Gm7b5      /      /   C7b9
+27      Fm7      /      /    Bb7
+28     EbM7      /   AbM7
+
+Groove EvansIshEnd
+Decresc ppp 2
+
+29    Dm7b5      /      /     G7
+30       Cm
+

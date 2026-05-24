@@ -1,0 +1,165 @@
+// I Just Called To Say I Love You (Stevie Wonder)
+
+Tempo 115
+KeySig Db
+//Transpose Up Maj 3
+Transpose Down minor 6
+
+Groove Metronome2-4
+    z * 2
+
+Groove R&BIntro
+
+Begin Solo
+    Voice Strings
+    Octave 5
+    Harmony OpenBelow
+    Articulate 95
+    Begin Riff
+        1+2d+ ~;
+        ~ 8b;4c+;8+1d+ ~;
+    End
+End
+
+Cresc p mf 4
+
+1        Db
+2         /
+3         /
+4         /
+
+
+Label DS
+Repeat
+Groove R&B
+Volume m
+
+5        Db
+6         /
+7         /
+8         /
+
+Groove R&BPlus
+Decresc mp 4
+
+9         /
+10        /
+11      Ebm
+12    EbmM7
+
+Groove R&B
+Volume m
+
+13     Ebm7
+14    EbmM7
+15     Ebm7
+16    EbmM7
+
+Groove R&B
+Decresc mp 2
+
+17      Ebm
+
+RepeatEnding
+
+18   Ebm7/Ab      /     Ab
+19       Db
+20        /
+
+RepeatEnd
+
+21   Ebm7/Ab      /     Ab
+22       Db
+
+Groove R&BSus
+Volume m
+
+23        /
+24     Ebm7
+25       Ab
+26       Db
+
+Groove R&BSusPlus
+Volume +5%
+
+Volume +5%
+
+27        /
+28     Ebm7
+29       Ab
+30      Bbm
+
+Groove R&BSus
+Cresc mp m 2
+
+31        /
+32     Ebm7
+33       Ab
+34     Bbm7
+
+Groove R&BSusPlus
+
+35        /
+36     Ebm7
+37   Ab7sus      /    Ab7
+
+If Def CODA
+  Goto Coda
+Endif
+
+38       Db
+39        /
+
+Set CODA
+Goto DS
+
+Label CODA     //// This starts the CODA section
+
+40       Db
+
+
+Groove R&B
+Volume mf
+
+41        /
+42     Ebm7
+43       Ab
+44       Db
+
+
+Groove R&BPlus
+Volume m
+
+45        /
+46     Ebm7
+47       Ab
+48      Bbm
+
+Groove R&B
+Volume mp
+
+49        /
+50     Ebm7
+51       Ab
+52     Bbm7
+
+Groove R&BPlus
+
+53        /
+54     Ebm7
+55   Ab7sus      /    Ab7
+56       Db
+
+Groove R&B
+
+57        A
+58   B(add9)
+59        /
+60       Db
+
+Groove R&BEnd
+Decresc ppp 2
+
+61        /
+62        /
+

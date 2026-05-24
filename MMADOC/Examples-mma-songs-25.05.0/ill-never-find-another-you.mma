@@ -1,0 +1,101 @@
+// I'll Never Find Another You
+//  The Seekers, 1964
+
+Tempo 125
+
+Groove Metronome2-4
+  z * 2
+  
+Groove 60sRockIntro
+
+Seq 3
+1     z /   Eb
+
+Repeat
+Volume mf
+
+Groove 60sRock
+
+2        Eb
+3        Ab
+4        F7
+5       Bb7
+
+Groove 60sRockPlus
+
+6        Eb
+7         /
+8        Ab
+9        Bb
+
+Groove 60sRock
+
+10       Cm
+11       Ab
+12       Bb      /     Ab
+13       Gm      /     Ab  Abdim
+
+Groove 60sRockPlus
+
+14       Eb      /     Ab
+15      Ab6      /     Bb
+
+RepeatEnding
+
+Groove 60sRockSusPlus
+
+16       Eb     Ab
+17       Eb
+
+RepeatEnd
+
+Groove 60sRockSus
+
+18       Eb      /     Ab
+19       Eb      /      /     Bb
+
+Groove 60sRock1
+
+20       Cm
+21       Ab
+22       Eb      /    Bb7
+23       Eb      /      /     Bb
+
+Groove 60sRock1Plus
+
+24       Cm
+25       Bb      /     Ab
+26       Eb
+27      Bb7
+
+Groove 60sRock1Sus
+
+28       Eb
+29       Ab
+30       F7
+31      Bb7
+
+Groove 60sRockSus
+
+32       Eb
+33      Gm7
+34       Ab
+35       Bb
+
+Groove 60sRockSusPlus
+
+36       Cm
+37       Ab
+38       Bb      /     Ab
+39       Gm      /     Ab  Abdim
+
+Groove 60sRockPlus
+
+40       Eb      /     Ab
+41      Ab6      /    Bb7
+
+Groove 60sRockEnd
+
+42       Eb      /     Ab
+43       Eb
+

@@ -1,0 +1,142 @@
+// See You In September (1959)
+
+Tempo 110
+Keysig Eb
+
+Groove Metronome2-4
+   z * 2
+   
+Groove BeguineIntro
+
+Begin Solo
+    Voice Trombone
+    Harmony 3Below
+    Articulate 80
+    Volume ff
+    Octave 6
+End
+
+Swell mp mf 4
+Repeat
+1        Fm7   {8r;4c;8;r;c;r;c;}
+2        Bb9   {8r;4d;8;r;d;r;d;}
+RepeatEnd
+
+Groove Beguine
+Volume m
+
+// This is labeled as "verse" only done 1x
+3        Fm7
+4        Bb9
+5        Fm7
+6        Bb9
+
+Groove Beguine1
+Volume mf
+
+// This is labeled as "refrain". Again, only 1x
+7        Fm7
+8        Bb7
+9       EbM7
+10        C7
+
+Groove Beguine
+Decresc m 2
+
+11       Fm7
+12       Bb7
+13      EbM7      /    Eb6
+14        C7
+
+Groove Beguine1
+
+15        Fm      /     C+
+16       Fm7      /      /    Bb7
+17        Gm      /    Gm7
+18        C7
+
+Groove Beguine
+Cresc f 4
+
+19        Fm
+20       Fm7      /     F7
+21       Fm7
+22       Bb7      /      z
+
+// This is the part that's repeated 3x in total
+Set CODA 0
+Label SIGN
+
+Groove BeguineSus
+Volume m
+
+// The "sign" is here
+
+23       Fm7
+24       Bb7
+25      EbM7
+26        C7
+
+Groove Beguine1Sus
+Cresc mf 2
+
+27       Fm7
+28       Bb7
+29       Gm7
+30        C7
+
+Groove BeguineSus
+Volume m
+
+31       Fm7
+32     F#dim
+
+// If we've done this 3x (including the 1st pass), end it all
+
+If >= $CODA 2
+  Goto Coda
+Endif
+
+33       Gm7
+34        C7
+
+Groove Beguine
+Decresc mp 4
+
+35       Fm7
+36       Bb7
+37        Eb
+38         /
+
+Groove Beguine1
+
+// Labeled "Interlude"
+39       Fm7
+40       Bb9
+41       Fm7
+42       Bb7
+
+Inc Coda
+Goto Sign
+
+Label Coda
+
+///////////////////////
+// The CODA section
+
+Groove Beguine
+Decresc p 4
+
+43        Cm
+44       Fm7
+45         /      /    Bb7
+46        Eb
+
+Groove BeguineEnd
+Seq 2
+Decresc ppp 3
+
+47         B
+48        Eb
+49         /  z!
+

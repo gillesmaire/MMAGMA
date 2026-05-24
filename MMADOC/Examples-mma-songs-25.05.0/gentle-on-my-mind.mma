@@ -1,0 +1,110 @@
+// Gentle On My Mind (Glen Campbell, 1967)
+
+Tempo 120
+KeySig C
+
+Groove Metronome2-4
+  z * 2
+  
+Groove CountrySwing
+
+Begin AllGrooves Chord
+   Voice JazzGuitar
+   Articulate  80
+   Volume m
+End
+
+Begin Solo
+    Voice JazzGuitar
+    Octave 5
+    Articulate 90
+    Harmony OpenBelow
+    Volume f
+    Begin Riff
+        8g;;;;;;;;
+        8a;;;;;;;;
+        8c+;b;a;g;f;e;d;c;
+        2g;
+    End
+End
+
+Swingmode On
+
+1         C
+2         Am
+3         Dm
+4         G7
+
+Repeat
+Groove CountrySwing
+
+5         C
+6       CM7
+7        C6
+8       CM7
+
+Groove CountrySwing1
+
+9        Dm
+10        /
+11        /
+12        /
+
+Groove CountrySwing
+
+13        /
+14     DmM7
+15      Dm7
+16       G7
+
+Groove CountrySwing1
+
+17        C
+18        /
+19        /
+20        /
+
+Groove CountrySwingSus
+
+21        /
+22      CM7
+23       C6
+24      CM7
+
+Groove CountrySwing1Sus
+
+25        C
+26      CM7
+27       Dm
+28        /
+
+Groove CountrySwingSus
+
+29        /
+30        /
+31        /
+32      Dm7
+
+Groove CountrySwing
+
+33      Dm6
+34      Dm7
+35       Dm      /    Dm7
+36        /
+
+Groove CountrySwing1
+
+37        C
+38        /
+
+RepeatEnding
+
+39        /
+40        /      /      /     G7
+
+RepeatEnd
+
+39        /
+40        /      /      z!
+
+

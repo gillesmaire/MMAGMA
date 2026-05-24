@@ -1,0 +1,60 @@
+// Les Oignons (Sidney Bechet, 1949)
+
+Tempo $( 2 * 90 )
+
+Groove Metronome2-4
+  z * 2
+  
+Repeat  /// We do the whole thing 3x
+Repeat
+Groove BigBand
+
+1         F
+2         /
+3         /
+4        C7      /      F
+
+Groove BigBand
+
+5         /
+6         /
+7         /
+
+RepeatEnding
+Groove BigBandFill
+
+8        C7      /      F
+
+RepeatEnd
+
+8        C7      /      F
+
+Groove BigBand
+
+9         C
+10       G7
+11        /
+12        C
+
+Groove BigBandPlus
+
+13        /
+14       G7
+15        C      /     z!
+16       z!
+
+Groove BigBandSus
+
+17        F
+18       C7
+19        /
+20        F
+
+Groove BigBandSusPlus
+
+21        /
+22       C7
+23        F      /   z!
+24       z!
+
+RepeatEnd  3

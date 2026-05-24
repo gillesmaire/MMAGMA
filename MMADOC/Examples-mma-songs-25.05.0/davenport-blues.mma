@@ -1,0 +1,132 @@
+// Davenport Blues (Beiderbecke, 1925)
+
+Tempo 100
+Keysig Eb
+
+Groove Metronome2-4
+   z * 2
+   
+Groove SwingIntro
+
+Begin Solo
+    Voice Jazzguitar
+    Volume mp
+    Octave 5
+    Articulate 80
+    Harmony OpenBelow
+    Begin Riff
+        8g;b;c+;d&+;4c+;4+4b ~;
+        ~ 4r;8d+;c+;b;a;
+        8f;a;f;a; 4f;a;
+        2.b;4r;
+    End
+End
+
+Begin Solo-2
+    Voice VoiceOohs
+    Volume ff 
+   Octave 5
+    Articulate 90
+    DupRiff From Solo
+End
+
+Swingmode On
+Volume mf
+1        Eb
+2        Bb
+3        Fm+
+Decresc p 2
+Solo    Harmony 3Below+8below
+4       Bb7
+
+Groove Swing1
+Volume m
+
+5        Eb
+6         /      /    Eb7
+7        Ab
+8         /
+
+Groove Swing1Plus
+
+9        Eb
+10       Cm
+11       F7
+12      Bb7
+
+Groove Swing1
+
+13       Eb
+14        /      /    Eb7
+15       Ab
+16        /
+
+Groove Swing1Plus
+
+17       Eb
+18        /      /     C7
+19       F7
+Groove SwingFill
+20      Bb7
+
+Groove Swing1Walk
+
+21       Eb      /     Ab
+22       Eb      /    Bb7
+23       Eb
+24        /
+
+Groove Swing1WalkSus
+
+25        /      /     Ab
+26       Eb      /    Bb7
+27       Eb
+28      Eb7
+
+Groove Swing1Walk
+
+29       Ab
+30        /
+31       Eb
+32       C7
+
+Groove Swing1WalkPlus
+
+33       F7
+34        /
+35      Bb7      /     z
+Groove SwingFill
+36        /
+
+Groove Swing1
+
+37       Eb      /     Ab
+38       Eb      /    Bb7
+39       Eb
+40      Eb7
+
+Groove Swing1Sus
+
+41       Ab
+42        /
+43       G7
+44        /
+
+Groove Swing1PlusSus
+
+45       Eb
+46       G7
+47       Cm
+48       C7
+
+Groove Swing1Plus
+
+49       F7
+50      Bb7
+
+Groove Swing1End
+
+51       Eb      /    Fm7    Bb7
+52       Eb     Ab     Eb    z!
+
+

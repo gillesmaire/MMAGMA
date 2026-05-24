@@ -1,0 +1,136 @@
+// Whoa Babe (Larry Clinton  1937)
+
+Tempo $(85 * 2)
+KeySig Bb
+
+Groove Metronome2-4
+  z * 2
+  
+Groove WesternSwingIntro
+
+Begin Solo
+    Voice BrassSection
+    Octave 6
+    Volume ffff
+    Articulate 80
+    Harmony 3Below+8Below
+    Begin Riff
+        8r;b;4r;b;r;
+        43d+;b;g;4f;g;
+        8r;b;4r;g;r;
+        1c+;
+    End
+End
+
+Volume f
+
+Swell mp f 4
+
+1         Bb
+2         Eb
+3         Bb
+4         F7
+
+Begin Solo
+    Voice PickedBass
+    Octave 6
+    Articulate 80
+End
+
+Repeat
+Repeat
+Groove WesternSwing
+Volume m
+swingmode on
+Begin Solo Riff
+     8r;b;4r;b;
+     4b;8;d&+;c+;b;4b;
+     8r;b;4r;b;
+     4b;8;d&;c+;b;4g;
+     8r;b;4r;b;
+     4b;8r;b;4r;b;
+     8r;b;4r;b;;
+     4d+;8f;b;
+End
+
+5         Bb      /     Eb
+6         Bb      /     F7
+7         Bb      /     Eb
+8         Bb      /     F7
+
+Groove WesternSwingPlus
+Volume mf
+
+
+9         Bb      /     Eb
+10        Bb      /     F7
+11       Cm7
+12        F7      /     Bb
+
+RepeatEnd
+
+Groove WesternSwingSus
+Decresc m 4
+swingmode on
+Begin Solo Riff
+     4r;8a;;4g;;
+     4f;8f;4.g;
+     4r;8a;;4g;;
+     4f;8;4.d;
+     2r;4d+;en+;
+     43f+;en+;d+;4a;;
+     43c+;a;g;f;g;a;
+     4.a;4.;
+
+     8r;b;4r;b;
+     4b;8;d&+;c+;b;4b;
+     8r;b;4r;b;
+     4b;8;d&;c+;b;4g;
+     8r;b;4r;b;
+     4b;8r;b;4r;b;
+     8r;b;4r;b;;
+     4d+;8f;b;
+End
+
+13       Dm6      /     A7
+14       Dm6      /     A7
+15       Dm6      /     A7
+16       Dm6
+
+Groove WesternSwingSusPlus
+Volume f
+Swingmode on
+
+17         /
+18         /
+19       Dm6      /     A7
+20        Dm      /     F7
+
+Groove WesternSwing
+Volume m
+Swingmode on
+
+21        Bb      /     Eb
+22        Bb      /     F7
+23        Bb      /     Eb
+24        Bb      /     Eb
+
+Groove WesternSwingPlus
+Volume mp
+Swingmode on
+
+25        Bb      /     Eb
+26        Bb      /     Eb
+
+RepeatEnding
+Volume p
+
+27       Cm7
+28        F7      /     Bb
+
+RepeatEnd
+Groove WesternSwingEnd
+Decresc pp 2
+29       Cm7
+30      F7    z!
+

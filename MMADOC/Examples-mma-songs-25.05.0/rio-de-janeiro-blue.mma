@@ -1,0 +1,169 @@
+// Rio De Janeiro Blue (Richard Torrance, 1977)
+
+Tempo 110
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+  
+Groove BossaNovaIntro
+Begin Solo
+      Voice JazzGuitar
+      Octave 5
+      Volume f
+      Articulate 90
+      Harmony None
+      Copy To Solo-1  // Solo-1 is just for the 2nd solo parts
+End
+
+Begin Solo-1 
+      Articulate  50
+End
+
+Swell p mf 4
+Repeat
+1       Am7      /    D/E  {4.g+;2f#+;8g+;} {8r;c+;d+;f#+;8r;a;d+;}
+RepeatEnd  3
+
+2       Am7      /    D/E  {4.g+;2+8f#+;} {8r;c+;e+;}
+
+Groove BossaNova
+Volume m
+
+3        Am
+4         /
+5         /      /    D/E
+6       Am7      /    D/E
+
+Groove BossaNovaPlus
+Cresc mf 4
+
+7        Am
+8         /
+9         /      /    D/E
+10      Am7      /    D/E
+
+Groove BossaNova
+Decresc  mp 8
+
+11       Dm
+12        /
+13       Am
+14      Am7      /    Am6
+
+Groove BossaNovaPlus
+
+15       Dm
+16        F      /     E7
+17       Am      /    D/E
+18      Am7      /    D/E
+
+Repeat
+Label SIGN
+
+Groove BossaNovaSus
+Volume m
+
+19      Bm7
+20     E7#9      /      /   E7b9
+21       Am
+22       D7
+
+Groove BossaNovaSusPlus
+Volume +20%
+
+23       Bm
+24     E7#9      /   E7b9
+25       Am      /    D/E
+26      Am7
+
+If Def CODA
+   Goto Coda
+Endif
+
+Groove BossaNovaFill
+Volume mp
+
+27       Am
+28       E7b9
+
+Groove BossaNova
+Volume m
+
+29       Am
+30        /
+31        /
+32        /      /    D/E
+
+Groove BossaNovaPlus
+Volume -10%
+
+33       Am
+34        /
+35        /
+36        /      /    D/E
+
+Groove BossaNova
+Volume m
+
+37       Dm
+38        /
+39       Am
+40        /
+
+Groove BossaNovaPlus
+Cresc mf 4
+
+41       Dm
+42        F      /     E7
+43      Am7
+
+Groove BossaNova
+Decresc m 2
+
+44      Am7      /    Em7
+45       Am
+
+Groove BossaNovaFill
+Volume mp
+
+RepeatEnding
+
+46      Am7      /    D/E
+
+RepeatEnd
+
+47      Am7      /    D/E
+
+Set CODA
+Goto SIGN
+Label CODA
+
+Groove BossaNova
+Volume mp
+
+48      Am7      /    D/E  {4.d+;2f#+;8+4.g+ ~;} {8r;c+;e+;f#+;;a;d+;g+;}
+49      Am7      /    D/E  {~ 2f#+;} {8r;c+;e+;f#+;8r;g;d+;f+;}
+
+Repeat
+
+Groove BossaNovaSus
+Decresc mp p 6
+
+50      Am7      /    Em7
+51      Am7      /    D/E
+52      Am7     /    D/E
+53      Am7     /    D/E
+54      Am7     /    D/E
+55      Am7     /    D/E
+
+RepeatEnd
+
+Groove BossaNova2End
+Seq 2
+Decresc pppp 3
+
+56       Am7 /  E7#9 {4r;4.e;4f#;4g ~;}
+57     E7b9  E7#9 /  E7&9  {~ 4f;4g;2.f ~;}
+58      Am9 
+

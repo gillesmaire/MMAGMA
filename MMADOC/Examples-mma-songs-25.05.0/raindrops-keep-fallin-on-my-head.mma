@@ -1,0 +1,112 @@
+// Raindrops Keep Fallin On My Head (Butch Cassidy, 1969)
+
+Tempo 110
+Keysig F
+
+Groove Metronome2-4
+   z * 2
+   
+Groove CountrySwingIntro
+
+Begin AllGrooves 
+   Arpeggio Voice Piano1
+   Begin Chord-Sus
+      Voice Strings
+      Volume p
+      Octave 6
+   End
+End
+
+Begin Solo
+      Voice SteelGuitar
+      Octave 5
+      Volume f
+      Harmony 3Below
+      Articulate 90
+      Begin Riff
+            8.a;16;8;r;8.g;16;8;r;
+            8.b;16;8.;16+8.g;16;8;r;
+      End
+End
+
+Volume mp
+1          F      /      C
+2         Bb      /     C7
+
+Repeat
+Groove CountrySwing
+Volume m
+
+3          F
+4        FM7
+5         F7
+6         Bb
+
+Groove CountrySwing1
+Cresc f 4
+
+7        Am7      /     D7
+8        Am7      /     D7
+9        Gm7
+10         /
+
+RepeatEnding
+
+11     C7sus      /      /     C7
+
+RepeatEnd
+
+12     C7sus      /      /     C7
+
+Groove CountrySwingSus
+Chord-Sus Sequence {1 1 90 * 4}
+Volume m
+
+13         F
+14       FM7      /     F7
+15        Bb
+16        C7
+
+Groove CountrySwing1Sus
+Chord-Sus Sequence {1 1 90 * 4}
+Volume f
+
+17        Am
+18         /
+19        D7
+20       Gm7
+
+Groove CountrySwingSus
+Chord-Sus Sequence {1 1 90 * 4}
+Decresc m 4
+
+21     C7sus      /     C7
+22     C7sus      /     C7
+Seq
+23         F
+24       FM7
+
+Groove CountrySwing1
+
+25        F7
+26        Bb
+27       Am7      /     D7
+28       Am7      /     D7
+
+Groove CountrySwing
+Decresc ppp 6
+Tempo *.9 6
+
+29       Gm7
+30         /
+31     C7sus      /      /     C7
+32         F      /    FM7
+
+Groove CountrySwingEnd
+
+33       Gm7      /  C7sus
+Chord Sequence {1 2. 90}
+Bass  Sequence {1 2. 1 90}
+34         F      /      z!  {8a;g;2.f;}
+
+

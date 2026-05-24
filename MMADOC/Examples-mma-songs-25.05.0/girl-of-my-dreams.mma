@@ -1,0 +1,112 @@
+// Girl Of My Dreams, 1927
+
+Tempo 140
+Keysig C
+
+Groove Metronome3
+  z * 2
+  
+Groove LatinWaltzIntro
+
+Begin Solo
+     Voice Organ2
+     Volume f
+     Articulate 90
+     Octave 6
+     Harmony OpenBelow
+     Rtime 10
+     Rvolume 10
+     Begin Riff
+         4g;c+;e+;
+         2a;4b;
+         2._c+;
+         4b;
+     End
+End
+
+Swell m mf 4
+1         C
+2        Am
+3        Dm
+4        G7
+
+Repeat
+Groove LatinWaltz
+Volume m
+
+5         C      /     C7
+6        C7
+7         F
+8        Fm
+
+Groove LatinWaltzPlus
+Cresc mf 2
+
+9         C
+10       G+
+11        C
+12       G+      /     z
+
+Groove LatinWaltz
+Decresc m 2
+
+13        C      /     G7
+14       C7      /     C+
+15        F
+16      Ab7
+
+Groove LatinWaltzPlus
+
+17        C
+18       D7      /     G7
+19        C
+20        /
+
+Groove LatinWaltzSus
+Volume mp
+
+21       E7
+22        /
+23       Am
+24        /      /     Cm
+
+Groove LatinWaltzSusPlus
+Cresc m 2
+
+25       D7
+26       D7
+27       G7
+28        /      /     z
+
+Groove LatinWaltz
+Volume mf
+
+29        C      /     G7
+30       C7
+31        F
+32       Fm
+
+Groove LatinWaltz
+Decresc mp 2
+
+33        C
+34       D7      /     G7
+
+
+RepeatEnding 2
+
+35        C
+
+Groove LatinWaltzFill
+
+36        G7
+
+RepeatEnd
+
+Groove LatinWaltzEnd
+Decresc ppp 2
+
+35        C
+36        /  z!
+
+

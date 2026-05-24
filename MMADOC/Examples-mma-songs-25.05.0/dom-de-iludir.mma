@@ -1,0 +1,117 @@
+// Dom De Iludir (Caetao Veloso)
+
+Tempo 92
+Keysig Bb
+
+Groove Metronome2-4
+  z * 2
+
+Groove SlowBoleroIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Volume f
+    Harmony OpenBelow
+    Articulate 110
+    Octave 4
+    Begin Riff
+        43a&+;g&+;f+;e+;f+;d&+;
+        8.e+;16+2a&;
+        43a&+;g&+;f+;e+;d&+;e+;
+        2f+;
+    End
+End
+
+Decresc f p 4
+
+1      AM7b5      /     Ab
+2       AbM7 Bb7sus4      /    Bb7
+3     Eb7sus4      / Ab7sus4
+4     DbM7#5      /      / Db6(add9)
+
+Groove SlowBoleroSus
+Volume m
+
+5     C7sus4
+6        CM7      /    Am7   D7b9
+Decresc p 2
+7     G7sus4      / C7sus4
+8     F7sus4
+
+Groove SlowBoleroIntro
+Seq 4
+
+9     B13#11
+
+Repeat
+Groove SlowBolero
+Volume m
+
+10      BbM7
+11      Abm7      /    Db7
+12      GbM7
+13    Bbm7sus4      /  Eb7#5
+
+Groove SlowBoleroPlus
+Cresc mf 4
+
+14     AbmM7      /   Abm7
+15       Bm9      /     E9
+16       Em7
+17        A7      / Eb7#11
+
+Groove SlowBolero1Sus
+Decresc mp 8
+
+18       DM7
+19       Cm7      /     F7
+20      BbM7
+21    G9sus4      /      /   G7#9
+
+Groove SlowBoleroSus
+
+22        C9
+23    F13sus4      /    F13
+24    Bb6(add9)
+
+RepeatEnding
+Groove SlowBoleroIntro
+Seq 4
+25    Ab7#11
+RepeatEnd
+26     Ab7#5
+
+Begin Solo-1
+   Drumtype
+   Volume f
+   Tone Opentriangle
+   Volume ff
+End
+AutoSoloTracks Solo-1
+
+Groove SlowBoleroSus
+Decresc f mp 8
+
+27    Ab13sus4    {8r;*;4r;8*;4r;8*;}
+28      AbM7      / Bb7sus4    Bb7
+29    Ab13sus4    {8r;*;4r;8*;4r;8*;}
+30      DbM9      /    B13   Bb13
+
+Groove SlowBolero1
+
+31    Ab13sus4    {4+8r; 8*;4+8r;8*;}
+32      AbM7      / Bb7sus4    Bb7
+33    Ab13sus4    {4+8r; 8*;4+8r;8*;}
+34      DbM9      /    B13   Bb13
+
+Groove SlowBolero
+Decresc ppp 4
+
+35    Ab13sus4   {8r; *; 4r; 8 *; 4r; 8 *;} 
+36      AbM7      / Bb7sus4    Bb7
+
+Groove SlowBoleroEnd
+
+37    Ab13sus4   {4+8r;8*;}
+38      DbM9
+

@@ -1,0 +1,100 @@
+// Easy Living
+// From the 1937 film
+
+Tempo 80
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+  
+Groove NiteJazzIntro
+Begin Solo
+    Voice Piano1
+    Volume f
+    Octave 5
+    Harmony OpenBelow
+    Articulate 90
+    Begin Riff
+        4a;c+;2a;
+        43g;;a;2b;
+        2d+;4a;f;
+        1c+;
+    End
+End
+
+Decresc f mp 4
+
+1          F      /     D7
+2         Gm      /    C13
+3         F6
+4       C9#5
+
+Repeat
+Groove NiteJazz
+Volume m
+
+5        FM7      / F#dim7
+6        Cm7      / G#dim7
+7        Am7      /     F7
+8       BbM7      /    Eb7
+
+Groove NiteJazzPlus
+Cresc mf 2
+
+9        FM7      /    Dm7
+10       Gm7      /     C7
+
+RepeatEnding
+
+11       Am7      /   D7b9
+12        G7      /   C7b9
+
+RepeatEnd
+
+13         F      /   Bbm7
+14      Ebm7      /    Ab7
+
+Repeat
+Groove NiteJazzSus
+Volume m
+
+15      DbM7      /   Bbm7
+16      Ebm7      /    Ab7
+17       Fm7      /    Bb7
+18     A7#11      /    Ab7
+
+Groove NiteJazzSusPlus
+Cresc f 4
+
+19      DbM7      /   Bbm7
+20     Gm7b5      /     C7
+21     Am7b5      /   D7b9
+22       Gm7      /    C+7
+
+Groove NiteJazzSus
+Decresc m 4
+
+23       FM7      / F#dim7
+24       Cm7      / G#dim7
+25       Am7      /     F7
+26      BbM7      /    Eb7
+
+Groove NiteJazzPlus
+Decresc mp 2
+
+27       FM7      /    Dm7
+28       Gm7      /     C7
+
+RepeatEnding
+
+29         F      /   Bbm7
+30         F      /    Ab7
+
+RepeatEnd
+
+Groove NiteJazzEnd
+Decresc ppp 2
+
+29         F      /   Bbm7
+31         F     z!
+

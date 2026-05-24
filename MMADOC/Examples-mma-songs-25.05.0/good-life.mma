@@ -1,0 +1,104 @@
+// Good Life
+
+Tempo 72
+Keysig Ab
+
+Groove SlowJazz
+AllGrooves Chord-Organ Voicing Mode=Drop3
+AllGrooves Chord Voicing Mode=Drop2
+
+Groove Metronome2-4
+ z * 2
+ 
+Begin Solo
+   Voice Strings
+   Harmony Open8Below
+   Octave 6
+   Volume F
+   Articulate 110
+   Begin Riff
+       4a;g;2f;
+       4g;f;2e;
+       4f;e;2dn;
+       2e;
+   End
+End
+
+Groove SlowJazz2Intro
+
+
+Swell mp mf 4
+1        Ab
+2        Gm
+3        Fm
+4        E&7
+
+
+Groove SlowJazz1
+Volume m
+
+5        Ab
+6         /
+7       Gm7
+8        C7
+
+Groove SlowJazz1Plus
+Cresc mf 8
+
+9        Fm
+10        /
+11    Dm7b5
+12       G7
+
+Groove SlowJazz1
+
+13     Bbm7
+14      Gb7
+15       Ab
+16        /      /     C7
+
+Groove SlowJazz1Sus
+Volume m
+
+17       Fm
+18      Fm7
+19     Bbm7
+20      Eb7
+
+Groove SlowJazz1SusPlus
+Volume mf
+
+21       Ab
+22        /
+23      Gm7
+24       C7
+
+Groove SlowJazz1Sus
+
+25       Fm
+26        /
+27    Dm7b5
+28       G7
+
+Groove SlowJazz1Plus
+Volume m
+
+29     Bbm7
+30      Gb7
+31       Ab
+32       F7
+
+Groove SlowJazz1
+Volume mp
+
+33     Bbm7
+34   Bbm7/Eb      /      /  Eb7b9
+
+Groove SlowJazz2End
+
+Decresc ppp 2
+
+35       Ab       /     Db    Dbm
+36      Ab6       z!
+
+

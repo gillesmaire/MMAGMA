@@ -1,0 +1,103 @@
+// Last Night When We Were Young (Harburg/Arlen 1936)
+
+Tempo 70
+Keysig G
+
+Groove Metronome2-4
+  z * 2
+  
+Begin Solo
+     Voice JazzGuitar
+     Volume f
+     Articulate 110
+     Octave 4
+     Rvolume 10
+     Rtime 10
+     Begin Riff
+         2.b;3g;a;b;
+         2b;43d+;b;g;
+         2a;43b;;;
+         2.g;
+     End
+End
+
+Begin Solo-2
+     Voice JazzGuitar
+     Articulate 100
+     Octave 4
+     Volume ff
+     HarmonyOnly OpenBelow+OpenAbove
+     Begin Riff
+         2.b;4g;
+         2b;d;
+         2a;b;
+         2g;
+     End
+End
+
+Groove EvansishIntro
+
+1         GM 
+2         Bm      /     G
+3         A7      /     D7
+4          G      /    GM7
+
+Groove Evansish
+
+5        GM7      /     C7
+6        Bm7      /     E7
+7         A7
+8        Am7      /     D7
+
+Groove EvansishPlus
+
+9        Dm7      /     G7
+10       Cm7      /     F7
+11       GM7      / G#dim7
+12       Am7      /     D7
+
+Groove Evansish
+
+13       GM7      /     C7
+14       Bm7      /     E7
+15        A7
+16       Am7      /     D7
+
+Groove EvansishSus
+
+17       Dm7      /     G7
+18       Cm7      /     F7
+19       GM7      / G#dim7
+20       Am7      /     D7
+
+Groove EvansishSusPlus
+
+21       Dm7
+22     Bm7b5      /     E7
+23        A7
+24       Gm7      /     C7 C#dim7
+
+Groove Evansish
+
+25       Dm7
+26      F7#5
+27       Gm7      /     C7
+28       Eb7     D7
+
+Groove EvansishPlus
+
+29       GM7      /     C7
+30       Bm7      /     E7
+31       FM7
+32     Bm7b5      /     E7
+
+Groove Evansish
+
+33        A7
+34       Cm7      /     F7
+
+Groove EvansishEnd
+
+35       GM7
+36         /  z!
+

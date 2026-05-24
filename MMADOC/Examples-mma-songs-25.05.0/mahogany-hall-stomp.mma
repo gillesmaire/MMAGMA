@@ -1,0 +1,118 @@
+// Mahogany Hall Stomp (Louis Armstrong, 1929)
+
+Tempo $(2 * 95)
+Keysig Eb
+
+Groove Metronome2-4
+  z * 2
+  
+Groove DixieMarchIntro
+
+Begin Solo
+    Voice Trumpet
+    Octave 5
+    Volume ff
+    Articulate 80
+    Harmony 3Below
+    Begin Riff
+        4b;r;b;r;
+        4b;r;c+;8b;c+;
+        8e+;c+;a;g;4b;8d;1e~;
+    End
+End
+
+1        Eb
+2         /
+3         /      /      /  Bb7     Eb@4.5
+4        Eb
+
+
+Repeat
+Volume m
+Groove DixieMarch
+
+5        Eb
+6       Eb7
+7        Ab      /    Abm
+8        Eb
+
+Groove DixieMarchPlus
+Cresc f 4
+9         /
+10        /
+11       F7
+12      Bb7
+
+Groove DixieMarch
+Volume m
+
+13       Eb
+14        /      /      /    Eb7
+15       Ab      /    Abm
+16       Eb
+
+Decresc mp 2
+
+17       Eb      /    Cm7
+18       F7      /    Bb7
+
+RepeatEnding
+
+19       Eb
+20      Bb7
+
+RepeatEnd
+
+21       Eb      /  Ebdim
+22      Bb7
+
+Repeat
+
+Groove DixieMarchSus
+Volume mf
+
+23       Eb
+24        /
+25      Eb7
+26        /
+
+Groove DixieMarchSusPlus
+Decresc m 2
+
+27       Ab
+28        /      /    Abm
+29       Eb
+30        /      /  Ebdim
+
+Groove DixieMarchSus
+
+31      Fm7      /    Bb7
+32      Fm7      /    Bb7
+
+RepeatEnding
+
+Groove DixieMarchSusPlus
+
+33       Eb
+34        /      /    Bb7
+
+RepeatEnd
+
+Groove DixieMarch
+Decresc f mp 2
+
+35       Eb
+36      Bb7
+
+Groove DixieMarchPlus
+Volume m
+37       Eb
+38        /
+
+Groove DixieMarchEnd
+Decresc pp 2
+
+39        /      /      /    Bb7     Eb@4.5
+40        / / z!
+
+

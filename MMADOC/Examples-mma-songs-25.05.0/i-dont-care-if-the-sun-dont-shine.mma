@@ -1,0 +1,82 @@
+// I Dont Care If The Sun Don't Shine (Patti Page, 1950)
+
+Tempo $(84 * 2)
+
+Groove Metronome2-4
+  z * 2
+  
+Groove JiveIntro
+
+1         F
+2        Dm
+3        Am7
+4        C7
+
+Repeat
+Groove Jive 
+
+5         F
+6         /
+7         /
+8         /
+
+Groove JiveClap
+
+9         /
+10        /      /   Fdim3
+11      Gm7      /     C7
+12      Gm7      /     C7
+
+Groove Jive
+
+13       Gm
+14      Bb+
+15      Gm7
+16       C7
+
+Groove JiveSus
+
+17        /
+18        /
+19        F
+20        /
+
+Groove JivePlus
+
+21      Cm7      /     F7
+22      Cm7      /     F7
+23      Cm7      /    F+7
+24       Bb
+
+Groove JiveSusPlus
+
+25      Dm7      /     G7
+26      Dm7      /     G7
+27        /   Cdim3     C7
+28       C7      /    C+7
+
+Groove Jive
+
+29        F
+30        /
+31       F7
+32       Bb
+
+Groove JivePlus
+
+33       G7
+34       C7
+
+RepeatEnding
+
+35        F
+36        /      /   C7
+
+Repeatend
+Groove JiveEnd
+Decresc pp 2
+
+35        F
+36        /      z!
+
+

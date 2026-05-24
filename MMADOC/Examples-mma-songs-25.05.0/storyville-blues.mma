@@ -1,0 +1,113 @@
+// Storyville Blues (1918?)
+
+Tempo 100
+Keysig Ab
+
+Groove Metronome2-4
+ z * 2
+ 
+Groove Blues
+
+0        z
+
+Groove BluesIntro
+
+1        Ab
+2       Eb7
+3        Ab    Ab7     Db    Dbm
+4        Ab
+
+Groove Blues1
+
+5        Ab
+6         /      /    Ab7
+7        Db
+8        Ab      /    /  Eb7
+
+Groove Blues
+
+9        Ab
+10        /
+11      Bb7
+12      Eb7
+
+Groove Blues1
+
+13       Ab
+14        /      /    Ab7
+15       Db
+16       Ab
+
+Groove Blues1
+
+17       Db
+18       F7
+19      Bb7
+20      Eb7
+
+Groove BluesSus
+
+21       Ab
+22      Ab7
+23       Db      /    Dbm
+24       Ab      /      /    Eb7
+
+Groove Blues1Sus
+
+25       Ab
+26        /
+27      Bb7
+28      Eb7
+
+Groove BluesSus
+
+29       Ab
+30      Ab7
+31       Db      /    Dbm
+32       Ab      /      /    Eb7
+
+Groove Blues1
+
+33       Ab
+34      Eb7
+35       Ab    Ab7     Db    Dbm
+36       Ab      /      /    Eb7
+
+Groove Blues
+
+37       Ab
+38        /      /    Ab7
+39       Db      /    Dbm
+40       Ab
+
+Groove Blues1
+
+41        /
+42        /      /     F7
+43      Bb7
+44      Eb7
+
+Groove Blues
+
+45       Ab
+46        /      /    Ab7
+47       Db      /    Dbm
+48       Ab      /      /    Eb7
+
+Groove Blues1
+
+49       Ab
+50      Eb7
+51       Ab    Ab7     Db    Dbm
+52       Ab
+
+Groove BluesTriple
+
+53       Ab      /     Db
+54       Ab    Ab7     Db    Dbm
+
+Groove BluesEnd
+Seq 4
+
+55       Ab z!
+

@@ -1,0 +1,82 @@
+// If You Never Come To Me (Jobin, 1965)
+
+Tempo 100
+
+Groove Metronome2-4
+  z * 2
+  
+Repeat
+Groove BossaNova
+Volume m
+1       CM7
+2      BM13
+3    BbM7b5
+4    Ab7b9#5
+
+Groove BossaNovaPlus
+Swell m f 8
+
+5      Dm11
+6       Fm7
+7       Bb9
+8       E13      /    E7+
+
+Groove BossaNova
+
+9        A9      /   A7b9
+10    D13#9
+11    G13#9
+12      C13
+
+Groove BossaNova1Sus
+Volume f
+
+13      Fm7
+14      CM7
+15   Db9#11
+16      CM7
+
+Groove BossaNovaSus
+Decresc m 4
+
+17     BM13
+18   BbM7b5
+19   A7b9#5
+20     Dm11
+
+Groove BossaNova
+Volume mf
+
+21        /
+22      Fm7
+23      Bb9
+24      E13      /    E7+
+
+Groove BossaNova2Sus
+Decresc mp 4
+
+25       A9      /   A7b9
+26    D13#9
+27    G13#9
+28      C13
+
+Groove BossaNovaSus
+
+29      Fm7
+30      CM7
+
+RepeatEnding
+
+Groove BossaNovaFill
+Volume f
+
+31   Db9#11
+
+RepeatEnd
+
+Groove BossaNova2End
+Decresc ppp 1
+
+32        /  
+
+

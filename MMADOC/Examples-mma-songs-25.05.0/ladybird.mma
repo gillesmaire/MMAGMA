@@ -1,0 +1,60 @@
+// Ladybird (Todd Damerson, 1948)
+
+Tempo 152
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+  
+Set Lcount 0
+
+/// Lets change the voicing for the Chord (Organ), Chord-Sus (strings),
+/// Chord-sax and Chord-Guitar from Optimal to something more open.
+Groove Swing
+AllGrooves Chord Invert 0
+AllGrooves Chord Voicing Mode=Drop23Key
+AllGrooves Chord-Sus Voicing Mode=Drop23Key
+AllGrooves Chord-Sax Voicing Mode=Drop23Key
+AllGrooves Chord-Guitar Voicing Mode=Drop23Key
+
+Repeat 
+Inc Lcount  // This starts groove selection to 1
+
+Groove $Lcount Swing  Swing1
+Swell mp f 16
+1       CM7
+2         /
+3       Fm7
+4       Bb7
+
+Groove $Lcount SwingPlus Swing1Plus
+
+5       CM7
+6         /
+7      Bbm7
+8       Eb7
+
+Groove $Lcount SwingSus Swing1Sus
+
+9      AbM7
+10        /
+11      Am7
+12       D7
+
+Groove $Lcount SwingPlusSus Swing1PlusSus
+
+13      Dm7
+14       G7
+
+RepeatEnding 3
+15      CM7      /    Eb7
+16     AbM7      /    Db7
+RepeatEnd
+
+Groove Swing1End
+Decresc ppp 2
+
+15      CM7    /     Eb7
+16      CM7      z!
+
+

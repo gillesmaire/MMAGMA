@@ -1,0 +1,91 @@
+// Please Love Me Forever (Bobby Vinton, 1967)
+
+Keysig F
+Tempo 80
+
+Groove Metronome2-4
+  z * 2
+  
+Groove 8BeatIntro
+Begin Solo
+    Voice SynthVox//Organ3
+    Volume f
+    Articulate 90
+    Octave 7
+    Harmony 3Below+16below
+    Rtime 5
+    Rvolume 10
+    Begin Riff
+        2c+;43b;a;b;
+        4d+;2.a;
+        43g;a;b;4c+;d+;
+        2.c+;
+    End
+End
+
+Swell m f 4
+1         F
+2         Dm
+3         Gm7 
+4         C7
+
+Repeat
+Groove 8Beat
+Volume m
+
+5         F
+6        Am
+7        Bb
+8         F
+
+Groove 8BeatPlus
+Cresc mf 2
+
+9         /      /    Am7   Abm7
+10      Gm7      /    D7+
+
+RepeatEnding
+
+11       G7
+12     Bbm6      /     C7
+
+RepeatEnd
+
+13       G7      /   C7b9
+14        F
+
+Groove 8BeatSus
+Volume m
+
+15      Em7      /     A7
+16      Em7      /     A7
+17       D7
+18        /
+
+Groove 8BeatSusPlus
+Volume mf
+
+19      Dm7      /     G9
+20      Dm7      /     G9
+21       C7      /   Cdim
+22       C7      /      /     C+
+
+Groove 8BeatSus
+Volume m
+
+23        F
+24       Am
+25       Bb
+26        F
+
+Groove 8Beat
+Decresc ppp 4
+
+27        /      /    Am7   Abm7
+28      Gm7      /    D7+
+
+Groove 8BeatEnd
+
+29       G7      /   C7b9
+30        F      z!
+

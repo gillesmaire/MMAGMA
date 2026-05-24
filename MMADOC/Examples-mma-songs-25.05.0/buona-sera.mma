@@ -1,0 +1,130 @@
+// Buona Sera
+
+Tempo 105
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+  
+Groove TangoIntro
+
+Begin Solo
+    Voice Piano1
+    Articulate 70
+    Octave 4
+    Harmony OpenBelow+8Below
+    Volume ff
+    Begin Riff
+       4c+;8r;g;4c+;e;
+       8c+;;r;g;4c+;g;
+       4c+;8r;g;4c+;g;
+       8c+;;r;g;4c+;4r;
+    End
+End
+
+/// Do the intro
+
+1         C
+2         /
+3         /
+4         /
+
+/// This is the first time though, a tango.
+
+Groove TangoClean
+5         C
+6         /
+7         /
+8        G7
+
+Groove TangoCleanPlus
+
+9       Dm7
+10       G7      /    Dm7
+11       G7
+12        C
+
+Groove TangoClean
+
+13        /
+14        /
+15        /
+16        F
+
+Groove TangoCleanSus
+
+17       Fm
+18        C
+19       G7      /      /    GM7
+20        C
+
+Groove TangoClean
+
+21        /      /     C7
+22        F      /  F#dim
+23        C      /     G7
+24        C
+
+
+/// Now the boring part is over, make this sucker swing.
+/// Note, we've just copied the chord-set to make it all
+/// a bit easier. Bar numbers reflect the sheet music.
+
+Tempo *2
+
+// 4 bar transition
+
+Groove JiveIntro
+
+25        C
+26        G
+27        C
+28        /
+
+Repeat
+Groove Jive1
+
+5         C
+6         /
+7         /
+8        G7
+
+Groove Jive1Clap
+
+9       Dm7
+10       G7      /    Dm7
+11       G7
+12        C
+
+Groove Jive1
+
+13        /
+14        /
+15        /
+16        F
+
+Groove Jive1Plus
+
+17       Fm
+18        C
+19       G7      /      /    GM7
+20        C
+
+Groove Jive1Sus
+
+21        /      /     C7
+22        F      /  F#dim
+
+Repeatending 3
+
+23        C      /     G7
+24        C
+
+RepeatEnd
+
+Groove JiveEnd
+
+23        C      /     G7
+25        C     G7      C   z!
+
+

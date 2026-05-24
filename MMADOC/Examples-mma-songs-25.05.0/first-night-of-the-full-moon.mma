@@ -1,0 +1,120 @@
+// First Night Of The Full Moon
+
+Tempo 160
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+
+
+Groove FoxtrotIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Volume F
+    Articulate 90
+    Octave 5
+    Harmony OpenBelow
+    Begin Riff
+        4e;g;4.a;8g;
+        4a;g;f;e;
+        2f;a;
+        2.g;
+    End
+End
+
+Swell m f 4
+
+1          C
+2         Am
+3         Dm
+4         G7
+
+Set Counter 1
+Repeat
+Groove FoxTrot
+Volume m
+
+5          C
+6          /
+7          /
+8          /
+
+Groove FoxtrotPlus
+Cresc ff 4
+
+9          F
+10         /
+11        G7
+12         /
+
+Groove Foxtrot
+Decresc m 4
+
+13         C
+14         /      /    Cm9     C7
+15         F
+16         /
+
+Groove FoxtrotPlus
+Volume mf
+
+17         C
+18        G7
+
+if eq 3 $counter
+    Groove FoxtrotEnd
+    Decresc ppp 2
+    
+    19        C
+    20        / z!
+    eof
+endif
+
+19         C
+Truncate 2 side=left
+20         /
+
+///  FINE here, covered in the above conditional
+
+Groove FoxtrotSus
+Truncate 2 side=right
+21         /
+
+Seq
+Volume mp
+
+22         C
+23         F      C   Cdim      C
+24         /
+25         /
+
+
+Groove FoxtrotSusPlus
+Volume mf
+
+26        G7      /      /      C
+27        G7
+28         C
+29         /
+
+Groove FoxtrotSus
+Decresc m 4
+
+30         /
+31         /
+32         F
+33         /
+
+Groove FoxtrotSusPlus
+Decresc mp 2
+
+34        G7
+35         /
+36         C
+37         /
+
+Inc Counter
+RepeatEnd 3
+
+

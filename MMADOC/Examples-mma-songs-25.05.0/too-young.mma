@@ -1,0 +1,103 @@
+// Too Young (Nat King Cole, 1951)
+
+Tempo 72
+Keysig Bb
+
+Groove Metronome2-4
+  z * 2
+  
+Groove SlowJazz1Intro
+
+Begin Solo
+    Voice Piano1
+    Volume mf
+    Harmony OpenBelow+OpenAbove
+    Articulate 110
+    Octave 4
+    Begin Riff
+        2r;4en;d;
+        2.g;4e;
+        2.a;8g;f;
+        2f;a;
+        2f;
+    End
+End
+
+1        z! / z
+Seq 1
+1        Eb  
+2        F7
+3        Dm
+4        F7
+
+Repeat
+Groove SlowJazz1
+Volume m
+
+5        Bb
+6        Dm
+7        Gm
+8       Cm7      /     F7
+
+Groove SlowJazz1Plus
+
+9        Bb
+10       Dm
+11       Eb
+12       G7
+
+Groove SlowJazz1
+
+13       Cm
+14       F7
+15        /      /    Cm7
+16       F7
+
+Groove SlowJazz1Plus
+
+17        /      /    Cm7
+18       F7      /      /     F+
+19       Bb    Gm7     G7
+20      Gm7      /     F7
+
+Groove SlowJazz1Sus
+
+21       Bb
+22       Dm
+23       Gm
+24      Cm7      /     F7
+
+Groove SlowJazz1SusPlus
+
+25       Bb
+26      Bb7      /    Bb+
+27       Eb      /    Bb+
+28       Eb
+
+Groove SlowJazz1Sus
+
+29       Cm
+30       Eb      /    Ebm
+31       G7
+32       G7
+
+Groove SlowJazz1
+
+33      Cm7
+34       Dm      /     F7
+
+RepeatEnding
+
+35       Bb      /   Cdim
+
+Groove SlowJazzFill
+
+36      Cm7      /     F7
+
+RepeatEnd
+
+Groove SlowJazzEnd
+
+35       Bb      /   Cdim
+37       Bb      z!
+

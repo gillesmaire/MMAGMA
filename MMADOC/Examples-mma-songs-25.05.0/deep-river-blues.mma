@@ -1,0 +1,87 @@
+// deep-river-blues (Doc Watson)
+
+
+Tempo 180
+Keysig G
+Transpose -2
+ChordAdjust D=-1 C=-1
+
+Groove Metronome2-4
+	z 
+	z / / z!
+
+Groove FolkIntro
+Begin Solo
+    Voice NylonGuitar
+    Decresc ff m 4
+    Articulate 90
+    Harmony OpenBelow
+    Octave 5
+    Arpeggiate Direction=Both Rate=8 Decay =-2
+    Begin Riff
+         1gbd+;
+         1gb&d&+;
+         1gbd+;
+         1dfa;
+    End
+End
+
+Decresc mf m 4
+
+1          G
+2         Gdim  
+3          G
+4         D7
+
+Set Toggle 1
+Repeat
+
+If Eq $Toggle 2
+	Set Toggle 0
+	Groove FolkArticulated
+Else
+	Groove FolkWalk
+Endif
+
+Volume m
+
+5          G
+6       Gdim
+7          G
+8          C
+
+Cresc f 4
+
+9          G
+10      Gdim
+11        D7
+12         /
+
+Volume ff
+
+13         G
+14      Gdim
+15         G
+16         C
+
+Decresc m 2
+
+17         G
+18      Gdim      /     D7
+
+RepeatEnding 3
+
+19         G
+20         /
+
+Inc Toggle
+
+RepeatEnd
+
+Groove FolkEnd
+Decresc pp 2
+
+21         G
+22         G
+
+

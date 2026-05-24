@@ -1,0 +1,136 @@
+// Just The Way You Are (Billy Joel, 1974)
+
+Tempo 90
+Keysig D
+
+Groove Metronome2-4
+  z * 2
+  
+Groove BalladIntro
+Seq 4
+
+1        D7
+
+Repeat
+Groove Ballad
+
+1       Bm6
+2       GM7
+3        Bm      /     D7
+4       GM7
+5        Gm
+6      D/F#
+
+Groove Ballad1
+
+7       Am7      /     D7
+8       GM7
+9        Gm
+10     D/F#
+11      Bm7
+12    Bm7/E
+13       E9
+14      G/A
+15        /
+
+Groove Ballad
+
+16        D
+
+Label SIGN
+
+17      Bm6
+18      GM7
+19       Bm      /     D7
+20      GM7
+21       Gm
+22     D/F#
+
+Groove BalladFill
+
+23       Am      /     D7
+
+Groove Ballad
+
+24      GM7
+25      Gm6
+26     D/F#
+27      Bm7
+28      Em7
+29      G/A
+
+If Def CODA
+  Goto CODA
+Endif
+
+RepeatEnding
+
+Groove BalladFill
+
+30        D
+
+RepeatEnd
+
+Groove BalladFill
+
+31        D      /  Gm6/D
+
+Groove Ballad1Sus
+
+32        /      /    G/D      D
+33        /      /  Gm6/D
+34        D      /     D7
+35        G
+
+Groove Ballad
+
+36        A
+37     F#m7
+38       B7
+
+Groove Ballad1Plus
+
+39      Em7
+40        A
+41        D
+42        /      /   Am/C
+
+Groove Ballad1
+
+43       Bb
+44        C
+45      Am7
+46        C      /     D7
+
+Groove Ballad
+
+47      Gm7
+48        C
+49      G/A
+
+Groove Ballad
+
+50        /
+51        D
+
+Set CODA
+Goto Sign
+
+//////////// This is the CODA
+
+Label Coda
+
+Groove Ballad1Sus
+
+52       Bb
+53        C
+54      Am7
+55       D7
+56      Gm7
+
+Groove BalladEnd
+Seq 3
+
+57       A7
+58      DM7
+

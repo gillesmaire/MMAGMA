@@ -1,0 +1,130 @@
+// Up Jumped Spring Freddie Hubbard, 1962)
+
+Tempo 150
+Keysig Bb
+Timesig 3/4
+
+Groove Metronome3
+ z * 2
+ 
+Groove JazzWaltzIntro
+Begin Solo
+    Voice Piano1
+    Volume F
+    Octave 5
+    Harmony OpenBelow
+    Rskip 10
+    Articulate 110
+    Begin Riff
+        16b;c;d;e; f;g;a;4+16b;
+        16d;e;f;g; a;b;c+;4+16d+;
+        16f;g;a;b; c+;d+;e+;4+16f+;
+        2.d+;
+    End
+End
+
+1        Bb
+2        Dm7
+3        Fm7
+Solo Rskip 0 // ensure full chord on last bar of intro
+4        F7
+
+Repeat  /// outer repeat is really a DS on music
+
+Repeat
+Groove JazzWaltz
+
+5      BbM7
+6      G7#5
+7       Cm7
+8        F7      / F#dim7
+
+Groove JazzWaltz1
+
+9       Gm7
+10      Fm7
+11      Em7
+12       A7
+
+Groove JazzWaltz
+
+13      Dm7
+14     Ebm7
+15      Dm7
+16     Ebm7
+
+RepeatEnding
+
+Groove JazzWaltzSus
+
+17     B7b5
+18       E7
+19    Cm7b5
+
+Groove JazzWaltzFill
+
+20       F7
+
+RepeatEnd
+
+21      Cm7
+
+Groove JazzWaltzSus
+
+22       F7
+23      Bb6
+24    Am7b5     D7
+
+
+Groove JazzWaltz1Sus
+
+25      Gm7
+26       C7
+27      FM7
+28      Dm7
+
+Groove JazzWaltz2Sus
+
+29     Abm7
+30     Ebm7
+31      Cm7
+32       F7
+
+Groove JazzWaltz2
+
+33     BbM7
+34     G7#5
+35      Cm7
+36       F7      / F#dim7
+
+Groove JazzWaltz
+
+37      Gm7
+38      Fm7
+39      Em7
+40       A7
+
+Groove JazzWaltz1
+
+41      Dm7
+42     Ebm7
+43      Dm7
+44     Ebm7
+
+Groove JazzWaltz2
+
+45      Cm7
+46       F7
+
+RepeatEnding
+
+47      BM7
+48        /   BbM7
+
+RepeatEnd
+Groove JazzWaltzEnd
+Decresc ppp 2
+Tempo *.8 2
+
+49      BM7
+50        /   BbM7

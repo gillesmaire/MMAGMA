@@ -1,0 +1,76 @@
+// Road Song (Wes Montgomery, 1968)
+
+Tempo 150
+
+Groove Metronome2-4
+  z * 2
+
+Repeat /// we're the song multiple times
+Repeat
+// A-1/2 sections
+Groove JazzRhumba
+
+1        Gm7
+2          /
+3       D7#9
+4          /
+
+Groove JazzRhumbaPlus
+
+5        Gm7
+6         C7
+7        Cm7
+
+Groove JazzRhumbaFill
+RepeatEnding
+
+8       D7#9      /    Gm7
+
+RepeatEnd
+
+9       D7#9      /    Gm7
+
+// B section
+
+Groove JazzRhumbaSus
+
+10       Cm7
+11        F7
+12      BbM7
+13        E7
+
+Groove JazzRhumbaSusPlus
+
+14      Bbm7
+15       Eb7
+16      AbM7
+17      D7#9
+
+// A-3 section
+
+Groove JazzRhumba
+
+18       Gm7
+19         /
+20      D7#9
+21         /
+
+Groove JazzRhumbaPlus
+
+22       Gm7
+23        C7
+
+RepeatEnding 
+
+24       Cm7
+
+Groove JazzRhumbaFill
+
+25      D7#9      /    Gm7
+
+RepeatEnd
+Groove JazzRhumbaEnd
+
+24       Cm7
+25      D7#9      z!
+

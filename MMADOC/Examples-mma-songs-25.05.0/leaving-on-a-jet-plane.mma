@@ -1,0 +1,111 @@
+// Leaving On A Jet Plane
+
+Tempo 110
+
+Groove Metronome2-4
+  z * 2
+  
+Groove PopBalladIntro
+
+Begin Solo
+     Voice TremoloStrings
+     Volume mf
+     Octave 5
+     Articulate 100
+     Harmony 3Below+Open8Below
+     Begin Riff
+         1d+;
+         1e+;
+         1e+;
+         1d+;
+     End
+End
+
+Decresc m p 4
+
+1         G
+2        Em
+3        Am7
+4        D7      /      C
+
+
+Repeat
+Groove PopBallad
+Volume m
+
+5         G
+6         C
+7         G
+8         C
+
+Groove PopBalladPlus
+Cresc f 4
+
+9         G
+10        C
+
+RepeatEnding
+
+11       D7
+12        /
+
+RepeatEnd
+
+13       D7
+14        /
+
+Repeat
+Groove PopBalladSus
+Volume m
+
+15        G
+16        C
+17        G
+18        C
+
+Groove PopBalladSusPlus
+Cresc mf 2
+
+19        G
+20       Am
+21       D7
+22        /
+
+Groove PopBalladSus
+Volume m
+
+23        G
+24        C
+25        G
+26        C      /      /     D7
+
+Groove PopBalladPlus
+Cresc f 4
+
+27        G
+28        C
+29       D7
+
+RepeatEnding
+
+30        /
+
+RepeatEnd
+
+31        /
+
+Groove PopBalladSus
+Decresc m ppp 8
+Repeat
+32        G
+33        C
+34        G
+
+Repeatending
+
+35        C      /      /     D7
+
+RepeatEnd
+Groove PopBalladend
+35       C  / z!
+

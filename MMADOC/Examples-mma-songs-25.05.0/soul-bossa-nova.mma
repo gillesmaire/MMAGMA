@@ -1,0 +1,84 @@
+// Soul Bossa Nova (Quincy Jones)
+
+Tempo $(2 * 77)
+Keysig C
+
+Groove Metronome2-4
+   z * 2
+   
+Groove BossaNova
+
+         z
+
+Repeat
+Label Sign
+Groove BossaNova
+Volume m
+
+1         C
+2         /
+3         /
+4         /
+
+Groove BossaNovaPlus
+Cresc mf 4
+
+5         F
+6         /
+7         C
+8         /
+
+Groove BossaNova
+Volume f
+
+9         F
+10       G7
+
+If Def CODA
+  Goto CODA
+Endif
+
+11        C
+
+RepeatEnding
+
+Groove BossaNovaFill
+
+12        /
+
+RepeatEnd
+
+Groove BossaNovaFill
+
+13        /
+
+Groove BossaNova1Sus
+Volume m
+
+14        C
+15        /
+16        /
+17        /
+
+Groove BossaNova2Sus
+Decresc mp 4
+
+18        /
+19        /
+20       D7
+
+Groove BossaNovaFill
+
+21       G7
+
+Set Coda
+Goto Sign
+Label Coda
+
+Groove BossaNovaEnd
+Seq 3
+Decresc pp 2
+
+22        C     C7      F
+23        C     F7      C
+

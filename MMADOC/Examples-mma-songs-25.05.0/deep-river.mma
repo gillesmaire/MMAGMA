@@ -1,0 +1,61 @@
+// Deep River (trad. spiritual)
+
+Tempo 70
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+  
+Repeat
+Groove PopSpiritual
+Volume m
+
+1         F      /     F7
+2        Bb
+3       F/A      /     Bb    Bdim
+4       F/C   A/C#     Dm
+
+Groove PopSpiritualPlus
+Begin Arpeggio
+   Volume pp
+   Harmony OpenBelow+16Below
+   Articulate 200
+End
+Volume mf
+
+5         F      /     F+
+6        Bb
+7        G9      /  Gm7/C     C7
+8         F    Bb7      F   Fdim
+
+Groove PopSpiritualSus
+Volume m
+
+9         F      /     Dm
+10       Am
+11       Bb      /     A7
+12       Dm      /    Db7
+
+Groove PopSpiritualSusPlus
+Volume mp
+
+13       G9      /  Gm7/C     C7
+14        F    Bb7      F    Dm7
+
+Groove PopSpiritualPlus
+Volume p
+
+15       G9      /  Gm7/C     C7
+
+If Def FINISH
+  Groove PopSpiritualEnd
+  16  F / z!
+  EOF
+Endif
+
+16      Bb7      F
+
+Set FINISH
+
+RepeatEnd
+

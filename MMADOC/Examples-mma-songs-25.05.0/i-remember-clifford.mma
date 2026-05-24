@@ -1,0 +1,126 @@
+// I Remember Clifford (1957)
+
+Tempo 64
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+  
+Groove MellowJazzIntro
+
+AllGrooves Chord-Strings Volume pp
+
+Begin Solo
+    Voice Strings
+    Volume m
+    Articulate 100
+    Unify True
+    Begin Riff
+        1 bb;
+        1 c+;
+        1 a;
+        1 d;
+        1 g;
+        2. c+;
+    End
+End
+
+Begin Solo-2
+    Voice Strings
+    Volume mp
+    Articulate 100
+    Unify True
+    Begin Riff
+        1 f;
+        2 g;b;
+        2 e+; c#;
+        4 f+;e&+;b&;a&;
+        2 b&;d+;
+        4 g+;e+;c+;d&+;
+    End
+End
+
+1      BbM7
+2    C7sus4      /   C7b9
+Seq
+3      A7b9      /  A7/C#
+4       Dm7    Cm7   Bbm7   Abm7
+5       Gm7
+
+// Staccato walking bass on last bar of intro
+Walk-Main Riff 1 8. 70; 2 8. 80; 3 8. 90; 4 4. 100
+6    C7sus4      /   C7b9
+
+// Main Song
+
+Repeat
+Volume m
+Groove MellowJazz
+7       FM7      /     A7
+8      BbM7      /  Adim7
+9        C7      / C#dim7
+10       Dm      /  Dm7/C
+
+Groove MellowJazzPlus
+Cresc mf 2
+
+11    Bm7b5      /   E7b9
+12       Am      /  Am7/G
+13   F#m7b5      /   B7b9
+14      Gm7      /   C7b9
+
+Groove MellowJazz
+Volume m
+
+15      FM7      /     A7
+16     BbM7      /  Adim7
+17       C7      / C#dim7
+18       Dm      /  Dm7/C
+
+Groove MellowJazzSus
+Cresc mp m 3
+
+19    Bm7b5      /   E7b9
+20    Am7b5      /   D7b9
+21      Gm7      /    C+7
+22      Am7      /   BbM7
+
+Groove MellowJazzSusPlus
+
+23      Bm7b5      /   E7b9
+24      Am7      /   D7b9
+Decresc mp 2
+25      Gm7      / C7b5b9
+26      FM7
+
+Groove MellowJazzSus
+
+27    Em7b5      /   A7b9
+28       Dm      /  Dm7/C
+29    Bm7b5      /   E7b9
+30      Am7     D7    Gm7     C7
+
+RepeatEnd
+
+// This is the first 4 bars on my sheet.
+// they end with a "to coda"
+
+Groove MellowJazzSusPlus
+Decresc pppp 8
+
+7       FM7      /     A7
+8      BbM7      /  Adim7
+9        C7      / C#dim7
+10       Dm      /  Dm7/C
+
+// And this is the coda
+
+Groove MellowJazzSus
+
+31    Bm7b5      /   E7b9
+32    Am7b5      /   D7b9
+
+Groove MellowJazzEnd
+33      Gm7      / C7b5b9
+34        F
+

@@ -1,0 +1,108 @@
+// Bewitched Bothered Bewildered (1940 Musical Pal Joey)
+
+Tempo 80
+Transpose Up Per 4
+
+Groove Metronome2-4
+  z * 2
+  
+// Make the arpeggios a bit less "in your face"
+// shift the octaves due to the transpose 
+Groove GuitarBallad
+Begin AllGrooves
+   Begin Arpeggio-4
+        Articulate 120
+        Octave  4
+   End
+   Begin Arpeggio-8
+        Articulate 110
+        Octave  4
+   End
+End
+
+Repeat
+Swell mp mf 8
+Groove GuitarBalladIntro
+
+1       Dm7      /   G7b9
+2       CM7      /    Am7
+3       Dm7      /   G7b9
+Seq 1
+4       CM7      /     A7
+
+Groove GuitarBalladSusIntro
+
+5       Dm7      /   G7b9
+6       Em7      /    Am9
+7       Dm7      /     G9
+
+RepeatEnding
+
+8       CM7
+
+
+RepeatEnd
+
+9        G7
+
+Repeat
+Volume m
+Groove GuitarBallad
+
+10      CM7      /    Am7
+11      Dm7      / G9sus4
+12      CM7      /   C7#5
+13      FM7      /    Bb9
+
+Volume mf
+
+14      C/E      / Ebdim7
+15      Dm7      /     G7
+
+Decresc mp 2
+RepeatEnding
+
+16      Dm7
+17    G9sus      /     G7
+
+RepeatEnd
+
+18      FM7
+19    Em7b5      /   A7b9
+
+Groove GuitarBalladSus
+
+Volume m
+20      Dm7
+21      Dm7      /    Dm6
+
+Cresc mf 4
+
+22      Am9
+23      Am7
+24      Dm7      /     G7
+25      Dm7      /     G7
+
+Groove GuitarBallad1Sus
+Volume f
+
+26      Em7      /  Edim7
+27      Dm7      /     G7
+28      CM7      /    Am7
+29      Dm7      / G9sus4
+
+Groove GuitarBallad1
+Decresc p 3
+
+30      CM7      /   C7#5
+31      FM7      /    Bb9   B7b9
+32      C/E      / Ebdim7
+
+Groove GuitarBalladEnd
+Tempo *.9 2
+Decresc ppp 2
+
+33      Dm7      /     G7
+34       C6     z!
+
+

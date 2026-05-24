@@ -1,0 +1,149 @@
+// Dont Pass Me By (Beatles, 1968)
+
+Tempo 150
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+
+Groove 60sRockIntro
+
+Begin Solo
+    Voice Violin 
+    Harmony OpenBelow
+    Octave 6
+    Articulate 90
+    Volume f
+    Begin Riff
+        8g;f;e;4f;8g;4e;
+        8a;g;f;e; d;e;f;g;
+        8a;f;a;f; a;f;a;f;
+        1g;
+    End    
+End
+
+Decresc mf p 4
+
+1         C
+2        Am
+3        Dm
+4        G7
+
+Repeat
+
+Label Sign
+Groove 60sRock
+Volume m
+
+5         C
+6         /
+7         /
+8         /
+
+Groove 60sRock1
+Cresc mf 4
+
+9         F
+10        /
+11        /
+12        /
+
+Groove 60sRock
+
+13       G7
+14        /
+15        /
+16        /
+
+Groove 60sRock1
+Volume m
+
+17        F
+18        /
+19        /
+20        C
+
+Groove 60sRock
+
+Solo Volume mf 
+Volume mp
+
+21        /   { 8e;c;d;4e;8d;c;}
+22        /   {8e;f;g;a;g;f;e;d;}
+
+If Def DS
+  // we need a duplicate bar 24. On the sheet music this is the 3rd
+  // ending, but for mma repeat this is easier.
+  24   /
+  // Skip past all the repeat stuff
+  Goto 25
+  set Fine
+endif
+
+RepeatEnding   // 1st ending
+
+23        /   {1e;}
+
+RepeatEnd
+
+   // 2nd and 3rd ending
+
+
+24        /  { 4.e; }
+
+Groove 60sRockSus
+Volume m
+
+25        /
+26        /
+27        /
+28        /
+
+Groove 60sRock1Sus
+Volume mf
+
+29        F
+30        /
+31        /
+32        /
+
+Groove 60sRockSus
+Volume mf
+
+33        C
+34        /
+35        /
+36        /
+
+Groove 60sRock1Sus
+Decresc m 4
+
+37        G
+38        /
+39        /   {8b;a;g;4b;8a;4g;}
+40        /   
+
+Groove 60sRockSus
+
+41        F
+42        /
+
+If Def DS
+    Groove 60sRockEnd
+    Decresc ppp 2
+Endif
+
+43        C   {4c+;8g;4a;8g;4a;}
+
+
+If Def DS
+   // This is the end of the song.
+   44    /     {2.c+;}
+  eof
+Endif
+
+44        /
+
+// Jump back to the start
+Set DS
+Goto Sign

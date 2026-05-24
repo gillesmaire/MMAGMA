@@ -1,0 +1,105 @@
+// Three Little Words
+
+Tempo 162
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+  
+Groove FoxTrotIntro
+Begin Solo
+    Voice JazzGuitar
+    Volume ff
+    Harmony 3Below
+    Articulate 110
+    Octave 5
+    Begin Riff
+        4g;c+;b;4+1g~;
+        1r ;
+        4d;e;d;1+4g~;
+    End
+End
+
+Cresc mp mf 4
+
+1         C
+2         Am
+3         Dm7
+4         G7
+
+Repeat
+Volume m
+Groove FoxTrot
+
+5       CM7
+6        Dm7   G7
+7        CM7
+8      Ebm7      /    A7
+
+Groove FoxTrotPlus
+Cresc mf 2
+
+9       Dm7
+10       G7
+11      Dm7
+12       G7
+
+Groove FoxTrot
+Cresc f 4
+
+13      CM7
+14       Dm7   G7
+15        CM7
+16     Ebm7      /    A7
+
+Groove FoxTrotPlus
+
+17      Dm7
+18       G7
+19      Dm7
+20       G7
+
+Groove FoxTrotSus
+Volume mf
+
+21      Gm7
+22      C7
+23      Gm7
+24       C7
+
+Groove FoxTrotSusPlus
+Cresc f 4
+
+25      FM7
+26        /
+27      Bb7      /     A7
+28      Dm7      /     G7
+
+Groove FoxTrotSus
+Volume mf
+
+29      CM7
+30      Dm7   G7
+31       CM7
+32     EbM7      /    A7
+
+Groove FoxTrot
+Decresc m 2
+
+33      Dm7
+34       G7
+
+RepeatEnding 2
+
+35       CM7
+36       Dm  /  G7
+
+RepeatEnd
+
+Groove FoxTrotEnd
+Decresc ppp 2
+
+35       CM7
+36       C  z!
+
+

@@ -1,0 +1,106 @@
+// I Saw Stars (1934)
+
+Tempo 140
+Keysig  C
+
+Groove Metronome2-4
+   z * 2
+   
+Groove FoxtrotIntro
+
+Begin Solo
+    Voice Trombone
+    Volume f
+    Articulate 90
+    Harmony OpenBelow
+    Octave 5
+    Begin Riff
+        2c+;g;
+        1a;
+        43a;g;f;4e;d;
+        1c;
+    End
+End
+
+Swell mp mf 4
+1         C
+2        Am
+3        Dm
+4         C
+
+Repeat   /// to do entire song 2x
+Groove Foxtrot
+Repeat
+Cresc mp mf 4
+
+5         C      /  Gdim7
+6        G7
+7         C      /  Gdim7
+8        G7
+
+Groove FoxtrotPlus
+9        C7
+10        F      /     Fm
+Volume m
+
+RepeatEnding
+
+11        C      /     G+
+12        C
+
+Groove FoxtrotSus
+
+RepeatEnd
+
+13        C      /     G+
+14        C
+
+Groove FoxTrot
+Cresc p mf 8
+
+15       Em
+16       Bb
+17       Em      /     B7
+18       Em      /     A7
+
+Groove FoxtrotSus
+
+19       Dm
+20       A7
+21       Dm
+22       Dm      /     G7
+
+Groove FoxTrotPlus
+Volume m
+
+23        C      /   Gdim
+24       G7
+25        C
+26       G7
+
+Groove FoxTrot
+Cresc mf 2
+
+27       C7
+28        F      /     Fm
+
+RepeatEnding
+
+29        C      /     G+
+30        C      
+
+// a 4 bar transition back to the start
+Volume f
+31        C
+32        A7
+33        C     /       G
+34        C
+
+Repeatend
+Groove FoxTrotEnd
+Decresc pp 2
+
+29        C      /     G+
+30        C      z!
+
+

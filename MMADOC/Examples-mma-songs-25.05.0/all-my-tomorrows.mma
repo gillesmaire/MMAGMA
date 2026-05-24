@@ -1,0 +1,94 @@
+// All My Tomorrows (Frank Sinatra, 1959)
+
+Tempo 75   // Frank does it at a sleepy 70bpm
+Keysig G
+
+Groove Metronome2-4
+  z * 2
+  
+Begin Solo
+     Voice VoiceOohs
+     Volume F
+     Articulate 110
+     Octave 5
+     Harmony OpenBelow
+     Begin Riff
+         8.d+;16b;8g;b;8.;16g;4e;
+         8g;r;4d;e&;en;
+     End
+End
+
+Groove StringBalladIntro
+Seq 3
+Cresc p f 2
+Swingmode On
+1        G6      / G6(add9)
+2         /      G     F7     E7
+
+Repeat
+Groove StringBallad 
+Volume m
+
+3       Am7
+4       Cm6
+5       G/B
+6    Bbdim7
+
+Groove StringBalladPlus
+Cresc f 4
+
+7       Am7      /  F#7b9
+8       Bm7      /   E7b9
+9       Am7      /   D7b9
+
+RepeatEnding
+
+10    Bm7b5      /     E7
+
+RepeatEnd
+
+11      Dm7      /     G7
+
+Groove StringBalladVoice
+Decresc p 4
+
+12        C
+13      Cm7      /     F7
+14        G      /    Em7
+15    C#7b5      /   CmM7
+
+Groove StringBalladVoicePlus
+Volume mp
+
+16      G/B      /    Em7
+17      Am7      /     D7
+18    B7alt      /     E7
+19      Am7      /     D7
+
+Groove StringBalladPlus
+Volume m
+
+20   C#m7b5
+21      Cm6
+22      G/B
+23   Bbdim7
+
+Groove StringBallad
+
+24      Am7      /  F#7b9
+25      Bm7      /   E7b9
+26      Am7      /   D7b9
+27    Bm7b5      /   E7b9
+
+Groove StringBalladVoice
+Decresc mp 2
+
+28      Am7      /   E7b9
+29    Am7b5      /     D7
+
+Groove StringBalladEnd
+Decresc ppp 2
+
+30        G
+31        /
+

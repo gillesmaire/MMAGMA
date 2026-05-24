@@ -1,0 +1,121 @@
+// Jitterbug Waltz (Fats Waller, 1942)
+
+Tempo 110
+Keysig Eb
+
+Transpose Up Major 2
+
+Groove Metronome3
+  z * 2
+  
+Groove JazzWaltzIntro
+
+Begin Solo
+    Voice Piano1
+    Octave 6
+    Volume f
+    Articulate 140
+    Harmony 3Below
+    Arpeggiate Direction=Down Rate=3 Decay=-2 
+    Begin Riff
+        4e;g;e;
+        4d&;f;d;
+        4c;d;c;
+        2.b-;
+    End
+End
+
+Decresc f mp 4
+
+1         Eb6
+2         Db6
+3          Cm7
+Solo Arpeggiate off
+4        Bb7
+
+Repeat
+Groove JazzWaltz
+Volume m
+
+5     Eb6(add9)
+6          /
+7          /
+8          /
+
+Groove JazzWaltz1
+Cresc f 4
+
+9        Ab9
+10         /
+11         /
+12     Bb7#5
+
+Groove JazzWaltz
+Decresc mf 4
+
+13    Eb6(add9)
+14         /
+15         /
+16         /
+
+Groove JazzWaltz2
+Volume mp
+
+17       Gm7
+18        C7
+19       Gm7
+20        C7
+
+Groove JazzWaltz
+Cresc mf 4
+
+21        F9
+22         /
+23         /
+24         /
+
+Groove JazzWaltzSus
+Volume m
+
+25      Abm6
+26         /
+27    Db9#11
+28         /
+
+Groove JazzWaltz
+Volume mp
+
+29        F7
+30         /
+
+RepeatEnding
+
+Groove JazzWaltz2Sus
+Volume m
+
+31       Bb7
+32         /
+
+Groove JazzWaltz1
+Decresc mp 4
+
+33       Gm7
+34        C7
+35       Fm7
+36       Bb7
+
+RepeatEnd
+
+Groove JazzWaltz
+Decresc pppp 6
+
+37       Fm7
+38      Bb13
+39       Eb6
+40       Ab6
+
+Groove JazzWaltzEnd
+
+41    Eb6(add9)
+42       Bb7
+

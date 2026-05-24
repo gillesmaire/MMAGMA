@@ -1,0 +1,83 @@
+// Midnight At The Oasis (Maria Muldaur, 1974)
+
+Tempo 100
+Keysig E&
+
+Groove Metronome2-4
+   z * 2
+   
+Groove JazzRockIntro
+
+AllGrooves Arpeggio Voice JazzGuitar
+
+Begin Solo
+  Voice JazzGuitar
+  Cresc mp mf 2
+  Articulate 90
+  Harmony Open
+  Octave 5
+  Begin Riff
+      4f#;8;4;4.;
+      2a;1b~;
+  End
+End
+
+1      F#11      /    B11   C#11
+2      Ab11      /   Bb11
+
+Repeat 
+
+Groove JazzRock
+Volume m
+
+3      EbM7
+4        Ab    Db9
+5      EbM7
+6        Ab    Db9      /   EbM7
+
+Groove JazzRockPlus
+
+Cresc mf 4
+
+7         /
+8        Ab    Db9
+9        F#     B9
+10     Ab11      /   Bb11
+
+Groove JazzRock
+
+11     EbM7
+12       Ab      /    Db9
+13     EbM7
+14       Ab    Db9   EbM7
+
+Groove JazzRockPlus
+
+Volume f
+
+15        /
+16       Ab    Db9
+17       F#     B9
+18     Ab11      /   Bb11
+
+Groove JazzRockSus
+
+Decresc m 4
+
+19        E      /    F#6
+20        A      /      B
+21        E      /    F#6      A
+22        /      /      B
+
+Groove JazzRockSusPlus
+
+Decresc mp 4
+
+23        E      /    F#6
+24        A      /      B
+25        A      /      B
+26        /      /   Bb11
+
+RepeatEnd 3
+
+

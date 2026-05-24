@@ -1,0 +1,76 @@
+// Minha Saudade
+// Donato/Gilberto  1958
+
+Tempo 160
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+
+Groove BossaNovaIntro
+Swell mp mf 4
+
+1         C
+2       Am7
+3       Dm7
+4        G7
+
+Set Counter 1
+
+Label Sign  /// this is for the DS. We do the piece 3 1/2 times
+
+Repeat
+Groove BossaNova
+Volume m
+
+5       CM9
+6       Dm7
+7       Em7
+8      A7#5
+
+Groove BossaNova1Sus
+Swell f 4
+
+9       Dm9
+
+RepeatEnding
+
+10     G7#5
+11      CM9
+12        /
+
+RepeatEnd
+
+If > $Counter 3
+   Groove BossaNova2End
+   Decresc pppp 2
+   Chord-Sus Volume pp
+Endif
+
+13     G7#5
+14      CM9
+
+If > $Counter 3
+    Eof
+Endif
+
+15        /
+
+Groove BossaNova
+Volume m
+
+16      Dm7
+17       G7
+18      Cm7
+19       F7
+
+Groove BossaNova2Sus
+Swell mf 4
+
+20     Bbm7
+21      Eb7
+22     AbM7
+23       G7
+
+Inc Counter
+Goto Sign

@@ -1,0 +1,88 @@
+// Something To Remember You By (1930)
+
+Tempo 90
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+
+Groove EvansishIntro
+
+Begin Solo
+    Voice Strings//JazzGuitar
+    Volume f
+    Articulate 105
+    Harmony OpenBelow
+    Octave 5
+    Begin Riff
+        4c+;a;c+;a;
+        4d+;a;d+;a;
+        8d+;c+;b;a;4g;b;
+        1c+;
+    End
+End
+
+Swell mp f 4
+
+1         F
+2         Dm
+3         Gm
+4         C7
+
+Repeat
+Groove Evansish
+Volume m
+
+5         F      /  C7sus     C7
+6         F      /      /   Fdim3
+7       Gm7      /   Fdim3     C7
+8         /    Gm7      /     C7
+
+Groove EvansishPlus
+Decresc mp 4
+
+9         F      /      /     F7
+10      Gm7      /     C7
+11        F
+
+RepeatEnding
+
+12      Gm7     C7    Gm7     C7
+
+RepeatEnd
+
+13        /      /     C+      F
+
+Groove EvansishSus
+Cresc mf 4
+
+14      Gm7      /     C7
+15      Gm7     C7   Cdim3     C7
+16      Bbm      /      F
+17        /      /     C+      F
+
+Groove EvansishSusPlus
+
+18       Dm      /     E7
+19      Dm6      /     E7
+20       Am      /      E
+21      Gm7      /      /     C7
+
+Groove EvansishSus
+Decresc m 4
+
+22        F      /  C7sus     C7
+23        F      /      /   Fdim3
+24      Gm7      /   Fdim3     C7
+25        /    Gm7      /     C7
+
+Groove Evansish
+Decresc ppp 4
+26        F      /      /     F7
+27       C7    Gm7      /     C7
+
+Groove EvansishEnd
+
+28        F      /   C7/F
+29        F      z!
+

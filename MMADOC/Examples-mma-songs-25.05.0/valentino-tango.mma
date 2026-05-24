@@ -1,0 +1,126 @@
+// Valentino Tango (1950)
+
+Tempo 115
+Keysig Eb
+
+Groove Metronome2-4
+  z * 2
+  
+Begin Solo
+    Voice Bandoneon
+    Octave 5
+    Articulate 90
+    Harmony OpenBelow
+    Volume f
+    Rtime 5
+    Rvolume 5
+    Begin Riff
+        43e;f;g;2+43b~;
+        ~ 43c&+;d&+; c+;e+;c+;
+        2b; 43c&+;d&+;c+;
+        2.b;
+    End
+End
+
+Groove LightTangoIntro
+Swell mp mf 4
+
+1       Eb 
+2       / 
+3       / 
+4       Bb7
+
+Groove LightTangoSus
+
+Volume m
+
+5       Bb7
+6       Ebm
+7     Ebdim
+8       Bb7
+
+Cresc F 4
+
+9      BbM7
+10     Bbm7
+11     Bb7+
+
+Repeat
+Groove LightTangoFill
+
+12       Eb      /   EbM7
+
+Groove LightTango
+Volume m
+
+13        /      /   Edim
+14       Fm
+15        /
+16     Abm6
+
+Groove LightTangoSus
+Cresc f 4
+
+17      Bb7      /  Bb7b9
+18     EbM7
+19      Eb6
+20       Eb      /   EbM7
+
+Groove LightTango1
+Decresc  mp  4
+
+21        /      /   Edim
+22       Fm
+23        /
+24     Abm6
+
+Groove LightTango1Sus
+Volume m
+
+25      Bb7
+26       Eb   EbM7      /     Ab
+27       Eb    z
+28     Abm7      /    Db7
+
+Groove LightTangoSus
+Volume mf
+
+29       Gb
+30     Abm7      /    Db7
+31       Gb      /      /    z
+32      Cm7      /     F7
+
+Groove LightTango
+Cresc f 4
+
+33       Bb
+34       F7
+35       Bb      /    Fm7    Bb7
+36       Eb      /   EbM7
+
+Groove LightTango1
+Decresc m 4
+
+37        /      /   Edim
+38       Fm
+39        /
+40     Abm6
+
+Groove LightTangoFill
+
+41      Bb7      /     Cb@3     Db@3.3     Cb@3.6
+
+RepeatEnding
+Groove LightTango1Sus
+
+42      Eb6
+43        /     z
+
+RepeatEnd
+
+Groove LightTangoEnd
+Decresc ppp 2
+
+44      Eb6      /    Bb7
+45      Bb6     z!
+

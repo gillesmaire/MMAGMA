@@ -1,0 +1,129 @@
+// Old Devil Moon
+
+Tempo 130
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+
+Groove MellowJazzIntro
+
+AllGrooves Chord-strings Volume -30%
+
+
+Begin Solo
+    VOice Piano1
+    Octave 5
+    Volume f
+    Articulate 90
+    Harmony 3Below
+    Begin Riff
+        1f;
+        8e&;;;;4;g;
+        1f;
+        43g;;;4;2b~;
+    End
+End
+
+Swingmode On
+Swell mp f 4
+
+1         FM7
+2        EbM7
+3        FM7
+4        Cm7
+
+Set FirstTime
+
+Label Sign
+Groove MellowJazz
+Volume m
+
+5         FM7
+6        EbM7
+7         FM7
+8        EbM7
+
+Groove MellowJazzPlus
+Cresc f 4
+
+9         FM7
+10       EbM7
+11        FM7
+12     Cm7      /     F7
+
+Groove MellowJazz
+Decresc mf 2
+ 
+13     BbM7
+14        /
+
+Groove MellowJazzSus
+
+15       Bbm7
+16      Eb7 
+
+Groove MellowJazzSusPlus
+Cresc f 4
+
+17     Abm7      /    Db7
+18       GbM7      /     C7
+19        FM7
+
+If Def DS 
+  Goto Coda
+Endif
+
+20        EbM7
+
+Groove MellowJazz
+Decresc m 4
+
+21        FM7      /     EbM7
+22        FM7      /     EbM7
+23        DM7
+24        Dm7
+
+Groove MellowJazzPlus
+
+25       /
+26       G7
+27       Gm7
+28      C7  C7zC@2.5
+
+Set DS
+Goto Sign
+
+Label Coda
+
+29        EbM7
+
+Groove MellowJazzSus
+Decresc mp 4
+
+30        FM7
+31        EbM7
+32        FM7
+33        EbM7
+
+Groove MellowJazzSusPlus
+
+34        FM7      /     EbM7
+35        FM7      /     EbM7
+
+If Def FirstTime
+   unset DS
+   unset FirstTime
+   
+   36        FM7
+   37        Gm7   / C7 
+   
+   Goto Sign
+Endif
+
+Groove MellowJazzEnd
+Decresc ppp 2
+
+38       FM7
+39       /    z!
+

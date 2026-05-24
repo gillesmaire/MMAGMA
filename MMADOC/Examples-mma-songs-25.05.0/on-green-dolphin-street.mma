@@ -1,0 +1,104 @@
+// On Green Dolphin Street (1947)
+
+Tempo 120
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+  
+Groove SwingIntro
+
+Begin Solo
+      Voice JazzGuitar
+      Octave 4
+      Harmony OpenBelow+8Below
+      Articulate 120
+      Begin Riff
+            4r;gg+;;8aa+;f#f#+;
+            4g+;;;8a+;f#+;
+            4g+;d+;;8e+;b;
+            4d+;c+;a;f;
+      End
+End
+
+Swell m mf 4
+1        z
+2       Dm7      /    CM7
+3       Dm7      /     C6
+4       Dm7
+
+
+Repeat
+Groove Swing
+Volume m
+
+5       CM7
+6         /
+7       Cm7
+8         /
+
+Groove SwingPlus
+Volume mf
+
+9      D7/C
+10        /      /   Db/C
+11      CM7
+12        /
+
+Groove SwingWalkPlus
+Volume m
+
+13      Dm7
+14       G7      / G7#5b9
+15      CM7
+16        /
+
+Groove SwingWalk
+Volume mp
+
+17      Fm7
+18      Bb7      / Bb7#5b9
+19     EbM7
+20        /      /     G7
+
+Groove SwingSus
+Cresc mf 8
+
+21      CM7
+22        /
+23      Cm7
+24        /
+
+Groove SwingPlusSus
+
+25     D7/C
+26        /      /   Db/C
+27      CM7
+28        /
+
+Groove SwingPlus
+Decresc m 6
+
+29      Dm7      /   Dm/C
+30    Bm7b5      /   E7b9
+31      Am7      /   Am/G
+32   F#m7b5      /     B7
+
+Groove SwingWalk
+
+33      Em7      /     A7
+34      Dm7      /     G7
+
+RepeatEnding 
+Groove SwingFill
+
+35      CM7
+36      Dm7      /     G7
+
+RepeatEnd
+Groove SwingEnd
+Decresc ppp 2
+
+37      CM7
+38      /      z!
+

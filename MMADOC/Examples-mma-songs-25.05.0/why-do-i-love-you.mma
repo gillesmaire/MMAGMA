@@ -1,0 +1,96 @@
+// Why Do I Love You? (Showboat, 1928)
+
+Tempo $(115 * 2)
+Keysig Ab
+
+Groove Metronome2-4
+  z * 2
+  
+Groove CharlestonIntro
+
+Begin Solo
+   Voice BrassSection
+   Octave 5
+   Volume f
+   Articulate 60
+   Harmony OpenAbove
+   Begin Riff
+      4c;;;c;
+      4c;;2;
+      4d;;;;
+      1e;
+   End
+End
+
+1        Cm
+2        F7
+3       Bbm
+4        Eb7
+
+Repeat 
+Groove Charleston
+
+5        Ab
+6     Abdim
+7       Eb7
+8         /
+
+Groove CharlestonPlus
+
+9        Ab
+10      Ab6
+11      Eb7
+12        /
+
+Groove Charleston
+
+13       Ab
+14        /
+15     Bbm7
+16      Eb7
+
+Groove CharlestonPlus
+
+17      Ab6
+18        /
+19     B&m7
+20      Eb7
+
+Groove CharlestonSus
+
+21       Ab
+22    Abdim
+23      Eb7
+24        /
+
+Groove CharlestonSusPlus
+
+25       Ab
+26      Ab7
+27      Eb7
+28        /
+
+Groove CharlestonSus
+
+29      Ab9
+30        /
+31     DbM7
+32     Dbm6
+
+Groove CharlestonWalkSus
+
+33       Ab
+34     Bbm7      /    Eb7
+
+RepeatEnding 2
+
+35       Ab
+36        /
+
+Repeatend
+
+Groove CharlestonEnd
+
+37    Ab
+38    /  z!
+

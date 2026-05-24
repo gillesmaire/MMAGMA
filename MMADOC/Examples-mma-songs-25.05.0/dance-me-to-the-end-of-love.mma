@@ -1,0 +1,147 @@
+// Dance Me To The End Of Love (Cohen, 1984)
+
+Tempo 136
+Keysig Ab
+
+Groove Metronome2-4
+  z * 2
+  
+Repeat
+Label Sign  /// we jump to this for DS. Make sure it skips the REPEAT stuff
+
+Groove Folk
+Volume m
+
+1       Bbm6
+2          /
+3         Fm
+4          /
+
+Groove FolkArticulated
+Cresc mf 4
+
+5       Bbm6
+6          /
+7         Fm
+8          /
+
+Groove Folk
+
+9       Bbm6
+10         /
+11        Fm
+12         /
+
+Groove FolkWalk
+Decresc mp 4
+
+13        C7
+14         /
+15    Fm6(add9)
+16         /
+
+Volume m
+
+17        C7
+18         /
+
+If Def ToCoda
+   211  Fm6(add9)
+   221  /
+   Goto Bsection
+Endif
+
+RepeatEnding
+
+19    Fm6(add9)
+20         /
+
+RepeatEnd
+
+21    Fm6(add9)
+22         /
+
+Repeat
+Label BSection
+
+Groove FolkSus
+Cresc f 4
+
+23      Bbm6
+24         /
+25       Fm6
+26         /
+
+Groove FolkArticulatedSus
+Volume f
+
+27      Bbm6
+28         /
+29       Fm6
+30         /
+
+Groove FolkSus
+Decresc m 4
+
+31      Bbm6
+32         /
+33       Fm6
+34         /
+
+Groove Folk
+
+35        C7
+36         /
+37    Fm6(add9)
+
+If Def ToCoda
+   381 Fm6(add9)
+   391 C7
+   401 /
+   Goto Coda
+Endif
+
+RepeatEnding 
+
+38         /
+
+Volume mf
+
+39        C7
+40         /
+
+41    Fm6(add9)
+42         /
+
+RepeatEnd
+
+43    Fm6(add9)
+
+
+
+Set REPEAT1 0
+Set TOCODA
+Goto Sign
+
+Label Coda  /// This is the CODA
+
+Groove FolkSus
+Decresc ppp 10
+
+44    Fm6(add9)
+45         /
+46        C7
+47         /
+
+Tempo -30 6   // rit to the end
+
+48         /
+49         /
+50    Fm6(add9)
+51      Bbm6
+
+Groove FolkEnd
+
+52    Fm6(add9)
+53         /  / z!
+

@@ -1,0 +1,100 @@
+// By The Time I Get To Phoenix (1965)
+
+Tempo 100
+Keysig F
+
+Groove Metronome2-4
+   z * 2
+
+Groove EasySwingIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Volume f
+    Strum 5,10
+    Articulate 99
+    Harmony 3Below
+    Octave 5
+    Begin Riff
+        4f;2;8g;a;
+        4f;2;8g;a;
+        4b;2;8a;g;
+        1c+;
+    End
+End
+
+Swell mp f 4
+
+1         F
+2         /
+3        Gm
+4        C7
+
+
+Groove EasySwing
+Repeat
+Volume m
+
+5       Gm7
+6        C7
+7       FM7
+8        F6
+
+Groove EasySwingWalk
+Cresc mf 4
+
+9       Gm7
+10       C7
+11      FM7
+12       F7
+
+Groove EasySwing
+
+13       Bb
+14       C7
+15       Am
+16       Dm
+
+RepeatEnding
+
+Groove EasySwingSus
+Decresc mp 4
+
+17      Gm7
+18        /
+19       Eb
+20       C7
+
+RepeatEnding
+
+Groove EasySwing
+
+21      Gm7
+22        /
+23       Eb
+24       C7
+
+RepeatEnd
+
+Groove EasySwingSus
+Volume m
+
+25      Gm7
+26       C7
+27      FM7      /     F7
+28       Bb
+
+Groove EasySwing
+Decresc mp 3
+
+29       Gm
+30       A7
+31        D
+
+Groove EasySwingEnd
+Decresc ppp 2
+Tempo *.9 2
+
+32        /
+33        /  /  z!
+

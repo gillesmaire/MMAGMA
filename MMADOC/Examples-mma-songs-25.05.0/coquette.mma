@@ -1,0 +1,79 @@
+// Coquette (Lombardo, 1928)
+
+Tempo 125
+
+Groove Metronome2-4
+  z * 2
+
+Repeat
+Groove FoxTrot
+1        Eb
+2         /      /      /   Emb5
+3       Bb7      /      /      A
+4        Bb   Cmb5  Bbmb5    Bb7
+
+Groove FoxTrotPlus
+
+5         /
+6         /      /      /    Bb+
+7        Eb
+8        Bb   Cmb5  Bbmb5    Bb7
+
+Groove FoxTrot
+
+9        Eb
+10        /      /      /   Emb5
+11      Bb7      /      /      A
+12       Bb   Cmb5  Bbmb5    Bb7
+
+Groove FoxTrotPlus
+
+13        /
+14        /      /      /    Bb+
+15       Eb      /    Abm
+16       Eb
+
+Groove FoxTrotSus
+
+17      Eb7
+18        /
+19       Ab
+20       Ab      /   Fmb5   Bbm6
+
+Groove FoxTrotSusPlus
+
+21       F7     F9
+22       C7      /      F
+23      Bb7
+24     Bb+7
+
+Groove FoxTrotSus
+
+25       Eb
+26        /      /      /   Emb5
+27      Bb7      /      /      A
+28       Bb   Cmb5  Bbmb5    Bb7
+
+Groove FoxTrot
+
+29        /
+30        /      /      /    Bb+
+
+RepeatEnding
+
+Groove FoxTrotFill
+
+31       Eb
+32     Abm6      /    Bb+
+
+RepeatEnd
+
+Groove FoxTrotEnd
+Seq 2
+
+31       Eb
+32        / z!
+
+
+
+

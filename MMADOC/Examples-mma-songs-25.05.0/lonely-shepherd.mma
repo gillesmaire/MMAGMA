@@ -1,0 +1,168 @@
+// Lonely Shepherd (James Last, 1977)
+
+Tempo 75
+Keysig D minor
+
+Begin Solo
+    Voice PanFlute
+    Volume m
+    Octave 5
+    Articulate 100
+End
+
+Begin Chord
+    Voice TremoloStrings
+    Volume p
+    Articulate 100
+    Unify On
+    Octave 5
+    Sequence {1 1 90 * 4}
+End
+
+Groove BossaNova   /// just to get our drum defines
+Begin Drum-Metronome
+   Volume f
+   Tone Opentriangle
+   Sticky on
+   Sequence D1
+End
+
+Truncate 1 Side=right  // next bar is 1 beat only
+Chord cresc pppp p 5
+1         Asus4      {8r;16;32a;g;}
+2         /          {1+2.a ~;}
+3         Asus4>-1    {~ 8.r;32a;g;}
+4         A           {1+1a ~;}
+5         A>-1
+
+// This really isn't a bossa, but it seems to fit :)
+Groove BossaNovaIntro
+Solo Harmony OpenBelow
+Begin Drum-snare
+    Tone SnareDrum1
+    Volume ffff
+    Sequence D13
+End
+Begin Drum-Snare2
+    Tone SnareDrum2
+    Volume ffff
+    Sequence D24
+End
+Begin Solo
+  Voice Celesta
+  Articulate 180
+  Decresc p 2
+End
+6        Dm  {16d+;a;d+;e+; g+;f+;e+;f+; d+;a;d+;e+; g+;f+;e+;f+;  }// {4d+;g+;d+;g+;}
+7         /   {16d+;a;d+;e+; g+;f+;e+;f+; d+;a;d+;e+; g+;f+;e+;f+;  } //{2d+;a+;}
+
+Set RptCount 0
+Label Loop
+
+Groove BossaNova
+Volume m
+
+8        Dm
+9        Bb
+Decresc p 6
+10        C
+11        F
+
+Groove BossaNovaSus
+
+12       Dm
+13       Bb
+14        C
+15        F
+
+Groove BossaNovaPlus
+Volume mp
+
+16       Dm
+17       Gm
+18        C
+19        F
+
+Groove BossaNovaSus
+Volume p
+20       Dm
+21       Bb
+22        C
+23        A
+24        /
+
+Groove BossaNova
+Cresc m 2
+25        A
+26        /
+
+// This is our repeat exit point and the jump to the coda
+//   if you want to do it more times (this is one and a half)
+//   just increase the count.
+If Eq  $RptCount 1
+   Goto Coda
+Endif
+
+Volume p
+27       Dm
+28        /
+29       Dm
+30       Bb
+
+Groove BossaNovaPlus
+Decresc pp 4
+31        C
+32        /
+33       Dm
+34       Bb
+
+Groove BossaNovaSusPlus
+Cresc mp 4
+35        C
+36        F
+37       Dm
+38       Gm
+
+Groove BossaNova
+Volume m
+
+39        C
+40        F
+Decresc pp 2
+41       Dm      /      /    Dm7
+42       Bb
+
+Groove BossaNovaSus
+
+43        C
+44        A
+
+Inc rptcount 1
+Goto Loop
+
+///////////////////////
+/// This is the coda
+Label Coda
+Groove BossaNova2End
+
+AdjustVolume Ratio=40
+Decresc mp pppp 4
+45       A7
+46       Dm
+
+Seq
+Begin Solo
+   Volume m
+   Begin Riff
+      4d+;f+;a+;f+;
+      4f+;a+;f+;a+;
+      2a+;f+;
+      1d;
+   End
+End
+Repeat 
+47       Dm  
+
+RepeatEnd 4
+
+

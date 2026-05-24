@@ -1,0 +1,102 @@
+// Lullaby Of The Leaves (Bernice Petkere 1932)
+
+Tempo 90
+Keysig Eb
+
+Groove Metronome2-4
+  z * 2
+  
+Groove EvansishIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Volume f
+    Octave 5
+    Articulate 120
+    Harmony OpenBelow
+    Begin Riff
+        8c;d;e;g;2e+;
+        8d+;c+;b;a;4.e;8d;
+        8c;d;e;g;4.e;8c;
+        1d;        
+    End
+End
+SwingMode On
+
+Swell mp mf 4
+
+1        Cm
+2        Fm      /     G7
+3        Fm
+4      Dm11      /     G7
+
+
+Repeat
+Groove EvansIsh
+Volume m
+
+5        Cm   G7/B  Cm/Bb    F/A
+6       Ab7      /   G7#5
+7        C7
+8       Fm7      / Fm7/Eb
+
+Groove EvansIshPlus
+Cresc f 4
+
+9      Dm11      /     G7
+10     Dm11      /   G7#5
+11       Cm      /   AbM7
+
+
+Groove EvansIshFill
+
+RepeatEnding
+
+12    Dm7b5      /   G7b9
+
+RepeatEnd
+
+13       Cm      /  Cm/Bb
+
+Groove EvansIshSus
+Volume m
+
+14      Ab7
+15        /
+
+Decresc p 2
+
+16        C      /    CM7
+17       C6      /  C7/Bb
+
+Groove EvansIshSusPlus
+Volume m
+
+18      Ab7
+19        /
+
+Decresc p 2
+
+20        C      / C#dim7
+21     G7/D      /   G7#5
+
+Groove EvansIsh
+Cresc f 4
+
+22       Cm   G7/B Cm7/Bb
+23      Ab7      /   G7#5
+24       C7
+25      Fm7      / Fm7/Eb
+
+Groove EvansIsh1
+Decresc ppp 4
+
+26     Dm11      /     G7
+27     Dm11      /   G7#5
+
+Groove EvansIshEnd
+
+28       Cm      /   Fm
+29      Cm69     z!
+
+

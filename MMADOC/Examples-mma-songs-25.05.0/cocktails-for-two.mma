@@ -1,0 +1,101 @@
+// Cocktails For Two (1934)
+
+Tempo 100
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+  
+Groove MellowJazzIntro
+Begin Solo
+    Voice JazzGuitar
+    Octave 5
+    Harmony OpenBelow
+    Articulate 120
+    Volume f
+    Begin Riff
+        8e+;c+;;2+8;
+        8c+;a;;2+8;
+        8f;;4e;2d;
+    End
+End
+
+Decresc f mp 4
+
+1         C
+2        Am
+3        Dm
+4        G7
+
+Repeat
+Groove MellowJazz
+Volume m
+
+5         C      /     G+
+6         C
+7       Dm7
+8        G7
+
+Groove MellowJazzPlus
+Cresc mf 2
+
+9       Dm7      /     G7
+10      Dm7      /     G7
+
+RepeatEnding
+
+11      Em7      /    Eb7
+Groove MellowJazzFill
+12      Dm7
+
+RepeatEnd
+
+13       C9      /   C7b9
+14       C7      /     C+
+
+Groove MellowJazzSus
+Cresc mp mf 4
+
+15      FM7      /     F6
+16      Fm6
+17        C
+18     Cdim
+
+Groove MellowJazzSusPlus
+Volume m
+
+19       Dm      /     G7
+20      Dm7      /     G7
+21        C      /   Gdim
+22       G7
+
+Groove MellowJazzSus
+Decresc mp 2
+
+23        C      /     G+
+24        C
+
+Groove MellowJazz
+Volume m
+
+25      Dm7
+26       G7
+27      Dm7      /     G7
+28      Dm7      /     G7
+
+Groove MellowJazzFill
+
+29        C      /     C7
+
+Groove MellowJazz
+Decresc ppp 4
+Tempo *.8 4
+30        F     Fm      C
+31       D9      /    Bb7
+
+Groove MellowJazzEnd
+
+32        C      /    Ab7
+Solo Riff 4r;gb;2gc+;
+33        C     G7      C  z!
+

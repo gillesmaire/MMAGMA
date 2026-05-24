@@ -1,0 +1,100 @@
+// Never In A Million Years (Bing Crosby, 1937)
+
+Tempo 90
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+  
+Begin Solo
+    Voice JazzGuitar
+    Volume f
+    Articulate 90
+    Harmony 8Below+OpenBelow
+    Octave 5
+    Begin Riff
+        8a;b;c+;b;4a;;
+        8f;g;a;g;4f;;
+        43b;a;g;b;a;g;
+        1c+;
+    End
+End
+
+Groove BeguineIntro
+
+
+1         F
+2        Dm
+3        Gm
+4        C7
+
+
+Repeat
+Groove Beguine
+
+5         F      /    FM7
+6        F7
+7        Bb
+8       Bbm
+
+Groove Beguine1
+
+9         F      /     Dm
+10       G7
+11        F     Bb      F
+12       Gm      /     C7
+
+Groove Beguine
+
+13        F      /    FM7
+14       F7
+15       Bb
+16      Bbm      /      /     C7
+
+Groove Beguine1
+
+17        F      /     Dm
+18       G7
+19        F     Bb      F
+20        F     Bb      F
+
+Groove BeguineSus
+
+21        F      /     Am
+22       F7
+23       Bb      /    Bbm
+24        F
+
+Groove Beguine1Sus
+
+25       Dm
+26      Dm7      /     G7
+27       Gm      /    Gm7
+28       C7
+
+Groove BeguineSus
+
+29        F      /    FM7
+30       F7
+31       Bb
+32      Bbm
+
+Groove Beguine
+
+33        F      /     D7
+34       Gm      /      /     D7
+
+RepeatEnding
+
+35       Gm      /     C7
+Groove BeguineFill
+36        F      /    Gm7     C7
+
+RepeatEnd
+
+Groove BeguineEnd
+Seq 3
+
+35       Gm      /     C7
+37        F
+

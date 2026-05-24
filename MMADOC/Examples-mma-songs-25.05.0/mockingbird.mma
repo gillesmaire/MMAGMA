@@ -1,0 +1,86 @@
+// Mockingbird (Peter, Paul & Mary)
+
+Tempo 80
+Keysig G
+
+Groove Metronome2-4
+Volume p
+   z * 2
+
+Set GCount 1
+
+Groove LullabyIntro
+Chord-Sus Volume pppp
+
+Begin Solo
+    Voice JazzGuitar
+    Volume p
+    Articulate 110
+    Harmony OpenBelow
+    Octave 5
+    Rtime 5
+    Rvolume 10
+    Begin Riff
+       4b;d+;g+;d+;
+       4a;d+;f+;d+;
+       4g;b;d+;b;
+       4a;f;2d;
+    End
+End
+
+Swell pp mp 4
+1          G
+2          D
+3          G
+4         D7
+
+Groove Lullaby1
+Cresc pp m 4
+
+5          G
+6         D7
+7          /
+8         G
+Repeat
+
+Groove $GCount LullabyPlus Lullaby1Plus LullabyWalk
+Volume mp
+
+9          G
+10        D7
+11         /
+12         G
+
+Groove Lullaby
+Volume m
+
+13         /
+
+RepeatEnding 2
+Swell m mf 2
+
+14        D7
+15         /
+16        G
+
+Inc GCount
+
+RepeatEnd
+
+Groove LullabySus
+Chord-Sus Volume ppp
+Decresc mp ppp 6
+Tempo -10 6
+
+17        D7
+18         /
+19         G
+20         /
+
+21         D7
+22         /
+
+Groove LullabyEnd
+
+23        G
+

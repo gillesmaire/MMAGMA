@@ -1,0 +1,101 @@
+// (The) Late Late Show (Nat King Cole, 1958)
+
+Tempo 125
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+  
+Groove EasySwingIntro2
+
+Begin Solo
+   Voice BrassSection
+   Volume f
+   Octave 5
+   Articulate 40
+   Harmony OpenBelow+8Below+8Above
+   Begin Riff
+       4f;r;f;r;
+       4f;r;f;r;
+       43g;;; ;;;
+       4c+;
+   End
+End
+
+Swell F mf 4
+
+1         F6
+2        Gm7 / G#dim7 Dm7/A
+3        / / G#dim
+4        Gm7 / Am7/F
+
+Repeat
+Repeat
+Groove EasySwing
+Volume m
+
+5       Db9
+6        C9
+7       Db9
+8        C9
+
+Groove EasySwingWalk
+Volume f
+
+9        F7      /     E7
+10      Eb7      /     D7
+11       G9
+
+Groove EasySwingFill
+RepeatEnding
+
+12      Db9      /     C9
+
+RepeatEnd
+
+13       C7      /     F6
+
+Groove EasySwingSus
+Volume m
+
+14      Bb6
+15    Bdim7
+16       F6
+17      Cm7      /     F7
+
+Groove EasySwingWalkSus
+Cresc mp mf 4
+
+18      Bb6
+19    Bdim7
+20       F6
+21   F#dim7      /    Gm7     C7
+
+Groove EasySwingWalk
+Volume m
+
+22      Db9
+23       C9
+24      Db9
+25       C9
+
+Groove EasySwing
+Volume mf
+
+26       F7      /     E7
+27      Eb7      /     D7
+28       G7
+29       C9
+
+If ndef LAST 
+  Groove EasySwingWalk
+  30       F6
+  31        /  /  C9
+  Set LAST
+Else
+  Groove EasySwingEnd    
+  32       F6
+  33        / z!
+Endif
+
+RepeatEnd

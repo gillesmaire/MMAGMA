@@ -1,0 +1,126 @@
+// You Brought A New Kind Of Love To Me (1930)
+
+Tempo 100
+KeySig Ab
+
+Groove Metronome2-4
+  z * 2
+  
+Groove JazzComboIntro
+
+Begin AllGrooves
+   Begin Arpeggio-Epiano
+      Range 1
+      Octave 4
+   End
+End
+
+Begin Solo
+     Voice JazzGuitar
+     Octave 5
+     Volume f
+     Articulate 110
+     Harmony OpenBelow+8below
+     Begin Riff
+         8a;4f+;2a;
+         43f+;c+;dn+; e+;d+;c+;
+         2f+;;
+         2f+;
+     End
+End
+
+Swell mp mf 4
+
+1        Ab
+2        Fm
+3       Bbm
+4       Eb7
+
+Groove JazzCombo
+Volume m
+
+5      Bbm7
+6       Eb7
+7      AbM7      /     G7
+8       Gb7      /     F7
+
+Groove JazzComboPlus
+Cresc mf 4
+
+9       Bb7
+10      Bbm      /    Eb7
+11     AbM7      /    Db7
+
+Groove JazzCombo1
+
+12      Cm7      /     F7
+
+Groove JazzCombo
+Volume m
+
+13     Bbm7
+14      Eb7
+15     AbM7      /     G7
+16      Gb7      /     F7
+
+Groove JazzComboPlus
+Cresc f 4
+
+17      Bb7
+18     Bbm7      /    Eb7
+19      Ab6
+
+Groove JazzCombo1Sus
+
+20        /
+
+Repeat
+Groove JazzComboSus
+Volume m
+
+21      Fm7      /  Edim7
+22     Ebm7      /    Ab7
+23     DbM7      /  Gdim7     C7
+24      Fm7
+
+Groove JazzComboSusPlus
+Cresc f 4
+
+25      Bb7
+26        /
+27        /
+
+Groove JazzCombo1Sus
+
+28     Bbm7      /    Eb7
+
+Groove JazzCombo
+Decresc m 4
+
+29     Bbm7
+30      Eb7
+31     AbM7      /     G7
+32      Gb7      /     F7
+
+Groove JazzComboSus
+Decresc mp 2
+
+33      Bb7
+34     Bbm7      /    Eb7
+
+Repeatending
+
+35      Ab6
+
+Groove JazzCombo1
+
+36      /
+
+RepeatEnd
+Decresc ppp 2
+Groove JazzComboEnd
+
+35      Ab6
+37        / z!
+
+

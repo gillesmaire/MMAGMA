@@ -1,0 +1,86 @@
+// Pee Wee (Tony Williams, 1967)
+
+Tempo 120
+Keysig C
+
+Groove Metronome3
+  z * 2
+  
+Groove JazzWaltzIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Octave 6
+    Volume F
+    Articulate 110
+    Harmony 2Below
+    Rtime 20
+    RVolume 20
+    Begin Riff
+        4:2. c;b&-;c;d&;
+        2.e;
+        2.f;
+        2.g;
+    End
+End
+
+Volume mf
+
+1     GbM7#11
+2     Db7sus4
+3      Db+M7   // score shows F/Db
+4         G7
+
+Set Counter 1
+Repeat
+Groove JazzWaltz
+Volume m
+
+5       DbM7
+6     Eb7/Db
+7      Db+M7
+8        Dm7
+
+Groove JazzWaltz1
+Cresc mf 4
+
+9      Eb7#9
+10      E7#9
+11    GbM7#11
+12         /
+
+Groove JazzWaltz
+
+13    G9sus4
+14     G7alt
+15    F7sus4
+16    DbM7#11
+
+Groove JazzWaltzSus
+Volume m
+
+17      GbM7
+18    G7sus4
+19     G7alt
+20      Fm11      /   DbM7
+
+Groove JazzWaltz2Sus
+Decresc mp 4
+
+21    GbM7#11
+22    Db7sus4
+
+If == $Counter 4
+    Groove JazzWaltzEnd
+    23     Db+M7
+    24     / z!
+Else
+    23     Db+M7
+    24        G7
+Endif
+
+Inc Counter
+
+RepeatEnd 4
+
+

@@ -1,0 +1,107 @@
+// I Dont Want To See You Again
+// (Peter & Gordon, 1964)
+
+Tempo 125
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+
+
+Groove RockBalladSusIntro
+Begin AllGrooves Chord-Sus
+   Voice SynthVox
+   Octave 5
+   Volume m
+End
+
+Begin Solo
+    Voice JazzGuitar
+    Octave 5
+    Harmony OpenBelow
+    Articulate 130
+    Volume ff
+    Begin Riff
+        4r;a;f;a;
+        4r;a;f;a;
+        4r;b;g;b;
+        1c+;
+    End
+End
+
+Swell mp f 4
+
+Seq 3
+1         F
+Seq 3
+2        Dm
+Seq 3
+3        Gm
+4        C7
+
+Repeat  // whole song 2x
+Repeat
+Groove RockBallad1
+Volume m
+
+5         F
+6        Am
+7       Bbm
+8        C7
+
+Cresc f 4
+
+9         F
+10       Am
+11      Bbm
+
+Groove RockBallad1Fill
+
+RepeatEnding
+
+12        F
+
+RepeatEnd
+
+13        F
+
+Groove RockBallad1Voice
+Volume m
+
+14       Bb      /      F
+15       Bb      /      F
+16       Bb      /      F
+17       Dm
+
+Volume mf
+
+18       Gm      /     A7
+19       Dm
+20       G7
+21       C7
+
+Groove RockBallad1
+Decresc mp 4
+
+22        F
+23       Am
+24      Bbm
+25       C7
+
+Cresc mf 2
+
+26        F
+27       Am
+
+RepeatEnding  /// This is for the whole song
+
+28      Bbm
+29        F
+
+Repeatend  
+
+Groove RockBalladEnd1
+Decresc ppp 2
+
+28      B&m
+29      F   z!

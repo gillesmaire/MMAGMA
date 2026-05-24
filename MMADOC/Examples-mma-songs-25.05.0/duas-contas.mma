@@ -1,0 +1,81 @@
+// Duas Contas (1940s? ... Garoto )
+
+Tempo 90
+Keysig G
+
+Groove Metronome2-4
+  z * 2
+
+Groove BossaNovaIntro
+
+Swell mp mf 4
+
+1         G
+2         Em7
+3         Am7
+4         D7
+
+Repeat
+Groove BossaNova
+Volume m
+
+5       Bm7      /     E9
+6       Bm7      /     E9
+7       Am7      /     D9
+8       Am7      /     D9
+
+Groove BossaNova1Sus
+Cresc mf 4
+
+9       GM7
+10      Bm7      / Bbdim(b13)
+11      Am7
+12   C#m7sus4      /   C#11
+
+Groove BossaNova2Sus
+
+13      Bm7      /     E9
+14      Bm7      /     E9
+15      Am7      /     D9
+16      Am7      /     D9
+
+Groove BossaNova
+Decresc m 4
+
+17      Bm7
+18     E7b9
+19      Am9
+20      Cm6      /     F9
+
+Groove BossaNovaPlus
+Volume f
+
+21      Bm7
+22   Bbdim(b13)
+23      Am7      /     D9
+24      Am7      /     D9
+
+Groove BossaNovaSusPlus
+Volume mf
+
+25    Bm7b5
+26     E7b9
+27      Am7
+28   D9sus4      /   D7b9
+
+RepeatEnding
+
+Groove BossaNovaFill
+Volume m
+
+29       G6
+30   C#m7sus4      /   C#11
+
+RepeatEnd
+
+Groove BossaNova2End
+Decresc pppp 2
+Chord-Sus MidiDecresc ppp  1.5
+29      G6
+30      /  z!
+

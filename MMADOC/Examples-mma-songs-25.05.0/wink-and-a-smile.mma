@@ -1,0 +1,117 @@
+// Wink And A Smile (Sleepless in Seattle, 1993)
+
+Tempo 112
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+
+Groove Swing
+0          z      /      /     C6
+
+Label Sign
+Groove Swing
+
+1         C6
+2        Ab7
+3         C6      /    Dm7   Ebm7
+4        Em7      /     A7
+5         D9
+
+Groove SwingPlus
+
+6        Dm7      /    G13
+7          C      /   A7+5
+8        D13      /     G7
+
+Groove Swing
+
+9         C6
+10       Ab7
+11        C6
+12       Em7      /     A7
+13        D9
+14       G13      /  G7b13
+15        C6      /    Ab7
+
+
+Groove SwingFill
+
+16        C6      /     C9
+
+Groove SwingSus
+
+17         F
+18         C      /      /    C7+
+19        F7
+20        C7
+
+Groove SwingPlusSus
+
+21        Am      /   AmM7
+22       Am7      /     D9
+23       Ab9 G7@4.5
+If def CODA
+ goto Coda
+endif
+24         /
+25      D7b9      /     G7    G7+
+
+
+Groove Swing
+
+26        C6
+27       Ab7
+28        C6
+29       Em7      /     A7
+30        D9
+
+Groove SwingPlus
+
+31        G7      /  G7b13
+
+Groove SwingFill
+
+32        C6
+33         /
+
+Set Coda
+Goto Sign
+
+Label Coda
+
+Groove SwingPlusSus
+
+34        G7      /      z
+
+Keysig Db
+
+Groove Swing
+
+35       Db6
+36        A7
+37       Db6
+38       Fm7      /    Bb7
+39       Eb9
+
+
+Groove SwingSus
+
+40    GbM7/Ab      /    Ab9
+41         /    Db7     C7    Cb7
+
+
+Groove SwingPlusSus
+
+42       Bb7      /      /     E7
+
+Groove SwingSus
+
+43       Eb9
+
+Groove SwingEnd
+
+44      Ab13      /    Ab+
+45       Db6      /     z!
+
+

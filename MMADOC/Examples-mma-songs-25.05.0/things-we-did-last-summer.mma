@@ -1,0 +1,97 @@
+// Things We Did Last Summer (1946)
+
+Tempo 72
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+  
+Groove MellowJazzIntro
+
+Begin Solo
+    Voice Piano1//Vibraphone
+    Octave 4
+    Volume f
+    Harmony OpenAbove
+    Articulate 110
+    Rtime 5
+    Rvolume 5
+    Begin Riff
+        8f;g;a;g; 2f;
+        8a;b;c+;b; 2a;
+        8d+;c+;b;a; 4g;a;
+        2.c+;
+    End
+End
+
+Swingmode On Skew=58
+Swell mp mf 4
+
+1         F
+2        Dm
+3        Gm
+4        C7
+
+
+Repeat
+Groove MellowJazz
+Volume m
+
+5       FM7      /     D7
+6       Gm7      /     C7
+7       FM7
+8     Adim7      /   D7b9
+
+Groove MellowJazzPlus
+Cresc mf 3
+
+9       Gm7      /    Eb7
+10      Am7      /    Dm7
+11      Gm7      /     C7
+
+RepeatEnding
+
+Groove MellowJazzFill
+Volume mp
+
+12      F9    F#dim3    Gm7     C7
+
+RepeatEnd
+
+13      FM7
+
+Groove MellowJazzSus
+Cresc mp mf 4
+
+14      Cm7      /     F7
+15      CM7      /     F7
+16     BbM7      /    Cm7     F7
+17     BbM7
+
+Groove MellowJazzSusPlus
+Decresc m 4
+
+18      Dm7      /     G7
+19      Dm7      /     G7
+20      CM7      /    Dm7     G7
+21      Gm7      /     C7
+
+Groove MellowJazz
+Decresc mp 4
+
+22      FM7      /     D7
+23      Gm7      /     C7
+24      FM7
+25    Adim7      /   D7b9
+
+Groove MellowJazzPlus
+
+26      Gm7      /    Eb7
+27      Am7      /     D7
+
+Groove MellowJazzEnd
+Decresc ppp 2
+
+28      Gm7      /     C7
+29      FM7      /     z!
+

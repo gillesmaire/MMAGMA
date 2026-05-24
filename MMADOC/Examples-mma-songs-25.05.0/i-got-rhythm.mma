@@ -1,0 +1,90 @@
+// I Got Rhythm  (Gershwin, 1930)
+
+Tempo $(110 * 2 )
+Keysig Bb
+
+Groove Metronome2-4
+   z * 2
+
+Repeat
+Groove ShowTunePlus
+Volume m
+
+1        Bb      /    Bb6
+2       Cm7      /     F7
+3       Bb6      /   Edim
+4       Cm7      /     F7
+
+Groove ShowTune1Plus   
+Cresc f 4
+
+5        Bb      /    Bb6
+6       Cm7      /     F7   Ebm6
+7        Bb      /     F7
+8        Bb      /  C#dim     F7
+
+Groove ShowTunePlus
+Decresc m 4
+
+9        Bb      /    Bb6
+10      Cm7      /     F7
+11      Bb6      /   Edim
+12      Cm7      /     F7
+
+Groove ShowTune2Plus
+Volume mf
+
+13       Bb      /    Bb6
+14      CM7      /     F7   Ebm6
+15       Bb      /     F7
+16       Bb
+
+Groove ShowTune
+Volume mp
+
+17       D7      /    Am7
+18      Fm6      /     D7
+19        G      /     D+
+20       Dm      /     G7
+
+Groove ShowTune1
+Cresc mf 4
+
+21       C7      /    Gm7
+22     Ebm6      /     C9
+23     C7b5
+24       F7      /     C7     F7
+
+Groove ShowTune2
+
+25       Bb      /    Bb6
+26      Cm7      /     F7
+27      Bb6      /   Edim
+28      Cm7      /     F7
+
+Groove ShowTune
+Decresc m 4
+
+29       Bb      /    Bb6
+30      Cm7      /     F7    Ebm
+31       Bb      /     Fm
+32       G7
+
+
+RepeatEnding
+
+Groove ShowTuneIntro
+Seq 3
+Volume f
+
+33       C7      /     F7
+34       Bb      /     Gb     
+
+RepeatEnd
+
+Groove ShowTuneEnd
+Decresc ppp 2
+
+33       C7      /     F7
+35       Bb
+

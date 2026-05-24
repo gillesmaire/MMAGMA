@@ -1,0 +1,97 @@
+// Lawrence Of Arabia
+
+Tempo 74
+
+Groove Metronome2-4
+  z * 2
+  
+
+
+Groove SlowDesert
+Groove Click     /// a click at the start of each bar.
+Cresc p m 8
+
+1        Bb
+2         /      /  Ebdim
+3        Bb
+4         /      /   Abm6
+
+Groove SlowDesertPlus
+
+5        Bb
+6      Abm7
+7     Ebdim      /     Bb
+8      Fdim      /     F9
+
+Groove SlowDesert
+Volume mf
+
+9        Bb
+10        /      /  Ebdim
+11       Bb
+12        /      /   Abm6
+
+Groove SlowDesertPlus
+Volume m
+
+13       Bb
+14     Abm7      /     Bb
+15        /
+16        /
+
+Groove SlowDesertSus
+Decresc mp 4
+
+17     Abm6
+18        /
+19       Bb
+20        /      /   Dbm6
+
+Groove SlowDesertSusPlus
+
+21      Ebm
+22        /      /    Abm
+23       Bb      /    Abm
+24       Bb      /     F7
+
+Groove SlowDesertSusPlus
+Volume m
+
+25       Bb
+26        /      /  Ebdim
+27       Bb
+28        /      /   Abm6
+
+Groove SlowDesertSus
+Volume f
+
+29       Bb      /   Abm6
+30       Bb      /     F7
+31       Bb
+32        /      /  Ebdim
+
+Groove SlowDesertSusPlus
+Volume mf
+
+33        /      /     Bb
+34        /
+35        /
+36        /      /  Ebdim
+
+Groove SlowDesertSus
+Decresc ppp 6
+
+37        /      /     Bb
+38        /
+
+Groove SlowDesertFillSus
+
+39       Bb
+40      Abm      /      /     F7
+
+Groove SlowDesertEnd
+Seq 3
+
+41       Bb
+42        /  z!
+

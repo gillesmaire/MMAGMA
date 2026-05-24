@@ -1,0 +1,108 @@
+// I Cant Believe That Youre In Love With Me (McHugh, 1926)
+
+Tempo 120
+KeySig C
+
+Groove Metronome2-4
+   z * 2
+   
+Groove FoxTrotIntro
+Begin Solo
+    Voice JazzGuitar
+    Harmony OpenBelow
+    Articulate 90
+    Octave 5
+    Rtime 10
+    Rvolume 10
+    Begin Riff
+        4.g;8e;4.d;8e;
+        4.g;8e;4.g;8a;
+        4.c+;8a;4.g;8a;
+        1c+;
+    End
+End
+
+Swell mp mf 4
+1       G7   /   Dm
+2       G7
+3       C     /   F7
+4       C
+
+
+Repeat
+Groove FoxTrot
+Volume m
+
+5        F6
+6       Fm6
+7         C
+8        D7
+
+Groove FoxTrotPlus
+Volume mf
+
+9        G7
+10        /
+11      CM7
+12      Dm7      /     G7   C7#5
+
+Groove FoxTrot
+Cresc f 8
+
+13       F6
+14      Fm6
+15        C
+16       D7
+
+Groove FoxTrotPlus
+
+17       G7
+18        /
+19        C      /     F9
+20        C
+
+Groove FoxTrotSus
+Volume m
+
+21       E7
+22      Em7      /     E7
+23       A9
+24       A7
+
+Groove FoxTrotSusPlus
+Volume mf
+
+25       D7
+26      Dm7      /     D7
+27       G9
+28     G7#5      /      /   C7#5
+
+Groove FoxTrot
+Decresc m 6
+
+29       F6
+30      Fm6
+31        C
+32       D7
+
+Groove FoxTrotPlus
+
+33       G7
+34        /      /   G7#5
+
+RepeatEnding
+
+Groove FoxTrotFill
+Volume mp
+
+35        C      /     F9
+36        C
+
+RepeatEnd
+
+Groove FoxTrotEnd
+Decresc ppp 2
+
+37        C      /     F9
+38        C      z!
+

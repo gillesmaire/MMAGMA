@@ -1,0 +1,162 @@
+// Petite Fleure (Sidney Bechet, 1952)
+
+Keysig G minor
+Tempo 110
+
+Groove Metronome2-4
+ z * 2
+
+Groove NiteJazzPlus
+    Begin Arpeggio-Guitar
+        Sequence { A2; $Push2 8 70; $Push3 8 70} \
+              { A1; $Push3 4 70 } \
+              { A1; $Push2 8. 70 } \
+              { A1; A4 Shift $Push0 }
+        Volume mf
+        Octave 6
+        Articulate 100
+   End
+DefGroove NiteJazzPlus
+
+Groove NiteJazzPlus
+    Begin Chord-Sus
+        Groove NiteJazzSus
+        Voice Strings
+        Volume mp
+        Octave 6
+    End
+DefGroove NiteJazzSus
+
+Groove NiteJazzIntro
+
+
+Begin Solo
+    Voice JazzGuitar
+    Harmony 3Below+3Above+8Below
+    Articulate 100
+    Octave 5
+    Volume ff
+    //Arpeggiate Direction=Down Rate=4 Decay=-4
+    Begin Riff
+       2b;a;
+       2.g;8g;;
+       4f;;e;1d~;
+    End
+End
+
+Decresc m p 1
+Arpeggio-piano Volume mp
+
+1         Gm      /     A7
+2          G      /     Cm
+3          F      /     Eb
+4         D7      /     z
+
+Repeat
+
+Groove NiteJazz
+Volume m
+
+5         D7
+6          /
+7         Gm
+8          /   Gm/F
+
+Groove NiteJazzPlus
+Cresc f 8
+
+9       A7/E      / A7&5/Eb
+10        D7
+11        Gm
+12         /
+
+Groove NiteJazz
+
+13        D7
+14         /
+15        Bb
+16         /
+
+Groove NiteJazzPlus
+Volume m
+
+17        Cm      /  Cm/Bb
+18     Adim7      /     F7
+19        Bb
+20         /
+
+Groove NiteJazz
+Cresc mp mf 8
+
+21     Adim7
+22     D7/F#      /     D7
+23        Gm      /   Gm/F
+24     Edim7
+
+Groove NiteJazzSus
+
+25        A7
+26         /
+27        D7      /    Eb7
+28        D7
+
+Groove NiteJazzSusPlus
+Volume m
+
+29         /
+30         /
+31        Gm
+32         /      /   Gm/F
+
+Groove NiteJazzSus
+Volume mf
+
+33    Adim7/Eb
+34        D7
+35        Gm      /     Cm
+36        Gm
+
+Groove NiteJazzSusPlus
+Decresc mp 4
+
+37        G7
+38         /
+39        Cm
+40         /      /  Cm/Bb
+
+Groove NiteJazzSus
+
+41      F7/A      /   F7/G
+42        F7
+43        Bb      /     E7
+44        D7
+
+Groove NiteJazz
+Volume m
+
+45         /
+46         /
+47        Gm
+48         /      /   Gm/F
+
+49    Adim7/Eb
+50        D7
+
+RepeatEnding
+
+Groove NiteJazzIntro
+Seq 3
+Volume mf
+
+51        Gm      /     Cm
+52        Gm      /
+
+RepeatEnd
+
+Groove NiteJazzEnd
+Decresc ppp 2
+
+53        Gm      /     Cm
+54        Gm      /     z!
+
+

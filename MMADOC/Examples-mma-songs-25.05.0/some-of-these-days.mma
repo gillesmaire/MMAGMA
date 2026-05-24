@@ -1,0 +1,105 @@
+// Some Of These Days (Sophie Tucker, 1910)
+
+Tempo $(2 * 95)
+
+KeySig D min
+
+Groove Metronome2-4
+ z * 2
+
+Begin Solo
+    Voice Honky-TonkPiano
+    Octave 5
+    Articulate 80
+    Decresc ff mp 4
+    Harmony 3Below
+    Begin Riff
+        4.d+;8e+;4d+;e+;
+        4.c+;8d+;4c+;d+;
+        4.b;8c+;4b;c+;
+        4a;
+    End
+End
+
+Groove SwingIntro
+Decresc mf mp 4
+
+1        Dm
+2         F/C
+3        B&
+4        A7     Dm    Bb7     Dm
+
+
+Repeat
+Groove Swing
+Volume m
+
+5        A7
+6         /
+7        Dm
+8         /
+
+Groove SwingPlus
+Cresc f 4
+
+9        A7
+10        /
+11       Dm
+12        /
+
+Groove Swing
+Decresc m 4
+
+13       D+7
+14        D7
+15       G7
+16        /
+
+Groove SwingPlus
+
+17        /
+18        /
+19       C7
+20        /
+
+Groove Swing
+Volume mf
+
+21       F7
+22        /
+23       Bb
+24        /
+
+Groove SwingSus
+Cresc f 4
+
+25       D7
+26        /
+27       Gm
+28        /
+
+Groove SwingPlusSus
+Volume mf
+
+29       Bb
+30      Bbm
+31        F
+32       D7
+
+Groove SwingSus
+
+33       G7
+34       C7
+
+Repeatending 2
+Groove SwingFill
+
+35        F
+36        /  Dm Bb7  Dm
+
+RepeatEnd
+Groove SwingEnd
+Decresc mp 2
+35        F
+36        /
+

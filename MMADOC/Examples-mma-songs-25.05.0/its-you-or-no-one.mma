@@ -1,0 +1,108 @@
+// Its You Or No One (Doris Day, 1948)
+
+Tempo 170
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+  
+Groove BigBandIntro
+
+Begin Solo
+    Voice Jazzguitar
+    Octave 5
+    Volume ff
+    Harmony OpenBelow
+    Articulate 90
+    Rvolume 10
+    Rtime 10
+    Begin Riff
+        2+8f+;8c+;d+;c+;
+        2+8e&+;8b;c+;b;
+        2+8d+;8a;b;a;
+        1c+;
+    End
+End
+
+Swingmode On
+Swell m mf 4
+
+1         F
+2         Eb
+3         D
+4         C7
+
+Repeat
+Groove Bigband
+Volume m
+
+5       Gm7
+6        C7
+7       FM7
+8        D7
+
+Groove BigBandPlus
+Cresc mf 4
+
+9       Gm7
+10       C7
+11      FM7
+12        /
+
+Groove BigBand
+
+13     Bbm7
+14      Eb7
+15     AbM7
+16     G7#5
+
+Decresc mp 4
+
+17      CM7
+18      Dm7      /     G7
+19      CM7
+20      Dm7      /     Gb
+
+Groove BigBandSus
+
+21      Gm7
+22       C7
+23      FM7
+24       D7
+
+Groove BigBandSusPlus
+Volume m
+
+25      Gm7
+26       C7
+27      Cm7
+28       F7
+
+Groove BigBandSus
+Volume mf
+
+29      Gm7
+30     Bbm7      /    Eb7
+31      FM7
+32     Bbm7      /    Eb7
+
+Groove BigBand
+Decresc p 4
+
+33      Am7      /     D7
+34      Gm7      /     C7
+
+RepeatEnding 2
+
+35      FM7
+Groove BigBandFill
+36      Am7      /     D7
+
+RepeatEnd
+
+Groove BigBandEnd
+Decresc ppp 2
+
+35      FM7
+37       Fm      /      F z!
+

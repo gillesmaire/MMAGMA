@@ -1,0 +1,114 @@
+// Joint Is Jumping, The (Fats Waller, 1937)
+
+Tempo $(2 * 100)
+Keysig Bb
+
+Groove Metronome2-4
+  z * 2
+  
+Repeat
+Groove Charleston
+Volume m
+
+1        Bb      /  Bdim7
+2       Cm7      /     F7
+3        Bb      /  Bdim7
+4       Cm7      /     F7
+
+Groove Charleston1
+Volume mf
+
+5        Bb      /  Bb7/D
+6        Eb      /  Edim7
+7      Bb/F      /   F7#5
+8        Bb
+
+Groove Charleston
+Cresc f 4
+
+9         D      /   A7/E
+10     D/F#      /   A7/E
+11        D      /     A7
+12        D      /     C7
+
+Groove Charleston1Plus
+Volume mf
+
+13        F      /   C7/G
+14      F/A      / F#dim7
+15     C7/G      /     C7
+16       F7
+
+Groove CharlestonPlus
+Decresc m 4
+
+17      Bb7      /  Edim7
+18      Fm7      /    Bb7
+19       Eb      /    Bb7
+20       Eb
+
+Groove Charleston1Sus
+
+21       C7
+22        /
+23       F9      /   C7#5
+24       F7
+
+Groove CharlestonSus
+Cresc mf 4
+
+25       Bb      /  Bdim7
+26      Cm7      /     F7
+27       Bb      /  Bdim7
+28      Cm7      /     F7
+
+Groove Charleston1
+Volume m
+
+29       Bb      /  Bb7/D
+Groove Charleston2
+30       Eb      /  Edim7
+
+RepeatEnding
+
+Groove CharlestonWalk
+Volume f
+
+31     Bb/F      /   F7#5
+32       Bb      /     F7
+
+RepeatEnd
+
+Groove Charleston1Walk
+Decresc f m 2
+
+33       Bb      /    Eb7     F7
+34       Bb      /   F7#5
+
+Groove Charleston1
+
+35       Bb      /   Bdim
+36      Cm7      /     F9
+37       Bb      /  Bdim7
+38      Cm7      /     F7
+
+Groove CharlestonPlus
+Volume mf
+
+39       Bb      / Bb7/Ab
+40   Ebm      / Ebm/Gb
+41     Bb/F      /    Eb7     F7
+42       Bb      /   F7#5
+
+Groove Charleston1Plus
+Decresc ppp 4
+
+43       Bb      / Bb7/Ab
+44     Eb/G Ebm/Gb
+
+Groove CharlestonEnd
+
+45     Bb/F Bb+/F#    Gm7
+Seq
+46     C7b9      /   F7#5    Bb6 
+

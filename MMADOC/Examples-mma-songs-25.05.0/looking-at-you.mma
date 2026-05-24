@@ -1,0 +1,103 @@
+// Looking At You (Cole Porter, Wake up and Dream, 1929)
+
+Tempo 82
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+  
+Groove DescendingJazzIntro
+
+Begin AllGrooves
+   Chord-Sus Volume mp
+   Begin Bass
+     Voice Piano1
+     Volume mf
+     Articulate 90
+     Harmony OpenBelow
+   End
+   Drum-side Volume p
+End
+
+Begin Solo
+    Voice Piano1
+    Harmony 3Below+8Below
+    Octave 6
+    Articulate 130
+    Volume f
+    Begin Riff
+       8c+;4;8a;2g;
+       8a;4;8g;2e;
+       2d;f;
+       1g;
+    End
+End
+
+Swell mp mf 4
+
+1         C
+2        Am
+3        Dm7
+4        G7
+
+Repeat
+Groove DescendingJazz
+Volume m
+
+5       Dm7      /     G7
+6        D7      /     G7
+7         C      /      F
+8        Fm      /      C
+
+Groove DescendingJazzSus
+Decresc mp 4
+
+9        D7      /     Em
+10      Dm7      /     G7
+
+RepeatEnding
+
+11        C
+12      Dm7      /     G7
+
+RepeatEnd
+
+13        C      /     Am
+14       B7
+
+Groove DescendingJazz
+Volume m
+
+15       Em      / F#m7b5
+16       Em      / F#m7b5
+17       Em      / F#m7b5
+18       Em
+
+Groove DescendingJazzSus
+Volume mf
+
+19        G      /  Am7b5
+20        G      /  Am7b5
+21        G      /  Am7b5
+22      Dm7      /     G7
+
+Groove DescendingJazz
+Decresc m 4
+
+23      Dm7      /     G7
+24       D7      /     G7
+25        C      /      F
+26       Fm      /      C
+
+Groove DescendingJazzSus
+Volume mf
+
+27       D7      /     Em
+28      Dm7      /     G7
+
+Groove DescendingJazzEnd
+Decresc ppp 2
+
+29        C      F     G7
+30        C
+

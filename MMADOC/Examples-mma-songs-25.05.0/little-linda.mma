@@ -1,0 +1,152 @@
+// Little Linda (Spyro Gyra, 1979)
+
+Tempo 190
+KeySig C
+
+Groove Metronome2-4
+  z * 2
+  
+Groove SambaIntro8
+
+Begin Solo
+    Voice Strings
+    Cresc mp mf 8
+    Octave 5
+    Harmony OpenBelow
+End
+Cresc pp mf 8
+Repeat
+1         Dm / Em  {2d; 4.c+; 8+1b ~;}
+2         Em7
+RepeatEnd 4
+
+Label Sign
+Repeat
+Groove Samba
+Volume m
+
+3       GM7
+4       CM7
+5       Bm7
+6        E7
+
+Cresc mf 3
+
+RepeatEnding
+
+Groove SambaPlus
+7       Am7
+8        D7
+9       Bm7      /     E7
+Groove SambaFill
+10      Am7      /     D7
+
+RepeatEnd
+Groove SambaPlus
+
+11      Am7
+12       D7
+13      GM7
+14        /
+
+Groove Samba
+Volume m
+
+15      Dm7
+16       G7
+17      Dm7
+18       G7
+
+Groove SambaPlus
+Volume f
+
+19      Dm7
+20       G7
+Decresc mf 2
+21      Dm7
+22       G7
+
+Groove Samba
+Volume m
+
+23      Cm7
+24       F7
+25      Cm7
+26       F7
+
+Groove SambaSus
+Volume mf
+
+27     Bbm7
+28      Eb7
+29      Am7
+30       D7
+
+Groove SambaSusPlus
+Volume m
+
+31      GM7
+32      CM7
+33      Bm7
+34       E7
+
+Groove SambaSus
+Volume mf
+
+35      Am7
+36       D7
+37       F9
+38       E7
+
+Groove SambaPlus
+Volume m
+
+39      Am7
+40      CM7
+41      Bm7
+42       E7
+
+Groove Samba
+43      Am7
+44       D7
+
+If Def ToCoda
+  Goto Coda
+EndIf
+
+Cresc mf 4
+
+45        Em7
+46        Dm7
+
+47        Em7
+48        Dm7
+49        G7 
+50        Dm 
+
+51        G 
+
+Groove SambaFill
+Volume m
+
+52        G7
+
+Set ToCoda
+Goto Sign
+
+Label Coda
+
+Groove SambaEnd   // This is a 4 bar seq, perfect for us
+
+Decresc pp 4
+Solo Decresc ppp 4
+Repeat
+53        Dm  / Em   {2d;4.c++;1+8b+~;}
+54        Em7
+RepeatEnd
+
+Seq 4
+Volume ff
+Solo Volume ffff
+55        G  z! {4g+;}
+

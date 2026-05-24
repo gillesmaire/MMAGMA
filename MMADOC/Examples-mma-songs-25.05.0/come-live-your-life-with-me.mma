@@ -1,0 +1,129 @@
+// Come Live Your Life With Me
+
+Tempo 110
+Keysig C minor
+
+Groove Metronome3
+  z * 2
+  
+Groove LatinWaltzIntro
+
+Begin Solo
+    Voice Violin
+    Articulate 140
+    Octave 6
+    Harmony None
+    Arpeggiate Direction=Both Rate=32 Decay=-8
+    Begin Riff
+        2.ceg;
+        2.dgb;
+        2.dfan;
+        2.dgb;        
+    End
+End
+
+Cresc p mp 4
+
+1        Cm
+2        Gm
+3        Dm
+4        Gm
+
+
+Set Counter 1
+Repeat
+Groove LatinWaltz
+Volume m
+
+5        Cm
+6         /
+7        Fm
+8         /
+
+Groove LatinWaltzPlus
+
+9         /
+10        /
+11       Cm
+12        /
+
+Groove LatinWaltz
+Decresc mf m 4
+
+13        /
+14        /
+15       G7
+16       Cm
+
+Groove LatinWaltzPlus
+Volume mp
+
+17       Fm
+18        /
+19       Cm
+20        /
+
+Groove LatinWaltz
+Volume m
+
+21       G7
+22        /
+23       Cm
+24       Ab
+
+Groove LatinWaltzPlus
+Volume mp
+
+25       Fm
+26       G7      /  G7sus
+
+If eq $counter 2
+   Groove LatinWaltzEnd
+   Decresc ppp 2
+   
+   27       Cm
+   28        / z!
+   
+   eof
+Endif
+
+27       Cm
+28        /
+
+Groove LatinWaltzSus
+Volume m
+
+29       Fm
+30       Db/F
+31       Cm
+32        /
+
+Groove LatinWaltzSusPlus
+
+33       Fm
+34        /
+35        C
+36        /
+
+Groove LatinWaltzSus
+Volume mf
+
+37       Fm
+38        /
+39       Cm
+40        /
+
+Groove LatinWaltzSusPlus
+Volume m
+
+41       Gm
+42       D7      /  D7sus
+43       Gm
+Groove LatinWaltzFill
+Volume mp
+44        /
+
+Inc Counter
+RepeatEnd 
+
+

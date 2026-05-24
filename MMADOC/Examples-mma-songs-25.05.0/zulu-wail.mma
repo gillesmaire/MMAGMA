@@ -1,0 +1,107 @@
+// Zulu Wail (Skinner/Bibo, 1927)
+
+Tempo $(2 * 100)
+Keysig Eb
+
+Groove Metronome2-4
+  z * 2
+  
+Groove FoxtrotIntro
+
+Begin Solo
+    Voice BrassSection
+    Octave 5
+    Harmony OpenBelow
+    Articulate 90
+    Rtime 5
+    Rvolume 6
+    Begin Riff
+        1+4e ~;
+        ~ 8a;4g;8a;4g;
+        1+4b& ~;
+        ~ 8c+;4b;8c+;4b;
+        1g;
+        8g;4;4.;4f;
+        1+2e ~;
+    End
+End
+
+Cresc mp f 8
+1         Cm
+2         G7
+3         Eb
+4         Bb
+
+5         Eb
+6         G7
+7        Eb7
+8          /
+
+Repeat /// outer loop, do song 2x
+Repeat
+Groove Foxtrot
+Volume m
+
+9         Eb
+10       Ab7
+11        Eb
+12       Ab7
+
+Groove FoxTrotPlus
+Cresc f 4
+
+13        G7     /   Eb7
+14       Ab7      /    Bb7
+15        Eb
+
+Groove FoxTrotFill
+Volume mf
+RepeatEnding
+
+16       Bb7
+
+RepeatEnd
+
+17       Eb7
+
+Groove FoxTrotSus
+Volume f
+
+18       Abm
+19         /
+20       Ebm
+21         /
+
+Groove FoxTrotSusPlus
+Decresc m 4
+
+22       Abm
+23         /
+24        B7
+25       Bb7
+
+Groove FoxTrotSus
+
+26        Eb
+27       Ab7
+28        Eb
+29       Ab7
+
+Groove FoxTrot
+Volume mf
+30        Eb
+31       Ab7      /    Bb7
+
+Repeatending 2   // for outer repeat
+
+Groove FoxTrotFill
+32        Eb 
+33        /
+
+Repeatend
+
+Groove Foxtrot1End
+Decresc pp 2
+34        Eb
+35         /   /   z!
+

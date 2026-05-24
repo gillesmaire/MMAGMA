@@ -1,0 +1,107 @@
+// Youre My Thrill
+
+Tempo 80
+Keysig Ab
+
+Groove Metronome2-4
+  z * 2
+
+Groove NiteJazz
+
+Begin AllGrooves
+   Arpeggio-Guitar  Rskip 50
+   Bass-Accent Rskip 20
+End
+
+Begin Solo
+    Voice OrchestralHarp
+    Articulate 190
+    Harmony 3Above+3Below+38below
+    Arpeggiate Direction=Down Rate=16 Decay=-4
+    Mallet Rate=64 Decay=-5 
+    Octave 5
+    Begin Riff
+        1a+;
+        1f+;
+        1d+;
+        2bn;2c+;
+    End
+End
+
+Groove NiteJazzIntro
+
+Decresc mf mp 4
+
+1         Fm
+2         Dm
+3         Gmb5
+Begin Solo
+  Arpeggiate Direction=Down Rate=43 Decay=-4 
+  Mallet Rate=32 Decay=-2
+  Articulate 200
+End
+4         Fdim / F#dim
+
+Repeat
+Groove NiteJazz
+Volume m
+
+5      Gm7b5
+6       C7b9
+7      Gm7b5
+8       C7b9
+
+Groove NiteJazzPlus
+Swell mf 4
+
+9      Cm7b5
+10       Gb7      /   F7b9
+11       Bb7      /    Gb9
+12       Fm7      /    Db9
+
+RepeatEnd
+
+Groove NiteJazzSus
+Volume mp
+
+13       Cm7
+14        F7
+15      Bbm7  /   F7
+16      Bbm7
+
+Groove NiteJazzSusPlus
+Cresc m 4
+
+17       Dm7
+18        G7
+19         C      /    C/G
+20       Gb9      /     F9
+
+Groove NiteJazzPlus
+Decresc mp 4
+
+21     Gm7b5
+22      C7b9
+23     Gm7b5
+24      C7b9
+
+Groove NiteJazz
+
+25     Cm7b5
+26       Gb7      /   F7b9
+27       Bb7      /    Gb9
+28       Fm7      /    Db9
+
+Groove NiteJazzSus
+Decresc p 2
+
+29        G7
+30      GbM7
+
+Groove NiteJazzEnd
+Decresc ppp 2
+
+31        Fm
+32         /     z!
+
+

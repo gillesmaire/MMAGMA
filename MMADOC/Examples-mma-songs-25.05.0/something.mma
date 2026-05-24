@@ -1,0 +1,92 @@
+// Something (Beatles 1969)
+
+Tempo 74
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+Groove RockBalladIntro
+
+Seq 4
+
+Begin Solo
+  Voice JazzGuitar
+  Volume ff
+  Octave 5
+  Articulate 110
+  Harmony OpenBelow
+  Rtime 4
+  Rvolume 5
+End
+
+Volume m
+1         F      /     Eb   G7/D  {8a;;c+;a;4b&;bn;}
+
+Repeat
+Label Sign
+Groove RockBallad1
+Cresc m mf 4
+
+2         C
+3       CM7
+4        C7
+5         F      /      /    C/E
+
+6        D7
+7         G    Am7   G7/B
+8        Am      /     E+
+9      Am/G      /     D7
+
+If def CODA
+  Goto CODA
+Endif
+
+Volume f
+RepeatEnding
+Groove RockBalladFill
+seq 4
+10        F
+
+RepeatEnd
+
+Groove RockBalladFill
+Seq 4
+11        F      /     Eb   G7/D
+
+Groove RockBallad1Fill
+Volume m
+12        A
+
+Keysig A
+
+Groove RockBallad1Voice
+Chord-Sus Octave +1
+Swell m f 8
+
+13        /      / C#m/G#
+14      F#m      /  F#m/E
+15        D      /      G
+16        A
+
+17        /      / C#m/G#
+18      F#m      /  F#m/E
+19        D      /      G
+20        C
+
+Set CODA
+Goto Sign
+
+Label Coda
+Groove RockBallad
+Volume m
+21        F      /     Eb   G7/D
+22        A
+
+Groove RockBalladEnd
+Seq 3
+Tempo *.9 2
+Decresc ppp 2
+23        F      /     Eb   G7/D
+24        C      /      z!
+
+

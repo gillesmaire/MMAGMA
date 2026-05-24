@@ -16,7 +16,7 @@ Avec les boucles de MMA nous pouvons produire un export sans retouche vers les f
 
 ## Mise en place des répétition dans MMA
 
-Une répétition de 5 couplets refrains  se fait au moyen de la séquence : 
+Une répétition de 5 couplets refrains  se fait au moyen de la séquence: 
 
 ~~~mma
 Repeat 
@@ -29,16 +29,16 @@ Cette séquence produira 10 lignes alternant les Am et les Cm
 
 ## Conventions 
 
-- Si le nombre de copiesest omis, deux copies seront effectuées
+- Si le nombre de copies est omis, deux copies seront effectuées
 - Avec un nombre de copies à 1,  une seule itération sera exécutée et le résultat sera Am Cm
-- Avec le nombre 0 nous aurons aucune sortie.
+- Avec le nombre 0 nous aurions aucune sortie.
 
 
 ## Options RepatEnding 
 
 RepeatEnding 2 par exemple indique que la répétition n'est effective que pour les 2 premières occurrences.
 
-Cela pemet par exemple la structure suivante : 
+Cela permet par exemple la structure suivante : 
 
 ~~~mma
 Repeat

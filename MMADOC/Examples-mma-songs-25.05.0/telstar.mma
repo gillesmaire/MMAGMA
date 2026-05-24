@@ -1,0 +1,148 @@
+// Telstar (Tornados, 1962)
+
+KeySig Bb
+Tempo 148
+
+Groove Metronome2-4
+  z * 2
+  
+Use bvfunk
+
+/// Modify the Bass Track in all the patterns to get
+/// what sounds like a satellite heartbeat.
+
+Groove BVFunkIntro
+  Bass Sequence {1 4 1 90 * 4}
+  DefGroove BVFunkIntro
+
+Groove BVFunk
+  Bass Sequence {1 4 1 90 * 4}
+  DefGroove BVFunk
+  
+Groove BVFunkSus
+  Bass Sequence {1 4 1 90 * 4}
+  DefGroove BVFunkSus
+  
+Groove BVFunkHorns
+  Bass Sequence {1 4 1 90 * 4}
+  DefGroove BVFunkHorns
+  
+Groove BVFunkIntro
+Cresc mp mf 2
+1        Bb
+2        Bb/D
+
+Repeat
+Groove BVFunk
+Volume m
+
+3        Bb
+4        Gm
+5        Cm
+6        F7
+
+Cresc mf 4
+
+7        Bb
+8        Gm
+9        Eb
+10       F7
+
+Decresc mp 8
+
+11     Bb/D
+12        /
+13       Gm
+14       Eb      /     F7
+
+15       Bb
+16       Gm
+
+Groove BVFunkHorns
+
+RepeatEnding
+
+17       Cm
+18       F7
+
+RepeatEnd
+
+19       Cm
+20       F7
+
+Groove BVFunk
+
+Volume m
+21       Bb
+22       Gm
+23       Cm      /     F7
+24        /
+
+Volume mf
+25       Bb
+26       Gm
+27       Cm
+28       F7
+
+Groove BVFunkSus
+Decresc m 8
+
+29       Bb
+30       Gm
+31       Cm      /     F7
+32        /
+
+33       Bb
+34       Gm
+35       Cm      /     F7
+36       Eb      /     F7
+
+/// This is a DS/Coda ... Lazy today so just doing a copy/paste
+
+/// The DS part
+
+Groove BVFunk
+Volume m
+3        Bb
+4        Gm
+5        Cm
+6        F7
+
+Cresc mf 4
+
+7        Bb
+8        Gm
+9        Eb
+10       F7
+
+Groove BVFunkSus
+Decresc mp 8
+
+11     Bb/D
+12        /
+13       Gm
+14       Eb      /     F7
+
+15       Bb
+16       Gm
+
+// Skip 1st ending
+
+Groove BVFunkHorns
+
+19       Cm
+20       F7
+
+// TO CODA would be here
+
+Decresc ppp 4
+
+37       Bb
+38        /
+
+Groove BVFunkEnd
+
+39        /
+40        /  z!
+
+

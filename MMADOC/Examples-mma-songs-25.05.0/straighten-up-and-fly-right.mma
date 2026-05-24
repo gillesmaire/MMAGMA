@@ -1,0 +1,122 @@
+// Straighten Up And Fly Right
+
+Tempo $(2 * 65)
+Keysig Ab
+
+Groove Metronome2-4
+ z * 2
+ 
+Groove SwingIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Octave 5
+    Articulate 90
+    Harmony OpenBelow
+    Volume ff
+    Begin Riff
+        <Grace>16g;8 !^a;;;; <grace>16g;8 !^ a;;;;
+        <Grace>16d#+;8 !^e+;a;;; <grace>16d#+;8 !^ e;a;;;
+        8 ^! a+;16g+;f+;8e+;c+; 8 !^ b;4 !^;8a&;
+        4 ^^b&;8 ^^ bn;8+4 ^^ b&;
+    End
+End
+
+Cresc mf f 3
+
+1         Ab      /    Ab7
+2       Bbm7      / Bbm7b5
+3        Fm7      / Abm7b5
+4       Bbm7      /   Bbm6
+
+Groove Swing
+
+Volume p
+
+5         Ab      /    Ab7
+6         Db      /     E7
+7         Ab      /     Fm    Fm7
+8         C7      /    Eb7
+
+Groove SwingWalkPlus
+
+9         Ab      /    Ab7
+10        Db      /     E7
+11        Ab      /     Fm    Fm7
+12      Bbm7      /    Eb9
+
+Repeat  /// for "bridge section
+
+Groove SwingSus
+
+Repeat  /// for 8 bars
+
+Cresc mp f 2
+
+13       Ab6      
+14       Db6
+
+Decresc m 2
+
+15       Ab6
+16      Bbm7      Eb9
+
+Groove SwingPlusSus
+
+17       Ab6
+18       Db6
+19       Ab6
+
+Groove SwingWalkSus
+
+RepeatEnding
+
+20        E9      /    Eb9
+
+RepeatEnd
+
+21       Eb9    Eb7    Ab6
+
+Groove Swing
+Volume mf
+
+22        C7
+23         /
+24        F7
+25        F9    Gb9     F9
+
+Groove SwingPlus
+Cresc f 4
+
+26       Bb6
+27       Bb9      /      /    Bb7
+28       Eb9
+29      Bbm7     E9    Eb9
+
+Groove Swing
+Decresc m 4
+
+30       Ab6
+31       Db6
+32       Ab6
+33      Bbm7      /    Eb9
+
+Groove SwingWalkPlus
+
+34       Ab6
+35       Db6
+
+RepeatEnding
+
+36       Ab6     Fm
+37       Eb9    Eb7    Ab6   Eb+
+
+RepeatEnd
+
+Groove SwingEnd
+Decresc mp 2
+
+36       Ab6     Fm
+37       Eb9    Eb7    Ab6  
+
+

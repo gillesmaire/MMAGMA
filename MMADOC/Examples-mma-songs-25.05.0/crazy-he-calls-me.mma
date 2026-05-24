@@ -1,0 +1,107 @@
+// Crazy He Calls Me (Billie Holiday, 1949)
+
+Tempo 80
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+  
+Begin Solo
+     Voice Vibraphone //Piano2
+     Octave 5
+     Articulate 110
+     Harmony OpenBelow
+     Volume F
+     Begin Riff
+         8f+;d+;e+;c+; 8d+;4.a;
+         8d+;b;c+;a; 4.b;8f;
+         43c+;b;g;2e;
+         1c;
+     End
+End
+
+Groove SlowBluesIntro
+Swell pp m 4
+
+1        F6
+2       Dm7
+3       Gm7
+4     C9sus
+
+Repeat
+Groove SlowBlues
+Volume m
+
+5       FM7      /    Gm7
+6       Am7      /    Gm7
+7       FM9      / Bb9#11
+8       Am7      /     D9
+
+Groove SlowBluesFill
+Volume mp
+
+9       Gm7      /  C9#11 Bbdim7
+10      Am7      /     D7
+11      Gm7      /   D7b9
+12      Gm7      /   C7b9
+
+Groove SlowBlues
+Cresc f 4
+
+13      FM7      /    Gm7
+14      Am7      /    Gm7
+15      FM9      / Bb9#11
+16      Am7      /     D9
+
+Groove SlowBluesWalk4
+Volume m
+
+17      Gm7      /  C9#11 Bbdim7
+18      Am7      /     D7
+19      Gm7      /  C13b9
+20       F6
+
+Groove SlowBluesSus
+Volume mp
+
+21     Bbm7      /    Eb7
+22     AbM7      /    Fm7
+23      Dm9   G7#5
+24   C6(add9)      /   A7b9
+
+Groove SlowBluesWalk4Sus
+Volume m
+
+25      Dm9      /   G7b9
+26      Em7      /    Am7
+27      Dm7      /     G9
+28      Gm9      /    C13
+
+Groove SlowBlues
+
+29      FM7      /    Gm7
+30      Am7      /    Gm7
+31      FM9      / Bb9#11
+32      Am7      /     D9
+
+Groove SlowBluesFill2
+Decresc mp 2
+
+33      Gm7      /  C9#11 Bbdim7
+34      Am7      /     D7
+
+RepeatEnding
+Groove SlowBluesEnd
+Seq 1
+35      Gm7      /  C13b9
+Groove SlowBluesIntro
+Seq 4
+36       F6      / C9sus
+
+RepeatEnd
+Groove SlowBluesEnd
+Decresc pp 2
+
+35      Gm7      /  C13b9
+36       F6      z!
+

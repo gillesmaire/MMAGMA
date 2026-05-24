@@ -1,0 +1,82 @@
+// Dolores (1941, Bing Crosby)
+
+Tempo 108
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+  
+Groove FoxTrotIntro
+Begin Solo
+    Voice Jazzguitar
+    Octave 6
+    Harmony 3Below+8Below
+    Articulate 90
+    Volume f
+    Begin Riff
+        8f;;;; 4;;
+        8a;;;; 4;;
+        8g;;;; 4;a;
+        1c+;
+    End
+End
+
+Swingmode On
+1         F
+2        Dm
+3        Gm
+4        C7
+
+Groove FoxTrot
+
+5         F
+6         /
+7         /      /  F#dim
+8        C7
+
+Groove FoxTrotPlus
+
+9       Gm7      /     C9
+10       Gm     C7
+11        /      /     C+
+12        F
+
+Groove FoxTrotSus
+
+13       A7      /     D7
+14       G7      /  C#dim
+15       Dm      /    Dm7
+16      Dm6      /     E7
+
+Groove FoxTrot
+
+17        F
+18        /
+19        /      /  F#dim
+20       C7
+
+Groove FoxTrotPlus
+
+21      Gm7      /     C9
+22       Gm     C7
+23        /      /     C+
+24        F
+
+Groove FoxTrotSus
+
+25       A7      /     D7
+26       G7      /  C#dim
+27       Dm      /    Dm7
+28      Dm6
+
+Groove FoxTrotSusPlus
+
+29        F
+30       D7
+
+Groove FoxTrotEnd
+
+31      Gm7      /     C7
+32        F      /     z!
+
+

@@ -1,0 +1,95 @@
+// How Deep Is The Ocean (Irving Berlin, 1932)
+
+Tempo 90
+Keysig C minor
+
+Groove Metronome2-4
+   z * 2
+   
+Begin Solo
+   Voice JazzGuitar
+   Octave 5
+   Harmony 3Below
+   Articulate 98
+   Begin Riff
+       4r;g;43g;f;e;
+       4g;2.;
+       4r;f;43f;e;d;
+       2e;g;
+   End
+End
+
+Groove GuitarBalladSusIntro
+
+1     Eb/Bb
+2        F9
+3       Bb7
+4        Eb      /   G7#5     G7
+
+Repeat
+
+Groove GuitarBalladSus
+
+5        G+/B
+6      CmM7/B
+7    Cm7/Bb
+8     Am7b5
+
+Groove GuitarBallad1Sus
+
+9       Gm7
+10    Am7b5      /   D7b9
+11      Gm7
+12      Fm7      /    Bb7
+
+Groove GuitarBallad
+
+13      Eb7
+14     Bbm7      /    Eb7
+15      Ab7      /      /   Ebm7
+16      Ab7
+
+Groove GuitarBallad1
+
+17       F7&9
+18      /
+19      Bb7#5  Bb7
+20      /   /   G7/B
+
+Groove GuitarBalladSus
+
+21       Cm
+22     G+/B
+23   Cm7/Bb
+24    Am7b5
+
+Groove GuitarBallad1Sus
+
+25      Gm7
+26    Am7b5      /   D7b9
+27      Gm7
+28      Fm7      /    Bb7
+
+Groove GuitarBallad
+
+29     Bbm7      /    Eb7
+30    Gm7b5      /   C7b9
+31      Fm7
+32     Abm7      /    Db7
+
+Groove GuitarBallad1
+
+33    Eb/Bb
+34      Cm7      /     F9
+
+Repeatending
+
+35      Fm7      /    Bb7
+36       Eb      /    G7
+
+RepeatEnd
+
+Groove GuitarBalladEnd
+
+35      Fm7      /    Bb7
+36       Eb      /    /  z!

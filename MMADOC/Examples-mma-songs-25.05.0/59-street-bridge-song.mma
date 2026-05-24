@@ -1,0 +1,112 @@
+// The 59 Street Bridge Song (Paul Simon 1966)
+
+Tempo 124
+KeySig Bb
+
+Groove Metronome2-4
+   z * 2
+   
+Groove FolkBalladIntro
+
+Begin AllGrooves
+   Arpeggio Voice JazzGuitar
+   Bass Voice FretlessBass
+End
+
+Begin Solo
+    Voice Piano1
+    Volume f
+    Articulate 110
+    Octave 6
+    Begin Riff
+         4r;eg;df;d;
+         8ce;4f;2+8d;
+         4r;eg;df;d;
+         8e;4f;2+8d;
+    End
+End
+
+Swell mp mf 4
+
+1        Eb      /     Bb
+2    Cm7sus      /     Bb
+3        Eb      /     Bb
+4    Cm7sus      /     Bb
+
+Repeat
+Groove FolkBallad
+Volume m
+5        Eb      /     Bb
+6    Cm7sus      /     Bb
+7        Eb      /     Bb
+8    Cm7sus      /     Bb
+
+Groove FolkBalladPlus
+Cresc f 2
+
+9        Eb      /     Bb
+10   Cm7sus      /     Bb
+11       Eb      /     Bb
+12   Cm7sus      /     Bb
+
+Groove FolkBallad
+Volume m
+
+13       Eb      /     Bb
+14      Cm7      /     Bb
+
+Groove FolkBalladSus
+Cresc mp f 4
+
+15       Eb      /     Bb
+16   Cm7sus      /     Bb
+17       Eb      /     Bb
+18      Cm7      /     Bb
+
+Groove FolkBalladSusPlus
+Volume mf
+
+19       Eb      /     Bb
+20   Cm7sus      /     Bb
+21       Eb      /     Bb
+22   Cm7sus      /     Bb
+
+Groove FolkBalladSus
+Volume m
+
+23       Eb      /     Bb
+24   Cm7sus      /     Bb
+
+Groove FolkBallad
+
+25       Eb      /     Bb
+26   Cm7sus      /     Bb
+27       Eb      /     Bb
+28      Cm7      /     Bb
+
+Groove FolkBalladPlus
+Cresc f 4
+
+29       Eb      /     Bb
+30      Cm7      /     Bb
+31       Eb      /     Bb
+32   Cm7sus      /     Bb
+
+Groove FolkBallad
+Volume m
+
+33       Eb      /     Bb
+34   Cm7sus      /     Bb
+
+RepeatEnd
+
+// This is the 8bar ending
+Groove FolkBalladSus
+Decresc mp pppp 8
+Repeat
+35        Eb      /     Bb
+36    Cm7sus      /     Bb
+37        Eb      /     Bb
+38    Cm7sus      /     Bb  z
+Groove FolkBallad / FolkBalladEnd /
+Repeatend

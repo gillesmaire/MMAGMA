@@ -1,0 +1,112 @@
+// No Greater Love (Isham Jones, 1936)
+
+Tempo 90
+Keysig Bb
+Tempo 90
+
+Groove Metronome2-4
+  z * 2
+  
+Groove MellowJazzIntro
+Begin Solo
+    Voice JazzGuitar
+    Volume F
+    Octave 5
+    Articulate 110
+    Harmony 3Below
+    Begin Riff
+        4d+;c+;4.b;8c+;
+        2a;c+;
+        8d+;c+;b;a;4b;c+;
+        2f;
+    End
+End
+
+Swell mp m 4
+1        Bb
+2         F
+3        Bb
+4         F   z
+
+
+Repeat
+Groove MellowJazz
+Volume m
+
+5        Bb
+6       Eb7
+7        D7      /    Ab9
+8        G7
+
+Groove MellowJazzPlus
+Volume mp
+
+9        C7
+10        /
+11      Cm7
+12       F7
+
+Groove MellowJazz
+Volume m
+
+13       Bb
+14      Eb7
+15       D7      /    Db9
+16       G7
+
+Groove MellowJazzPlus
+Volume mp
+
+17       C7
+18    Cm7/F      /     F7
+19       Bb
+20        /
+
+Groove MellowJazzSus
+Cresc p mf 4
+
+21     D7b9
+22       Gm
+23       D7&9
+24       Gm
+
+Groove MellowJazzSusPlus
+Volume m
+
+25     D7b9
+26      Gm7
+27       C7      / C7b5/Gb
+28       F7
+
+Groove MellowJazzSus
+Cresc mp mf 4
+
+29       Bb
+30      Eb7
+31       D7      /    Ab9
+32       G7
+
+Groove MellowJazz
+Volume m
+
+33       C7
+34    Cm7/F      /     F7
+
+RepeatEnding
+Decresc mp 2
+
+35      Bb6      /    Gb9
+
+Groove MellowJazzFill
+
+36       F7
+
+
+RepeatEnd
+Groove MellowjazzEnd
+Decresc ppp 2
+
+35      Bb6      /    Gb9
+36      Ab9      /   BbM7 z
+
+

@@ -1,0 +1,72 @@
+// Limbo Jazz (Duke Ellington, 1962?)
+
+Tempo 156
+Keysig Ab
+
+Groove Metronome2-4
+  z * 2
+  
+Groove CalypsoIntro
+Begin Solo
+    Voice Piano1
+    Octave 5
+    Volume fff
+    Articulate 60
+    Harmony 8Above+OpenAbove
+    Begin Riff
+        8a;16r;16+8a;8r;8r;8a;8a;
+        8a;r;a;r;2;
+        8a+;16r;16+8a+;8r;8r;8a+;8a+;
+        8a+;r;a+;r;2;
+    End
+End
+Swingmode On // NOTE: this will ONLY effect the above RIFF notes, and only until a new GROOVE.
+Cresc mp mf 4
+1        Ab
+2         /
+3         /
+4         /
+
+Repeat 
+Groove Calypso
+Volume m
+
+5       Eb7
+6       Ab6
+7         /
+8       Eb7
+
+Groove CalypsoPlus
+Volume mf
+
+9         /
+10        /
+11        /
+12      Ab6
+
+Groove CalypsoSus
+Cresc mp mf 4
+
+13        /
+14        /
+15    Cm7b5      /     F7
+16     Bbm7
+
+Groove CalypsoSusPlus
+Volume m
+
+17      Gb7
+18      Ab6      /     F7
+
+RepeatEnding 3
+
+19      Bbm      /    Eb7
+20      Ab6
+
+RepeatEnd
+Groove CalypsoEnd
+Decresc ppp 2
+21      Bbm      /    Eb7
+22      Ab6      z!
+
+

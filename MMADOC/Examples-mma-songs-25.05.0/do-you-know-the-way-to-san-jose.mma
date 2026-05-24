@@ -1,0 +1,123 @@
+// Do You Know The Way To San Jose (Dionne Warwick, 1968)
+
+Tempo 130
+Keysig F
+
+Groove Metronome2-4
+    z * 2
+    
+Groove PopBalladIntro
+
+/// Change the bass line in ALL the tracks
+Begin AllGrooves NoWarn=True Bass
+    Voice SlapBass1
+    Volume ffff
+    Articulate 85
+    Octave 3
+    Sequence B11
+End
+
+Begin Solo-Bass
+    Voice $_Bass_Voice
+    Volume f
+    Articulate 80
+    Octave 3
+End
+Begin Solo-Voice
+    Voice VoiceOohs
+    Articulate 110
+    Harmony OpenBelow
+    Octave 4
+    Volume mf
+End
+
+//Replace the bass line with a solo version
+Bass Sequence -
+
+Begin Solo-Bass Riff
+    4f;r;f;
+    4f;r;f;8r;f;
+    4f;8r;f;4;
+    4f;8r;f;4f;
+End
+
+//Replace the bass line with a solo version
+Bass Sequence -
+
+Cresc mp ff 4
+AutoSoloTracks Solo-Voice
+
+1         F
+2         /
+3         /   { 4a+;g+;8f+;4e+;d+~;}
+4         /   { ~ 4c+;8b;4a;g; }
+
+AutoSoloTracks Solo-Bass
+
+Repeat
+Groove PopBallad
+Volume m
+
+5         F
+6       Bb6
+7         F
+8     C7sus
+
+Groove PopBallad1
+Volume mf
+
+9        C7
+10        F
+11      Bb6
+12        F
+
+Groove PopBallad
+
+13    C7sus
+14       C7
+15      Am7
+16       Dm
+
+Groove PopBalladSus
+Volume m
+
+17      Am7
+18       Dm
+19       Am
+20   F#m7b5
+
+Groove PopBallad
+Cresc f 4
+
+21      Gm7
+22        C
+23      Gm7
+24        C
+
+25        /      z  {4r;2.c;}
+26        /         {4r;2.c;}
+27        /         {4r;2.c;}
+28        /         {4r;2.c;}
+
+29        /         {4r;c;;;}
+
+RepeatEnd
+
+Decresc pppp 12
+AutoSoloTracks Solo-Voice
+
+Repeat
+Groove PopBallad
+30        F
+31      Bb6
+
+32        F       { 4a+;g+;8f+;4e+;d+~;}
+Repeatending 2
+33        /       { ~ 4c+;8b;4a;g; }
+
+RepeatEnd
+Groove PopBalladEnd
+33       /  z!    
+
+
+

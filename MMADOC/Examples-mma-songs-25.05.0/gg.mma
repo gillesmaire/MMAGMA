@@ -1,0 +1,88 @@
+// Fernando (ABBA, 1976)
+
+Tempo 102
+Keysig A
+Transpose Down Maj 3  // to 'F'
+
+Set RptCount 1
+Label SIGN   // to jump via DS
+
+Repeat
+Groove BossaNova
+
+1         A
+2         /
+3         /
+4         /
+
+5       F#m
+6         /
+7        Bm
+8         /
+
+9         /
+10        E
+11        /
+
+RepeatEnding $RptCount NoWarn
+
+Truncate 2
+12        /
+13        A
+
+RepeatEnd
+Truncate 2
+14        /
+15        A
+16        A
+
+17       E7
+18        /
+19        A
+20        /
+
+21       E7
+22        /
+23        A
+24      A7/G  /// score says A/G
+
+25       F#
+26       B7
+27        /
+28       E7
+
+29        /
+30        A
+
+If Def TOCODA
+  Goto Coda
+endif
+
+31        /
+32       E7
+
+33        /
+34        D
+35        /
+36        A
+
+37        /
+38       E7
+39        /
+40        A
+
+Set TOCODA
+Set RptCount 0 
+Goto SIGN
+Label CODA
+
+
+Decresc ppp 8
+Repeat
+41        A
+42       E7
+43        /
+44        A
+RepeatEnd
+
+

@@ -1,0 +1,134 @@
+// Dont Know Why (Nora Jones, 2003)
+
+Tempo 88
+Keysig Bb
+
+Groove Metronome2-4
+   z * 2
+   
+Groove FolkyJazzGuitarIntro
+
+Begin Solo
+    Voice Piano1
+    Volume ff
+    Articulate 90
+    Harmony OpenAbove
+    Octave 4
+    Begin Riff
+        4a;8b;4a&;8b;f;d;
+        4r;8g;4f#;8d;f;8+4fn~;
+        ~ 8f;4.en;8;8+8e& ~;
+        ~ 4f;1g~;
+    End
+End
+
+Swell mp mf 4
+1      BbM7      /    Bb7
+2      EbM7      /     D7
+3       Gm7      /     C7
+4    F7sus       /    F11
+
+Label DS
+
+Groove FolkyJazzGuitar
+Volume m
+
+5      BbM7      /    Bb7
+6      EbM7      /     D7
+7       Gm7      /     C7
+8     F7sus      /     Bb    F11
+
+Groove FolkyJazzGuitarPlus
+Volume mf
+Arpeggio Volume -30%
+
+9      BbM7      /    Bb7
+10     EbM7      /     D7
+11      Gm7      /     C7
+12    F7sus      /     Bb    Bb7
+
+If Def DS
+  Goto CODA
+Endif
+
+Groove FolkyJazzGuitar
+Volume m
+
+13      Gm7      /     C7
+14    F7sus      /     Bb
+
+Repeat
+
+Groove FolkyJazzPiano
+Cresc m mf 4
+
+15     BbM7      /    Bb7
+16     EbM7      /     D7
+17      Gm7      /     C7
+18    F7sus      /     Bb    F11
+
+Groove FolkyJazzPianoPlus
+
+19     BbM7      /    Bb7
+20     EbM7      /     D7
+21      Gm7      /     C7
+22    F7sus      /     Bb
+
+Groove FolkyJazzPianoSus
+Volume m
+
+23      Gm7
+24      C13
+25        F      /     F7
+26        /
+
+Groove FolkyJazzPianoSusPlus
+Volume mp
+
+27      Gm7
+28      C13
+29       F7      /      /   Bb/D
+
+Volume mf
+
+RepeatEnding
+30        /    F/C
+
+RepeatEnd
+
+31        /
+
+
+Groove FolkyJazzGuitarSus
+Volume m
+
+32     BbM7      /    Bb7
+33     EbM7      /     D7
+34      Gm7      /     C7
+35    F7sus
+
+36     BbM7      /    Bb7
+37     EbM7      /     D7
+38      Gm7      /     C7
+39    F7sus
+
+Set DS
+Goto DS
+
+////////
+
+Label CODA
+
+Groove FolkyJazzGuitarSus
+Volume mp
+
+40      Gm7      /     C7
+41    F7sus      /     Bb  Bb7/F
+
+
+Groove FolkyJazzGuitarEnd
+Decresc ppp 2
+
+42      Gm7      /     C7
+43    F7sus      /     Bb  z!
+

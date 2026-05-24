@@ -1,0 +1,129 @@
+// Oh Lady Be Good (Gershwin, 1924)
+
+Tempo $(100 * 2)
+Keysig G
+
+Groove Metronome2-4
+   z * 2
+   
+/// This creates an Aria track for out pretend guitar player.
+/// Note the "off" command ... this (imagine!) turns it off
+/// To use we just insert some "Aria On" and "Aria Off" commands
+///   in the song.
+
+Begin Aria
+   Voice CleanGuitar  // Same as the strumming
+   Rskip 5          
+   Octave 5     
+   Range 1
+   Volume m         
+   Articulate 100
+   Scaletype Chord
+   // The direction setting says:
+   //    1st time add 2 to the current pitch point
+   //    2nd time, subtract 2
+   //    3rd time, pick a rnd value -1, 0 or 1
+   //    4th time, stay on the same point
+   Direction 2 -2 rr 0
+   // The sequence sets 4 quarters and overlays 2 half notes
+   Sequence  {1 1 90 * 4; 1 1 90 * 2}
+   Rskip 50   /// skip half. Works with the 1/4 and 1/2 note overlay pattern
+   RVolume  20
+   RTime 100
+   RDuration 50
+   Off
+End
+
+Groove GypsyJazzIntro
+
+Begin Solo
+    Voice CleanGuitar
+    Harmony OpenBelow
+    Articulate 120
+    Octave 5
+    Volume f
+    Rtime 5
+    Rvolume 5
+    Begin Riff
+        2d+;4c+;b;
+        2e+;4d+;b;
+        2c+;a;
+        1d+;
+    End
+End
+
+1         G
+2        Em7
+3        Am
+4        D7
+
+
+Repeat
+
+Groove GypsyJazz
+
+5         G      /     D7      G
+6        C7
+7         G
+8         /      /  G#dim
+
+Aria On
+
+9        D7
+10        /
+11        G
+12        /      /     G7
+
+Aria Off
+
+13        /      /     D7      G
+14       C7
+15        G
+16        /      /  G#dim
+
+Aria On
+
+17       D7
+18        /
+19        G
+20        /      /     G7
+
+Aria Off
+Groove GypsyJazzSus
+
+21        C
+22       D7
+23        C      /      G
+24        /      /     D7
+
+Aria On
+
+25       Em      /     B+
+26       Em      /     A7
+27      Am7      /     D7
+28       Bm      /    Am7   A7b9
+
+Aria Off
+
+29        G      /     D7      G
+30       C7
+31        G
+32        /      /  G#dim
+
+Groove GypsyJazz
+
+33       D7
+34        /
+
+RepeatEnding
+
+35        G      /     C7
+36        G            D7
+
+RepeatEnd
+Groove GypsyJazzEnd
+
+35        G      /     C7
+36        G
+
+

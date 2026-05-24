@@ -1,0 +1,105 @@
+// Who Cares (Gershwin, 1931)
+
+Tempo $(150 * 2 )
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+  
+Groove BroadwayIntro
+
+Begin Solo
+    Voice Strings
+    Octave 5
+    Volume F
+    Harmony 3Below
+    Articulate 99
+    Rtime 5
+    Begin Riff
+        2c+;4b;a;
+        2b;a;
+        1+2g~;
+    End
+End
+
+1         C
+2        Am
+3        Dm
+4        G7
+
+Repeat
+Groove Broadway
+Cresc m mf 8
+
+5       CM7
+6         /      /    B7+
+7       E7+
+8         /      /      /     E7
+
+Groove Broadway2
+
+9       A7+
+10        /
+11       Fm
+12        /
+
+Groove Broadway
+
+13        C      /     Dm      C
+14        /      /  Cdim7
+15      Dm7      /      /     Em
+16        /      /     G7
+
+Groove Broadway1
+Volume f
+
+17        C      /     G7    Am7
+18        /
+19      Ab9
+20      G+7      /     G7
+
+Groove BroadwaySus
+Volume mf
+
+21      CM7
+22        /      /    B7+
+23      E7+
+24        /      /      /     E7
+
+Groove Broadway2Sus
+Decresc m 8
+
+25       Am
+26        /
+27       D9
+28        /      /   D7b5    Ab7
+
+Groove Broadway2
+
+29        C
+30        /      /   Cdim
+31      Dm7      /     G6
+32        /     G7    A7+
+
+Groove BroadwaySus
+
+33        /      /    Dm7
+34        /      /     G7
+
+RepeatEnding 2
+
+Groove BroadwayFill
+Cresc mf 2
+
+35        C
+36        C      /     G7
+
+
+RepeatEnd
+
+Groove BroadwayEnd
+Decresc pppp 2
+
+37        C      /    Ab9     G9
+38        C      z!
+

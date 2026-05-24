@@ -1,0 +1,64 @@
+// Joyces Samba (Adderly, 1962)
+
+Tempo 130
+
+Groove Metronome2-4
+  z * 2
+  
+Repeat
+Groove Samba
+1      z  C7
+2     Cdim7
+3       Am7
+4        D7
+
+Groove SambaPlus
+5       Gm7
+6        C7
+7        F7
+8         /
+
+Groove Samba
+9       Dm7
+10       G7
+11       C7
+12        /
+
+Groove SambaPlus
+13      Fm7
+14      Bb7
+15       Eb
+Groove SambaFill
+16    Ddim7      /    G+7
+
+Groove Samba
+17       C7
+18    Cdim7
+19      Am7
+20       D7
+
+Groove SambaSus
+21      Gm7
+22       C7
+23       F7
+24        /
+
+Groove SambaSusPlus
+25      Dm7
+26       G7
+27    Edim7
+28       A7
+
+Groove SambaSus
+29       D7
+30       G7
+Repeatending
+31        C      /   Am7
+Groove SambaSusFill
+32      Dm7      /    G7
+Repeatend
+Groove SambaEnd
+31       C
+32       / z!
+
+

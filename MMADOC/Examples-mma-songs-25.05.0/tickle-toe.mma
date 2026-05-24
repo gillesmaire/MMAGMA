@@ -1,0 +1,87 @@
+// Tickle Toe (Lester Young, 1940)
+
+Keysig Db
+Tempo 180
+
+Groove Metronome2-4
+  z * 2
+  
+Repeat
+
+Groove Swing2
+Begin AllGrooves Arpeggio
+  Rskip 10 30
+  SeqRnd Off
+End
+
+1       Bbm      /     F7
+2       Bbm      /     F7
+3       Bbm
+Groove Swing2Plus
+Seq 1
+4       Fm7      /    Bb7
+
+Groove Swing2
+
+5       Ebm      /    Bb7
+6       Ebm      /    Bb7
+7       Ebm
+Groove Swing2Plus
+Seq 1
+8      Abm7      /    Db7
+
+Groove Swing2
+
+9        Gb
+10   Dbdim7
+11     DbM7
+12      Fm7    Bb7
+
+13      Eb7
+14     Bbm7      /    Eb7
+15      Ab7
+16       F7
+
+Groove Swing2
+
+17      Bbm      /     F7
+18      Bbm      /     F7
+19      Bbm
+Groove Swing2Plus
+Seq 1
+20      Fm7      /    Bb7
+
+Groove Swing2
+
+21      Ebm      /    Bb7
+22      Ebm      /    Bb7
+23      Ebm
+Groove Swing2Plus
+Seq 1
+24     Abm7      /    Db7
+
+Groove Swing2
+
+25       Gb
+26   Dbdim7
+27     DbM7
+28      Bb7
+
+Groove Swing2Sus
+Seq 1
+29      Eb7
+30     Ebm7      /    Ab7
+
+Repeatending
+Groove Swing2Plus
+Seq 1
+31       Db
+32       Cm7&5  / F7
+
+RepeatEnd
+Groove SwingEnd
+
+31       Db
+32       /  z!
+
+

@@ -1,0 +1,101 @@
+// Am I That Easy To Forget?  (1958)
+
+Tempo 80
+Keysig  Eb
+
+Groove Metronome2-4
+  z * 2
+
+Groove DescendingJazzPlus
+Arpeggio Sequence A4 / / A8
+DefGroove DescendingJazzPlus
+
+Groove DescendingJazzSusPlus
+Arpeggio Sequence A4 / / A8
+DefGroove DescendingJazzSusPlus
+
+
+Groove DescendingJazzIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Volume f
+    Articulate 90
+    Harmony OpenBelow
+    Octave 5
+    Begin Riff
+        8ee;g;b;g; b;g;b;g;
+        4c+;b;a;g;
+        2f;b;
+        4d+;
+    End
+End
+
+Swell p mf 4
+
+1        Eb/G
+2        Cm/G
+3        Fm / B&7
+4        /   z
+
+Repeat
+Groove DescendingJazz
+Volume m
+
+5        Eb
+6       Eb7
+7        Ab
+8         /
+
+Groove DescendingJazzPlus
+Cresc mf 2
+
+9        Eb
+10        /
+11      Bb7
+12        /
+
+Groove DescendingJazz
+Volume f
+
+13       Eb
+14      Eb7
+15       Ab
+16        /
+
+Groove DescendingJazzSus
+Decresc  m 2
+
+17       Eb
+18      Bb7
+19       Eb      /     Ab
+20       Eb      z    Eb7
+
+Groove DescendingJazzSusPlus
+Volume mf
+
+21       Ab
+22        /
+23       Eb
+24        /      /   Bbm7    Eb7
+
+Groove DescendingJazz
+Decresc mp 2
+
+25       Ab
+26      Bb7
+
+RepeatEnding
+Decresc p 2
+
+27       Eb      /      /   Cdim
+28      Bb7      z
+
+RepeatEnd
+
+Groove DescendingJazzEnd
+Decresc ppp 2
+
+29       Eb      /     Ab
+30       Eb     E7     Eb  z!
+

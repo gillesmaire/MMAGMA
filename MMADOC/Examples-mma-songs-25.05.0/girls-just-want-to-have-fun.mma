@@ -1,0 +1,143 @@
+// Girls Just Want To Have Fun (Cyndi Lauper, 1983)
+
+Tempo 122
+
+Groove Metronome2-4
+   z * 2
+
+Set Synth VoiceOohs
+
+Groove 60sRock
+AllGrooves Arpeggio Voice $Synth
+
+Begin Solo
+     Voice $Synth
+     Octave 5
+     Harmony 3Below+8Below
+     Articulate 70
+     Volume ff
+End
+
+Swell p ff 8
+Repeat
+Groove 60sRockIntro
+1         G          {<grace>16b;8c+;b;r;a;2b;}
+2         /          {<grace>16b;8c+;b;r;a;4b;a;}
+3         Em7        {<grace>16b;8c+;b;r;a;2b;}
+4         /  /  C  D {<grace>16b;8c+;b;r;a;4g;a;}
+
+Repeatend
+
+Groove 60sRockPlus
+Repeat
+Label Sign
+Volume m
+
+5         G
+6         /
+7        Em
+8         /
+
+Volume mf
+
+9         C
+10        /
+11       Em      /      D
+12        C
+
+Volume m
+
+if def CODA  // Doing the DS, skip the 1st ending
+ goto Part2
+endif
+
+RepeatEnding
+
+13       Em      /      D
+14        G
+
+Groove 60sRockSus
+Decresc mp 3
+
+15        /                          {<grace>16b;8c+;b;r;a;4b;a;}
+16      Em7                          {<grace>16b;8c+;b;r;a;2b;}
+17        /      /      C      D     {<grace>16b;8c+;b;r;a;4g;a;}
+
+Groove 60sRock
+
+RepeatEnd
+Label Part2
+
+Groove 60sRock
+
+Volume m
+
+18       Em      /      D
+19        G
+20        /
+
+Groove 60sRock1Plus
+Volume mf
+
+21       Em
+22        /
+23        G
+24        /
+
+Volume m
+
+25       Em      /      D
+26        C
+
+Groove 60sRock1Sus
+
+27       Em      /      D
+28        G
+
+Decresc mp 3
+
+29        /                {<grace>16b;8c+;b;r;a;4b;a;}
+30      Em7                {<grace>16b;8c+;b;r;a;2a;}
+
+if def CODA
+  goto CODA
+endif
+31        /      /      C      D   {<grace>16b;8c+;b;r;a;4b;a;}
+
+set CODA
+goto SIGN
+
+// Coda
+Label Coda
+
+Groove 60sRock
+
+32        /      /      C      D {<grace>16b;8c+;b;r;a;4b;a;}  
+
+Decresc ppp 8
+Repeat
+
+Groove 60sRockSus
+
+33        G
+34       Em      /      C      D
+35        G
+36       Em      /      C      D
+
+37        G
+38       Em      /      C      D
+
+Repeatending
+
+39        G
+40       Em      /      C      D
+
+
+RepeatEnd
+
+Groove 60sRockEnd
+
+39        G
+40       Em      /      C      D
+
+

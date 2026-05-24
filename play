@@ -1,4 +1,4 @@
-# !/bin/sh
+# !/bin/sh -x
 file=`echo $1 | sed  "s/.mma$//"`
 if [ "x$2" != "x" ] ; then
     groove=`grep Groove  $file.mma | cut -f2 -d' '`

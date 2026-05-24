@@ -1,0 +1,110 @@
+// Youre Driving Me Crazy (Donaldson, 1930)
+
+Tempo 100
+Keysig A minor
+
+Groove Metronome2-4
+  z * 2
+  
+Groove SwingIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Octave 5
+    Volume FF
+    Articulate 140
+    Harmony OpenBelow
+    Begin Riff
+        8c+;a;f;8+2a;
+        4!c+;!;!;!;
+        1d+;
+        1c+;
+    End
+End
+SwingMode On
+
+Volume m
+
+1         F>-1
+2         Am
+3         Gm
+4        C7>2
+
+Repeat
+Groove Swing1
+Volume m
+
+5       FM7
+6       Am7      /     D7
+7       Gm7
+8        C7
+
+Groove Swing1Plus
+Cresc f 4
+
+9       Gm7
+10       C7
+11      FM7
+12      Gm7      /     C7
+
+Groove Swing1
+Volume m
+
+13      FM7
+14      Am7      /     D7
+15      Gm7
+16       C7
+
+Groove Swing1Plus
+Cresc ff 4
+
+17       G7
+18       C7
+19      FM7
+20    Bm7b5      /     E7
+
+Groove Swing1Sus
+Volume mp
+
+21      AM7      /   F#m7
+22      Bm7      /     E7
+23      AM7      /   F#m7
+24      Bm7      /     E7
+
+Groove Swing1PlusSus
+Volume m
+
+25      AM7      /   F#m7
+26      Bm7      /     E7
+27       A7      /     D7
+28      Gm7      /     C7
+
+Groove Swing1Sus
+
+29      FM7
+30      Am7      /     D7
+31      Gm7
+32       C7
+ 
+Groove SwingPlusSus
+Volume mf
+
+33       G7
+34       C7
+
+RepeatEnding
+
+Groove SwingFill
+
+35      FM7
+36       C7
+
+RepeatEnd
+
+Groove Swing1End
+Decresc pp 2
+
+37      FM7
+38        /  z!
+
+

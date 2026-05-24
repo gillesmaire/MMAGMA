@@ -1,0 +1,108 @@
+// Tishomingo Blues (Spencer Williams, 1917)
+
+Tempo 110
+Keysig  G
+
+Groove Metronome2-4
+   z * 2
+   
+Groove BluesIntro
+
+Begin Solo
+  Voice Trumpet
+  Volume f
+  Articulate 90
+  Harmony OpenBelow
+  Octave 5
+  Rtime 10
+  Rvolume 10
+  Begin Riff
+     8r;c+;;;b;4.a;
+     4c+;;b&;a;
+     4g;b&;a;g;
+     2d+;
+  End
+End
+
+SwingMode On
+Volume mf
+
+1        D7
+2         /   D7+ D7
+3        A7   Gdim7  A7  G7
+4        D7
+
+
+Repeat
+Groove Blues
+Volume m
+
+5        G7
+6         C
+7         G
+8        G7
+
+Groove Blues1
+
+9        C7
+10      Eb7      /      /     D7
+11        G
+12        /      /      / G#dim7
+
+Groove Blues
+Cresc f 4
+
+13     D7/A
+14       D7
+15        G
+16        /
+
+Groove BluesSus
+Volume ff
+
+17        D
+18       A7
+19        D      /      /     A7
+20        D
+
+Groove Blues1Sus
+Volume m
+
+21        G
+22        C
+23        G
+24       G7
+
+Groove BluesSus
+Cresc mf 4
+
+25        C
+26       C7
+27        B
+28        /
+
+Groove Blues1
+Decresc mp 4
+
+29        G
+30    B7/F#
+31       Em
+32      Eb7
+
+Groove Blues
+
+33      G/D
+34       D7
+35      G/D      /     D7
+
+RepeatEnding
+Groove BluesTripleL
+
+36        G G#dim7   D7/A     D7
+
+RepeatEnd
+Groove BluesEnd
+Seq 4
+Decresc ppp 1
+37        G     D7      G   z!
+

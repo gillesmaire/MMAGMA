@@ -1,0 +1,118 @@
+// (Meet the) Flintstones
+
+Tempo $(128 * 2 )
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+  
+Groove FastSwingIntro
+
+Begin Solo
+    Voice Piano1
+    Octave 4
+    Volume ff
+    Articulate 50
+    Harmony None 
+    Begin Riff
+        4f;;;;
+        2f;;
+        8c;d;e;f; d;e;f;g;
+        8e;f;g;a; f;g;a;b;
+    End
+End
+
+Swingmode On
+Swell mf fff 4
+Chord Volume Off
+Bass Volume Off
+1          F
+2          /
+Solo Octave 5
+3          z
+4          /
+
+Label Sign
+Repeat
+Groove FastSwing
+Volume m
+
+5        FM7
+6        Bb7
+7        Am7
+8       D7b9
+
+Groove FastSwingWalk
+Cresc f 2
+
+9        Gm7
+10       C11      /   C7b9
+
+RepeatEnding
+
+11     A7b13      /     D9
+12     G7b13      /     C9
+
+RepeatEnd
+
+13         F      /     Bb
+14         F
+
+Groove FastSwingSus
+Volume m
+
+15        A7
+16         /
+17        D7
+18         /
+
+Groove FastSwingWalkSus
+Volume mf
+
+19        G7
+20         /
+21        C7
+22         /
+
+Groove FastSwing
+Decresc m 2
+
+23       FM7
+24       Gm7
+25       Am7
+
+If Def ToCoda
+  Goto Coda
+Endif
+
+26      Bbm7      /    Eb7
+
+Groove FastSwingWalk
+
+27       Am7      /   Ab13
+28       Gm7      /  Gb7b9
+29        F6      /   D7b9
+30       Gm7      /   C7b9
+
+Set ToCoda
+Goto Sign
+
+Label Coda
+
+Groove FastSwingSus
+Decresc ff ppp 8
+
+31      BbM7      /      /    Eb7
+32       FM7      /   Ab13
+33       Gm7      /  Gb7b9
+34       FM7      /   Ab13
+
+35       Gm7      /  Gb7b9
+36       FM7      /   Ab13
+
+Groove FastSwingEnd
+
+37       Gm7      /   C7b9
+38        F6      z!
+
+

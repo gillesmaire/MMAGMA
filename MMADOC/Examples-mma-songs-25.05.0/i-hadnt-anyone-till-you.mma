@@ -1,0 +1,101 @@
+// I Hadnt Anyone Till You
+
+Tempo 100
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+  
+Groove SlowBluesIntro
+AllGrooves Chord-Sus Octave 4
+
+Begin Solo
+    Voice JazzGuitar
+    Volume f
+    Octave 5
+    Harmony OpenBelow
+    Articulate 120
+    Begin Riff
+       2.f;4g;
+       2.d;4f;
+       4g;2.a;
+       2.b;
+    End
+End
+
+Swell mf f 4
+
+1         F
+2        Dm
+3        Gm
+4        C7  /   D7
+
+
+Groove SlowBlues
+Volume m
+
+5       Gm7
+6       C13
+7        F6      /    Bb7
+8       Am7    Dm7
+
+Groove SlowBluesFill2
+Volume mf
+
+9       Am7
+10       D9
+11       G9
+12        /
+
+Groove SlowBlues
+Volume f
+
+13      Gm7
+14       C7      /  Em7b5     A7
+15      Dm7      /     A7
+16      Dm7      /  Bm7b5   E7b9
+
+Groove SlowBluesFill3
+Decresc m 4
+
+17      AM7      /   F#m7
+18      Bm7      /     E7
+19       A7      /     D9
+20       G7      /     C7
+
+Groove SlowBluesSus
+
+21      Gm7
+22        /      /    C13
+23       F6      /    Bb7
+24      Am7      /    Dm7
+
+Groove SlowBluesWalk4Sus
+Cresc mp mf 4
+
+25      Am7
+26       D9
+27       G9
+28        /      /    Cm7     F7
+
+Groove SlowBluesSus
+Volume f
+
+29     BbM7
+30   Eb9sus      /    Eb9
+31      FM7      /    E+7
+32    Am7b5      /   D7b9
+
+Groove SlowBlues
+Decresc m 2
+
+33      Gm7
+34        /      /    C13
+
+Groove SlowBluesEnd
+Decresc pp 2
+35       F6
+36        /      z!
+
+
+

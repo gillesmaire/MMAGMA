@@ -1,0 +1,139 @@
+// Flauta Cavaquinho E Violao
+// A nice CHORO song. I play it a bit on the slow side. And as a Rhumba :)
+// NOTE: The score I have is in 2/4 ... our groove is
+//       in 4/4. So, careful on truncated bars, etc.
+
+Tempo 110
+Keysig F
+
+Groove Metronome2-4
+   z * 2
+   
+Groove RhumbaIntro
+Begin AllGrooves Chord
+    Voice NylonGuitar
+    Volume +20%
+End
+
+Seq 4
+Truncate 2
+0         z
+
+Label DC
+Groove Rhumba
+Cresc p mf 4
+
+1        Gm
+2        Dm
+3        A7
+4        D7
+
+Groove RhumbaSus
+Volume mf
+
+5        Gm      /     A7
+6        Dm
+7        Bb      /     A7
+
+If Def FINE
+  Goto FINE
+Endif
+
+8        Dm
+
+LABEL DS
+
+Groove Rhumba1
+Cresc mp mf 4
+
+9        Dm
+10        /
+11        /
+12       A7
+
+Groove Rhumba1Sus
+Decresc m 4
+
+13        /
+14        /
+15        /
+16       Dm
+
+Groove Rhumba
+Volume f
+
+17        /
+18        /
+19       D7
+20       Gm
+
+Groove RhumbaSus
+Volume m
+
+21       D7
+22       Gm
+23       A7
+
+If Def Coda
+  Goto CODA
+Endif
+
+24       Dm
+
+Groove Rhumba3
+Cresc mp f 4
+
+25        F      /      E
+26       Gm      /     C7
+27       Gm      /     C7
+28        F
+
+Groove Rhumba3Sus
+Volume m
+
+29       A7
+30       Dm
+31       G9
+32       C7
+
+Groove RhumbaTriple
+Volume ff
+
+33        F      /  Fdim7
+Groove Rhumba
+34       C7
+Groove RhumbaTriple
+35        F      / F#dim7
+Groove Rhumba
+36       C7
+
+Groove RhumbaSus
+Volume m
+
+37       F7
+38       Bb
+39       A7
+40       D7
+
+Groove Rhumba
+Decresc mp 4
+
+41      Gm7      /     A7
+42       Dm
+43       E7      /     A7
+44       Dm
+
+Set CODA
+Goto DS
+Label  CODA
+Groove RhumbaEnd1
+Cresc f 1
+45       Dm  /   z  Dm
+
+Set FINE
+Goto DC
+Label FINE
+Groove RhumbaEnd
+Volume ff
+46       Dm  / / z!@3.5
+

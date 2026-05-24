@@ -1,0 +1,107 @@
+// About A Quarter To Nine (1935)
+
+Tempo 120
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+  
+Groove BossaNovaIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Volume f
+    Articulate 110
+    Harmony OpenBelow
+    Octave 5
+    Begin Riff
+        8c+;e+;b;d+; a;c+;g;b;
+        8f;a;4d; f;d;
+        1c;
+        4d;e;f;
+    End
+End
+
+Swingmode On
+Swell m mp 4
+
+1         C
+2         Dm7
+3         C
+4         Dm7  /  G7
+
+Repeat
+Groove BossaNova
+Volume m
+
+5         C      /    Dm7
+6         C      /      /  Ebdim
+7        G7      /   Edim
+8        G7      /      /    Dm7
+
+Groove BossaNovaPlus
+Volume mp
+
+9        G7      /   Edim
+10       G7      /    Dm7
+11        C      /    Dm7
+12        C     G7
+
+Groove BossaNova
+Cresc mf 8
+
+13        C      /    Dm7
+14        C      /      /  Ebdim
+15       G7      /   Edim
+16       G7      /      /    Dm7
+
+Groove BossaNovaPlus
+
+17       G7      /   Edim
+18       G7      /     Dm     G7
+19        C      /    Dm7
+20        C      /    Eb7
+
+Groove BossaNovaSus
+Volume m
+
+21       Ab
+22      Eb7
+23       Ab      /     Fm
+24      Dm7      /     G7
+
+Groove BossaNova1SusPlus
+Decresc mp 4
+
+25      Em6
+26       Bm      /    Bb+    Bm7
+27       E7
+28       A7      /     D7     G+
+
+Groove BossaNova1Sus
+Cresc mf 8
+
+29        C      /    Dm7
+30        C      /      /  Ebdim
+31       G7      /   Edim
+32       G7      /      /    Dm7
+
+Groove BossaNova
+Decresc mp 2
+
+33       G7      /   Edim
+34       G7      /    Dm7
+
+RepeatEnding
+Volume mp
+
+35        C
+36        /
+
+RepeatEnd
+
+Groove BossaNovaEnd
+Decresc ppp 2
+
+35        C
+36        / / z!

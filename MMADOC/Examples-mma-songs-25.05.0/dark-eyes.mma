@@ -1,0 +1,84 @@
+// Dark Eyes (Russian Traditional)
+
+Tempo 140
+Keysig C minor
+
+Groove Metronome3
+   z * 2
+   
+Groove EEWaltzIntroWalk
+
+Begin Solo
+    Voice Accordion
+    Articulate 100
+    Volume F
+    Octave 5
+    Begin Riff
+        2.gc+;
+        2.fb;
+        2.ea;
+        2eg;
+    End
+End
+
+Swell mp f 4
+
+1        Cm
+2        Bb
+3        Ab
+4        Cm
+
+
+Repeat
+Groove EEWaltzSus
+Volume m
+
+5        G7
+6         G
+7        Cm
+8         /
+
+Groove EEWaltzSus
+Cresc f 4
+
+9        G7
+10        /
+11       Cm
+12        /
+
+Groove EEWaltz
+Decresc mp 4
+
+13       Fm
+14        /
+15       Cm
+16        /
+
+Groove EEWaltzSus
+Volume m
+
+17       G7
+
+RepeatEnding 2
+
+18        /
+
+Groove EEWaltzWalk
+Cresc mf 2
+
+19       Cm
+20        /
+
+RepeatEnd 
+
+21        /
+
+Groove EEWaltzEnd
+Decresc ppp 3
+
+22       Cm
+Seq
+23        /
+24        /
+
+

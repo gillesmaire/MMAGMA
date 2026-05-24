@@ -1,0 +1,96 @@
+// One Oclock Jump
+
+Tempo 140
+Keysig D
+
+Groove BigBandIntro
+Begin Solo
+    Voice JazzGuitar
+    Volume ff
+    Articulate 50
+    Harmony OpenBelow+Open8Below
+    Octave 6
+    Begin Riff
+        8r;4a;8g;2a;
+        8r;4a;8g;2a;
+        8a;g;a;g;a;g;a;g;
+        2.a;
+    End
+End
+
+Cresc mp mf 4
+Swingmode On  // only effects the solo
+1         D
+2         /
+3        A7
+4         /
+
+
+Repeat  /// this is for the whole song
+Repeat
+Groove BigBand
+Volume m
+
+5         D
+6         /
+7        /     /     A7
+8         D
+
+Groove BigBandPlus
+Cresc mf 4
+
+9        G7
+10        /
+11        D      /     A7
+12        D
+
+Groove BigBand
+Decresc m 2
+
+13       A7
+14        /
+
+Groove BigBandPlus
+
+15        D      /     A7
+16        D
+
+RepeatEnd
+
+Groove BigBandSus
+Volume mf
+
+17        /
+18        /
+19        /
+20        /
+
+Groove BigBandSusPlus
+Volume f
+
+21       G7
+22        /
+23        D
+24        /
+
+Groove BigBandSus
+Volume m
+
+25       G7
+26        /
+
+RepeatEnding
+Decresc mp 2
+
+27        D
+
+Groove BigBandFill
+
+28      Fm7     A7      D
+
+RepeatEnd
+Groove BigBandEnd
+Decresc pp 2
+
+29        D
+30      Fm7     A7      D

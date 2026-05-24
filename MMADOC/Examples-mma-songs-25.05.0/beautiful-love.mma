@@ -1,0 +1,67 @@
+// Beautiful Love (Victor Young, 1931)
+
+Tempo 118
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+  
+Groove LightTangoIntro1
+Volume mp
+
+1         F
+2        Dm
+3        Gm
+Cresc m 1
+4        C7
+
+
+Repeat
+Groove LightTango1
+Volume m
+
+5     Em7b5
+6      A7#5
+7       Dm6
+8         /
+
+Groove LightTango1Sus
+Cresc mf 4
+
+9       Gm7
+10       C7
+11      FM7
+12    Em7b5      /     A7
+
+Groove LightTango1
+Decresc m 2
+
+13      Dm7
+14      Gm7
+15      Bb7
+16       A7
+
+RepeatEnding 3
+
+Groove LightTango1
+
+17      Dm7
+18    G7#11
+19    Em7b5
+
+Groove LightTangoFill
+Volume mp
+
+20       A7
+
+RepeatEnd
+
+Groove LightTango4End
+Decresc ppp 4
+
+21       Dm      /   B7#9
+22      Bb7      /     A7
+23       Dm
+24        /      z!
+
+

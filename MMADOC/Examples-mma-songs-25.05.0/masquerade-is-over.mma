@@ -1,0 +1,116 @@
+// Masquerade Is Over(1939)
+
+Tempo 80
+Keysig Eb
+
+Groove Metronome2-4
+  z * 2
+  
+Groove Evansish
+Volume mf
+
+1         Eb      /   EbM7
+2      Gm7b5      /     C7
+3        Fm7
+4     Bb7sus      /      /    Bb7
+
+Groove EvansishPlus
+Decresc mp 4
+
+5        Gm7
+6       C7b9
+7        Db9
+8     Bb7sus
+
+// In the sheet music this is the SIGN
+Repeat
+Label SIGN
+
+Groove EvansishPlus
+Volume mf
+
+9       EbM7
+10     Dm7b5      /     G7
+11       Cm7      /     F9
+12      Bbm7      /    Eb9
+
+
+Groove Evansish
+Cresc f 2
+
+13      AbM7
+14     Gm7b5      /     C7
+15        F7
+16       Fm7      /    Bb7
+
+Groove EvansishPlus
+Decresc m 4
+
+17      EbM7
+
+If Def Coda
+  Goto CODA
+Endif
+
+18      Bbm7      /    Eb7
+19      AbM7
+20       Db9
+
+Groove Evansish
+
+Volume mf
+
+21       Gm7
+
+RepeatEnding
+
+22        C7
+23       Fm7
+24       Bb7
+
+RepeatEnd   // 2nd verse
+
+Groove Evansish
+
+25       Fm7      /   Bb13
+26       Eb6      /    Db9
+27       Eb6      /  C7#5#9
+
+Groove EvansishSus
+Volume f
+
+28       Fm7      /    Bb7
+29       Gm7      /     C7
+30       Fm7      /    Bb7
+31      EbM7
+
+Groove EvansishSusPlus
+Cresc ff 4
+
+32     Am7b5      /     D7
+33       Gm7      /     C9
+34       Cm7      /     F7
+35       Fm7      /    Bb7
+
+Set CODA
+Goto Sign
+Label Coda
+
+Groove EvansishSus  /// leftover from jump
+Volume m
+
+36      Bbm7      /    Eb7
+37      AbM7
+
+Groove Evansish
+
+Tempo *.9 4
+Decresc ppp 4
+
+38       Db9
+39       Gm7>-1      /     C7  /// chord rotation to eliminate dissonance with melody 
+
+Groove EvansishEnd
+40       Fm7      / Bb9sus
+41       Eb6      /  z!
+

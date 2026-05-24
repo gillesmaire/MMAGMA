@@ -1,0 +1,93 @@
+// And I Love Her (Beatles, 1964)
+
+Tempo 126
+Keysig Eb
+
+Groove Metronome2-4
+  z * 2
+
+Groove BubbleRockIntro
+
+Begin Solo
+    Voice TremoloStrings 
+    Octave 5
+    Harmony 3Below
+    Articulate 100
+    Unify On
+    Begin Riff
+        2f;8g;4.a;
+        2f;8g;4.a;
+        2b;4g;f;
+        1e;
+    End
+End
+
+Swell mp f 4
+
+1        Fm
+2         /
+3        Eb
+4        /
+
+
+Repeat
+Groove BubbleRock
+Volume m
+
+5        Fm
+6        Cm
+7        Fm
+8        Cm
+
+Groove BubbleRockPlus
+Cresc f 4
+
+9        Fm
+10       Cm
+11       Ab
+12      Bb7
+Decresc m 2
+
+RepeatEnding
+
+13       Eb
+
+Groove BubbleRockFill
+
+14        /
+
+RepeatEnding 
+
+15       Eb
+
+Groove BubbleRockFill
+
+16        /
+
+Groove BubbleRockSus
+Volume mf
+
+17       Cm
+18       Bb
+19       Cm
+20       Gm
+
+Groove BubbleRockSusPlus
+Decresc m 4
+
+21       Cm
+22       Gm
+23      Bb7
+24        /
+
+Repeatend
+
+25       Eb
+
+Groove BubbleRockEnd
+Decresc ppp 2
+
+26        /
+Tempo *.8
+27        C  z!@3
+

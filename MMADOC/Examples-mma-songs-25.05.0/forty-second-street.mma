@@ -1,0 +1,95 @@
+// Forty Second Street, 1933
+
+Tempo $(80 * 2) // the 80 is for 1/2 notes.
+
+Groove Metronome2-4
+   z * 2
+   
+Groove EasySwingIntro
+Begin Solo
+    Voice $_Bass_Voice
+	Octave $_Bass_Octave
+    Volume mf
+    Harmony None
+    Articulate 50
+    Begin Riff
+       4e;g;b;g;
+       4e&;c;e;g;
+       4b;e+;b;g;
+       8f;g;4a;2b;
+    End
+End
+
+Bass Sequence -
+Cresc mp f 4
+1        Em
+2        Cm
+3        Em
+4        B7
+
+Repeat  // outer loop for entire song
+
+Groove EasyswingWalk
+Volume m
+Repeat
+5        Em
+6         /
+7         /      /     B7
+8        Em      /     B7
+
+9        Em      D      G     Am
+10       Em     Am   C7b5
+11       Em      /    Cm6    B7+
+
+RepeatEnding
+
+12       Em      /     C6    B7+
+Groove EasySwing2
+Cresc mp mf 8
+RepeatEnd
+
+13       Em
+
+Groove EasySwingSus
+Volume m
+
+14       C7
+15        /
+16        /    Bb+     Gm     Am
+17       Gm
+
+Groove EasySwingWalkSus
+Volume mf
+
+18       A9
+19        /
+20       A7    F#m     A7
+21      Eb9      /      /     B7
+
+Groove EasySwing42
+Volume m
+
+22       Em
+23        /
+24        /      /     B7
+25       Em      /     B7
+
+Decresc mp 2
+
+26       Em      D      G     Am
+27       Em     Am   C7b5
+
+RepeatEnding   // we do entire song 2x
+
+28       Cm6    B7+
+Groove EasySwingFill
+29       Em     /    C6   B7
+
+RepeatEnd
+
+Groove EasySwingEnd
+Decresc ppp 2
+Tempo *.9 2
+28       Em      /    Cm6    B7+
+29       Em      z!
+

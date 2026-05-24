@@ -1,0 +1,92 @@
+// A Blossom Fell (Nat King Cole, 1955)
+
+Tempo 76
+Keysig Bb
+
+Groove Metronome2-4
+   z * 2
+   
+Groove MellowJazzIntro
+
+Begin AllGrooves Chord-Strings
+ Volume p
+ Octave 6
+End
+
+Begin Solo
+    Voice Piano1
+    Articulate 120
+    Harmony OpenBelow
+    Volume f
+    Octave 5
+    Begin Riff
+          43b;a;b;2d+;
+          43d&+;e&+;d+;2b;
+          81b; 82a; 81a&; 82g; 81g&; 82f; 81f&; 82e;
+          4d;2f;
+    End
+End
+
+Decresc mf mp 4
+//Swingmode On  /// this is really just for the solo line in bar 3
+
+1        Bb      / Bbdim7
+2        Db
+3      Bbm6      F     Eb     Dm
+4        Cm  Dbmb9      F     F7
+
+Repeat
+
+Groove Mellowjazz
+Volume m
+
+5        Bb      /      /   Bdim
+6       Cm7      /     F7     Cm
+7        F7      /      /    F7+
+8        Bb
+
+Groove MellowJazzPlus
+Cresc mf 2
+
+9         /      /      /  Bbdim
+10       Cm      /     F7
+Decresc mp 2
+11      Cm7     F7      /    F7+
+12       Bb   Bdim     F7
+
+Groove MellowJazzSus
+Cresc m 4
+
+13       Bb      /      /   Bdim
+14      Cm7      /     F7    Cm7
+15       F7      /      /    F7+
+16       Bb      /      /   Bb7+
+
+Groove MellowJazzSusPlus
+Volume mf
+
+17       Eb
+18       Bb
+19      Cm7     F7
+20    Bbdim      /     Bb   Bb7+
+
+Groove MellowJazz
+Decresc mp 4
+
+21       Eb      /      /    Ebm
+22       Bb      /  Bbdim
+23      Cm7   Fdim     F7
+
+RepeatEnding
+
+Groove MellowJazzFill
+
+24       Bb   Bdim     F7
+
+RepeatEnd
+
+Groove MellowJazzEnd
+Decresc pp 1
+
+25       Bb    Ebm     Bb  z!
+

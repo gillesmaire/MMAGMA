@@ -1,0 +1,197 @@
+// Book Of Love (Monotones, 1958)
+
+Tempo $(2 * 94)
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+  
+Groove DooWopIntro
+Begin Solo
+    Voice Trumpet
+    Octave 5
+    Articulate 110
+    Volume ff
+    Harmony OpenBelow+8Below
+    Begin Riff
+        2.r;4a;
+        4c+;;;;
+        4.f;8;4g;a;
+        2b;r;
+        8b;4;8;4;;
+        1+2a ~;
+    End
+End
+
+Volume m
+
+          z
+Seq
+1         F
+2         Dm
+Seq       
+3         Gm
+4         /
+5         F
+6         /
+
+Repeat
+Groove DooWop
+Volume m
+
+7         F
+8        Dm
+9       Gm7
+10       C7
+
+Groove DooWopPlus
+Cresc mf 4
+
+11        F
+12       Dm
+13      Gm7
+14       C7
+
+Groove DooWop
+Volume m
+
+15        F
+16        /
+
+Groove DooWopFill
+Volume f
+17       Bb
+
+Groove DooWopPlus
+Volume m
+
+18        /
+19        F
+20        /
+
+Groove DooWop
+
+21        /
+22       Dm
+23      Gm7
+24       C7
+
+Groove DooWopPlus
+Cresc f 4
+
+25        F
+26       Dm
+27      Gm7
+28       C7
+
+Groove DooWop
+Volume m
+
+29        F
+30        /
+
+Groove DooWopFill
+Volume f
+31       Bb
+
+Groove DooWopPlus
+Volume m
+
+32        /
+33        F
+34        /
+
+Groove DooWopSus
+Cresc ff 4
+
+35       Bb
+36        /
+37        F
+38        /
+
+Groove DooWopSusPlus
+
+39       Bb
+40        /
+41       C7
+42        /
+
+Groove DooWopSus
+Decresc m 8
+
+43        F
+44       Dm
+45      Gm7
+46       C7
+
+Groove DooWopSusPlus
+
+47        F
+48       Dm
+49      Gm7
+50       C7
+
+Groove DooWop
+Volume mf
+
+51        F
+52        /
+
+Groove DooWopFill
+Volume f
+
+53       Bb
+
+Groove DooWopPlus
+Volume m
+
+54        /
+55        F
+56        /
+
+Groove DooWop
+Cresc mf 4
+
+57        F
+58       Dm
+59      Gm7
+60       C7
+
+Groove DooWopPlus
+Volume f
+
+61        F
+62       Dm
+63      Gm7
+64       C7
+
+Groove DooWop
+Volume m
+
+65        F
+66        /
+
+Groove DooWopFill
+Volume f
+67       Bb
+Groove DooWop
+Volume m
+68        /
+
+RepeatEnding
+
+Groove DooWopFill
+Decresc mp 2
+
+69        F
+70        /
+
+RepeatEnd
+
+Groove DooWopEnd
+Decresc pp 2
+69        F
+70        / z!
+
+
+

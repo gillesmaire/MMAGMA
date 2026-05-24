@@ -1,0 +1,83 @@
+// Doralice (1960)
+
+Tempo $( 2 * 72 )
+
+Keysig G
+
+Groove BossaNova
+
+      z   /// melody starts on beat 2.25
+      
+1    G#m7b5      /    Gm6
+2      F#m7      /   B7b9
+3       Em9      /    A13
+4       Am7      /     D9
+
+5       GM7      /    Gm7
+6      F#m7      /   B7b9
+7       Em9      /    Eb9
+8    D69      /   A7#5
+
+
+Repeat  // DS2 fake DS
+Repeat  // DS1 fake DS/Sign 
+Repeat
+
+9       DM9      / D69
+10      E13      /  E7b13
+
+RepeatEnding
+
+11   A9sus4      /     A9
+12      DM9      / D69
+
+13      DM9      /     E9
+14      AM7      / Cdim(b13)
+15      Bm7      /    E13
+16   A9sus4      /     A9
+
+RepeatEnd
+
+17   A9sus4      /     A9
+18   D9sus4      /   D7b9
+19      GM7      /     C9
+20     F#m7      /   B7b9
+
+21      Em7      /     A9
+22      DM9      / D69
+
+RepeatEnd  // back to DS2
+
+23      DM9      / D69
+24      Em7      /     A9
+
+25      DM9      / D69
+26     C#m7      /    F#7
+27      Bm7
+28      Em7      /     A9
+
+29      DM9      /  Fdim7
+30      Em7      /     A9
+31      DM9      /  Fdim7
+32      Em7      /     A9
+
+33      DM9      /  Fdim7
+34      Em7      /     A9
+35   D9sus4      /   D7b9
+36      GM7      /    C9
+
+37     F#m7      /   B7b9
+38      Em7      /     A9
+39   D69      /   D7b9
+40      GM7      / C#7/G#
+
+41     F#m7      /   B7b9
+42      Em7      /     A9
+43      Am7      /   D7b9
+44      GM7      / C#7/G#
+
+45     F#m7      /   B7b9
+46      E13      /   A7b9
+47      DM7      /   A7#5
+
+Repeatend   // back to DS and start over

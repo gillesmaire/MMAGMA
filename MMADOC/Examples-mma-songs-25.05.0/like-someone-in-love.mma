@@ -1,0 +1,119 @@
+// Like Someone In Love (1944, Dinah Shore)
+
+Tempo 96        
+Keysig c
+
+Groove Metronome2-4
+ z * 2
+ 
+Groove JazzGuitarIntro
+Arpeggio Sequence A4
+
+// Trickery here. We enable the Chord-Sus stuff quickly and
+// simply here. We have set a groove already (..Intro), the
+// Chord-Sus stuff just enables the violins.
+Begin Chord-Sus
+  Groove JazzGuitarSus
+  Octave 5
+  Cresc ppp p 4
+End
+
+Begin Solo
+   Voice JazzGuitar
+   Volume F
+   Articulate 90
+   Harmony OpenBelow
+   Octave 5
+   Rtime 10
+   Rvolume 20
+   Begin Riff
+       4e;2;4;
+       1g;
+       4d+;2;4b;
+       1g;
+   End   
+End
+
+Swell mp ff 4
+
+1         C
+2         G
+3         D
+4        Em
+
+Repeat
+Groove Jazzguitar
+
+5       CM7 
+6      C6/A      /    CM7
+7     D7/F#      /   G7/F
+8       Em7      /    Eb7
+
+Groove JazzGuitarPlus
+
+9       Dm7
+10       G7      /   G9#5
+11      CM7
+12      Gm7     C9   C9#5
+
+Groove JazzGuitar
+
+13       F6      /      /     F+
+14      Bm7      /     E7
+15      AM7
+16       A6
+
+Groove JazzGuitarWalk
+
+17      Am7
+18       D7
+19      Dm7
+20     G7#5
+
+Groove JazzGuitarSus
+
+21      CM7     
+22     C6/A      /    CM7
+23    D7/F#      /   G7/F
+24      Em7      /    Eb7
+
+Groove JazzGuitarSusPlus
+
+25      Dm7
+26       G7      /      /   G9#5
+27        C
+28      Gm7     C9      /   C9#5
+
+Groove JazzGuitarSus
+
+29       F6      /      /     F+
+30      Bm7      /     E7
+31      AM7
+32       D9      /      /  D#dim
+
+Groove JazzGuitar
+
+33      Em7      /     A7
+34      Dm7      /   G7b9
+
+RepeatEnding
+
+35        C      /    Am7
+
+/// Here's a cool way to split a groove so that only
+/// a part of it is used. Here we just apply the triplet
+/// stuff to the 2nd half.
+
+Truncate 2 Count=2
+36      D9
+Groove JazzGuitarFill
+36       G7
+
+RepeatEnd
+
+Groove JazzGuitarEnd
+Decresc pppp 2
+
+37        C      /    Fm6
+38        C      /   /  z!
+

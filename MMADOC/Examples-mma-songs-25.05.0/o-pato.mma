@@ -1,0 +1,108 @@
+// O Pato (The Duck)
+
+Tempo $(2 * 90)
+KeySig E
+Transpose Up Min 3  // to 'G'
+
+Groove Metronome2-4
+ z * 2
+ 
+Groove SambaFill
+
+// Transpose puts the picky strings way to picky in original groove octave
+AllGrooves Arpeggio Octave 5
+
+0        z   D7@3.5
+
+Repeat
+Begin Drum-Click1  /// a drum click every 4 bars
+     Tone CrashCymbal1
+     Volume f
+     Sequence  {1 0 80} z z z
+     Sticky True
+End
+Begin Drum-Click2  /// a drum click every 4 bars
+     Tone ShortHiWhistle
+     Volume f
+     Sequence  {1 0 100} z z z
+     Sticky True
+End
+Groove Samba
+
+1     E6(add9)
+2          /
+3        F#9
+4          /
+
+Groove SambaPlus
+
+5       F#m9
+6         B9
+7        EM9
+8          /      /   B7b9
+
+Groove Samba
+
+9     E6(add9)
+10         /
+11       F#9
+12         /
+
+Groove SambaPlus
+
+13      F#m9
+14        B9
+15       EM9
+16         /
+
+Groove SambaSus
+
+17       Bm7
+18       Bm9      /   E7b9
+19       AM9
+20        A6
+
+Groove SambaSusPlus
+
+21       F#9
+22       B13
+23       EM7
+24       Bm7      /     E9
+
+Groove SambaSus
+
+25       AM7      /    Am6
+26      G#m7      /     E9
+27       AM7      /    Am6
+28      G#m7      /     E9
+
+Groove SambaPlus
+
+29       AM7
+30       EM7
+31    C#7#5b9
+32      F#m9      /     B9
+
+Groove Samba
+
+33       EM9
+34         /
+35       F#9
+
+Groove SambaPlus
+
+36         /
+37      F#m9
+
+Groove SambaFill
+
+38       B13
+
+RepeatEnd 3
+
+Groove SambaEnd
+Seq 3
+
+39    E6(add9)
+40         /  z!
+

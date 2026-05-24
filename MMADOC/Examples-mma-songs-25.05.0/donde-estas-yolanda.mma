@@ -1,0 +1,124 @@
+// Donde Estas Yolanda (Pink Martini, 1997)
+
+Tempo 135
+
+Groove Metronome2-4
+  z * 2
+  
+Begin Solo
+    Voice Trumpet
+    Octave 5
+    Articulate 60
+    Harmony OpenBelow+8Below
+    Begin Riff
+        8c;c+;;a;4e+;
+	8g;b;;g;4e+;
+	43c#+;cn+;c#+; d#+;dn+;d#+;
+	4!e+;r;;;
+    End
+    Cresc f fff 4
+End
+
+Groove MamboIntro
+Volume mf
+1         Am
+2         Em
+3         B7
+4         Em / z!
+
+Repeat
+Groove Mambo
+Volume mf
+
+5         Em
+6         B7 / / z
+7         B7
+8          Em / / z
+
+Groove Mambo3
+Volume m
+
+9         Em
+10        B7 / / z
+11        B7
+12         /
+
+Groove Mambo
+Volume f
+
+13        Em
+14        B7 / / z
+15        B7
+16        B7 / / z
+
+Groove Mambo1
+Volume ff
+
+17        Em
+18        B7 / / z
+19        B7
+20         / / z B7
+
+/// This is the start of the vocals
+/// Chorus
+Groove MamboSus
+Cresc m f 8
+
+21        Em
+22        B7
+23         /
+24        Em
+
+Groove Mambo3Sus
+
+25         /
+26        B7
+27         /
+28        Em
+
+// Verse
+Groove Mambo1Sus
+Volume mf
+
+29        Am
+30        Em
+Decresc m 2
+31        B7
+32        Em      /     E7
+
+Groove MamboSus
+Volume mp
+
+33        Am
+34        Em
+35        Am
+36        B7      /     Em
+
+Groove Mambo1
+Volume ff
+37        Em
+38        B7
+39         /
+40        Em
+
+Groove Mambo
+Volume f
+
+41         /
+42        B7
+43         /
+44        Em
+
+RepeatEnd
+
+Groove MamboEnd
+Decresc ff m 4
+
+45        Am
+Seq 1
+46        Em
+Seq 1
+47        B7 zC B7 zD
+48        Em  z!
+
+

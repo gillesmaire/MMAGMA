@@ -1,0 +1,99 @@
+// Portrait Of My Love (Matt Monro, 1960)
+
+Tempo 90
+
+Groove Metronome2-4
+   z * 2
+   
+Groove StringBalladIntro
+
+Begin Solo
+    Voice SynthVox //ChoirAahs //SynthStrings1
+    Octave 7 
+    Volume f
+    Articulate 105
+    Harmony OpenBelow+8Below / / 3Below+8Below
+    Begin Riff
+        8c+;b;a;g; f;e;d;c;
+        8e+;d+;c+;b; a;g;f;e;
+        8d+;c+;b;a; g;f;e;d;
+        4b;a;2g;
+    End
+End
+
+Swell m ff 4
+
+1          C
+2         Am
+3         Dm
+4         G7
+
+Repeat
+Groove StringBallad
+Volume m
+
+5          C
+6        Dm7      /     G7
+7         Am
+8         Fm
+
+Groove StringBalladVoice
+Cresc mf 4
+
+9          C      /     Am
+10       Dm7      /     G7
+
+Groove StringBallad
+RepeatEnding
+
+11         C      /     Am
+12         /
+
+RepeatEnd
+
+13         C      /      /      F
+14         /
+
+Groove StringBalladStrum
+Volume m
+
+15       Gm6
+16         /      /     A7
+17        Dm
+18         /
+
+Groove StringBalladStrumPlus
+Cresc mf 4
+
+19       Am6
+20         /      /     B7
+21        G7
+22         /
+
+Groove StringBalladPlus
+Decresc mp 2
+
+23         C
+24       Dm7      /     C7
+25        Am
+26        Fm
+
+Groove StringBallad
+Volume m
+
+27         C
+28        G7
+29         C
+30        Am
+
+Groove StringBalladVoice
+Decresc pppp 4
+
+31        Dm
+32        G7
+
+Groove StringBalladEnd
+
+33         C      /     Fm
+34         C      z     z!
+

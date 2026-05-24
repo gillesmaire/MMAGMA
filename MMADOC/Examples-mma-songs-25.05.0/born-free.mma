@@ -1,0 +1,98 @@
+// Born Free (1966)
+
+Tempo 100
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+  
+Groove BeguineIntro
+Begin Solo
+    Voice TremoloStrings
+    Octave 5
+    Harmony 3Below+8Below
+    Volume m
+    Articulate 110
+    Begin Riff
+       2c+;g;
+       2a;e;
+       43d;e;f;4g;a;
+       1b;
+    End
+End
+
+Swell mp mf 4
+
+1         C
+2        Am
+3        Dm
+4        G7
+
+Repeat
+Groove Beguine
+Volume m
+
+5         C
+6         F6
+7         C
+8         F6
+
+Groove Beguine1
+Cresc f 3
+
+9        Em7
+
+RepeatEnding
+
+10      Dm7      /     G7
+11        C
+
+Groove BeguineFill
+
+12      Dm7      /     G7
+
+RepeatEnd
+
+13      Dm7
+14        G
+15        G7
+
+Groove BeguineSus
+Volume m
+
+16       Dm
+17      Dm7      /     G7
+18       Am
+19        /
+
+Groove Beguine1Sus
+Cresc f 4
+
+20      Cm6
+21      Fm6
+22        G
+
+Groove BeguineFill
+Volume mf
+
+23      Dm7      /     G7
+
+Groove Beguine
+Decresc m 4
+
+24        C
+25        F
+26        C
+27        F
+
+Groove Beguine1
+Decresc pppp 4
+
+28       Em
+29      Dm7      /      /     Db
+
+Groove Beguine2End
+
+30        C
+31        /  z!
+

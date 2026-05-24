@@ -1,0 +1,94 @@
+// Goodnite, Sweetheart, Goodnite (Spanials 1954)
+
+Tempo 90
+Keysig G
+
+Groove 50sRock
+Begin AllGrooves
+  Begin Arpeggio
+     Voice JazzGuitar
+     Octave 5
+  End
+End
+
+Begin Solo
+   Voice FingeredBass
+   Volume ff
+   Articulate 90
+   Harmony None
+   Octave 3
+End
+
+Groove 50sRockIntro
+Volume mp
+1          G      /      z    {2r;8;d;3;b-;d;}
+
+Repeat
+Groove 50sRock
+Seq
+Volume m
+
+2          G      /     Em    {8g;}
+3        Am7      /     D7    {2r;8r;d;3;b-;d;}
+4          G      /     Em    {8g;}
+5        Am7      /     D7    {2r;8d;4e;8f;}
+
+Groove 50sRockPlus
+Cresc mf 4
+
+6          G      /   G7/B    {8g;}
+7          C      /     Cm
+8        G/D      /    Am7     D7
+
+Repeatending
+
+9          G      /    Am7     D7    {2r;8r;d+;3;b;d+;}
+
+RepeatEnd
+
+10         G      /    Am7     D7
+
+Repeat
+
+Groove 50sRockSus
+Volume m
+
+11         C      /     Cm
+12         G      /     G7
+13         C      /    G/D  Am7/D
+14         G      /      /     G7
+
+Groove 50sRockSusPlus
+Cresc mp f 4
+
+15         C      /     Cm
+16         G     F9     E7
+17        A7
+18        D7    {4r;3d;b-;d; 3d;b-;d; 3d;b-;d;}
+
+Groove 50sRock
+Volume m
+
+19         G      /     Em    {8g;}
+20       Am7      /     D7    {2r;8d;4e;8f;}
+21         G      /     Em    {8g;}
+22       Am7      /     D7
+
+Groove 50sRockPlus
+Volume mf
+
+23         G      /   G7/B
+24         C      /     Cm
+25       G/D      /    Am7     D7
+
+Decresc pp 1
+RepeatEnding
+
+26         G      /    Am7     D7
+
+RepeatEnd
+
+Groove 50sRockEnd
+
+27        G6      / G6(add9)     z!
+

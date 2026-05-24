@@ -1,0 +1,102 @@
+// Windmills Of Your Mind
+
+Tempo 74
+Keysig E min
+
+Groove Metronome2-4
+  z * 2
+
+
+Repeat
+Cresc ppp mf 1
+Groove 8BeatFill
+
+1      Em   // A full beat for the initial "Round" in the lyric
+
+Groove 8BeatWalk
+Cresc mp mf 8
+
+2       Em
+3       /
+4      B7
+5       /
+
+Groove 8BeatWalkPlus
+
+6       Em
+7       E7
+8       Am
+9       D7
+
+Groove 8BeatWalk
+
+10       G
+11       C
+12       Am6
+13       B7
+
+Groove 8BeatWalkPlus
+Volume m
+
+14    A#mb5
+
+Groove 8BeatFill
+
+15     B7
+
+RepeatEnd
+
+Groove 8BeatWalk
+
+16        Em
+
+Groove 8BeatWalkSus
+Cresc mp mf 8
+
+17       /
+18       Am7
+19       D7
+20       G
+
+Groove 8BeatWalkSusPlus
+
+21      G7
+22       C
+23       F#7
+24        Bm
+
+Groove 8BeatWalkSus
+
+25      E7
+26      Am
+27      D7
+28       G  z
+
+Volume m
+Groove 8BeatWalk
+
+29       C
+30       Am6
+31       B7
+32       Em
+
+Groove 8BeatWalkPlus
+Volume mf
+
+33      /
+34      B7
+35      /
+36      A#mb5
+
+Groove 8BeatWalk
+Decresc pppp 3
+Tempo *.75 3
+
+37      Em
+
+Groove 8BeatEnd
+38      B7
+39      Em  z!
+fermata -4 1 200
+
+

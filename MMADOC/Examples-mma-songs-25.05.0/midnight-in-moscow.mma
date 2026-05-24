@@ -1,0 +1,106 @@
+// Midnight In Moscow
+
+Tempo 180
+Keysig  C Minor
+
+Groove Metronome2-4
+   z * 2
+   
+Repeat
+Label SIGN
+Groove BigBand
+
+1        Cm
+2        Fm      /     G7
+3        Cm      /     G7
+4        Cm
+
+Groove BigBandPlus
+
+5        Eb
+6        Ab      /    Bb7
+7        Eb
+8       Dm7      /     G7
+
+Groove BigBand
+
+9        Cm
+10        /
+11       Fm
+12        /
+
+Groove BigBandPlus
+
+13       Cm
+14       G7
+15       Cm
+16      Dm7      /     G7
+
+Groove BigBand
+
+17       Cm
+18        /
+19       Fm
+20        /
+
+Groove BigBandPlus
+
+21       Cm
+22       G7
+
+If Def FINE
+   Groove BigBandEnd
+Endif
+
+23       Cm
+24        /
+
+If Def FINE
+   Eof
+Endif
+
+RepeatEnd
+
+Groove BigBandSus
+
+25       Cm
+26      Fm6
+27       Cm
+28        /
+
+Groove BigBandSusPlus
+
+29       Eb
+30       Ab
+31       Eb
+32       G7
+
+Groove BigBandSus
+
+33       Cm
+34        /
+35       Fm
+36        /
+
+Groove BigBandSusPlus
+
+37       Cm
+38       G7
+39       Cm
+40      Dm7      /     G7
+
+Groove BigBandSus
+
+41       Cm
+42        /
+43       Fm
+44        /
+
+Groove BigBandSusPlus
+
+45       Cm
+46       G7
+47       Cm
+
+Set FINE
+Goto SIGN

@@ -1,0 +1,103 @@
+// Good Morning
+
+Tempo $(98 * 2)
+Keysig Bb
+
+Groove Metronome2-4
+  z * 2
+  
+Groove GypsyJazzIntro
+
+Begin AllGrooves
+ Plectrum-1 Voice JazzGuitar 
+ Plectrum-2 Voice JazzGuitar 
+End
+
+Volume mf
+0    z  z  z  F
+
+Begin AllGrooves
+ Plectrum-1 Voice NylonGuitar 
+ Plectrum-2 Voice JazzGuitar 
+End
+
+Repeat
+Groove GypsyJazz
+Volume m
+
+1        Bb
+2         /
+3         /      /     F7
+4        Bb      /      /  Bbdim
+
+Groove GypsyJazzGuitar
+Cresc f 4
+
+5        F7
+6         /
+7        Bb      /     Eb
+8        Bb      /    Cm7     F7
+
+Groove GypsyJazz
+Volume m
+
+9        Bb
+10        /
+11        /      /     F7
+12       Bb      /      /  Bbdim
+
+Groove GypsyJazzSus
+Cresc mp mf 4
+
+13       F7
+14        /
+15       Bb      /     Eb
+16       Bb      /    Bb6    Bb7
+
+Groove GypsyJazzFiddle
+Volume m
+
+17        D      /     A7
+18        D      /     A7
+19        D      /     A7
+20        D
+
+Groove GypsyJazzSus
+Volume mf
+
+21        F      /     C7
+22        F      /   Bbm6
+23        C     Bb     C9
+24       F7
+
+Groove GypsyJazz
+Cresc f 4
+
+25       Bb
+26        /
+27        /      /     F7
+28       Bb      /      /  Bbdim
+
+Groove GypsyJazzSusFiddle
+Volume mf
+
+29       F7
+30        /
+
+RepeatEnding
+
+Groove GypsyJazzSus
+Volume m
+
+31       Bb      /     Eb
+32       Bb      /     Dm     F7
+
+
+RepeatEnd
+
+Groove GypsyJazzEnd
+Decresc pp 2
+
+33       Bb      /     Cm     Dm
+34      Bb6	 z!
+

@@ -1,0 +1,96 @@
+// Sweet And Lovely (1931)
+
+Tempo 120
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+  
+Groove FoxTrotIntro
+Begin Solo
+    Voice Organ2
+    Octave 6
+    Articulate 110
+    Harmony OpenAbove
+    Volume f
+    Begin Riff
+        2.g;4a;
+        2a;c+;
+        8d+;c+;b;a;4g;a;
+        1g;
+    End
+End
+
+Swingmode On  // just for the intro notes
+Swell mp m 4
+
+1         C
+2        Am
+3        Dm
+4        G7
+
+Groove FoxTrot
+Volume m
+
+5         C
+6        C9
+7        C7
+8        C9      /     C7
+
+Groove FoxTrotPlus
+Cresc f 4
+
+9        F7
+10     BbM7    Bb7   Bbm7
+11      CM7      /   G7b9     G7
+12        C
+
+Groove FoxTrot
+
+13       C7
+14       C9
+15       C7
+16       C9
+
+Groove FoxTrotPlus
+Swell ff 4
+
+17       F7
+18     BbM7     Bb    Bbm
+19      CM7      /   G7b9     G7
+20        C
+
+Groove FoxTrotSus
+Volume m
+
+21      Bb9
+22        C
+23      Bb9
+24        C      /     C7
+
+Groove FoxTrotSusPlus
+
+25       Db
+26       Eb
+27      Ab7
+28       G7
+
+Groove FoxTrotSus
+Decresc mp 4
+
+29       C7
+30       C9
+31       C7
+32       C9      /     C7
+
+Groove FoxTrot
+Decresc m pppp 4
+
+33       F7
+34       Bb      /      /    Bbm
+
+Groove FoxTrotEnd
+
+35      CM7      /   G7b9     G7
+36        C     z!
+

@@ -1,0 +1,114 @@
+// Midnight Sun Will Never Set (Jones, Salvador 1958)
+
+Tempo 80
+
+Groove Metronome2-4
+  z * 2
+
+/// This is a one bar drum fill for bars 9 and 25
+/// By loading the PianoBallad groove first we are
+/// overlaying our changes into it.
+
+Groove PianoBallad
+Begin Bass
+  Sequence {1 2 1 90}
+  Volume m
+End
+Arpeggio-High Sequence -
+Arpeggio-Low  Sequence -
+Chord-Piano   Sequence -
+
+Begin Drum-Kick
+    Sequence D1234
+	Volume f
+End
+
+Begin Drum-Side
+	Sequence D13
+	Volume m
+End
+
+Begin Drum-CHiHat
+	Tone ClosedHiHat
+	Sequence {D8 Shift .25}
+	Volume p
+	Rtime 2
+	Rvolume 10
+End
+
+DefGroove DrumFill
+
+Repeat
+
+Groove PianoBallad
+
+1     C9sus
+2       FM7      /    Gm7
+3       Am7      /     D7
+4       Gm7      /    Am7
+
+Groove PianoBallad1
+
+5      BbM7      /     C7
+6       Cm7      /     F7
+7      BbM7      /  Em7b5     A7
+8       Dm7      /     G7
+
+Groove DrumFill
+9     C9sus  z
+Groove PianoBallad
+
+10      FM7      /    Gm7
+11      Am7      /     D7
+12      Gm7      /    Am7
+
+Groove PianoBallad2
+
+13     BbM7      /     C7
+14      Cm7      /     F7
+15     BbM7      /  Em7b5     A7
+16      Dm7     G7  C9sus    Gb7
+
+Groove PianoBallad
+
+17       F6
+18      Fm7
+19      Bb7
+20     EbM7
+
+Groove PianoBalladSus
+
+21        /    Gm7    Ab7    Am7
+22      Bbm      /  Gb/Bb
+23      Eb7      /    Db7
+24    C9sus
+
+Groove DrumFill
+25        /      z
+
+Groove PianoBallad1Sus
+
+26      FM7      /    Gm7
+27      Am7      /     D7
+28      Gm7      /    Am7
+
+Groove PianoBallad2sus
+
+29     BbM7      /     C7
+30      Cm7      /     F7
+31     BbM7      /  Em7b5     A7
+32      Dm7     G7  C9sus    Gb7
+
+RepeatEnding
+
+Groove PianoBalladFill
+
+33       F6
+
+RepeatEnd
+Groove PianoBalladEnd
+Decresc ppp 2
+Tempo *.9 2
+
+34       F
+35       F6 z!

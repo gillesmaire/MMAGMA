@@ -1,0 +1,118 @@
+// You Make Me Feel So Young, 1946
+
+Tempo 130
+Keysig Bb
+
+Groove Metronome2-4
+  z * 2
+  
+Groove JazzRhumbaIntro
+
+Begin Solo
+    Voice Strings
+    Harmony OpenBelow
+    Octave 5
+    Articulate 90
+    Volume f
+    Begin Riff
+        4b-;8c;d; 4e;8f;g;
+        4a&;8g;a; 4b;8a;b;
+        4c+;8b;c+; 4d&+;8c+;d+;
+        e&+;
+    End
+End
+
+Swell m mf 4
+
+1         Bb
+2         Fm / Bb
+3         C / B&mb5
+Bass Sequence Sus1
+4         F7
+
+
+Repeat
+Groove JazzRhumba
+Volume mf
+
+5         Bb      /    G+7
+6        Cm7      /     F7
+7         Bb      /  Bdim7
+8      Fm7/C      /     F7
+
+Groove JazzRhumbaPlus
+Volume f
+
+9         Bb      /    Bb7
+10        Eb      /    Cm7
+
+RepeatEnding
+
+Groove JazzRhumba
+Decresc m 2
+
+11       Dm7      /    Gm7     C7
+
+Groove JazzRhumbaFill
+
+12        F7
+
+RepeatEnd
+
+Groove JazzRhumba
+Volume mf
+
+13       Dm7      /    Gm7     C7
+14        F7
+
+Groove JazzRhumbaSus
+Cresc mp f 4
+
+15       Bb7      /  Edim7
+16       Fm7      /    Bb7
+17       Bb7      /  Edim7
+18       Fm7      /    Bb7
+
+Groove JazzRhumbaSusPlus
+Decresc m 4
+
+19     Am7b5      /   D7b9
+20       Gm7
+21       Cm7    Dm7    Eb6  Edim7
+22        F7     Gm   F7/A
+
+Groove JazzRhumba
+Volume m
+
+23        Bb      /    G+7
+24       Cm7      /     F7
+25        Bb      /  Bdim7
+26     Fm7/C      /     F7
+
+Groove JazzRhumbaSus
+Volume mp
+
+27        Bb      /    Bb7
+28      EbM7      /    Eb6
+29       Dm7      /   G7b9
+30       Cm7      /     F7
+
+Groove JazzRhumbaPlus
+Volume m
+
+31       Dm7      /   G7b5
+32       Cm7      /     F7    Eb6
+33        D7
+34      G7b9
+
+Groove JazzRhumbaSus
+Decresc ppp 4
+
+35       Cm7      /    Dm7
+36      EbM7      /     F7
+
+Groove JazzRhumbaEnd
+
+37        Bb
+38         / z!
+

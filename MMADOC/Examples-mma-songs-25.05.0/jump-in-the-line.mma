@@ -1,0 +1,83 @@
+// Jump In The Line
+
+Tempo 112
+Keysig Eb
+
+Groove Metronome2-4
+   z * 2
+   
+Groove CalypsoIntro
+
+Begin Solo
+    Voice SteelDrums
+    Volume m
+    Octave 5
+    Harmony 3Below
+End
+Begin Solo-1
+  Voice Piano1
+  Articulate 60
+  harmony OpenBelow
+  Volume ff
+End
+
+Cresc mp mf 4
+Repeat
+
+1         Eb      /    Bb7    {8e;g;b;16g;8a;;16f;8d;f;}
+2         Eb      /    Bb7    {8e;;g;16c;8f;16a;8f;8d;c;}
+
+RepeatEnd
+
+Repeat   /// this is for entire song
+Groove Calypso1
+Volume m
+
+3         Eb
+4          /
+5        Bb7
+6          /      /    Bb7
+
+Cresc mp mf 4
+
+7         Eb
+8          /
+9        Bb7
+10         /      /     Eb
+
+// Start of verses
+Groove Calypso1Sus
+Volume m
+
+11        Eb      /     Ab
+12        Eb      /    Bb7
+
+Volume mf
+
+13        Eb      /     Ab
+14        Eb
+
+// 6 bar bridge
+Groove Calypso1Plus
+Repeat
+Seq
+15        Eb      /     Bb
+16        Eb      /    Bb7    {4r;8e+;c+;16r;8b;16d+;8c+;b;}
+RepeatEnd 3
+
+// End / Repeat
+Groove Calypso1
+17        Eb
+
+Volume fff
+
+// do entire song 4 times
+Repeatending 3
+18        Eb   /   z
+RepeatEnd
+
+Groove CalypsoEnd
+
+19        Eb      z!
+
+

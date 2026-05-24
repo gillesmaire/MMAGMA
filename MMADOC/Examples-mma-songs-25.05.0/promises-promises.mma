@@ -1,0 +1,157 @@
+// Promises Promises (Bacharach/David  1968)
+// This is a great demo of TRUNCATE and the  @extend plugin.
+// The song is written in 3/4 time, but drifts into 4/4, 3/8
+// and 4/8. We handle this by creating additional beats for
+// 4/4 and truncating the 3/8; and converting the 4/8 to 2/4
+// and truncating that.
+
+Tempo 134
+KeySig G
+
+Groove Metronome3
+  z * 2
+  
+plugin extend   /// A lengthening plugin for Truncate :)
+
+/// Set the common used to a macro. 
+Set E @extend Side=2 Len=4 Timesig=4/4
+
+Groove JazzWaltzIntro
+
+Begin Solo
+    Voice Piano2
+    Volume fff
+    Articulate 90
+    Octave 6
+    Begin Riff
+       8d+;;; e+;;;
+       4c#;a;
+       8d+;;; e+;;;
+       2b;4c+;
+       4d+;
+    End
+End
+
+1        G  A7@2.5
+/// bar 2 is 2/4
+@Extend Timesig=2/4 Len=2 side=2   2    F#m7
+3        Dm7 G7@2.5
+
+/// bar 4 is 4/4
+
+$E  4 CM7  /  Am   D6
+
+
+Repeat
+Groove JazzWaltz
+
+5         G     A7 
+6      F#m7 
+7         C      /     D7 
+
+Groove JazzWaltzSus
+
+/// bars 8 & 9 are 4/4
+$E  8     Bm7 
+$E  9     Am7  
+
+Groove JazzWaltz
+
+10        /
+11        /
+12        /
+
+13      GM7
+14        /
+15      CM7
+16      FM7
+
+Groove JazzWaltzSus
+
+17      CM7
+18      FM7
+19       Bb
+20        /
+
+Groove JazzWaltz
+
+21      Bb7
+22        /
+23      Am7
+24        /
+
+Groove JazzWaltz2
+
+25       D7
+
+RepeatEnding
+
+26      GM7      /     G6
+
+Groove JazzWaltzFill
+
+27      GM7
+
+RepeatEnd
+
+28      GM7      /     G6
+29      GM7      /     G6
+30        G      /     A7
+
+
+Groove JazzWaltzSus
+
+/// bar 31 is 4/4. Repeat the D7 on beat 4
+$E  31        C      /     D7
+
+
+Groove JazzWaltz2
+
+32      Bm7
+33        /
+34        G      /     A7
+
+Groove JazzWaltzSus
+/// bar 35 is 4/4
+$E  35        C
+
+36      Bm7
+
+37        /
+
+Groove JazzWaltz
+
+38        G      /     A7
+/// bar 39 is 3/8. So, we want 1.5 beats
+Timesig 3/8
+Truncate 1.5 side=2
+39        C
+Timesig 3/4
+
+
+Groove JazzWaltzSus
+
+/// bar 40 is 4/8. Treat like 2/4  ... 2 beats
+@Extend Timesig=4/8 Len=2 side=2   40       D7
+
+
+Groove JazzWaltz2
+/// the next 6 are 4/4.
+$E  41        /
+$E  42        /
+$E  43      GM7  /   /   G
+$E  44       G6  /   /   G
+$E  45        F
+$E  46        /
+
+
+Groove JazzWaltz2Sus
+
+47      BM7
+48        /      /     B6
+
+Groove JazzWaltzEnd
+
+49      GM7
+50        /
+

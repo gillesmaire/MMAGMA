@@ -1,0 +1,162 @@
+// Lucy In The Sky With Diamonds
+
+Set Tempo 138  /// so we can remember it after the chorus
+
+Tempo $Tempo
+
+Groove Metronome3
+ z * 2
+
+Keysig F
+
+Use rockwaltz   /// start off with our rockwaltz and modify it.
+
+AllGrooves Chord-Sus Voice SpaceVoice 
+
+Groove RockWaltz
+  Chord Sequence {1 2. 90 0 90 0}  // one chord/bar. Only 1 & 5 of chord
+DefGroove RockWaltzA
+ /// Add in sitar stuff
+ Begin Arpeggio 
+     Voice Sitar
+     Volume p
+     Articulate 150  /// overlap notes
+     Octave 4
+     Rtime 20
+     Rvolume 20
+     Sequence A3 // {A3 Shift .5} {A3; A3 Shift .5}
+     SeqRnd On 
+     Harmony 3Above
+     Rskip 40
+     Direction Up
+     Range 1.5 
+ End
+
+DefGroove RockWaltzAPlus
+
+// new sus versions
+Groove RockWaltzA
+ Chord-Sus Groove RockWaltzSus
+DefGroove RockWaltzASus
+
+Groove RockWaltzAPlus
+ Chord-Sus Groove RockWaltzSus
+DefGroove RockWaltzASusPlus
+
+
+
+Begin Solo
+    Voice Sitar
+    Decresc mf mp 4
+    Harmony 3Below
+    Articulate 110
+    Octave 5
+    Begin Riff
+        4c;f;c+;
+        4e;c+;f;
+        4d;f;c+;
+        4d&;8b;a;4f;
+    End
+End
+
+// This shows how to use a single track as a groove
+Groove None   /// Turn off everthing
+Chord-Sus Groove RockWaltzASus  /// Turn on the sustain track
+
+1         F
+2         F7/E&
+3         F/D
+4         F+/D&
+
+
+Repeat  
+Groove RockWaltzA
+Volume m
+
+5         F
+6        F7
+7        Bb
+8       Bbm
+9         F
+10       F7
+11       Bb
+12       Db
+13        /
+
+Groove RockWaltzAPlus
+Cresc mf 5
+
+14        F
+15       F7
+16       Bb
+17      Bbm
+18        F
+19       F7
+20       Dm
+21       D7
+
+Keysig G
+
+Groove RockWaltzASus
+Volume m
+
+22        G
+23        /
+24       A9
+25        /
+26       D7
+27        /
+28        G
+29        /
+
+Groove RockWaltzASusPlus
+Decresc mf mp 4
+
+30       A9
+31        /
+32        E
+33        /
+
+/// 4/4 time
+
+Groove  BubbleRock
+ Drum-Ohh Sequence D1
+ Begin Drum-Snare
+   Sequence D1234
+   Volume p
+ End
+
+Volume p
+Tempo 92
+
+34       Bm
+
+Repeat
+
+35        E      /      A
+36        B
+
+RepeatEnd
+Groove BubbleRockSus
+37        C
+
+Tempo $Tempo
+
+Repeatend  3
+
+Volume p
+Tempo *.8 2
+
+Groove BubbleRockSus
+
+Begin Solo
+  Volume m
+  Riff 1+1f~;
+End
+Chord Sequence -
+Walk Sequence -
+Chord-Sus Sequence {1 1 100}
+Bass Riff  1 1+1 1 90
+38        BzD
+39       F#zDB
+

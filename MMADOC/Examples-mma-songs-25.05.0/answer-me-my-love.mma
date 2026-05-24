@@ -1,0 +1,124 @@
+// Answer Me My Love (Nat King Cole, 1954)
+
+Tempo 64
+Keysig Eb
+
+Groove Metronome3
+  z * 2
+  
+Groove CountryWaltzIntro
+
+Begin AllGrooves
+    Plectrum Octave 5
+End
+
+/// This only effects the intro setting. Change the arp. from
+/// flute to a guitar.
+Begin Arpeggio
+  Voice NylonGuitar
+  Octave 5
+  Octave 4
+End
+
+Begin Solo
+    Voice JazzGuitar
+    Octave 5
+    Volume f
+    Harmony OpenBelow
+    Articulate 110
+    Begin Riff
+        81e+;82b;2;
+        81c+;82g;2;
+        8f+;e+;d+;c+;b;c+;
+        2.b;
+    End
+End
+
+Swell p mf 4
+
+1        Eb
+2        Cm
+3        Fm
+4       Bb7
+
+Repeat
+Volume m
+
+Groove CountryWaltzWalk
+
+5        Eb
+6      BbM9     Bb
+7      AbM9     Ab
+8     Ebsus     Eb
+
+Groove CountryWaltz2Walk
+Cresc mf 4
+
+9       Ab6
+10     EbM9      /  Ebdim3
+11      Fm7      /    Bb7
+12       Eb
+
+Groove CountryWaltzWalk
+Decresc mp 4
+
+13        /
+14     BbM9     Bb
+15     AbM9     Ab    Abm
+16    Ebsus     Eb
+
+Groove CountryWaltz2Walk
+
+17      Ab6
+18     EbM9      /  Ebdim3
+
+Groove CountryWaltz1Walk
+
+19      Fm7    Bb7
+20       Eb
+
+Groove CountryWaltzWalkSus
+Volume m
+
+21       Gm
+22      Eb9
+23      Gm6
+24       Gm
+
+Groove CountryWaltz2SusWalk
+Cresc mf 4
+
+25        /
+26   Ebm6(add9)
+27       F7      /     F9
+28      Bb7
+
+Groove CountryWaltz2Walk
+Decresc m 4
+
+29       Eb
+30     BbM9     Bb
+31     AbM9     Ab    Abm
+32    Ebsus     Eb
+
+Groove CountryWaltzWalk
+
+33      Ab6
+34     EbM9      /  Ebdim3
+
+Groove CountryWaltz1Walk
+Decresc mp 1
+
+35      Fm7    Bb7
+
+RepeatEnding
+
+36       Eb    Bb7
+
+RepeatEnd
+Decresc ppp 1
+
+Groove CountryWaltzEnd
+
+37       Eb
+

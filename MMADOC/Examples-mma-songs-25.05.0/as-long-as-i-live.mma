@@ -1,0 +1,116 @@
+// As Long As I Live (Arlen/Koehler 1934)
+
+Tempo 110
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+  
+Groove FoxTrotIntro
+Begin Solo
+     Voice Piano1
+     Octave 5
+     Volume ff
+     Harmony OpenBelow
+     Articulate 99
+     RVolume 6
+     Rtime 4
+     Begin Riff
+         8a;b;a;4;8b;4a;
+         8bn;c+;b;4;8c+;4b;
+         8c+;d+;c+;4;8d+;4c+;
+         1c+;
+     End
+End
+
+Swingmode On
+
+Cresc m f 4
+
+1         F
+2        Dm
+3        Gm
+4        C7
+
+Repeat
+Groove FoxTrot
+Volume m
+
+5       FM7
+6     Em7b5      /     A7
+7        D7
+8       Am7      /     D7
+
+Groove FoxTrotPlus
+Cresc mf 4
+
+9        G7
+10      Gm7      /     C7
+11      FM7      /    Dm7
+12      Gm7      /     C7
+
+Groove FoxTrot
+Volume f
+
+13      FM7
+14    Em7b5      /     A7
+15       D7
+16       Am      /     D7
+
+Groove FoxTrotPlus
+Decresc m 4
+
+17       G7
+18      Gm7      /     C7
+19      FM7      /    Bb7
+20      FM7
+
+Groove FoxTrotSus
+Volume mf
+
+21      Cm7      /     F7
+22     BbM7
+23     Bbm7      /    Eb7
+24      FM7      /  Em7b5     A7
+
+Groove FoxTrotSusPlus
+Volume f
+
+25      Dm7
+26       G7
+27      Gm7
+28       C7
+
+Groove FoxTrot
+Volume mf
+
+29      FM7
+30    Em7b5      /     A7
+31       D7
+32      Am7      /     D7
+
+Groove FoxTrotPlus
+Volume m
+
+33       G7
+34      Gm7      /     C7
+
+RepeatEnding
+Volume mp
+
+35      FM7      /    Bb7
+
+Groove FoxTrotFill
+
+36        F      /    C7
+
+RepeatEnd
+
+Groove FoxTrotEnd
+Decresc ppp 2
+
+35      FM7      /    Bb7
+36        F     z!
+
+
+

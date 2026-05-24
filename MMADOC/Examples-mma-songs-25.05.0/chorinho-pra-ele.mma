@@ -1,0 +1,103 @@
+// Chorinho Pra Ele (Hermeto Pascoal)
+
+/// This tempo is for 2/4 time. I need to double for rhumba in 4/4
+/// My sheet music call for 86bpm, but I can't play that fast :)
+Tempo $(64 * 2) 
+
+Groove Metronome2-4
+   z * 2
+   
+Groove JazzRhumbaIntro
+Begin Solo
+    Voice Flute
+    Volume ff
+    Harmony 8Below
+    Articulate 110
+    Octave 5
+    Begin Riff
+        8f;g;a;c+;b&;c+;d+;f+;
+        8e&+;f+;g+;b&+;a&+;b+;c++;e&++;
+        8d&++;a&+;f+;d&+;c+;dn+;e+;g+;
+        4.f+;8; 
+    End
+End
+
+Swell m mf 4
+1        F9      / Bb7(6)
+2       Eb9      / Ab7(6)
+3       Db9      /     C9
+4       FM7      /     D9
+
+Repeat
+Groove Rhumba
+Cresc m +30% 16
+
+5       GM7      /     G6
+6       Am7
+7         /      /    D13
+8       GM7
+
+Groove JazzRhumbaPlus
+
+9     Gdim7
+10      Am7
+11      D13
+12      GM7      /     G6
+
+Groove JazzRhumba
+
+13     Cm11      /    F13
+14     BbM7
+15    Bbm11      /   Eb13
+16     AbM7
+
+Groove JazzRhumbaPlus
+
+17      Dm9      /  G7(6)
+18      CM7      /   E7b9
+19        /      /  E7/G#
+20   G#dim7      /    Am7
+
+Groove JazzRhumba
+
+21       F9      / Bb7(6)
+22      Eb9      / Ab7(6)
+23      Db9      /     C9
+
+RepeatEnding
+
+24      FM7      /     D9
+
+RepeatEnding
+
+25      FM7
+
+Groove JazzRhumbaSus
+Volume m
+
+26     Ebm9      /   Ab13
+27    DbM13      /  Edim7
+28   Eb7sus4      /   Ab13
+29     DbM7      /    Db6
+
+Groove JazzRhumbaSusPlus
+Volume mf
+
+30     F#m9
+31      Am9
+32      Cm9
+33     Ebm9
+
+Groove JazzRhumbaIntro
+Seq 4
+
+34      GM7
+
+RepeatEnd
+
+Volume mp
+Groove JazzRhumbaEnd
+Seq 2
+
+100      FM7     
+

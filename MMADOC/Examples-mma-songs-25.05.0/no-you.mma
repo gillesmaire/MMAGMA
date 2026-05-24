@@ -1,0 +1,113 @@
+// No You (Sans Vous), 1947
+
+Tempo 80
+KeySig Bb
+
+Groove Metronome2-4
+   z * 2
+   
+Set Push0 .80   // more 'square' than 'swing'
+Groove EvansishIntro
+
+Begin Solo
+    Voice Accordion
+    Articulate 90
+    Harmony OpenAbove
+    Octave 4
+    Volume mf
+    Begin Riff
+        4.g+;8f+;43e+;d+;e+;
+        4.f+;8e+;43d+;c+;d+;
+        4.e+;8d+;43c+;d+;b;
+        2c+;
+    End
+End
+
+Cresc mp mf 4
+
+1        Bb
+2       Gm7
+3        Cm
+4        F7
+
+
+Repeat
+Groove Evansish1
+Volume m
+
+5        Bb
+6      BbM7
+7       Bb6      /   Bdim3
+8       Cm7      /     F7
+
+Groove Evansish1Plus
+Cresc mf 4
+
+9      Bdim3
+10      Cm7      /     F7
+11      Cm7      /   F7b9
+12       Bb      /    F7+
+
+Groove Evansish1
+
+13       Bb
+14     BbM7
+15      Bb6      /   Bdim3
+16      Cm7      /     F7
+
+Groove Evansish1Sus
+Decresc m 2
+
+17     Bdim3
+18      Cm7      /     F7
+19      Cm7      /   F7b9
+20       Bb
+
+Groove Evansish1SusPlus
+Volume mp
+
+21      Fm7
+22     EbM7
+23      Fm7
+24      Eb6
+
+Groove Evansish1
+Volume m
+
+25      Am7      /     D7
+26       Gm      /    Gm7
+27       C7
+28      Cm7      /     F9    F7+
+
+Groove Evansish1Plus
+Volume mf
+
+29       Bb
+30     BbM7
+31      Bb6      /   Bdim3
+32      Cm7      /     F7
+
+Groove Evansish1
+Decresc mp 4
+
+33     Bdim3
+34      Cm7      /     F7
+35      Cm7      /    Cm6
+36     D7b5      /   G7b9
+
+RepeatEnding
+
+Groove Evansish1Sus
+Volume p
+
+37      Cm7      /   F7b9
+38      Bb6  Bbdim3    Cm7    F7+
+
+RepeatEnd
+
+Groove EvansishEnd
+Decresc ppp 2
+
+37      Cm7      /   F7b9
+39      Bb6   z!
+

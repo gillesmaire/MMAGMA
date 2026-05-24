@@ -1,0 +1,100 @@
+// Innamorata (Sweetheart, 1955)
+
+Tempo 80
+Keysig Bb
+
+Groove Metronome3
+  z * 2
+  
+Groove JazzWaltzIntro
+
+// This should only effect JazzWaltz2. But, careful,
+// the jazzwaltz1 also uses the Arpeggio track!
+Allgrooves Arpeggio Harmony OpenAbove
+
+Begin Solo
+    Voice Piano1
+    Volume f
+    Harmony 3Below
+    Articulate 105
+    Octave 5
+    Begin Riff
+        4.b;8;;;
+        4.d+;8;;;
+        4.c+;8;;;
+        2.f+;
+    End
+End
+
+Swell mp mf 4
+
+1        Bb
+2        Gm
+3        Cm
+4        F7
+
+Groove JazzWaltz
+Volume m
+
+5        Bb
+6       Dm7
+7        Eb
+8       Cm7
+
+Groove JazzWaltz2
+
+9        F7
+10      Cm7      /     F7
+11       Bb
+12        /
+
+Groove JazzWaltz
+Volume mf
+
+13        /
+14     Edim
+15      Cm7
+16       F7
+
+Groove JazzWaltz2
+
+17        /
+18       F+
+19       Bb
+20      Cm7
+
+Groove JazzWaltzSus
+Volume mp
+
+21       Bb
+22      Dm7
+23       Eb
+24      Cm7
+
+Groove JazzWaltz2Sus
+Cresc mf 8
+
+25       F7
+26      Cm7      /     F7
+27       Bb
+28        /
+
+Groove JazzWaltzSus
+
+29      Fm6
+30       G7
+31       Cm      /    Cm7
+32        /      /   C7b5
+
+Groove JazzWaltz
+Decresc ppp 4
+
+33       Bb      /     Gm
+34      Cm7      /     F9
+
+Groove JazzWaltzEnd
+
+35       Bb
+36        /  z!
+
+

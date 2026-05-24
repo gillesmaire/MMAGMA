@@ -1,0 +1,96 @@
+// Portuguese Washerwoman (Joe "Fingers" Carr, 1956)
+
+Tempo $(100 * 2)
+
+Groove Metronome2-4
+   z * 2
+   
+Groove RagtimeIntro
+
+Swell  mf  f 4
+
+KeySig  F
+
+1          F
+2         Dm
+3         Gm
+4         C7
+
+Repeat
+Volume m
+Groove Ragtime
+
+5        FM7      /     C7
+6          F      /     C7
+7        FM7      /     C7
+8          F      /     C7
+
+9        FM7      /     C7
+10         F      /     C7
+11       FM7      /     C7
+12         F      /      /     C+
+
+Groove RagtimePlus
+
+13         F      /      /     C+
+14       FM7      /      /     C7
+15    G7sus4      /     C7
+16         F      /      /     C+
+
+17         F      /      /     C+
+18         F      /      /     C7
+19    G7sus4      /     C7
+
+/// The next 2 bars are really one 4/4 with a key change in the middle
+Truncate 2 Count=2
+20         F
+KeySig Bb
+21        F7
+
+Groove RagtimeSus
+
+22       Gm7
+23         /      /     Bb
+24        F7
+25        Bb      /     F7
+
+26       Gm7
+27         /      /     Bb
+28        F7
+29       Gm7
+
+Groove RagtimeSusPlus
+
+30        F7
+31       Gm7
+32        F7
+33       Gm7
+
+34        F7
+35       Gm7
+36        F7
+
+RepeatEnding
+
+37       Gm7      /     C7
+
+Keysig F   /// back to original key for repeat
+
+RepeatEnd
+
+38       Gm7
+
+Groove RagtimeSus
+
+39        F7
+40       Gm7
+
+Groove RagTimeEnd
+
+Cresc  ff  2
+
+41        F7
+Bass Sequence B13
+Chord Sequence C13
+42       Gm7      /     Bb
+

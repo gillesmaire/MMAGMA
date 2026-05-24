@@ -1,0 +1,142 @@
+// Night Has A Thousand Eyes (Bobby Vee, 1962)
+
+Tempo 200
+KeySig G
+
+Groove Metronome2-4
+  z * 2
+  
+Transpose down maj 2
+
+Groove BubbleRockIntro
+
+Begin AllGrooves
+  Begin Bass
+     Volume f
+     Articulate 80
+  End
+End
+
+Begin Solo
+    Voice Piano1
+    Volume f
+    Articulate 80
+    Harmony OpenBelow
+    Octave 5
+    Begin Riff
+        4g;8;8;8;4;8g;
+        4g;;;;
+        4c+;8;;4;;
+        2d+;
+    End   
+End
+
+Cresc mp f 4
+
+1         G
+2        Em
+3        Am
+4        D7
+
+
+Repeat
+Groove BubbleRock
+Volume m
+
+5         G
+6         /
+7        B7
+8        E7
+
+Groove BubbleRockPlus
+
+9        A7
+10      Am7     Cm     D7
+11        G
+12        /      /     D7
+
+Groove BubbleRock
+Volume mf
+
+13        G
+14        /
+15       B7
+16       E7
+
+Groove BubbleRockPlus
+
+17      Em7
+18       A7      /    Em7     A7
+
+Decresc m 2
+
+19       D7      /    Am7
+20       D7      /      G
+
+Groove BubbleRockSus
+Volume f
+
+21       Em
+22        /
+23        /
+24        /
+
+Groove BubbleRockSusPlus
+Volume mf
+
+25      Am7
+26       D7
+27        G
+28        /
+
+Groove BubbleRockSus
+VOlume m
+
+29      Am7
+30       D7
+31      Dm6
+32       E7
+
+Groove BubbleRockSusPlus
+
+33      Am7
+34       D7
+35        G
+36        C
+
+Groove BubbleRockSus
+Cresc f 2
+
+37      Am7
+38       D7      /    Am7
+
+Groove BubbleRockFill
+
+RepeatEnding  // add in '2' if you want to do all 3 verses
+
+39        G
+40       E7
+
+RepeatEnd
+Volume mf
+
+41        G
+42       E7
+
+Groove BubbleRockSusPlus
+Decresc mp 4
+
+43      Am7
+44       D7
+45        G
+46        C
+
+Volume f
+47      Am7
+48       D7
+
+Groove BubbleRockEnd
+
+49        G      /     C6
+50        G     z!
+

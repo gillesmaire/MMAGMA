@@ -1,0 +1,116 @@
+// Saving All My Love For You
+
+Tempo 69
+Keysig A
+
+Groove Metronome2-4
+  z * 2
+  
+Transpose up min 3  ///  Take to C
+
+Groove Ballad128Intro1
+Seq 4
+     z / / G9sus
+
+Repeat
+Groove Ballad128
+Volume m
+
+1       AM7      /   F#m7
+2       Bm9      /    D/E
+3       AM7      /   F#m7
+4       Bm9      /    D/E
+
+Groove Ballad128Plus
+Cresc mf 3
+
+5      F#m7      /   B/F#
+6      F#m7      /   B/F#
+7         A      /   F#m7
+8      G#m7      /    C#7
+
+Groove Ballad128
+Volume mp
+
+9       DM7   C#m7    Bm7    D/E
+
+RepeatEnding
+
+10      AM7      /   F#m7
+11      Bm9      /    D/E
+
+RepeatEnd
+
+12        A
+
+Groove Ballad128Sus
+Volume m
+
+13     G#m7      /    C#7
+14     F#m7
+15      Bm7      /     E7
+16      AM7
+
+Groove Ballad128SusPlus
+Volume mf
+
+17   Eb7sus      /    Ab7
+18     DbM7
+19     F#m7      /     B7
+20    DM7/E
+
+Groove Ballad128Sus
+Cresc f 4
+
+21      AM7      /   F#m7
+22      Bm9      /    D/E
+23      AM7      /   F#m7
+24      Bm9      /    D/E
+
+Groove Ballad128SusPlus
+Decresc m 8
+
+25     F#m7      /   B/F#
+26     F#m7      /   B/F#
+27        A      /   F#m7
+28     G#m7      /    C#7
+
+Groove Ballad128
+
+29      DM7   C#m7    Bm7
+30      DM7   C#m7    Bm7
+31      Dm7   C#m7    Bm7    D/E
+32      AM7      /   F#m7
+
+Groove Ballad128Plus
+Cresc mp mf 4
+
+33      Bm9      /    D/E
+34      AM7      /   F#m7
+35      Bm9      /    D/E
+36     F#m7      /   B/F#
+
+Groove Ballad128Plus
+Volume m
+
+37     F#m7      /   B/F#
+38        A      /   F#m7
+39     G#m7      /    C#7
+40      DM7   C#m7    Bm7
+
+Groove Ballad128Plus
+
+41      DM7   C#m7    Bm7
+42      DM7   C#m7    Bm7    D/E
+
+Decresc pppp 4
+Repeat
+
+43      AM7      /   F#m7
+44      Bm9      /    D/E
+
+Groove Ballad128End
+
+RepeatEnd
+
+

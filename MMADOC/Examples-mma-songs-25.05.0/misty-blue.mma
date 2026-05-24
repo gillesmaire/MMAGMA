@@ -1,0 +1,86 @@
+// Misty Blue (Wilma Burgess, 1966; Dorothy Moore, 1976)
+
+Tempo 55
+KeySig C
+
+Transpose Down Maj 2  // play in Bb Major
+
+Groove Metronome2-4
+  z * 2
+  
+Label DC
+Groove SlowBlues
+Volume m
+
+1         C      /     C+
+2         F
+3        G7
+4         C
+
+Groove SlowBluesWalk4
+Cresc f 4
+
+5        C7
+6         F      /    Dm7
+7        G7
+8         C
+
+If Def CODA
+  Goto Coda
+Endif
+
+Groove SlowBlues
+Decresc m 4
+
+9         /      /     C+
+10        F
+11       G7
+12        C
+
+Groove SlowBluesSus
+
+13       C7
+14        F      /    Dm7
+15       G7
+Chord-Sus Articulate 99
+16        C
+Begin Chord-Sus
+  Articulate 99
+  Volume 1
+  Sequence {1 1 90 0}
+End
+
+17       C7
+
+Groove SlowBluesWalk4Sus
+Volume mf
+
+18        F
+19    F#dim
+20        C      /     G7
+21        C
+
+Groove SlowBluesSus
+
+22        /
+23        F
+24       G7
+25        C
+
+Set Coda
+Goto DC
+
+Label Coda
+
+Groove SlowBlues
+Decresc pppp 5
+
+26        C      /     C+
+27        F
+28       G7
+
+Groove SlowBluesEnd
+
+29        C
+30        /  z!
+

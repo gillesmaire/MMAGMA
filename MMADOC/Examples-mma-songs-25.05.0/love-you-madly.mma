@@ -1,0 +1,105 @@
+// Love You Madly (Ellington, 1950)
+
+Tempo 110
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+
+Begin Solo
+    Voice Piano1
+    Volume f
+    Octave 5
+    Harmony OpenBelow
+    Articulate 80
+    Begin Riff
+        4c+;;2a;
+        4a;;2f;
+        8c;d;e;f; g;a;b;bn;
+        2c+;
+    End
+End
+
+Groove SwingIntro
+
+Swell mp mf 4
+Swingmode On
+
+1         FM7
+2         Dm
+3         Gm
+4        C7
+
+
+Repeat
+Groove Swing
+Volume m
+
+5       FM7      /    Dm7
+6        G7      /     C7
+7        A7      /     D7
+8        G7      /     C7
+
+Groove SwingWalk
+Cresc mf 4
+
+9       Cm7      /     F7
+10     BbM7      /  Bbmb5 
+11      Am7     D7    Gm7     C7
+12      FM7      /    Gm7     C7
+
+Groove SwingPlus
+Volume f
+13      FM7      /    Dm7
+14       G7      /     C7
+15       A7      /     D7
+16       G7      /     C7
+
+Groove SwingWalkPlus
+Volume mf
+
+17      Cm7      /     F7
+18     BbM7      /  Bbm7b5
+19      Am7     D7    Gm7     C7
+20      FM7
+
+Groove SwingSus
+Volume m
+
+21    Ddim7      /     G7
+22      Cm7      /     F7
+23     BbM7      /   F7#5
+24     BbM7
+
+Groove SwingWalkSus
+
+25      Dm7      /     G7
+26      Dm7      /     G7
+27      Gm7      /  Bdim7
+28    Cdim7      /   C7b9
+
+Groove SwingWalkPlusSus
+Volume mp
+
+29      FM7      /    Dm7
+30       G7      /     C7
+31       A7      /     D7
+32       G7      /     C7
+
+Groove SwingSus
+Cresc m 4
+
+33      Cm7      /     F7
+34     BbM7      /  Bbm7b5
+35      Am7     D7    Gm7     C7
+
+RepeatEnding
+
+36      FM7      /    Gm7  C7 
+
+RepeatEnd
+
+Groove SwingEnd
+
+36      FM7 
+

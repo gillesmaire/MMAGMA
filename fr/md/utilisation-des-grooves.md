@@ -215,6 +215,10 @@ La directive **use**  va lire le fichier spécifié et écraser l'ancienne défi
 
 ## Les Grooves par famille
 
+Attention aucun nom de Groove ne doit prendre un caractère -, si dans la liste ci-dessous des noms de Groove aparaissent 
+avec un tel caractère, il ne peut s'agir que d'une coupure de mot arbitraire.
+
+
 ### Alexis 
 
 hiphop teamtechno 
@@ -234,7 +238,7 @@ hiphop teamtechno
 
 ### stdlib
 
-0srock 60srock 68march 68swing 8beat afro-cuban arpeggio44 arpeggio68 arpeggiowaltz ballad128 ballad68 ballad basicrock bebop beguine bigband bluefolk bluegrass blues128 blues68 blues boggiewoggie bolero boneym bossanova broadway broadwaywaltz bubblerock bvfunk bwmarch calypso chacha charleston click countryblues countryswing countrywaltz cubanguitar descendingjazz desert dixiemarch dixie doowop dsoul easyswing eewaltz evansish fastblues fastjazzwaltz fastswing fastwaltz folkballad folk folkrock folkyjazz foxtrot frenchwaltz guitarballad gypsyjazz hillcountry hymn jazz-54 jazzcombo jazzguitar jazzrhumba jazzrock jazzwaltz jive latinwaltz lfusion lighttango lullaby mambo march mellowjazz merengue metronome3 metronome68 metronome6 metronome modernjazz modernjazzwaltz nitejazz none pianoballad polka popballad popspiritual quickstep ragtime rb-ballad rb rhumba rock-128 rockballad rockwaltz salsa samba showtune shuffleboggie ska slowblues slowbolero slowbroadway slowcountry slowdesert slowjazz slowspiritual softrock softshoe son spiritual stringballad strut swing tango trance twist vienesewaltz waltz westernswing zydeco 
+0srock 60srock 68march 68swing 8beat afro-cuban arpeggio44 arpeggio68 arpeggiowaltz ballad128 ballad68 ballad basicrock bebop beguine bigband bluefolk bluegrass blues128 blues68 blues boggiewoggie bolero boneym bossanova broadway broadwaywaltz bubblerock bvfunk bwmarch calypso chacha charleston click countryblues countryswing countrywaltz cubanguitar descendingjazz desert dixiemarch dixie doowop dsoul easyswing eewaltz evansish fastblues fastjazzwaltz fastswing fastwaltz folkballad folk folkrock folkyjazz foxtrot frenchwaltz guitarballad gypsyjazz hillcountry hymn jazz-54 jazzcombo jazzguitar jazzrhumba jazzrock jazzwaltz jive latinwaltz lfusion lighttango lullaby mambo march mellowjazz merengue metronome3 metronome68 metronome6 metronome modernjazz modernjazzwaltz nitejazz none pianoballad polka popballad popspiritual quickstep ragtime rbballad rb rhumba rock-128 rockballad rockwaltz salsa samba showtune shuffleboggie ska slowblues slowbolero slowbroadway slowcountry slowdesert slowjazz slowspiritual softrock softshoe son spiritual stringballad strut swing tango trance twist vienesewaltz waltz westernswing zydeco 
 
 ### Yamaha
 
@@ -397,12 +401,12 @@ mma -d Court.mma   | sort
 ## Les instruments MIDI 
 
 
-- Les instruments peuvent être sélectionné par leur nom donné dans la colonne Nom Anglais ou par leur numéro donné dans la colone Numéro
+- Les instruments peuvent être sélectionné par leur nom donné dans la colonne Nom Anglais ou par leur numéro donné dans la colone Numéro.
 
 | Catégorie | Numéro | Nom anglais  |   Nom français |
 |:---------|:----------|:------------|:--------------|
 | Pianos	| 1	         | AcousticGrandPiano	| Piano|
-| Pianos	| 2	| BrightAcousticPiano	|Piano brillant |
+| Pianos	| 2	| BrightAcousticPiano	|Piano brillant |
 | Pianos    |	3	|Electric Grand Piano	|Piano |
 | Pianos    |	4	|Honky-tonkPiano	|Piano honky-tonk|
 | Pianos    |	5	|ElectricPiano1	|Piano électrique 1|

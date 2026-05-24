@@ -1,0 +1,52 @@
+// People Get Ready - Curtis Mayfield, 1965
+
+Tempo 72
+Keysig G
+
+Groove Metronome2-4
+  z * 2
+  
+// Set up solo here for the 1st time though. Acts as a intro
+
+Begin Solo
+    Voice JazzGuitar
+    Octave 5
+    Harmony OpenBelow
+    Articulate 110
+    Volume f
+    Rtime 10
+    Rvolume 40
+    Begin Riff
+      8b;c+;b;4g;8e;;d;
+      4g;8e;4a;b;8g;
+      8b;c+;b;4g;8e;;d;
+      8g;4;4.;8;;
+      8b;4d+;;8a;g;e;
+      4g;8e;4a;4.b;
+      8b;c+;b;4g;8e;;d;
+      8g;4;4.;
+    End
+End
+
+Repeat
+Groove Blues
+Volume m
+1         G      /     Em
+2         C      /      G
+
+Decresc mp 2
+3         G      /     Em
+4         C      /      G
+
+Groove BluesSus
+Cresc m 2
+5         G      /     Em
+6         C      /      G
+
+Volume mf
+7        Em      /     Am
+8       C/D      /      G
+
+RepeatEnd 4
+
+

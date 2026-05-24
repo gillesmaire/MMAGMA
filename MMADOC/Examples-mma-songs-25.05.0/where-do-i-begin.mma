@@ -1,0 +1,100 @@
+// Where Do I Begin (Love Story)
+
+Tempo 82
+Keysig G minor
+
+Groove Metronome2-4
+  z * 2
+  
+Groove JazzGuitar1Intro
+
+Begin Solo
+    Voice Strings
+    Octave 5
+    Articulate 105
+    Harmony OpenBelow
+    Volume mf
+    Begin Riff
+        2+8b+;8d+;f+;b+;
+        2+8a+;8c+;f#+;a+;
+        2+8g+;8d+;b;g;
+        2b;f#;
+    End
+End
+
+SwingMode On
+Swell mp mf 4
+
+1        Gm
+2    F#dim7
+3      EbM7
+4     D7sus      /     D7
+
+
+Repeat
+Groove JazzGuitar
+Decresc m mp 4
+
+5        Gm
+6         /
+7        D7
+8         /
+
+Groove JazzGuitarPlus
+Cresc mf 4
+
+9        Gm
+10     EbM7      /      /    Eb6
+11       D7
+
+RepeatEnding   // ending 1
+
+12        /    D11     D7   D7b9
+
+Groove JazzGuitar
+
+13       Gm
+14        /
+
+RepeatEnding  // ending 2
+
+15        /    D11     D7
+16      GM7
+
+17       G7    G11     G7   /// music says Next Strain, we dumped the final ending
+
+
+Groove JazzGuitarSus
+Volume m
+
+21       Cm
+22       F7
+23     BbM7
+24     EbM7
+
+Groove JazzGuitarSusPlus
+Volume mf
+
+25    Am7b5      /     D7
+26       Gm
+Decresc m 2
+27       Cm
+28    F7sus     F7
+
+Groove JazzGuitarSus
+
+29     BbM7
+30       Eb
+31       A7
+Decresc mp 2
+32      DM7
+
+33       D7
+
+RepeatEnd  /// we just finished the "B", this is the FINE end
+
+18      D7  D11 D7
+Decresc pppp 2
+Groove JazzGuitarEnd
+19       Gm    EbM7
+20       Gm   z!

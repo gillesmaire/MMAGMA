@@ -1,0 +1,107 @@
+// Crocodile Rock (Elton John, 1972)
+
+Tempo 145
+Keysig G
+
+Groove Metronome2-4
+  z * 2
+  
+Groove 50sRockIntro
+
+Begin Solo
+    Voice CleanGuitar
+    Volume f
+    Articulate 80
+    Octave 5
+    Harmony 3Below
+    Begin Riff
+        8g;;;;;;;;
+        8b;;;;;;;;
+        8c+;;;;;;;;
+        4d;;;;
+    End
+End
+
+Decresc f m 4
+1          G
+2          Em
+3          C
+Bass-Sax Riff 1 8 1 20
+Chord-Sax Riff 1 4 80
+Walk Riff 1 4 90;3 4 80
+4          D  
+
+Repeat
+Groove 50sRock
+Volume m
+
+5          G
+6          /
+7         Bm
+8          /
+
+Groove 50sRockPlus
+Volume mp
+
+9          C
+10         /
+11         D
+12         /
+
+Groove 50sRock
+Volume mf
+
+13         G
+14         /
+15        Bm
+16         /
+
+Groove 50sRockPlus
+Volume m
+
+17         C
+18         /
+19         D
+20         /
+
+Groove 50sRockSus
+Volume mp
+
+21        Em      D     Em      D
+22        Em      D     Em      D
+23        A7
+24         /
+
+Groove 50sRockSusPlus
+Volume m
+
+25        D7
+26         /
+27         G
+28         /
+
+Groove 50sRockSus
+Volume mf
+
+29         E
+30         /
+31        A7
+32         /
+
+Groove 50sRock1
+Decresc mp 4
+
+33        D7
+34         /
+
+Repeatending 2
+
+35         C
+36         /      /      D
+
+RepeatEnd
+
+35         C
+36         G    z!
+
+

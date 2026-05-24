@@ -1,0 +1,99 @@
+// Drop Me Off In Harlem (Ellington, 1933)
+
+Tempo 120
+Keysig Bb
+
+Groove Metronome2-4
+  z * 2
+  
+Groove BigBandIntro
+Chord-Hits1 Volume mp
+
+Cresc mp mf 4
+Chord  Voice Piano1
+
+1        Bb
+2         /
+1        BbM7
+2        F7
+
+Repeat
+Groove BigBand
+Volume m
+
+3      BbM7      /  Bdim7
+4       Cm7      /     F7
+5     Dm7b5      /    Db7
+6       Cm7      /     F7
+
+Groove BigBandPlus
+Volume mf
+
+7     Am7b5      /     D7
+8       Gm7      /    Fm7    Bb7
+9      EbM7      /    Cm7     F7
+10     BbM7
+
+Groove BigBand
+Volume f
+
+11     BbM7      /  Bdim7
+12      Cm7      /     F7
+13    Dm7b5      /    Db7
+14      Cm7      /     F7
+
+Groove BigBandPlus
+Volume m
+
+15    Am7b5      /     D7
+16      Gm7      /     F7    Bb7
+17     EbM7      /    Cm7
+18     BbM7
+
+Groove BigBandSus
+
+19      Fm7
+20    Bb7#5
+21     EbM7      /  Bb7#5
+22      Bb7
+
+Groove BigBandSusPlus
+Cresc f 4
+
+23      Ab7
+24      Db7
+25       C7
+26       F7
+
+Groove BigBand
+Volume m
+
+27     BbM7      /  Bdim7
+28      Cm7      /     F7
+29    Dm7b5      /    Db7
+30      Cm7      /     F7
+
+Groove BigBandPlus
+Decresc mp 2
+
+31    Am7b5      /     D7
+32      Gm7      /    Fm7    Bb7
+
+RepeatEnding
+
+33     BbM7      /    Cm7     F7
+
+Groove BigBandFill
+
+34     BbM7      /    F7
+
+RepeatEnd
+
+Groove BigBandEnd
+Decresc pp 2
+
+33     BbM7      /    Cm7     F7
+34     BbM7      z!
+
+
+

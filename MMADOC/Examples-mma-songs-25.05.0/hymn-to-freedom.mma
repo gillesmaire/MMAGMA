@@ -1,0 +1,119 @@
+// Hymn To Freedom (Oscar Peterson)
+
+Tempo 70
+
+Groove Metronome2-4
+  z * 2
+
+
+
+Groove SlowSpiritualIntro
+
+Begin AllGrooves
+  Begin Arpeggio
+     Octave 3
+     Rskip 40
+     Articulate 150
+  End
+End
+
+
+Begin Solo
+    Voice ChurchOrgan
+    Volume F
+    Articulate 105
+    Harmony OpenBelow
+    Octave 5
+    Begin Riff
+       4c+;;b;a;
+       4g;8e;8+2c;
+       8f;4.e;4c;d;
+       2c;r;
+   End
+End
+
+Swell mp mf 4
+1          F      / F#dim3
+2          C     E7     Am@2.5
+3         Dm      /      /     G7
+4          C      /     G7
+
+Groove SlowSpiritual
+
+Cresc mp mf 8
+
+5          C      /     E7
+6         Am      /     C7
+7          F      /  F#dim
+8          C      /     C7
+
+Groove SlowSpiritualPlus
+
+9          F      /  F#dim
+10         C     E7     Am
+11        D7
+12        G7
+
+Groove SlowSpiritual
+Volume m
+
+13         C      /     E7
+14        Am      /     C7
+15         F      /  F#dim
+16         C      /     C7
+
+Groove SlowSpiritualPlus
+
+17         F      /  F#dim
+18         C     E7     Am
+19       Dm7      /      /     G7
+20         C
+
+Repeat
+Groove SlowSpiritualSus
+Cresc f 6
+
+21       Dm7      /      /     G7
+22       Dm7      /      /     G7
+23         C      /     E7
+24        Am      /      /     C7
+
+Groove SlowSpiritualSusPlus
+
+25         F      /  F#dim
+26         C     E7     Am
+27        D7
+28        G7
+
+Groove SlowSpiritual
+Decresc m 4
+
+29         C      /     E7
+30        Am      /     C7
+31         F      /  F#dim
+32         C      /      /     C7
+
+Groove SlowSpiritualSus
+
+33         F      /  F#dim
+
+RepeatEnding
+Decresc p 2
+
+34         C     E7     Am
+35        Dm      /      /     G7
+36         C
+
+RepeatEnd
+
+37         C     E7     Am
+38       Dm7      /      /     G7
+
+//Groove SlowSpiritualEnd
+Decresc ppp 4
+
+39        Am      /    Am6
+40         Gsus4      /         C
+41        Am      /     Dm
+42         C      /     z!
+

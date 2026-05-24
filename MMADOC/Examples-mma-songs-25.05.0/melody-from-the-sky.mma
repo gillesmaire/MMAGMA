@@ -1,0 +1,82 @@
+// Melody From The Sky (Trail of the Lonesome Pine, 1936)
+
+Tempo 100
+
+Groove Metronome2-4
+  z * 2
+  
+Repeat
+Volume m
+Groove FolkyJazzGuitar
+
+1        Ab
+2         /      /   Ddim
+3       Bbm    Eb7
+4     Cm7b5      /     F7
+
+Groove FolkyJazzGuitarPlus
+Cresc f 4
+
+5        Db      /   Bbm7
+6       Eb9
+7        Ab      /   Ddim
+8      Bbm7      /    Eb7
+
+Groove FolkyJazzGuitar
+
+9        Ab
+10        /      /   Ddim
+11      Bbm    Eb7
+12    Cm7b5      /     F7
+
+Groove FolkyJazzGuitarPlus
+Decresc m 4
+
+13       Db      /   Bbm7
+14      Eb9
+15       Ab
+16        /      /     G7
+
+Groove FolkyJazzGuitarSus
+
+17        C      /  F#dim
+18       G7      /      /     G+
+19        C      /      /    A+7
+20       Dm      /      /    B+7
+
+Groove FolkyJazzGuitarSusPlus
+Volume mf
+
+21        C      /  F#dim
+22       G7
+23        C
+24     Bbm7      /    Eb7
+
+Groove FolkyJazzGuitar
+Decresc mp 6
+
+25       Ab
+26        /      /   Ddim
+27     Bbm7    Eb7
+28    Cm7b5      /     F7
+
+Groove FolkyJazzGuitarPlus
+
+29       Db      /   Bbm7
+30      Eb9
+
+RepeatEnding
+
+31       Ab
+32        /
+
+RepeatEnd
+
+Groove FolkyJazzGuitarEnd
+Decresc ppp 2
+
+31       Ab
+32        /  / z!
+
+
+

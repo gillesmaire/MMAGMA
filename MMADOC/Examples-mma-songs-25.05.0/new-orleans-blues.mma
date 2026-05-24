@@ -1,0 +1,110 @@
+// New Orleans Blues (Jelly Roll Morton, 1925)
+
+Tempo 100
+KeySig Bb
+
+Groove Metronome2-4
+  z * 2
+  
+Repeat
+Groove EasySwing
+
+1        Bb
+2         /
+3         /
+4       Bb7
+
+Groove EasySwingWalk
+
+5        Eb
+6       Eb7
+7        Bb
+8         /
+
+Groove EasySwingFill
+
+9        F7
+10        /
+Seq 4
+11        B&
+Seq 4
+12        / F7@4
+
+RepeatEnd
+
+Repeat
+Groove EasySwingSus
+
+13       Bb
+14        /
+15        /
+16        /      /    Bb7
+
+Groove EasySwingWalkSus
+
+17       Eb
+18      Eb7
+19       Bb
+20        /      /      /  Dbdim
+
+Groove EasySwingSusFill
+
+21       F7
+22        /
+23       Bb
+24        /      /      /     F7
+
+RepeatEnd
+
+Repeat
+
+Groove EasySwingWalk
+
+25       Bb
+26        /
+27        /
+28        /
+
+Groove EasySwingWalkSus
+
+29       Eb
+30      Eb7
+31       Bb
+32        /
+
+Groove EasySwingWalkFill
+
+33       F7
+34        /
+35       Bb     F7
+36       Bb      /      /     F7
+
+
+RepeatEnd
+
+Groove EasySwing
+
+37       Bb
+38      Eb7
+39       Bb
+40      Bb7
+
+Groove EasySwingWalk
+
+41       Eb
+42      Eb7
+43       Bb
+44        /
+
+Groove EasySwing
+
+45       F7
+46        /
+47       Bb
+48        /
+
+Groove EasySwingEnd
+
+49        /
+50        /
+

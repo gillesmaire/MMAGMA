@@ -1,0 +1,91 @@
+// In My Room (Beachboys, 1963)
+
+Tempo 90
+
+Groove Metronome2-4
+  z * 2
+  
+Groove Rock128IntroSus
+AllGrooves Bass Volume -40%
+
+Begin Solo
+    Stretch 66.66  // groove is in 4/4 solos are in 12/8
+    Voice JazzGuitar
+    Volume f
+    Articulate 140
+    Harmony 3Below
+    Octave 5
+    Begin Riff
+        8c;e;g;c+;g;e;c;e;a;c+;a;e;
+        8d;f;a;d+;a;f;g;f;g;4.;
+    End
+End
+
+1         C      /     Am
+2        Dm      /     G7
+
+// Reuse the solo track for harmonies
+Begin Solo
+  Voice ChoirAahs
+  Volume mp
+End
+
+Repeat
+Label Sign
+Groove Rock128Sus
+
+3         C
+4         /
+
+5         /      /     Bb
+6         C      / Am7
+7       Dm7      /     Bb
+8         G      /     G7
+
+If Def CODA
+ Goto CODA
+Endif
+
+RepeatEnding
+Chord-Sus Volume +20%
+9         C      /     Bb   {2.r;4.f;a;}
+10        C                  {2.g;}
+
+RepeatEnd
+Chord-sus Volume +30%
+
+11        C      /     Bb  {2.r;4.f;a;}
+12        C                {2.g;}
+
+Groove Rock128SusPlus
+Chord-sus Cresc +30% 8
+Chord-susharmony Cresc +30% 8
+
+13       Am
+14        G
+15       Am      G     Am      G
+16        C
+
+17       Am
+18        G
+19      Dm7
+20        /      /     G7
+
+Set CODA
+Goto Sign
+
+Label CODA
+
+Decresc pppp 6
+Solo Decresc p 5
+
+21        C      /     Bb   {2.g;4.f;a;}
+22        C      /     Bb   {2.g;4.f;a;}
+23        C      /     Bb   {2.g;4.f;a;}
+24        C      /     Bb   {2.g;4.f;a;}
+
+Groove Rock128End
+
+25        C      /     Bb   {1.g;}
+26        /
+

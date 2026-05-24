@@ -1,0 +1,110 @@
+// Ive Told Every Little Star (Linda Scott, 1962)
+
+Tempo 118
+KeySig F
+
+Groove Metronome2-4
+  z * 2
+
+Begin Solo
+   Voice JazzGuitar
+   Articulate 90
+   Octave 4
+   Harmony OpenBelow
+   Volume fff
+   Stretch 200
+
+End
+
+
+Groove BubbleRockIntro
+Swell m f 8
+
+Repeat
+Seq 1
+1          F      /     Dm    { 8.f;8a;8.d; }
+2         Gm      /     C7    { 16a;g; a;b; g;f;e;<grace>d;e; }
+Repeatend 3
+
+3          F     Dm    { 8f;;16; 8g ; 16a; }
+Bass Riff B5to2
+Walk Sequence -
+// A bit of pounding to announce the verse. Remember, this piece is in 2/4
+//   but mma thinks it's 4/4 :) Ignore SOLO notes here since we're using STRETCH.
+Chord Sequence {1 16 90; 1.5 16 90; 2 16 100; 2.5 16 110; 3 4 100; 4 4 90}
+Cresc fff 1
+4         Gm      /      /     C7  { 8g ; f; a; 16a;<grace>f;g; }
+
+Repeat
+Groove BubbleRock
+Volume m
+5          F
+6          C
+7         Bb
+8          C
+
+Groove BubbleRockPlus
+Cresc f 4
+
+9          F
+10        C7
+11         F      /     Dm    {4r; 8g;f;}
+12        Gm    { 16a;g; a;b; g;f; e;<grace>d;e; }
+
+Groove BubbleRock
+
+Decresc m 8
+
+13         F
+14         C
+15        Gm      /     Dm
+16         C      /     C7
+
+Groove BubbleRockPlus
+
+17         F
+18        C7
+19         F      /     Bb
+20         F
+
+Groove BubbleRockSus
+
+21         C      /     Am
+22         F      /     G7
+23         C      /     Am
+24        G7
+
+Groove BubbleRockSusPlus
+Volume mf
+
+25         F      /     Dm
+26         F      /     G7
+27         F      /      G
+28        G7
+
+Groove BubbleRockSus
+Volume m
+
+29         F
+30         C
+31        Bb      /      F
+32         C      /     C7
+
+Groove BubbleRock
+
+33         F
+34        C7
+
+Repeatending
+Volume mf
+
+35         F
+36        Dm
+
+RepeatEnd
+Groove BubbleRockEnd
+Decresc mp 2
+
+37         F
+38         /      /     z!
+

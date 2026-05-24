@@ -1,0 +1,134 @@
+// I Can See Clearly Now (Johnny Nash 1972)
+
+Tempo 124
+Keysig G
+
+Groove Metronome2-4
+   z * 2
+   
+Transpose Up Perfect 4
+
+// Since we are transposing up quite a bit we
+// drop the ocatve of the CleanGuitar and to
+// make it more mellow we increase the duration.
+// Arpeggio is used in the PLUS versions.
+Begin AllTracks Arpeggio
+    Articulate 120
+    Octave 4
+End
+
+Label DS
+Repeat
+
+Groove  R&B-Ballad
+Volume m
+
+1         G
+2         C
+3         G
+4         /
+
+Groove  R&B-BalladPlus
+Volume f
+
+5         /
+6         C
+7         D
+8         /
+
+Groove  R&B-Ballad
+Volume m
+
+9         G
+10        C
+11        G
+12        /
+
+Groove  R&B-BalladPlus
+Cresc f 4
+13        F
+14        C
+15        G
+
+If Def CODA
+  GoTo CODA
+EndIf
+
+RepeatEnding
+
+16        /
+
+Groove  R&B-Ballad
+
+17        F
+18        C
+19        G
+
+Groove R&B-BalladFill
+
+20        /
+
+RepeatEnd
+
+Groove R&B-BalladFill
+
+21        /
+
+Groove  R&B-BalladSus
+
+22       Bb
+23        /
+24        F
+25        /
+
+Groove  R&B-BalladSusPlus
+
+26       Bb
+27        /
+28        D
+29        /
+
+Groove R&B-BalladSus
+
+30      F#m
+31        C
+32      F#m
+33        C
+
+Groove R&B-BalladSusPlus
+
+34        F
+35        G
+36        D
+
+Groove R&B-BalladFill
+
+37        /
+
+// this is the DS al Coda
+Set CODA
+Goto DS
+
+Label CODA
+
+Decresc p 8
+Repeat
+Groove R&B-Ballad
+
+38        G
+39        F
+40        C
+
+RepeatEnding
+
+41        G
+
+RepeatEnd
+
+Groove R&B-BalladEnd
+Decresc ppp 2
+Tempo *.9 2
+
+42        G
+43       C6      /      G
+

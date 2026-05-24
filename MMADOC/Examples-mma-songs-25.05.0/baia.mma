@@ -1,0 +1,133 @@
+// Baia (Ary Barroso, 1938)
+
+Tempo $(80 * 2)
+
+Groove Metronome2-4
+  z * 2
+
+Groove SambaIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Octave 6
+    Harmony OpenAbove+OpenBelow
+    Articulate 110
+    Volume ff
+End
+
+Swell mp mf 4
+Repeat
+1         F7    {8c;4d;8c;2e&;}
+2          /    {4c;d;2e&;}
+
+RepeatEnd
+
+Repeat
+Groove Samba
+
+3         F7
+4          /
+5          /
+6          /
+
+Groove SambaPlus
+
+7          /
+8          /
+9          /
+10         /
+
+Groove Samba
+
+11      BbM7
+12         /
+13     Eb9b5
+14         /
+
+Groove SambaPlus
+
+15       Am7      /   D7b9
+16       Gm7      /   C7#9
+
+Groove SambaFill
+
+17         F      / F#dim7
+
+RepeatEnding
+
+18       Gm7      /     C7
+
+RepeatEnd
+
+19       Gm7
+
+Groove SambaSus
+
+20        F6
+21    F#dim7
+22       Gm7
+23        C7
+
+Groove SambaSusPlus
+
+24       Am7
+25    Abdim7
+26       Gm7
+27      D7#5
+
+Groove SambaSus
+
+28       Gm7
+29        C7
+30       FM7
+31        F6
+
+Groove SambaSusPlus
+
+32       Bm6
+33      E7b9
+34       AM7
+35        C7
+
+Groove Samba
+
+36        F6
+37         /
+38         /
+39         /
+
+Groove SambaPlus
+
+40       Am7
+41        F7
+42      BbM7
+43         /
+
+Groove Samba
+
+44       Gm7
+45         /      /    Bb7
+46       A13
+47      A7#5
+
+Groove SambaPlus
+
+48     Am7b5
+49      D7b9
+50       Gm7
+51      Bbm6
+
+Groove SambaSus
+
+52       Am7      /    Dm7
+53        G7      /  C7sus     C7
+54        F7
+55         /
+
+Groove SambaEnd
+Seq 3
+Decresc ppp 2
+
+56         /
+57         /
+

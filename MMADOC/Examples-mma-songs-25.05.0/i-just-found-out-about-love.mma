@@ -1,0 +1,107 @@
+// I Just Found Out About Love
+
+Tempo 140
+Keysig Bb
+
+Groove Metronome2-4
+   z * 2
+  
+Groove BigBandIntro
+//Chord-Hits1 Volume Off
+//Bass Sequence B13
+//Chord Sequence C13
+Begin Solo
+   Voice Piano1
+   Octave 5
+   Volume fff
+   Harmony 3Below
+   Articulate 90
+    Begin Riff
+        8b;g;b;4g;4.b;
+        8b;g;b;4g;4a;8b;
+        2d+;c+;
+        1b;
+    End
+End
+
+Volume p
+Swingmode  On // for intro solo
+
+1        Bb  
+2        Gm
+3        Bb / Cm7
+4        B& / 
+
+Repeat  /// for whole song
+Repeat
+Groove BigBand
+Volume m
+
+5      BbM7
+6     Am7b5      /     D7
+7       Gm7      /    Bb7
+8      EbM7      /    Ab7
+
+9      BbM7      /     G7
+10       C7      /     F7
+
+RepeatEnding
+Groove BigBandPlus
+
+11     BbM7      /    Gm7
+12      Cm7      /     F7
+
+RepeatEnd
+Groove BigBand
+
+13     BbM7      /    Eb7
+14     BbM7
+
+Groove BigBandSus
+
+15      Fm7      /    Bb7
+16     EbM7
+17      Fm7      /    Bb7
+18     EbM7
+
+Groove BigBandSusPlus
+
+19      Gm7      /     C7
+20      FM7
+21      Cm7
+22       F7
+
+Groove BigBand
+
+23     BbM7
+24    Am7b5      /     D7
+25      Gm7      /    Bb7
+26     EbM7      /    Ab7
+
+Groove BigBand
+
+27     BbM7
+28    Am7b5
+29      Ab7
+30       G7
+
+Groove BigBand
+
+31      Cm7
+32       F7
+
+Repeatending
+
+Groove BigBandFill
+
+33     BbM7
+34     Cm7      /    F7
+
+RepeatEnd
+
+Groove BigBandEnd
+Decresc pp 2
+
+33     BbM7
+34     /  z!
+

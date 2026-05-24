@@ -1,0 +1,109 @@
+// Danse Avec Moi
+// From movie: Quai des Orfèvres, 1947
+
+Tempo 116
+Keysig Bb
+
+Groove Metronome2-4
+  z * 2
+  
+Groove BeguineIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Octave 5
+    Harmony 2Below
+    Articulate 90
+    Volume f
+    Begin Riff
+        8r;f;b;c+;d&+;;e+;;
+        2d&+;;
+        8r;e+;d&+;c+;d+;b;a;b;
+        2c+;
+    End
+End
+
+Swell mp mf 4
+
+1        Bbm
+2        Ebm7
+3        Ebm  Bbdim3
+4        F7
+
+Repeat
+Groove Beguine
+Volume m
+
+5       Cm7
+6        F7
+7      BbM7
+8       Bb6
+
+Groove Beguine1
+Cresc mf 4
+
+9       Cm7
+10       F7      /      /     F+
+11       Bb
+12        /
+
+Groove Beguine
+
+13      Cm7
+14       F7
+15     BbM7
+16      Bb6
+
+Groove BeguineSus
+Decresc m 4
+
+17      Cm7
+18        /      /      /    Cm6
+19       D7
+20        /
+
+Groove Beguine1Sus
+Cresc p m 4
+
+21     G7b9
+22        /
+23       Cm
+24        /
+
+Groove BeguineSus
+Volume f
+
+25     Ebm6
+26        /
+27      Cm7
+28       F7
+
+Groove Beguine
+Decresc mf 6
+
+29      Cm7
+30       F7
+31     BbM7
+32      Bb6
+
+Groove Beguine1
+
+33      Cm7
+34        /      /   F7b9
+
+RepeatEnding
+
+35       Bb      /   Fdim3
+
+Groove BeguineFill
+
+36       F7
+
+RepeatEnd
+
+Groove Beguine2End
+Decresc ppp 2
+
+37      Bb6
+38        /    z!
+

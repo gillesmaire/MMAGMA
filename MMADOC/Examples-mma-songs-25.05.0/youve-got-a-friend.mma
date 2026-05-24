@@ -1,0 +1,133 @@
+// You've Got A Friend (Carole King, 1971)
+
+Tempo 96       // A tad quicker than Carole
+KeySig  F Minor  // And, the key is different
+
+Groove Metronome2-4
+   z * 2
+   
+Groove BalladIntro
+AllGrooves Arpeggio-Plus Voice JazzGuitar
+
+Seq 4
+
+0    z
+
+Repeat
+Groove Ballad
+
+1        Fm
+2      C7/G
+3        Fm      /     C7
+4     Fm/Ab   C7/G     Fm
+
+Groove Ballad1
+
+5      Bbm7
+6        Eb    Eb6    Eb7
+7        Ab
+8    Bbm/Ab      /     Ab
+
+Groove Ballad
+
+9       Gm7
+10       C7
+11       Fm      /   C7#5  C7sus
+12    Fm/Ab  C7sus     Fm
+
+Groove Ballad1
+
+13     Bbm7
+14      Cm7
+15   Db6/Eb      /     Eb
+16   Db6/Eb
+
+Label SIGN
+
+Groove BalladPlus
+
+17       Ab
+18        /
+19       Db
+20        /
+
+Groove Ballad
+
+21       Ab
+22        /
+23   Db6/Eb
+24       Eb
+
+Groove BalladSus
+
+25       Ab
+26   AbM7/G
+27     Db/F
+28   Ab6/Eb      / Ab7/Eb
+
+If Def CODA
+   Goto CODA
+Endif
+
+RepeatEnding
+
+Groove BalladSusPlus
+
+29       Db      /    Cm7
+30     Bbm7 Db6/Eb
+31       Ab
+
+Groove BalladFill
+
+32      Gm7      /     C7     z
+
+RepeatEnd
+
+Groove BalladSusPlus
+
+33       Db      /    Cm7
+34     Bbm7 Db6/Eb
+35       Gb
+36       Db
+
+Groove BalladSus
+
+37       Ab
+38     AbM7
+39       Db
+40      Gb7
+
+Groove Ballad1
+
+41       Fm
+42      Bb7      /    Bb9
+43   Bbm7/Eb
+
+Groove BalladFill
+
+44       Eb
+
+// DS Al Coda
+Set CODA
+Goto Sign
+
+// Coda
+Label Coda
+
+Groove BalladSus
+
+45       Eb      /    Cm7
+46     Bbm7 Db6/Eb
+47       Ab
+48    Db/Ab
+
+Groove BalladEnd
+Decresc mp ppp 4
+Repeat
+
+49       Ab
+50    Db/Ab
+
+RepeatEnd
+
+

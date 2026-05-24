@@ -1,0 +1,114 @@
+// Sultry Serenade (Ellignton, 1947)
+
+Tempo 100
+Keysig Bb
+
+Groove Metronome2-4
+  z * 2
+
+// Intro
+
+Begin Solo
+    Voice Jazzguitar
+    Octave 5
+    Harmony OpenBelow
+    Articulate 110
+End
+
+Groove EasySwingIntro  // here so we get all 4 intro bars
+Solo Decresc ff m 4
+Repeat
+1         Bb      /     Gm      /    {8f+;4e&+;8d+;4c+;4b;}
+2         Cm      /     F7    {2g;4f;r; }
+RepeatEnd
+
+Repeat  // entire song 2x
+Groove EasySwing
+Repeat
+Cresc mp mf 4
+
+3         Bb      /    Gm7
+4        Cm7      /     F7
+5         Bb      /     G7
+6         C7      /     F7
+
+Groove Easyswing
+Volume m
+
+7         Bb      /    Gm7
+8        Cm7      /     F7
+9         Bb
+
+Volume mp
+RepeatEnding
+
+Groove EasyswingFill
+Begin Walk
+  Sequence W1234
+  Articulate 60
+  Volume +50%
+End
+10        Bb
+Groove EasySwingWalk
+RepeatEnd
+
+Groove EasyswingFill
+Begin Walk
+  Sequence W1234
+  Articulate 60
+  Volume +50%
+End
+11        Bb
+
+
+Groove EasyswingSus
+Cresc mp f 4
+
+12        D7
+13         /
+14        G7
+15         /
+
+Groove EasyswingWalkSus
+Decresc m 4
+
+16        C7
+17         /
+18        F7
+19         /
+
+Groove Easyswing
+
+20        Bb      /    Gm7
+21       Cm7      /     F7
+22        Bb      /     G7
+23        C7      /     F7
+
+Groove EasyswingWalk
+Volume mf
+
+24        Bb      /    Gm7
+25       Cm7      /     F7
+
+
+RepeatEnding
+
+Volume m
+26        Bb
+
+Groove EasyswingFill
+Volume mp
+Begin Walk
+  Sequence W1234
+  Articulate 60
+  Volume +50%
+End
+27         /   F7@3
+
+RepeatEnd
+
+Groove EasyswingEnd
+
+Decresc ppp 2
+26        Bb
+27         /     z!

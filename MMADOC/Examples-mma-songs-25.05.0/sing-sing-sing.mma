@@ -1,0 +1,96 @@
+// Sing Sing Sing (Prima, 1936)
+
+Tempo $(110 * 2)
+Keysig E minor
+
+Groove Metronome2-4
+  z * 2
+
+Groove SwingIntro
+
+Begin Solo
+    Voice Trumpet
+    Volume f
+    Articulate 90
+    Harmony 8Below+OpenBelow
+    Octave 5
+    Begin Riff
+        4g;;a;b;
+        4g;b;2a;
+        4b;d+;;e+;
+        4b;g;2;
+    End
+End
+
+1          G      /     D7
+2          G      /     D7
+3         Am   Ddim     D7
+4          G      /     D7
+
+Repeat
+
+Groove Swing1
+5         Em      /     D7
+6         Em      /     B7
+7         Em      /     B7
+8         Em     B7    B7+     B7
+
+Groove Swing1Plus
+
+9         Em      /     B7
+10        Em      /     B7
+11        Em
+12        Am    B7+     Em
+
+Groove Swing1
+
+13        Em      /     B7
+14        Em      /     B7
+15        Em      /     B7
+16        Em      /    B7+
+
+Groove Swing1Plus
+
+17        Em      /     B7
+18        Em      /     B7
+19        Em
+20        Am    B7+     Em
+
+Groove Swing1Sus
+
+21         G      /     D7
+22         G      /     D7
+23       Am7  Am7b5     D7
+24         G
+
+Groove Swing1PlusSus
+
+25         G      /     D7
+26         G      /     D7
+27        Am   Ddim     D7    D7+
+28         G      /    B7+
+
+Groove Swing1Sus
+
+29        Em      /     B7
+30        Em      /     B7
+31        Em      /     B7
+32        Em     B+
+
+Groove Swing1PlusSus
+
+33        Em      /     B7
+34        Em      /     B7
+
+RepeatEnding 2
+
+35        Em
+Groove SwingFill
+36        Am    B7+     Em     B7
+
+RepeatEnd
+
+Groove Swing1End
+
+35        Em
+36        Am    B7+     Em     z!

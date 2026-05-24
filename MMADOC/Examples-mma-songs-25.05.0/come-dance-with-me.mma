@@ -1,0 +1,126 @@
+// Come Dance With Me (Frank Sinatra, 1959)
+
+Tempo 130
+Groove Metronome2-4
+ z * 2
+
+Groove EasySwingIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Octave 6
+    Volume ff
+    Articulate 90
+    Harmony 3Below+8Below
+    Rtime 20
+    Rvolume 20
+    Begin Riff
+        8d#;4e;2b-;
+        8e;4f;2c;
+        43b;;;4;4;
+        1d+;
+    End
+End
+
+Cresc m mf 4
+
+1          G
+2         Am
+3         Bm
+4         D7
+
+Repeat
+Groove EasySwing
+Volume m
+
+5          G      /      /   Gdim
+6         D7      /      /  A#dim
+7          G      /      /     G6
+8          /
+
+Groove EasyswingFill
+Cresc ff 4
+
+9         A9
+10       Am7      /     D7
+11        G6      /  Bbdim
+12       Am7      /     D7
+
+Groove Easyswing
+Decresc f 4
+
+13         G      /      /  G#dim
+14        D7      /      /  A#dim
+15         G
+16        Em      /   Fdim
+
+Groove EasyswingWalk
+Volume m
+
+17         D      /    Bm7
+18       Em7      /     A9
+19    D7sus4
+20        D7      /      /   D7b5
+
+Groove EasyswingWalkFill
+Volume mf
+
+21        G7      /    Dm7
+22      Bbm6      /     G9
+23         C
+24         /
+
+Groove EasyswingSus
+
+25        Cm      /   CmM7
+26       Cm7      /     F7
+27       Bb6      /     Bb
+28     Am7b5      /     D7
+
+Groove EasyswingSusFill
+Volume m
+
+29         G      /      /  G#dim
+30        D7      /      /  A#dim
+31         G
+32        A9
+
+Groove EasyswingSus
+Cresc f 4
+
+33       Am7
+34        D7
+35        B7
+36        E7
+
+Groove Easyswing2
+Volume m
+
+37       Am7
+38         /
+39     Am7b5
+40         /
+
+
+Groove EasyswingFill
+Volume mf
+
+41        A9
+42       Am7      /    D13    Ab9  G@4.5
+
+Repeatending
+Groove EasySwing42Walk
+Volume f
+
+43         /      /      D
+44         G      /     D7
+
+RepeatEnd
+
+Groove EasyswingEnd
+Decresc ff pp 2
+45         /      /      /     F6
+46       Eb6     F6     G6
+
+
+

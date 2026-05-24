@@ -1,0 +1,106 @@
+// Cant We Be Friends (1929)
+
+Tempo 90
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+
+Groove JazzComboIntro
+
+Begin Solo
+      Voice Piano1
+      Volume f
+      Octave 4
+      Articulate 90
+      Harmony 3Below
+      Begin Riff
+            2c+;4d+;c+;
+            4b;a;b;c+;
+            2d+;b;
+            1c+;
+      End
+End
+
+Swell m mf 4
+
+1         F
+2        Dm7
+3        Gm7
+4        C7
+
+Repeat
+Groove JazzCombo
+Volume m
+
+5        G7
+6        C7
+7         F      /    Db7
+8       Dm7      /      /    Db7
+
+Groove JazzComboPlus
+Cresc f 4
+
+9        C7      /      /     Dm
+10       G7      /     C7
+11        F    Bb7      F
+12       Dm      /     D7
+
+Groove JazzCombo
+Volume m
+
+13       G7
+14       C7
+15        F      /    Db7
+16      Dm7      /      /    Db7
+
+Groove JazzComboPlus
+Volume f
+
+17       C7      /      /     Dm
+18       G7      /     C7
+19        F    Bb7      F
+20       Dm      /     F7
+
+Groove JazzComboSus
+Cresc mp f 4
+
+21      Bb7      /      /      C
+22      Bb9      /    Bb7
+23        F      /   Fdim
+24        F      /     F+    Fm6
+
+Groove JazzComboSusPlus
+Decresc m 4
+
+25       Cm
+26       Eb      /     Cm    Eb7
+27       D+      D     D7    A7+
+28        D      /    Gb6     D7
+
+Groove JazzComboPlus
+
+29       G7
+30       C7
+31        F      /    Db7
+32      Dm7      /     Dm    Db7
+
+Groove JazzCombo
+
+33       C7      /      /     Dm
+34       G7      /     C7
+
+Repeatending
+
+35        F    Bb7      F
+36       C     /       Ab7
+
+RepeatEnd
+
+Groove JazzComboEnd
+
+Decresc pp 2
+
+35        F    Bb7      F
+37             F6       F
+

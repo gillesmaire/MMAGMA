@@ -1,0 +1,101 @@
+// The French Song
+
+Tempo 115
+Keysig G
+
+Groove Metronome2-4
+  z * 2
+  
+Groove EasySwingIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Octave 4
+    Volume f
+    Harmony 3Below
+    Articulate 90
+    Begin Riff
+        2r;4g+;a+;
+        2b+;4g+;a+;
+        2g+;4f+;e+;
+        1+2d+ ~;
+    End
+End
+
+1         z!
+seq
+1         G
+2         Em
+3         Am
+4         D7
+
+
+Repeat
+Groove EasySwing
+
+5         G
+6         C
+7         G
+8         /
+
+Groove EasySwingFill
+
+9        D7
+10        /
+11        G
+12        /
+
+Groove EasySwing
+
+13        /
+14        C
+15        G
+16        /
+
+Groove EasySwingFill
+
+17       D7
+18        /
+19        G
+20        /
+
+Groove EasySwingSus
+
+21        C
+22        /
+23        G
+24        /
+
+Groove EasySwingWalkSus
+
+25        A
+26       A7
+27       D7
+28       /  /  G
+
+Groove EasySwingSus
+
+29        /
+30        C
+31        G
+32        /
+
+Groove EasySwing
+
+33       D7
+34        /
+
+RepeatEnding
+
+35        G
+36        /     D7
+
+RepeatEnd
+
+Groove EasySwingEnd
+
+35        G
+37        / z!
+
+
+

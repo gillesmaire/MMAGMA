@@ -1,0 +1,85 @@
+// Somethin Stupid (Sinatra, 1967)
+
+Tempo 120
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+  
+Groove WesternSwingIntro
+Begin Solo
+    Voice NylonGuitar
+    Octave 5
+    Harmony OpenBelow+8Below
+    Articulate 90
+    Volume F
+    Begin Riff
+       4r;8;f;;a;b;c+;
+       8c++;4b+;8a+;2g+;
+       16c++;b+;a+;b+; 8g+;f+; e+;c+;d+;e+;
+       8r;c+;a;c+;d+;b;f;b;
+       8c+;a;f;a; b;g;4e;
+    End
+End
+
+1          z
+Seq
+2         Bb
+3        Gm7
+4          F      /     Bb
+5         C7
+
+Label DS
+Groove WesternSwing
+
+6          F      /     F6
+7        FM7      /     F6
+8        Gm7      /     C7
+9        Gm7      /     C7
+
+Groove WesternSwingPlus
+
+10       Gm7      /     C9
+11        C7      /    Gm7     C7
+12        F6
+13       FM7      /     F6
+
+Groove WesternSwing
+
+14        F7      /    Cm7
+15        F7
+16        Bb
+17       Db9
+
+Groove WesternSwingPlus
+
+18       Gm7      /     C7
+19       Gm7      /     C7
+
+If Def FINE
+   Groove WesternSwingEnd
+   Decresc ppp 2
+   20       Gm7      /      F
+   21         /     z!
+   eof
+Endif
+
+20       Gm7      /      F
+21         /
+
+Groove WesternSwingSus
+
+23        F7      /    Cm7
+24        F7
+25        Bb
+26         /
+
+Groove WesternSwingSusPlus
+
+27        G7      /    Dm7
+28        G7
+29        C7
+30       Gm7      /     C7
+
+Set Fine
+Goto DS

@@ -1,0 +1,131 @@
+// Bella Bocca Polka (1867)
+
+Tempo $(100 * 2)
+Keysig F
+
+Groove Metronome2-4
+ z * 2
+
+// Intro
+
+Groove PolkaIntro
+Begin Solo
+    Voice Accordion
+    Octave 5
+    Volume f
+    Harmony 3Below
+    Articulate 90
+    Begin Riff
+        4c+;r;c+;
+        4c+;
+        <grace>8bn;4c++;r;<grace>8bn;4c++;
+        <grace>8bn;4c++;
+    End
+End
+
+Decresc mf mp 4
+1         C
+2         /
+3         /
+4         /
+
+// Main
+
+Repeat
+Label SIGN
+Groove Polka
+Volume m
+
+5         F
+6         /
+7         /
+8        C7
+
+Groove PolkaArp
+Volume mf
+
+9         /
+10        /
+11        /
+12        F
+
+Groove Polka
+Volume m
+
+13        /
+14        /
+15        /      /     D7
+16       Gm
+
+Groove PolkaArp
+Cresc f 4
+
+17        /
+18        F
+
+If def FINISH
+  Groove PolkaEnd
+  Cresc ff 2
+Endif
+
+19       C7
+
+If def FINISH
+  20 F z!
+  eof
+Endif
+
+RepeatEnding
+
+20        F
+
+RepeatEnd
+
+21        F
+
+Keysig C
+Repeat
+Groove Polka1Sus
+Chord-Sus Articulate 50
+Volume m
+
+22       G7
+23        C
+24       G7
+25        C
+
+Groove Polka1SusArp
+Chord-Sus Articulate 60
+Volume mf
+
+26      Dm7
+27        C
+28       G7
+29        C
+
+Groove Polka1Sus
+Chord-Sus Articulate 70
+Volume m
+
+30       G7
+31        C
+32       G7
+33        C
+
+Groove Polka1Sus
+Chord-Sus Articulate 60
+Decresc mp 4
+
+34       Dm
+35        C
+36       G7
+
+Groove Polka1
+
+37        C
+
+RepeatEnd
+
+Set FINISH
+goto SIGN
+

@@ -1,0 +1,82 @@
+// In April (Bill Evans, 1978)
+
+Tempo 70
+Keysig  Db
+
+Groove Metronome2-4
+       z * 2
+       
+Groove Evansish
+Volume mp
+1      DbM9      / Bb7b9b13
+2      Ebm7      / Ab13sus
+3      Fm11      /  Bbm11
+4      Ebm7      /    Ab7
+
+Groove EvansishPlus
+Cresc mf 3
+
+5       Fm7      / Bb7b5b9
+6      Ebm9      / Ab7sus
+7    Db9/Bb      /   Eb/G
+8    Abm7/Gb      /    Db9
+
+Groove Evansish
+Decresc m 3
+
+9      GbM7      /   Gbm6
+10      Fm9      /   Bbm7
+11     Ebm7      / Ab9sus
+12     DbM9      / DbM7(add6)
+
+Groove EvansishSus
+Chord-Piano Riff C23; $PUSH4 8. 0 80
+13      Gm7      /  C9sus
+14      Fm7      / Bb7b9b13
+15   Eb13#11
+16   Ab9sus
+
+Groove EvansishSusPlus
+Chord-Piano Riff C23; $PUSH4 8. 0 80
+Cresc f 4
+
+17     DbM9      / Bb7b9b13
+18     Ebm7      / Ab13sus
+19     Fm11      /  Bbm11
+20     Ebm7      /    Ab7 Ab7/Gb
+
+Groove EvansishSus
+Volume m
+
+21      Fm7      / Bb7b5b9
+22     Ebm9      / Ab7sus
+23    Fm7b5      /     B9
+24      Bb9      /  Bb7b9
+
+Groove EvansishPlus
+Decresc mp 4
+
+25     Ebm9      /   Ab13
+26     DbM7      /   Bbm7
+27     Ebm9      / F7#5b9
+28     Bbm9      /   Abm6
+
+Groove Evansish
+Chord-Piano Riff C23; $PUSH4 8. 0 80
+
+29     GbM7      /   F7#5
+30     Bbm7      / Bbm7/Ab
+31    Gm7b5
+32   Gb9#11
+
+Groove EvansishPlus
+Volume m
+33      Fm7      /  Bb7b9
+34     Ebm9      / Ab9sus
+
+Groove EvansishEnd
+Decresc pp 2
+35     DbM9
+36        /     /   z!
+
+

@@ -1,0 +1,215 @@
+// The Longest Time (Billy Joel)
+
+Tempo $( 76 * 2 )
+Keysig Eb
+Transpose Down Minor 3 // play it in "C"
+
+// No intro! Just our metronome.
+
+Groove Metronome2-4
+   z * 2
+
+// load the swing file and make some minor changes
+// to make it punchier.
+
+Groove Swing 
+Begin Allgrooves Bass
+   Articulate 60
+   Volume +20%
+End
+Begin AllGrooves Walk
+   Articulate 60
+   Volume +20%
+End
+Begin Allgrooves Arpeggio
+      Voice JazzGuitar
+      Volume +40%
+      Octave -1
+      Harmony OpenAbove
+End
+
+Groove Swing 
+/// "Oh, Oh, Oh, for the"
+Volume mp
+
+1        Eb
+2        Bb      /   Eb/G
+3        Ab
+4       Bb7
+
+5        Eb
+6        Bb      /   Eb/G
+7        Ab
+8       Bb7
+
+Repeat
+// "What else could I do...
+// "Once I thought ...
+Groove Swing
+Cresc mp mf 8
+
+9        Eb      /   Eb/D
+10     Eb/C      /  Eb/Bb
+11       Ab
+12       Eb
+
+Groove SwingWalk
+
+13        /      /   Eb/D
+14     Eb/C      /  Eb/Bb
+15       F7
+16       Bb
+
+Groove Swing
+
+17       G7
+18       Cm
+19    Bb7/D
+20       Eb      /  Eb7/G
+
+Groove SwingPlus
+Volume f
+
+21       Ab
+22       Fm
+23       Bb
+24       Eb
+
+RepeatEnd
+
+Groove SwingSus
+Cresc mp mf 8
+
+25       Eb
+26       Bb      /   Eb/G
+27       Ab
+28      Bb7
+
+Groove SwingWalkSus
+
+29       Eb
+30       Bb      /   Eb/G
+31       Ab
+32      Bb7
+
+Repeat
+// "I'm that voice you're hearing
+// "Who know how much further
+
+Groove Swing 
+Volume m
+
+33       Eb      /   Eb/D
+34     Eb/C      /  Eb/Bb
+35       Ab
+36       Eb
+
+Groove SwingPlus
+
+37        /      /   Eb/D
+38     Eb/C      /  Eb/Bb
+39       F7
+40       Bb
+
+Groove SwingWalk
+Cresc mf 4
+
+41       G7
+42       Cm
+43    Bb7/D
+44       Eb      /  Eb7/G
+
+Groove SwingWalkPlus
+
+45       Ab
+46       Fm
+47       Bb
+48       Eb
+
+Groove SwingSus
+Volume mp
+
+49       Bb
+50        /
+51       Cm
+52        /
+
+Groove SwingWalkSus
+
+53       D7
+54        /
+55       Eb
+56        /
+
+Groove SwingSus
+Volume m
+
+57       Gm
+58        /
+59       Cm
+60        /
+
+Groove SwingWalkSus
+
+61        F
+62       F7
+63       Bb
+64      Bb7
+
+RepeatEnd
+// "I don't care what consequence
+
+Groove Swing 
+Cresc mf 8
+
+65       Eb      /   Eb/D
+66     Eb/C      /  Eb/Bb
+67       Ab
+68       Eb
+
+Groove SwingWalk
+
+69        /      /   Eb/D
+70     Eb/C      /  Eb/Bb
+71       F7
+72       Bb
+
+Groove Swing 
+Volume f
+
+73       G7
+74       Cm
+75    Bb7/D
+76       Eb      /  Eb7/G
+
+Groove SwingWalk
+
+77       Ab
+78       Fm
+79       Bb
+80       Eb
+
+Groove SwingSus
+Decresc m 4
+
+81        /
+82       Bb      /   Eb/G
+83       Ab
+84      Bb7
+
+Groove SwingPlusSus
+Tempo *.9 8
+Decresc ppp 8
+
+Repeat
+
+85       Eb
+86       Bb      /   Eb/G
+87       Ab
+88      Bb7
+
+// this will give 2 bars of swing followed by 2 of end
+Groove Swing / SwingEnd / 
+RepeatEnd
+
+

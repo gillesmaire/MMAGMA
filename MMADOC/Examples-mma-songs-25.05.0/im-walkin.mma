@@ -1,0 +1,110 @@
+// Im Walkin
+
+Tempo $(80 * 2)
+Keysig F
+
+Groove Metronome2-4
+   z * 2
+   
+Groove JazzRockIntro
+
+Begin Solo
+    Voice Trombone
+    Octave 5
+    Articulate 90
+    Harmony OpenBelow
+    Volume f
+    Begin Riff
+        2.r;4d;
+        8f;4.+4;4;
+        4a&;g;f;d;
+        2.f;4d;
+        2.c;
+    End
+End
+
+Begin Solo-2
+    Voice Trumpet
+    Volume m
+    Octave 6
+    Articulate 90
+    DupRiff from  Solo
+End
+
+0      z / /       F
+Seq
+1         F6
+2      Ab     /    Gm7
+3       Dm7
+4        C7      /      /    Bb7
+
+
+Repeat
+Groove JazzRock
+
+5         F
+6         /
+7       Bb7
+8         /
+
+Groove JazzRockWalk
+
+9         F
+10      C7+      /    Gm7
+11        F
+12       C7      /      /    Bb7
+
+Groove JazzRock
+
+13        F
+14        /
+15      Bb7
+16        /
+
+Groove JazzRockPlus
+
+17        F
+18      C7+      /    Gm7
+19        F
+20        /      /     F7
+
+Groove JazzRockSus
+
+21      Bb7
+22      Bb9      F6  
+23      Bb7
+24      Bb9     F6   
+
+Groove JazzRockSusPlus
+
+25      Bb7
+26      Bb9     F6
+27       G7
+28       C7      /      /    Bb7
+
+Groove JazzRock
+
+29        F
+30        /
+31      Bb7
+32        /
+
+
+Groove JazzRockSus
+
+33        F
+34      C7+      /    Gm7
+
+RepeatEnding
+
+35        F
+Groove JazzRockFill
+36      Bb7      /     C7    Bb7
+
+RepeatEnd
+
+Groove JazzRockEnd
+
+37        F
+38        /  z!
+

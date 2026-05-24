@@ -1,0 +1,84 @@
+// Dear Old Stockholm (Getz, 1951)
+
+Tempo 136
+
+Groove Metronome2-4
+   z * 2
+   
+Begin Solo
+    Voice JazzGuitar
+    Volume F
+    Octave 5
+    Articulate 100
+End
+
+Groove EasySwing
+
+Repeat
+1        Dm7    {4r;8;4cefa;}
+2        Dm6    {4r;8;8b-dfb;8r;4.b-dfb;}
+3        Dm7    {4r;8;4cefa;}
+4        Dm6    {4r;8;8b-dfb;8r;4.b-dfb;}
+Groove EasySwingIntro
+RepeatEnd
+
+Repeat
+
+Groove EasySwing
+
+5        Dm
+6        Gm      /     A7
+7      Bm7b5      /     A7
+8        Dm
+
+Groove EasySwingWalk
+
+9        Gm7
+10       Dm      /  Bm7b5
+11      Em7
+12       A7      /   Ebm
+
+Groove EasySwingSus
+
+13       Dm7
+14       Dm6
+15       Dm7
+16       Dm6
+
+RepeatEnd
+
+Groove EasySwing
+
+17        F
+18      Gm7      /     C7
+19        F
+20       Gm      /     A7
+
+Groove EasySwingWalkSus
+
+21       Dm
+22       Gm      /     A7
+23    Bm7b5      /     A7
+24       Dm
+
+Groove EasySwingWalk
+
+25       Gm
+26       Dm      /  Bm7b5
+27      Gm7
+28        /
+
+Groove EasySwingSus
+
+29        /
+30        /
+31        /
+32        /
+
+33        /      /     A7
+
+Groove EasySwingEnd
+
+34       Dm
+35        /
+

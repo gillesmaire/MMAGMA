@@ -1,0 +1,99 @@
+// Happy Feet (King of Jazz, 1930)
+
+Tempo 90
+Keysig Eb
+
+Tempo $(120 * 2)
+
+Groove Metronome2-4
+  z * 2
+  
+Groove CharlestonIntro
+Begin Solo
+    Voice Organ3
+    Volume ff
+    Articulate 110
+    Harmony 3Below
+    Octave 6
+    Begin Riff
+        8c+;4e+;8c+;4e+;c+;
+        4g&+;f+;8e+;4.;
+        2c+;b;
+        2a;g;
+    End
+End
+
+Cresc mp f 4
+1        Cm      /    Cm7
+2       Ab7      /     G+
+3        Cm      /     Bb
+4        Ab      /      G
+
+
+Repeat 
+Groove Charleston
+Label Sign
+Volume m
+
+5        Cm
+6         /
+7       Ab7
+8         /
+
+Groove CharlestonPlus
+Cresc mf 4
+
+9        Cm
+10        /
+11     C7+5
+12       C7
+
+if def CODA
+   goto CODA
+endif
+
+Groove Charleston1Plus
+Volume m
+
+13       F9
+14        /
+15      Bb7
+16      Bb7      /    Bb6    Bb7
+
+Groove Charleston1
+Cresc mf 3
+
+17       Cm
+18      Cm6
+19       D7      /      /   Ab7+
+20        /      /     G7
+
+RepeatEnd 3
+if ndef Coda
+   Set CODA
+   goto sign
+endif
+
+/////// CODA Section /////////
+Label CODA
+
+Groove CharlestonSus
+Decresc mf m 4
+
+21       F9
+22      Abm
+23      Cm7      /      /    C7+
+24        /
+
+Groove CharlestonWalkSus
+Volume f
+
+25       F9
+26      Bb7      /   Bb7+
+
+Groove CharlestonEnd
+
+27       Eb
+28      Ab7  z! //    /     Eb  z!
+
+

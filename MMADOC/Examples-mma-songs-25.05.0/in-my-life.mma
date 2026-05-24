@@ -1,0 +1,113 @@
+// In My Life (Beatles, 1965)
+
+Tempo 100
+Keysig F
+
+Groove Metronome2-4
+  z * 2
+  
+Groove BalladIntro
+
+Begin AllGrooves Arpeggio-Plus
+  Voice JazzGuitar
+  Octave 4
+  Harmony OpenBelow
+End
+
+Begin Solo
+   Voice Harpsichord
+   Volume ff
+   Octave 5
+   Harmony OpenBelow+8Below
+   Arpeggiate Direction=Random Rate=8 Decay=-5
+   Begin Riff
+       4a;f+;8a;b;c+;8+2.e+~;
+       2.r; 3d+;c+;b;
+       4a;f+;8a;b;3c+;d+;c+;
+       2.c+;
+   End
+End
+
+Swell mp f 4
+1         F
+2         C
+3         F
+4         C
+
+Repeat
+
+Groove Ballad
+Volume m
+
+5         F
+6        F6      /     F7
+7        Bb      /    Bbm
+8         F
+
+Cresc f 8
+Groove BalladPlus
+
+9         /
+10       F6      /     F7
+11       Bb      /    Bbm
+12        F
+
+Label Sign
+
+Groove BalladSus
+
+13       Dm
+14       Bb
+15       Eb
+16        F
+
+Decresc m 4
+Groove BalladSusPlus
+
+17       Dm
+18       G7
+19       Bb      /    Bbm
+20        F
+
+Groove Ballad1
+
+21        /
+
+If def CODA
+  goto CODA
+endif
+
+RepeatEnding
+
+22        C
+
+RepeatEnd
+
+Volume mf
+23        C
+
+Set Coda
+Goto Sign
+
+Label Coda
+
+Tempo *.76 5
+
+24        C
+
+Decresc pppp 4
+Groove BalladEnd
+Begin Scale
+      Voice Harpsichord
+      Harmony OpenBelow+8Below
+      Articulate 110
+      Octave 5
+      Rskip 30
+End
+
+25        /
+26        F
+27        C      /     C7
+28        F      z!
+
+

@@ -1,0 +1,81 @@
+// Good Bad Ugly (theme for 1962 movie)
+
+
+Tempo 100
+
+Groove Metronome2-4
+ z * 2
+ 
+Groove Ballad
+Volume m
+
+1        Dm
+2         G
+3        Dm
+4         C
+
+Groove Ballad1
+Cresc mf 2
+
+5        Bb
+6        Am
+7        Dm
+Decresc mp 2
+8        Dm
+9         /
+
+Groove Ballad
+Volume m
+10        /
+11        G
+
+Groove BalladSus
+Volume mf
+
+12       Dm
+13        C
+
+Groove Ballad1Sus
+Volume m
+
+14       Bb
+15       Am
+16       Dm      /      G
+Decresc mp 2
+17       Dm
+18        /
+
+Groove BalladPlus
+Volume mf
+19       Dm      /     Am
+20        /
+
+Groove BalladSusPlus
+Volume f
+21       Dm      /      F
+22        /
+Decresc m 2
+23       Dm      /     Am
+24        C
+
+Groove Ballad
+Volume mf
+25       A7
+26       Dm      /      G
+27       Dm      /      G
+
+
+Groove Ballad1Plus
+Decresc f m 4
+28       Dm      G     Dm      G
+29       Bb     Am      G      F
+30       Em      F      C     Bb
+31       Ab
+32       A7
+
+Groove BalladEnd
+Seq 3
+Decresc pp 2
+33       Dm
+34        /  / z!
+

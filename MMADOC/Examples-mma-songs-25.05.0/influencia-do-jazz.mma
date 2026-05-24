@@ -1,0 +1,173 @@
+// Influencia Do Jazz (Carlos Lyra  1962)
+
+Tempo $(100 * 2)
+Keysig B
+Transpose Up min 2 // Doing this is C will life easier for us all
+
+Groove Metronome2-4
+   z * 2
+   
+Groove BossaNovaIntro8
+
+Begin AllGrooves Bass
+    Volume ff
+    SeqRnd Off
+    Voice FretlessBass
+End
+
+Begin Solo
+    Voice JazzGuitar
+    Volume mf
+    Harmony OpenBelow+8Below
+    Articulate 140
+    Octave 5
+    Rvolume 10
+    RTime 10
+    Stretch 200
+    Begin Riff
+         4r;8g;b;
+         16c+;g;8r;f;;
+         8e;e+;16r;8gn;16b;
+         16r;c+;8r;b;c+;
+         4dn+;b;
+         16e;e+;8r;e;;
+         8f;f+;16r;8f;16b;
+         16r;b;8r;4;
+         8dn+;r;g;
+    End
+End
+
+Begin Solo-2
+    Voice Oboe
+    Octave 4
+    Volume f
+    Stretch 200
+    Articulate 140
+    Dupriff From Solo
+End
+
+Swell mp mf 10
+
+     z 
+Seq
+1    C#9sus4
+2       Em6
+3    BM7/D#
+4        D9      /    B13
+
+5       EM7
+6     F#7b9
+7       BM7
+8      D9b5
+
+
+/// <A>
+Repeat  // outer repeat for whole song
+Repeat
+Groove BossaNova
+Volume m
+
+9    C#9sus4
+10      Em6
+11   BM7/D#
+12       D9      /    B13
+
+Groove BossaNovaSus
+Volume +20%
+
+13      EM7
+14    F#7b9
+15      BM7
+16       B6
+
+Groove BossaNova
+Volume +10%
+
+17     F#m9
+18   D13b9      /     B9
+19    Fm7b5
+20    A7#11
+
+Decresc mp 4
+
+21      BM7      /  Fdim7
+22    EM7/6      / F#9sus4
+
+RepeatEnding
+
+23   B6(add9)
+
+Groove BossaNovaFill
+
+24   G#7sus4
+
+RepeatEnd
+
+Groove BossaNova
+
+25   B6(add9)
+
+Groove BossaNovaFill
+
+26        /
+
+// <B>
+Groove BossaNovaPlus
+Volume m
+
+27     D#m9
+28        /
+29     B#11
+30        /
+
+Groove BossaNova2Sus
+Volume f
+
+31      Fm7
+32     Fm(add9)
+33   B9sus4      / C9sus4
+34   C#9sus4      / G#9sus4
+
+// <C>
+Groove BossaNova1Sus
+Volume m
+
+35      EM7
+36      A13
+37     G#13
+38   G#7sus4
+
+Groove BossaNova1SusPlus
+Decresc f m 8
+
+39     C#m9
+40     C7#9
+41      BM9
+42   B6(add9)
+
+Groove BossaNova1Sus
+
+43     F#m9
+44      B13      /     B9
+45    Fm7b5
+46   A7#11
+
+
+If def Time2
+   Groove BossaNova2End
+   Decresc ppp 4
+Endif
+
+47      BM7      /  Fdim7
+48      EM7      / F#9sus4
+49   B6(add9)
+
+If ndef Time2
+   Groove BossaNovaFill
+   Set Time2
+   50   G#9sus4   G# /   // note, no z on end!
+Endif
+
+RepeatEnd
+
+50   G#9sus4   G# / z!

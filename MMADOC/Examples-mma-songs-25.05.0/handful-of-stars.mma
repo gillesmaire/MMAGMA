@@ -1,0 +1,115 @@
+// Handful Of Stars (1940, Glen Miller)
+
+Tempo 70
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+  
+Groove EasySwingIntro
+
+Begin Solo
+    Voice Jazzguitar
+    Octave 7
+    Articulate 120
+    Harmony OpenBelow+16Below
+    Decresc m pp 4
+    Begin Riff
+        8c+;b;a;g;f;e;d;c;
+        8d+;c+;b;a;g;f;e;d;
+        8e+;d+;c+;b;a;g;f;e;
+        4f;a;2g;
+    End
+End
+
+Swingmode on skew=55 accent=110,80
+
+
+Swell mp m 4
+1         C
+2         Dm
+3         Em
+4         G7
+
+
+Repeat
+Groove Easyswing
+Volume m
+
+5         C      /   Gdim
+6        G7      /   Cdim
+7         C      /     C7
+8         F      /    Fm6
+
+Groove EasyswingWalk
+Volume +20%
+
+9         C      /     B7
+10      Gm6      /     A7
+11     D7b5      /     G7    G7+
+12        C      /    Dm7
+
+Groove Easyswing
+Volume m
+
+13        C      /   Gdim
+14       G7      /   Cdim
+15        C      /     C7
+16        F      /    Fm6
+
+Groove EasyswingFill
+Cresc +30% 4
+
+17        C      /     B7
+18      Gm6      /     A7
+19     D7b5      /     G7    G7+
+20        C
+
+Groove EasyswingSus
+Decresc m 4
+
+21       Em
+22       F9
+23      Em7
+24       A7
+
+Groove EasyswingWalkSus
+Volume -20%
+
+25        G      /   Ddim
+26      Am7      /     D7
+27       G7    Dm7     G7
+28      Dm7     G6     G9
+
+Groove EasyswingWalk
+Cresc +30% 4
+
+29        C      /   Gdim
+30       G7      /   Cdim
+31        C      /     C7
+32        F      /    Fm6
+
+Groove Easyswing
+Volume m
+
+33        C      /     B7
+34      Gm6      /     A7
+
+If NDef LAST
+   Set Last
+   Cresc f 2
+   35     D7b5      /     G7    G7+
+   36        C      /     G7
+else
+   Set LAST
+   Groove EasySwingEnd
+   Decresc ppp 2
+   135     D7b5      /     G7    G7+
+   136        C     D7     Dm    G7b9
+   
+Endif
+RepeatEnd
+
+
+
+

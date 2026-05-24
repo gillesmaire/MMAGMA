@@ -1,0 +1,108 @@
+// Isn't This A Lovely Day (Berlin, 1935)
+
+Tempo 120
+
+Groove Metronome2-4
+  z * 2
+
+Groove FoxtrotIntro
+
+Begin Solo
+    Voice Piano3
+    Decresc ff mp 4
+    Articulate 60 70 90 110
+    Harmony 3Below
+    Octave 5
+    Begin Riff
+        4g+;;;;
+        4e+;;;;
+        4a ;;;;
+        1d;
+    End
+End
+
+Decresc mf mp 4
+
+1          G
+2         Em
+3         Am
+4         D7
+
+Repeat
+
+Groove FoxTrot
+Volume m
+
+5          C
+6          /      /     D7
+7          G
+8          /      /   G7/F
+
+Groove FoxTrotPlus
+Cresc f 8
+
+9          C
+10       Cm6      /     D7
+11        G6
+12         /
+
+Groove FoxTrotSus
+
+13       G/B
+14    Bbdim7
+15      D7/A      / G#dim7
+16      D9/A      /     D7
+
+Groove FoxTrotSusPlus
+Volume m
+
+17        G6
+18       Gb+
+19      Bb/F
+20        A7      /     D7
+
+Groove FoxTrot
+
+21         C      /      /    Cm6
+22         /      /     D7
+23         G
+24         /      /   G7/F
+
+Groove FoxTrotPlus
+Cresc mf 4
+
+25         C      /      /    Cm6
+26         /      /     D7
+27        G6
+28         /      /      G    C/G
+
+Groove FoxTrot
+Decresc mp 4
+
+29        G7  FM7/G     G7    F/G
+30         G     G9    C/E Cm6/Eb
+31       G/D      /      /     A9
+32         /
+
+Groove FoxTrotPlus
+Cresc m 2
+
+33         C      /      /    Cm6
+34         /      /     D7
+
+RepeatEnding
+
+Groove FoxTrotFill
+
+35         G      / Bbdim7
+36       Am7      /     D7
+
+RepeatEnd
+
+Groove FoxTrotEnd
+Decresc ppp 2
+
+37         G      /    C/G
+38         G     z!
+
+

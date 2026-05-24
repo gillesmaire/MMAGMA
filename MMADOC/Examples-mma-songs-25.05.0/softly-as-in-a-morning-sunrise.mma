@@ -1,0 +1,109 @@
+// Softly As In A Morning Sunrise (Hammerstein/Romberg, 1927)
+
+Tempo 105
+
+Groove Metronome2-4
+  z * 2
+  
+Groove JazzRhumbaIntro
+
+AllGrooves Bass Voice AcousticBass
+Begin Solo
+   Voice JazzGuitar
+   Volume ff
+   Articulate 120
+   Harmony OpenBelow
+   Octave 5
+   Begin Riff
+       4.d+;8+2a;
+       8r;g;a;g;4a;g;
+       1+2d~;
+   End
+End
+
+Cresc m f 4
+
+1        Dm
+2      Emb5      /     A7
+3        Dm
+Seq 1
+4     Em7b5      /   A7b9
+
+
+Repeat  // entire song
+Repeat  // part A
+Groove JazzRhumba
+
+Cresc m f 4
+
+5        Dm
+6     Em7b5      /     A7
+7        Dm
+8     Em7b5      /     A7
+
+Groove JazzRhumbaPlus
+
+Volume m
+9        Dm
+10    Em7b5      /    Bb7     A7
+11       Dm
+
+RepeatEnding
+
+Decresc mp 1
+Groove JazzRhumbaFill
+
+12    Em7b5      /   A7b9
+
+
+RepeatEnd
+
+13        /
+
+Groove JazzRhumbaSus
+
+Volume m
+
+14        F
+15        /      /   Amb5
+16       D7
+17        /
+
+Groove JazzRhumbaSusPlus
+
+18       Gm
+19    Bm7b5      /   E7b9
+20       A7
+21    Em7b5   A7b9
+
+Groove JazzRhumba
+
+Volume m
+
+22       Dm
+23    Em7b5      /     A7
+24       Dm
+
+Groove JazzRhumbaPlus
+Volume mf
+
+25    Em7b5      /     A7
+26       Dm
+
+RepeatEnding   /// do song 2x
+
+27    Em7b5      /    Bb7     A7
+
+Groove JazzRhumbaFill
+Decresc mp 1
+
+28       Dm
+
+Repeatend
+
+Groove JazzRhumbaEnd
+Decresc p 2
+
+27    Em7b5      /    Bb7     A7
+28       Dm
+

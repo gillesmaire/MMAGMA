@@ -1,0 +1,169 @@
+// Chorando Baixinho
+// This is a CHORO in 2/4 written in 1942 by Able Ferreira.
+
+
+// This is 2/4 and the groove is 4/4. So, double up the tempo
+Tempo $(2 * 50)
+
+Keysig D minor
+
+Groove Metronome2-4
+   z * 2
+   
+Set ApreggioOctave 5
+
+// A very short intro with 1/2 bar pickup
+Groove SonIntro
+Seq 4
+z   // the pickup. Start play at beat 3.5 (if counting in 4)
+
+Repeat
+Label Sign
+Groove Son
+
+1        Dm      /   A7b9    Eb7 
+2        Dm      /   F7/C 
+3        Bb      /   F7/A
+4    Bb7/Ab
+
+Groove SonPlus
+
+5      A7/G      /     A7
+6        Dm      /   Bdim
+7       A/E      /     E7
+8        A7      A7z+C    /// note how break (just chord) occurs on beat 2
+
+Groove Son
+
+9        Dm      /   A7b9
+10       Dm      /   F7/C
+11       Bb      /   F7/A
+12    Bb7/Ab
+
+Groove SonPlus
+
+13      A7/G      /     A7
+14       Dm      /    Bb6
+15       Eb      /     A7
+
+if def TOEND
+  goto END
+endif
+
+if def TOCODA
+  goto CODA
+endif
+
+RepeatEnding
+Groove SonFill
+
+16       Dm
+
+RepeatEnd
+
+Groove SonFill2
+
+17       Dm
+
+Groove SonSus
+
+18     E7b9
+19       Am
+20     A7b9
+21       Dm
+
+Groove SonSusPlus
+
+22      Dm6
+23       Am
+24       B7
+25   Bdim7/F      /     E7
+
+Groove SonSus
+
+26     E7b9
+27       Am
+28     A7b9
+29       Dm
+
+Groove SonSusPlus
+
+30      Dm6
+31       Am
+32       F7      /     E7
+
+Groove SonFill
+
+33       Am
+
+Set TOCODA
+Goto Sign
+
+/// This is the CODA
+
+Label CODA
+unset TOCODA
+
+
+Groove SonFill
+
+34       Am  
+
+Repeat
+
+Keysig D
+
+Groove Son
+
+35        D      /     A7
+36        D      /     Gm
+37       Bm      /    F#7
+38       B7      /   B7b9
+
+Groove SonPlus
+
+39       Em      /    Gm6
+40        D      /    Bm7
+41       E7
+42      Gm6      /     A7
+
+
+Groove Son
+
+43        D      /     A7
+44        D      /    Gm6
+45       Bm      /    F#7
+46       B7      /   B7b9
+
+Groove SonPlus
+
+47       Em      /    Gm6
+48        D      /    Bm7
+49       E7      /     A7
+
+RepeatEnding
+
+50        D
+
+RepeatEnd
+
+// Finished CODA, go back to start and jump to Fine
+
+51        D
+
+set TOEND
+Goto SIGN
+
+/// the finale
+Label END
+
+Groove Son
+
+52       Bb      /   Dm/A
+53      Gm6      /   Dm/F
+
+Groove SonEnd
+
+54       Eb      /     A7
+55       Dm
+

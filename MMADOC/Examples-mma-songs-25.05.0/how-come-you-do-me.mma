@@ -1,0 +1,82 @@
+// How Come You Do Me (austin/bergere 124)
+
+Tempo 120
+Keysig C
+
+Groove Metronome2-4
+  z * 2
+  
+Groove BigbandIntro
+
+Begin Solo
+    Voice VoiceOohs
+    Volume fff
+    Octave 5
+    Articulate 50
+    Harmony 3below
+    Begin Riff
+        4c+;r;c+;r;
+        4f;r;f;r;
+        8c+;;;; 4a;;
+        43c+;;; 2c+;
+    End
+End
+Swingmode On   /// only effects solo
+
+1         C
+2         F
+3        Am
+4        C7
+
+Repeat
+Groove BigBand
+Volume m
+
+5         C      /      F
+6         C   Bb7     A7
+7        D7      /     G7
+8         C    Dm7      /     G7
+
+Groove BigBandPlus
+Volume mf
+
+9         C      /      F
+10        C    Bb7     A7
+11       D7
+12       G7
+
+Groove BigBandSus
+Volume m
+
+13       C7
+14        /
+15       F6
+16      Ab7
+
+Groove BigBandSusPlus
+Volume mf
+
+17        C      /      F
+18        C    Bb7     A7
+
+RepeatEnding 3
+
+19       D7      /     G7
+
+Groove BigBandFill
+Volume f
+
+20        C
+
+RepeatEnd
+
+Groove BigBandEnd
+Chord-hits1 Volume -50%
+
+Decresc p 2
+
+
+21       D7      /     G7
+22        C      z!
+
+

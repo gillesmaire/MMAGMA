@@ -1,0 +1,116 @@
+// I'm A Fool To Want You (Frank Sinatra, 1951)
+
+Tempo 60
+Keysig E minor
+
+Groove Metronome2-4
+  z * 2
+  
+Groove SlowJazz2Intro
+
+Begin Solo
+    Voice Vibraphone
+    Volume f
+    Articulate 110
+    Octave 5
+    Harmony OpenBelow+8Below
+    Begin Riff
+        4c+;b;f;g;
+        2a;4c+;e+;
+        4d+;c+;g;a;
+        4b;
+    End
+End
+
+Swell mp mf 4
+
+1        Em
+2        Am
+3        F#m&5
+4        B7
+
+Groove SlowJazz1
+Volume m
+
+5        Em
+6         /      /   E7b9
+7        Am
+8         /   Am/C  Bdim7     Am
+
+Groove SlowJazz1
+Volume mf
+
+9        Em
+10       C7
+11        /
+12       B7      /   B7b9
+
+Groove SlowJazz1Plus
+Decresc mp 4
+
+13       Em
+14        /      /   E7b9
+15       Am
+16        /   Am/C  Bdim7     Am
+
+Groove SlowJazz1
+Volume m
+
+17       Em
+18       C7
+19       Em      /     B7
+20       Em
+
+Groove SlowJazz1Sus
+Cresc mf 4
+
+21       Am      /    Am7
+22       D7      /   D9#5
+23        G
+24        /
+
+Groove SlowJazz1SusPlus
+
+25       Am      /   AmM7     Am
+26       D7
+27      GM7
+28       G6
+
+Groove SlowJazz1Sus
+Decresc m 4
+
+29   F#m7b5
+30       B7
+31       Em
+32        /      /    Em7
+
+Groove SlowJazz1
+Cresc mp mf 4
+
+33       C7
+34        /
+35       B7
+36        /      /   B7b9
+
+Groove SlowJazz1Plus
+Volume m
+
+37       Em
+38        /      /   E7b9
+39       Am
+40        /   Am/C  Bdim7     Am
+
+Groove SlowJazz1
+Decresc mp 4
+
+41       Em
+42       C7
+43       Am
+44      F#m      /     B7   B7b9
+
+Groove SlowJazzEnd
+Decresc ppp 2
+
+45      Em6
+46        /  z!
+

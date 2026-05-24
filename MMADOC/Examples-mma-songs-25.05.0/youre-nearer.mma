@@ -1,0 +1,99 @@
+// You're Nearer (Musical Too Many Girls, 1940)
+
+Tempo 60
+Keysig Eb
+
+Groove Metronome2-4
+  z * 2
+  
+Groove SlowJazz1Intro
+Begin Solo
+    Voice Piano1
+    Volume F
+    Octave 5
+    Articulate 100
+    Harmony 3Below+3Above+8Below
+    Arpeggiate Direction=Down Rate=8 Decay=-40
+    Begin Riff
+        1a;
+        1g;
+        1f;
+        1e;
+    End
+End
+
+Decresc mf mp 4
+
+1        Ab
+2         G
+3         F
+4        Eb      /    Bb7b9
+
+Groove SlowJazz1
+Volume m
+
+5      EbM7
+6        C7
+7       Fm7
+8       Bb7
+
+Groove SlowJazz1Plus
+Volume mf
+
+9      EbM7
+10       C7
+11      Fm7      / Fm7/Eb
+12    Dm7b5      /     G7
+
+Groove SlowJazz1Sus
+Decresc mp 4
+
+13      Cm7
+14       F7
+15    Dm7b5      /     G7
+16      Cm7
+
+Groove SlowJazz1SusPlus
+Cresc m 4
+
+17        /      /     F7
+18     BbM7      /   EbM7
+19     AbM7      /     C7
+20      Fm7      /  Bb7b9
+
+Groove SlowJazz1
+
+21     EbM7
+22       C7
+23      Fm7      / Fm7/Eb
+24    Dm7b5      /     G7
+
+Groove SlowJazz1Sus
+Cresc mf 4
+
+25      Cm7
+26       F7
+27    Dm7b5      /     G7
+28    Dm7b5      /     G7
+
+Groove SlowJazz1SusPlus
+Volume m
+
+29      Cm7
+30       F7      / F#dim7
+31     EbM7
+32     Abm7      /    Db7
+
+Groove SlowJazz1
+Decresc pppp 4
+
+33      Gm7      /     C7
+34      Fm7      /    Bb7
+
+Groove SlowJazzEnd
+
+35     EbM7
+36        /   /  z!
+
+
+

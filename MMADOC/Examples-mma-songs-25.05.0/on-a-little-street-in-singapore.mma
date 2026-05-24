@@ -1,0 +1,109 @@
+// On A Little Street In Singapore (1939)
+
+Tempo 120
+
+Groove Metronome2-4
+   z * 2
+
+Groove FoxtrotIntro
+
+Begin Solo
+    Voice Piano2
+    Octave 5
+    Harmony OpenBelow
+    Volume F
+    Articulate 90
+    Begin Riff
+        8c+;g;b&;f; a;e;g;d;
+        1f;
+        4f;d;e;d;
+        1g;
+    End
+End
+
+Swingmode On   // this just affects the solo riff
+Cresc p f 4
+Solo Decresc f p 4
+
+1          C
+2         Bb
+3         Dm
+4         G7
+
+Repeat
+Groove FoxTrot
+Volume m
+
+5          C      /     Bb
+6          C      /   G7#5
+7          C      /     Bb
+8          C      /     Bb
+
+Groove FoxtrotPlus
+Cresc f 4
+
+9          G      /      F
+10         G      /   C7b5
+11         G      /      F
+12         G      /      F
+
+Groove Foxtrot
+
+13         C      /     Bb
+14         C      /   G7#5
+15         C      /     Bb
+16         C      /     Bb
+
+Groove FoxtrotPlus
+Decresc m 4
+
+17         G      /      F
+18         G      /   C7b5
+19         C      /     Bb
+20         C      /     Bb
+
+Groove FoxtrotSus
+Volume mf
+
+21         F
+22      Gm/C      /      F
+23        Db
+24         /
+
+Groove FoxtrotSusPlus
+Volume f
+
+25         F
+26         /      /     Fm
+27       Dm7
+28        G7
+
+Groove Foxtrot
+Volume m
+
+29         C      /     Bb
+30         C      /   G7#5
+31         C      /     Bb
+32         C      /     Bb
+
+Groove FoxtrotPlus
+
+33         G      /      F
+34         G      /   C7b5
+
+RepeatEnding
+Groove FoxtrotFill
+Decresc mp 2
+
+35        C6      /    Am7
+36        C6      /    Dm7     G7
+
+RepeatEnd
+
+Groove FoxtrotEnd
+
+37         C
+Seq
+38        Bb      /      E
+39         C     z!
+

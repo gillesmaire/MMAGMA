@@ -1,0 +1,92 @@
+// Jive At Five (Count Bassie)
+
+Tempo 120
+Keysig Eb
+
+Groove Metronome2-4
+  z * 2
+  
+Groove MellowJazzIntro
+Begin Solo
+   Voice Trumpet
+   Octave 5
+   Harmony OpenBelow+8Below+16Below
+   Articulate 100
+   Volume f
+   Begin Riff
+       <>;
+       <>;
+       8r;4e;8r;4e;
+       8r;4b;8r;4.b;
+   End
+End
+
+Swell mp mf 4
+1        z
+2         /
+3        Eb
+4       Bb7
+
+
+Repeat /// for whole thing 2x
+Repeat
+Groove MellowJazz
+Volume m
+
+5        Eb      /    Cm7
+6       Fm7      /    Bb7
+7        Eb      /    Cm7
+8       Fm7      /    Bb7
+
+Groove MellowJazzPlus
+Volume mf
+
+9       Eb7      /     D7     Db
+10        /     C7
+11       B7      /    Bb7
+12       Eb
+
+RepeatEnd
+
+Groove MellowJazzSus
+Volume m
+
+13       Eb      / Gbdim7
+14      Fm7    Bb7     Eb
+15        /      / Gbdim7
+16      Fm7   Bb7     Eb
+
+Groove MellowJazzSusPlus
+Cresc f 4
+
+17        /      / Gbdim7
+18      Fm7    Bb7     Eb
+19       F7
+20    Bb7#5
+
+Groove MellowJazzSus
+Decresc m 4
+
+21       Eb      /    Cm7
+22      Fm7      /    Bb7
+23       Eb      /    Cm7
+24      Fm7      /    Bb7
+
+Groove MellowJazz
+
+25      Eb7      /     D7    Db7
+26        /     C7
+
+RepeatEnding
+27       B7      /    Bb7
+Groove MellowJazzFill
+28       Eb 
+Repeatend
+
+Groove MellowJazzEnd
+Decresc pp 2
+29       B7      /    Bb
+Seq
+30       Eb      /    z!
+
+

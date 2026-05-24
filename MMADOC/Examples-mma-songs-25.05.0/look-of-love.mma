@@ -1,0 +1,105 @@
+// Look Of Love (Dusty Springfield, 1967)
+
+Tempo 100
+KeySig D Minor
+
+Groove Metronome2-4
+   z * 2
+   
+Groove BeguineIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Octave 5
+    Harmony OpenAbove
+    Articulate 110
+    Volume ff
+    Rvolume 10
+    Rtime 10
+    Begin Riff
+        8r;8d;4r;e;r;
+        4f;8r;8+2e;
+        8r;8d;4r;e;r;
+        4f;8r;2e;
+    End
+End
+
+Swell mp f 4
+
+1        Dm / Em/D
+2         Dm / Em/D
+3        Dm / Em/D 
+4         Dm / Em/D
+
+Repeat
+Groove Beguine
+Volume m
+
+5       Dm
+6         /
+7       Am7
+8         /
+
+Groove Beguine1
+Cresc mp mf 4
+
+9        Bb
+10      Bb6
+11    A7sus
+12       A7
+
+Groove Beguine
+Volume m
+
+13   Dm7sus
+14    D7sus      /     D7
+15      Bb6
+16     Bbm6
+
+Groove Beguine1
+Cresc mp f 4
+
+17        /
+18      FM7      /     F7
+19     BbM7
+20      Bb6
+
+Groove BeguineSus
+Decresc m 4
+
+21    A7sus      /      /     A7
+22      Dm7      /     G7
+23        F
+24      Gm7
+
+Groove Beguine1Sus
+
+25        /
+26        /
+27        F
+28      Gm7
+
+RepeatEnding
+
+Groove BeguineFill
+Volume mf
+
+29        /
+
+RepeatEnd
+
+Groove Beguine
+Decresc ppp 7
+
+30        /
+31       Dm
+32     BbM7
+
+Groove BeguineEnd
+
+33        F
+34       A7
+35       Dm
+36        /  z!
+
+

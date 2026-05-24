@@ -1,0 +1,115 @@
+// Si Tu Vois Ma Mere (Bechet 1952)
+
+Tempo 80
+Keysig Bb
+Tempo 80
+
+Groove Metronome2-4
+  z * 2
+  
+Groove NiteJazzIntro //JazzGuitarIntro
+
+Begin Solo
+    Voice JazzGuitar
+    Volume f
+    Articulate 80
+    Harmony OpenBelow
+    Octave 5
+    Begin Riff
+        4g&;2f+;4e+;
+        4d+;b;f;d;
+        2.e;4c;
+        2.g&;
+    End
+End
+
+Cresc mp mf 4
+1      Ebm6
+2       Bb6      /    Gm7
+3       Cm7
+
+Bass Riff 1 1 4 90;
+4       Cm7b5      /     F7
+
+Repeat
+Groove NiteJazz
+Volume mp
+
+5        Bb
+6      BbM7
+7       Bb6
+8       Bb7
+
+Groove NiteJazz
+Cresc f 4
+
+9       Eb6
+10     Ebm6
+11     Bb/D
+12       Bb
+
+Groove NiteJazzPlus
+Decresc mp 4
+
+13    Am7b5      /     D7
+14    Am7b5      /     D7
+15       Gm
+16      Gm7
+
+Groove NiteJazzSus
+Volume m
+
+17       C7
+18        /
+19      Cm7
+20        /      /     F7
+
+Groove NiteJazzSusPlus
+Volume mf
+
+21      Bb6
+22     BbM7
+23      Bb6
+24      Bb9
+
+Groove NiteJazz
+Volume f
+
+25      Eb6
+26     Ebm6
+27      Ab9
+28       G7
+
+Groove NiteJazzPlus
+Volume m
+
+29    Cm7b5
+30        /
+31       Bb
+32       G7
+
+Groove NiteJazz
+Volume mp
+
+33    Cm7b5
+
+RepeatEnding
+Volume p
+
+34       C9      /     F7
+
+Groove NiteJazzSus
+
+35     Bb/D
+36       F7
+
+RepeatEnd
+Decresc pp 3
+
+37       C9      /     F7
+
+Groove NiteJazzEnd
+
+38       Bb   EbM7    Dm7    Cm7
+39     BbM7
+
