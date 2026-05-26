@@ -2,8 +2,9 @@
 
 ## Présentation 
 
-Les pattern alignés les uns à coté des autres est une solution assez lourde qui peut être 
-optimisée par l'emploi de Sequence. Une séquence est une suite de motifs décrivant une séquence musicale sur plusieurs mesures.
+Les *pattern* alignés les uns à coté des autres se révèlent être une solution assez lourde qui peut être 
+optimisée par l'emploi de **Sequences**. Une **séquence** est une suite de motifs décrivant une séquence musicale sur plusieurs mesures. Nous verrons que la successon de séquences peut être linéaire ou révêtir un caractères aléatoire dans le
+choix de répétition de mesures, ceci permettant par exemple d'éviter la monotonie de jeux sur chaque couplet.
 
 On note la séquence par une syntaxe du style :
 
@@ -11,15 +12,13 @@ On note la séquence par une syntaxe du style :
 Track Sequence Pattern1 Pattern2 ...
 ~~~
 
-- Track peut être n'importe quel nom de piste valide : Chord, Walk, Arpegio-88
-- Sequence est un mot clé qui indique que les pattern qui suivent vont être joués successivement
-- Les pattern peuvent : 
-    - être défini avant l'utilisation 
-    - ou directement dans la séquence encadré par {} elles sont ainsi définies à la volée
+- **Track** peut être n'importe quel nom de piste valide : **Chord**, **Walk**, **Arpegio-88**
+- **Sequence** est un mot clé qui indique que les **pattern** qui suivent vont être joués successivement
+- Les **pattern** peuvent : 
+    - être définis avant l'utilisation 
+    - ou directement dans la séquence encadré par {} ; elles sont ainsi définies à la volée.
 
-    
-    
-Exemple 
+**Exemple :** 
 
 ~~~mma 
 Bass Sequence  Bass1 Bass1 Bass2 Bass1
@@ -48,14 +47,14 @@ La deuxième notation est basée sur un modèle appelé en ligne avec des accola
 Arpeggio Sequence { 1 1 100 * 8 } { 1 1 100 * 8 }
 ~~~
 
-Cette commande définit une séquence de deux mesures pour la piste Arpeggio.
+Cette commande définit une séquence de deux mesures pour la piste **Arpeggio**.
 
 - Chaque bloc entre { } contient : 
     - 1 Le premier temps
     - 1 La note 1 de l'accord
     - volume 100
 - Les blocs sont répétés 8 fois
-- Cette deuxième notation peut varier en fonction des instruments et est explicité au cas par cas dans le chapitre [Les pistes](les-pistes.md)
+- Cette deuxième notation peut varier en fonction des instruments et est explicitée au cas par cas dans le chapitre [Les pistes](les-pistes.md)
 
 ## Les silences
 
@@ -74,9 +73,9 @@ Walk Sequence z / / Walk4-4
 
 ## Modification d'une séquence existante
 
-On peut vouloir jouer une séquence en  la modifiant. 
+On peut vouloir jouer une séquence en la modifiant. 
 
-Supposons qu'elle était définie comme suit 
+Supposons qu'elle ait été définie comme suit 
 
 ~~~mma
 Bass Sequence  Bass1 Bass1 Bass2 Bass1
@@ -91,11 +90,11 @@ Chord Sequence * * * { 1 2 90 }
 cela aura pour effet de jouer les tris première mesure de Bass puis on jouera la 
 mesure définie par { 1 2 90 }. 
 
-Par contre Bass restera inchangé pour les utilisations futures mais la séquence modifiée sera jouée 
+Par contre **Bass** restera inchangé pour les utilisations futures mais la séquence modifiée sera jouée 
 
 ## Suppression des séquences
 
-- La commande **SeqClear** efface toutes les séquences définies sauf la séquence SOLO et STICKY
+- La commande **SeqClear** efface toutes les séquences définies sauf les séquences *SOLO* et *STICKY*
 ~~~mma
 Drum SeqClear
 ~~~
@@ -151,7 +150,7 @@ Chord SeqRndWeight 2 2 1 1
 - pour la valeur 2 : probabilité de 2 sur 6
 - pour la valeur 1 : probabilité de 1 sur 6 
 - 6 étant la somme de 2 + 2 + 1 + 1
-- La valeur 0 : permet de ne pas jour la séquence correspondante
+- La valeur 0 : permet de ne pas jouer la séquence correspondante
 
 
 
@@ -164,7 +163,7 @@ Bass Sequence  Bass1 Bass1 Bass2 Bass1 / /
 ~~~
 
 
-SeqSize permet d'utiliser l'option From sous la forme From avec les index des valeurs à  positionner : 
+SeqSize permet d'utiliser l'option From  avec les index des valeurs à  positionner : 
 
 ~~~mma
 Seqsize 10
@@ -182,3 +181,4 @@ SeqRndWeight From=1,4,4,4,9
 ~~~
 
 Ici le 1 sera joué parfois, ainsi que le 9 mais le 4 sera joué trois fois plus souvent
+
