@@ -11,5 +11,4 @@ echo "Groove : ${groove}"
 echo "File :" $file.mma
 mma $file.mma
 echo "fluidsynth $file.mid"
-fluidsynth -ni /usr/share/sounds/sf2/FluidR3_GM.sf2 $file.mid </dev/null >/dev/null 2>&1 &
-echo $! > .lastMusic
+fluidsynth  /usr/share/sounds/sf2/FluidR3_GM.sf2 $file.mid  >/dev/null 2>&1 

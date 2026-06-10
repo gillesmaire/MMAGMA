@@ -2,7 +2,7 @@
 
 ListExemplesMMA="../Examples-mma-songs-25.05.0"
 
-echo " Cette commande va balayer l'ensemble des exemples présent dans ../Examples-mma-songs-..\n" "et vous devrez pour chacun des morceaux donner des mots clés décrivant le style.\n" "Le processus est assez long mais vous pourrez arrêter ce script (^C) et le recommencer plus tard !\n"
+echo " Cette commande  balaye l'ensemble des exemples présents dans le répertoire ../Examples-mma-songs-..\n" "et contruit pour chacun des morceaux  mots clés décrivant le style.\n" "Le processus est assez long mais vous pourrez arrêter ce script (^C) et le continuer plus tard !\n"
 echo "Voulez-vous continuer ? [O/N]"
 read rep
 case "$rep" in
