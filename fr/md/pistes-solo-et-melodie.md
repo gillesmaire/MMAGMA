@@ -141,7 +141,7 @@ F
 ~~~mma
 F {4c; 2d; 4f;}
 F {4.a; 8g#; 4a; 4c+;}
-~~~~
+~~~
 
 ### Par des sections BEGIN END
 
