@@ -1,0 +1,8 @@
+// fichier: guitar-test.mma
+
+
+Tempo 90
+
+Begin Chord
+   Voice NylonGuitar
+End

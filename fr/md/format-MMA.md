@@ -307,3 +307,34 @@ Bass Chords {C} {G / B7} {Dm} {C G A B}
 Cet exemple avec la Bass peut s'appliquer à n'importe quelle piste Bass, Chord, Arpeggio, Solo, Scale mais
 mais aussi à la piste nommée Piano.
 
+
+## Les variables 
+
+
+### Set 
+
+On peut définir une variable par la synaxe  :
+
+~~~mma
+Set Base 80
+~~~
+
+### Utilisation des variables 
+
+Une variable définie peut être ensuite utilisée comme le montre l'exemple suivant :
+
+
+~~~mma
+Tempo $(Base * 2)
+~~~
+
+On comprend que la variabe Tempo vaut 160 soit le résultat de $(Base*2)
+
+
+Notons que la syntaxe suivante est aussi valide : 
+
+~~~mma
+Tempo $(80*2)
+~~~
+
+

@@ -43,17 +43,17 @@ Ces paramètres sont :
 
 Mais on le comprend, ces petites amélioratons ne changeront pas fondamentalement le rendu des instruments.
 
-## Changement de SoundFont
+## Création d'une SoundFont
 
+### Préambule 
 
-La SoundFont FluidR3 est la plus connue mais c'est une fonte ancienne
-Nous allons nous concentrer sur le passage de FluidR3 à :
+Nous allons créer une SoundFont propre à une formation musicale comprenant :
+- une contrebasse
+- deux guitares classiques
+- des percussions
 
-- General US 
+Par la suite nous pourrons compléter notre orchestre
 
+Pour réaliser ce travail nous allons utiliser le logiciel polyphone et des SoundFont qui nous conviennent. 
 
-### General US
-
-
-En cours d'élaboration
 
