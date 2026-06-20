@@ -5,7 +5,7 @@
 
 
 Nous avons vu comment utiliser la batterie et les accords, nous allons voir comment ajouter des lignes
-mélodiques. Ces mélodies **solo** et **mélodie** sont à compléter avec les **harmonies** que nous verrons dans un des chapitres suivants.
+mélodiques. Ces mélodies **solo** et **mélodie** sont à compléter avec les **harmonies** que nous verrons dans le chapitre correspondant.
 
 Il est bien sûr possible d'ajouter des mélodies et des harmonies via des instruments MIDI, mais on 
 dispose également de pistes réservées aux mélodies : 
@@ -15,7 +15,8 @@ dispose également de pistes réservées aux mélodies :
    ignorés pour les pistes solo. Les réglages des pistes SOLO ne sont pas sauvegardés ni récupérables via la commande 
    Groove. Un certain nombre de réglages sont donc nécessaires pour les pistes Solo, ces paramètres sont généralement
    définis une préambule de votre fichier, ces paramètres étant utilisables pour la chanson entière.
-   - les pistes **mélodie** reprenant l'air du morceau utilisent les Grooves qui sont en cours. Elle sont généralement
+   
+   - les pistes **mélodie** reprenant l'air du morceau utilisent les instruments du Groove qui est en cours. Elle sont généralement
    créées dans les Groove eux même.
   
 Nous verrons que l'on peut également ajouter des Harmonies dans un des chapitres suivants.
@@ -91,7 +92,7 @@ Les notes jounées dans un Solo ou une Mélody doivent être définies accompagn
 
 - Bass C 1 1 : la basse joue un Do pendant une ronde 
 - Bass C 4 4 4 4 : la basse jour 4 noires 
-- Bass C 81 82 81 82 : la base joue qutre noire façon swing
+- Bass C 81 82 81 82 : la base joue quatre noire façon swing
 - Bass C 96T : joue 96 ticks MIDI
 
 
@@ -153,6 +154,10 @@ End
 F
 F
 ~~~
+
+### Exemple intéressant
+
+Nous pouvons 
 
 
 ## La vélocité 
