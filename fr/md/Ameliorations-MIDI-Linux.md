@@ -48,6 +48,7 @@ Mais on le comprend, ces petites amélioratons ne changeront pas fondamentalemen
 ### Préambule 
 
 Nous allons créer une SoundFont propre à une formation musicale comprenant :
+
 - une contrebasse
 - deux guitares classiques
 - des percussions
@@ -56,4 +57,21 @@ Par la suite nous pourrons compléter notre orchestre
 
 Pour réaliser ce travail nous allons utiliser le logiciel polyphone et des SoundFont qui nous conviennent. 
 
+### Test d'un instument 
 
+Le point qui nous intéresse en premier chef est d'écouter chaque instrument indépendament pour en tester le rendu. 
+
+
+Pour ce faire nous allons créer un fichier MMA correspondant à un instrument, par exemple une guitare classsique, cela peut se faire simplement en créant le fichier suivant :
+
+
+~~~mma
+Tempo 120
+Solo Voice TenorSax
+Solo Riff 4c; 2d; 4f;
+F
+Solo Riff 4a; 8d; 4a; 4c;
+F
+~~~
+
+Nous verrons à quoi correspondent chacune 

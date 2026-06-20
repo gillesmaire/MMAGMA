@@ -5,28 +5,38 @@
 
 
 Nous avons vu comment utiliser la batterie et les accords, nous allons voir comment ajouter des lignes
-mélodiques. Ces mélodies **solo** et **mélodie** sont à compléter avec les **harmonies** que nous verrons dans le chapitre correspondant.
+mélodiques. Ces mélodies **solo** et **mélody** sont à compléter avec les **harmonies** que nous verrons dans le chapitre correspondant.
 
 Il est bien sûr possible d'ajouter des mélodies et des harmonies via des instruments MIDI, mais on 
 dispose également de pistes réservées aux mélodies : 
 
-   - des pistes **solo** qui permettent improvisations, contrechants, riffs ou interventions ponctuelles
-   d’un instrument. Ces pistes sont initialisées une seule fois au démarrage du morceau. Les mots SEQCLEAR sont
-   ignorés pour les pistes solo. Les réglages des pistes SOLO ne sont pas sauvegardés ni récupérables via la commande 
-   Groove. Un certain nombre de réglages sont donc nécessaires pour les pistes Solo, ces paramètres sont généralement
+   - Nous verrons que l'on peut également ajouter des Harmonies dans un des chapitres suivants.
+   - Des pistes **solo** qui permettent improvisations, contrechants, riffs ou interventions ponctuelles
+   d’un instrument peuvent être utilisées. 
+      - Ces pistes sont initialisées une seule fois au démarrage du morceau. 
+      - La commande SEQCLEAR est ignorée pour les pistes solo.
+      - Les réglages des pistes SOLO ne sont pas sauvegardés ni récupérables via la commande 
+   Groove. 
+      - Un certain nombre de réglages sont donc nécessaires pour les pistes Solo, ces paramètres sont généralement
    définis une préambule de votre fichier, ces paramètres étant utilisables pour la chanson entière.
+   - Les pistes **mélody** reprenant l'air du morceau utilisent les instruments du Groove qui est en cours. Elles sont généralement créées dans les Groove eux même.
    
-   - les pistes **mélodie** reprenant l'air du morceau utilisent les instruments du Groove qui est en cours. Elle sont généralement
-   créées dans les Groove eux même.
-  
-Nous verrons que l'on peut également ajouter des Harmonies dans un des chapitres suivants.
+## Déclaration d'une piste SOLO
+
 
 
 On déclare les pistes Solo  de la façon suivante : 
 
 ~~~mma
-Solo Voice TenorSax
+temp 120 
+Solo Voice Piano
+Solo Riff 4c; 2d; 4f;
+F
+Solo Riff 4a; 8g #; 4a; 4c +;
+F
 ~~~
+
+
 
 On déclare les pistes Melody de la façon suivante : 
 
@@ -42,30 +52,42 @@ End
 Dans le deuxième exemple l'instrument ne sera pas TenorSax mais celui défini par le Groove Blues.
 
 
-### Armure 
+### Armure et KeySig
 
-Pour chacune des pistes Solo ou Mélodie, on devra  définir l'armure c'est à dire les dièses et les bémols  de début de portées qui s'appliquent sur la partition. Ceci se définit par le mot clé KeySig
+Pour chacune des pistes Solo ou Mélodie, on devra  définir l'armure c'est à dire les dièses et les bémols  de début de portées qui s'appliquent à la partition. Ceci se définit par le mot clé **KeySig**.
+
+Le tableau suivant donne les Keysig de base de chacunes des tonalités majeures et mineures.
+
+| Keysig | Tonalité majeure | Tonalité mineure |
+|:-------|:----------------:|:----------------:|
+|    0   |  Do              |  Lam             |
+|    1#  |  Sol             |  Mim             |
+|    2#  |  Ré              |  Sim             |
+|    3#  |  La              |  Fa#m            |
+|    4#  |  Mi              |  Do#m            |
+|    5#  |  Si              |  Sol#m           |
+|    6#  |  Fa#             |  Ré#m            |
+|    7#  |  Do#             |  La#m            |
+|    1b  |  Fa              |  Rém             |
+|    2b  |  Sib             |  Solm            |
+|    3b  |  Mib             |  Dom             |
+|    4b  |  Lab             |  Fam             |
+|    5b  |  Reb             |  Sibm            |
+|    6b  |  Solb            |  Mibm            |
+|    7b  |  Dob             |  Labm            |
 
 
 
-| KeySig | Armure | Effet |
-|:------:|:------:|:-----:|
-|    C   |        |  Do   |
-|    G   |  1#    |  Sol  |
-|    D   |  2#    |  Ré   |
-|    F   |  1b    |  Fa   |
-|    Bb  |  2b    |  Sib  |
-|    Am  |        |  Lam  |
-|    Em  |  1#    |  Mim  |
-
+Bien sûr on peut également utiliser des armures différentes pour produire des mélodies qui sortent des tonalités. 
 
 Enfin les mots clé Major Minor ou leur raccourci Maj Min peuvent être ajoutés
 
 
 
+
 ### Format des  notes
 
-Les notes jounées dans un Solo ou une Mélody doivent être définies accompagnées de leur durée :
+Les notes jouées dans un solo ou une mélodie doivent être définies accompagnées de leur durée :
 
 | Notation | Description                |  Durée |
 |:--------:|:--------------------------:|:------:|
@@ -108,7 +130,6 @@ sachant que l'octave de base est définit par octave suivi d'un numéro
 - Le Symbole ~ renforce  la tenue de la note par exemple C~ 
 - Il est également possible d'importer les notes d'un fichier MIDI par la syntaxe suivante : 
 
-
 ~~~mma
 MidiFile solo.mid
 ~~~
@@ -123,6 +144,7 @@ De plus, les doubles altérations dièzes et bémols ne sont pas prises en charg
 ### Définition des Riff
 
 On peut écrire les mesures de deux façons :
+
 - par une série de RIFF
 - par une série d'accords accompagnés des RIFF
 - par des sections BEGIN END
