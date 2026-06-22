@@ -22,7 +22,8 @@ Le MIDI introduit une idée fondamentale :
 
 ## Les messages MIDI 
 
-Le MIDI fonctionne avec des évènements simples 
+Le MIDI fonctionne avec des évènements simples que nous allons expliciter dans 
+ce sous chapître.
 
 ### Note ON
 
@@ -64,7 +65,7 @@ Ces valeurs peuvent changer en continu, créant des courbes.
 - **CC11 :**  Expression volume musical agit comme un volume secondaire
 - **CC11 :** nuance expressive
 - **CC64 :**  Sustain (pédale de sustain) 0–63 : relâchée 64–127 : enfoncée
-- **CC1 :** Modulation souvent lié au vibrato et dépend des synthés
+- **CC1 :** Modulation souvent liée au vibrato et dépendante des synthés
 
 ### Les messages système
 
@@ -78,8 +79,7 @@ Ces messages concernent :
 
 Le MIDI ne travaille pas en secondes, mais en ticks.
 
-De plus un fichier MIDI définit une résolution appelée  PPQ (Pulses Per Quarter note), ce qui 
-est le nombre de pulsation par quart de temps donc le nombre de pulsations par minute. 
+De plus un fichier MIDI définit une résolution appelée PPQ (Pulses Per Quarter note), ce qui est le nombre de pulsations par quart de temps donc le nombre de pulsations par minute. 
 
 **Exemple : **
 
@@ -89,7 +89,7 @@ PPQ = 480
 
 Le tick est donc une unité de temps relative, indépendante du tempo.
 
-C'est par ce mécanosme qu'on peut changer  le tempo  sans modifier la structure musicale.
+C'est par ce mécanosme qu'on peut changer le tempo  sans modifier la structure musicale.
 
 
 ## Le Tempo 
@@ -135,6 +135,144 @@ Mais il permet de les déduire :
 
 C’est exactement ce que MMA exploite.
 
+
+## Les instruments MIDI 
+
+
+- Les instruments peuvent être sélectionné par leur nom donné dans la colonne Nom Anglais ou par leur numéro donné dans la coloNne Numéro.
+
+| Catégorie    | N° | Nom anglais        |    Nom français   |
+|:-------------|:---|-------------------:|:------------------|
+| Pianos       |  1	| AcousticGrandPiano | Grand Piano       |
+| Pianos       |  2	| BrightAcousticPiano| Piano brillant    |
+| Pianos       |  3	|Electric Grand Piano| Piano             |
+| Pianos       |  4	| Honky-tonkPiano    | Piano honky-tonk  |
+| Pianos       |  5	| ElectricPiano1     | Piano électrique 1|
+| Pianos       |  6	| ElectricPiano2     | Piano électrique 2|
+| Pianos       |  7 | Harpsichord	     | Clavecin          |
+| Pianos       |  8 | Clavinet	         | Cavinet           |
+| Percussions  |  9 | Celesta            | Célesta           |
+| Percussions  | 10 | Glockenspiel       | Glockenspiel      |
+| Percussions  | 11 | MusicBox           | Boîte à musique   |
+| Percussions  | 12 | Vibraphone         | Vibraphone        |
+| Percussions  | 13 | Marimba            | Marimba           |
+| Percussions  | 14 | Xylophone          | Xylophone         |
+| Percussions  | 15 | TubularBells       | Cloches tubulaires|
+| Percussions  | 16 | Dulcimer           | Cymbalum/Dulcimer |
+| Orgues       | 17 | DrawbarOrgan       | Orgue Hammond     |
+| Orgues       | 18 | PercussiveOrgan    | Orgue percussif   |
+| Orgues       | 19 | RockOrgan          | Orgue rock        |
+| Orgues       | 20 | ChurchOrgan        | Orgue d’église    |
+| Orgues       | 21 | ReedOrgan          | Harmonium |
+| Orgues       | 22 | Accordion          | Accordéon |
+| Orgues       | 23 | Harmonica          | Harmonica |
+| Orgues       | 24 | TangoAccordion     | Accordéon tango |
+| Guitares     | 25 |AcousticGuitar(nylon)| Guitare nylon |
+| Guitares     | 26 |AcousticGuitar(steel) | Guitare folk  |
+| Guitares     | 27 |ElectricGuitar(jazz) | Guitare jazz |
+| Guitares     | 28 |ElectricGuitar(clean | Guitare électrique |
+| Guitares     | 29 |ElectricGuitar(muted) | Guitare mutée |
+| Guitares     | 30 | OverdrivenGuitar | Guitare overdrive |
+| Guitares     | 31 | DistortionGuitar | Guitare saturée |
+| Guitares     | 32 | GuitarHarmonics | Harmoniques guitare |
+| Basses       | 33 | AcousticBass | Contrebasse |
+| Basses       | 34 | ElectricBass(finger) | Basse élec. doigt |
+| Basses       | 35 | ElectricBass(pick) | Basse élec. médiator |
+| Basses       | 36 | Fretless(Bass) | Basse fretless |
+| Basses       | 37 | SlapBbass1 | Slap bass 1 |
+| Basses       | 38 | SlapBass2 | Slap bass 2 |
+| Basses       | 39 | SynthBass1 | Basse synthé 1 |
+| Basses       | 40 | SynthBass2 | Basse synthé 2 |
+| Cordes       | 41 | Violin | Violon |
+| Cordes       | 42 | Viola | Alto |
+| Cordes       | 43 | Cello | Violoncelle |
+| Cordes       | 44 | Contrabass | Contrebasse section |
+| Cordes       | 45 | TremoloStrings | Cordes trémolo |
+| Cordes       | 46 | PizzicatoStrings | Cordes pizzicato |
+| Cordes       | 47 | Orchestral Harp | Harpe |
+| Cordes       | 48 | Timpani | Timbales |
+| Ensembles    | 49 | StringEnsemble1 | Ensemble cordes 1 |
+| Ensembles    | 50 | StringEnsemble2 | Ensemble cordes 2 |
+| Ensembles    | 51 | SynthStrings1 | Cordes synthé 1 |
+| Ensembles    | 52 | SynthStrings2 | Cordes synthé 2 |
+| Ensembles    | 53 | ChoirAahs | Chœur Aahs |
+| Ensembles    | 54 | VoiceOohs | Chœur Oohs |
+| Ensembles    | 55 | SynthVoice | Voix synthé |
+| Ensembles    | 56 | OrchestraHit | Coup d’orchestre |
+| Cuivres      | 57 | Trumpet | Trompette |
+| Cuivres      | 58 | Trombone | Trombone |
+| Cuivres      | 59 | Tuba | Tuba |
+| Cuivres      | 60 | MutedTrumpet | Trompette bouchée |
+| Cuivres      | 61 | FrenchHorn | Cor français |
+| Cuivres      | 62 | BrassSection | Section cuivres |
+| Cuivres      | 63 | SynthBrass 1 | Cuivres synthé 1 |
+| Cuivres      | 64 | SynthBrass 2 | Cuivres synthé 2 |
+| Bois / anches| 65 | SopranoSax | Sax soprano |
+| Bois / anches| 66 | AltoSax | Sax alto |
+| Bois / anches| 67 | TenorSax | Sax ténor |
+| Bois / anches| 68 | BaritoneSax | Sax baryton |
+| Bois / anches| 69 | Oboe | Hautbois |
+| Bois / anches| 70 | EnglishHorn | Cor anglais |
+| Bois / anches| 71 | Bassoon | Basson |
+| Bois / anches| 72 | Clarinet | Clarinette |
+| Flûtes       | 73 | Piccolo | Piccolo |
+| Flûtes       | 74 | Flute | Flûte |
+| Flûtes       | 75 | Recorder | Flûte à bec |
+| Flûtes       | 76 | PanFlute | Flûte de pan |
+| Flûtes       | 77 | BlownBottle | Bouteille soufflée |
+| Flûtes       | 78 | Shakuhachi | Shakuhachi |
+| Flûtes       | 79 | Whistle | Sifflet |
+| Flûtes       | 80 | Ocarina | Ocarina |
+| Leads synthé | 81 | Lead1(Square) | Lead carré |
+| Leads synthé | 82 | Lead2(Sawtooth | Lead dent de scie |
+| Leads synthé | 83 | Lead3(Calliope) | Lead calliope |
+| Leads synthé | 84 | Lead4(Chiff) | Lead chiff |
+| Leads synthé | 85 | Lead5(Charang) | Lead charang |
+| Leads synthé | 86 | Lead6(Voice) | Lead voix |
+| Leads synthé | 87 | Lead7(Fifths) | Lead quintes |
+| Leads synthé | 88 | Lead8(Bass+Lead) | Lead basse+solo |
+| Pads         | 89 | Pad1(neage) | Pad new age |
+| Pads         | 90 | Pad2(warm) | Pad warm |
+| Pads         | 91 | Pad3(polysynth) | Pad polysynth |
+| Pads         | 92 | Pad4(choir) | Pad chœur |
+| Pads         | 93 | Pad5(bowed) | Pad frotté |
+| Pads         | 94 | Pad6(metallic) | Pad métallique |
+| Pads         | 95 | Pad7(halo) | Pad halo |
+| Pads         | 96 | Pad8(sweep) | Pad sweep |
+| FX           | 97 | FX1(rain) | Effet pluie |
+| FX           | 98 | FX2(soundtrack) | Bande son |
+| FX           | 99 | FX3(crystal) | Cristal |
+| FX           |100 | FX4(atmosphere) | Atmosphère |
+| FX           |101 | FX5(brightness) | Brillance |
+| FX           |102 | FX6(goblins) | Goblins |
+| FX           |103 | FX7(echoes) | Échos |
+| FX           |104 | FX8(sci-fi) | Science-fiction |
+| Ethniques    |105 | Sitar | Sitar |
+| Ethniques    |106 | Banjo | Banjo |
+| Ethniques    |107 | Shamisen | Shamisen |
+| Ethniques    |108 | Koto | Koto |
+| Ethniques    |109 | Kalimba | Kalimba |
+| Ethniques    |110 | Bagpipe | Cornemuse |
+| Ethniques    |111 | Fiddle | Violon folk |
+| Ethniques    |112 | Shanai | Shanaï |
+| Percu./FX    |113 | Tinkle Bell | Clochette |
+| Percu./FX    |114 | Agogo | Agogo |
+| Percu./FX    |115 | SteelDrums | Steel drums |
+| Percu./FX    |116 | Woodblock | Woodblock |
+| Percu./FX    |117 | TaikoDrum | Tambour taiko |
+| Percu./FX    |118 | MelodicTom | Tom mélodique |
+| Percu./FX    |119 | SynthDrum | Batterie synthé |
+| Percu./FX    |120 | ReverseCymbal | Cymbale inv |
+| Bruitages    |121 | GuitarFretNoise | Bruit de frettes |
+| Bruitages    |122 | BreathNoise | Souffle |
+| Bruitages    |123 | Seashore | Vagues |
+| Bruitages    |124 | BirdTweet | Chant d’oiseau |
+| Bruitages    |125 | TelephoneRing | Sonnerie téléphone |
+| Bruitages    |126 | Helicopter | Hélicoptère |
+| Bruitages    |127 | Applause | Applaudissements |
+| Bruitages    |128 | Gunshot | Coup de feu |
+
+
 ## Conclusion 
 
 Le MIDI est donc une représentation minimale mais extrêmement puissante :
@@ -143,5 +281,5 @@ Le MIDI est donc une représentation minimale mais extrêmement puissante :
 - qui ne gère pas de style des morceaux
 - qui ne gère pas l’interprétation
 
-mais qui traite Juste des événements musicaux dans le temps
+mais qui traite Juste des événements musicaux dans le temps.
 
