@@ -205,11 +205,11 @@ C’est exactement ce que MMA exploite.
 | Cuivres      | 60 | MutedTrumpet | MutedTrumpet |
 | Cuivres      | 61 | FrenchHorn | FrenchHorn |
 | Cuivres      | 62 | BrassSection | BrassSection |
-| Cuivres      | 63 | SynthBrass 1 | Cuivres synthé 1 |
-| Cuivres      | 64 | SynthBrass 2 | Cuivres synthé 2 |
-| Bois / anches| 65 | SopranoSax | Sax soprano |
-| Bois / anches| 66 | AltoSax | Sax alto |
-| Bois / anches| 67 | TenorSax | Sax ténor |
+| Cuivres      | 63 | SynthBrass 1 | SynthBrass1 |
+| Cuivres      | 64 | SynthBrass 2 | SynthBrass2 |
+| Bois / anches| 65 | SopranoSax | SopranoSax |
+| Bois / anches| 66 | AltoSax | AltoSax |
+| Bois / anches| 67 | TenorSax | TenorSax |
 | Bois / anches| 68 | BaritoneSax | Sax baryton |
 | Bois / anches| 69 | Oboe | Hautbois |
 | Bois / anches| 70 | EnglishHorn | Cor anglais |
