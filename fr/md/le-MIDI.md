@@ -141,136 +141,135 @@ C’est exactement ce que MMA exploite.
 
 - Les instruments peuvent être sélectionné par leur nom donné dans la colonne Nom Anglais ou par leur numéro donné dans la coloNne Numéro.
 
-| Catégorie    | N° | Nom anglais        |    Nom MMA        |
-|:-------------|:---|-------------------:|:------------------|
-| Pianos       |  1	| AcousticGrandPiano | Piano1       |
-| Pianos       |  2	| BrightAcousticPiano| Piano2    |
-| Pianos       |  3	|Electric Grand Piano| Piano3             |
-| Pianos       |  4	| Honky-tonkPiano    | Honky-TonkPiano  |
-| Pianos       |  5	| ElectricPiano1     | RhodesPiano|
-| Pianos       |  6	| ElectricPiano2     | EPiano|
-| Pianos       |  7 | Harpsichord	     | HarpsiChord          |
-| Pianos       |  8 | Clavinet	         | Clavinet           |
-| Percussions  |  9 | Celesta            | Celesta           |
-| Percussions  | 10 | Glockenspiel       | Glockenspiel      |
-| Percussions  | 11 | MusicBox           | MusicBox   |
-| Percussions  | 12 | Vibraphone         | Vibraphone        |
-| Percussions  | 13 | Marimba            | Marimba           |
-| Percussions  | 14 | Xylophone          | Xylophone         |
-| Percussions  | 15 | TubularBells       | TubularBells|
-| Percussions  | 16 | Dulcimer           | Santur |
-| Orgues       | 17 | DrawbarOrgan       | Organ1     |
-| Orgues       | 18 | PercussiveOrgan    | Organ2   |
-| Orgues       | 19 | RockOrgan          | Organ3        |
-| Orgues       | 20 | ChurchOrgan        | ChurchOrgan    |
-| Orgues       | 21 | ReedOrgan          | ReedOrgan |
-| Orgues       | 22 | Accordion          | Accordion |
-| Orgues       | 23 | Harmonica          | Harmonica |
-| Orgues       | 24 | TangoAccordion     | Bandoneon |
-| Guitares     | 25 |AcousticGuitar(nylon)| NylonGuitar |
-| Guitares     | 26 |AcousticGuitar(steel) | SteelGuitar  |
-| Guitares     | 27 |ElectricGuitar(jazz) | JazzGuitar |
-| Guitares     | 28 |ElectricGuitar(clean | CleanGuitar |
-| Guitares     | 29 |ElectricGuitar(muted) | MutedGuitar |
-| Guitares     | 30 | OverdrivenGuitar | OverDriveGuitar |
-| Guitares     | 31 | DistortionGuitar | DistortionGuitar |
-| Guitares     | 32 | GuitarHarmonics | GuitarHarmonics |
-| Basses       | 33 | AcousticBass | AcousticBass |
-| Basses       | 34 | ElectricBass(finger) | FingeredBass |
-| Basses       | 35 | ElectricBass(pick) | PickedBass |
-| Basses       | 36 | Fretless(Bass) | FretlessBass |
-| Basses       | 37 | SlapBbass1 | SlapBass1 |
-| Basses       | 38 | SlapBass2 | SlapBass2  |
-| Basses       | 39 | SynthBass1 | SynthBass1 |
-| Basses       | 40 | SynthBass2 | SynthBass2 |
-| Cordes       | 41 | Violin | Violin |
-| Cordes       | 42 | Viola | Viola |
-| Cordes       | 43 | Cello | Cello |
-| Cordes       | 44 | Contrabass | ContraBass |
-| Cordes       | 45 | TremoloStrings | TremoloStrings |
-| Cordes       | 46 | PizzicatoStrings | PizzicatoStrings |
-| Cordes       | 47 | OrchestralHarp | PizzicatoStrings |
-| Cordes       | 48 | Timpani | Timpani |
-| Ensembles    | 49 | StringEnsemble1 | Strings |
-| Ensembles    | 50 | StringEnsemble2 | SlowStrings |
-| Ensembles    | 51 | SynthStrings1 | SynthStrings1 |
-| Ensembles    | 52 | SynthStrings2 | SynthStrings2 |
-| Ensembles    | 53 | ChoirAahs | ChoirAahs |
-| Ensembles    | 54 | VoiceOohs | VoiceOohs|
-| Ensembles    | 55 | SynthVoice | SynthVox |
-| Ensembles    | 56 | OrchestraHit | OrchestraHit |
-| Cuivres      | 57 | Trumpet | Trumpet |
-| Cuivres      | 58 | Trombone | Trombone |
-| Cuivres      | 59 | Tuba | Tuba |
-| Cuivres      | 60 | MutedTrumpet | MutedTrumpet |
-| Cuivres      | 61 | FrenchHorn | FrenchHorn |
-| Cuivres      | 62 | BrassSection | BrassSection |
-| Cuivres      | 63 | SynthBrass 1 | SynthBrass1 |
-| Cuivres      | 64 | SynthBrass 2 | SynthBrass2 |
-| Bois / anches| 65 | SopranoSax | SopranoSax |
-| Bois / anches| 66 | AltoSax | AltoSax |
-| Bois / anches| 67 | TenorSax | TenorSax |
-| Bois / anches| 68 | BaritoneSax | Sax baryton |
-| Bois / anches| 69 | Oboe | Hautbois |
-| Bois / anches| 70 | EnglishHorn | Cor anglais |
-| Bois / anches| 71 | Bassoon | Basson |
-| Bois / anches| 72 | Clarinet | Clarinette |
-| Flûtes       | 73 | Piccolo | Piccolo |
-| Flûtes       | 74 | Flute | Flûte |
-| Flûtes       | 75 | Recorder | Flûte à bec |
-| Flûtes       | 76 | PanFlute | Flûte de pan |
-| Flûtes       | 77 | BlownBottle | Bouteille soufflée |
-| Flûtes       | 78 | Shakuhachi | Shakuhachi |
-| Flûtes       | 79 | Whistle | Sifflet |
-| Flûtes       | 80 | Ocarina | Ocarina |
-| Leads synthé | 81 | Lead1(Square) | Lead carré |
-| Leads synthé | 82 | Lead2(Sawtooth | Lead dent de scie |
-| Leads synthé | 83 | Lead3(Calliope) | Lead calliope |
-| Leads synthé | 84 | Lead4(Chiff) | Lead chiff |
-| Leads synthé | 85 | Lead5(Charang) | Lead charang |
-| Leads synthé | 86 | Lead6(Voice) | Lead voix |
-| Leads synthé | 87 | Lead7(Fifths) | Lead quintes |
-| Leads synthé | 88 | Lead8(Bass+Lead) | Lead basse+solo |
-| Pads         | 89 | Pad1(neage) | Pad new age |
-| Pads         | 90 | Pad2(warm) | Pad warm |
-| Pads         | 91 | Pad3(polysynth) | Pad polysynth |
-| Pads         | 92 | Pad4(choir) | Pad chœur |
-| Pads         | 93 | Pad5(bowed) | Pad frotté |
-| Pads         | 94 | Pad6(metallic) | Pad métallique |
-| Pads         | 95 | Pad7(halo) | Pad halo |
-| Pads         | 96 | Pad8(sweep) | Pad sweep |
-| FX           | 97 | FX1(rain) | Effet pluie |
-| FX           | 98 | FX2(soundtrack) | Bande son |
-| FX           | 99 | FX3(crystal) | Cristal |
-| FX           |100 | FX4(atmosphere) | Atmosphère |
-| FX           |101 | FX5(brightness) | Brillance |
-| FX           |102 | FX6(goblins) | Goblins |
-| FX           |103 | FX7(echoes) | Échos |
-| FX           |104 | FX8(sci-fi) | Science-fiction |
-| Ethniques    |105 | Sitar | Sitar |
-| Ethniques    |106 | Banjo | Banjo |
-| Ethniques    |107 | Shamisen | Shamisen |
-| Ethniques    |108 | Koto | Koto |
-| Ethniques    |109 | Kalimba | Kalimba |
-| Ethniques    |110 | Bagpipe | Cornemuse |
-| Ethniques    |111 | Fiddle | Violon folk |
-| Ethniques    |112 | Shanai | Shanaï |
-| Percu./FX    |113 | Tinkle Bell | Clochette |
-| Percu./FX    |114 | Agogo | Agogo |
-| Percu./FX    |115 | SteelDrums | Steel drums |
-| Percu./FX    |116 | Woodblock | Woodblock |
-| Percu./FX    |117 | TaikoDrum | Tambour taiko |
-| Percu./FX    |118 | MelodicTom | Tom mélodique |
-| Percu./FX    |119 | SynthDrum | Batterie synthé |
-| Percu./FX    |120 | ReverseCymbal | Cymbale inv |
-| Bruitages    |121 | GuitarFretNoise | Bruit de frettes |
-| Bruitages    |122 | BreathNoise | Souffle |
-| Bruitages    |123 | Seashore | Vagues |
-| Bruitages    |124 | BirdTweet | Chant d’oiseau |
-| Bruitages    |125 | TelephoneRing | Sonnerie téléphone |
-| Bruitages    |126 | Helicopter | Hélicoptère |
-| Bruitages    |127 | Applause | Applaudissements |
-| Bruitages    |128 | Gunshot | Coup de feu |
+| Catégorie    | N° | Nom anglais         |    Nom MMA        |
+|:-------------|:---|--------------------:|:------------------|
+| Pianos       |  1	| AcousticGrandPiano  | Piano1            |
+| Pianos       |  2	| BrightAcousticPiano | Piano2            |
+| Pianos       |  3	|Electric Grand Piano | Piano3            |
+| Pianos       |  4	| Honky-tonkPiano     | Honky-TonkPiano   |
+| Pianos       |  5	| ElectricPiano1      | RhodesPiano       |
+| Pianos       |  6	| ElectricPiano2      | EPiano            |
+| Pianos       |  7 | Harpsichord	      | HarpsiChord       |
+| Pianos       |  8 | Clavinet	          | Clavinet          |
+| Percussions  |  9 | Celesta             | Celesta           |
+| Percussions  | 10 | Glockenspiel        | Glockenspiel      |
+| Percussions  | 11 | MusicBox            | MusicBox          |
+| Percussions  | 12 | Vibraphone          | Vibraphone        |
+| Percussions  | 13 | Marimba             | Marimba           |
+| Percussions  | 14 | Xylophone           | Xylophone         |
+| Percussions  | 15 | TubularBells        | TubularBells      |
+| Percussions  | 16 | Dulcimer            | Santur            |
+| Orgues       | 17 | DrawbarOrgan        | Organ1            |
+| Orgues       | 18 | PercussiveOrgan     | Organ2            |
+| Orgues       | 19 | RockOrgan           | Organ3            |
+| Orgues       | 20 | ChurchOrgan         | ChurchOrgan       |
+| Orgues       | 21 | ReedOrgan           | ReedOrgan         |
+| Orgues       | 22 | Accordion           | Accordion         |
+| Orgues       | 23 | Harmonica           | Harmonica         |
+| Orgues       | 24 | TangoAccordion      | Bandoneon         |
+| Guitares     | 25 |AcousticGuitar(nylon)| NylonGuitar       |
+| Guitares     | 26 |AcousticGuitar(steel)| SteelGuitar       |
+| Guitares     | 27 |ElectricGuitar(jazz) | JazzGuitar        |
+| Guitares     | 28 |ElectricGuitar(clean | CleanGuitar       |
+| Guitares     | 29 |ElectricGuitar(muted)| MutedGuitar       |
+| Guitares     | 30 | OverdrivenGuitar    | OverDriveGuitar   |
+| Guitares     | 31 | DistortionGuitar    | DistortionGuitar  |
+| Guitares     | 32 | GuitarHarmonics     | GuitarHarmonics   |
+| Basses       | 33 | AcousticBass        | AcousticBass      |
+| Basses       | 34 | ElectricBass(finger)| FingeredBass      |
+| Basses       | 35 | ElectricBass(pick)  | PickedBass        |
+| Basses       | 36 | Fretless(Bass)      | FretlessBass      |
+| Basses       | 37 | SlapBbass1          | SlapBass1         |
+| Basses       | 38 | SlapBass2           | SlapBass2         |
+| Basses       | 39 | SynthBass1          | SynthBass1        |
+| Basses       | 40 | SynthBass2          | SynthBass2        |
+| Cordes       | 41 | Violin              | Violin            |
+| Cordes       | 42 | Viola               | Viola             |
+| Cordes       | 44 | Contrabass          | ContraBass        |
+| Cordes       | 45 | TremoloStrings      | TremoloStrings    |
+| Cordes       | 46 | PizzicatoStrings    | PizzicatoStrings  |
+| Cordes       | 47 | OrchestralHarp      | PizzicatoStrings  |
+| Cordes       | 48 | Timpani             | Timpani           |
+| Ensembles    | 49 | StringEnsemble1     | Strings           |
+| Ensembles    | 50 | StringEnsemble2     | SlowStrings       |
+| Ensembles    | 51 | SynthStrings1       | SynthStrings1     |
+| Ensembles    | 52 | SynthStrings2       | SynthStrings2     |
+| Ensembles    | 53 | ChoirAahs           | ChoirAahs         |
+| Ensembles    | 54 | VoiceOohs           | VoiceOohs         |
+| Ensembles    | 55 | SynthVoice          | SynthVox          |
+| Ensembles    | 56 | OrchestraHit        | OrchestraHit      |
+| Cuivres      | 57 | Trumpet             | Trumpet           |
+| Cuivres      | 58 | Trombone            | Trombone          |
+| Cuivres      | 59 | Tuba                | Tuba              |
+| Cuivres      | 60 | MutedTrumpet        | MutedTrumpet      |
+| Cuivres      | 61 | FrenchHorn          | FrenchHorn        |
+| Cuivres      | 62 | BrassSection        | BrassSection      |
+| Cuivres      | 63 | SynthBrass 1        | SynthBrass1       |
+| Cuivres      | 64 | SynthBrass 2        | SynthBrass2       |
+| Bois / anches| 65 | SopranoSax          | SopranoSax        |
+| Bois / anches| 66 | AltoSax             | AltoSax           |
+| Bois / anches| 67 | TenorSax            | TenorSax          |
+| Bois / anches| 68 | BaritoneSax         | BaritoneSax       |
+| Bois / anches| 69 | Oboe                | Oboe              |
+| Bois / anches| 70 | EnglishHorn         | EnglishHorn       |
+| Bois / anches| 71 | Bassoon             | Bassoon           |
+| Bois / anches| 72 | Clarinet            | Clarinet          |
+| Flûtes       | 73 | Piccolo             | Piccolo           |
+| Flûtes       | 74 | Flute               | Flute             |
+| Flûtes       | 75 | Recorder            | Recorder          |
+| Flûtes       | 76 | PanFlute            | PanFlute          |
+| Flûtes       | 77 | BlownBottle         | BottleBlow        |
+| Flûtes       | 78 | Shakuhachi          | Shakuhachi        |
+| Flûtes       | 79 | Whistle             | Whistle           |
+| Flûtes       | 80 | Ocarina             | Ocarina           |
+| Leads synthé | 81 | Lead1(Square)       | SquareWave        |
+| Leads synthé | 82 | Lead2(Sawtooth      | SawWave           |
+| Leads synthé | 83 | Lead3(Calliope)     | SynCalliope       |
+| Leads synthé | 84 | Lead4(Chiff)        | ChifferLead       |
+| Leads synthé | 85 | Lead5(Charang)      | Charang           |
+| Leads synthé | 86 | Lead6(Voice)        | SoloVoice         |
+| Leads synthé | 87 | Lead7(Fifths)       | 5thSawWave        |
+| Leads synthé | 88 | Lead8(Bass+Lead)    | Bass&Lead         |
+| Pads         | 89 | Pad1(neage)         | Fantasia          |
+| Pads         | 90 | Pad2(warm)          | WwarmPad          |
+| Pads         | 91 | Pad3(polysynth)     | PolySynth         |
+| Pads         | 92 | Pad4(choir)         | SpaceVoice        |
+| Pads         | 93 | Pad5(bowed)         | BowedGlass        |
+| Pads         | 94 | Pad6(metallic)      | MetalPad          |
+| Pads         | 95 | Pad7(halo)          | HaloPad           |
+| Pads         | 96 | Pad8(sweep)         | SweepPad          |
+| FX           | 97 | FX1(rain)           | IceRain           |
+| FX           | 98 | FX2(soundtrack)     | SoundTrack        |
+| FX           | 99 | FX3(crystal)        | Crystal           |
+| FX           |100 | FX4(atmosphere)     | Atmosphere        |
+| FX           |101 | FX5(brightness)     | Brightness        |
+| FX           |102 | FX6(goblins)        | Goblins           |
+| FX           |103 | FX7(echoes)         | EchoDrops         |
+| FX           |104 | FX8(sci-fi)         | StarTheme         |
+| Ethniques    |105 | Sitar               | Sitar             |
+| Ethniques    |106 | Banjo               | Banjo             |
+| Ethniques    |107 | Shamisen            | Shamisen          |
+| Ethniques    |108 | Koto                | Koto              |
+| Ethniques    |109 | Kalimba             | Kalimba           |
+| Ethniques    |110 | Bagpipe             | BagPipe           |
+| Ethniques    |111 | Fiddle              | Fiddle            |
+| Ethniques    |112 | Shanai              | Shanai            |
+| Percu./FX    |113 | Tinkle Bell         | TinkleBell        |
+| Percu./FX    |114 | Agogo               | AgogoBells        |
+| Percu./FX    |115 | SteelDrums          | SteelDrums        |
+| Percu./FX    |116 | Woodblock           | WooBlock          |
+| Percu./FX    |117 | TaikoDrum           | TaikoDrum         |
+| Percu./FX    |118 | MelodicTom          | MelodicTom1       |
+| Percu./FX    |119 | SynthDrum           | SynthDrum         |
+| Percu./FX    |120 | ReverseCymbal       | ReverseCymbal     |
+| Bruitages    |121 | GuitarFretNoise     | GuitarFretNoise   |
+| Bruitages    |122 | BreathNoise         | BreathNoise       |
+| Bruitages    |123 | Seashore            | SeaShore          |
+| Bruitages    |124 | BirdTweet           | BirdTweet         |
+| Bruitages    |125 | TelephoneRing       | TelephoneRing     |
+| Bruitages    |126 | Helicopter          | HelicopterBlade   |
+| Bruitages    |127 | Applause            | AApplause/Noise   |
+| Bruitages    |128 | Gunshot             | GunShot           |
 
 
 ## Conclusion 
