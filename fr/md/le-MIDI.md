@@ -141,70 +141,70 @@ C’est exactement ce que MMA exploite.
 
 - Les instruments peuvent être sélectionné par leur nom donné dans la colonne Nom Anglais ou par leur numéro donné dans la coloNne Numéro.
 
-| Catégorie    | N° | Nom anglais        |    Nom français   |
+| Catégorie    | N° | Nom anglais        |    Nom MMA        |
 |:-------------|:---|-------------------:|:------------------|
-| Pianos       |  1	| AcousticGrandPiano | Grand Piano       |
-| Pianos       |  2	| BrightAcousticPiano| Piano brillant    |
-| Pianos       |  3	|Electric Grand Piano| Piano             |
-| Pianos       |  4	| Honky-tonkPiano    | Piano honky-tonk  |
-| Pianos       |  5	| ElectricPiano1     | Piano électrique 1|
-| Pianos       |  6	| ElectricPiano2     | Piano électrique 2|
-| Pianos       |  7 | Harpsichord	     | Clavecin          |
-| Pianos       |  8 | Clavinet	         | Cavinet           |
-| Percussions  |  9 | Celesta            | Célesta           |
+| Pianos       |  1	| AcousticGrandPiano | Piano1       |
+| Pianos       |  2	| BrightAcousticPiano| Piano2    |
+| Pianos       |  3	|Electric Grand Piano| Piano3             |
+| Pianos       |  4	| Honky-tonkPiano    | Honky-TonkPiano  |
+| Pianos       |  5	| ElectricPiano1     | RhodesPiano|
+| Pianos       |  6	| ElectricPiano2     | EPiano|
+| Pianos       |  7 | Harpsichord	     | HarpsiChord          |
+| Pianos       |  8 | Clavinet	         | Clavinet           |
+| Percussions  |  9 | Celesta            | Celesta           |
 | Percussions  | 10 | Glockenspiel       | Glockenspiel      |
-| Percussions  | 11 | MusicBox           | Boîte à musique   |
+| Percussions  | 11 | MusicBox           | MusicBox   |
 | Percussions  | 12 | Vibraphone         | Vibraphone        |
 | Percussions  | 13 | Marimba            | Marimba           |
 | Percussions  | 14 | Xylophone          | Xylophone         |
-| Percussions  | 15 | TubularBells       | Cloches tubulaires|
-| Percussions  | 16 | Dulcimer           | Cymbalum/Dulcimer |
-| Orgues       | 17 | DrawbarOrgan       | Orgue Hammond     |
-| Orgues       | 18 | PercussiveOrgan    | Orgue percussif   |
-| Orgues       | 19 | RockOrgan          | Orgue rock        |
-| Orgues       | 20 | ChurchOrgan        | Orgue d’église    |
-| Orgues       | 21 | ReedOrgan          | Harmonium |
-| Orgues       | 22 | Accordion          | Accordéon |
+| Percussions  | 15 | TubularBells       | TubularBells|
+| Percussions  | 16 | Dulcimer           | Santur |
+| Orgues       | 17 | DrawbarOrgan       | Organ1     |
+| Orgues       | 18 | PercussiveOrgan    | Organ2   |
+| Orgues       | 19 | RockOrgan          | Organ3        |
+| Orgues       | 20 | ChurchOrgan        | ChurchOrgan    |
+| Orgues       | 21 | ReedOrgan          | ReedOrgan |
+| Orgues       | 22 | Accordion          | Accordion |
 | Orgues       | 23 | Harmonica          | Harmonica |
-| Orgues       | 24 | TangoAccordion     | Accordéon tango |
-| Guitares     | 25 |AcousticGuitar(nylon)| Guitare nylon |
-| Guitares     | 26 |AcousticGuitar(steel) | Guitare folk  |
-| Guitares     | 27 |ElectricGuitar(jazz) | Guitare jazz |
-| Guitares     | 28 |ElectricGuitar(clean | Guitare électrique |
-| Guitares     | 29 |ElectricGuitar(muted) | Guitare mutée |
-| Guitares     | 30 | OverdrivenGuitar | Guitare overdrive |
-| Guitares     | 31 | DistortionGuitar | Guitare saturée |
-| Guitares     | 32 | GuitarHarmonics | Harmoniques guitare |
-| Basses       | 33 | AcousticBass | Contrebasse |
-| Basses       | 34 | ElectricBass(finger) | Basse élec. doigt |
-| Basses       | 35 | ElectricBass(pick) | Basse élec. médiator |
-| Basses       | 36 | Fretless(Bass) | Basse fretless |
-| Basses       | 37 | SlapBbass1 | Slap bass 1 |
-| Basses       | 38 | SlapBass2 | Slap bass 2 |
-| Basses       | 39 | SynthBass1 | Basse synthé 1 |
-| Basses       | 40 | SynthBass2 | Basse synthé 2 |
-| Cordes       | 41 | Violin | Violon |
-| Cordes       | 42 | Viola | Alto |
-| Cordes       | 43 | Cello | Violoncelle |
-| Cordes       | 44 | Contrabass | Contrebasse section |
-| Cordes       | 45 | TremoloStrings | Cordes trémolo |
-| Cordes       | 46 | PizzicatoStrings | Cordes pizzicato |
-| Cordes       | 47 | Orchestral Harp | Harpe |
-| Cordes       | 48 | Timpani | Timbales |
-| Ensembles    | 49 | StringEnsemble1 | Ensemble cordes 1 |
-| Ensembles    | 50 | StringEnsemble2 | Ensemble cordes 2 |
-| Ensembles    | 51 | SynthStrings1 | Cordes synthé 1 |
-| Ensembles    | 52 | SynthStrings2 | Cordes synthé 2 |
-| Ensembles    | 53 | ChoirAahs | Chœur Aahs |
-| Ensembles    | 54 | VoiceOohs | Chœur Oohs |
-| Ensembles    | 55 | SynthVoice | Voix synthé |
-| Ensembles    | 56 | OrchestraHit | Coup d’orchestre |
-| Cuivres      | 57 | Trumpet | Trompette |
+| Orgues       | 24 | TangoAccordion     | Bandoneon |
+| Guitares     | 25 |AcousticGuitar(nylon)| NylonGuitar |
+| Guitares     | 26 |AcousticGuitar(steel) | SteelGuitar  |
+| Guitares     | 27 |ElectricGuitar(jazz) | JazzGuitar |
+| Guitares     | 28 |ElectricGuitar(clean | CleanGuitar |
+| Guitares     | 29 |ElectricGuitar(muted) | MutedGuitar |
+| Guitares     | 30 | OverdrivenGuitar | OverDriveGuitar |
+| Guitares     | 31 | DistortionGuitar | DistortionGuitar |
+| Guitares     | 32 | GuitarHarmonics | GuitarHarmonics |
+| Basses       | 33 | AcousticBass | AcousticBass |
+| Basses       | 34 | ElectricBass(finger) | FingeredBass |
+| Basses       | 35 | ElectricBass(pick) | PickedBass |
+| Basses       | 36 | Fretless(Bass) | FretlessBass |
+| Basses       | 37 | SlapBbass1 | SlapBass1 |
+| Basses       | 38 | SlapBass2 | SlapBass2  |
+| Basses       | 39 | SynthBass1 | SynthBass1 |
+| Basses       | 40 | SynthBass2 | SynthBass2 |
+| Cordes       | 41 | Violin | Violin |
+| Cordes       | 42 | Viola | Viola |
+| Cordes       | 43 | Cello | Cello |
+| Cordes       | 44 | Contrabass | ContraBass |
+| Cordes       | 45 | TremoloStrings | TremoloStrings |
+| Cordes       | 46 | PizzicatoStrings | PizzicatoStrings |
+| Cordes       | 47 | OrchestralHarp | PizzicatoStrings |
+| Cordes       | 48 | Timpani | Timpani |
+| Ensembles    | 49 | StringEnsemble1 | Strings |
+| Ensembles    | 50 | StringEnsemble2 | SlowStrings |
+| Ensembles    | 51 | SynthStrings1 | SynthStrings1 |
+| Ensembles    | 52 | SynthStrings2 | SynthStrings2 |
+| Ensembles    | 53 | ChoirAahs | ChoirAahs |
+| Ensembles    | 54 | VoiceOohs | VoiceOohs|
+| Ensembles    | 55 | SynthVoice | SynthVox |
+| Ensembles    | 56 | OrchestraHit | OrchestraHit |
+| Cuivres      | 57 | Trumpet | Trumpet |
 | Cuivres      | 58 | Trombone | Trombone |
 | Cuivres      | 59 | Tuba | Tuba |
-| Cuivres      | 60 | MutedTrumpet | Trompette bouchée |
-| Cuivres      | 61 | FrenchHorn | Cor français |
-| Cuivres      | 62 | BrassSection | Section cuivres |
+| Cuivres      | 60 | MutedTrumpet | MutedTrumpet |
+| Cuivres      | 61 | FrenchHorn | FrenchHorn |
+| Cuivres      | 62 | BrassSection | BrassSection |
 | Cuivres      | 63 | SynthBrass 1 | Cuivres synthé 1 |
 | Cuivres      | 64 | SynthBrass 2 | Cuivres synthé 2 |
 | Bois / anches| 65 | SopranoSax | Sax soprano |
