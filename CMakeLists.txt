@@ -29,6 +29,7 @@ set (CHAPTERS
               ${MD_DIR}/le-rythme.md
               ${MD_DIR}/les-paroles.md
               ${MD_DIR}/pistes-solo-et-melodie.md
+              ${MD_DIR}/lire-un-fichier-MIDI.md
               ${MD_DIR}/Partie-IV-ConceptionDesGrooves.md
               ${MD_DIR}/les-sequences.md
               ${MD_DIR}/instruments-à-cordes-pincées.md

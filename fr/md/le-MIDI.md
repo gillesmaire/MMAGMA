@@ -139,8 +139,18 @@ C’est exactement ce que MMA exploite.
 ## Les instruments MIDI 
 
 
-- Les instruments peuvent être sélectionné par leur nom donné dans la colonne Nom Anglais ou par leur numéro donné dans la coloNne Numéro.
-
+- En MIDI les instruments peuvent être sélectionnés par le numéro.
+- Le nom donné dans la colonne Nom Anglais est le nom qui ne sert
+qu'à décrire l'instrument. C'est aussi ce qu'on appelle la liste
+GeneralMIDI mais en MIDI on n'utilise que le numéro.
+- La colonne Nom MMA est une étiquette qui ne sert que dans MMA
+où l'on peut : 
+   - donner le numéro de l'instrument 
+   - ou l'étiquette qui comme on le voit ne suit pas le nom donné
+   en anglais à l'instrument
+- Il faut savoir que si en MIDI on veut sélectionner l'instrument
+AccousticGrandPiano l'ordre envoyé n'est pas 1 mais 0.
+-  En MMA on peut indifférement choisir Piano1 ou 1 
 | Catégorie    | N° | Nom anglais         |    Nom MMA        |
 |:-------------|:---|--------------------:|:------------------|
 | Pianos       |  1	| AcousticGrandPiano  | Piano1            |
