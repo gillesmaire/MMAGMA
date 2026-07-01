@@ -7,14 +7,11 @@
 Nous avons vu comment utiliser la batterie et les accords, nous allons voir comment ajouter des lignes
 mélodiques. Ces mélodies **solo** et **mélody** sont à compléter avec les **harmonies** que nous verrons dans le chapitre correspondant.
 
-Il est bien sûr possible d'ajouter des mélodies et des harmonies via des instruments MIDI, mais on 
-dispose également de pistes réservées aux mélodies : 
-
+   - Il est possible d'ajouter des mélodies et des harmonies via des instruments MIDI via l'ordre MidiInc mais on dispose également de pistes réservées aux mélodies : 
    - Nous verrons que l'on peut également ajouter des Harmonies dans un des chapitres suivants.
-   - Des pistes **solo** qui permettent improvisations, contrechants, riffs ou interventions ponctuelles
-   d’un instrument peuvent être utilisées. 
+   - Des pistes **solo** qui permettent improvisations, des contrechants, riffs ou interventions ponctuelles d’un instrument peuvent être utilisées. 
       - Ces pistes sont initialisées une seule fois au démarrage du morceau. 
-      - La commande SEQCLEAR est ignorée pour les pistes solo.
+      - La commavousnde SEQCLEAR est ignorée pour les pistes solo.
       - Les réglages des pistes SOLO ne sont pas sauvegardés ni récupérables via la commande 
    Groove. 
       - Un certain nombre de réglages sont donc nécessaires pour les pistes Solo, ces paramètres sont généralement
@@ -22,8 +19,6 @@ dispose également de pistes réservées aux mélodies :
    - Les pistes **mélody** reprenant l'air du morceau utilisent les instruments du Groove qui est en cours. Elles sont généralement créées dans les Groove eux même.
    
 ## Déclaration d'une piste SOLO
-
-
 
 On déclare les pistes Solo  de la façon suivante : 
 
