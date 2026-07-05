@@ -32,7 +32,7 @@ Dans ce cas les notes du canal 10 seront insérées dans la piste DRUM. Si cette
 MIDIInc FILE=fichier.mid SOLO-TENOR=1 
 ~~~
 
-Dans ce cas les notes du canal 1 seront insérées dans la pistes SOLO-TENOR
+Dans ce cas les notes du canal 1 seront insérées dans la piste oui SOLO-TENOR
 
 
 Le chemin du fichier peut être donné en suivant la syntaxe Python à savoir :
@@ -83,5 +83,90 @@ Les valeurs sont ON ou OFF qui est est la valeur par défaut.
 Cette option permet de conserver les commentaires, les annotations et autres textes qui ne sont pas les paroles.
 
 Par défaut la valeur est OFF
+
+## Sélection des pistes 
+
+
+On peut sélectionner une ou plusieurs pistes que l'on veut jouer. Par exemple l'option DRUM=10, chaque notre du canal 10 seront
+insérée dans la piste MMA DRUM. L'option SOLO-TENOR=1 copiera les notes du canal 1 vers la piste SOLO-TENOR.
+
+Si la piste SOLO-TENOR ou la piste DRUM ne sont pas présentes elles seront créées.
+
+Cela donnera une syntaxe du style : 
+
+~~~mma
+MIDIinc File=test.mid Solo-Piano=1 Drum=10 Volume=70 
+~~~
+
+
+On peut ajouter à cette notation 
+### Riff 
+
+### Sequence
+
+### Print
+
+
+
+## Intervalles
+
+
+### Unité de mesure 
+
+Pour les intervalles définis par START  START, END and OFFSET décrits ci-dessous, les unités données  peut être :
+
+- une mesure quand on ajoute la lettre m ou M
+- un tick MIDI quand on utilise la lettte t ou T 
+- un temps quand on utilise la lettre b ou B
+
+Lorsqu'on omet de préciser l'unité c'est la mesure qui est appliquée 
+
+
+### START
+
+Permet de définir la mesure où l'on veut démarrer. START = 4 signifie que l'on commence au quatrième temps. On peut spécifier START = 4b ou START = 4B pour signifier 4 noires
+oui 4
+
+### END
+   
+Permet d'arrêter le morceau après le nombre de mesures donné.
+
+### OFFSET
+
+Donne la position en mesures du point d'insertion. 
+
+### IGNOREPC
+    
+Permet d'ignprer les ordre MIDI Program Change qui provoque des changements d'instruments. Cela permet 
+de jouer la mélodie sans se soucier du type d'instrument.
+
+
+### STRIPSILENCE
+
+On peut également spécifier le nombre de tick MIDI à enlever par exemple : 
+
+
+~~~mma
+STRIPSILENCE=120
+~~~
+
+
+## OUtils de Débug
+
+
+### VERBOSE
+
+Affiche des informations de debugage à la console. 
+
+Par défaut la valeur est OFF on peut activer cette option par 
+
+~~~mma
+VERBOSE=ON
+~~~
+
+### REPORT
+
+Affiche un rapport sur le terminal sans aucune donnée MIDI 
+
 
 
