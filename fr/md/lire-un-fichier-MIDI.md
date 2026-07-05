@@ -87,7 +87,7 @@ Par défaut la valeur est OFF
 ## Sélection des pistes 
 
 
-On peut sélectionner une ou plusieurs pistes que l'on veut jouer. Par exemple l'option DRUM=10, chaque notre du canal 10 seront
+On peut sélectionner une ou plusieurs des pistes que l'on veut jouer. Par exemple, avec l'option DRUM=10, chaque notre du canal 10 sera
 insérée dans la piste MMA DRUM. L'option SOLO-TENOR=1 copiera les notes du canal 1 vers la piste SOLO-TENOR.
 
 Si la piste SOLO-TENOR ou la piste DRUM ne sont pas présentes elles seront créées.
@@ -99,13 +99,40 @@ MIDIinc File=test.mid Solo-Piano=1 Drum=10 Volume=70
 ~~~
 
 
-On peut ajouter à cette notation 
-### Riff 
+On peut ajouter à cette notation une variante intéressante : 
 
-### Sequence
+### Les Riff : 
 
-### Print
+Pour convertir les données d'une d'une piste en tant que  Solo ou Melody on peut ajouter le mot clé **Riff** après le numéro de canal suivi d'une virgule. Le riff ainsi créé va hériter des paramètres comme VOICE, HARMONY. Cela se fait via la syntaxe : 
 
+~~~mma 
+MidiInc File=test.mid Solo-Piano=1,Riff Solo-harmony=1,riff Drum=10 Solo-Guitar=3 
+~~~
+
+Ici : 
+
+- les données du canal 1 seront converties et insérées dans la piste SOLO-PIANO comme un Riff
+- les données du canal 1 seront converties et insérées dans la piste SOLO-HARMONY comme un Riff
+- les données du canal 10 seron copiée dans la piste DRUM
+- le canal 3 va être copié dans la piste SOLO-GUIT
+
+
+### Les Sequence
+
+De la même façon qu'on peut convertir  des données MIDI en une mélodie ou un Solo, on peut convertir ces données en Sequence pour de Solo ou de Melody. Il suffit d'ajouter le mot Sequence à la place de Riff.
+
+C'est plus facile par exemple pour importer des batteries ou des 
+
+
+### Quelques remarques sur la sélection des pistes 
+
+- Ce n'est pas le tempo du fichier MIDI qui est pris en compte mais celui donné dans MMA
+- Le fichier MIDI est analysé pour trouver la première note, les notes inclues prennent en compte ce temps pour aligner la 
+première note mais éliminent tous les silences en première partie. Il vous faudra utiliser l'option STRIPSILENCE pour que tout fonctionne correctement.
+- On peut déplacer en pointeur en arrière par un BEATADJUST avant le MIDIINC
+- Tous les évènement du fichier inclu ne sont pas forcément transférés notamment les META MIDI.
+- On peut faire plusieurs inclusions consécutives du même fichier dans le fichier MMA avec par exemple des volumes différents à chaque inclusion.
+- Si une piste n'est pas trouvée un message d'erreur sera affiché.
 
 
 ## Intervalles
