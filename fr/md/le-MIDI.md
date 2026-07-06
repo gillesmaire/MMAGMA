@@ -151,6 +151,7 @@ où l'on peut :
 - Il faut savoir que si en MIDI on veut sélectionner l'instrument
 AccousticGrandPiano l'ordre envoyé n'est pas 1 mais 0.
 -  En MMA on peut indifférement choisir Piano1 ou 1 
+
 | Catégorie    | N° | Nom anglais         |    Nom MMA        |
 |:-------------|:---|--------------------:|:------------------|
 | Pianos       |  1	| AcousticGrandPiano  | Piano1            |
