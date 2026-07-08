@@ -16,6 +16,7 @@ set (CHAPTERS
               ${MD_DIR}/installation.md
               ${MD_DIR}/vocabulaire.md
               ${MD_DIR}/le-MIDI.md
+              ${MD_DIR}/les-soundfonts.md
               ${MD_DIR}/Partie-II-Initiation.md
               ${MD_DIR}/premier-fichier-mma.md
               ${MD_DIR}/Ameliorations-MIDI-Linux.md
