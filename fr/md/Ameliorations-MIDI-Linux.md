@@ -52,28 +52,37 @@ Mais on le comprend, ces petites amélioratons ne changeront pas fondamentalemen
 
 Polyphone permet de  créer ou modifier une sound font en y ajoutant ou modifant certains instruments.
 
-Sous Macintosh ou Windows l'installation de Polyphone se fait simplement en chargearn le logiciel à l'adresse :
+Sous Macintosh ou Windows l'installation de Polyphone se fait simplement en chargeant le logiciel à l'adresse :
 
 
 https://www.polyphone.io/fr/software
 
-Sous Linux il faut compléter l'installation en suivant les différentes étapes énumérées ci-dessous.
+Sous Linux il faut compléter l'installation en suivant les différentes étapes énumérées ci-dessous après avoir 
+chargé le fichier AppImage
 
 
-- Effectuer la liste des commandes suivantes : 
+- Ensuite il faut effectuer la liste des commandes suivantes : 
 
 ~~~bah
 chmod +x Polyphone_2.6.0-linux_x64.AppImage
 sudo mkdir -p /usr/local/bin
 sudo cp Polyphone_2.6.0-linux_x64.AppImage /usr/local/bin/
 # à ce stade il faut positionner l'icone de l'application qui est incluse dans AppImage
-cd /Temp
+mkdir ~/Temp /opt/Polyphone
+cd ~/Temp
 /usr/local/bin/Polyphone_2.6.0-linux_x64.AppImage --appimage-extract
-# il n'existe qu'un seul répertoire avec l'icone, cela peut changer en fonction des veresions 
+# il n'existe qu'un seul répertoire avec l'icone, cela peut changer en fonction des versions 
 sudo cp squashfs-root/usr/share/icons/hicolor/512x512/apps/polyphone.png /opt/Polyphone/logo.png
 ~~~
 
-- Créer le fichier /usr/local/share/applications/polyphone.desktop contenant
+- Créer le fichier /usr/local/share/applications/polyphone.desktop
+
+~~~bash
+sudo mkdir /usr/local/share/applications
+sudo nano /usr/local/share/applications/polyphone.desktop
+~~~
+
+contenant
 
 ~~~
 [Desktop Entry]
@@ -87,7 +96,7 @@ Description=SoundEditor
 Icon=/opt/Polyphone/logo.png
 ~~~
 
-Sous Linux, Vous devez être en capacité de trouver Polyphone dans votre bureau et éventullement de draguer l'application sur votre bureau ou sur l'une de vos barres de tâches en fonction de l'environnement graphique de votre ordinateur.
+Sous Linux, vous devez être en capacité de trouver Polyphone dans votre bureau et éventullement de draguer l'application sur votre bureau ou sur l'une de vos barres de tâches en fonction de l'environnement graphique de votre ordinateur.
 
 
 ### Utilisation de Polyphone
@@ -95,7 +104,7 @@ Sous Linux, Vous devez être en capacité de trouver Polyphone dans votre bureau
 
 ### Préambule 
 
-Nous allons maintenant faire quelques tests de SoundFont propres à une formation musicale comprenant :
+Nous allons maintenant faire quelques tests de SoundFonts propres à une formation musicale comprenant :
 
 - une contrebasse
 - deux guitares classiques
@@ -130,4 +139,7 @@ Solo Riff 4a; 8d; 4a; 4c;
 F
 ~~~
 
-Nous verrons à quoi correspondent chacune 
+Nous verrons à quoi correspondent chacune de ces instructions, pour le moment admettons le fait que l'instrument
+joué est un saxo tenor et qu'une série de notes est jouée.
+
+
