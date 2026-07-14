@@ -127,12 +127,12 @@ on en trouve sur certains sites de téléchargement comme Polyphone.
 Nous pouvons créer un fichier MMA correspondant à un instrument, par exemple une
 guitare classsique. Nous allons utiliser la possibilité de créer une piste solo que
 nous offre MMA et qui est détaillée dans le chapître *Les pistes Solo et Mélodie*.
-Voici un fichier minimaliste mettant en oeuvre ce principe.
-
+Voici un fichier minimaliste mettant en oeuvre ce principe, donnons lui le nom de 
+testPolyphone.mma
 
 ~~~mma
 Tempo 120
-Solo Voice TenorSax
+Solo Voice AcousticBass
 Solo Riff 4c; 2d; 4f;
 F
 Solo Riff 4a; 8d; 4a; 4c;
@@ -140,6 +140,13 @@ F
 ~~~
 
 Nous verrons à quoi correspondent chacune de ces instructions, pour le moment admettons le fait que l'instrument
-joué est un saxo tenor et qu'une série de notes est jouée.
+joué est une contrebasse en pizzicato, c'est à dire jouée façon Jazz et qu'une série de notes est jouée.
+
+Les commandes : 
+
+~~~bash
+mma testPolyphone.mma
+fluidsynth /usr/share/sounds/sf2/FluidR3_GM.sf2 testPolyphone.mid
+~~~
 
 
