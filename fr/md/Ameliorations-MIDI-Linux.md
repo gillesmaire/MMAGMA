@@ -118,14 +118,14 @@ Pour réaliser ce travail nous allons utiliser le logiciel polyphone et des Soun
 
 ### Test d'un instument 
 
-Un des points qui nous intéresse en premier lieu est de pouvoir écouter chaque instrument d'une sound font indépendament pour en tester le rendu.
+Un des points qui nous intéresse en premier lieu est de pouvoir écouter chaque instrument d'une SoundFont indépendament pour en tester le rendu.
 
-On peut également charger une soundfont contenant un seul instrument comme
+On peut également charger une SoundFont contenant un seul instrument comme
 on en trouve sur certains sites de téléchargement comme Polyphone.
 
 
-Nous pouvons créer un fichier MMA correspondant à un instrument, par exemple une
-guitare classsique. Nous allons utiliser la possibilité de créer une piste solo que
+Nous pouvons créer un fichier MMA correspondant à un instrument, par exemple une contrebasse.
+Nous allons utiliser la possibilité de créer une piste solo que
 nous offre MMA et qui est détaillée dans le chapître *Les pistes Solo et Mélodie*.
 Voici un fichier minimaliste mettant en oeuvre ce principe, donnons lui le nom de 
 testPolyphone.mma
@@ -142,11 +142,24 @@ F
 Nous verrons à quoi correspondent chacune de ces instructions, pour le moment admettons le fait que l'instrument
 joué est une contrebasse en pizzicato, c'est à dire jouée façon Jazz et qu'une série de notes est jouée.
 
-Les commandes : 
+Les commandes pour jouer  : 
+
+- sur la première carte son 
 
 ~~~bash
 mma testPolyphone.mma
 fluidsynth /usr/share/sounds/sf2/FluidR3_GM.sf2 testPolyphone.mid
 ~~~
 
+- sur une autre carte son 
 
+~~~bash
+mma testPolyphone.mma
+fluidsynth -a alsa -o audio.alsa.device=plugw:2 -ni /usr/share/sounds/sf2/FluidR3_GM.sf2  testPolyphone.mid
+~~~
+
+Le device est trouvé avec la commande 
+
+~~~bash
+aplay -l
+~~~

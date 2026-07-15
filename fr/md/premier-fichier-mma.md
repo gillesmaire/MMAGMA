@@ -106,6 +106,7 @@ carte 2 : USB [Scarlett 2i2 USB], périphérique 0 : USB Audio [USB Audio]
 
 
 Ici nous voyons que nous avons 3 cartes son :
+
     - la carte par défaut du PC qui est la carte 0 (en général cela active le micro qui beepe)
     - Une carte HDMI qui peut être par exemple une Télévision qui est ici la carte 1 
     - La carte USB Scarett qui est celle qui est raccordée à des enceintes d'écoute.
@@ -137,35 +138,38 @@ fluidsynth -a pipewire -ni /usr/share/sounds/sf2/FluidR3_GM.sf2 example0.mid
 - Pour choisir une carte par défaut entre plusieurs cartes : 
 
 ~~~bash
-pactl list sinks | grep -E "Name|Description"
+wpctl status
 ~~~
 
 Affiche 
 
 ~~~
-Name: alsa_output.pci-0000_3c_00.0.pro-output-0
-        Description: RME Hammerfall DSP MADI Pro
-        Name: alsa_output.pci-0000_00_1f.3.pro-output-0
-        Description: Audio interne Pro
-        Name: alsa_output.pci-0000_00_1f.3.pro-output-3
-        Description: Audio interne Pro 3
-        Name: alsa_output.pci-0000_00_1f.3.pro-output-7
-        Description: Audio interne Pro 7
-        Name: alsa_output.pci-0000_00_1f.3.pro-output-8
-        Description: Audio interne Pro 8
+Audio
+ ├─ Devices:
+ │      48. Focusrite Scarlett 2i2 2nd Gen      [alsa]
+ │      49. Audio interne                       [alsa]
+ │  
+ ├─ Sinks:
+ │  *   35. Audio interne Stéréo analogique   [vol: 0.81]
+ │      67. Focusrite Scarlett 2i2 2nd Gen Headphones / Line 1-2 [vol: 0.40]
+ │  
+ ├─ Sources:
+ │  *   46. Audio interne Stéréo analogique   [vol: 0.98]
+ │      68. Focusrite Scarlett 2i2 2nd Gen 0    [vol: 1.00]
+ │  
+...
 ~~~
 
-On peut choisir la carte RME Hammerfall DSP MADI Pro par la commande 
+On peut choisir la carte Focusrite Scarlett 2i2 2nd Gen Headphones par la commande 
 
 ~~~bash
-pactl set-default-sink alsa_output.pci-0000_3c_00.0.pro-output-0
+wpctl set-default 67
 ~~~~
 
 Pour voir la carte par défaut : 
 
 ~~~bash
-pactl info | grep "Default Sink"
-
+wpctl get-default
 ~~~
 
 
