@@ -42,7 +42,8 @@ Détaillons maintenant la signification des suites de mots par exemple
 1 8 1 90 que nous voyons en première ligne de l'exemple donné ci-dessus.
 
 Ces quatres mots ont chacune une signification différente et un nom qui peut 
-être Start, . Mais ce nom n'est pas mensionné dans la notation
+être **Start**, **Duration** . Mais ce nom n'est pas mensionné dans la notation, il sert juste
+à différencier les différentes positions de chiffres. 
 
 ### Start
 
@@ -57,5 +58,35 @@ On peut utiliser autre chose que le temps :
 
 Si vous dépassez les limite par exemple 5 pour une mesure à 4 temps ou si vous utilisez une valeur négative vous verrez apparaître une erreur lors de la commande mma.
 
-Enfin si vous utilisez des valeurs entre 0 et .999 la mesure précédente sera affectée et provoquera un warning à l'exécutiond de la commande mma.
+Enfin si vous utilisez des valeurs entre 0 et .999 la mesure précédente sera affectée et provoquera un message d'attention Warning à l'exécution de la commande mma.
+
+On peut utiliser une autre notation qui utilise le +. Par exemple la notation 1+8 signifie 1 ajouté au huitième de la durée de la note. C'est équivalent à 1.5 puisque 0.5 et un huitème du temps car 1 est un quart de la note. On peut ainsi faire les décalages swing suivants : 1+81.
+
+Enfin on peut également utiliser le - pour signifier qu'on veut jouer la note avant avec la syntace 1-81. Mais cela ne rend pas très lisible l'instruction.
+
+### Duration 
+
+Le deuxième emplacement est la durée et non plus le point de départ.
+
+Voici un tableau qui donne les durées acceptées 
+
+|Durée| Description                   |
+|:---:|:-----------------------------:|
+|  1  |La note                        |
+|  2  |La moitié                      |
+|  4  |Le quart                       |
+|  8  |Le huitième                    |
+| 81  |Début de la paire 8ème swing   |
+| 82  |Seconde de la paire 8ème swing |
+| 16  |La seizième                    |
+| 32  |La trentedeuxième              |
+| 64  |La soixantequatrième           |
+|  3  |La huitème d'un triolet        |
+| 43  |Le quart d'un triolet          |
+| 23  |La moitié d'un triolet         |
+|  6  |La sixième d'un triolet        |
+|  5  |La cinquiième d'un quituplet   |
+|  0  |Un tick MIDI                   |
+| ddt | dd ticks MIDI  (ex: 12t       |
+
 
