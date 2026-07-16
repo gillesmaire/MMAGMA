@@ -26,6 +26,7 @@ set (CHAPTERS
               ${MD_DIR}/les-boucles.md
               ${MD_DIR}/les-pistes.md
               ${MD_DIR}/Partie-III-PlusLoinDansLesReglages.md
+              ${MD_DIR}/les-motifs.md
               ${MD_DIR}/les-riffs.md
               ${MD_DIR}/le-rythme.md
               ${MD_DIR}/les-paroles.md

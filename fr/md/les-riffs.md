@@ -9,6 +9,33 @@ Autrement dit :
 * dans le **groove** le jeu est automatiquement basé sur des patterns
 * dans le **riff** ont écrit exactement ce qui doit être joué
 
+Un RIFF est défini par la commande:
+
+~~~mma
+Track Riff Pattern
+~~~
+
+où:
+
+ - Track est un nom de piste MMA valide,
+ - Pattern est tout nom de modèle existant défini pour la piste spécifiée, ou une définition de modèle suivant la même syntaxe qu'un DEFINE. 
+ - La lettre z quand elle est utilisée indique qu'aucun motif n'est défini pour la piste
+
+Ainsi un Riff va être défini dans un morceau comme ici entre les temps 3 et 4 : 
+
+~~~mma
+Groove Tango
+
+  1 Fm7
+  2 Bb7
+  3 Fm7
+  Chord Riff 1 4 100; 3 8 90; 3,666 8 80; 4 333 8 70
+  4 Bb7
+  5 Fm7
+~~~
+
+
+Ici le groove est un Tango mais dans la mesure 4 on ajoute dans la piste accord 
 
 Les riffs peuvent être définis 
 

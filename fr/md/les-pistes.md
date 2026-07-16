@@ -21,7 +21,7 @@ Les noms des instruments correspondent aux instuments MIDI disponibles sur vote 
 Chaque type de piste est régie par son propre algorithme. 
 
 Chaque piste peut donner naissance à des sous pistes et ce de façon illimitée. Les sous pistes sont créées en ajoutant un tiret
-suivi d'un complément de notre que vous choisissez sachant que les noms des pistes sont insensibles à la casse : 
+suivi d'un complément de note que vous choisissez sachant que les noms des pistes sont insensibles à la casse : 
 
 ~~~
 Drum-1
@@ -118,7 +118,7 @@ Bass Volume 100
 
 ## Deux façons de configurer une piste 
 
-Une piste a plusieurs paramètres et chaque paramètre peut avoir plusieurs qualificateurs. 
+Une piste dépend de plusieurs paramètres et chaque paramètre peut avoir plusieurs qualificateurs. 
 Par exemple le paramètre Arpeggio que vous verrons plus loin et qui consiste à jouer les accords en arpège peut avoir des paramètres comme Up ou Down pour jouer
 l'arpège de bas ou haut ou de haut en bas en plus d'autres paramètre comme **Voice** qui peut être **piano**, **guitar** ou autre
 
