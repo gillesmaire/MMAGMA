@@ -178,7 +178,7 @@ STRIPSILENCE=120
 ~~~
 
 
-## OUtils de Débug
+## Outils de Débug
 
 
 ### VERBOSE

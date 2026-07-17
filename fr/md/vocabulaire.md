@@ -48,4 +48,20 @@ un solo ou chorus
 Il ne contient aucune donnée musicale directe, mais définit des paramètres d’exécution comme le tempo et le niveau général de mixage.
 - **Notation :** Groove Metronome2-4
 
+## Riff
+
+- **Définition :** c'est une phrase musicale courte, souvent répétée, qui sert de base au morceau. 
+Il peut être joué par une guitare, une basse, un clavier, etc. Il donne souvent l'identité du morceau. 
+- **Rôle :** introduire une séquence de note pour donner la couleur du morceau 
+- **Notation :** Reef
+
+## Solo 
+
+- **Définition :** c'est un passage où un instrument prend le premier rôle et improvise ou joue une mélodie mise en avant, souvent avec plus de liberté qu'un mélodie.
+- **Notation :** Solo
+
+## Mélodie
+
+- **Définition :**  une mélodie correspond généralement à une ligne de notes jouée par un instrument mélodique. C'est une suite de note qui suit la mélodie principale.
+- **Notation :** Melody
 

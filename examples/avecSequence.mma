@@ -1,0 +1,14 @@
+Tempo 120
+
+Groove Swing
+
+Bass Voice AcousticBass
+Begin Chord
+    Voice AcousticBass
+    Sequence { 1 1 1 90 }
+End
+
+ Abm   Dbm
+ Dbm   Abm
+
+
