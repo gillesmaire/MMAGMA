@@ -26,7 +26,7 @@ se décompose en trois parties :
 
 - Une étiquette permettant d'identifier le modèle. Cette étiquette est insensible à la casse et ne doit pas commencer par le caractère souligné (_). Elle ne peut pas avoir comme nom z, Z ou _.
 - Suit le mot réservé Define
-- Enfin une série de notes délimitées par un ;
+- Enfin une série de nombre délimitées par un ;
 - Le retour  à la ligne sert à clore le motifs
 
 On peut également définir la séquence sur plusieurs lignes séparées par un \  comme par exemple : 
@@ -42,10 +42,9 @@ Détaillons maintenant la signification des suites de mots par exemple
 1 8 1 90 que nous voyons en première ligne de l'exemple donné ci-dessus.
 
 Ces quatres mots ont chacune une signification différente et un nom qui peut 
-être **Start**, **Duration** . Mais ce nom n'est pas mensionné dans la notation, il sert juste
-à différencier les différentes positions de chiffres. 
+être **Début**, **Durée**, **Volume** . Mais ces noms ne sont pas mensionnés dans la notation, ils servent juste à expliciter les différentes positions des chiffres. 
 
-### Start
+### Début
 
 Si on met 1 on désigne le début de la mesure, si on met 2 le deuxième temps de la mesure, si on met 3 le troisième temps de la mesure et 4 le quatrième temps de la mesure 
 (à condition qu'on soit sur une mesure à 4 temps). 
@@ -62,31 +61,84 @@ Enfin si vous utilisez des valeurs entre 0 et .999 la mesure précédente sera a
 
 On peut utiliser une autre notation qui utilise le +. Par exemple la notation 1+8 signifie 1 ajouté au huitième de la durée de la note. C'est équivalent à 1.5 puisque 0.5 et un huitème du temps car 1 est un quart de la note. On peut ainsi faire les décalages swing suivants : 1+81.
 
-Enfin on peut également utiliser le - pour signifier qu'on veut jouer la note avant avec la syntace 1-81. Mais cela ne rend pas très lisible l'instruction.
+Enfin on peut également utiliser le - pour signifier qu'on veut jouer la note avant avec la syntaxe 1-81. Mais cela ne rend pas très lisible l'instruction.
 
-### Duration 
+En résumé le premier nombre indique le numéro de la mesure et peut être décalé en fonction du style voulu.
+
+
+### Durée
 
 Le deuxième emplacement est la durée et non plus le point de départ.
 
 Voici un tableau qui donne les durées acceptées 
 
-|Durée| Description                   |
-|:---:|:-----------------------------:|
-|  1  |La note                        |
-|  2  |La moitié                      |
-|  4  |Le quart                       |
-|  8  |Le huitième                    |
-| 81  |Début de la paire 8ème swing   |
-| 82  |Seconde de la paire 8ème swing |
-| 16  |La seizième                    |
-| 32  |La trentedeuxième              |
-| 64  |La soixantequatrième           |
-|  3  |La huitème d'un triolet        |
-| 43  |Le quart d'un triolet          |
-| 23  |La moitié d'un triolet         |
-|  6  |La sixième d'un triolet        |
-|  5  |La cinquiième d'un quituplet   |
-|  0  |Un tick MIDI                   |
-| ddt | dd ticks MIDI  (ex: 12t       |
+|Durée| Description                                        |
+|:---:|:--------------------------------------------------:|
+|  1  |Une ronde (4 temps)                                 |
+|  2  |Une blanche (2 temps)                               |
+|  4  |Une noire   (1 temps)                               |
+|  8  |Le huitième (1 croche)                              |
+| 81  |Début de la paire 8ème swing                        |
+| 82  |Seconde de la paire 8ème swing                      |
+| 16  |La seizième ( double croche)                        |
+| 32  |La trentedeuxième (tripe croche)                    |
+| 64  |La soixantequatrième (quadruple croche)             |
+|  3  |La huitème d'un triolet (triolet de croches)        |
+| 43  |Le quart d'un triolet   (triolet de noires)         |
+| 23  |La moitié d'un triolet  (triolet de blanches)       |
+|  6  |La sixième d'un triolet (triplet de double croches) | 
+|  5  |La cinquiième d'un quituplet (quituplet de croches) |
+|  0  |Un tick MIDI                                        |
+| ddt | dd ticks MIDI  (ex: 12t                            |
+
+Les valeurs 81 et 82 peuvent varier en fonction deu réglage SWINGLIDE SKEW.
+
+La valeur 0 est une valeur spéciale utilisée uniquement dans les pistes batterie ou la longueur 
+réelle est donnée par le synthétiseur MIDI et non pas par le programme.
+
+Toutes ces longeurs de notes peuvent être es par ajout d'un point ou d'un double point.
+
+- **2.** ajoute la valeur d'une noire à une blanche
+- **4..** ajoute la valeur d'une croche et d'une double croche à une noire
+
+Le signe + peut être utilisé :
+
+- **8+16** pour une croche pointée
+- **2+4** : pour  une blanche pointée 
+- **3+4** : pour triolet de croches 
+
+Le signe - peut également être utilisé 
+
+- **1-4** : équivalent à 2+4
+
+Ce signe de soustraction peut utiliser la notation : 
+
+- **1-0** qui génèrera une note à peine plus courte que la note entière pour générer une mini pause
+
+Enfin on peut combiner les . les + et les -. Ainsi 2.+4 est une blanche plus une noire plus une noire ce qui revient à une ronde.
+
+En plus des valeurs données dans le tableau précédent on peut créer des valeurs spéciales de multiplets
+basées sur  **compteur** suivie d'un *:** d'un **blanc** et d'une **base** : 
+
+- **compteur** : est le nombre de divisions 
+- **base** : est une durée de note comme la colonne 1 de la table précédente.
+
+Ainsi un triolet de croche peut se noter 3: 4 et une ronde divisée en 5 peut être notée 5: 1
+
+La valeur base ne peut pas être un tick d'horloge MIDI ou une note pointée.
+
+La commande  ARTICULATE peut forcer des durées réelles. 
+
+Enfin il est même possible de définir la longeur d'une note en unité d'horloge MIDI, ainsi une noire 
+peut être notée avec un 4 ou avec la valeur 192t. Si on utilise la notation en unité d'horloge midi les 
+symboles + - et . ne sont plus utilisables.
+
+
+
+### Volume 
+
+Les vélocités MIDI sont limitées à la plage de 0 à 127. Cependant, MMA ne vérifie pas les volumes spécifiés dans un motif pour les valider.
+
+Dans la plupart des cas, les vitesses comprises entre 50 et 100 sont utilisées.
 
 
