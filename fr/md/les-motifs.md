@@ -42,9 +42,9 @@ Détaillons maintenant la signification des suites de mots par exemple
 1 8 1 90 que nous voyons en première ligne de l'exemple donné ci-dessus.
 
 Ces quatres mots ont chacune une signification différente et un nom qui peut 
-être **Début**, **Durée**, **Volume** . Mais ces noms ne sont pas mensionnés dans la notation, ils servent juste à expliciter les différentes positions des chiffres. 
+être **Position**, **Durée**, **Offset** et **Volume** . Mais ces noms ne sont pas mensionnés dans la notation, ils servent juste à expliciter les différentes positions des chiffres. 
 
-### Début
+### Position
 
 Si on met 1 on désigne le début de la mesure, si on met 2 le deuxième temps de la mesure, si on met 3 le troisième temps de la mesure et 4 le quatrième temps de la mesure 
 (à condition qu'on soit sur une mesure à 4 temps). 
@@ -133,12 +133,130 @@ Enfin il est même possible de définir la longeur d'une note en unité d'horlog
 peut être notée avec un 4 ou avec la valeur 192t. Si on utilise la notation en unité d'horloge midi les 
 symboles + - et . ne sont plus utilisables.
 
+### Offset
 
+Un autre champ peut intervenir sur certains modèles comme : 
+
+- les Bass
 
 ### Volume 
 
 Les vélocités MIDI sont limitées à la plage de 0 à 127. Cependant, MMA ne vérifie pas les volumes spécifiés dans un motif pour les valider.
 
 Dans la plupart des cas, les vitesses comprises entre 50 et 100 sont utilisées.
+
+### Utilisation des modèles
+
+Les modèles précédents peuvent être définis pour les pistes : 
+
+- BASS
+- WALK 
+- CHORD 
+- ARPEGGIO
+- DRUM
+
+
+En outre, tous ces modèles sont partagés par les pistes de même type. Ainsi Chord-Sus et Chord-Piano partagent les motifs de Chord.
+
+Au début de ce chapitre,  la définition suivante avait été donnée  : 
+
+~~~mma
+Drum Define S1 1 0 50
+~~~
+
+Si on définit une sous piste comme suit on générera un résultat identique 
+
+~~~mma
+Drum-Woof Define S1 1 0 50
+~~~
+
+
+## Motif Bass
+
+
+Le motif BASS est défini avec : 
+
+~~~mma
+Bass Define NOM Position Duration Offset Volume;
+~~~
+
+On remarque l'apparition du champ Offset, ici cet offset ou décalage de note peut être un chiffre de 1 à 7 chacun représentant une note de la gamme d'accords. Ainsi pour jouer la fondamentale et la quinte de l'accord on utilisera :
+
+
+**Exemple :**
+
+~~~mma
+Bass Define MaBAsse 1 8 1 90; 2 8 5 80; 3 8 3 90; 4 8 1 80
+~~~
+
+Notons qu'on parle bien de note dans la gamme c'est à dire de tierce ou de quinte c'est à dire de notes relative par rapport à la tonalité en cours et non pas de la note elle même.
+
+Ici encore on peut ajouter à l'offset un certain nombre de qualificateurs : 
+
+- un ou plusieurs **+** : chaque + augmente la note d'un octave. 
+- un ou plusieurs **-** : chaque - descend la note d'un octave. 
+- **#** augmente la note d'un demi-ton
+- **S** augmente la note d'un demi-ton
+- **s** augmente la note d'un demi-ton
+- **&** diminue la note d'un demi-ton
+- **B** diminue la note d'un demi-ton
+- **b** diminue la note d'un demi-ton
+
+Pour les augmentations ou les diminutions d'un demi ton on peut : 
+
+- utiliser plusieurs symboles consécutifs
+- utiliser la notation 6b pour 7 bémols
+
+Un point important : si on utilise dans la chaine de caractères de l'offset un caractère + ou - au milieu des dièses ou des bémols, ce caractère - ou # sera automatiquement déplacé en interne à la fin de la note.
+
+
+## Motif Chord
+
+Le motif CHORD est défini avec : 
+
+~~~mma
+Chord Define Instrument Position Duration Volume1 Volume2 ...; ...
+~~~
+
+Chaque groupe séparé par un point virgule comprend un décalage de temps pour le point de départ suivis les volumes pour chaque note de l'accord.
+
+**Exemple :** 
+
+~~~mma
+Chord Define MonInstrument Straight4+3 1 4 100 ; \
+    2 4 90 ; \
+    3 4 100 ; \
+    4 3 90 ; \
+    4.3 3 80 ; \
+    4.6 3 80 
+~~~
+
+## Motif Arpeggio
+
+Le motif ARPEGGIO est défini comme suit : 
+
+~~~mma
+Arpeggio Define Position Duration Volume ; ...
+~~~
+
+Les pistes d'arpèges jouent des notes d'un accord une par une. Ceci est très différent des accords où les notes sont jouées ensemble.
+
+Chaque groupe comprend un décalage de temps, la durée de la note et le volume de la note. Vous n'avez pas le choix des notes jouées de l'accords (cependant, elles sont jouées en alternance ascendante / descendante.)
+
+Le volume est appliqué à la note spécifiée dans le motif.
+
+
+**Exemple :**
+
+
+~~~mma
+Arpeggio Define 4s 1 4 100; \
+    					2 4 90; \
+    					3 4 100; \
+    					4 4 100
+~~~
+
+## Modèle Walk
+
 
 
