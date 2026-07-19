@@ -177,7 +177,7 @@ Drum-Woof Define S1 1 0 50
 Le motif BASS est défini avec : 
 
 ~~~mma
-Bass Define NOM Position Duration Offset Volume;
+Bass Define NomBasse Position Duration Offset Volume;
 ~~~
 
 On remarque l'apparition du champ Offset, ici cet offset ou décalage de note peut être un chiffre de 1 à 7 chacun représentant une note de la gamme d'accords. Ainsi pour jouer la fondamentale et la quinte de l'accord on utilisera :
@@ -215,7 +215,7 @@ Un point important : si on utilise dans la chaine de caractères de l'offset un 
 Le motif CHORD est défini avec : 
 
 ~~~mma
-Chord Define Instrument Position Duration Volume1 Volume2 ...; ...
+Chord Define NomChord Position Duration Volume1 Volume2 ...; ...
 ~~~
 
 Chaque groupe séparé par un point virgule comprend un décalage de temps pour le point de départ suivis les volumes pour chaque note de l'accord.
@@ -223,7 +223,7 @@ Chaque groupe séparé par un point virgule comprend un décalage de temps pour 
 **Exemple :** 
 
 ~~~mma
-Chord Define MonInstrument Straight4+3 1 4 100 ; \
+Chord Define NomInstrument Straight4+3 1 4 100 ; \
     2 4 90 ; \
     3 4 100 ; \
     4 3 90 ; \
@@ -258,5 +258,69 @@ Arpeggio Define 4s 1 4 100; \
 
 ## Modèle Walk
 
+Le motif Walk est défini comme suit : 
+
+~~~mma
+ Walk Define NomInstrument Position Durée Volume ; ...
+~~~
+
+Les pistes Walking basse sont jouées de haut en bas sur la première partie d'une gamme, en accordant une attention particulière à la «couleur» de l'accord. 
+Dans une Marche  les lignes de basse sont très courantes dans le jazz et la musique swing. Elles apparaissent assez souvent comme une mesure «d'emphase» dans les marches.
+
+Chaque groupe comprend un décalage de temps, la durée de la note et le volume de la note. 
+
+MMA sélectionne le pitch (la hauteur) de la note courante pour la jouer en fonction de l'accord actuel et vous ne pouvez pas changer ce comportement.
+
+**Exemple :**
+
+~~~mma
+Walk Define Walk4 1 4 100 ; \
+    2 4 90; \
+    3 4 90 
+~~~
+
+Cet exemple joue une note basse sur les temps 1, 2 et 3 d'une mesure en 3/4 temps.
+
+## Modèle Scale
 
 
+Un motif SCALE se  définit comme suit :
+
+~~~mma
+Scale Define Nom Position Duration Volume ; ...
+~~~
+
+Chaque groupe consiste en un décalage de temps pour le point de départ, la durée de la note et le volume.
+
+~~~mma
+ scale Define S1 1 1 90
+ Scale Define S4 S1 * 4
+ Scale Define S8 S1 * 8
+~~~
+
+Cet exemple définit trois modèles de gamme: 
+
+- S1 est juste une  note qui n'est pas utile en soit mais qui sert dans la définition de S4 et S8.
+- S4 est de 4 noires 
+- S8 de 8 croches. 
+
+Tous les volumes sont réglés sur une vélocité MIDI de 90.
+Les modèles de gammes sont très utiles dans les fins de morceau. 
+Plus d'options pour les gammes sont détaillées dans la SCALE DIRECTION  et SCALE TYPE.
+
+
+## Modèle Aria
+
+Un motif ARIA est défini comme suit : 
+
+~~~mma
+Aria Define Position Durée Volume;
+~~~
+
+- Aria ne prend pas de paramètre de durée 
+
+## Modèle Plectrum
+
+## Modèle Drum
+
+## Modèle Drum Tone
