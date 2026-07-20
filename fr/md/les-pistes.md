@@ -4,16 +4,16 @@
 
 Dans  un fichier MMA, une piste représente une partie musicale sous une des dix formes suivantes : 
 
-- **Drum :** batterie ou percussions qui en général en MIDI sont allouées au canal MIDI 10
-- **Bass :** les notes d'un instrument de basse (contrebasse, basse, hélicon) souvent la fondamentale.
-- **Walk:** les notes de la basse avancent note par note généralement sur chaque temps en reliant les accords entre eux
 - **Chord :** les accords sont joués par une justaposition de notes
-- **Arpeggio :** accords sous joués en arpèges
+- **Bass :** les notes d'un instrument de basse (contrebasse, basse, hélicon) souvent la fondamentale.
+- **Drum :** batterie ou percussions qui en général en MIDI sont allouées au canal MIDI 10
+- **Arpeggio :** les accords sont joués en arpèges
+- **Melody :** les notes de la mélodie sont fournies note par note
+- **Solo :** permettent des ornements solo 
+- **Walk:** les notes de la basse avancent note par note généralement sur chaque temps en reliant les accords entre eux
 - **Scale :**  motifs mélodiques construits à partir de la gamme associée à l’accord, généralement de façon répétitive et rythmique.
 - **Plectrum :** motif de l'accord joué note par note comme un coup de médiator
-- **Melody :** notes de la mélodie que l'on fournit note par note
 - **Automatic Melody :** les notes sont trouvées par MMA de façon automatique.
-- **Solo :** ornements solo 
 
 
 Les noms des instruments correspondent aux instuments MIDI disponibles sur vote banque MIDI.
@@ -155,6 +155,41 @@ Arpeggio Voice Guitar1
 Arpeggio Type Up
 ~~~
 
+## La piste Bass
+
+La piste `Bass` utilise **automatiquement** les accords pour produire une ligne de basse.
+
+```mma
+Bass Voice FingeredBass
+
+Bass Sequence {
+    1 1 100
+    3 1 90
+}
+```
+
+Avec les accords :
+
+```mma
+1 C
+2 F
+3 G
+```
+
+la basse jouera automatiquement :
+
+* la fondamentale de C au temps 1
+* la fondamentale de G au temps 3
+
+Selon le groove, MMA peut aussi utiliser la quinte ou d'autres notes de l'accord.
+Les paramètres de Bass sont : 
+
+* Ceux déjà explicités : Octave, Volume, Direction, Strum, Limit,NoteSpan, 
+* **Articulation :** qui peut être Staccato ou Legato
+* **OctaveShift :** délacage supplémentaire d'octave par exemple -1 ou 1 
+* **Sequence :** est une liste de bloc { note durée vélocité note durée vélocité ... } c'est à dire degré de l'accord, durée (1 pour noire), vélocité ou force (100)
+
+
 ## La piste Chord
 
 La piste `Chord` joue les accords du morceau.
@@ -204,38 +239,6 @@ Un certain nombre de paramètres peuvent agir sur la piste
 2 la fondamentale est doublée 2 fois etc...
 **NoteSpan** : limite la plage des notes jouées. 1 durée normale, >1 notes plus longues, <1 notes plus courtes. O.4 est Stacato, 1.2 et Légato. Si Strum décale le départ de la note, NoteSpan délale sa durée. Ces deux paramètres utilisés ensemble donnent un effet très réaliste.
 
-## La piste Bass
-
-La piste `Bass` utilise **automatiquement** les accords pour produire une ligne de basse.
-
-```mma
-Bass Voice FingeredBass
-
-Bass Sequence {
-    1 1 100
-    3 1 90
-}
-```
-
-Avec les accords :
-
-```mma
-1 C
-2 F
-3 G
-```
-
-la basse jouera automatiquement :
-
-* la fondamentale de C au temps 1
-* la fondamentale de G au temps 3
-
-Selon le groove, MMA peut aussi utiliser la quinte ou d'autres notes de l'accord.
-Les paramètres de Bass sont : 
-* Ceux déjà explicités : Octave, Volume, Direction, Strum, Limit,NoteSpan, 
-* **Articulation :** qui peut être Staccato ou Legato
-* **OctaveShift :** délacage supplémentaire d'octave par exemple -1 ou 1 
-* **Sequence :** est une liste de bloc { note durée vélocité note durée vélocité ... } c'est à dire degré de l'accord, durée (1 pour noire), vélocité ou force (100)
 
 ## La piste Drum
 
@@ -516,6 +519,69 @@ Solo
 ```
 
 Elle peut être utilisée seulement dans certaines parties du morceau.
+
+## La piste Riff
+
+La piste Riff est explicité dans le chapitre [Riff](#Riff)
+
+## La piste Walk 
+
+Le  Modèle  `Walk` pour Walking Bass est définie comme suit : 
+
+
+Exemple : 
+~~~mma
+Walk Define Nom Position Duration Volume ; ...
+~~~
+
+Les pistes de basse d'une Walk sont jouées de haut en bas sur la première partie d'une gamme, en accordant une attention particulière à la «couleur» de l'accord. 
+Les lignes de Walking bass sont très courantes dans le jazz et la musique swing. Elles apparaissent assez souvent comme une mesure «d'emphase» dans les marches.
+
+Chaque groupe comprend un décalage de temps, la durée de la note et le volume de la note. 
+
+MMA sélectionne le "pitch" (la hauteur) de la note courante pour la jouer en fonction de l'accord actuel et on  ne peut pas changer ce comportement.
+
+Exemple de piste Walk :
+Walk Define Walk4 1 4 100; \
+    				2 4 90; \
+    				3 4 90
+
+Cet exemple joue une note basse sur les temps 1, 2 et 3 d'une mesure en 3/4 temps.
+
+
+## La piste Scale 
+
+Un motif SCALE est défini avec:
+
+~~~mma
+Position Duration Volume; ...
+~~~
+
+Chaque groupe consiste en un décalage de temps pour le point de départ, la durée de la note et le volume.
+
+
+Par exemple : 
+
+
+~~~mma
+scale Define S1 1 1 90
+scale Define S4 S1 * 4
+Scale Define S8 S1 * 8
+~~~
+
+Cet exemple définit trois modèles de gamme: "S1" est juste une seule note entière, pas si utile en soi, mais elle est utilisée 
+comme une base pour "S4" et "S8".
+"S4" est de 4 noires et "S8" de 8 croches. 
+Tous les volumes sont réglés sur une vélocité MIDI de 90.
+Les modèles de gammes sont très utiles dans les fins. 
+Plus d'options pour les gammes sont détaillées dans la SCALE DIRECTION  et SCALE TYPE (ici) sections.
+
+
+## La piste Aria 
+
+## La piste Plectrum
+
+## La piste Drum Tone
 
 ## Plusieurs pistes en même temps
 

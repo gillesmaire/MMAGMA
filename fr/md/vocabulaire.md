@@ -12,83 +12,68 @@ On peut dénombrer les concepts suivants :
 - Les Sequence ou séquences en français
 - Les Track ou pistes 
 - Les Groove ou style d'accompagnement
-- Les Riff
-- Les Solo
-- Les Melody ou Mélodie en français
-- Les Bass ou Basse en français
-- Arpeggio
-- Walk 
-- Aria
-- Plectrum
-- Drum 
-- Drum Tone
 
 ## Pattern 
 
-Un Pattern est une unité musicale élémentaire qui a une durée d'une mesure 
-ou même parfois moins. Ce Pattern concerne un instrument et donc une seule piste.
-
+- **Définition :** Un Pattern est une unité musicale élémentaire qui a une durée d'une mesure ou même parfois moins. Ce Pattern concerne un instrument et donc une seule piste.
+- **Portée :** Une piste
+- **Durée :** une mesure (ou moins)
+- **Rôle :** définir ce qui est joué 
+- **Notation:** Suite d'événements dont la syntaxe dépend du type de piste.
+- **Remarque :** 
+   - nous  verrons que l'on peut ajouter le numéro de la mesure avant les notes
+   - nous verrons qu'en fonction des instruments le Pattern peut être une succession de notes ou d'accords en fonction de la piste à la quelle il est rattaché
+## Define
+- **Définition :** Associe un nom à un pattern.
+- **Rôle :** Permet de réutiliser un même pattern dans une ou plusieurs séquences.
+- **Portée :** Une piste.
+- **Durée :** Jusqu'à la fin du fichier ou à une nouvelle définition du même nom.
 
 ## Sequence 
 
-La sequence contient une liste de Pattern
+- **Définition :** La sequence contient une liste de Pattern
+- **Portée :** Une piste
+- **Durée :** la somme des Pattern
+- **Rôle :** permettre de rassembler plusieurs Pattern pour en faire un couplets, un refrain,
+un solo ou chorus
+- **Notation:** Bass Sequence Broken1 Broken2 Broken1 Broken1
+
+## Riff
+- **Définition :** Pattern fourni directement dans le morceau sans modifier la - **Sequence.
+- **Rôle :** Remplacer ponctuellement le pattern normal d'une piste.
+- **Portée :** Une piste.
+- **Durée :** Une ou plusieurs mesures selon le nombre de riffs fournis.
+- **Notation :** Bass Riff 1 4 1 90;
+
+
 
 ## Track
 
-Définit l'instrument joué sur la piste : Bass, Drum, Walk ...
+- **Définition :** définit l'instrument joué sur la piste : Bass, Drum, Walk ...
+- **Rôle :** contient des Pattern et/ou des Séquences
+- **Durée :** Pendant tout le morceau.
 
 ## Groove 
 
-Définit le style complet. C'est une couche de contrôle global qui orchestre les pistes (patterns et sequences). 
+- **Définition :** définit le style complet
+- **Rôle :** couche de contrôle global qui orchestre les pistes (patterns et sequences). 
 Il ne contient aucune donnée musicale directe, mais définit des paramètres d’exécution comme le tempo et le niveau général de mixage.
-
+- **Notation :** Groove Metronome2-4
 
 ## Riff
 
-C'est une phrase musicale courte, souvent répétée, qui sert de base au morceau. 
+- **Définition :** c'est une phrase musicale courte, souvent répétée, qui sert de base au morceau. 
 Il peut être joué par une guitare, une basse, un clavier, etc. Il donne souvent l'identité du morceau. 
-
+- **Rôle :** introduire une séquence de note pour donner la couleur du morceau 
+- **Notation :** Reef
 
 ## Solo 
 
-C'est un passage où un instrument prend le premier rôle et improvise ou joue une mélodie mise en avant, souvent avec plus de liberté qu'un mélodie.
+- **Définition :** c'est un passage où un instrument prend le premier rôle et improvise ou joue une mélodie mise en avant, souvent avec plus de liberté qu'un mélodie.
+- **Notation :** Solo
 
-## Mélody
+## Mélodie
 
-Une mélodie correspond généralement à une ligne de notes jouée par un instrument mélodique. C'est une suite de note qui suit la mélodie principale.
+- **Définition :**  une mélodie correspond généralement à une ligne de notes jouée par un instrument mélodique. C'est une suite de note qui suit la mélodie principale.
+- **Notation :** Melody
 
-## Bass
-
-Une piste Basse est une piste spécialisée dans la génération automatique d'une ligne de basse à partir des accords du morceau. MMA utilise la fondamentale, la tierce, la quinte et éventuellement d'autres degrés de l'accord pour construire une ligne adaptée au style choisi.
-
-## Chord 
-
-Une piste Chord génère l'accompagnement harmonique en jouant les accords du morceau selon un motif rythmique défini.
-
-## Arpeggio 
-
-Une piste Arpeggio transforme les accords en notes jouées successivement au lieu d'être jouées simultanément.
-
-## Walk
-
-Une piste Walk est une variante spécialisée de la basse destinée aux lignes de walking bass, principalement utilisées en jazz.
-
-## Scale 
-
-Une piste Scale génère des phrases mélodiques en utilisant les notes d'une gamme associée à l'accord courant.
-
-## Aria 
-
-Une piste Aria génère une ligne mélodique automatique basée sur des règles musicales (contrairement à Melody où les notes sont écrites explicitement).
-
-## Plectrum 
-
-Une piste Plectrum est destinée à simuler le jeu d'un instrument à cordes pincées, principalement la guitare.
-
-## Drum
-
-Une piste Drum génère les événements de percussion en utilisant les numéros de notes MIDI de la batterie General MIDI.
-
-## Drum Tone
-
-Un Drum Tone correspond à un son de percussion individuel identifié par un numéro de note MIDI.
