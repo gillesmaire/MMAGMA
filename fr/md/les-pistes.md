@@ -51,19 +51,23 @@ Channel assignments:
   16  BASS           
 ~~~
 
-On voit dans cet exemple que la musique du fichier Court.mma utilise des pistes de base (BASS,CHORD,...) suivie de pistes
-définies par le ou les Groove choisis par Court.mma. On remarque que le canal 10 est toujours assigné aux batteries.
+On voit dans cet exemple que la musique du fichier Court.mma utilise des pistes de base
+(BASS,CHORD,...) suivie de pistes définies par le ou les Groove choisis par Court.mma. 
+On remarque que le canal 10 est toujours assigné aux batteries.
 
 On voit les canaux associés à chaque pistes.
 
 De plus, nous devrons associer aux composants voulus un instrument et chaque piste possède
 son propre instrument, son propre rythme et sa propre manière d'utiliser les accords du morceau.
 
-Les Grooves définissent le rythme au moyen des mots Drum, Bass, Walk, Chord, Arpeggio, Scale, Plectrum, Automatic Melody. Si aucun instrument n'est associé à ces mots clés, un instrument par défaut sera choisi par MMA.
+Les Grooves définissent le rythme au moyen des mots Drum, Bass, Walk, Chord, Arpeggio, Scale,
+Plectrum, Automatic Melody. Si aucun instrument n'est associé à ces mots clés, un instrument 
+par défaut sera choisi par MMA.
 
 Notons que Melody et Solo demandent de définir les notes une à une.
 
-C'est dans le fichier mma que vous devez sélectionner les instuments comme indiqué dans le paragraphe suivant.
+C'est dans le fichier mma que vous devez sélectionner les instuments comme indiqué dans le 
+paragraphe suivant.
 
 ## Définition des pistes 
 
@@ -534,17 +538,26 @@ Exemple :
 Walk Define Nom Position Duration Volume ; ...
 ~~~
 
-Les pistes de basse d'une Walk sont jouées de haut en bas sur la première partie d'une gamme, en accordant une attention particulière à la «couleur» de l'accord. 
-Les lignes de Walking bass sont très courantes dans le jazz et la musique swing. Elles apparaissent assez souvent comme une mesure «d'emphase» dans les marches.
+Les pistes de basse d'une Walk sont jouées de haut en bas sur la première
+partie d'une gamme, en accordant une attention particulière à la «couleur» 
+de l'accord. 
+Les lignes de Walking bass sont très courantes dans le jazz et la musique 
+swing. Elles apparaissent assez souvent comme une mesure «d'emphase» dans
+les marches.
 
-Chaque groupe comprend un décalage de temps, la durée de la note et le volume de la note. 
+Chaque groupe comprend un décalage de temps, la durée de la note et le volume
+de la note. 
 
-MMA sélectionne le "pitch" (la hauteur) de la note courante pour la jouer en fonction de l'accord actuel et on  ne peut pas changer ce comportement.
+MMA sélectionne le "pitch" (la hauteur) de la note courante pour la jouer en
+fonction de l'accord actuel et on  ne peut pas changer ce comportement.
 
 Exemple de piste Walk :
+
+~~~mma
 Walk Define Walk4 1 4 100; \
     				2 4 90; \
     				3 4 90
+~~~
 
 Cet exemple joue une note basse sur les temps 1, 2 et 3 d'une mesure en 3/4 temps.
 
@@ -579,11 +592,20 @@ Plus d'options pour les gammes sont détaillées dans la SCALE DIRECTION  et SCA
 
 ## La piste Aria 
 
+Un motif ARIA est défini avec:
+
+~~~mma
+Position Duration Volume; ...
+~~~
+
 ## La piste Plectrum
 
 ## La piste Drum Tone
 
-## Plusieurs pistes en même temps
+
+## Combinaison des pistes 
+
+### Plusieurs pistes en même temps
 
 Toutes les pistes peuvent fonctionner simultanément.
 
@@ -605,7 +627,7 @@ Résultat :
 * la basse joue au temps 1 puis au temps 3
 * la batterie joue la grosse caisse au temps 1 puis au temps 3
 
-## Nommer des pistes
+### Nommer des pistes
 
 On peut créer plusieurs pistes d'un même type en leur donnant un nom.
 
