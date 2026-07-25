@@ -11,28 +11,29 @@ set(INDEX_MD ${CMAKE_BINARY_DIR}/mmagma_index.md)
 # Chapitres Markdown
 # =========================================================
 set (CHAPTERS
-              ${MD_DIR}/Partie-I-Présentation.md
+            ${MD_DIR}/Partie-I-Présentation.md
               ${MD_DIR}/introduction.md
               ${MD_DIR}/installation.md
               ${MD_DIR}/vocabulaire.md
               ${MD_DIR}/le-MIDI.md
               ${MD_DIR}/les-soundfonts.md
-              ${MD_DIR}/Partie-II-Initiation.md
+            ${MD_DIR}/Partie-II-PriseEnMain.md
               ${MD_DIR}/premier-fichier-mma.md
               ${MD_DIR}/Ameliorations-MIDI-Linux.md
               ${MD_DIR}/utilisation-des-grooves.md
               ${MD_DIR}/format-MMA.md
               ${MD_DIR}/les-accords.md
               ${MD_DIR}/les-boucles.md
+            ${MD_DIR}/Partie-III-LesPistes.md
               ${MD_DIR}/les-pistes.md
-              ${MD_DIR}/Partie-III-PlusLoinDansLesReglages.md
+            ${MD_DIR}/Partie-IV-PlusLoinDansLesRéglages.md
               ${MD_DIR}/les-motifs.md
               ${MD_DIR}/les-riffs.md
               ${MD_DIR}/le-rythme.md
               ${MD_DIR}/les-paroles.md
               ${MD_DIR}/pistes-solo-et-melodie.md
               ${MD_DIR}/lire-un-fichier-MIDI.md
-              ${MD_DIR}/Partie-IV-ConceptionDesGrooves.md
+            ${MD_DIR}/Partie-V-ConceptionDesGrooves.md
               ${MD_DIR}/les-sequences.md
               ${MD_DIR}/instruments-à-cordes-pincées.md
               ${MD_DIR}/les-options-de-mma.md
