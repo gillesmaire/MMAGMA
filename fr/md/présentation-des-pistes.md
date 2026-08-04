@@ -157,7 +157,7 @@ Bass Volume 100
  Abm
 ~~~
 
-## Deux façons de configurer une piste 
+## différentes façons de configurer une piste 
 
 Une piste dépend de plusieurs paramètres et chaque paramètre peut avoir plusieurs qualificateurs. 
 Par exemple le paramètre Arpeggio que vous verrons plus loin et qui consiste à jouer les accords en arpège
@@ -171,11 +171,11 @@ On peut déclarer ces paramètres de façon globale ou sous forme répétitive
 On peut génére un silence sur une piste de plusieurs façons :
 
 - **OFF :** supprime la sortie sur toute la piste. Par exemple Bass Off
-- **Seqence :** indique ce que joue la piste à chaque mesure. Par exemple Bass Sequence A B C D ( Mesure 1 A, Mesure 2 B etc ). 
+- **Sequence :** indique ce que joue la piste à chaque mesure. Par exemple Bass Sequence A B C D ( Mesure 1 A, Mesure 2 B etc ). 
 
 On peut ainsi programmer un silence par la lettre z sur une mesure  par exemple sur la troisième par : Bass Seq A B z D
 
-- On peut supprimer une séquence par SEQCLEAR : Drum SEQCLEAR
+- On peut supprimer une séquence par **SEQCLEAR** : Drum SEQCLEAR
 - Désactiver un canal MIDI en ajoutant le Canal 0: Arpeggio-1 Channel 0
 - On peut supprimer le son sur une piste entière en lançant mma avec l'ption -T qui spécifie les pistes sur lesquelles il faut jouer
 

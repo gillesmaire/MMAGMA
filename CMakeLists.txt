@@ -24,6 +24,7 @@ set (CHAPTERS
               ${MD_DIR}/format-MMA.md
               ${MD_DIR}/les-accords.md
               ${MD_DIR}/les-boucles.md
+               ${MD_DIR}/les-sequences.md
             ${MD_DIR}/Partie-III-LesPistes.md
               ${MD_DIR}/présentation-des-pistes.md
               ${MD_DIR}/la-piste-drum.md
@@ -46,7 +47,6 @@ set (CHAPTERS
               ${MD_DIR}/pistes-solo-et-melodie.md
               ${MD_DIR}/lire-un-fichier-MIDI.md
             ${MD_DIR}/Partie-V-ConceptionDesGrooves.md
-              ${MD_DIR}/les-sequences.md
               ${MD_DIR}/instruments-à-cordes-pincées.md
               ${MD_DIR}/les-options-de-mma.md
               )

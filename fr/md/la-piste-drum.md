@@ -2,43 +2,42 @@
 
 ## Présentation
 
-La piste `Drum` ne dépend pas des accords. Elle joue uniquement un rythme.
+La piste `Drum` ne dépend pas des accords, elle joue uniquement un rythme sur la piste 10. 
+
+
+On définit un rythme par une succession de triplets *position*, *durée*, *volume* séparés par des ;
+
+
+On peut utiliser la notation suivante pour la grosse caisse 
 
 ```mma
-Drum Sequence {
-    1 1 120
-    2 1 90
-    3 1 110
-    4 1 90
-}
+Drum Define S1  1 1 120 ; 2 1 90  ;  3 1 110 ;   4 1 90 
 ```
+
+Si on veut écrire sur plusieurs ligne la piste précédente on peut ajouter le caractère \
+
+```mma
+Drum Define S1  1 1 120 ; \ 
+                2 1 90  ; \  
+                3 1 110 ; \   
+                4 1 90 
+```
+
 
 La piste batterie utilise des sons spéciaux de batterie GM.
 
-Exemple :
+
+On peut créer plusieurs pistes de batterie en leur donnant un nom via la 
+directive *Tone*
 
 ```mma
-Drum Tone KickDrum1
-Drum Sequence {
-    1 1 120
-    3 1 120
-}
-```
-
-Cela joue la grosse caisse aux temps 1 et 3.
-
-On peut créer plusieurs pistes de batterie en leur donnant un nom.
-
-```mma
-Begin Drum-Snare
-    Tone SnareDrum1
-    Sequence { 2 1 100; 4 1 100 }
-End
-
-Begin Drum-HiHat
-    Tone ClosedHiHat
-    Sequence { 1 0.5 70; 1.5 0.5 70; 2 0.5 70; 2.5 0.5 70 }
-End
+Drum Define S1 1 0 90
+Drum Define S2 S1 * 2
+Drum Define S4 S1 * 4
+SeqClear
+SeqSize 4
+Drum Sequence S4 S2 S2 S4
+Drum Tone SnareDrum1 SideKick LowTom1 Slap
 ```
 
 - **Tone** peut prendre les valeurs  suivantes :

@@ -1,5 +1,6 @@
 # Les séquences
 
+
 ## Présentation 
 
 Les *pattern* alignés les uns à coté des autres se révèlent être une solution assez lourde qui peut être 
@@ -25,6 +26,21 @@ Bass Sequence  Bass1 Bass1 Bass2 Bass1
 Arpeggio Sequence { 1 1 100 * 8 } { 1 1 100 * 8 }
 ~~~
 
+## Séquences sur plusieurs lignes
+
+On peut vouloir écrire une séquence sur plusieurs lignes pour plus de clarté lorsque les séquences sont longues.
+Dans ce cas il faudra ajouter un point virgule indiquant que la séquence continue sur la ligne suivante. 
+
+Ainsi la séquence précédente est équivalente aux séquences suivantes :
+
+~~~mma
+Arpeggio Sequence { 1 1 100 * 8 } ;
+                  { 1 1 100 * 8 }
+Arpeggio Sequence { 1 1 100 * 8  ;
+                  } { 1 1 100 * 8 }
+Arpeggio Sequence { 1 1 100 * 8 } { ;
+                  1 1 100 * 8 }
+~~~
 
 ## Répétitions 
 
@@ -113,7 +129,7 @@ Drum1 Sequence -
 Par défaut les séquences sont jouées comme définies mais on peut activer un ordre des notes aléatoire
 pour chacune des exécutions.
 
-Pour actiber l'ordre aléatoire sur la piste Chord : 
+Pour activer l'ordre aléatoire sur la piste Chord : 
 
 ~~~mma
 SeqRnd  Chord On
