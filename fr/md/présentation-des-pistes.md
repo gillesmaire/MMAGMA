@@ -2,17 +2,47 @@
 
 ## Les types de piste
 
-Dans  un fichier MMA, une piste représente une partie musicale sous une des dix formes suivantes : 
+Dans  un fichier MMA, un morceau comprend plusieurs pistes destinées à être mixées, chacune des pistes peut concerner :
+
+- Les percussions
+- Une ligne de basses
+- Les accords 
+- Les lignes mélodiques 
+
+Dans chacune de ces catégories on peut avoir différentes variations, par exemple un accord peut être joué note par note comme le ferait un 
+médiator ou les notes peuvent être jouées ensemble comme au piano. 
+
+Détailllons les différentes pistes dont on dispose par catégories
+
+
+### Percussions
+
+- **Drum :** la batterie ou les percussions sont jouées et correspondent  en général au canal MIDI 10
+ 
+### La ligne de Basse
+
+Les lignes de basse peuvent être jouées suivant deux algorythmes : 
+
+- **Bass :** les notes d'un instrument de basse (contrebasse, basse, hélicon) sont jouées en commençant souvent par la fondamentale.
+- **Walk:** les notes de la basse avancent note par note généralement sur chaque temps en reliant les accords entre eux
+
+
+### Les accords 
+
+Les accords peuvent être joués par juxtaposition des notes comme sur un piano ou en arpège ou même comme sur
+une guitare où les cordes sont fouettées, ce qui donne les trois catégories : 
+
 
 - **Chord :** les accords sont joués par une justaposition de notes
-- **Bass :** les notes d'un instrument de basse (contrebasse, basse, hélicon) sont jouées en commençant souvent par la fondamentale.
-- **Drum :** la batterie ou les percussions sont jouées et correspondent  en général au canal MIDI 10
 - **Arpeggio :** les accords sont joués en arpèges
+- **Plectrum :** motif de l'accord est joué note par note comme un coup de médiator
+
+
+### Les mélodies 
+
 - **Melody :** les notes de la mélodie sont fournies note par note
 - **Solo :** permettent des ornements solo 
-- **Walk:** les notes de la basse avancent note par note généralement sur chaque temps en reliant les accords entre eux
 - **Scale :** les motifs mélodiques sont construits à partir de la gamme associée à l’accord, généralement de façon répétitive et rythmique.
-- **Plectrum :** motif de l'accord est joué note par note comme un coup de médiator
 - **Automatic Melody :** les notes sont trouvées par MMA de façon automatique.
 
 
