@@ -46,6 +46,8 @@ une guitare où les cordes sont fouettées, ce qui donne les trois catégories :
 - **Automatic Melody :** les notes sont trouvées par MMA de façon automatique.
 
 
+## Conventions sur les pistes 
+
 Les noms des instruments correspondent aux instuments MIDI disponibles sur vote banque MIDI.
 
 Chaque type de piste est régi par son propre algorithme. 
@@ -97,9 +99,8 @@ par défaut sera choisi par MMA.
 
 Notons que Melody et Solo demandent de définir les notes une à une.
 
-C'est dans le fichier mma que vous devez sélectionner les instuments comme indiqué dans le 
-paragraphe suivant.
-
+C'est dans le fichier mma que vous devez sélectionner les instuments comme nous le détaillerons
+bientôt.
 
 Chacun des dix chapitres qui suivent celui-ci détailleront les spécificités de chaque chapitre.
 
@@ -177,6 +178,12 @@ On peut ainsi programmer un silence par la lettre z sur une mesure  par exemple 
 - On peut supprimer une séquence par SEQCLEAR : Drum SEQCLEAR
 - Désactiver un canal MIDI en ajoutant le Canal 0: Arpeggio-1 Channel 0
 - On peut supprimer le son sur une piste entière en lançant mma avec l'ption -T qui spécifie les pistes sur lesquelles il faut jouer
+
+
+## Méthodes de définition d'une piste 
+
+On peut utiliser deux syntaxes pour définir une piste soit en encadrant par les mots Begin et End, soit en répétant le nom de la piste comme les moontrent les deux exemples suivants : 
+
 
 ### Méthode globale 
 
