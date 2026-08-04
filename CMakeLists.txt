@@ -26,15 +26,16 @@ set (CHAPTERS
               ${MD_DIR}/les-boucles.md
             ${MD_DIR}/Partie-III-LesPistes.md
               ${MD_DIR}/présentation-des-pistes.md
-              ${MD_DIR}/la-piste-aria.md
-              ${MD_DIR}/la-piste-chord.md
-              ${MD_DIR}/la-piste-melody.md
-              ${MD_DIR}/la-piste-scale.md
-              ${MD_DIR}/la-piste-arpeggio.md
               ${MD_DIR}/la-piste-drum.md
+              ${MD_DIR}/la-piste-chord.md
+              ${MD_DIR}/la-piste-arpeggio.md
+              ${MD_DIR}/la-piste-scale.md
+              ${MD_DIR}/la-piste-basse.md
+              ${MD_DIR}/la-piste-walk.md
               ${MD_DIR}/la-piste-plectrum.md
               ${MD_DIR}/la-piste-solo.md
-              ${MD_DIR}/la-piste-basse.md
+              ${MD_DIR}/la-piste-melody.md
+              ${MD_DIR}/la-piste-aria.md
               ${MD_DIR}/la-piste-drum-tone.md
               ${MD_DIR}/la-piste-riff.md
             ${MD_DIR}/Partie-IV-PlusLoinDansLesRéglages.md

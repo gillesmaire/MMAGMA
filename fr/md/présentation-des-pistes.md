@@ -5,23 +5,24 @@
 Dans  un fichier MMA, une piste représente une partie musicale sous une des dix formes suivantes : 
 
 - **Chord :** les accords sont joués par une justaposition de notes
-- **Bass :** les notes d'un instrument de basse (contrebasse, basse, hélicon) souvent la fondamentale.
-- **Drum :** batterie ou percussions qui en général en MIDI sont allouées au canal MIDI 10
+- **Bass :** les notes d'un instrument de basse (contrebasse, basse, hélicon) sont jouées en commençant souvent par la fondamentale.
+- **Drum :** la batterie ou les percussions sont jouées et correspondent  en général au canal MIDI 10
 - **Arpeggio :** les accords sont joués en arpèges
 - **Melody :** les notes de la mélodie sont fournies note par note
 - **Solo :** permettent des ornements solo 
 - **Walk:** les notes de la basse avancent note par note généralement sur chaque temps en reliant les accords entre eux
-- **Scale :**  motifs mélodiques construits à partir de la gamme associée à l’accord, généralement de façon répétitive et rythmique.
-- **Plectrum :** motif de l'accord joué note par note comme un coup de médiator
+- **Scale :** les motifs mélodiques sont construits à partir de la gamme associée à l’accord, généralement de façon répétitive et rythmique.
+- **Plectrum :** motif de l'accord est joué note par note comme un coup de médiator
 - **Automatic Melody :** les notes sont trouvées par MMA de façon automatique.
 
 
 Les noms des instruments correspondent aux instuments MIDI disponibles sur vote banque MIDI.
 
-Chaque type de piste est régie par son propre algorithme. 
+Chaque type de piste est régi par son propre algorithme. 
 
-Chaque piste peut donner naissance à des sous pistes et ce de façon illimitée. Les sous pistes sont créées en ajoutant un tiret
-suivi d'un complément de note que vous choisissez sachant que les noms des pistes sont insensibles à la casse : 
+Chaque piste peut donner naissance à des sous pistes et ce de façon illimitée. Les sous pistes sont créées
+en ajoutant un tiret suivi d'un complément de note que vous choisissez sachant que les noms des pistes sont
+insensibles à la casse : 
 
 ~~~
 Drum-1
@@ -68,6 +69,11 @@ Notons que Melody et Solo demandent de définir les notes une à une.
 
 C'est dans le fichier mma que vous devez sélectionner les instuments comme indiqué dans le 
 paragraphe suivant.
+
+
+Chacun des dix chapitres qui suivent celui-ci détailleront les spécificités de chaque chapitre.
+
+Les paragraphes suivants complètent les syntaxes propres à toutes les pistes.
 
 ## Définition des pistes 
 
@@ -123,12 +129,11 @@ Bass Volume 100
 ## Deux façons de configurer une piste 
 
 Une piste dépend de plusieurs paramètres et chaque paramètre peut avoir plusieurs qualificateurs. 
-Par exemple le paramètre Arpeggio que vous verrons plus loin et qui consiste à jouer les accords en arpège peut avoir des paramètres comme Up ou Down pour jouer
-l'arpège de bas ou haut ou de haut en bas en plus d'autres paramètre comme **Voice** qui peut être **piano**, **guitar** ou autre
+Par exemple le paramètre Arpeggio que vous verrons plus loin et qui consiste à jouer les accords en arpège
+peut avoir des paramètres comme Up ou Down pour jouer l'arpège de bas ou haut ou de haut en bas en plus 
+d'autres paramètre comme **Voice** qui peut être **piano**, **guitar** ou autre
 
 On peut déclarer ces paramètres de façon globale ou sous forme répétitive 
-
-
 
 ## Les silences
 
@@ -158,4 +163,5 @@ End
 Arpeggio Voice Guitar1
 Arpeggio Type Up
 ~~~
+
 

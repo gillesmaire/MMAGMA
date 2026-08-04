@@ -3,18 +3,19 @@
 
 ## Présentation 
 
-La piste `Chord` joue les accords du morceau.
+La piste `Chord` joue les accords du morceau avec la syntaxe suivante : 
 
-```mma
+
+~~~mma
 Chord Sequence {
     1 2 100
     3 1 90
     4 1 90
 }
-```
+~~~
 
-
-Les corresponsances de notes sont donc :
+- La première colonne désigne une note pouvant prendre les valeurs 0 pour DO à 6 pour SI. 
+Les corresponsances de notes sont données par le tableau suivant :
 
 |Valeur|Note Française|Note anglaise|
 |:----:|:------------:|------------:|
@@ -26,12 +27,11 @@ Les corresponsances de notes sont donc :
 |   5  |      LA      |      A      |
 |   6  |      SI      |      B      |
 
-
+- La deuixème colonne désigne le nombre de temps. Ainsi dans notre exemple :
 la piste jouera :
-
-* C pendant deux temps
-* F pendant un temps
-* G pendant un temps
+    -  C pendant deux temps
+    -  F pendant un temps
+    -  G pendant un temps
 
 La piste `Chord` est généralement utilisée pour le piano, la guitare ou les nappes.
 
@@ -48,7 +48,7 @@ Un certain nombre de paramètres peuvent agir sur la piste
 - **Voicing :** choisit automatiquement une disposition plus musicale des notes dans les accords. Peut prendre les valeur **close** pour des accords serrés, **open** pour ouvert, **Drop2** pour descendre la deuxième notre la plus hautre ou **Drop3** pour descendre la troisième note la plus haute ou **Random** pour une répartition aléatoires des notes  dans l'accord, **Fixed** basé sur la construction de base de l'accord,
 - **DupRoot :** ajoute une ou plusieurs copies de la fondamentale à d’autres octaves. Valeur 0 pas de duplication fondamentale,1 la fondamentale est doublée une fois,
 2 la fondamentale est doublée 2 fois etc...
-**NoteSpan** : limite la plage des notes jouées. 1 durée normale, >1 notes plus longues, <1 notes plus courtes. O.4 est Stacato, 1.2 et Légato. Si Strum décale le départ de la note, NoteSpan délale sa durée. Ces deux paramètres utilisés ensemble donnent un effet très réaliste.
+- **NoteSpan** : limite la plage des notes jouées. 1 durée normale, >1 notes plus longues, <1 notes plus courtes. O.4 est Stacato, 1.2 et Légato. Si Strum décale le départ de la note, NoteSpan délale sa durée. Ces deux paramètres utilisés ensemble donnent un effet très réaliste.
 
 ## Exemples
 
