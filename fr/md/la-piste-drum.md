@@ -41,13 +41,60 @@ Drum Tone SnareDrum1 SideKick LowTom1 Slap
 ```
 
 - **Tone** peut prendre les valeurs  suivantes :
-    - pour les caisses claires : AcousticBassDrum (35), BassDrum1  (36), SideStick (37), AcousticSnare  (38), HandClap  (39) ElectricSnare  (40)
-    - pour les toms : LowFloorTom (41) ClosedHiHat (42) HighFloorTom  (43) PedalHiHat  (44) LowTom (45) OpenHiHat (46) LowMidTom (47)
-    - pour les toms + cymbales : HiMidTom (48) CrashCymbal1 (49) HighTom (50) RideCymbal1 (51) ChineseCymbal (52) RideBell (53) Tambourine  (54)
-    - pour les cymbales et percusions : SplashCymbal (55) Cowbell  (56) CrashCymbal2  (57) Vibraslap  (58) RideCymbal2  (59) hiBongo (60) LowBongo (61)
-    - pour les Congas et timbales : MuteHiConga (62) OpenHiConga  (63) LowConga  (64) HighTimbale  (65) LowTimbale (66) HighAgogo  (67) LowAgogo  (68)
-    - pour les percussions diverses : Cabasa  (69) Maracas (70) ShortWhistle (71) LongWhistle  (72) ShortGuiro (73) LongGuiro  (74) Claves (75)
-    - pour les bois et les cloches : HiWoodBlock  (76) LowWoodBlock  (77) MuteCuica  (78) OpenCuica  (79) MuteTriangle  (80) OpenTriangle (81)
+    - pour les caisses claires : 
+        - AcousticBassDrum (35)
+        - BassDrum1  (36)
+        - SideStick (37) 
+        - AcousticSnare  (38) 
+        - HandClap  (39) 
+        - ElectricSnare  (40)
+    - pour les toms : 
+        - LowFloorTom (41) 
+        - ClosedHiHat (42) 
+        - HighFloorTom (43) 
+        - PedalHiHat (44) 
+        - LowTom (45) 
+        - OpenHiHat (46) 
+        - LowMidTom (47)
+    - pour les toms + cymbales : 
+        - HiMidTom (48) 
+        - CrashCymbal1 (49) 
+        - HighTom (50) 
+        - RideCymbal1 (51) 
+        - ChineseCymbal (52) 
+        - RideBell (53) 
+        - Tambourine (54)
+    - pour les cymbales et percusions :
+        - SplashCymbal (55)
+        - Cowbell (56) 
+        - CrashCymbal2 (57)
+        - Vibraslap (58) 
+        - RideCymbal2 (59)
+        - hiBongo (60) 
+        - LowBongo (61)
+    - pour les Congas et timbales : 
+        - MuteHiConga (62) 
+        - OpenHiConga  (63) 
+        - LowConga  (64) 
+        - HighTimbale  (65) 
+        - LowTimbale (66) 
+        - HighAgogo  (67) 
+        - LowAgogo  (68)
+    - pour les percussions diverses : 
+        - Cabasa  (69) 
+        - Maracas (70) 
+        - ShortWhistle (71) 
+        - LongWhistle  (72) 
+        - ShortGuiro (73) 
+        - LongGuiro  (74)
+        - Claves (75)
+    - pour les bois et les cloches : 
+        - HiWoodBlock  (76) 
+        - LowWoodBlock  (77) 
+        - MuteCuica  (78) 
+        - OpenCuica  (79) 
+        - MuteTriangle  (80) 
+        - OpenTriangle (81)
 
 - MMA acceptes les variantes de noms suivantes :
     - KickDrum1 = BassDrum1
