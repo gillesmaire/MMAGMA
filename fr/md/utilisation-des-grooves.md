@@ -78,7 +78,16 @@ MMA remplace alors :
 
 Mais il ne change pas les accords
 
-Ceci va jouer tout le long du morceau avec le Groove sélectionné.
+Ceci va jouer le morceau avec le Groove sélectionné.
+
+Si un nouvel appel au groove est effectué dans un morceau par :
+
+~~~mma
+Groove AutreGroove
+~~~~
+
+c'est ce nouveau groove qui sera appliqué, jusquà la fin du morceau jusqu'à ce qu'un
+nouveau groove soit appelé.
 
 ### L'appel de plusieurs Groove
 
@@ -146,7 +155,7 @@ rhumaend sachant que tout ce qui est à gauche des deux points (:) fait partie d
 
 ### Les alias de Groove
 
-- La syntaxe suivante permet de lancer le groove swing via le nomm MoGroove
+- La syntaxe suivante permet de lancer le groove swing via le nom MonGroove
 
 ~~~mma
 DefAlias Swing MonGroove
