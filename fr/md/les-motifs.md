@@ -3,7 +3,7 @@
 Il existe deux mécanismes qui permettent de prendre la main sur les rythmes joués dans la mesure courante.
 
 - les Motifs que nous allons expliciter dans ce chapitre
-- les Séquences  que nous expliterons dans le chapitre sur les [sequences](les-sequences)
+- les Séquences  que nous explitons dans le chapitre sur les [sequences](les-sequences)
 
 ## Définir un motifs
 
@@ -145,7 +145,7 @@ Les vélocités MIDI sont limitées à la plage de 0 à 127. Cependant, MMA ne v
 
 Dans la plupart des cas, les vitesses comprises entre 50 et 100 sont utilisées.
 
-### Utilisation des modèles
+### Utilisation des modèles CETTE PARTIE DOIT ETRE SUPPRIMEE ET INTEGREE AUX PISTES
 
 Les modèles précédents peuvent être définis pour les pistes : 
 

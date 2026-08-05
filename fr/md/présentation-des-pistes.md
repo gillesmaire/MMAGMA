@@ -12,6 +12,10 @@ Dans  un fichier MMA, un morceau comprend plusieurs pistes destinées à être m
 Dans chacune de ces catégories on peut avoir différentes variations, par exemple un accord peut être joué note par note comme le ferait un 
 médiator ou les notes peuvent être jouées ensemble comme au piano. 
 
+On peut mettre en oeuvre plusieurs pistes avec un même instrument, chacun de pistes jouant de façon différentes le morceau.
+
+On peut aussi ne pas avoir de piste percussion ou pas de ligne mélodique.
+
 Détailllons les différentes pistes dont on dispose par catégories
 
 

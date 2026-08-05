@@ -27,6 +27,7 @@ set (CHAPTERS
                ${MD_DIR}/les-sequences.md
             ${MD_DIR}/Partie-III-LesPistes.md
               ${MD_DIR}/présentation-des-pistes.md
+              ${MD_DIR}/les-motifs.md
               ${MD_DIR}/la-piste-drum.md
               ${MD_DIR}/la-piste-chord.md
               ${MD_DIR}/la-piste-arpeggio.md
@@ -40,7 +41,6 @@ set (CHAPTERS
               ${MD_DIR}/la-piste-drum-tone.md
               ${MD_DIR}/la-piste-riff.md
             ${MD_DIR}/Partie-IV-PlusLoinDansLesRéglages.md
-              ${MD_DIR}/les-motifs.md
               ${MD_DIR}/les-riffs.md
               ${MD_DIR}/le-rythme.md
               ${MD_DIR}/les-paroles.md
