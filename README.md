@@ -10,4 +10,5 @@ To generate all the  documentations :
 
 ./compile
 
-Pour récupérer la dernière version du PDF : 
+Pour récupérer la dernière version du PDF : https://github.com/gillesmaire/MMAGMA/tags
+
