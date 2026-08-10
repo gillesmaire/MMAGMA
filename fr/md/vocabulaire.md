@@ -83,9 +83,10 @@ une ligne de basse. Il est possible de modifier la génération automatique par 
 - **Définition :** c'est la piste réservée aux accords joués en arpège. 
 - **Rôle :**  Donner l'harmonie du morceau sans inclure de rythme 
 
-### Mélody
+### Melody
 
-- **Définition :**  une mélodie correspond généralement à une ligne de notes jouée par un instrument mélodique. C'est une suite de note qui suit la mélodie principale.
+- **Définition :** correspond généralement à une ligne de notes jouée par un instrument mélodique. 
+C'est une suite de note qui suit la mélodie principale.
 - **Rôle :** jouer la ligne mélodie par un instrument accompagnant la voix ou la remplaçant
 
 ### Solo 

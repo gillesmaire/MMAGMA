@@ -167,7 +167,19 @@ Ce nouveau nom de groove ne doit pas être déjà utilisé ni dans un Groove exi
 
 La directive AllGrooves permet d'appliquer des modification à tous les Groove utilisés. 
 
-Dans l'exempe suivant sur tous les Groove utilisés on provoquera, pour la Basse une articulation de 20 et on augmentera son volume de 30
+L'exemmple le plus typique est celui du choix de l'instrument pour chaque piste : 
+
+
+~~~mma
+Begin AllGrooves
+   Arpeggio Voice JazzGuitar
+   Bass Voice FretlessBass
+End
+~~~
+
+Cet exemple se généralise pour toutes les pistes permettant de choisir par si le solo sera à la guitare ou à la trompette. 
+
+Mais on peut également définir des paramètres sur tous les Groove utilisés. Ainsi  on provoquera, pour la Basse une articulation de 20 et on augmentera son volume de 30
 
 ~~~mma
 begin AllGrooves
@@ -187,7 +199,7 @@ On peut ajouter d'autres modifieur dans la directive AllGrooves :
 
 
 - Verbose=True/False qui affichera les noms des grooves affectés
-- Only=A ou Only=A,B pour restreindre l'apllication à une liste de Groove
+- Only=A ou Only=A,B pour restreindre l'application à une liste de Groove
 - Skip=A ou Skip=A,B pour ne pas appliquer les modicitaton à une liste de Groove 
 
 
