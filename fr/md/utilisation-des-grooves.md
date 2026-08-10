@@ -86,7 +86,7 @@ Si un nouvel appel au groove est effectué dans un morceau par :
 Groove AutreGroove
 ~~~~
 
-c'est ce nouveau groove qui sera appliqué, jusquà la fin du morceau jusqu'à ce qu'un
+c'est ce nouveau groove qui sera appliqué, jusquà la fin du morceau ou jusqu'à ce qu'un
 nouveau groove soit appelé.
 
 ### L'appel de plusieurs Groove
@@ -167,7 +167,7 @@ Ce nouveau nom de groove ne doit pas être déjà utilisé ni dans un Groove exi
 
 La directive AllGrooves permet d'appliquer des modification à tous les Groove utilisés. 
 
-Dans l'exempe suivant sur tous les Groove utilisés on provoquera, pour la Basse une articulation de 20 et on augmentera son volime de 30
+Dans l'exempe suivant sur tous les Groove utilisés on provoquera, pour la Basse une articulation de 20 et on augmentera son volume de 30
 
 ~~~mma
 begin AllGrooves
@@ -196,7 +196,7 @@ On peut ajouter d'autres modifieur dans la directive AllGrooves :
 GrooveClear permet de ne plus utiliser les Groove qui ont été chargés en mémoire. Cette instruction peut être utile
 quand on désire changer de Groove après une introduction. L'utilisation de GROOVECLEAR efface les données existantes ainsi que les
 alias de Groove et force une relecture du fichier de la bibliothèque.
-Veuillez noter que les paramètres de bas niveau tels que les affectations de pistes MIDI ne sont pas modifiés par cette commande.
+Il est à noter que les paramètres de bas niveau tels que les affectations de pistes MIDI ne sont pas modifiés par cette commande.
 Les alias Groove sont également supprimés avec cette commande.
 Les paramètres de bas niveau tels que les affectation de pistes MIDI ne sont pas modifiés par cette commande. 
 
@@ -204,12 +204,13 @@ Les paramètres de bas niveau tels que les affectation de pistes MIDI ne sont pa
 ### Les sticky Grooves
 
 On peut vouloir qu'une piste soit invisible aux mécanismes de Groove par exemmple pour une piste de clic.
-La piste ClicTest sera définiee comme : 
+La piste ClicTest sera définie comme : 
 
 ~~~mma
-Drum-Test Sticky True
+ClicTest Sticky True
 ~~~
-- La piste Sticky peut également prendre les valeurs **False**, **On**,  **1**, **Off** ou **0** 
+
+La piste Sticky peut également prendre les valeurs **False**, **On**,  **1**, **Off** ou **0** 
 
 ### Noms de Groove identiques 
 
@@ -267,7 +268,7 @@ La commande play à la racine de MMAGMA fonctionne sous Linux uniquement, elle p
 ./play fichier
 ~~~~
 
-- On note qu'il ne faut pas adjoindre l'extension mma au fichier
+- On note qu'on peut ne pas adjoindre l'extension mma au fichier
 - Le Groove sera le dernier utilisé si aucun paramètre de groove n'est donné
 - Si on ajoute un paramètre de groove ce paramètre viendra remplacer le paramètre de groove par défaut : 
 

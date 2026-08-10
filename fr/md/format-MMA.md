@@ -145,7 +145,6 @@ A#5 B Cmag7 C13#11 Dadd#9 Edim7(addM7) F7#9#11 G7b5(add13)
 ## Les silences
 
 
-
 Lorsqu'une piste est créée, elle peut contenir des périodes de silence. Par exemple,
 dans une piste de contrebasse, nous ne voulons probablement pas le son perdure sur 
 une barre entière: nous pouvons faire sonner les notes sur le premier et deuxième temps
@@ -158,15 +157,20 @@ Pour mettre en sourdine  une note ou une série de notes, sur une piste (ou tout
 on peut utiliser un nom d'accord spécial nommé z. Ce z ne peut pas êre mis en majuscule contrairement aux autres
 mots clés du language. 
 
-Lorsqu'on utilise z collé derrière  un nom d'accord, il mettra en sourdine toutes les pistes à
-l'exception des pistes DRUM. 
-Vous pourrez cependant désactiver les pistes  Accords, Arpège, Gamme, Basse, Basse en Walking, Vocal ou Basse
-en ajoutant un spécificateur de piste à  z. 
 
-Les spécificateurs de piste sont : 
+
+Lorsqu'on utilise z collé derrière un nom d'accord :
+   
+    - et si ce caractère z est suivi d'un caractère blanc toutes les pistes à l'exception des pistes
+     DRUM seront mises en sourdine. 
+    - si ce caractère est suivi d'un D, W, B, C, A, Sn ,R, P  les pistes  Drum (batterie), Walking Basse, Bass (basse), Chord (accord),
+    Arpeggio (arpège), Scale(gamme), R (aria), P(plectre) seront mise en sourdine
+    
+
+Les spécificateurs de piste sont donc: 
 
 - *D* les pistes de batterie (Drum)
-- *W* les pistes de basses en walking 
+- *W* les pistes de basses en walking Basse
 - *B* les traces de basse,
 - *C* les pistes d'accord (Chord),
 - *A* les pistes d'arpège,
@@ -175,7 +179,7 @@ Les spécificateurs de piste sont :
 - *P* les pistes de plectre.
 - *!* les silences. 
 
-Si vous ne spécifiez pas un nom d'accord juste avant ces spécificateurs, l'accord précédent sera utilisé. 
+Si l'on ne spécifie pas un nom d'accord juste avant ces spécificateurs, l'accord précédent sera utilisé. 
 
 On ne peut pas utiliser un accord Nom avec le spécifiateur !.
 
@@ -218,7 +222,7 @@ Cm / Dm
 ~~~
 
 
-Le sybbole @ sert quant à lui à dire :
+Le symbole @ sert quant à lui à dire :
 
 - on veut cet accord à ce moment exact dans la mesure
 - Par exemple Dm@3 : Le rém commence au temps 3
@@ -261,8 +265,8 @@ Cmaj7 G7@2.5 Fmaj7 G7@3.5
 ## Pistes Chord
 
 
-On peut vouloir qu'on instrument je suivent pas une ligne d'accord mais qui suive 
-un motif fxe comme en rap.
+On peut imposer qu'un instrument ne suive pas une ligne d'accord mais  suive 
+un motif fixe comme en rap.
 
 On applique dans ce cas là la notation du style
 
@@ -286,9 +290,9 @@ et ce pendant tout le morceau
 On peut stopper cette répétiton par la syntaxe
 
 ~~~mma
-
 Bass Chords
 ~~~
+
 ou 
 
 ~~~mma
@@ -336,5 +340,3 @@ Notons que la syntaxe suivante est aussi valide :
 ~~~mma
 Tempo $(80*2)
 ~~~
-
-

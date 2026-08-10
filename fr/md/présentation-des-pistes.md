@@ -9,19 +9,24 @@ Dans  un fichier MMA, un morceau comprend plusieurs pistes destinées à être m
 - Les accords 
 - Les lignes mélodiques 
 
-Dans chacune de ces catégories on peut avoir différentes variations, par exemple un accord peut être joué note par note comme le ferait un 
-médiator ou les notes peuvent être jouées ensemble comme au piano. 
+Dans chacune de ces catégories on peut avoir différentes variations, par exemple un accord peut être joué note par note comme le ferait un médiator ou les notes peuvent être jouées ensemble comme au piano. 
 
 On peut mettre en oeuvre plusieurs pistes avec un même instrument, chacun de pistes jouant de façon différentes le morceau.
 
 On peut aussi ne pas avoir de piste percussion ou pas de ligne mélodique.
 
-Détailllons les différentes pistes dont on dispose par catégories
+On peut utiliser MMA sans se soucier des pistes et en utilisant uniquement des Grooves qui choisissent les batteries, les lignes de basse,  mais on peut, voiloir ajouter des solos ou des riffs sur certaines pistes comme la piste Reef ou Solo.
+Détailllons les différentes pistes dont on dispose par catégories, même si certaines ne sont utiles que pour établir de nouveaux Grooves.
+
+On peut aussi changer l'instrument par défaut d'une piste.
+
 
 
 ### Percussions
 
 - **Drum :** la batterie ou les percussions sont jouées et correspondent  en général au canal MIDI 10
+
+Nous verrons comment changer sans difficulté  un des composant de la batterie par un autre.
  
 ### La ligne de Basse
 
@@ -30,6 +35,7 @@ Les lignes de basse peuvent être jouées suivant deux algorythmes :
 - **Bass :** les notes d'un instrument de basse (contrebasse, basse, hélicon) sont jouées en commençant souvent par la fondamentale.
 - **Walk:** les notes de la basse avancent note par note généralement sur chaque temps en reliant les accords entre eux
 
+Là encore nous pourrons changer une basse instrument par défaut par une contrebasse ou un hélicon par exemple.
 
 ### Les accords 
 
@@ -49,6 +55,9 @@ une guitare où les cordes sont fouettées, ce qui donne les trois catégories :
 - **Scale :** les motifs mélodiques sont construits à partir de la gamme associée à l’accord, généralement de façon répétitive et rythmique.
 - **Automatic Melody :** les notes sont trouvées par MMA de façon automatique.
 
+
+Mes mélodes et les solos,  nécessitent de définir la tonalité du morceau car les notes sont données en position relatives par 
+rapport à l'accord.
 
 ## Conventions sur les pistes 
 
