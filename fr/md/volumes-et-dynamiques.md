@@ -18,25 +18,47 @@ Les vélocités 70,90 et 90 sont celles définies sur la basse à l'initialisati
 
 Il est possible de modifier le volume non pas par un pourcentage mais par des valeurs suivant le tableau suivant : 
 
-|  Nom symbolique  |   Pourcentage  |
-|:----------------:|--------------:|
-| off              |        0       |
-| pppp             |        5       |
-| ppp              |       10       |
-| pp               |       25       |
-| p                |       40       |
-| mp               |       70       |
-| m                |      100       |
-| mf               |      110       |
-| f                |      130       |
-| ff               |      160       |
-| fff              |      180       |
-| ffff             |      200       |
+|  Nom symbolique  |   Pourcentage  |   Notation musicale   |
+|:----------------:|:--------------:|:---------------------:|
+| off              |        0       |                       |
+| pppp             |        5       |     pianissississimo  |
+| ppp              |       10       |     pianississimo     |
+| pp               |       25       |     pianissimo        |
+| p                |       40       |     piano             |
+| mp               |       70       |     mezzo-piano       |
+| m                |      100       |     mezzo             |
+| mf               |      110       |     mezzo-forte       |
+| f                |      130       |     forte             |
+| ff               |      160       |     fortissimo        |
+| fff              |      180       |     fortississimo     |
+| ffff             |      200       |     fortissississimo  |
 
 On positionnera le volume par la variable Volume : 
 
 ~~~mma
 Volume ff
+~~~
+
+On peut modfier le pourcentage correspondant à un nom symbolique, par exemple mf eut être changé de sa valeur par défaut qui est 110 à 115
+
+~~~mma
+AdjustVolume MF=115 
+~~~
+
+Cela peut se faire pour plusieurs valeurs à la fois 
+
+~~~mma
+AdjustVolume MF=115 f=120
+~~~
+
+On peut utiliser les variable comme mp pour faire des calculs
+~~~mma
+AdjustVolume Mf=mp+200 
+~~~
+
+La notation suivante ajoute 20% à la valeur actuelle
+~~~mma
+AdjustVolume mf=+20
 ~~~
 
 ## L'accent
@@ -50,6 +72,7 @@ Define Walk W1234 1 4 100; 2 4 70; 3 4 80; 4 4 70
 ~~~
 
 Peut être remplacée par une initialisation globale suivi du paramètre Accent comme suit : 
+
 
 ~~~mma
 Define Walk W1234 1 1 90 * 4 

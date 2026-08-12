@@ -1,0 +1,1 @@
+gh release upload LastRelease fr/pdf/MMAGMA-fr.pdf --clobber
