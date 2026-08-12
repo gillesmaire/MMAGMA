@@ -106,6 +106,36 @@ Bass Accent
 ~~~
 
 
-## Ajuster les volumes
+## Le volume master
 
+MMA utilise les volumes des pistes et du master pour déterminer la volocité d'une 
+note.  Par défaut le volume de la piste est à 60% et le volume du master est  à
+40%.
+
+
+On peut changer ces ratios en affectant une valeur de Ration  à la variable AdjustVolume. Par défaut on : 
+
+~~~mma
+AdjustVolume Ratio=60 
+~~~
+
+
+On peut passer le volume de la piste à 40% et donc le volume du master à 60% par
+la commande :
+
+~~~mma
+AdjustVolume Ration=40
+~~~
+
+Si on veut écouter que la piste et plus l'ensemble des autres pistes : 
+
+~~~mma
+AdjustVolume Ration=100
+~~~
+
+Et si on veut muter la piste 
+
+~~~mma
+AdjustVolume Ration=0
+~~~
 
