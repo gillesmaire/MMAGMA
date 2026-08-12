@@ -139,3 +139,91 @@ Et si on veut muter la piste
 AdjustVolume Ration=0
 ~~~
 
+
+## Volume
+
+La commande *Volume* permet de régler le volume des pistes ou du master. 
+
+Pour régler la commande du master à *piano*: 
+
+~~~mma
+Volume p
+~~~
+
+Pour régler la commande de la piste Guitar-Solo à fortissimo.
+
+~~~mma
+Guitar-Solo ff
+~~~
+
+Notons que dans la plupart des cas les volumes des pistes se feront dans les Groove, à par pour les pistes solo qu'on peut écrire dans le fichier MMA.
+
+On peut modifier le volume d'une piste en spécifiant ces volumes sur les mesures:
+
+~~~mma
+Drum Volume mp ff / ppp
+~~~
+
+Ici le / sert encore à répéter la valeur ff.
+
+
+On peut chosir un volume entre fff (180) et ffff (200) par exemple 189 par la 
+commande : 
+
+~~~mma 
+Volume 189
+~~~
+
+Mais il reste plus optimal de régler le snon non pas en valeur absolue mais en  valeur relative : 
+
+~~~
+Volume -20%
+~~~
+
+Cette commande baissant le son du général de 20%.
+
+## Cresc et Decresc
+
+
+Cresc et Decresc permettent de monter ou de descendre le volume sur une ou plusieurs mesures. Ces deux commandes peuvent s'appliquer à une piste ou au master.
+
+Si on augmente vers un volume inférieur, un Warning sera généré et aucune augmentation de son ne sera constatée. Cette remarque s'applique également à la diminution du volume vers un volume supérieur.
+
+Chacune de ces commandes nécessitent deux ou trois arguments :
+    
+    - le volume de départ 
+    - le volume de fin 
+    - le nombre de mesures affectées par ce changement de volume sonore.
+    
+Si on n'utilise que deux arguments, le volume de départ sera considéré comme le volume courant et les deux arguments donnés correspondrons au volume de fin et au nombre de mesures concernées par la variation de
+volume.
+
+À titre d'exemple la commande suivante va augmenter le volume courant vers forte pendant 2 mesures. 
+
+~~~mma
+Cres f 2
+~~~
+
+La commande suivante va baisser la piste nommée Guitar-Solo sur 2 mesures
+
+~~~mma
+Guitar-Solo Decresc pp  2
+~~~
+
+Le commandes Cresc et Decresc peuvent être utilisée non plus avec les valeurs musicales pp ff mais avec des valeurs numériques ce qui n'est peut être pas la meilleure des pratiques
+
+On peut également utiliser des % par exemple 
+
+~~~mma
+Decresc -10% 40% 4
+~~~
+
+
+## RVolume
+
+
+## Sauvegarde et restauration des volumes
+
+
+
+
