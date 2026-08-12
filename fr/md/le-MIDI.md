@@ -60,13 +60,34 @@ Ces valeurs peuvent changer en continu, créant des courbes.
 
 ### Les contrôleurs les plus importants
 
-- **CC7 :**  Volume (Channel Volume) règle le volume global d’un canal utilisé pour les mixages MIDI
+- **CC7 :**  Volume (Channel Volume) règle le volume global d’un canal utilisé pour les mixages MIDI.
 - **CC10 :** Panoramique gauche droite : 0 = gauche, 64 = centre, 127 = droite
 - **CC11 :**  Expression volume musical agit comme un volume secondaire
 - **CC11 :** nuance expressive
 - **CC64 :**  Sustain (pédale de sustain) 0–63 : relâchée 64–127 : enfoncée
 - **CC1 :** Modulation souvent liée au vibrato et dépendante des synthés
 
+
+### La vélocité et le volume 
+
+Il est possible de contrôler le volume d'un instrument midi de différentes façons:
+
+   - par l'utilisation d'un nombre appelé vélocité  qui  peut prendre n'importe quelle valeur de  0 à 127,
+   sachant que le 0 mute la note. Cette vélocité correspond à l'intensité avec laquelle la note est jouée. 
+   Une fois que la note est lancée avec une vélocité donné on ne peut plus modifier cette valeur.
+   - par une valeur sur un canal donné, c'est à dire monter le volume du piano et baisser celui des percussions.
+   - par le volume sur le master ou le général, là c'est l'ensemble des pistes qui est monté ou descendu.
+   
+Les instruments MIDI possèdent des contrôleurs qui définissent le volume pour un canal donné. 
+
+Chaque son va être commandé en précisant :
+
+    - le MSB représente la banque de son (par exemple Piano)
+    - le LSB représente l'instrument (par exemple Piano électrique)
+    - Program représente le son dans la banque choisie par exemple 
+    
+    
+    
 ### Les messages système
 
 Ces messages concernent :

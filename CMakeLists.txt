@@ -24,7 +24,8 @@ set (CHAPTERS
               ${MD_DIR}/format-MMA.md
               ${MD_DIR}/les-accords.md
               ${MD_DIR}/les-boucles.md
-               ${MD_DIR}/les-sequences.md
+              ${MD_DIR}/les-sequences.md
+              ${MD_DIR}/volumes-et-dynamiques.md
             ${MD_DIR}/Partie-III-LesPistes.md
               ${MD_DIR}/présentation-des-pistes.md
               ${MD_DIR}/les-motifs.md
