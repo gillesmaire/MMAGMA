@@ -5,7 +5,7 @@
 ## Vélocité 
 
 La vélocité est l'intensité de chaque note jouée contrairement à 
-l'augmentation générale d'une piste qui dépendra de la variable MIDIVolume.
+l'augmentation générale du niveau général qui dépendra de la variable MIDIVolume.
 
 La vélocité initiale dépend du paramètre vélocité donné dans une 
 Sequence, par exemple 
@@ -51,12 +51,14 @@ Cela peut se faire pour plusieurs valeurs à la fois
 AdjustVolume MF=115 f=120
 ~~~
 
-On peut utiliser les variable comme mp pour faire des calculs
+On peut utiliser les variables comme mp pour faire des calculs
+
 ~~~mma
 AdjustVolume Mf=mp+200 
 ~~~
 
 La notation suivante ajoute 20% à la valeur actuelle
+
 ~~~mma
 AdjustVolume mf=+20
 ~~~
@@ -94,10 +96,10 @@ Bass Accent {1 20} // {1 30 3 30}
 
 Ici l'accent s'effectue 
 
-
     - sur la mesure 1 au battement 1 par une augmentation de 20%
     - sur la mesure 2 et 3 on répète la même augmenation qu'à la mesure 1
-    - sur la mesure 4 au battement 1 par une augmentation de 30% et au battement 2 par une augmentation de 30%
+    - sur la mesure 4 au battement 1 par une augmentation de 30% et au battement 2 
+     par une augmentation de 30%
 
 Pour supprimer les accents sur les mesures à suivre : 
 
@@ -106,14 +108,14 @@ Bass Accent
 ~~~
 
 
-## Le volume master
+## Le volume général ou master
 
-MMA utilise les volumes des pistes et du master pour déterminer la volocité d'une 
+MMA utilise les volumes des pistes et du master pour déterminer la vélocité d'une 
 note.  Par défaut le volume de la piste est à 60% et le volume du master est  à
 40%.
 
 
-On peut changer ces ratios en affectant une valeur de Ration  à la variable AdjustVolume. Par défaut on : 
+On peut changer ces ratios en affectant une valeur de Ratio  à la variable AdjustVolume. Par défaut on a: 
 
 ~~~mma
 AdjustVolume Ratio=60 
@@ -121,22 +123,22 @@ AdjustVolume Ratio=60
 
 
 On peut passer le volume de la piste à 40% et donc le volume du master à 60% par
-la commande :
+la commande:
 
 ~~~mma
-AdjustVolume Ration=40
+AdjustVolume Ratio=40
 ~~~
 
-Si on veut écouter que la piste et plus l'ensemble des autres pistes : 
+Si on veut n'écouter que la piste et plus l'ensemble des autres pistes: 
 
 ~~~mma
-AdjustVolume Ration=100
+AdjustVolume Ratio=100
 ~~~
 
-Et si on veut muter la piste 
+Et si on veut muter la piste:
 
 ~~~mma
-AdjustVolume Ration=0
+AdjustVolume Ratio=0
 ~~~
 
 
@@ -156,9 +158,9 @@ Pour régler la commande de la piste Guitar-Solo à fortissimo.
 Guitar-Solo ff
 ~~~
 
-Notons que dans la plupart des cas les volumes des pistes se feront dans les Groove, à par pour les pistes solo qu'on peut écrire dans le fichier MMA.
+Notons que dans la plupart des cas, les volumes des pistes se feront dans les Groove, à part pour les pistes solo qu'on peut écrire dans le fichier MMA.
 
-On peut modifier le volume d'une piste en spécifiant ces volumes sur les mesures:
+On peut modifier le volume d'une piste en spécifiant ses volumes sur les mesures:
 
 ~~~mma
 Drum Volume mp ff / ppp
@@ -190,7 +192,7 @@ Cresc et Decresc permettent de monter ou de descendre le volume sur une ou plusi
 Si on augmente vers un volume inférieur, un Warning sera généré et aucune augmentation de son ne sera constatée. Cette remarque s'applique également à la diminution du volume vers un volume supérieur.
 
 Chacune de ces commandes nécessitent deux ou trois arguments :
-    
+ 
     - le volume de départ 
     - le volume de fin 
     - le nombre de mesures affectées par ce changement de volume sonore.
@@ -201,7 +203,7 @@ volume.
 À titre d'exemple la commande suivante va augmenter le volume courant vers forte pendant 2 mesures. 
 
 ~~~mma
-Cres f 2
+Crec f 2
 ~~~
 
 La commande suivante va baisser la piste nommée Guitar-Solo sur 2 mesures
@@ -210,19 +212,79 @@ La commande suivante va baisser la piste nommée Guitar-Solo sur 2 mesures
 Guitar-Solo Decresc pp  2
 ~~~
 
-Le commandes Cresc et Decresc peuvent être utilisée non plus avec les valeurs musicales pp ff mais avec des valeurs numériques ce qui n'est peut être pas la meilleure des pratiques
+Les commandes Cresc et Decresc peuvent être utilisées non plus avec les valeurs musicales pp ff mais avec des valeurs numériques ce qui n'est peut être pas la meilleure des pratiques
 
-On peut également utiliser des % par exemple 
+On peut également utiliser les valeurs en pourcentages, par exemple:
 
 ~~~mma
 Decresc -10% 40% 4
 ~~~
 
+## Swell
+
+La technique Swell appelée en musique messa di voce, consiste à créer un crescendo suivi d'un decrescendo ou l'inverse, c'est  à dire un descrescendo suivi d'un crescendo.
+
+Un Swell peut être appliqué sur le volume général ou sur une seule piste.
+
+   - Sur une piste 
+
+~~~mma
+Chord Swell pp ff 4
+~~~
+ 
+   - Sur le volume général 
+
+~~~mma
+Swell pp ff 4
+~~~
+
+On donne le volume de départ, le volume d'arrivée et le nombre de mesures sur les quelles va s'opérer le Swell.
+
+Si on donne un seul volume, le Swell se fera du volume actuel à celui de la fin.
 
 ## RVolume
 
+Dans la commande RVolume le R vient de random, et elle  peut s'appliquer à une piste. Par défaut, toutes les pistes ont le paramètre RVolume positionné à 0. 
+
+Si on positionne le RVolule à 10, chaque notes aura un volume qui sera modifié aléatoirement  de 10% plus haut ou plus bas. L'idée est de reproduire un jeu humain et non pas mécanique.
+
+On peut spécifier le volume avec deux valeurs dans ce cas la première sera la le pourcentage maximum et la deuxième le pourcentage minimum.
+
+Ainsi sont équivalents : 
+
+~~~mma
+Chord RVolume -10 10
+Chord RVolule 10
+~~~
+
+On peut également fournir  une liste de volumes minima maxima : 
+
+~~~mma
+Chord RVolume 0,10 -10,0 -10,20 8 
+~~~
+
 
 ## Sauvegarde et restauration des volumes
+
+
+Souvent les volumes sont définis dans le Groove et la meilleure façon de modifier un de ces volumes est de  modifier la piste concernée de la façon suivante :
+
+~~~mma
+Groove GrooveConcerne
+PisteConcernee Volumm ff
+DefGroove GrooverConcerne
+~~~
+
+Pour récupérer un ancien volume utilisé on peut utiliser la macro $_LastVolume.
+
+Par exemple : 
+
+~~~mma
+Volume ppp
+
+Cresc f 5 
+$_LastVolume
+~~~
 
 
 
