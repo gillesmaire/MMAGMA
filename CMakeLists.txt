@@ -17,7 +17,7 @@ set (CHAPTERS
               ${MD_DIR}/vocabulaire.md
               ${MD_DIR}/le-MIDI.md
               ${MD_DIR}/les-soundfonts.md
-            ${MD_DIR}/Partie-II-PriseEnMain.md
+            ${MD_DIR}/Partie-II-Mise-en-oeuvre.md
               ${MD_DIR}/premier-fichier-mma.md
               ${MD_DIR}/Ameliorations-MIDI-Linux.md
               ${MD_DIR}/utilisation-des-grooves.md
@@ -26,7 +26,7 @@ set (CHAPTERS
               ${MD_DIR}/les-boucles.md
               ${MD_DIR}/les-sequences.md
               ${MD_DIR}/volumes-et-dynamiques.md
-            ${MD_DIR}/Partie-III-LesPistes.md
+            ${MD_DIR}/Partie-III-Creation-des-Grooves.md
               ${MD_DIR}/présentation-des-pistes.md
               ${MD_DIR}/les-motifs.md
               ${MD_DIR}/la-piste-drum.md
