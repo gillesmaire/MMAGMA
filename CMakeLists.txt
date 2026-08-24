@@ -49,6 +49,7 @@ set (CHAPTERS
               ${MD_DIR}/lire-un-fichier-MIDI.md
             ${MD_DIR}/Partie-V-ConceptionDesGrooves.md
               ${MD_DIR}/instruments-à-cordes-pincées.md
+              ${MD_DIR}/ChordV-et-MMA.md
               ${MD_DIR}/les-options-de-mma.md
               )
 
