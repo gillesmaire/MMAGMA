@@ -15,12 +15,33 @@ On peut mettre en oeuvre plusieurs pistes avec un même instrument, chacun de pi
 
 On peut aussi ne pas avoir de piste percussion ou pas de ligne mélodique.
 
-On peut utiliser MMA sans se soucier des pistes et en utilisant uniquement des Grooves qui choisissent les batteries, les lignes de basse,  mais on peut, voiloir ajouter des solos ou des riffs sur certaines pistes comme la piste Reef ou Solo.
+On peut utiliser MMA sans se soucier des pistes et en utilisant uniquement des Grooves qui choisissent les batteries, les lignes de basse,  mais on peut, voiloir ajouter des solos ou des riffs sur certaines pistes.
+
 Détailllons les différentes pistes dont on dispose par catégories, même si certaines ne sont utiles que pour établir de nouveaux Grooves.
 
-On peut aussi changer l'instrument par défaut d'une piste.
+Nous pouvons distinguer deux types de pistes : 
+
+   - Celles qui sont jouée par les grooves :
+      - les percussions ou Drums 
+      - la ligne de basse qui peuvent être joués soit 
+          - via une piste Bass
+          - via une piste Walk pour Walking Bass
+      - les accords qui peuvent être joués : 
+          - via une piste chord
+          - via une piste Plectrum simulant des cords jouées battues presque simultanément comme 
+          avec un médiator
+          - via une piste  Arpeggioo où les accords sont joués en Arpège
+   - Celles qui peuvent être ajoutée nons plus dans le groove mais dans le fichier MMA lui même 
+   sous forme de mélodies : 
+      - via la piste Melody
+      - via la piste Solo
+      - via la piste Riff
+      - via la piste Scale
+      - via la piste Aria
 
 
+Pour les pistes de Groove, pn verra qu'on peut aisément remplacer un instrument par un autre.
+Paour les pistes mélodique on devra indiquer l'instrument explicitement.
 
 ### Percussions
 

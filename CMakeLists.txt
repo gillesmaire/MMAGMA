@@ -26,6 +26,10 @@ set (CHAPTERS
               ${MD_DIR}/les-boucles.md
               ${MD_DIR}/les-sequences.md
               ${MD_DIR}/volumes-et-dynamiques.md
+              ${MD_DIR}/pistes-solo-et-melodie.md
+              ${MD_DIR}/la-piste-solo.md
+              ${MD_DIR}/la-piste-aria.md
+              ${MD_DIR}/la-piste-riff.md
             ${MD_DIR}/Partie-III-Creation-des-Grooves.md
               ${MD_DIR}/présentation-des-pistes.md
               ${MD_DIR}/les-motifs.md
@@ -38,9 +42,7 @@ set (CHAPTERS
               ${MD_DIR}/la-piste-plectrum.md
               ${MD_DIR}/la-piste-solo.md
               ${MD_DIR}/la-piste-melody.md
-              ${MD_DIR}/la-piste-aria.md
               ${MD_DIR}/la-piste-drum-tone.md
-              ${MD_DIR}/la-piste-riff.md
             ${MD_DIR}/Partie-IV-PlusLoinDansLesRéglages.md
               ${MD_DIR}/les-riffs.md
               ${MD_DIR}/le-rythme.md
