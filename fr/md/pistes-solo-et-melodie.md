@@ -3,8 +3,7 @@
 
 ## Présentation 
 
-
-Nous avons vu comment utiliser la batterie et les accords, nous allons voir comment ajouter des lignes
+Nous avons énuméré la liste des pistes nous allons voir comment ajouter des lignes
 mélodiques. Ces mélodies **solo** et **mélody** sont à compléter avec les **harmonies** que nous verrons dans le chapitre correspondant.
 
    - Il est possible d'ajouter des mélodies et des harmonies via des instruments MIDI via l'ordre MidiInc mais on dispose également de pistes réservées aux mélodies : 
@@ -49,7 +48,14 @@ Dans le deuxième exemple l'instrument ne sera pas TenorSax mais celui défini p
 
 ### Armure et KeySig
 
-Pour chacune des pistes Solo ou Mélodie, on devra  définir l'armure c'est à dire les dièses et les bémols  de début de portées qui s'appliquent à la partition. Ceci se définit par le mot clé **KeySig**.
+
+
+Pour chacune des pistes Solo ou Mélodie, on devra définir l'armure c'est à dire les dièses et les bémols  de début de portées qui s'appliquent à la partition ou plus simplement la tonalité du morceau.
+
+En général la tonalité d'un morceau est donnée par le dernier accord joué si celle la fait office de conclusion musicale.
+
+
+Ceci se définit par le mot clé **KeySig**.
 
 Le tableau suivant donne les Keysig de base de chacunes des tonalités majeures et mineures.
 
@@ -75,7 +81,9 @@ Le tableau suivant donne les Keysig de base de chacunes des tonalités majeures 
 
 Bien sûr on peut également utiliser des armures différentes pour produire des mélodies qui sortent des tonalités. 
 
-Enfin les mots clé Major Minor ou leur raccourci Maj Min peuvent être ajoutés
+Enfin les mots clé Major Minor ou leur raccourci Maj Min peuvent être ajoutés.
+
+
 
 
 
@@ -108,7 +116,7 @@ Les notes jouées dans un solo ou une mélodie doivent être définies accompagn
 **Exemples : **
 
 - Bass C 1 1 : la basse joue un Do pendant une ronde 
-- Bass C 4 4 4 4 : la basse jour 4 noires 
+- Bass C 4 4 4 4 : la basse pour 4 noires 
 - Bass C 81 82 81 82 : la base joue quatre noire façon swing
 - Bass C 96T : joue 96 ticks MIDI
 
@@ -173,9 +181,6 @@ F
 ~~~
 
 ### Exemple intéressant
-
-Nous pouvons 
-
 
 ## La vélocité 
 

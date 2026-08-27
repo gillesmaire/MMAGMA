@@ -191,7 +191,7 @@ Bass Volume 100
  Abm
 ~~~
 
-## différentes façons de configurer une piste 
+## Les différentes façons de configurer une piste 
 
 Une piste dépend de plusieurs paramètres et chaque paramètre peut avoir plusieurs qualificateurs. 
 Par exemple le paramètre Arpeggio que vous verrons plus loin et qui consiste à jouer les accords en arpège

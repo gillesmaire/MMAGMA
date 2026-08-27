@@ -308,9 +308,9 @@ AccousticGrandPiano l'ordre envoyé n'est pas 1 mais 0.
 
 Le MIDI est donc une représentation minimale mais extrêmement puissante :
 
-- qui ne produit pas  de son
-- qui ne gère pas de style des morceaux
-- qui ne gère pas l’interprétation
+- qui ne produit pas de son,
+- qui ne gère pas de style des morceaux,
+- qui ne gère pas l’interprétation,
 
-mais qui traite Juste des événements musicaux dans le temps.
+mais qui traite uniquement les événements musicaux dans le temps.
 
