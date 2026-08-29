@@ -26,7 +26,6 @@ set (CHAPTERS
               ${MD_DIR}/les-boucles.md
               ${MD_DIR}/les-sequences.md
               ${MD_DIR}/volumes-et-dynamiques.md
-              ${MD_DIR}/pistes-solo-et-melodie.md
               ${MD_DIR}/la-piste-solo.md
               ${MD_DIR}/la-piste-aria.md
               ${MD_DIR}/la-piste-riff.md
@@ -47,7 +46,6 @@ set (CHAPTERS
               ${MD_DIR}/les-riffs.md
               ${MD_DIR}/le-rythme.md
               ${MD_DIR}/les-paroles.md
-              ${MD_DIR}/pistes-solo-et-melodie.md
               ${MD_DIR}/lire-un-fichier-MIDI.md
             ${MD_DIR}/Partie-V-ConceptionDesGrooves.md
               ${MD_DIR}/instruments-à-cordes-pincées.md
