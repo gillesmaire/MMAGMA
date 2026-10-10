@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+
+import json
+import subprocess
+import sys
+
+
+def get_grooves(filename):
+    result = subprocess.run(
+        ["mma", "-Djs", filename],
+        capture_output=True,
+        text=True
+    )
+
+    if result.returncode != 0:
+        print(result.stderr, file=sys.stderr, end="")
+        sys.exit(result.returncode)
+
+    # MMA affiche "JSON" avant le tableau JSON.
+    output = result.stdout
+
+    pos = output.find("[")
+    if pos < 0:
+        print("Aucune donnée JSON trouvée.", file=sys.stderr)
+        sys.exit(1)
+
+    try:
+        return json.loads(output[pos:])
+    except json.JSONDecodeError as e:
+        print(f"Erreur JSON : {e}", file=sys.stderr)
+        sys.exit(1)
+
+
+def main():
+    if len(sys.argv) != 2:
+        print(f"Usage : {sys.argv[0]} fichier.mma")
+        sys.exit(1)
+
+    grooves = get_grooves(sys.argv[1])
+
+    for groove in grooves:
+        print(groove["groove"])
+
+        for track in groove.get("tracks", []):
+            voices = track.get("voice", [])
+
+            # Plusieurs mesures peuvent avoir des Voices différents.
+            voices = list(dict.fromkeys(voices))
+
+            print(f"  {track['track']:<15} {', '.join(voices)}")
+
+        print()
+
+
+if __name__ == "__main__":
+    main()

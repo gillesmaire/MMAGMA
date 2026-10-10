@@ -7,6 +7,7 @@ project(MMAGMA)
 set (SRC_DIR ${CMAKE_SOURCE_DIR}/fr)
 set(MD_DIR ${SRC_DIR}/md)
 set(INDEX_MD ${CMAKE_BINARY_DIR}/mmagma_index.md)
+set (IMG_DIR ${SRC_DIR}/images)
 # =========================================================
 # Chapitres Markdown
 # =========================================================
@@ -52,6 +53,7 @@ set (CHAPTERS
               ${MD_DIR}/ChordV-et-MMA.md
               ${MD_DIR}/les-options-de-mma.md
             ${MD_DIR}/Annexes.md
+              ${MD_DIR}/créer-ses-fontes-sonores.md
               ${MD_DIR}/Transcrire-un-solo-depuis-un-instrument.md
               )
 
@@ -179,6 +181,7 @@ add_custom_command(
    OUTPUT ${PDF_FILE}
     COMMAND pandoc
         ${CHAPTERS}
+        --resource-path=${SRC_DIR}
         --pdf-engine=xelatex
         --template=${TEXTTEMPLATESDIR}/default.latex
         --number-sections
@@ -205,7 +208,7 @@ add_custom_command(
     COMMAND pandoc
         ${CHAPTERS}
 	-s
-	--metadata title="MMAGMA"
+	--metadata title="MMAGMA" --resource-path=${SRC_DIR}
         -o ${EPUB_FILE}
     DEPENDS ${CHAPTERS}
     VERBATIM
