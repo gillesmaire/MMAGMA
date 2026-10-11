@@ -3,7 +3,7 @@
 
 ## Présentation
 
-Nous allons  créer une font sonore comprenant des instruments spécifiques existants dans diverses
+Nous allons  dans ce chapitre apprendre à créer une fonte sonore comprenant des instruments spécifiques existants dans diverses
 ressources d'internet.
 
 Nous allons utiliser le logiciel Polyphone qui est disponible dans les dépots Debian et donc
@@ -32,19 +32,18 @@ Nous allons récupérer deux fontes sonores :
 - La fonte de guitare cordes Nylons  :
     - https://freepats.zenvoid.org/Guitar/acoustic-guitar.html
     
-On peut également créer avec Polyphone des fontes sonores correspondant à ses propres instruments, mais cet usage est
-documenté sur nombre de ressources alors que la démarche montrée ici est moins usuelle.
+On peut également créer avec Polyphone des fontes sonores en enregistrant ses propres instruments, mais cet usage est
+documenté sur nombre de ressources alors que la démarche qui consiste à récupérer des polices dans divers endroit est moins usuelle et donc moins commentée.
 
 ### Création de la fonte sonore LaFonteDeMonGroupe.sf2
 
-
 Nous allons préparer une nouvelle fonte polyphone dans laquelle nous insérons différents instruments 
-
-Ouvrir le logiciel Polyphone et créer un nouvelle fonte en appuyant sur la zone 1 marquée *Nouvelle banque de sons*
 
 ![Écran d'accueil de Polyphone](images/Polyphone1.png)
 
-Vous devez ici renseigner les informations relatives à la nouvelle fonte que vous allez créer.
+Ouvrir le logiciel Polyphone et créer un nouvelle fonte en appuyant sur la zone 1 marquée *Nouvelle banque de sons*
+
+Nous allons devoir renseigner ici les informations relatives à la nouvelle fonte que nous allons créer.
 
 ![Informations sur la fonte](images/Polyphone2.png)
 
@@ -95,6 +94,7 @@ Maintenant nous allons coller cette fonte dans notre nouvelle police qui est vid
 1. Revenir dans la nouvelle fonte que vous êtes en train de créer 
 2. Se positionner sur Instruments
 3. Coller les différents enregistrements copiés  par la combinaison de touches Control V
+4. Vérifier que l'instrument a bien été collé en dépliant le triangle de la ligne Intrument à coté de la pastille 3
 
 #### Copie de la partie ensembles
 
@@ -104,6 +104,18 @@ Il nous faut procéder de même pour copier la partie ensembles
 
 1. Revenir sur Spanish classical guitar
 2. Cliquer sur Ensemble
-3. Coller les différents enregistrements copiés  par la combinaison de touches Control V
+3. Sélectionner la ligne correspondant à la police Classical Guitar et appuyer sur Control C ou 
+optenez le Control C par un clic sur le bouton droit de la souris.
 
+### Importation de la partie ensemble
+
+![Coller la partie ensemble et assigner l'instrument ](images/Polyphone7.png)
+
+Nous devons coller la partie ensemble, assigner l'instrument et sauvegarder :
+
+1. Se positionner sur Ensemble
+2. Coller la partie Ensemble à l'aide de la touche Control V
+3. Vérifier que l'ensemble a bien été collé
+4. Assinger l'instrument MIDI dans la banque 0 (ou une autre si vous avez plusieurs banques)
+5. Sauvegarder votre nouvelle fonte
 
