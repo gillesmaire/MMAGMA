@@ -7,8 +7,8 @@ The documentation is in Markdown format in french language
 
 To generate all the  documentations : 
 
-
 ./compile
 
-Pour récupérer la dernière version du PDF : https://github.com/gillesmaire/MMAGMA/tags
+
+To get the last release of PDF : https://github.com/gillesmaire/MMAGMA/releases/tag/LastRelease
 
