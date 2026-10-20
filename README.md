@@ -10,5 +10,5 @@ To generate all the  documentations :
 ./compile
 
 
-To get the last release of PDF : https://github.com/gillesmaire/MMAGMA/releases/tag/LastRelease
+Pour récupérer la dernière version du PDF : https://github.com/gillesmaire/MMAGMA/tag/LastRelease
 
