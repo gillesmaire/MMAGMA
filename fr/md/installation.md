@@ -1,6 +1,7 @@
 # Installation de MMA
 
-## Installation sur Linux
+
+# Installation depuis les dépots
 
 Sur Debian ou Ubuntu, MMA peut souvent être installé directement depuis les dépôts officiels :
 
@@ -8,20 +9,6 @@ Sur Debian ou Ubuntu, MMA peut souvent être installé directement depuis les d�
 sudo apt install mma
 ~~~
 
-## Installation sur Windows
-
-- Téléchargez l'installateur depuis le site officiel de MMA.
-- Lancez le programme d'installation et suivez les instructions.
-- Assurez-vous que le chemin d'installation est ajouté à la variable d'environnement PATH pour pouvoir lancer MMA depuis la ligne de commande.
-
-## Installation sur macOS
-
-Téléchargez le fichier DMG ou utilisez Homebrew si disponible :
-
-~~~bash
-brew install mma
-~~~
-    Vérifiez que l'application est accessible depuis le terminal.
 
 ## Vérification de l'installation
 

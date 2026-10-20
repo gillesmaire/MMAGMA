@@ -1,4 +1,4 @@
-# Améliorations MIDI sous Linux
+# Améliorations MIDI
 
 
 ## Premières améliorations
@@ -52,12 +52,7 @@ Mais on le comprend, ces petites amélioratons ne changeront pas fondamentalemen
 
 Polyphone permet de  créer ou modifier une sound font en y ajoutant ou modifant certains instruments.
 
-Sous Macintosh ou Windows l'installation de Polyphone se fait simplement en chargeant le logiciel à l'adresse :
-
-
-https://www.polyphone.io/fr/software
-
-Sous Linux il faut compléter l'installation en suivant les différentes étapes énumérées ci-dessous après avoir 
+Sous Linux  l'installation se fait en suivant les différentes étapes énumérées ci-dessous après avoir 
 chargé le fichier AppImage
 
 

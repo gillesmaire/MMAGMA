@@ -13,7 +13,7 @@ MMA est particulièrement utile si vous :
 - aimez écrire la musique sous forme de texte ;  
 - voulez créer rapidement un accompagnement ;  
 - souhaitez générer plusieurs variantes d'un morceau ;  
-- utilisez Linux, mais aussi Windows ou macOS ;  
+- utilisez Linux, bien que  MMA puisse aussi être utilisé sous Windows ou sous MacOS ;  
 - aimez automatiser les choses.  
 
 MMA est souvent comparé au logiciel **Band-in-a-Box**, qui est payant, ou au logiciel open source **JJazzLab**. Ces deux logiciels possèdent une interface graphique, c'est-à-dire que vous devez manipuler la souris pour créer votre composition ou éventuellement importer un fichier comprenant des accords, mais avec des options relativement limitées.

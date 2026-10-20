@@ -290,6 +290,54 @@ La commande play à la racine de MMAGMA fonctionne sous Linux uniquement, elle p
 
 - C'est une commande ajoutée par les auteurs de ce manuel.
 
+## Comment tester tous les grooves 
+
+
+La commande suivant liste tous les grooves sous la forme  banque:nomdugroove.
+
+
+~~~bash
+find /usr/share/mma/lib  -type f ! -name '.*' -print 2>/dev/null | sed s,/usr/share/mma/lib/,, | sed s/.mma//$ | sed s,/,:, > LIST
+~~~
+
+On peut facilement utiliser un fichier MMA assez court et boucler sur tous les grooves pour en écouter le résultat.
+
+Voici un exemple de fichier MMA  qui aura par exemple pour nom template.mma:
+
+~~~mma
+Time 4/4
+Tempo 110
+Groove VARIABLE
+1 Dm Gm
+2 C7 F
+3 Dm Gm
+4 C7 F
+5 F A7
+6 D7 Gm
+7 Gm C7
+8 C7 A
+1 Dm Gm
+2 C7 F
+3 Dm Gm
+4 C7 F
+5 F A7
+6 D7 Gm
+7 Gm C7
+8 C7 A
+~~~
+
+Le shell suivant qui peut être lancé en console vous permettra d'écouter tous les grooves : 
+
+~~~
+LIST=`find /usr/share/mma/lib  -type f ! -name '.*' -print 2>/dev/null |
+    sed s,/usr/share/mma/lib/,, | sed s/.mma$// | sed s,/,:,` 
+for groove in $LIST 
+do
+ cat template.mma | sed s/VARIABLE/${groove}/ > file.mma
+cat file.mma
+done
+~~~
+
 
 ## Travaux pratiques Groove contre mélange des Groove
 

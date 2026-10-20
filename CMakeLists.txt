@@ -113,7 +113,7 @@ list(APPEND HTML_FILES ${INDEX_HTML})]]
 
 add_custom_command(
     OUTPUT ${INDEX_MD}
-    COMMAND ${CMAKE_COMMAND} -E echo "# MMAGMA" > ${INDEX_MD}
+    COMMAND ${CMAKE_COMMAND} -E echo "# MMA sous Linux" > ${INDEX_MD}
     COMMAND ${CMAKE_COMMAND} -E echo "" >> ${INDEX_MD}
     COMMAND ${CMAKE_COMMAND} -E echo "## Table des matières" >> ${INDEX_MD}
     COMMAND ${CMAKE_COMMAND} -E echo "" >> ${INDEX_MD}

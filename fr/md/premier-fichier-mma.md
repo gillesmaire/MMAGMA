@@ -4,13 +4,7 @@
 
 Dans ce chapitre, nous allons créer notre premier fichier MMA, le transformer en fichier MIDI et écouter le résultat.
 
-Un fichier MMA est simplement un fichier texte contenant des commandes en mode texte. On peut le créer avec n'importe quel éditeur de texte.
-
-Par exemple :
-
-- sous Linux : gedit, kate, kwrite, mousepad ou vi ;
-- sous Windows : notepad ou notepad++ ;
-- sous macOS : textedit en mode texte.
+Un fichier MMA est simplement un fichier texte contenant des commandes en mode texte. On peut le créer avec n'importe quel éditeur de texte, comme gedit, kate, kwrite, mousepad ou vi.
 
 Le fichier devra porter l'extension `.mma`.
 
@@ -75,14 +69,8 @@ Overwriting existing midi file (4 bars, 0.13 min / 0:08 m:s): 'example0.mid'
 
 ## Lecture du fichier MIDI
 
-### Sous Windows ou sous MacOS
 
-Sous Windows ou MacOs, un double-clic sur le fichier .mid ouvre généralement le lecteur multimédia par défaut.
-
-### Sous linux
-
-
-#### Premier exemple 
+### Premier exemple 
 
 Nous allons utiliser la commande aplay du serveur ALSA qui avec l'option -a donne la liste des cartes son susceptibles d'interpréter des fichiers MIDI
 
@@ -132,7 +120,7 @@ On aurait pu choisir de lancer en mode pipewire  par la commande
 fluidsynth -a pipewire -ni /usr/share/sounds/sf2/FluidR3_GM.sf2 example0.mid
 ~~~~
 
-#### Deuxème exampe avec pipewire et plusieurs cartes son
+### Deuxème exampe avec pipewire et plusieurs cartes son
 
 
 - Pour choisir une carte par défaut entre plusieurs cartes : 
