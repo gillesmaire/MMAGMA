@@ -86,6 +86,20 @@ Elles préfèrent les voyous
 
 Le menu Outils/Préférences permet par l'onglet *MMA Export* de configurer le répertoire où seront générés les fichiers MMA
 
+![Configurer la sortie MMA](images/chordV1.png)
+
+1. Sélectionner le menu Outils/Préférences
+2. Sélectionner le sous-menu **Export MMA**
+
+![Choisir les options  MMA](images/chordV2.png)
+
+1. Après avoir sélectionné **Export MMA**
+2. Sélectionner l'emplacment où vous souhaitez exporter les fichiers au format MMA 
+3. Si vous sélection le message indiquant la sélection une fenêtre popup viendra vous rappeler l'emplacement 
+où sont stockés les fichiers
+4. Ajouter un clic au début des morceaux permet d'ajouter deux mesures de clic dans chaque morceaux MMA
+
+
 ## Génératon d'un fichier MMA 
 
 Le menu Build/Générer fichiers MMA convertit les chansons dans le répertoire précédemment configuré.

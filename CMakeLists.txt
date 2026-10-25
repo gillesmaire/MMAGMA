@@ -55,6 +55,7 @@ set (CHAPTERS
             ${MD_DIR}/Annexes.md
               ${MD_DIR}/créer-ses-fontes-sonores.md
               ${MD_DIR}/Transcrire-un-solo-depuis-un-instrument.md
+              ${MD_DIR}/Remerciements.md
               )
 
 # =========================================================
