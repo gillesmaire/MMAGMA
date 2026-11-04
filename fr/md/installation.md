@@ -1,7 +1,7 @@
 # Installation de MMA
 
 
-# Installation depuis les dépots
+## Installation depuis les dépots
 
 Sur Debian ou Ubuntu, MMA peut souvent être installé directement depuis les dépôts officiels :
 

@@ -10,5 +10,8 @@ cmake_install.cmake
 build/
 html/
 trash
-.*
+grooves.bad
+grooves.num
+test-groove.mid
+MMADOC/
 

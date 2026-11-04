@@ -1,0 +1,12 @@
+Thiis directory contains tools to earn each groove
+
+- **test-grooves.sh** is a shell script you can modify or not.
+- It plays all the grooves with the same chords and ask if the groove interest you :
+    - type y if you want in your favorites. The groove will be keep in  grooves.yes file
+    - type n if you don't want in your favorites. The groove will be keep in  grooves.no file
+    - Sometimes some grooves fails and  mmagrooves will crash. Just type
+
+~~~bash
+bad name_of_bad_groove
+~~~
+- **bad groovename** will put the groovename  in bad  grooves.bad file and it calls the test-groove.sh to continue.

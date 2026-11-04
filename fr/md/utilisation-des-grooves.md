@@ -35,7 +35,7 @@ Ils sont classés par familles :
 
 
 La commande suivante affiche le nombre de grooves disponibles sous Linux. Le résultat au moment de
-la rédaction de ce doument est de 289  grooves différents disponibles.
+la rédaction de ce document est de 277  grooves différents disponibles.
 
 ~~~bash
 ls /usr/share/mma/lib/* | grep -v :$ | grep -v ^$ | wc -l
@@ -60,6 +60,24 @@ swing.mma
 westernswing.mma
 jazzswing.mma
 ~~~
+
+
+Dans le répertoire MMAGMA/Grooves se trouve le shell script  test-grooves.sh. Ce programme
+permet d'écouter l'ensemble des grooves avec une suite d'accords qui peut éventuellement être
+modifiée dans le script.
+
+Ce programme test-grooves.sh va jouer chaque groove afin que vous mettiez une note à chaque groove
+en fonction de vos propres goûts :
+
+~~~bash
+test-grooves.sh 
+[1/277] Entrez une note de 0 à 9  pour pflib:8beat1 (r pour rejouer) : 
+~~~
+
+Vous pouvez ainsi écouter tous les grooves et donner une note de **0** à **9** ou taper **r** pour rejouer le dernier groove.
+
+Si un groove fait planter le programme test-grooves.sh  il sera consigné dans le fichier grooves.bad et il faudra relancer le programme test-groove.sh pour continuer.
+
 
 
 ### L'appel d'un Groove 
