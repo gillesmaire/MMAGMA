@@ -197,7 +197,8 @@ End
 
 Cet exemple se généralise pour toutes les pistes permettant de choisir par si le solo sera à la guitare ou à la trompette. 
 
-Mais on peut également définir des paramètres sur tous les Groove utilisés. Ainsi  on provoquera, pour la Basse une articulation de 20 et on augmentera son volume de 30
+Mais on peut également définir des paramètres sur tous les Groove utilisés. Ainsi  on provoquera, pour la Basse une articulation de 20 et on augmentera son volume de 30. Rappelons qu'un articulate est par défaut 
+à 100. Si on l'augmente les notes seront tenues plus longtemps si on le descend les notes seront jouées plus saccato.
 
 ~~~mma
 begin AllGrooves
@@ -307,54 +308,6 @@ La commande play à la racine de MMAGMA fonctionne sous Linux uniquement, elle p
 ~~~
 
 - C'est une commande ajoutée par les auteurs de ce manuel.
-
-## Comment tester tous les grooves 
-
-
-La commande suivant liste tous les grooves sous la forme  banque:nomdugroove.
-
-
-~~~bash
-find /usr/share/mma/lib  -type f ! -name '.*' -print 2>/dev/null | sed s,/usr/share/mma/lib/,, | sed s/.mma//$ | sed s,/,:, > LIST
-~~~
-
-On peut facilement utiliser un fichier MMA assez court et boucler sur tous les grooves pour en écouter le résultat.
-
-Voici un exemple de fichier MMA  qui aura par exemple pour nom template.mma:
-
-~~~mma
-Time 4/4
-Tempo 110
-Groove VARIABLE
-1 Dm Gm
-2 C7 F
-3 Dm Gm
-4 C7 F
-5 F A7
-6 D7 Gm
-7 Gm C7
-8 C7 A
-1 Dm Gm
-2 C7 F
-3 Dm Gm
-4 C7 F
-5 F A7
-6 D7 Gm
-7 Gm C7
-8 C7 A
-~~~
-
-Le shell suivant qui peut être lancé en console vous permettra d'écouter tous les grooves : 
-
-~~~
-LIST=`find /usr/share/mma/lib  -type f ! -name '.*' -print 2>/dev/null |
-    sed s,/usr/share/mma/lib/,, | sed s/.mma$// | sed s,/,:,` 
-for groove in $LIST 
-do
- cat template.mma | sed s/VARIABLE/${groove}/ > file.mma
-cat file.mma
-done
-~~~
 
 
 ## Travaux pratiques Groove contre mélange des Groove

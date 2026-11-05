@@ -4,7 +4,7 @@
 # Debian / MMA 21.09 / FluidSynth ALSA port 128:0
 
 
-
+vous
 REP=$(pwd)
 
 if [ "${REP%/MMAGMA/grooves}" != "$REP" ]

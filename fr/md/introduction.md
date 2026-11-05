@@ -18,9 +18,9 @@ MMA est particulièrement utile si vous :
 
 MMA est souvent comparé au logiciel **Band-in-a-Box**, qui est payant, ou au logiciel open source **JJazzLab**. Ces deux logiciels possèdent une interface graphique, c'est-à-dire que vous devez manipuler la souris pour créer votre composition ou éventuellement importer un fichier comprenant des accords, mais avec des options relativement limitées.
 
-Band-in-a-Box utilise une interface graphique alors que MMA utilise des fichiers texte. Cela peut sembler plus difficile au début, mais cela donne beaucoup plus de souplesse. Un fichier MMA peut être modifié avec n'importe quel éditeur de texte, conservé dans un système de gestion de versions ou généré automatiquement par un programme.
+Band-in-a-Box utilise une interface graphique alors que MMA utilise des fichiers texte. Ce qui peut sembler plus archaïque donne  en fait beaucoup plus de souplesse et de possibilités. Un fichier MMA peut être modifié avec n'importe quel éditeur de texte, conservé dans un système de gestion de versions ou généré automatiquement par un programme.
 
-Pour quelqu'un qui aime à la fois la musique et la programmation, MMA est un outil très puissant.
+Pour quelqu'un qui aime à la fois la musique et la programmation basique, MMA est un outil très puissant.
 
 ## Pourquoi ai-je été amené à écrire ce livre ?
 

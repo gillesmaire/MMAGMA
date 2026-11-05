@@ -2,7 +2,7 @@
 
 Les **SoundFonts** sont des banques de sons numériques permettant de reproduire le son d'instruments de musique à partir d'un clavier MIDI ou d'un fichier MIDI. Contrairement au format MIDI, qui ne contient que les informations musicales (notes, vélocité, changements de programme, etc.), une fonte sonore ou SoundFont en anglais fournit les échantillons sonores qui seront réellement joués.
 
-Le format le plus répandu est le **SoundFont 2** (`.sf2`), développé à l'origine par Creative Labs pour ses cartes son Sound Blaster AWE32.
+Le format le plus répandu est la **SoundFont 2** (`.sf2`), développée à l'origine par Creative Labs pour ses cartes son Sound Blaster AWE32.
 
 ## Principe de fonctionnement
 
@@ -13,9 +13,9 @@ Lorsqu'un fichier MIDI demande par exemple de jouer une note de piano :
 * la durée ;
 * la vélocité (force de frappe).
 
-Le synthétiseur recherche alors dans le SoundFont l'échantillon correspondant et le joue à la bonne hauteur.
+Le synthétiseur recherche alors dans la SoundFont en cours de fonctionnement l'échantillon correspondant et le joue à la bonne hauteur.
 
-Le résultat dépend donc entièrement de la qualité du SoundFont utilisé.
+Le résultat dépend donc entièrement de la qualité de la SoundFont utilisé.
 
 ## Structure d'une SoundFont
 
@@ -149,7 +149,7 @@ Ainsi, un fichier MIDI sonnera correctement avec n'importe quel SoundFont compat
 
 ## Taille des SoundFonts
 
-Les premiers SoundFonts tenaient sur quelques mégaoctets.
+Les premières SoundFonts tenaient sur quelques mégaoctets.
 
 Exemples :
 
@@ -165,7 +165,7 @@ Aujourd'hui, certains SoundFonts orchestraux dépassent plusieurs gigaoctets gr�
 
 Les SoundFonts présentent de nombreux avantages :
 
-* excellente qualité sonore ;
+* relativement bonne qualité sonore ;
 * faible utilisation du processeur ;
 * compatibilité avec le standard MIDI ;
 * possibilité de créer ses propres banques de sons ;

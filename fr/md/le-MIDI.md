@@ -4,8 +4,6 @@
 
 Le MIDI est  un langage de commande musicale : il décrit quoi jouer, quand, et comment, mais il ne définit jamais le son lui-même
 
-La vélocité est la puissance sonore d'une note. 
-
 
 ## Séparation de la musique et de l'audio 
 
@@ -72,19 +70,19 @@ Ces valeurs peuvent changer en continu, créant des courbes.
 
 Il est possible de contrôler le volume d'un instrument midi de différentes façons:
 
-   - par l'utilisation d'un nombre appelé vélocité  qui  peut prendre n'importe quelle valeur de  0 à 127,
+- par l'utilisation d'un nombre appelé vélocité  qui  peut prendre n'importe quelle valeur de  0 à 127,
    sachant que le 0 mute la note. Cette vélocité correspond à l'intensité avec laquelle la note est jouée. 
-   Une fois que la note est lancée avec une vélocité donné on ne peut plus modifier cette valeur.
-   - par une valeur sur un canal donné, c'est à dire monter le volume du piano et baisser celui des percussions.
-   - par le volume sur le master ou le général, là c'est l'ensemble des pistes qui est monté ou descendu.
+   Une fois que la note est lancée avec une vélocité donnée, on ne peut plus modifier cette valeur.
+- par une valeur sur un canal donné, c'est à dire monter le volume du piano et baisser celui des percussions.
+- par le volume sur le master ou le général, là c'est l'ensemble des pistes qui est monté ou descendu.
    
 Les instruments MIDI possèdent des contrôleurs qui définissent le volume pour un canal donné. 
 
 Chaque son va être commandé en précisant :
 
-    - le MSB représente la banque de son (par exemple Piano)
-    - le LSB représente l'instrument (par exemple Piano électrique)
-    - Program représente le son dans la banque choisie par exemple 
+- le MSB représente la banque de son (par exemple Piano)
+- le LSB représente l'instrument (par exemple Piano électrique)
+- Program représente le son dans la banque choisie par exemple 
     
     
     
@@ -110,7 +108,7 @@ PPQ = 480
 
 Le tick est donc une unité de temps relative, indépendante du tempo.
 
-C'est par ce mécanosme qu'on peut changer le tempo  sans modifier la structure musicale.
+C'est par ce mécanisme que l'on peut changer le tempo sans modifier la structure musicale.
 
 
 ## Le Tempo 
@@ -122,7 +120,7 @@ C'est par ce mécanosme qu'on peut changer le tempo  sans modifier la structure 
 
 Ainsi une partition MIDI reste identique mais peut être jouée lentement ou rapidement
 
-Formule de base : (Ticks / PPQ)*(60/BPM)
+La formule de base qui régit : (Ticks / PPQ)*(60/BPM)
 
 Le BPM était ne nombre de noires par seconde.
 
@@ -160,18 +158,18 @@ C’est exactement ce que MMA exploite.
 ## Les instruments MIDI 
 
 
-- En MIDI les instruments peuvent être sélectionnés par le numéro.
-- Le nom donné dans la colonne Nom Anglais est le nom qui ne sert
-qu'à décrire l'instrument. C'est aussi ce qu'on appelle la liste
-GeneralMIDI mais en MIDI on n'utilise que le numéro.
-- La colonne Nom MMA est une étiquette qui ne sert que dans MMA
-où l'on peut : 
+- En MIDI les instruments ne peuvent être sélectionnés que par leur numéro.
+- Le nom donné dans la colonne Nom Anglais ne sert
+qu'à décrire l'instrument. Il fait partie  ce qu'on appelle la liste
+GeneralMIDI.
+- La colonne Nom MMA est une étiquette qui ne sert que dans la syntaxe MMA
+où l'on peut indifférement: 
    - donner le numéro de l'instrument 
-   - ou l'étiquette qui comme on le voit ne suit pas le nom donné
+   - ou l'étiquette qui, comme on le voit, ne suit pas le nom donné
    en anglais à l'instrument
-- Il faut savoir que si en MIDI on veut sélectionner l'instrument
+- En MIDI si on veut sélectionner l'instrument
 AccousticGrandPiano l'ordre envoyé n'est pas 1 mais 0.
--  En MMA on peut indifférement choisir Piano1 ou 1 
+-  Quand on utilise MMA, on peut indifférement choisir Piano1 ou 1 
 
 | Catégorie    | N° | Nom anglais         |    Nom MMA        |
 |:-------------|:---|--------------------:|:------------------|
