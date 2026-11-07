@@ -133,19 +133,18 @@ Affiche
 
 ~~~
 Audio
- ├─ Devices:
- │      48. Focusrite Scarlett 2i2 2nd Gen      [alsa]
- │      49. Audio interne                       [alsa]
- │  
- ├─ Sinks:
- │  *   35. Audio interne Stéréo analogique   [vol: 0.81]
- │      67. Focusrite Scarlett 2i2 2nd Gen Headphones / Line 1-2 [vol: 0.40]
- │  
- ├─ Sources:
- │  *   46. Audio interne Stéréo analogique   [vol: 0.98]
- │      68. Focusrite Scarlett 2i2 2nd Gen 0    [vol: 1.00]
- │  
-...
+ -  Devices:
+       48. Focusrite Scarlett 2i2 2nd Gen      [alsa]
+       49. Audio interne                       [alsa]
+   
+ - Sinks:
+   *   35. Audio interne Stéréo analogique   [vol: 0.81]
+       67. Focusrite Scarlett 2i2 2nd Gen Headphones / Line 1-2 [vol: 0.40]
+   
+ - Sources:
+   *   46. Audio interne Stéréo analogique   [vol: 0.98]
+       68. Focusrite Scarlett 2i2 2nd Gen 0    [vol: 1.00]
+   
 ~~~
 
 On peut choisir la carte Focusrite Scarlett 2i2 2nd Gen Headphones par la commande 

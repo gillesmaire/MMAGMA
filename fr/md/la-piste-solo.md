@@ -4,8 +4,8 @@
 
 Une piste `Solo` est destinée à une improvisation ou à une ligne ponctuelle. 
 
-Cette piste fait partie du fichier MMA et non pas du grouve comme la plupart des autres 
-pistes que nous verrons dans la partie [Création des grooves](Partie-III-Création-des-Grooves).
+Cette piste fait partie du fichier MMA et non pas du groove comme la plupart des autres directives
+de pistes.
 
 Pour inclure un Solo on devra définir l'instrument, cet instrument ne faisant pas 
 nécessairement partie des instruments du Groove en cours : 

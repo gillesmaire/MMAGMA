@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
 project(MMAGMA)
-
 # =========================================================
 # Répertoires
 # =========================================================
@@ -44,7 +43,6 @@ set (CHAPTERS
               ${MD_DIR}/la-piste-melody.md
               ${MD_DIR}/la-piste-drum-tone.md
             ${MD_DIR}/Partie-IV-PlusLoinDansLesRéglages.md
-              ${MD_DIR}/les-riffs.md
               ${MD_DIR}/le-rythme.md
               ${MD_DIR}/les-paroles.md
               ${MD_DIR}/lire-un-fichier-MIDI.md
@@ -159,13 +157,39 @@ add_custom_target(html ALL DEPENDS ${HTML_FILES})
 # 4. PDF global
 # =========================================================
 
+string(TIMESTAMP JOUR "%d")
+string(TIMESTAMP MOIS "%m")
+string(TIMESTAMP ANNEE "%Y")
+set(MOIS_FR "janvier;février;mars;avril;mai;juin;juillet;août;septembre;octobre;novembre;décembre")
+
+string(REGEX REPLACE "^0" "" JOUR "${JOUR}")
+
+math(EXPR INDEX_MOIS "${MOIS} - 1")
+list(GET MOIS_FR ${INDEX_MOIS} NOM_MOIS)
+
+set(DATE_DU_JOUR "${JOUR} ${NOM_MOIS} ${ANNEE}")
+set(FICHIER "${CMAKE_SOURCE_DIR}/fr/tex/templates/titlepage.tex")
+
+
+file(READ "${FICHIER}" CONTENU)
+
+
+string(REPLACE
+    "{DATE}"
+    "{${DATE_DU_JOUR}}"
+    CONTENU
+    "${CONTENU}"
+)
+
+file(WRITE "${FICHIER}" "${CONTENU}")
 
 set(PDF_FILE ${SRC_DIR}/pdf/MMAGMA-fr.pdf)
 set(TEX_DIR  ${SRC_DIR}/tex)
 set(TEXTEMPLATESDIR ${TEX_DIR}/templates/)
 set(HEADER_TEX ${TEXTEMPLATESDIR}/header.tex)
 set(TITLEPAGE_TEX ${TEXTEMPLATESDIR}/titlepage.tex)
-set(COVER_TEX ${TEXTEMPLATESDIR}/cover.tex)
+#set(COVER_TEX ${TEXTEMPLATESDIR}/cover.tex)
+set(COVER_TEX ${FICHIER})
 set(PREAMBLE_TEX ${TEXTEMPLATESDIR}/preamble.tex)
 
 add_custom_command(

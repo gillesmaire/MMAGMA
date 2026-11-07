@@ -197,13 +197,13 @@ End
 
 Cet exemple se généralise pour toutes les pistes permettant de choisir par si le solo sera à la guitare ou à la trompette. 
 
-Mais on peut également définir des paramètres sur tous les Groove utilisés. Ainsi  on provoquera, pour la Basse une articulation de 20 et on augmentera son volume de 30. Rappelons qu'un articulate est par défaut 
+Mais on peut également définir des paramètres sur tous les Groove utilisés. Ainsi  on provoquera, pour la Basse une articulation de 20 et on augmentera son volume de 30%. Rappelons qu'un articulate est par défaut 
 à 100. Si on l'augmente les notes seront tenues plus longtemps si on le descend les notes seront jouées plus saccato.
 
 ~~~mma
 begin AllGrooves
   Bass Articulate 20
-  Bass Volume +30
+  Bass Volume +30%
 end
 ~~~
 

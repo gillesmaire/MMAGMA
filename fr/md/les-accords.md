@@ -68,7 +68,7 @@ Dans MMA :
     - Par exemple TIME 4 signifie 4 temps (classique 4/4).
 - Une sequence décrit pour une mesure :
     - le start point (position de début),
-    - la durée en valeurs fractionnaires (noires, croches…),
+    - la durée en valeurs fractionnaires (noires, croches...),
     - et éventuellement des accents/voicings.
 - Ces définitions de séquence se font dans les fichiers de groove
 - La ligne d’accord (1, 2, etc.) n’a pas de durée, elle fixe simplement quelle harmonie doit être utilisée au moment donné, mais c’est le pattern qui décide de la durée rythmique effective.
