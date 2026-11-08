@@ -2,7 +2,7 @@
 
 ##  Définitions 
 
-Le MIDI est  un langage de commande musicale : il décrit quoi jouer, quand, et comment, mais il ne définit jamais le son lui-même
+Le MIDI est  un langage de commandes musicales : il décrit quoi jouer, quand, et comment, mais il ne définit jamais le son lui-même
 
 
 ## Séparation de la musique et de l'audio 
@@ -61,7 +61,6 @@ Ces valeurs peuvent changer en continu, créant des courbes.
 - **CC7 :**  Volume (Channel Volume) règle le volume global d’un canal utilisé pour les mixages MIDI.
 - **CC10 :** Panoramique gauche droite : 0 = gauche, 64 = centre, 127 = droite
 - **CC11 :**  Expression volume musical agit comme un volume secondaire
-- **CC11 :** nuance expressive
 - **CC64 :**  Sustain (pédale de sustain) 0–63 : relâchée 64–127 : enfoncée
 - **CC1 :** Modulation souvent liée au vibrato et dépendante des synthés
 

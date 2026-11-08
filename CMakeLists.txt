@@ -174,12 +174,13 @@ set(FICHIER "${CMAKE_SOURCE_DIR}/fr/tex/templates/titlepage.tex")
 file(READ "${FICHIER}" CONTENU)
 
 
-string(REPLACE
-    "{DATE}"
-    "{${DATE_DU_JOUR}}"
+string(REGEX REPLACE
+    "\\{\\\\fontsize\\{16}\\{24\\}\\\\selectfont\\\\textcolor\\[rgb\\]\\{1,1,1\\}\\{.*\\}\\}"
+    "{\\\\fontsize{16}{24}\\\\selectfont\\\\textcolor[rgb]{1,1,1}{${DATE_DU_JOUR}}}"
     CONTENU
     "${CONTENU}"
-)
+
+    )
 
 file(WRITE "${FICHIER}" "${CONTENU}")
 

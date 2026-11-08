@@ -161,9 +161,9 @@ mots clés du language.
 
 Lorsqu'on utilise z collé derrière un nom d'accord :
    
-    - et si ce caractère z est suivi d'un caractère blanc toutes les pistes à l'exception des pistes
+- et si ce caractère z est suivi d'un caractère blanc toutes les pistes à l'exception des pistes
      DRUM seront mises en sourdine. 
-    - si ce caractère est suivi d'un D, W, B, C, A, Sn ,R, P  les pistes  Drum (batterie), Walking Basse, Bass (basse), Chord (accord),
+- si ce caractère est suivi d'un D, W, B, C, A, Sn ,R, P  les pistes  Drum (batterie), Walking Basse, Bass (basse), Chord (accord),
     Arpeggio (arpège), Scale(gamme), R (aria), P(plectre) seront mise en sourdine
     
 

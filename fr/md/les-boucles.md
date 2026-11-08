@@ -72,7 +72,7 @@ RepeatEnd NoWarn  5
 
 
 ChordV permet de générer outre les carnets de chants, chaque chansons d'un carnet de chants en format MMA. 
-Voici le résultat du menu **Outils/Générer les fichiers MMA de ChordV pour la chanson Barbiche.
+Voici le résultat du menu **Outils/Générer les fichiers MMA** de ChordV pour la chanson Barbiche.
 
 Le fichier généré est Barbiche.mma et se trouve dans le répertoire choisi dans le menu Outils/Préférences dans l'onglet **MMA exportùù qui peut ne pas être visible et qu'il faut parfois faire défiler.
 

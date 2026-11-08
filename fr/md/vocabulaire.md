@@ -19,7 +19,7 @@ On peut dénombrer les concepts suivants :
 
 ### Pattern 
 
-- **Définition :** Un Pattern est une unité musicale élémentaire qui a une durée d'une mesure ou même parfois moins. Ce Pattern concerne un instrument et donc une seule piste.
+- **Définition :** Un Pattern ou motif est une unité musicale élémentaire qui a une durée d'une mesure ou même parfois moins. Ce Pattern concerne un instrument et donc une seule piste.
 - **Portée :** Une piste
 - **Durée :** une mesure (ou moins)
 - **Rôle :** définir ce qui est joué 
@@ -37,7 +37,7 @@ On peut dénombrer les concepts suivants :
 
 ### Sequence 
 
-- **Définition :** La sequence contient une liste de Pattern
+- **Définition :** La Sequence contient une liste de Pattern
 - **Portée :** Une piste
 - **Durée :** la somme des Pattern
 - **Rôle :** permettre de rassembler plusieurs Pattern pour en faire un couplets, un refrain,
@@ -104,13 +104,13 @@ Il peut être joué par une guitare, une basse, un clavier, etc. Il donne souven
 
 ### Walk 
 
-- **Définition :** c'est une technique notamment utilisée à la Basse pour ajouter des notes de basse pour
+- **Définition :** c'est une technique notamment utilisée à la Basse afin d'ajouter des notes de basse pour
 former une mélodie complémentaire à la mélodie principale
 - **Rôle :** rendre la ligne de basse plus vivante
 
 ### Scale
 
-- **Définition :** génère une succession de notes appartenant à une gamme adaptée à l'accord joué. A
+- **Définition :** génère une succession de notes appartenant à une gamme adaptée à l'accord joué. 
 - **Rôle :** au lieu de jouer uniquement les notes de l'accord (comme un CHORD ou un ARPEGGIO), elle joue les notes voisines de la tonalité pour créer des lignes mélodiques, des montées ou descentes.
 
 ### Aria 

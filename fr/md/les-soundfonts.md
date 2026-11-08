@@ -15,7 +15,7 @@ Lorsqu'un fichier MIDI demande par exemple de jouer une note de piano :
 
 Le synthétiseur recherche alors dans la SoundFont en cours de fonctionnement l'échantillon correspondant et le joue à la bonne hauteur.
 
-Le résultat dépend donc entièrement de la qualité de la SoundFont utilisé.
+Le résultat dépend donc entièrement de la qualité de la SoundFont utilisée.
 
 ## Structure d'une SoundFont
 
@@ -31,7 +31,7 @@ Par exemple :
 * Piano_Sol3.wav
 * Piano_Do5.wav
 
-Le synthétiseur transpose ensuite ces enregistrements pour produire toutes les notes intermédiaires.
+Un synthétiseur transpose ensuite ces enregistrements pour produire toutes les notes intermédiaires.
 
 ### Les Instruments
 
@@ -59,7 +59,7 @@ Par exemple :
 | 56             | Trompette        |
 | 73             | Flûte            |
 
-Lorsqu'un fichier MIDI sélectionne le programme 40, le SoundFont joue le preset « Violon ».
+Lorsqu'un fichier MIDI sélectionne le programme 40, la SoundFont joue le preset « Violon ».
 
 ## Les banques MIDI
 
@@ -67,7 +67,7 @@ Le standard MIDI prévoit 128 instruments répartis sur plusieurs banques.
 
 Le canal 10 est réservé aux percussions.
 
-Dans un SoundFont, les percussions sont généralement stockées dans la banque 128.
+Dans une SoundFont, les percussions sont généralement stockées dans la banque 128.
 
 Chaque note du clavier correspond alors à un instrument de percussion :
 
@@ -159,7 +159,7 @@ Exemples :
 * 128 Mo : excellente qualité.
 * plusieurs gigaoctets : qualité professionnelle.
 
-Aujourd'hui, certains SoundFonts orchestraux dépassent plusieurs gigaoctets grâce à des milliers d'échantillons enregistrés.
+Aujourd'hui, certaines SoundFonts orchestraux dépassent plusieurs gigaoctets grâce à des milliers d'échantillons enregistrés.
 
 ## Avantages
 
@@ -181,7 +181,7 @@ Ils présentent également quelques limites :
 
 ## Utilisations
 
-Les SoundFonts sont encore largement utilisés pour :
+Les SoundFonts sont encore largement utilisées pour :
 
 * la lecture de fichiers MIDI ;
 * les synthétiseurs logiciels (*software synthesizers*) ;
@@ -192,4 +192,4 @@ Les SoundFonts sont encore largement utilisés pour :
 
 ## Conclusion
 
-Le format SoundFont constitue une solution simple et efficace pour transformer des données MIDI en sons réalistes. Grâce à une organisation en échantillons, instruments et presets, il offre une excellente compatibilité avec le standard General MIDI tout en permettant des sons de qualité très variable selon les banques utilisées. Bien qu'il ait été supplanté dans certains domaines professionnels par des formats plus avancés, le SoundFont reste aujourd'hui un standard apprécié pour sa simplicité, sa légèreté et sa large compatibilité avec les logiciels et les systèmes de synthèse MIDI.
+Le format SoundFont constitue une solution simple et efficace pour transformer des données MIDI en sons réalistes. Grâce à une organisation en échantillons, instruments et presets, il offre une excellente compatibilité avec le standard General MIDI tout en permettant des sons de qualité très variable selon les banques utilisées. Bien qu'il ait été supplanté dans certains domaines professionnels par des formats plus avancés, la SoundFont reste aujourd'hui un standard apprécié pour sa simplicité, sa légèreté et sa large compatibilité avec les logiciels et les systèmes de synthèse MIDI.

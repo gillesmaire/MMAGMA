@@ -234,7 +234,7 @@ Les paramètres de bas niveau tels que les affectation de pistes MIDI ne sont pa
 
 ### Les sticky Grooves
 
-On peut vouloir qu'une piste soit invisible aux mécanismes de Groove par exemmple pour une piste de clic.
+On peut vouloir qu'une piste soit invisible aux mécanismes de Groove par exemple, pour une piste de clic.
 La piste ClicTest sera définie comme : 
 
 ~~~mma
@@ -354,7 +354,7 @@ Groove Swing CountrySwing Swing CountrySwing / Swing /
 - La commande  suivante affiche toutes les informations utiles : 
 
 ~~~mma
-mma -k fichier.mma
+mma -d fichier.mma
 ~~~
 
 - Nous allons utiliser la commande grep linux pour filter les différentes pistes créées : 
