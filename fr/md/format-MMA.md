@@ -222,7 +222,7 @@ Cm / Dm
 ~~~
 
 
-Le symbole @ sert quant à lui à dire :
+Le symbole @ sert à dire :
 
 - on veut cet accord à ce moment exact dans la mesure
 - Par exemple Dm@3 : Le rém commence au temps 3
