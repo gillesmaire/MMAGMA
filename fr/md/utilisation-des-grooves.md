@@ -62,6 +62,31 @@ jazzswing.mma
 ~~~
 
 
+Dans le répertoire MMAGMA se trouve le script listgrooves qui affiche la liste des grooves utilisables :
+
+~~~bash
+./listgrooves
+~~~
+
+Le résultat est la liste des différents grooves disponibles : 
+
+~~~
+pflib/8beat1.mma
+pflib/16beat1.mma
+pflib/8beat2.mma
+pflib/slowrock.mma
+pflib/metal1.mma
+pflib/metal2.mma
+pflib/16beat2.mma
+pflib/rock1.mma
+pflib/highfive.mma
+zoom/blues.mma
+zoom/thr.mma
+zoom/mtl.mma
+...
+~~~
+
+
 Dans le répertoire MMAGMA/Grooves se trouve le shell script  test-grooves.sh. Ce programme
 permet d'écouter l'ensemble des grooves avec une suite d'accords qui peut éventuellement être
 modifiée dans le script.
@@ -185,7 +210,7 @@ Ce nouveau nom de groove ne doit pas être déjà utilisé ni dans un Groove exi
 
 La directive AllGrooves permet d'appliquer des modification à tous les Groove utilisés. 
 
-L'exemmple le plus typique est celui du choix de l'instrument pour chaque piste : 
+L'exemple le plus typique est celui du choix de l'instrument pour chaque piste : 
 
 
 ~~~mma
@@ -195,9 +220,9 @@ Begin AllGrooves
 End
 ~~~
 
-Cet exemple se généralise pour toutes les pistes permettant de choisir par si le solo sera à la guitare ou à la trompette. 
+Cet exemple se généralise pour toutes les pistes permettant de choisir par exemple si le solo sera à la guitare ou à la trompette. 
 
-Mais on peut également définir des paramètres sur tous les Groove utilisés. Ainsi  on provoquera, pour la Basse une articulation de 20 et on augmentera son volume de 30%. Rappelons qu'un articulate est par défaut 
+Mais on peut également définir des paramètres sur chacun des Groove utilisés. Ainsi  on provoquera, pour la Basse une articulation de 20 et on augmentera son volume de 30%. Rappelons qu'un articulate est par défaut 
 à 100. Si on l'augmente les notes seront tenues plus longtemps si on le descend les notes seront jouées plus saccato.
 
 ~~~mma

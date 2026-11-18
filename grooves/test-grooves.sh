@@ -67,7 +67,7 @@ do
 
     # Générer un MIDI dont le nom est connu.
 
-    rm -f $midi22
+    rm -f $midi
     if ! mma -f "$midi" "$fichier" >/dev/null ; then
         echo "Échec de génération : $groove"
         break

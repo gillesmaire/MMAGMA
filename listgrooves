@@ -1,0 +1,1 @@
+find /usr/share/mma/lib/ | cut -d'/' -f6,7  | grep -v .mmaDB | grep /
