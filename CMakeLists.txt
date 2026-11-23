@@ -23,6 +23,7 @@ set (CHAPTERS
               ${MD_DIR}/utilisation-des-grooves.md
               ${MD_DIR}/format-MMA.md
               ${MD_DIR}/les-accords.md
+              ${MD_DIR}/les-variables.md
               ${MD_DIR}/les-boucles.md
               ${MD_DIR}/les-sequences.md
               ${MD_DIR}/volumes-et-dynamiques.md
@@ -42,6 +43,7 @@ set (CHAPTERS
               ${MD_DIR}/la-piste-solo.md
               ${MD_DIR}/la-piste-melody.md
               ${MD_DIR}/la-piste-drum-tone.md
+              ${MD_DIR}/creation-d-un-groove.md
             ${MD_DIR}/Partie-IV-PlusLoinDansLesRéglages.md
               ${MD_DIR}/le-rythme.md
               ${MD_DIR}/les-paroles.md

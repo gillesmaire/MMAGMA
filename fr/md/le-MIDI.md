@@ -217,7 +217,7 @@ AccousticGrandPiano l'ordre envoyé n'est pas 1 mais 0.
 | Cordes       | 44 | Contrabass          | ContraBass        |
 | Cordes       | 45 | TremoloStrings      | TremoloStrings    |
 | Cordes       | 46 | PizzicatoStrings    | PizzicatoStrings  |
-| Cordes       | 47 | OrchestralHarp      | PizzicatoStrings  |
+| Cordes       | 47 | OrchestralHarp      | OrchestralHarp    |
 | Cordes       | 48 | Timpani             | Timpani           |
 | Ensembles    | 49 | StringEnsemble1     | Strings           |
 | Ensembles    | 50 | StringEnsemble2     | SlowStrings       |
@@ -286,7 +286,7 @@ AccousticGrandPiano l'ordre envoyé n'est pas 1 mais 0.
 | Percu./FX    |113 | Tinkle Bell         | TinkleBell        |
 | Percu./FX    |114 | Agogo               | AgogoBells        |
 | Percu./FX    |115 | SteelDrums          | SteelDrums        |
-| Percu./FX    |116 | Woodblock           | WooBlock          |
+| Percu./FX    |116 | Woodblock           | WoodBlock          |
 | Percu./FX    |117 | TaikoDrum           | TaikoDrum         |
 | Percu./FX    |118 | MelodicTom          | MelodicTom1       |
 | Percu./FX    |119 | SynthDrum           | SynthDrum         |
