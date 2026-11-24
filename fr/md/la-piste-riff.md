@@ -157,7 +157,7 @@ où :
 Bass Riff 1 5 6 5
 ```
 
-produit une ligne de basse typique (tonique, quinte, sixte...)
+produit une ligne de basse typique (tonique, quinte, sixte)
 
 
 

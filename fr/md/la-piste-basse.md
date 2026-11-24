@@ -32,7 +32,7 @@ Les paramètres de Bass sont :
 * Ceux déjà explicités : Octave, Volume, Direction, Strum, Limit,NoteSpan,
 * **Articulation :** qui peut être Staccato ou Legato
 * **OctaveShift :** délacage supplémentaire d'octave par exemple -1 ou 1
-* **Sequence :** est une liste de bloc { note durée vélocité note durée vélocité ... } c'est à dire degré de l'accord, durée (1 pour noire), vélocité ou force (100)
+* **Sequence :** est une liste de bloc { note durée vélocité note durée vélocité } c'est à dire degré de l'accord, durée (1 pour noire), vélocité ou force (100)
 
 ## Exemples
 

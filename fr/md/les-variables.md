@@ -448,6 +448,46 @@ Ces opérateur trouven
 Derrière un If on trouve une expression de test
 
 
+Si une variable contient un caractère blanc par exmple si A vaut "un deux"
+et B vaut 3 le test 
+
+~~~
+if LT $A $B
+~~~
+
+va provoquer une erreur car A va être étendu en "un deux trois" et cela fait 
+un terme de trop pour la comparaison. 
+
+Dans ce cas là il faut mettre deux $ devant le caractère A pour éviter l'erreur:
+
+
+~~~mma
+if LT $$A $B
+~~~
+
+Ce particularisme ne marque que pour l'instruction IF.
+
+Les if imbriqués sont quant à eux autorisés.
+
+## L'expression GoTo
+
+
+L'expression GoTo permet de continuer à une ligne que l'on repère par une étiquette
+ou par un numéro de ligne si on utiliose les numéros de lignes.
+
+
+On peut placer une étiquette quelques part dans la liste des commandes par
+la syntaxe : 
+
+~~~mma
+Label Etiquette1
+~~~
+
+- Le nom d'étiquette doit être unique dans le code
+- Deux étiquette ne peuvent pas avoir le même numéro de ligne
+- Les numéros de lignes que l'on peut entrer optionnellement peuvent être utilisée
+dans un GoTO mais il faut alors veiller à ne pas avoir deux numéros de ligne
+identiques.
 
 
 

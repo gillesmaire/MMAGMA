@@ -47,7 +47,7 @@ un solo ou chorus
 
 ### Track
 
-- **Définition :** définit l'instrument joué sur la piste : Bass, Drum, Walk ...
+- **Définition :** définit l'instrument joué sur la piste : Bass, Drum, Walk 
 - **Rôle :** contient des Pattern et/ou des Séquences
 - **Durée :** Pendant tout le morceau.
 

@@ -24,6 +24,7 @@ set (CHAPTERS
               ${MD_DIR}/format-MMA.md
               ${MD_DIR}/les-accords.md
               ${MD_DIR}/les-variables.md
+              ${MD_DIR}/les-fonctions.md
               ${MD_DIR}/les-boucles.md
               ${MD_DIR}/les-sequences.md
               ${MD_DIR}/volumes-et-dynamiques.md

@@ -7,7 +7,7 @@ Le  Modèle  `Walk` pour Walking Bass est définie comme suit :
 
 Exemple :
 ~~~mma
-Walk Define Nom Position Duration Volume ; ...
+Walk Define Nom Position Duration Volume ; 
 ~~~
 
 Les pistes de basse d'une Walk sont jouées de haut en bas sur la première
