@@ -283,3 +283,172 @@ Voici la liste de ces variables
 | $_Volume       | valeur du volume global                              |
 | $_VolumeRatio  | valeur de ADJUSTVOLUME                               |
 
+
+## Les variables de type NOMPISTE
+
+Ces variables de la forme $_NOMPISTE_parametre permettent d'accéder au parametre de chaque piste NOMPISTE
+
+Par exemple si BASS_MIDIVolume est 0
+
+On peut récupérer cette valeur par la variable $_BASS_MIDIvolume
+
+Voici la liste de ces variables : 
+
+
+~~~mma
+  $_NOMPISTE_Accent
+  $_NOMPISTE_Articulate
+  $_NOMPISTE_Channel
+  $_NOMPISTE_Compress
+  $_NOMPISTE_Delay
+  $_NOMPISTE_Direction
+  $_NOMPISTE_DupRoot (uniquement pour les pistes Chord)
+  $_NOMPISTE_Harmony
+  $_NOMPISTE_HarmonyOnly
+  $_NOMPISTE_HarmonyVolume
+  $_NOMPISTE_Invert
+  $_NOMPISTE_Limit
+  $_NOMPISTE_Mallet (uiqueent pour les pistes Solo et Melody) 
+  $_NOMPISTE_MidiNote
+  $_NOMPISTE_MOctave
+  $_NOMPISTE_MIDIVolume
+  $_NOMPISTE_NoteSpan
+  $_NOMPISTE_Octave
+  $_NOMPISTE_Ornament
+  $_NOMPISTE_Plugins
+  $_NOMPISTE_Range
+  $_NOMPISTE_RDuration
+  $_NOMPISTE_Rpitch
+  $_NOMPISTE_Rskip
+  $_NOMPISTE_Rtime
+  $_NOMPISTE_Rvolume
+  $_NOMPISTE_SeqRnd
+  $_NOMPISTE_SeqRndWeight
+  $_NOMPISTE_Sequence
+  $_NOMPISTE_Span
+  $_NOMPISTE_Sticky
+  $_NOMPISTE_Strum
+  $_NOMPISTE_StrumAdd
+  $_NOMPISTE_Tone (seulement pour les pistes Drum) 
+  $_NOMPISTE_Trigger
+  $_NOMPISTE_Unify
+  $_NOMPISTE_Voice
+  $_NOMPISTE_Voicing (seulement pour les piostes Chord) 
+  $_NOMPISTE_Volume
+~~~
+
+
+Voici un exemple usuel 
+
+
+~~~
+Begin Bass
+  Voice AcousticBass
+  Octave 3
+End
+Begin Walk
+  ChShare Bass
+  Voice $_Bass_Voice
+  Octave $_Bass_Octave
+End 
+~~~
+
+
+## Indexation et intervalle de variables 
+
+Chaque variable disponible sous forme de liste  dispose de deux options : 
+
+- Indexation : permettant de récupérer la valeur d'un index dans la liste
+- intervalle : permettzant de drécupérer l'intervalle de valeur de la liste
+
+Si une variable dispose d'un seul élément cet indexation ou cet intervalle ne sont plus utilisable.
+
+
+
+Prenons une Variable Volume déclarée comme 
+
+~~~mma
+Bass Volume m mf p mp 
+~~~
+
+
+- print $Bass_volume :  va afficher 100 110 40 70 sachant que ce sont les valeurs de mezzo, mezzo forte, piano, piano forte 
+- print $Bass_volume[1:3] va afficher 110 40
+- print $Bass_volume[2] va afficher 40
+- print $Bass_volume[-1] va afficher 70
+- print $Bass_volume[] va afficher le nombre d'élément c'est à dire 4
+
+
+
+## Expressions mathématiques 
+
+
+Une expression mathématique se présente sous la forme $(calcul) 
+Par exemple 
+
+~~~mma
+print $( 2 + 2 ) 
+~~~
+
+affichera 4
+
+~~~mma
+Tempo 120
+Set V $( $_Tempo + 1)
+print $V
+~~~
+
+affichera 121
+
+On peut à l'intérieur du $() utiliser du code Python
+
+## Expressions conditionnelles 
+
+Les expressions conditionnelles sont caractérisées
+
+- par la présence du mot If
+- éventuellement du mot Else
+- par la présence du mot EndIf ou de son équivalent IfEnd
+
+Une condition suit le mot clé If qui peut être 
+
+- **Def NomDeVariable :** qui retourne Vrai si la variable est définie
+- **Ndef NomDeVariable :** qui retourne Vrai si la variable n'est pas définie
+- **IsEmpty NomDeVariable :** qui retourne vrai si la variable existe mais qu'elle n'a pas de valeur assignée
+- **IfNotEmpty NomDeVariable :** qui retourne vrai si la variable existe et qu'elle a une valeur assignée
+- **Exists NomDeFichier :** qui retourne vrai si le fichier existe
+- **IsFile Chemin :** qui retourne vrai si le chemin est un  fichier 
+- **IsDirPathname :* qui retourne vrai sir le chemin est un nom de répertoire
+
+Les opérateurs de comparaisons sont : 
+
+- **LT** pour <
+- **LE** pour <=
+- **EQ** pour == 
+- **NE** pour != 
+- **GT** pour > 
+- **GE** pour <
+
+Ces opérateurs comparente des chaînes de caractère par ordre alphabétique. 
+
+Par exemple la ligne suivante  renverra vrai car en MMA Bonjour est pareil que bonjour
+
+
+~~~
+if EQ bonjour Bonjour 
+~~~
+
+Attention aux chaînes de caractères contenant des caractères blanc qui provoqueront des erreurs.
+
+
+Une variable doit être donné sans caractère $ qui aurait juste comme effet de transformer la nom de la variable en sa valeur.
+Ces opérateur trouven
+
+
+Derrière un If on trouve une expression de test
+
+
+
+
+
+
